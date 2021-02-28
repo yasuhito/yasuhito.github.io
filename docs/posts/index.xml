@@ -32,6 +32,15 @@ cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/
     </item>
     
     <item>
+      <title>Ox-Hugo</title>
+      <link>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
+      <description>Ox-Hugo (GitHub)</description>
+    </item>
+    
+    <item>
       <title>状態ベクトル</title>
       <link>https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
