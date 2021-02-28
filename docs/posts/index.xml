@@ -30,5 +30,15 @@ TODOHTML エクスポートのセットアップ TODOhugo で md をエクスポ
 cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
     </item>
     
+    <item>
+      <title>線形結合</title>
+      <link>https://yasuhito.github.io/posts/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/</guid>
+      <description>Anki Item Text ベクトル \(\boldsymbol{v}\), \(\boldsymbol{w}\) に数 \(c\), \(d\) を掛けて足した \(c\boldsymbol{v} + d\boldsymbol{w}\) を \(\boldsymbol{v}\) と \(\boldsymbol{w}\) の{{c1::線形結合}}と呼ぶ
+Item Text ベクトル \(-\boldsymbol{v}\) と \(\boldsymbol{v}\) の和は{{c1::零ベクトル}}である</description>
+    </item>
+    
   </channel>
 </rss>
