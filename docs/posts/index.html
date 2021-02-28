@@ -44,6 +44,33 @@ Item Text ベクトル \(-\boldsymbol{v}\) と \(\boldsymbol{v}\) の和は{{c1:
 
 
     <h3>
+      <a href="https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">状態ベクトル</a>
+    </h3>
+
+    
+    
+
+      <p>
+        量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \(|\psi\rangle\) は、ディラック記法を使って基底状態 \(|0\rangle\) と \(|1\rangle\) の重ね合わせ (線形結合) として次の式で表すことができる。
+\[|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\]
+ここで係数 \(\alpha, \beta\) を確率振幅と呼び \(\alpha, \beta \in \mathbb{C}\) である。また、正規化条件として \(|\alpha|^2 + |\beta|^2 = 1\) に従わなければならない。
+Anki Item Text \(|0\rangle\) は{{c1::ケット}}表記の一例です。
+Item Front \(|0\rangle\) をベクトルで表すと?
+Back \(|0\rangle = \begin{bmatrix} 1 \ 0 \end{bmatrix}\)
+Item Front \(|1\rangle\) をベクトルで表すと?
+Back \(|1\rangle = \begin{bmatrix} 0 \ 1 \end{bmatrix}\)
+Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}1 \ 0\end{bmatrix}\) 状態は何に対応するか?
+Back \(|0\rangle\)
+Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}0 \ 1\end{bmatrix}\) 状態は何に対応するか?
+
+        <a href="https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">状態ベクトル full article</a>
+      </p>
+  
+
+
+
+
+    <h3>
       <a href="https://yasuhito.github.io/posts/20210223134834-org_roam/">Org-Roam</a>
     </h3>
 
@@ -73,8 +100,9 @@ cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/
       <p>
         Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
 Hugo 公式サイト
-テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 
+テーマ テーマの設定ではまりたくないので、まずは最小限のテーマから始める
+ https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
+DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーしているのを止める TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる 
 
         <a href="https://yasuhito.github.io/posts/20210228145035-hugo/">Hugo full article</a>
       </p>

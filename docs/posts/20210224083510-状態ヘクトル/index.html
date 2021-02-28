@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    
+    
+    <title>Yasuhito&#39;s Zettel | 状態ベクトル</title>
+    <style type="text/css">
+  body {
+    font-size: 150%;
+    font-family: muli,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+</style>
+
+</head>
+<body><p><a href="#nav-menu">Menu</a></p>
+
+
+
+<h1>状態ベクトル</h1>
+
+
+  
+  <p>by [Yasuhito Takamiya]
+
+
+
+
+
+<p>量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態  \(|\psi\rangle\) は、ディラック記法を使って基底状態 \(|0\rangle\) と \(|1\rangle\) の重ね合わせ (<a href="https://yasuhito.github.io/posts/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/">線形結合</a>) として次の式で表すことができる。</p>
+<p>\[|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\]</p>
+<p>ここで係数 \(\alpha, \beta\) を確率振幅と呼び \(\alpha, \beta \in \mathbb{C}\) である。また、正規化条件として \(|\alpha|^2 + |\beta|^2 = 1\) に従わなければならない。</p>
+<h2 id="anki">Anki</h2>
+<h3 id="item">Item</h3>
+<h4 id="text">Text</h4>
+<p>\(|0\rangle\) は{{c1::ケット}}表記の一例です。</p>
+<h3 id="item">Item</h3>
+<h4 id="front">Front</h4>
+<p>\(|0\rangle\) をベクトルで表すと?</p>
+<h4 id="back">Back</h4>
+<p>\(|0\rangle = \begin{bmatrix} 1 \ 0 \end{bmatrix}\)</p>
+<h3 id="item">Item</h3>
+<h4 id="front">Front</h4>
+<p>\(|1\rangle\) をベクトルで表すと?</p>
+<h4 id="back">Back</h4>
+<p>\(|1\rangle = \begin{bmatrix} 0 \ 1 \end{bmatrix}\)</p>
+<h3 id="item">Item</h3>
+<h4 id="front">Front</h4>
+<p>一般的なケット形式で書くと、\(\begin{bmatrix}1 \ 0\end{bmatrix}\) 状態は何に対応するか?</p>
+<h4 id="back">Back</h4>
+<p>\(|0\rangle\)</p>
+<h3 id="item">Item</h3>
+<h4 id="front">Front</h4>
+<p>一般的なケット形式で書くと、\(\begin{bmatrix}0 \ 1\end{bmatrix}\) 状態は何に対応するか?</p>
+<h4 id="back">Back</h4>
+<p>\(|1\rangle\)</p>
+<h3 id="item">Item</h3>
+<h4 id="front">Front</h4>
+<p>\(|0\rangle\) を \(\LaTeX\) で書くには?</p>
+<h4 id="back">Back</h4>
+<p><code>|0\rangle</code></p>
+<h3 id="item">Item</h3>
+<h4 id="text">Text</h4>
+<p>\(\LaTeX\) で列ベクトル \(\begin{bmatrix} 1 \ 0 \end{bmatrix}\) を入力するには?</p>
+<p><code>\begin{bmatrix}{{c1::1 \\ 0}}\end{bmatrix}</code></p>
+<h3 id="item">Item</h3>
+<h4 id="text">Text</h4>
+<p>\(\LaTeX\) で列ベクトル \(\begin{bmatrix} 1 \ 0 \end{bmatrix}\) を入力するには?</p>
+<p>\begin{{{c1::bmatrix}}} 1 \\ 0 \end{{{c1::bmatrix}}}</p>
+
+
+
+
+
+
+
+<p><a name="nav-menu" id="nav-menu"><strong>Site menu</strong></a></p>
+
+<ul>
+    
+    <li>
+        <a href="https://yasuhito.github.io/">
+            
+            Home
+        </a>
+    </li>
+    
+    <li>
+        <a href="https://yasuhito.github.io/posts/">
+            
+            Posts
+        </a>
+    </li>
+    
+</ul>
+
+<p><a href="#">Back to top</a></p>
+
+<script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>

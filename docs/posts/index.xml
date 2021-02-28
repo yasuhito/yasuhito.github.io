@@ -14,8 +14,9 @@
       <guid>https://yasuhito.github.io/posts/20210228145035-hugo/</guid>
       <description>Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
 Hugo 公式サイト
-テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 </description>
+テーマ テーマの設定ではまりたくないので、まずは最小限のテーマから始める
+ https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
+DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーしているのを止める TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる </description>
     </item>
     
     <item>
@@ -28,6 +29,25 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
 TODOHTML エクスポートのセットアップ TODOhugo で md をエクスポート  HUGO_BASE_DIR: ~/Documents/Zettel HUGO_SECTION: ./  TODOmd を html に変換 TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
 まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
 cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
+    </item>
+    
+    <item>
+      <title>状態ベクトル</title>
+      <link>https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
+      <description>量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \(|\psi\rangle\) は、ディラック記法を使って基底状態 \(|0\rangle\) と \(|1\rangle\) の重ね合わせ (線形結合) として次の式で表すことができる。
+\[|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\]
+ここで係数 \(\alpha, \beta\) を確率振幅と呼び \(\alpha, \beta \in \mathbb{C}\) である。また、正規化条件として \(|\alpha|^2 + |\beta|^2 = 1\) に従わなければならない。
+Anki Item Text \(|0\rangle\) は{{c1::ケット}}表記の一例です。
+Item Front \(|0\rangle\) をベクトルで表すと?
+Back \(|0\rangle = \begin{bmatrix} 1 \ 0 \end{bmatrix}\)
+Item Front \(|1\rangle\) をベクトルで表すと?
+Back \(|1\rangle = \begin{bmatrix} 0 \ 1 \end{bmatrix}\)
+Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}1 \ 0\end{bmatrix}\) 状態は何に対応するか?
+Back \(|0\rangle\)
+Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}0 \ 1\end{bmatrix}\) 状態は何に対応するか?</description>
     </item>
     
     <item>
