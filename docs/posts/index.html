@@ -1,13 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en-us" xmlns="http://www.w3.org/1999/xhtml"><head>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-    <link rel="alternate" type="application/rss+xml" href="https://yasuhito.github.io/posts/index.xml" title="Accessible Minimalism" />
+    <link rel="alternate" type="application/rss+xml" href="https://yasuhito.github.io/posts/index.xml" title="Yasuhito's Zettel" />
     
     
-    <title>Accessible Minimalism | Posts</title>
+    <title>Yasuhito&#39;s Zettel | Posts</title>
     <style type="text/css">
   body {
     font-size: 150%;
@@ -26,6 +26,26 @@
 
 
     <h3>
+      <a href="https://yasuhito.github.io/posts/20210223134834-org_roam/">Org-Roam</a>
+    </h3>
+
+    
+    
+
+      <p>
+        Org-Roam は Org Mode の上に作られている。
+TODOHTML エクスポートのセットアップ TODOhugo で md をエクスポート  HUGO_BASE_DIR: ~/Documents/Zettel HUGO_SECTION: ./  TODOmd を html に変換 TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
+まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
+cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org 
+
+        <a href="https://yasuhito.github.io/posts/20210223134834-org_roam/">Org-Roam full article</a>
+      </p>
+  
+
+
+
+
+    <h3>
       <a href="https://yasuhito.github.io/posts/20210228145035-hugo/">Hugo</a>
     </h3>
 
@@ -33,9 +53,10 @@
     
 
       <p>
-        Markdown で静的サイトを作るためのツール。
+        Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
 Hugo 公式サイト
-テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ 
+テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
+TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 
 
         <a href="https://yasuhito.github.io/posts/20210228145035-hugo/">Hugo full article</a>
       </p>

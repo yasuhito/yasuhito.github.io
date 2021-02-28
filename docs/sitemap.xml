@@ -2,16 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yasuhito.github.io/</loc>
-  </url><url>
     <loc>https://yasuhito.github.io/categories/</loc>
   </url><url>
     <loc>https://yasuhito.github.io/20210228145035-hugo/</loc>
   </url><url>
     <loc>https://yasuhito.github.io/posts/20210228145035-hugo/</loc>
   </url><url>
+    <loc>https://yasuhito.github.io/20210223134834-org_roam/</loc>
+  </url><url>
+    <loc>https://yasuhito.github.io/posts/20210223134834-org_roam/</loc>
+  </url><url>
     <loc>https://yasuhito.github.io/posts/</loc>
   </url><url>
     <loc>https://yasuhito.github.io/tags/</loc>
+  </url><url>
+    <loc>https://yasuhito.github.io/</loc>
   </url>
 </urlset>
