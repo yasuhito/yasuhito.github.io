@@ -12,8 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210228145035-hugo/</guid>
-      <description>org から hugo で markdown に変換して、hugo でサイトを生成する実験。
-テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOgithub のページに hugo で生成したサイトをデプロイ </description>
+      <description>Markdown で静的サイトを作るためのツール。
+Hugo 公式サイト
+テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ </description>
     </item>
     
   </channel>
