@@ -1,7 +1,7 @@
 baseURL = "https://yasuhito.github.io/"
 languageCode = "ja"
 title = "Yasuhito's Zettel"
-theme = "accessible-minimalism"
+theme = "cactus"
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
 publishDir = "docs"

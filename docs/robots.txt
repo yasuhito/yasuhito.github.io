@@ -1,3 +1,1 @@
 User-agent: *
-
-https://yasuhito.github.io/sitemap.xml
