@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Accessible Minimalism</title>
-    <link>http://example.org/posts/</link>
+    <link>https://yasuhito.github.io/posts/</link>
     <description>Recent content in Posts on Accessible Minimalism</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://yasuhito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>http://example.org/posts/20210228145035-hugo/</link>
+      <link>https://yasuhito.github.io/posts/20210228145035-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/20210228145035-hugo/</guid>
+      <guid>https://yasuhito.github.io/posts/20210228145035-hugo/</guid>
       <description>org から hugo で markdown に変換して、hugo でサイトを生成する実験。
 テーマ  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOgithub のページに hugo で生成したサイトをデプロイ </description>
     </item>
