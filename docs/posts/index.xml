@@ -49,9 +49,10 @@ Ox-Hugo (GitHub)</description>
       <pubDate>Sun, 28 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210228145035-hugo/</guid>
-      <description>Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
+      <description>Markdown で静的サイトを作るためのツール。Ox-Hugo を使って、Org-Roam の .org ファイルから自動的に yasuhito.github.io を生成する。
 Hugo 公式サイト
-テーマ Mathjax が始めから入っている cactus をとりあえず使う
+.org ファイルの設定 .org ファイルの冒頭で #+SETUPFILE: setup.org を指定し setup.org には次の Hugo 共通設定を入れておく。
+#+HUGO_BASE_DIR: ~/Documents/Zettel #+HUGO_SECTION: ./posts/ テーマ Mathjax が始めから入っている cactus をとりあえず使っている。
  https://github.com/monkeyWzr/hugo-theme-cactus  </description>
     </item>
     
