@@ -13,7 +13,8 @@
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
-      <description>Ox-Hugo (GitHub)</description>
+      <description>Ox-Hugo (GitHub)
+DONEタイムスタンプを付ける </description>
     </item>
     
     <item>
@@ -31,21 +32,9 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
     </item>
     
     <item>
-      <title>Org-Roam</title>
-      <link>https://yasuhito.github.io/posts/20210223134834-org_roam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yasuhito.github.io/posts/20210223134834-org_roam/</guid>
-      <description>Org-Roam は Org Mode の上に作られている。
-TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
-まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
-cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
-    </item>
-    
-    <item>
       <title>状態ベクトル</title>
       <link>https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
       <description>量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \(|\psi\rangle\) は、ディラック記法を使って基底状態 \(|0\rangle\) と \(|1\rangle\) の重ね合わせ (線形結合) として次の式で表すことができる。
@@ -62,9 +51,21 @@ Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}0 \ 1\end{
     </item>
     
     <item>
+      <title>Org-Roam</title>
+      <link>https://yasuhito.github.io/posts/20210223134834-org_roam/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210223134834-org_roam/</guid>
+      <description>Org-Roam は Org Mode の上に作られている。
+TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
+まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
+cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
+    </item>
+    
+    <item>
       <title>線形結合</title>
       <link>https://yasuhito.github.io/posts/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/</guid>
       <description>Anki Item Text ベクトル \(\boldsymbol{v}\), \(\boldsymbol{w}\) に数 \(c\), \(d\) を掛けて足した \(c\boldsymbol{v} + d\boldsymbol{w}\) を \(\boldsymbol{v}\) と \(\boldsymbol{w}\) の{{c1::線形結合}}と呼ぶ
