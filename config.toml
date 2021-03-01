@@ -16,3 +16,6 @@ canonifyurls = true
     name = "Posts"
     url = "/posts/"
     weight = 2
+
+[params]
+  mathjax = true
