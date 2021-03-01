@@ -5,11 +5,21 @@
     <link>https://yasuhito.github.io/</link>
     <description>Recent content on Yasuhito&#39;s Zettel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language><atom:link href="https://yasuhito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language>
+    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yasuhito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ox-Hugo</title>
+      <link>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
+      <description>Ox-Hugo (GitHub)</description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>https://yasuhito.github.io/posts/20210228145035-hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210228145035-hugo/</guid>
       <description>Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
@@ -30,15 +40,6 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
 TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
 まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
 cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
-    </item>
-    
-    <item>
-      <title>Ox-Hugo</title>
-      <link>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
-      <description>Ox-Hugo (GitHub)</description>
     </item>
     
     <item>
