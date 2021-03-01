@@ -12,14 +12,11 @@
 <meta property="og:description" content="Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
 Hugo 公式サイト
 テーマ Mathjax が始めから入っている cactus をとりあえず使う
- https://github.com/monkeyWzr/hugo-theme-cactus  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
-DONEcopyright を設定 DONEバックリンクを html に入れる DONEroam のファイルをまとめて export する関数を追加 https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/
-TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 " />
+ https://github.com/monkeyWzr/hugo-theme-cactus  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yasuhito.github.io/posts/20210228145035-hugo/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-02-28T00:00:00&#43;09:00" />
-<meta property="article:modified_time" content="2021-03-01T14:14:29&#43;09:00" />
+<meta property="article:modified_time" content="2021-03-01T14:31:05&#43;09:00" />
 
 
   <meta name="twitter:card" content="summary"/>
@@ -27,10 +24,7 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
 <meta name="twitter:description" content="Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
 Hugo 公式サイト
 テーマ Mathjax が始めから入っている cactus をとりあえず使う
- https://github.com/monkeyWzr/hugo-theme-cactus  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
-DONEcopyright を設定 DONEバックリンクを html に入れる DONEroam のファイルをまとめて export する関数を追加 https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/
-TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 "/>
+ https://github.com/monkeyWzr/hugo-theme-cactus  "/>
 
   
   
@@ -157,7 +151,7 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20Mathjax%20%e3%81%8c%e5%a7%8b%e3%82%81%e3%81%8b%e3%82%89%e5%85%a5%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%20cactus%20%e3%82%92%e3%81%a8%e3%82%8a%e3%81%82%e3%81%88%e3%81%9a%e4%bd%bf%e3%81%86%0a%20https%3a%2f%2fgithub.com%2fmonkeyWzr%2fhugo-theme-cactus%20%20TODO%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%20DONEgithub%20%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ab%20hugo%20%e3%81%a7%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%20DONE%e3%83%9a%e3%83%bc%e3%82%b8%e9%96%93%e3%83%aa%e3%83%b3%e3%82%af%20%e3%81%b5%e3%81%a4%e3%81%86%e3%81%ab%20org-roam-insert%20%e3%81%97%e3%81%9f%e3%83%aa%e3%83%b3%e3%82%af%e3%81%8c%e5%bc%b5%e3%82%89%e3%82%8c%e3%82%8b%e6%a8%a1%e6%a7%98%0aDONETeX%20%e3%81%ae%e6%95%b0%e5%bc%8f%e3%82%92%e8%a1%a8%e7%a4%ba%20DONEfooter.html%20%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%20html%20%e3%82%92%e3%82%b3%e3%83%94%e3%83%bc%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%82%92%e6%ad%a2%e3%82%81%e3%82%8b%20%e6%9c%80%e5%88%9d%e3%81%8b%e3%82%89%20Mathjax%20%e3%82%92%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%8e%a2%e3%81%99%0aDONEcopyright%20%e3%82%92%e8%a8%ad%e5%ae%9a%20DONE%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%b3%e3%82%af%e3%82%92%20html%20%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%20DONEroam%20%e3%81%ae%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%92%e3%81%be%e3%81%a8%e3%82%81%e3%81%a6%20export%20%e3%81%99%e3%82%8b%e9%96%a2%e6%95%b0%e3%82%92%e8%bf%bd%e5%8a%a0%20https%3a%2f%2fseds.nl%2fnotes%2fox%255Fhugo%255Fexport%255Fall%255Froam%255Fto%255Fhugo%2f%0aTODOHUGO_BASE_DIR%20%e3%81%a8%20HUGO_SECTION%20%e3%82%92%20Org-Roam%20%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%e3%80%82%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20Mathjax%20%e3%81%8c%e5%a7%8b%e3%82%81%e3%81%8b%e3%82%89%e5%85%a5%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%20cactus%20%e3%82%92%e3%81%a8%e3%82%8a%e3%81%82%e3%81%88%e3%81%9a%e4%bd%bf%e3%81%86%0a%20https%3a%2f%2fgithub.com%2fmonkeyWzr%2fhugo-theme-cactus%20%20">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -173,18 +167,6 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
       <nav id="TableOfContents">
   <ul>
     <li><a href="#テーマ">テーマ</a></li>
-    <li><a href="#セットアップ"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> セットアップ</a>
-      <ul>
-        <li><a href="#github-のページに-hugo-で生成したサイトをデプロイ"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> github のページに hugo で生成したサイトをデプロイ</a></li>
-        <li><a href="#ページ間リンク"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> ページ間リンク</a></li>
-        <li><a href="#tex-の数式を表示"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> TeX の数式を表示</a></li>
-        <li><a href="#footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</a></li>
-        <li><a href="#copyright-を設定"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> copyright を設定</a></li>
-        <li><a href="#バックリンクを-html-に入れる"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> バックリンクを html に入れる</a></li>
-        <li><a href="#roam-のファイルをまとめて-export-する関数を追加"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> roam のファイルをまとめて export する関数を追加</a></li>
-        <li><a href="#hugo-base-dir-と-hugo-section-を-org-roam--20210223134834-org-roam-dot-md--のテンプレートに入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> <code>HUGO_BASE_DIR</code> と <code>HUGO_SECTION</code> を <a href="HAHAHUGOSHORTCODE-s2-HBHB">Org-Roam</a> のテンプレートに入れる。</a></li>
-      </ul>
-    </li>
   </ul>
 </nav>
     </div>
@@ -218,18 +200,6 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
 <ul>
 <li><a href="https://github.com/monkeyWzr/hugo-theme-cactus">https://github.com/monkeyWzr/hugo-theme-cactus</a></li>
 </ul>
-<h2 id="セットアップ"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> セットアップ</h2>
-<h3 id="github-のページに-hugo-で生成したサイトをデプロイ"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> github のページに hugo で生成したサイトをデプロイ</h3>
-<h3 id="ページ間リンク"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> ページ間リンク</h3>
-<p>ふつうに <code>org-roam-insert</code> したリンクが張られる模様</p>
-<h3 id="tex-の数式を表示"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> TeX の数式を表示</h3>
-<h3 id="footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</h3>
-<p>最初から Mathjax をサポートしているテーマを探す</p>
-<h3 id="copyright-を設定"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> copyright を設定</h3>
-<h3 id="バックリンクを-html-に入れる"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> バックリンクを html に入れる</h3>
-<h3 id="roam-のファイルをまとめて-export-する関数を追加"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> roam のファイルをまとめて export する関数を追加</h3>
-<p><a href="https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/">https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/</a></p>
-<h3 id="hugo-base-dir-と-hugo-section-を-org-roam--20210223134834-org-roam-dot-md--のテンプレートに入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> <code>HUGO_BASE_DIR</code> と <code>HUGO_SECTION</code> を <a href="https://yasuhito.github.io/posts/20210223134834-org_roam/">Org-Roam</a> のテンプレートに入れる。</h3>
 
     </div>
   </article>
@@ -258,18 +228,6 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
       <nav id="TableOfContents">
   <ul>
     <li><a href="#テーマ">テーマ</a></li>
-    <li><a href="#セットアップ"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> セットアップ</a>
-      <ul>
-        <li><a href="#github-のページに-hugo-で生成したサイトをデプロイ"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> github のページに hugo で生成したサイトをデプロイ</a></li>
-        <li><a href="#ページ間リンク"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> ページ間リンク</a></li>
-        <li><a href="#tex-の数式を表示"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> TeX の数式を表示</a></li>
-        <li><a href="#footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</a></li>
-        <li><a href="#copyright-を設定"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> copyright を設定</a></li>
-        <li><a href="#バックリンクを-html-に入れる"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> バックリンクを html に入れる</a></li>
-        <li><a href="#roam-のファイルをまとめて-export-する関数を追加"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> roam のファイルをまとめて export する関数を追加</a></li>
-        <li><a href="#hugo-base-dir-と-hugo-section-を-org-roam--20210223134834-org-roam-dot-md--のテンプレートに入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> <code>HUGO_BASE_DIR</code> と <code>HUGO_SECTION</code> を <a href="HAHAHUGOSHORTCODE-s2-HBHB">Org-Roam</a> のテンプレートに入れる。</a></li>
-      </ul>
-    </li>
   </ul>
 </nav>
     </div>
@@ -328,7 +286,7 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20Mathjax%20%e3%81%8c%e5%a7%8b%e3%82%81%e3%81%8b%e3%82%89%e5%85%a5%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%20cactus%20%e3%82%92%e3%81%a8%e3%82%8a%e3%81%82%e3%81%88%e3%81%9a%e4%bd%bf%e3%81%86%0a%20https%3a%2f%2fgithub.com%2fmonkeyWzr%2fhugo-theme-cactus%20%20TODO%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%20DONEgithub%20%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ab%20hugo%20%e3%81%a7%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%20DONE%e3%83%9a%e3%83%bc%e3%82%b8%e9%96%93%e3%83%aa%e3%83%b3%e3%82%af%20%e3%81%b5%e3%81%a4%e3%81%86%e3%81%ab%20org-roam-insert%20%e3%81%97%e3%81%9f%e3%83%aa%e3%83%b3%e3%82%af%e3%81%8c%e5%bc%b5%e3%82%89%e3%82%8c%e3%82%8b%e6%a8%a1%e6%a7%98%0aDONETeX%20%e3%81%ae%e6%95%b0%e5%bc%8f%e3%82%92%e8%a1%a8%e7%a4%ba%20DONEfooter.html%20%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%20html%20%e3%82%92%e3%82%b3%e3%83%94%e3%83%bc%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%82%92%e6%ad%a2%e3%82%81%e3%82%8b%20%e6%9c%80%e5%88%9d%e3%81%8b%e3%82%89%20Mathjax%20%e3%82%92%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%8e%a2%e3%81%99%0aDONEcopyright%20%e3%82%92%e8%a8%ad%e5%ae%9a%20DONE%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%b3%e3%82%af%e3%82%92%20html%20%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%20DONEroam%20%e3%81%ae%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%92%e3%81%be%e3%81%a8%e3%82%81%e3%81%a6%20export%20%e3%81%99%e3%82%8b%e9%96%a2%e6%95%b0%e3%82%92%e8%bf%bd%e5%8a%a0%20https%3a%2f%2fseds.nl%2fnotes%2fox%255Fhugo%255Fexport%255Fall%255Froam%255Fto%255Fhugo%2f%0aTODOHUGO_BASE_DIR%20%e3%81%a8%20HUGO_SECTION%20%e3%82%92%20Org-Roam%20%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%e3%80%82%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20Mathjax%20%e3%81%8c%e5%a7%8b%e3%82%81%e3%81%8b%e3%82%89%e5%85%a5%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%20cactus%20%e3%82%92%e3%81%a8%e3%82%8a%e3%81%82%e3%81%88%e3%81%9a%e4%bd%bf%e3%81%86%0a%20https%3a%2f%2fgithub.com%2fmonkeyWzr%2fhugo-theme-cactus%20%20">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

@@ -15,8 +15,7 @@
       
       <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
       <description>Org-Mode のファイルを Hugo の Markdown に変換するためのプラグイン。
-Ox-Hugo (GitHub)
-DONEタイムスタンプを付ける TODObmatrix が列ベクトルにならないのを修正 </description>
+Ox-Hugo (GitHub)</description>
     </item>
     
     <item>
@@ -53,10 +52,7 @@ DONEタイムスタンプを付ける TODObmatrix が列ベクトルにならな
       <description>Markdown で静的サイトを作るためのツール。Org-Mode の Hugo への exporter として Ox-Hugo があるので、Org-Roam で作った .org ファイルから自動的にサイトを作ることができる。
 Hugo 公式サイト
 テーマ Mathjax が始めから入っている cactus をとりあえず使う
- https://github.com/monkeyWzr/hugo-theme-cactus  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
-DONEcopyright を設定 DONEバックリンクを html に入れる DONEroam のファイルをまとめて export する関数を追加 https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/
-TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 </description>
+ https://github.com/monkeyWzr/hugo-theme-cactus  </description>
     </item>
     
     <item>
@@ -79,15 +75,7 @@ TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れ�
       <guid>https://yasuhito.github.io/posts/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
       <description>量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \(|\psi\rangle\) は、ディラック記法を使って基底状態 \(|0\rangle\) と \(|1\rangle\) の重ね合わせ (線形結合) として次の式で表すことができる。
 \[|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\]
-ここで係数 \(\alpha, \beta\) を確率振幅と呼び \(\alpha, \beta \in \mathbb{C}\) である。また、正規化条件として \(|\alpha|^2 + |\beta|^2 = 1\) に従わなければならない。
-Anki Item Text \(|0\rangle\) は{{c1::ケット}}表記の一例です。
-Item Front \(|0\rangle\) をベクトルで表すと?
-Back \(|0\rangle = \begin{bmatrix} 1 \ 0 \end{bmatrix}\)
-Item Front \(|1\rangle\) をベクトルで表すと?
-Back \(|1\rangle = \begin{bmatrix} 0 \ 1 \end{bmatrix}\)
-Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}1 \ 0\end{bmatrix}\) 状態は何に対応するか?
-Back \(|0\rangle\)
-Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}0 \ 1\end{bmatrix}\) 状態は何に対応するか?</description>
+ここで係数 \(\alpha, \beta\) を確率振幅と呼び \(\alpha, \beta \in \mathbb{C}\) である。また、正規化条件として \(|\alpha|^2 + |\beta|^2 = 1\) に従わなければならない。</description>
     </item>
     
     <item>
@@ -96,10 +84,7 @@ Item Front 一般的なケット形式で書くと、\(\begin{bmatrix}0 \ 1\end{
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210223134834-org_roam/</guid>
-      <description>Org-Roam は Org Mode の上に作られている。
-TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
-まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
-cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
+      <description>Org-Roam は Org Mode の上に作られている。</description>
     </item>
     
     <item>
@@ -108,8 +93,7 @@ cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/</guid>
-      <description>Anki Item Text ベクトル \(\boldsymbol{v}\), \(\boldsymbol{w}\) に数 \(c\), \(d\) を掛けて足した \(c\boldsymbol{v} + d\boldsymbol{w}\) を \(\boldsymbol{v}\) と \(\boldsymbol{w}\) の{{c1::線形結合}}と呼ぶ
-Item Text ベクトル \(-\boldsymbol{v}\) と \(\boldsymbol{v}\) の和は{{c1::零ベクトル}}である</description>
+      <description></description>
     </item>
     
   </channel>
