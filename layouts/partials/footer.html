@@ -1,0 +1,36 @@
+{{ $re := $.File.BaseFileName }}
+{{ $backlinks := slice }}
+
+{{ range .Site.AllPages }}
+  {{ if and $re (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+    {{ $backlinks = $backlinks | append . }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $backlinks) 0 }}
+  <div class="bl-section" style="margin-top: 2rem">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+      <ul>
+        {{ range $backlinks }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+{{ end }}
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; {{ now.Format "2006" }} {{ if .Site.Copyright }} {{ print .Site.Copyright }} {{ else }} {{ print .Site.Title }} {{ end }}
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        {{ range .Site.Menus.main }} 
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</footer>

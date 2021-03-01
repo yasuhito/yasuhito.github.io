@@ -25,13 +25,12 @@ DONEタイムスタンプを付ける TODObmatrix が列ベクトルにならな
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210301113146-%E5%AF%BE%E8%A7%92%E5%8C%96/</guid>
-      <description>ある行列 \(A\) を正則行列 \(P\) によって相似変換して結果を対角行列にすること。 あるいは、そのような行列 \(P\) を見つけること。
+      <description>ある行列 \(A\) を正則行列 \(P\) によって相似変換して結果を対角行列にすること。 あるいは、そのような行列 \(P\) を見つけること
 \[P^{-1}AP = \begin{bmatrix} a^{\prime}_{11} &amp;amp; 0 &amp;amp; 0 &amp;amp; \ldots &amp;amp; 0 \\\
 0 &amp;amp; a^{\prime}_{22} &amp;amp; 0 &amp;amp; \ldots &amp;amp; 0 \\\
 0 &amp;amp; 0 &amp;amp; \ddots &amp;amp; &amp;amp; 0 \\\
 \vdots &amp;amp; \vdots &amp;amp; &amp;amp; \ddots &amp;amp; 0 \\\
-0 &amp;amp; 0 &amp;amp; \ldots &amp;amp; 0 &amp;amp; a^{\prime}_{nn} \\\
-\end{bmatrix}\]</description>
+0 &amp;amp; 0 &amp;amp; \ldots &amp;amp; 0 &amp;amp; a^{\prime}_{nn} \end{bmatrix}\]</description>
     </item>
     
     <item>
@@ -56,7 +55,7 @@ Hugo 公式サイト
 テーマ Mathjax が始めから入っている cactus をとりあえず使う
  https://github.com/monkeyWzr/hugo-theme-cactus  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
 DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
-DONEcopyright を設定 TODOバックリンクを html に入れる NEXTroam のファイルをまとめて export する関数を追加 https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/
+DONEcopyright を設定 DONEバックリンクを html に入れる DONEroam のファイルをまとめて export する関数を追加 https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/
 TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 </description>
     </item>
     
