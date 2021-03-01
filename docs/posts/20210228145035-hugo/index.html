@@ -13,7 +13,8 @@
 Hugo 公式サイト
 テーマ テーマの設定ではまりたくないので、まずは最小限のテーマから始める
  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーしているのを止める TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる " />
+DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
+TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://yasuhito.github.io/posts/20210228145035-hugo/" /><meta property="article:section" content="posts" />
 
@@ -26,7 +27,8 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
 Hugo 公式サイト
 テーマ テーマの設定ではまりたくないので、まずは最小限のテーマから始める
  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーしているのを止める TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる "/>
+DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
+TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる "/>
 
   
   
@@ -70,17 +72,11 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
       <ul>
         
         <li>
-          <a class="icon" href=" https://yasuhito.github.io/20210223134834-org_roam/">
+          <a class="icon" href=" https://yasuhito.github.io/posts/20210223134834-org_roam/">
             <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
           </a>
         </li>
         
-        
-        <li>
-          <a class="icon" href="https://yasuhito.github.io/20210228145035-hugo/">
-            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
-          </a>
-        </li>
         
         <li>
           <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
@@ -153,7 +149,7 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%81%a7%e3%81%af%e3%81%be%e3%82%8a%e3%81%9f%e3%81%8f%e3%81%aa%e3%81%84%e3%81%ae%e3%81%a7%e3%80%81%e3%81%be%e3%81%9a%e3%81%af%e6%9c%80%e5%b0%8f%e9%99%90%e3%81%ae%e3%83%86%e3%83%bc%e3%83%9e%e3%81%8b%e3%82%89%e5%a7%8b%e3%82%81%e3%82%8b%0a%20https%3a%2f%2fgithub.com%2fleonstafford%2faccessible-minimalism-hugo-theme%20%20TODO%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%20DONEgithub%20%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ab%20hugo%20%e3%81%a7%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%20DONE%e3%83%9a%e3%83%bc%e3%82%b8%e9%96%93%e3%83%aa%e3%83%b3%e3%82%af%20%e3%81%b5%e3%81%a4%e3%81%86%e3%81%ab%20org-roam-insert%20%e3%81%97%e3%81%9f%e3%83%aa%e3%83%b3%e3%82%af%e3%81%8c%e5%bc%b5%e3%82%89%e3%82%8c%e3%82%8b%e6%a8%a1%e6%a7%98%0aDONETeX%20%e3%81%ae%e6%95%b0%e5%bc%8f%e3%82%92%e8%a1%a8%e7%a4%ba%20TODOfooter.html%20%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%20html%20%e3%82%92%e3%82%b3%e3%83%94%e3%83%bc%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%82%92%e6%ad%a2%e3%82%81%e3%82%8b%20TODOHUGO_BASE_DIR%20%e3%81%a8%20HUGO_SECTION%20%e3%82%92%20Org-Roam%20%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%e3%80%82%20TODO%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%b3%e3%82%af%e3%82%92%20html%20%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%81%a7%e3%81%af%e3%81%be%e3%82%8a%e3%81%9f%e3%81%8f%e3%81%aa%e3%81%84%e3%81%ae%e3%81%a7%e3%80%81%e3%81%be%e3%81%9a%e3%81%af%e6%9c%80%e5%b0%8f%e9%99%90%e3%81%ae%e3%83%86%e3%83%bc%e3%83%9e%e3%81%8b%e3%82%89%e5%a7%8b%e3%82%81%e3%82%8b%0a%20https%3a%2f%2fgithub.com%2fleonstafford%2faccessible-minimalism-hugo-theme%20%20TODO%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%20DONEgithub%20%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ab%20hugo%20%e3%81%a7%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%20DONE%e3%83%9a%e3%83%bc%e3%82%b8%e9%96%93%e3%83%aa%e3%83%b3%e3%82%af%20%e3%81%b5%e3%81%a4%e3%81%86%e3%81%ab%20org-roam-insert%20%e3%81%97%e3%81%9f%e3%83%aa%e3%83%b3%e3%82%af%e3%81%8c%e5%bc%b5%e3%82%89%e3%82%8c%e3%82%8b%e6%a8%a1%e6%a7%98%0aDONETeX%20%e3%81%ae%e6%95%b0%e5%bc%8f%e3%82%92%e8%a1%a8%e7%a4%ba%20DONEfooter.html%20%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%20html%20%e3%82%92%e3%82%b3%e3%83%94%e3%83%bc%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%82%92%e6%ad%a2%e3%82%81%e3%82%8b%20%e6%9c%80%e5%88%9d%e3%81%8b%e3%82%89%20Mathjax%20%e3%82%92%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%8e%a2%e3%81%99%0aTODOHUGO_BASE_DIR%20%e3%81%a8%20HUGO_SECTION%20%e3%82%92%20Org-Roam%20%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%e3%80%82%20TODO%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%b3%e3%82%af%e3%82%92%20html%20%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%20">
       <i class="fab fa-tumblr " aria-hidden="true"></i>
     </a>
   </li>
@@ -174,7 +170,7 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
         <li><a href="#github-のページに-hugo-で生成したサイトをデプロイ"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> github のページに hugo で生成したサイトをデプロイ</a></li>
         <li><a href="#ページ間リンク"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> ページ間リンク</a></li>
         <li><a href="#tex-の数式を表示"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> TeX の数式を表示</a></li>
-        <li><a href="#footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</a></li>
+        <li><a href="#footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</a></li>
         <li><a href="#hugo-base-dir-と-hugo-section-を-org-roam--20210223134834-org-roam-dot-md--のテンプレートに入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> <code>HUGO_BASE_DIR</code> と <code>HUGO_SECTION</code> を <a href="HAHAHUGOSHORTCODE-s2-HBHB">Org-Roam</a> のテンプレートに入れる。</a></li>
         <li><a href="#バックリンクを-html-に入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> バックリンクを html に入れる</a></li>
       </ul>
@@ -217,7 +213,8 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
 <h3 id="ページ間リンク"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> ページ間リンク</h3>
 <p>ふつうに <code>org-roam-insert</code> したリンクが張られる模様</p>
 <h3 id="tex-の数式を表示"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> TeX の数式を表示</h3>
-<h3 id="footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</h3>
+<h3 id="footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</h3>
+<p>最初から Mathjax をサポートしているテーマを探す</p>
 <h3 id="hugo-base-dir-と-hugo-section-を-org-roam--20210223134834-org-roam-dot-md--のテンプレートに入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> <code>HUGO_BASE_DIR</code> と <code>HUGO_SECTION</code> を <a href="https://yasuhito.github.io/posts/20210223134834-org_roam/">Org-Roam</a> のテンプレートに入れる。</h3>
 <h3 id="バックリンクを-html-に入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> バックリンクを html に入れる</h3>
 
@@ -253,7 +250,7 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
         <li><a href="#github-のページに-hugo-で生成したサイトをデプロイ"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> github のページに hugo で生成したサイトをデプロイ</a></li>
         <li><a href="#ページ間リンク"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> ページ間リンク</a></li>
         <li><a href="#tex-の数式を表示"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> TeX の数式を表示</a></li>
-        <li><a href="#footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</a></li>
+        <li><a href="#footer-dot-html-でテーマの-html-をコピーしているのを止める"><!-- raw HTML omitted -->DONE<!-- raw HTML omitted --> footer.html でテーマの html をコピーしているのを止める</a></li>
         <li><a href="#hugo-base-dir-と-hugo-section-を-org-roam--20210223134834-org-roam-dot-md--のテンプレートに入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> <code>HUGO_BASE_DIR</code> と <code>HUGO_SECTION</code> を <a href="HAHAHUGOSHORTCODE-s2-HBHB">Org-Roam</a> のテンプレートに入れる。</a></li>
         <li><a href="#バックリンクを-html-に入れる"><!-- raw HTML omitted -->TODO<!-- raw HTML omitted --> バックリンクを html に入れる</a></li>
       </ul>
@@ -316,7 +313,7 @@ DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーし�
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%81%a7%e3%81%af%e3%81%be%e3%82%8a%e3%81%9f%e3%81%8f%e3%81%aa%e3%81%84%e3%81%ae%e3%81%a7%e3%80%81%e3%81%be%e3%81%9a%e3%81%af%e6%9c%80%e5%b0%8f%e9%99%90%e3%81%ae%e3%83%86%e3%83%bc%e3%83%9e%e3%81%8b%e3%82%89%e5%a7%8b%e3%82%81%e3%82%8b%0a%20https%3a%2f%2fgithub.com%2fleonstafford%2faccessible-minimalism-hugo-theme%20%20TODO%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%20DONEgithub%20%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ab%20hugo%20%e3%81%a7%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%20DONE%e3%83%9a%e3%83%bc%e3%82%b8%e9%96%93%e3%83%aa%e3%83%b3%e3%82%af%20%e3%81%b5%e3%81%a4%e3%81%86%e3%81%ab%20org-roam-insert%20%e3%81%97%e3%81%9f%e3%83%aa%e3%83%b3%e3%82%af%e3%81%8c%e5%bc%b5%e3%82%89%e3%82%8c%e3%82%8b%e6%a8%a1%e6%a7%98%0aDONETeX%20%e3%81%ae%e6%95%b0%e5%bc%8f%e3%82%92%e8%a1%a8%e7%a4%ba%20TODOfooter.html%20%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%20html%20%e3%82%92%e3%82%b3%e3%83%94%e3%83%bc%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%82%92%e6%ad%a2%e3%82%81%e3%82%8b%20TODOHUGO_BASE_DIR%20%e3%81%a8%20HUGO_SECTION%20%e3%82%92%20Org-Roam%20%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%e3%80%82%20TODO%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%b3%e3%82%af%e3%82%92%20html%20%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%20">
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210228145035-hugo%2f&name=Hugo&description=Markdown%20%e3%81%a7%e9%9d%99%e7%9a%84%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%9f%e3%82%81%e3%81%ae%e3%83%84%e3%83%bc%e3%83%ab%e3%80%82Org-Mode%20%e3%81%ae%20Hugo%20%e3%81%b8%e3%81%ae%20exporter%20%e3%81%a8%e3%81%97%e3%81%a6%20Ox-Hugo%20%e3%81%8c%e3%81%82%e3%82%8b%e3%81%ae%e3%81%a7%e3%80%81Org-Roam%20%e3%81%a7%e4%bd%9c%e3%81%a3%e3%81%9f%20.org%20%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%8b%e3%82%89%e8%87%aa%e5%8b%95%e7%9a%84%e3%81%ab%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e4%bd%9c%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0aHugo%20%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%0a%e3%83%86%e3%83%bc%e3%83%9e%20%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%81%a7%e3%81%af%e3%81%be%e3%82%8a%e3%81%9f%e3%81%8f%e3%81%aa%e3%81%84%e3%81%ae%e3%81%a7%e3%80%81%e3%81%be%e3%81%9a%e3%81%af%e6%9c%80%e5%b0%8f%e9%99%90%e3%81%ae%e3%83%86%e3%83%bc%e3%83%9e%e3%81%8b%e3%82%89%e5%a7%8b%e3%82%81%e3%82%8b%0a%20https%3a%2f%2fgithub.com%2fleonstafford%2faccessible-minimalism-hugo-theme%20%20TODO%e3%82%bb%e3%83%83%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%20DONEgithub%20%e3%81%ae%e3%83%9a%e3%83%bc%e3%82%b8%e3%81%ab%20hugo%20%e3%81%a7%e7%94%9f%e6%88%90%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%82%92%e3%83%87%e3%83%97%e3%83%ad%e3%82%a4%20DONE%e3%83%9a%e3%83%bc%e3%82%b8%e9%96%93%e3%83%aa%e3%83%b3%e3%82%af%20%e3%81%b5%e3%81%a4%e3%81%86%e3%81%ab%20org-roam-insert%20%e3%81%97%e3%81%9f%e3%83%aa%e3%83%b3%e3%82%af%e3%81%8c%e5%bc%b5%e3%82%89%e3%82%8c%e3%82%8b%e6%a8%a1%e6%a7%98%0aDONETeX%20%e3%81%ae%e6%95%b0%e5%bc%8f%e3%82%92%e8%a1%a8%e7%a4%ba%20DONEfooter.html%20%e3%81%a7%e3%83%86%e3%83%bc%e3%83%9e%e3%81%ae%20html%20%e3%82%92%e3%82%b3%e3%83%94%e3%83%bc%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%82%92%e6%ad%a2%e3%82%81%e3%82%8b%20%e6%9c%80%e5%88%9d%e3%81%8b%e3%82%89%20Mathjax%20%e3%82%92%e3%82%b5%e3%83%9d%e3%83%bc%e3%83%88%e3%81%97%e3%81%a6%e3%81%84%e3%82%8b%e3%83%86%e3%83%bc%e3%83%9e%e3%82%92%e6%8e%a2%e3%81%99%0aTODOHUGO_BASE_DIR%20%e3%81%a8%20HUGO_SECTION%20%e3%82%92%20Org-Roam%20%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%e3%80%82%20TODO%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%b3%e3%82%af%e3%82%92%20html%20%e3%81%ab%e5%85%a5%e3%82%8c%e3%82%8b%20">
       <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
     </a>
   </li>

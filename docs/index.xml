@@ -8,15 +8,6 @@
     <language>ja</language><atom:link href="https://yasuhito.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>https://yasuhito.github.io/20210228145035-hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yasuhito.github.io/20210228145035-hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
       <link>https://yasuhito.github.io/posts/20210228145035-hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -25,19 +16,8 @@
 Hugo 公式サイト
 テーマ テーマの設定ではまりたくないので、まずは最小限のテーマから始める
  https://github.com/leonstafford/accessible-minimalism-hugo-theme  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
-DONETeX の数式を表示 TODOfooter.html でテーマの html をコピーしているのを止める TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる </description>
-    </item>
-    
-    <item>
-      <title>Org-Roam</title>
-      <link>https://yasuhito.github.io/20210223134834-org_roam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://yasuhito.github.io/20210223134834-org_roam/</guid>
-      <description>Org-Roam は Org Mode の上に作られている。
-TODOHTML エクスポートのセットアップ TODOhugo で md をエクスポート  HUGO_BASE_DIR: ~/Documents/Zettel HUGO_SECTION: ./  TODOmd を html に変換 TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
-まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
-cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
+DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
+TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる </description>
     </item>
     
     <item>
@@ -47,7 +27,7 @@ cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/
       
       <guid>https://yasuhito.github.io/posts/20210223134834-org_roam/</guid>
       <description>Org-Roam は Org Mode の上に作られている。
-TODOHTML エクスポートのセットアップ TODOhugo で md をエクスポート  HUGO_BASE_DIR: ~/Documents/Zettel HUGO_SECTION: ./  TODOmd を html に変換 TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
+TODOクラウドバックアップ beorg と同期するために iCloud を使う。iCloud はソフトウェアの追加インストールな しで iPhone や Mac と同期できるのも良い。
 まずは ~/org に置いてある org 関連のファイルを iCloud の beorg ディレクトリに移 動しておいて、以下のように ~/org へシンボリックリンクを張るようにする。
 cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
     </item>
