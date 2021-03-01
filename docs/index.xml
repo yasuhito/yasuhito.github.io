@@ -56,7 +56,8 @@ Hugo 公式サイト
 テーマ Mathjax が始めから入っている cactus をとりあえず使う
  https://github.com/monkeyWzr/hugo-theme-cactus  TODOセットアップ DONEgithub のページに hugo で生成したサイトをデプロイ DONEページ間リンク ふつうに org-roam-insert したリンクが張られる模様
 DONETeX の数式を表示 DONEfooter.html でテーマの html をコピーしているのを止める 最初から Mathjax をサポートしているテーマを探す
-DONEcopyright を設定 TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 TODOバックリンクを html に入れる </description>
+DONEcopyright を設定 TODOバックリンクを html に入れる NEXTroam のファイルをまとめて export する関数を追加 https://seds.nl/notes/ox%5Fhugo%5Fexport%5Fall%5Froam%5Fto%5Fhugo/
+TODOHUGO_BASE_DIR と HUGO_SECTION を Org-Roam のテンプレートに入れる。 </description>
     </item>
     
     <item>
