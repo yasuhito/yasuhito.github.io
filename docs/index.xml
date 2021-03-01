@@ -56,6 +56,15 @@ Hugo 公式サイト
     </item>
     
     <item>
+      <title>TOEIC L &amp; R TEST 出る単特急 金のフレーズ</title>
+      <link>https://yasuhito.github.io/posts/20210228110804-toeic_l_r_test_%E5%87%BA%E3%82%8B%E5%8D%98%E7%89%B9%E6%80%A5_%E9%87%91%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210228110804-toeic_l_r_test_%E5%87%BA%E3%82%8B%E5%8D%98%E7%89%B9%E6%80%A5_%E9%87%91%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%82%B9/</guid>
+      <description>Amazon</description>
+    </item>
+    
+    <item>
       <title>基底状態</title>
       <link>https://yasuhito.github.io/posts/20210224084353-%E5%9F%BA%E5%BA%95%E7%8A%B6%E6%85%8B/</link>
       <pubDate>Wed, 24 Feb 2021 00:00:00 +0900</pubDate>
@@ -84,7 +93,10 @@ Hugo 公式サイト
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210223134834-org_roam/</guid>
-      <description>Org-Roam は Org Mode の上に作られている。</description>
+      <description>Org-Roam は Org Mode の上に作られている。
+クラウドへのバックアップ iCloud で同期すれば、ソフトウェアの追加インストールなしで iPhone や Mac と org ファイルを同期できる。そこで、なにか問題が出るまではしばらく iCloud でバックアップを取ることにする。
+iCloud に org ディレクトリを作るには、iPhone に beorg をインストールするのが手っ取り早い。インストールすると iCloud Drive 上に beorg 用のディレクトリが作られるので、ここから ~/org にシンボリックリンクを張る。
+cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
     </item>
     
     <item>
