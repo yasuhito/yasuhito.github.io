@@ -9,6 +9,15 @@
     <copyright>Yasuhito Takamiya</copyright>
     <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yasuhito.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Andy Matuschak</title>
+      <link>https://yasuhito.github.io/posts/20210302131638-andy_matuschak/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210302131638-andy_matuschak/</guid>
+      <description>Andyʼs working notes</description>
+    </item>
+    
+    <item>
       <title>API としてのタイトル</title>
       <link>https://yasuhito.github.io/posts/20210302115454-api_%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/</link>
       <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
@@ -77,7 +86,8 @@
       <guid>https://yasuhito.github.io/posts/20210302145631-%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF_%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%83%E3%82%AF%E3%82%B9/</guid>
       <description>保存版メモの作業場所としてライティング・インボックスを持っておく。一時的なメモや書きかけのメモは何でも、このインボックスにつっこむ。書きかけがすべてが入っているので、ライティング・インボックスは今までの洞察を蓄積した容れ物だと考えることができる。
 このインボックスを漁ることで、次にとりかかるメモを決め、いつでも続きを書きはじめることができる。インボックスの中で保存版メモを仕上げ、アトミック・タイトルをつけ保存版メモとして保存する。つまらないメモはアーカイブする。
-Org-Mode での実装 現在は、TODO アイテムに writing タグを付けることでライティング・インボックスを実装している。 校正してできあがった保存版メモは、Org-Roam の独立したノートを作ってそこに保存する。</description>
+Org-Mode での実装 現在は、TODO アイテムに writing タグを付けることでライティング・インボックスを実装している。 練りあげてできあがった保存版メモは、Org-Roam の独立したノートを作ってそこに保存する。
+参考文献  My morning writing practice by Andy Matuschak  </description>
     </item>
     
     <item>
@@ -109,8 +119,10 @@ Org-Mode での実装 現在は、TODO アイテムに writing タグを付け�
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
-      <description>Org-Mode のファイルを Hugo の Markdown に変換するためのプラグイン。
-Ox-Hugo (GitHub)</description>
+      <description>Org-Mode のファイルを Hugo 形式の Markdown に変換するためのプラグイン。
+Org-Roam の保存版メモをまとめてエクスポート 次の関数を使って &amp;quot;permanent notes&amp;quot; とタグのついた Org-Roam の保存版ノートを Markdown に一括エクスポートできる。
+#+begin_src elisp (after! (org org-roam) (defun my/org-roam-export-all () &amp;ldquo;Re-exports all Org-roam files to Hugo markdown.&amp;rdquo; (interactive) (dolist (f (org-roam&amp;ndash;list-all-files)) (with-current-buffer (find-file f) (when (s-contains? &amp;ldquo;permanent notes&amp;rdquo; (buffer-string)) (org-hugo-export-wim-to-md)))))) #+end_src elisp
+参考文献  Ox-Hugo (GitHub)  </description>
     </item>
     
     <item>
@@ -185,13 +197,26 @@ Anki カード作りの研究用に買ってみた。</description>
     </item>
     
     <item>
+      <title>HTML Over the Wire</title>
+      <link>https://yasuhito.github.io/posts/20210223123752-html_over_the_wire/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210223123752-html_over_the_wire/</guid>
+      <description>React や Vue.js などの Web プログラミングフレームワークでは、ネイティブアプリと同様の UX を提供するために処理の大半をブラウザ側で行う。サーバは HTML ではなくデータを JSON として返す API/GraphQL サーバーとして動作し、HTML の生成はクライアントサイドのブラウザで動作する JavaScript フレームワーク上で行う。
+これは、従来の Rails などのフレームワークと比較して複雑である。従来は、サーバ側で MVC フレームワークが動作し、データとプレゼンテーションを HTML としてサーバ側で生成し、ブラウザへ送っていた。一方で、近年の Web フレームワークはブラウザ上で MVC フレームワークが動作する。画面遷移を高速にするために、DOM ツリーの差分を取り、仮想 DOM という仕組みで最小の書き換えで画面遷移を実現する。
+しかし、従来の単純なフレームワークでもネイティブアプリと同等の UX を達成することは可能である。DOM のうち動的な部分のみ JavaScript で書き換える。画面遷移についても、マウスオーバー時のプリフェッチによってソースコードを変更せずに高速化が可能である。
+このための代表的なフレームワークが HOTwire。元々 Turbolinks や Stimulus.js だったものをまとめたもの。HTML の data 属性を使うことで、JavaScript 部分と HTML を結合することができる。JavaScript 部分は、サーバ側の MVC 実装や HTML にほとんど染み出さない。
+参考文献  HTML over the wire  </description>
+    </item>
+    
+    <item>
       <title>Org-Roam</title>
       <link>https://yasuhito.github.io/posts/20210223134834-org_roam/</link>
       <pubDate>Tue, 23 Feb 2021 00:00:00 +0900</pubDate>
       
       <guid>https://yasuhito.github.io/posts/20210223134834-org_roam/</guid>
-      <description>Org-Roam は Org Mode の上に作られている。
-クラウドへのバックアップ iCloud で同期すれば、ソフトウェアの追加インストールなしで iPhone や Mac と org ファイルを同期できる。そこで、なにか問題が出るまではしばらく iCloud でバックアップを取ることにする。
+      <description>Org-Roam は Org Mode の上に構築された、Roam Research ライクなノート環境。
+クラウドへのバックアップ iCloud で同期すれば、ソフトウェアの追加インストールなしで iPhone や Mac と org ファイルを同期できる。とにかく手軽なので、なにか問題が出るまではしばらく iCloud でバックアップを取ることにする。
 iCloud に org ディレクトリを作るには、iPhone に beorg をインストールするのが手っ取り早い。インストールすると iCloud Drive 上に beorg 用のディレクトリが作られるので、ここから ~/org にシンボリックリンクを張る。
 cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org </description>
     </item>
