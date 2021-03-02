@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> ライブプログラミング | Notes</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="ライブプログラミング" />
+<meta property="og:description" content="ライブプログラミングとは、プログラムの実行時の情報を参照しながらコーディングできるようにするインタラクションデザインの一種。
+従来の開発では、プログラマはソースコード (死んだ状態) を編集しながら実行時 (生きた状態) を頭の中でエミュレーションする必要があった。一方ライブプログラミングでは、開発環境が提示する生きたプログラムの状態を確認しながらソースコードを直感的に編集できる。
+ライブプログラミング環境は、頭の中だけでは想像しにくい、抽象的な記号操作をメインとするシステムの理解や開発に有効である。Bret Victor らの Interactive Exploration of a Dynamic System では、微分方程式の初期値やパラメータを変えながら結果をインタラクティブに確認できる。量子コンピュータもそうした複雑なシステムの一種であり、直感的には理解しづらい量子プログラミングのためのライブプログラミング環境がいくつか提案されてきた。
+このように、ライブプログラミングは具体的なモデリング、シミュレーション、可視化をベースにした新しい実践の形を提供する。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasuhito.github.io/posts/20210302122628-%E3%83%A9%E3%82%A4%E3%83%95%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-02T00:00:00&#43;09:00" />
+<meta property="article:modified_time" content="2021-03-02T00:00:00&#43;09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ライブプログラミング"/>
+<meta name="twitter:description" content="ライブプログラミングとは、プログラムの実行時の情報を参照しながらコーディングできるようにするインタラクションデザインの一種。
+従来の開発では、プログラマはソースコード (死んだ状態) を編集しながら実行時 (生きた状態) を頭の中でエミュレーションする必要があった。一方ライブプログラミングでは、開発環境が提示する生きたプログラムの状態を確認しながらソースコードを直感的に編集できる。
+ライブプログラミング環境は、頭の中だけでは想像しにくい、抽象的な記号操作をメインとするシステムの理解や開発に有効である。Bret Victor らの Interactive Exploration of a Dynamic System では、微分方程式の初期値やパラメータを変えながら結果をインタラクティブに確認できる。量子コンピュータもそうした複雑なシステムの一種であり、直感的には理解しづらい量子プログラミングのためのライブプログラミング環境がいくつか提案されてきた。
+このように、ライブプログラミングは具体的なモデリング、シミュレーション、可視化をベースにした新しい実践の形を提供する。"/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://yasuhito.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+        <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://yasuhito.github.io/posts/20210302120102-%E4%BF%9D%E5%AD%98%E7%89%88%E3%83%A1%E3%83%A2%E3%81%AE%E6%95%B0/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://yasuhito.github.io/posts/20210302120815-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E8%A1%8C%E5%88%97/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&text=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&is_video=false&description=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&body=Check out this article: https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&name=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&description=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%a8%e3%81%af%e3%80%81%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e5%ae%9f%e8%a1%8c%e6%99%82%e3%81%ae%e6%83%85%e5%a0%b1%e3%82%92%e5%8f%82%e7%85%a7%e3%81%97%e3%81%aa%e3%81%8c%e3%82%89%e3%82%b3%e3%83%bc%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0%e3%81%a7%e3%81%8d%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%a9%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3%e3%81%ae%e4%b8%80%e7%a8%ae%e3%80%82%0a%e5%be%93%e6%9d%a5%e3%81%ae%e9%96%8b%e7%99%ba%e3%81%a7%e3%81%af%e3%80%81%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9e%e3%81%af%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%20%28%e6%ad%bb%e3%82%93%e3%81%a0%e7%8a%b6%e6%85%8b%29%20%e3%82%92%e7%b7%a8%e9%9b%86%e3%81%97%e3%81%aa%e3%81%8c%e3%82%89%e5%ae%9f%e8%a1%8c%e6%99%82%20%28%e7%94%9f%e3%81%8d%e3%81%9f%e7%8a%b6%e6%85%8b%29%20%e3%82%92%e9%a0%ad%e3%81%ae%e4%b8%ad%e3%81%a7%e3%82%a8%e3%83%9f%e3%83%a5%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%99%e3%82%8b%e5%bf%85%e8%a6%81%e3%81%8c%e3%81%82%e3%81%a3%e3%81%9f%e3%80%82%e4%b8%80%e6%96%b9%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%a7%e3%81%af%e3%80%81%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%8c%e6%8f%90%e7%a4%ba%e3%81%99%e3%82%8b%e7%94%9f%e3%81%8d%e3%81%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e7%8a%b6%e6%85%8b%e3%82%92%e7%a2%ba%e8%aa%8d%e3%81%97%e3%81%aa%e3%81%8c%e3%82%89%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%82%92%e7%9b%b4%e6%84%9f%e7%9a%84%e3%81%ab%e7%b7%a8%e9%9b%86%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0a%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e7%92%b0%e5%a2%83%e3%81%af%e3%80%81%e9%a0%ad%e3%81%ae%e4%b8%ad%e3%81%a0%e3%81%91%e3%81%a7%e3%81%af%e6%83%b3%e5%83%8f%e3%81%97%e3%81%ab%e3%81%8f%e3%81%84%e3%80%81%e6%8a%bd%e8%b1%a1%e7%9a%84%e3%81%aa%e8%a8%98%e5%8f%b7%e6%93%8d%e4%bd%9c%e3%82%92%e3%83%a1%e3%82%a4%e3%83%b3%e3%81%a8%e3%81%99%e3%82%8b%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%ae%e7%90%86%e8%a7%a3%e3%82%84%e9%96%8b%e7%99%ba%e3%81%ab%e6%9c%89%e5%8a%b9%e3%81%a7%e3%81%82%e3%82%8b%e3%80%82Bret%20Victor%20%e3%82%89%e3%81%ae%20Interactive%20Exploration%20of%20a%20Dynamic%20System%20%e3%81%a7%e3%81%af%e3%80%81%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b%e5%bc%8f%e3%81%ae%e5%88%9d%e6%9c%9f%e5%80%a4%e3%82%84%e3%83%91%e3%83%a9%e3%83%a1%e3%83%bc%e3%82%bf%e3%82%92%e5%a4%89%e3%81%88%e3%81%aa%e3%81%8c%e3%82%89%e7%b5%90%e6%9e%9c%e3%82%92%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%a9%e3%82%af%e3%83%86%e3%82%a3%e3%83%96%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%e9%87%8f%e5%ad%90%e3%82%b3%e3%83%b3%e3%83%94%e3%83%a5%e3%83%bc%e3%82%bf%e3%82%82%e3%81%9d%e3%81%86%e3%81%97%e3%81%9f%e8%a4%87%e9%9b%91%e3%81%aa%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%ae%e4%b8%80%e7%a8%ae%e3%81%a7%e3%81%82%e3%82%8a%e3%80%81%e7%9b%b4%e6%84%9f%e7%9a%84%e3%81%ab%e3%81%af%e7%90%86%e8%a7%a3%e3%81%97%e3%81%a5%e3%82%89%e3%81%84%e9%87%8f%e5%ad%90%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e7%92%b0%e5%a2%83%e3%81%8c%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e6%8f%90%e6%a1%88%e3%81%95%e3%82%8c%e3%81%a6%e3%81%8d%e3%81%9f%e3%80%82%0a%e3%81%93%e3%81%ae%e3%82%88%e3%81%86%e3%81%ab%e3%80%81%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%af%e5%85%b7%e4%bd%93%e7%9a%84%e3%81%aa%e3%83%a2%e3%83%87%e3%83%aa%e3%83%b3%e3%82%b0%e3%80%81%e3%82%b7%e3%83%9f%e3%83%a5%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%80%81%e5%8f%af%e8%a6%96%e5%8c%96%e3%82%92%e3%83%99%e3%83%bc%e3%82%b9%e3%81%ab%e3%81%97%e3%81%9f%e6%96%b0%e3%81%97%e3%81%84%e5%ae%9f%e8%b7%b5%e3%81%ae%e5%bd%a2%e3%82%92%e6%8f%90%e4%be%9b%e3%81%99%e3%82%8b%e3%80%82">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&t=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        ライブプログラミング
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-03-02 00:00:00 &#43;0900 JST" itemprop="datePublished">2021-03-02</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>ライブプログラミングとは、プログラムの実行時の情報を参照しながらコーディングできるようにするインタラクションデザインの一種。</p>
+<p>従来の開発では、プログラマはソースコード (死んだ状態) を編集しながら実行時 (生きた状態) を頭の中でエミュレーションする必要があった。一方ライブプログラミングでは、開発環境が提示する生きたプログラムの状態を確認しながらソースコードを直感的に編集できる。</p>
+<p>ライブプログラミング環境は、頭の中だけでは想像しにくい、抽象的な記号操作をメインとするシステムの理解や開発に有効である。Bret Victor らの Interactive Exploration of a Dynamic System では、微分方程式の初期値やパラメータを変えながら結果をインタラクティブに確認できる。量子コンピュータもそうした複雑なシステムの一種であり、直感的には理解しづらい量子プログラミングのためのライブプログラミング環境がいくつか提案されてきた。</p>
+<p>このように、ライブプログラミングは具体的なモデリング、シミュレーション、可視化をベースにした新しい実践の形を提供する。</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+          <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&text=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&is_video=false&description=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&body=Check out this article: https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&title=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&name=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0&description=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%a8%e3%81%af%e3%80%81%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e5%ae%9f%e8%a1%8c%e6%99%82%e3%81%ae%e6%83%85%e5%a0%b1%e3%82%92%e5%8f%82%e7%85%a7%e3%81%97%e3%81%aa%e3%81%8c%e3%82%89%e3%82%b3%e3%83%bc%e3%83%87%e3%82%a3%e3%83%b3%e3%82%b0%e3%81%a7%e3%81%8d%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e3%81%99%e3%82%8b%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%a9%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%87%e3%82%b6%e3%82%a4%e3%83%b3%e3%81%ae%e4%b8%80%e7%a8%ae%e3%80%82%0a%e5%be%93%e6%9d%a5%e3%81%ae%e9%96%8b%e7%99%ba%e3%81%a7%e3%81%af%e3%80%81%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9e%e3%81%af%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%20%28%e6%ad%bb%e3%82%93%e3%81%a0%e7%8a%b6%e6%85%8b%29%20%e3%82%92%e7%b7%a8%e9%9b%86%e3%81%97%e3%81%aa%e3%81%8c%e3%82%89%e5%ae%9f%e8%a1%8c%e6%99%82%20%28%e7%94%9f%e3%81%8d%e3%81%9f%e7%8a%b6%e6%85%8b%29%20%e3%82%92%e9%a0%ad%e3%81%ae%e4%b8%ad%e3%81%a7%e3%82%a8%e3%83%9f%e3%83%a5%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%99%e3%82%8b%e5%bf%85%e8%a6%81%e3%81%8c%e3%81%82%e3%81%a3%e3%81%9f%e3%80%82%e4%b8%80%e6%96%b9%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%a7%e3%81%af%e3%80%81%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%8c%e6%8f%90%e7%a4%ba%e3%81%99%e3%82%8b%e7%94%9f%e3%81%8d%e3%81%9f%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%a0%e3%81%ae%e7%8a%b6%e6%85%8b%e3%82%92%e7%a2%ba%e8%aa%8d%e3%81%97%e3%81%aa%e3%81%8c%e3%82%89%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%82%92%e7%9b%b4%e6%84%9f%e7%9a%84%e3%81%ab%e7%b7%a8%e9%9b%86%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%0a%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e7%92%b0%e5%a2%83%e3%81%af%e3%80%81%e9%a0%ad%e3%81%ae%e4%b8%ad%e3%81%a0%e3%81%91%e3%81%a7%e3%81%af%e6%83%b3%e5%83%8f%e3%81%97%e3%81%ab%e3%81%8f%e3%81%84%e3%80%81%e6%8a%bd%e8%b1%a1%e7%9a%84%e3%81%aa%e8%a8%98%e5%8f%b7%e6%93%8d%e4%bd%9c%e3%82%92%e3%83%a1%e3%82%a4%e3%83%b3%e3%81%a8%e3%81%99%e3%82%8b%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%ae%e7%90%86%e8%a7%a3%e3%82%84%e9%96%8b%e7%99%ba%e3%81%ab%e6%9c%89%e5%8a%b9%e3%81%a7%e3%81%82%e3%82%8b%e3%80%82Bret%20Victor%20%e3%82%89%e3%81%ae%20Interactive%20Exploration%20of%20a%20Dynamic%20System%20%e3%81%a7%e3%81%af%e3%80%81%e5%be%ae%e5%88%86%e6%96%b9%e7%a8%8b%e5%bc%8f%e3%81%ae%e5%88%9d%e6%9c%9f%e5%80%a4%e3%82%84%e3%83%91%e3%83%a9%e3%83%a1%e3%83%bc%e3%82%bf%e3%82%92%e5%a4%89%e3%81%88%e3%81%aa%e3%81%8c%e3%82%89%e7%b5%90%e6%9e%9c%e3%82%92%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%a9%e3%82%af%e3%83%86%e3%82%a3%e3%83%96%e3%81%ab%e7%a2%ba%e8%aa%8d%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%82%e9%87%8f%e5%ad%90%e3%82%b3%e3%83%b3%e3%83%94%e3%83%a5%e3%83%bc%e3%82%bf%e3%82%82%e3%81%9d%e3%81%86%e3%81%97%e3%81%9f%e8%a4%87%e9%9b%91%e3%81%aa%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%81%ae%e4%b8%80%e7%a8%ae%e3%81%a7%e3%81%82%e3%82%8a%e3%80%81%e7%9b%b4%e6%84%9f%e7%9a%84%e3%81%ab%e3%81%af%e7%90%86%e8%a7%a3%e3%81%97%e3%81%a5%e3%82%89%e3%81%84%e9%87%8f%e5%ad%90%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e7%92%b0%e5%a2%83%e3%81%8c%e3%81%84%e3%81%8f%e3%81%a4%e3%81%8b%e6%8f%90%e6%a1%88%e3%81%95%e3%82%8c%e3%81%a6%e3%81%8d%e3%81%9f%e3%80%82%0a%e3%81%93%e3%81%ae%e3%82%88%e3%81%86%e3%81%ab%e3%80%81%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0%e3%81%af%e5%85%b7%e4%bd%93%e7%9a%84%e3%81%aa%e3%83%a2%e3%83%87%e3%83%aa%e3%83%b3%e3%82%b0%e3%80%81%e3%82%b7%e3%83%9f%e3%83%a5%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e3%80%81%e5%8f%af%e8%a6%96%e5%8c%96%e3%82%92%e3%83%99%e3%83%bc%e3%82%b9%e3%81%ab%e3%81%97%e3%81%9f%e6%96%b0%e3%81%97%e3%81%84%e5%ae%9f%e8%b7%b5%e3%81%ae%e5%bd%a2%e3%82%92%e6%8f%90%e4%be%9b%e3%81%99%e3%82%8b%e3%80%82">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210302122628-%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2595%25E3%2583%2595%25E3%2583%25AD%25E3%2582%25AF%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25AF%2f&t=%e3%83%a9%e3%82%a4%e3%83%96%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Yasuhito Takamiya 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+        <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=https://yasuhito.github.io/lib/font-awesome/css/all.min.css>
+<script src=https://yasuhito.github.io/lib/jquery/jquery.min.js></script>
+<script src=https://yasuhito.github.io/js/main.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>
