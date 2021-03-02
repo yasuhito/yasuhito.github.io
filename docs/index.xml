@@ -37,6 +37,19 @@
     </item>
     
     <item>
+      <title>Execute Program</title>
+      <link>https://yasuhito.github.io/posts/20210302155222-execute_program/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210302155222-execute_program/</guid>
+      <description>https://www.executeprogram.com/
+SRS で JavaScript などの API を学習できるサービス。SRS が外国語学習だけでなく API の習得にも有効なのは、Michael Nielsen の Augmenting Long-term Memory でも実証されていることである。
+ビジネス的には、SRS は長期 (数年〜) に渡って使うものなので、こういうサービスは個人利用であっても契約期間が長くなる → 収益化しやすい、と予想できる。
+使ってみた感想として、回答では必ずキー入力を求められるので、Anki のようにサクサク進められず、レビューセッションを始める前の心理的バリアが少し高いと感じた。キー入力が必要な要因として、問題と回答がアトミックな質問と答になっていないことが考えられる。
+キー入力を使わない SRS でプログラミング API を習得することは可能だろうか？ Execute Program の問題を SRS に起こし、自分を実験台にして確認してみる。</description>
+    </item>
+    
+    <item>
       <title>アトミックな質問と答</title>
       <link>https://yasuhito.github.io/posts/20210302123555-%E3%82%A2%E3%83%88%E3%83%9F%E3%83%83%E3%82%AF%E3%81%AA%E8%B3%AA%E5%95%8F%E3%81%A8%E7%AD%94/</link>
       <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
@@ -120,9 +133,8 @@ Org-Mode での実装 現在は、TODO アイテムに writing タグを付け�
       
       <guid>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</guid>
       <description>Org-Mode のファイルを Hugo 形式の Markdown に変換するためのプラグイン。
-Org-Roam の保存版メモをまとめてエクスポート 次の関数を使って &amp;quot;permanent notes&amp;quot; とタグのついた Org-Roam の保存版ノートを Markdown に一括エクスポートできる。
-#+begin_src elisp (after! (org org-roam) (defun my/org-roam-export-all () &amp;ldquo;Re-exports all Org-roam files to Hugo markdown.&amp;rdquo; (interactive) (dolist (f (org-roam&amp;ndash;list-all-files)) (with-current-buffer (find-file f) (when (s-contains? &amp;ldquo;permanent notes&amp;rdquo; (buffer-string)) (org-hugo-export-wim-to-md)))))) #+end_src elisp
-参考文献  Ox-Hugo (GitHub)  </description>
+保存版メモをまとめてエクスポート 次の関数を使って &amp;quot;permanent notes&amp;quot; とタグのついた Org-Roam の保存版ノートを Markdown に一括エクスポートできる。
+(after! (org org-roam) (defun my/org-roam-export-all () &amp;#34;Re-exports all Org-roam files to Hugo markdown.&amp;#34; (interactive) (dolist (f (org-roam--list-all-files)) (with-current-buffer (find-file f) (when (s-contains? &amp;#34;permanent notes&amp;#34; (buffer-string)) (org-hugo-export-wim-to-md)))))) 参考文献  Ox-Hugo (GitHub)  </description>
     </item>
     
     <item>
