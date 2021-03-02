@@ -7,7 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>Yasuhito Takamiya</copyright>
-    <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yasuhito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yasuhito.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API としてのタイトル</title>
+      <link>https://yasuhito.github.io/posts/20210302115454-api_%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210302115454-api_%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/</guid>
+      <description>エバーグリーンノートのタイトル付けは API 設計によく似ている。
+ 単機能にする (例: Object#inspect) キャッチーな名詞にする (例: &amp;ldquo;囚人のジレンマ&amp;rdquo;、&amp;ldquo;割れ窓理論&amp;rdquo;) 一発で決まらない時は、時間とともに改善 (リファクタリング)  参考文献  Evergreen note titles are like APIs  </description>
+    </item>
+    
+    <item>
+      <title>アトミック・タイトル</title>
+      <link>https://yasuhito.github.io/posts/20210302115056-%E3%82%A2%E3%83%88%E3%83%9F%E3%83%83%E3%82%AF_%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210302115056-%E3%82%A2%E3%83%88%E3%83%9F%E3%83%83%E3%82%AF_%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/</guid>
+      <description>エバーグリーンノートのタイトルは、それ以上分割できない概念を名詞で表したもの (例: &amp;ldquo;囚人のジレンマ&amp;rdquo;、&amp;ldquo;割れ窓理論&amp;rdquo; etc.) にする。
+これをアトミック・タイトルと呼ぶ。アトミック・タイトルはノート内からリンクを貼りやすく、覚えやすい。また一言で言えるので、複雑な概念を表す &amp;ldquo;ハンドル&amp;rdquo; として便利 (API としてのタイトル)。
+タイトルがアトミック・タイトルかどうかは、少ない語の名詞になっているかどうかが良い判断基準になると思う。
+参考文献  Evergreen notes should be atomic  </description>
+    </item>
+    
+    <item>
+      <title>保存版メモの数</title>
+      <link>https://yasuhito.github.io/posts/20210302120102-%E4%BF%9D%E5%AD%98%E7%89%88%E3%83%A1%E3%83%A2%E3%81%AE%E6%95%B0/</link>
+      <pubDate>Tue, 02 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210302120102-%E4%BF%9D%E5%AD%98%E7%89%88%E3%83%A1%E3%83%A2%E3%81%AE%E6%95%B0/</guid>
+      <description>一日に書いた保存版メモの数&amp;quot; が、研究者の生産性指標として使える。たとえば、&amp;ldquo;一日あたり 2 個の保存版メモを書こう&amp;rdquo; という目標を立てれば、それに向かって努力することができる。
+保存版メモを書かなければ、せっかくの読書のほとんどが無駄になってしまう。保存版メモを書くことは、読書に役立つだけでなくそれ自体が利益になる。たとえば、洞察力を育む、執筆そのものを加速する、など。つまり「書くことは考えること」。
+自分はどのくらい一日に書いているだろうか? どのようにすれば計測できるだろうか?</description>
+    </item>
+    
     <item>
       <title>Ox-Hugo</title>
       <link>https://yasuhito.github.io/posts/20210301083537-ox_hugo/</link>
