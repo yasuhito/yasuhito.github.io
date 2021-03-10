@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yasuhito.github.io/</loc>
+    <lastmod>2021-03-10T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://yasuhito.github.io/posts/20210223135036-org_mode/</loc>
+    <lastmod>2021-03-10T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://yasuhito.github.io/posts/</loc>
+    <lastmod>2021-03-10T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://yasuhito.github.io/posts/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/</loc>
+    <lastmod>2021-03-10T00:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://yasuhito.github.io/posts/20210228111127-how_to_take_smart_notes/</loc>
     <lastmod>2021-03-03T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://yasuhito.github.io/</loc>
-    <lastmod>2021-03-03T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>https://yasuhito.github.io/posts/</loc>
+    <loc>https://yasuhito.github.io/posts/20210303105204-powers_of_10_time_scales_in_user_experience/</loc>
     <lastmod>2021-03-03T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://yasuhito.github.io/posts/20210303082924-%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E7%9F%A5%E7%9A%84%E5%8A%AA%E5%8A%9B%E3%81%AF%E3%83%A1%E3%83%A2%E3%81%8B%E3%82%89/</loc>
     <lastmod>2021-03-03T00:00:00+09:00</lastmod>
   </url><url>
+    <loc>https://yasuhito.github.io/posts/20210303103710-%E7%9B%B4%E6%84%9F%E6%80%A7%E3%81%A8%E5%BF%9C%E7%AD%94%E6%99%82%E9%96%93/</loc>
+    <lastmod>2021-03-03T00:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://yasuhito.github.io/posts/20210303084450-%E7%9C%9F%E3%81%A3%E7%99%BD%E3%81%AA%E7%94%BB%E9%9D%A2/</loc>
+    <lastmod>2021-03-03T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://yasuhito.github.io/posts/20210303094727-%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%92%E3%83%A5%E3%83%BC%E3%82%BF/</loc>
     <lastmod>2021-03-03T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://yasuhito.github.io/posts/20210302131638-andy_matuschak/</loc>

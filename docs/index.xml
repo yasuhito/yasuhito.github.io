@@ -7,7 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>Yasuhito Takamiya</copyright>
-    <lastBuildDate>Wed, 03 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yasuhito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Mar 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://yasuhito.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Org Mode</title>
+      <link>https://yasuhito.github.io/posts/20210223135036-org_mode/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210223135036-org_mode/</guid>
+      <description>メモや論文など書くこと全般に使える Emacs のメジャーモード。Org-Roam を使うと、Roam Research 的なスマートノートを作ることができる。このノート上には Anki のカードも定義できるので、スマートノートと SRS をスムーズに組み合わせることができる。そのほか、文芸的プログラミングをサポートしているので、Emacs の設定ファイルを Org のドキュメントから生成できる。
+Org mode for Emacs
+Org のインライン記法  強調 **強調** 斜体 /斜体/ 下線 _下線_ 打ち消し +打ち消し+ verbatim =verbatim= inline code ~inline code~  </description>
+    </item>
+    
+    <item>
+      <title>文芸的プログラミング</title>
+      <link>https://yasuhito.github.io/posts/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/</guid>
+      <description>Donald E. Knuth が提唱したプログラミング手法の一つで、テキストファイル内にドキュメントとコードを埋めこみ、これから完全なドキュメントとコンパイル可能なソースコードを生成する方法。驚くことに TeX はこの方法で書かれていて、生成されたドキュメントは本として出版されている (TeX: The Program)。
+TeX 以外に実用的なソフトウェアで文芸的プログラミングを採用した例は見当たらないが、最近では Org ファイルから Emacs や Bash などの設定ドキュメントとドットファイルを生成するという限定的な用途で文芸的プログラミングが使われている。
+極端な例では、Org-Mode 内で論文を書く際に、本文だけでなくテーブルやグラフなど論文の構成要素をすべて生成するという Reproducible Research という手法もある。</description>
+    </item>
+    
     <item>
       <title>How to Take Smart Notes</title>
       <link>https://yasuhito.github.io/posts/20210228111127-how_to_take_smart_notes/</link>
@@ -15,6 +37,15 @@
       
       <guid>https://yasuhito.github.io/posts/20210228111127-how_to_take_smart_notes/</guid>
       <description> How to Take Smart Notes (Scribd) How to Take Smart Notes (Amazon)  TODO:writing:  目的: 自分の考えや発見を効率的に説得力のある文章に変える方法である、スマートノートを提案する。 スマートノートとは: 相互に関連したノートをたくさん書くことで、メモから最終的な作品 (論文、小説等) へのギャップを埋める。 効果 1: 書き留めたノートを使うことで、文章書きをより簡単に楽しくするだけでなく、長い目で見ると、学び新しいアイデアを生み出すことができる。 効果 2: 毎日書くことができるので、プロジェクトが漸近的に完成に近付く。  </description>
+    </item>
+    
+    <item>
+      <title>Powers of 10: Time Scales in User Experience</title>
+      <link>https://yasuhito.github.io/posts/20210303105204-powers_of_10_time_scales_in_user_experience/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210303105204-powers_of_10_time_scales_in_user_experience/</guid>
+      <description>Powers of 10: Time Scales in User Experience</description>
     </item>
     
     <item>
@@ -29,6 +60,16 @@
     </item>
     
     <item>
+      <title>直感性と応答時間</title>
+      <link>https://yasuhito.github.io/posts/20210303103710-%E7%9B%B4%E6%84%9F%E6%80%A7%E3%81%A8%E5%BF%9C%E7%AD%94%E6%99%82%E9%96%93/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210303103710-%E7%9B%B4%E6%84%9F%E6%80%A7%E3%81%A8%E5%BF%9C%E7%AD%94%E6%99%82%E9%96%93/</guid>
+      <description>ライブプログラミング環境の直感性は、応答時間に大きく依存する。ユーザビリティ研究で有名な Jakob Nielsen の記事 &amp;ldquo;Powers of 10: Time Scales in User Experience&amp;rdquo; によると、ユーザーが何かを操作してから結果が返るまでの応答時間と、ユーザが感じる直感性の関係には、次の一般的な指標がある。
+ 応答時間 0.1 秒未満 操作が直感的だと感じる。ユーザは自分の行動が直接画面上で何かを引き起したという「直接操作」という錯覚を感じ、操作に集中できる。 応答時間 0.1 〜 1 秒 直感性がやや失われる。ユーザはコンピュータ側で何らかの処理が発生していることに気付き、処理を待つ間に集中力を失いはじめる。 応答時間 1 秒以上 直感性がなくなる。ユーザは反応が遅すぎると感じ、操作をためらうようになる。また、目の前の問題への集中力を完全に失う。  つまり直感性のためには、0.1 秒以内の応答時間を達成する必要がある。</description>
+    </item>
+    
+    <item>
       <title>真っ白な画面</title>
       <link>https://yasuhito.github.io/posts/20210303084450-%E7%9C%9F%E3%81%A3%E7%99%BD%E3%81%AA%E7%94%BB%E9%9D%A2/</link>
       <pubDate>Wed, 03 Mar 2021 00:00:00 +0900</pubDate>
@@ -36,6 +77,17 @@
       <guid>https://yasuhito.github.io/posts/20210303084450-%E7%9C%9F%E3%81%A3%E7%99%BD%E3%81%AA%E7%94%BB%E9%9D%A2/</guid>
       <description>論文や小説などを書くときには何もないところから始めるという誤った考えかた。ほとんどの文章指南本や自己啓発本はこれを前提にしており、締切の間に合わせかたやその他心理的テクニックなどに終始している (やる気の出しかた、締切との向き合いかた etc.)。そうではなく、すべての知的努力はメモから始まることを理解していて、普段からスマートメモを取っていれば、そもそも真っ白な画面にぶつかることはない。
 参考文献  How to Take Smart Notes  </description>
+    </item>
+    
+    <item>
+      <title>量子コンピュータ</title>
+      <link>https://yasuhito.github.io/posts/20210303094727-%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%92%E3%83%A5%E3%83%BC%E3%82%BF/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://yasuhito.github.io/posts/20210303094727-%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%92%E3%83%A5%E3%83%BC%E3%82%BF/</guid>
+      <description>量子コンピュータは量子力学に基いた新しいタイプのコンピュータである。線形重ね合わせのできる量子ビットを量子ゲートで操作し、量子ビットを測定することで計算結果が得られる。特定の問題について従来のコンピュータより高速に計算できることが知られており、実際、フーリエ変換、素因数分解、データ探索、位相推定をはじめとした量子コンピュータ向けのアルゴリズムが多数存在する (Quantum Algorithm Zoo)。
+こうした線形重ね合わせや測定は量子コンピュータ特有の操作であり，従来の開発者にとっては直感的でないという問題がある．そのため，試行錯誤を容易に行える直感的な量子プログラミング環境の構築が重要である。
+参考文献  Quantum Computation and Quantum Information Thinking Too Classically: Research Topics in Human-Quantum Computer Interaction  </description>
     </item>
     
     <item>
