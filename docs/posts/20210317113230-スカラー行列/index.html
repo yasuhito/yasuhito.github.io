@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> スカラー行列 | Notes</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="スカラー行列" />
+<meta property="og:description" content="単位行列の定数倍をスカラー行列という。
+たとえば、
+\[\begin{bmatrix} \lambda &amp; 0 &amp; 0 \\\
+0 &amp; \lambda &amp; 0 \\\
+0 &amp; 0 &amp; \lambda \end{bmatrix}\]
+はスカラー行列である。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasuhito.github.io/posts/20210317113230-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E8%A1%8C%E5%88%97/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-17T00:00:00&#43;09:00" />
+<meta property="article:modified_time" content="2021-03-17T00:00:00&#43;09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="スカラー行列"/>
+<meta name="twitter:description" content="単位行列の定数倍をスカラー行列という。
+たとえば、
+\[\begin{bmatrix} \lambda &amp; 0 &amp; 0 \\\
+0 &amp; \lambda &amp; 0 \\\
+0 &amp; 0 &amp; \lambda \end{bmatrix}\]
+はスカラー行列である。"/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://yasuhito.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+        <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://yasuhito.github.io/posts/20210317101558-%E5%AF%BE%E8%A7%92%E8%A1%8C%E5%88%97/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&text=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&is_video=false&description=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97&body=Check out this article: https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&name=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97&description=%e5%8d%98%e4%bd%8d%e8%a1%8c%e5%88%97%e3%81%ae%e5%ae%9a%e6%95%b0%e5%80%8d%e3%82%92%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97%e3%81%a8%e3%81%84%e3%81%86%e3%80%82%0a%e3%81%9f%e3%81%a8%e3%81%88%e3%81%b0%e3%80%81%0a%5c%5b%5cbegin%7bbmatrix%7d%20%5clambda%20%26amp%3b%200%20%26amp%3b%200%20%5c%5c%5c%0a0%20%26amp%3b%20%5clambda%20%26amp%3b%200%20%5c%5c%5c%0a0%20%26amp%3b%200%20%26amp%3b%20%5clambda%20%5cend%7bbmatrix%7d%5c%5d%0a%e3%81%af%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97%e3%81%a7%e3%81%82%e3%82%8b%e3%80%82">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&t=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        スカラー行列
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-03-17 00:00:00 &#43;0900 JST" itemprop="datePublished">2021-03-17</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p>単位行列の定数倍をスカラー行列という。</p>
+<p>たとえば、</p>
+<p>\[\begin{bmatrix}
+\lambda &amp; 0 &amp; 0 \\\<br>
+0 &amp; \lambda &amp; 0 \\\<br>
+0 &amp; 0 &amp; \lambda
+\end{bmatrix}\]</p>
+<p>はスカラー行列である。</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+          <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&text=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&is_video=false&description=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97&body=Check out this article: https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&title=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&name=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97&description=%e5%8d%98%e4%bd%8d%e8%a1%8c%e5%88%97%e3%81%ae%e5%ae%9a%e6%95%b0%e5%80%8d%e3%82%92%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97%e3%81%a8%e3%81%84%e3%81%86%e3%80%82%0a%e3%81%9f%e3%81%a8%e3%81%88%e3%81%b0%e3%80%81%0a%5c%5b%5cbegin%7bbmatrix%7d%20%5clambda%20%26amp%3b%200%20%26amp%3b%200%20%5c%5c%5c%0a0%20%26amp%3b%20%5clambda%20%26amp%3b%200%20%5c%5c%5c%0a0%20%26amp%3b%200%20%26amp%3b%20%5clambda%20%5cend%7bbmatrix%7d%5c%5d%0a%e3%81%af%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97%e3%81%a7%e3%81%82%e3%82%8b%e3%80%82">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210317113230-%25E3%2582%25B9%25E3%2582%25AB%25E3%2583%25A9%25E3%2583%25BC%25E8%25A1%258C%25E5%2588%2597%2f&t=%e3%82%b9%e3%82%ab%e3%83%a9%e3%83%bc%e8%a1%8c%e5%88%97">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Yasuhito Takamiya 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+        <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=https://yasuhito.github.io/lib/font-awesome/css/all.min.css>
+<script src=https://yasuhito.github.io/lib/jquery/jquery.min.js></script>
+<script src=https://yasuhito.github.io/js/main.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>
