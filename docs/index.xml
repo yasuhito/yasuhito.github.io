@@ -267,7 +267,7 @@ Org-Mode での実装 現在は、TODO アイテムに writing タグを付け�
       <guid>https://yasuhito.github.io/posts/20210301112911-%E6%AD%A3%E5%89%87%E8%A1%8C%E5%88%97/</guid>
       <description>\(n\) 次正方行列 \(A\) について、
 \[AB = BA = I\]
-となる \(n\) 次正方行列 \(B\) が存在するとき、\(A\) は正方行列という。</description>
+となる \(n\) 次正方行列 \(B\) が存在するとき、\(A\) は正則行列という。</description>
     </item>
     
     <item>
