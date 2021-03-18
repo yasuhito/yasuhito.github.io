@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> never 型 | Notes</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="never 型" />
+<meta property="og:description" content="https://www.executeprogram.com/courses/typescript/lessons/never
+関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
+function throws() { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、これでは何が起こっているのか完全には把握できていません。
+void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
+幸いなことに、TypeScript にはそのための型があります: never です。
+function throws(): never { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は通常通りに例外を投げ続けますので、ここでの答えは上と同じです。
+function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number = throws(); // 結果 // Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yasuhito.github.io/posts/20210318110047-never%E5%9E%8B/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-18T00:00:00&#43;09:00" />
+<meta property="article:modified_time" content="2021-03-18T00:00:00&#43;09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="never 型"/>
+<meta name="twitter:description" content="https://www.executeprogram.com/courses/typescript/lessons/never
+関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
+function throws() { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、これでは何が起こっているのか完全には把握できていません。
+void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
+幸いなことに、TypeScript にはそのための型があります: never です。
+function throws(): never { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は通常通りに例外を投げ続けますので、ここでの答えは上と同じです。
+function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number = throws(); // 結果 // Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。"/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://yasuhito.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+        <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://yasuhito.github.io/posts/20210317113230-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E8%A1%8C%E5%88%97/">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="https://yasuhito.github.io/posts/20210318110047-never/">
+            <i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i>
+          </a>
+        </li>
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&text=never%20%e5%9e%8b">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&is_video=false&description=never%20%e5%9e%8b">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=never%20%e5%9e%8b&body=Check out this article: https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-stumbleupon " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-digg " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&name=never%20%e5%9e%8b&description=https%3a%2f%2fwww.executeprogram.com%2fcourses%2ftypescript%2flessons%2fnever%0a%e9%96%a2%e6%95%b0%e3%81%ae%e4%b8%ad%e3%81%ab%e3%81%af%e3%80%81%e6%b1%ba%e3%81%97%e3%81%a6%e6%88%bb%e3%82%89%e3%81%aa%e3%81%84%e3%82%82%e3%81%ae%e3%81%8c%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%e3%80%82%e4%be%8b%e3%81%88%e3%81%b0%e3%80%81%e5%b8%b8%e3%81%ab%e4%be%8b%e5%a4%96%e3%82%92%e7%99%ba%e7%94%9f%e3%81%95%e3%81%9b%e3%82%8b%e9%96%a2%e6%95%b0%e3%81%af%e6%b1%ba%e3%81%97%e3%81%a6%e6%88%bb%e3%82%8a%e3%81%be%e3%81%9b%e3%82%93%e3%80%82%0afunction%20throws%28%29%20%7b%20throw%20new%20Error%28%26%2339%3boh%20no%26%2339%3b%29%3b%20%7d%20throws%28%29%3b%20%2f%2f%20%e7%b5%90%e6%9e%9c%20%2f%2f%20Error%3a%20oh%20no%20%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%ae%e6%88%bb%e3%82%8a%e5%80%a4%e3%81%ae%e5%9e%8b%e3%81%af%e3%81%a9%e3%81%86%e3%81%99%e3%82%8c%e3%81%b0%e3%82%88%e3%81%84%e3%81%a7%e3%81%97%e3%82%87%e3%81%86%e3%81%8b%ef%bc%9f%20TypeScript%20%e3%81%af%e3%80%81%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%ae%e6%88%bb%e3%82%8a%e5%80%a4%e3%81%ae%e5%9e%8b%e3%82%92%20void%20%e3%81%a8%e6%8e%a8%e6%b8%ac%e3%81%97%e3%81%be%e3%81%99%e3%80%82%e3%81%97%e3%81%8b%e3%81%97%e3%80%81%e3%81%93%e3%82%8c%e3%81%a7%e3%81%af%e4%bd%95%e3%81%8c%e8%b5%b7%e3%81%93%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%81%8b%e5%ae%8c%e5%85%a8%e3%81%ab%e3%81%af%e6%8a%8a%e6%8f%a1%e3%81%a7%e3%81%8d%e3%81%a6%e3%81%84%e3%81%be%e3%81%9b%e3%82%93%e3%80%82%0avoid%20%e5%9e%8b%e3%81%af%e3%80%81%e4%bd%95%e3%82%89%e3%81%8b%e3%81%ae%e5%87%a6%e7%90%86%e3%82%92%e8%a1%8c%e3%81%84%e7%b5%82%e4%ba%86%e3%81%99%e3%82%8b%e3%81%8c%e3%80%81%e5%80%a4%e3%82%92%e8%bf%94%e3%81%95%e3%81%aa%e3%81%84%e9%96%a2%e6%95%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e5%9e%8b%e3%81%a7%e3%81%99%e3%80%82%e4%b8%8a%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%af%e3%81%93%e3%82%8c%e3%81%a8%e3%81%af%e7%95%b0%e3%81%aa%e3%82%8a%e3%80%81%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%82%92%e5%91%bc%e3%81%b3%e5%87%ba%e3%81%97%e3%81%a6%e3%82%82%e3%80%81%e3%81%9d%e3%81%ae%e5%be%8c%e3%81%ae%e3%82%b3%e3%83%bc%e3%83%89%e3%81%af%e5%85%a8%e3%81%8f%e5%ae%9f%e8%a1%8c%e3%81%95%e3%82%8c%e3%81%be%e3%81%9b%e3%82%93%e3%80%82%0a%e5%b9%b8%e3%81%84%e3%81%aa%e3%81%93%e3%81%a8%e3%81%ab%e3%80%81TypeScript%20%e3%81%ab%e3%81%af%e3%81%9d%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e5%9e%8b%e3%81%8c%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%3a%20never%20%e3%81%a7%e3%81%99%e3%80%82%0afunction%20throws%28%29%3a%20never%20%7b%20throw%20new%20Error%28%26%2339%3boh%20no%26%2339%3b%29%3b%20%7d%20throws%28%29%3b%20%2f%2f%20%e7%b5%90%e6%9e%9c%20%2f%2f%20Error%3a%20oh%20no%20never%20%e5%9e%8b%e3%81%af%e3%81%a1%e3%82%87%e3%81%a3%e3%81%a8%e4%b8%8d%e6%80%9d%e8%ad%b0%e3%81%a7%e3%81%99%e3%80%82%e4%bb%96%e3%81%ae%e3%81%a9%e3%81%ae%e5%9e%8b%e3%81%ab%e3%82%82%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e5%8f%af%e8%83%bd%e3%81%a7%e3%81%991%e3%80%82%e4%be%8b%e3%81%88%e3%81%b0%e3%80%81%20number%20%e5%9e%8b%e3%81%ae%e5%a4%89%e6%95%b0%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%81%be%e3%81%99%e3%80%82%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%af%e9%80%9a%e5%b8%b8%e9%80%9a%e3%82%8a%e3%81%ab%e4%be%8b%e5%a4%96%e3%82%92%e6%8a%95%e3%81%92%e7%b6%9a%e3%81%91%e3%81%be%e3%81%99%e3%81%ae%e3%81%a7%e3%80%81%e3%81%93%e3%81%93%e3%81%a7%e3%81%ae%e7%ad%94%e3%81%88%e3%81%af%e4%b8%8a%e3%81%a8%e5%90%8c%e3%81%98%e3%81%a7%e3%81%99%e3%80%82%0afunction%20throws%28%29%3a%20never%20%7b%20throw%20new%20Error%28%26%2339%3boh%20no%26%2339%3b%29%3b%20%7d%20const%20n%3a%20number%20%3d%20throws%28%29%3b%20%2f%2f%20%e7%b5%90%e6%9e%9c%20%2f%2f%20Error%3a%20oh%20no%20%e6%9c%80%e5%88%9d%e3%81%af%e3%80%81%20never%20%e3%81%8c%20any%20%e3%81%ae%e3%82%88%e3%81%86%e3%81%ab%e6%8c%af%e3%82%8b%e8%88%9e%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e8%a6%8b%e3%81%88%e3%81%be%e3%81%99%e3%80%82%e3%81%aa%e3%81%9c%e3%81%aa%e3%82%89%e3%80%81%20never%20%e3%82%92%20number%20%ef%bc%88%e3%81%be%e3%81%9f%e3%81%af%20string%20%e3%80%81%e3%81%9d%e3%81%ae%e4%bb%96%e4%bd%95%e3%81%a7%e3%82%82%ef%bc%89%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%8b%e3%82%89%e3%81%a7%e3%81%99%e3%80%82%e3%81%97%e3%81%8b%e3%81%97%e3%80%81%20any%20%e3%81%a8%e9%81%95%e3%81%a3%e3%81%a6%e3%80%81%e3%81%93%e3%82%8c%e3%81%af%e5%ae%89%e5%85%a8%e3%81%a7%e3%81%99%e3%80%82">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&t=never%20%e5%9e%8b">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <nav id="TableOfContents"></nav>
+    </div>
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        never 型
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2021-03-18 00:00:00 &#43;0900 JST" itemprop="datePublished">2021-03-18</time>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+
+  
+    <div class="content" itemprop="articleBody">
+      <p><a href="https://www.executeprogram.com/courses/typescript/lessons/never">https://www.executeprogram.com/courses/typescript/lessons/never</a></p>
+<p>関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws() {</span>
+  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
+}
+<span style="color:#a6e22e">throws</span>();
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// Error: oh no
+</span></code></pre></div><p>この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を <code>void</code> と推測します。しかし、これでは何が起こっているのか完全には把握できていません。</p>
+<p><code>void</code> 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。</p>
+<p>幸いなことに、TypeScript にはそのための型があります: <code>never</code> です。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
+}
+<span style="color:#a6e22e">throws</span>();
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// Error: oh no
+</span></code></pre></div><p><code>never</code> 型はちょっと不思議です。他のどの型にも割り当て可能です<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。例えば、 <code>number</code> 型の変数に割り当てることができます。この関数は通常通りに例外を投げ続けますので、ここでの答えは上と同じです。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
+}
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">throws</span>();
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// Error: oh no
+</span></code></pre></div><p>最初は、 <code>never</code> が <code>any</code> のように振る舞っているように見えます。なぜなら、 <code>never</code> を <code>number</code> （または <code>string</code> 、その他何でも）に割り当てることができるからです。しかし、 <code>any</code> と違って、これは安全です。</p>
+<p>コンパイラは <code>throws</code> 関数が決して戻らないことを知っているので、変数 <code>n</code> には何も代入されないことも知っています。型は実行時にデータが正しいことを保証するために存在します。もし、実行時に代入が実際に行われることがなく、コンパイラが事前にそのことを確実に知っているのであれば、型は重要ではありません。</p>
+<p>しかし、 <code>never</code> に他の型を割り当てることはできません。そうすると、 <code>never</code> のルールである「実際に値を保持することはない」を破ってしまいます。 <code>never</code> に何らかの値を代入しようとすると、常に型エラーになります。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aNever</span>: <span style="color:#66d9ef">never</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#a6e22e">aNever</span>;
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
+</span></code></pre></div><p>絶対に <code>never</code> には何も割り当てられません。 <code>any</code> ですらも!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">anAny</span>: <span style="color:#66d9ef">any</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aNever</span>: <span style="color:#66d9ef">never</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">anAny</span>;
+<span style="color:#a6e22e">aNever</span>;
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// type error: Type &#39;any&#39; is not assignable to type &#39;never&#39;.
+</span></code></pre></div><p>関数が常に例外をスローするが、明示的な戻り値の型を持たない場合、TypeScript は戻り値の型を <code>void</code> と推測します。これは悪いことではありませんが、明示的に <code>never</code> とマークしたほうが、TypeScript にもう少し多くの情報を与えることができます。</p>
+<p>例えば、ある関数が <code>never</code> を返す別の関数を呼び出したとします。TypeScript は外側の関数の型も <code>never</code> と正しく推論します。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
+}
+
+<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">alsoThrows() {</span>
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">throws</span>();
+}
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">alsoThrows</span>();
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// Error: oh no
+</span></code></pre></div><p>このコードがコンパイルされたことで、 <code>alsoThrows</code> の戻り値の型が <code>never</code> であることがわかりました。もし戻り値の型が <code>void</code> であれば、数値に割り当てることはできません。</p>
+<p>次の関数の戻り値の型を <code>never</code> に変更します。そうすると型エラーが発生します。なぜなら、この関数は戻ります。TypeScript は <code>never</code> 関数が値を返すことを許可しません。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">number</span> {
+  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">5</span>;
+}
+</code></pre></div><p>変更後</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">5</span>;
+}
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
+</span></code></pre></div><p>TypeScript では、 <code>never</code> 関数が条件付きで戻ることもできません（例: <code>if</code> の中）。関数が値を返す方法があるならば、その戻り値の型は <code>never</code> であってはならないのです。(この関数は型エラーを発生させます)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">forcePositive</span>(<span style="color:#a6e22e">x</span>: <span style="color:#66d9ef">number</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span>;
+  } <span style="color:#66d9ef">else</span> {
+    <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Number was negative!&#39;</span>);
+  }
+}
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
+</span></code></pre></div><p><code>never</code> 型が適用されるのは、例外を発生させる関数だけではありません。例えば、無限ループを持つ関数は、 <code>never</code> 型の戻り値を持つことができます（そうすべきです！）。</p>
+<p>残念ながら、ここではその動く実例を示すことはできません。なぜなら、それは決して終了しないからです。しかし、その逆の例を示すことはできます。つまり、無限ループのように見える関数で、絶対に終わらないと主張していますが、時々戻ってくることがあるようなものです。これは型エラーです。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
+    <span style="color:#66d9ef">if</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.000001</span>) {
+      <span style="color:#66d9ef">break</span>;
+    }
+  }
+}
+
+<span style="color:#75715e">// 結果
+</span><span style="color:#75715e">// type error: A function returning &#39;never&#39; cannot have a reachable end point.
+</span></code></pre></div><p>最後に、 <code>void</code> と <code>never</code> について簡単にまとめておきます。</p>
+<p><code>void</code> は、関数が最終的に終了して戻ることを意味します。ただ、何の値も返さないということです。関数には <code>return</code> 文がないか、または <code>return</code> 文の後に値がない状態になっています。 <code>void</code> 型は、値がないことを表すので、何にも代入できません。</p>
+<p><code>never</code> は、関数が決して正常に終了しないことを意味します。例外が発生したり、無限ループに陥ったりするかもしれません。Node のようなサーバーサイドのシステムであれば、 <code>process.exit()</code> を呼び出してプロセスを終了させるかもしれません。いずれにしても、実行が関数の最後に到達することはありません。 <code>never</code> 型は何にでも代入可能です。なぜならコンパイラは、実行時には実際には代入が行われないことを知っているからです。</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><code>never</code> はすべての型のサブタイプ (派生型) であり、これをボトム型 (bottom type) と呼ぶ。つまり、他のすべての型に割り当てることができ、 <code>never</code> 型の値はどこでも安全に使えるという意味である。理論的な意味としては、ボトム型は値を持たない型としてとらえることができ、常に偽である数学的命題に相当する。 <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+          <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents"></nav>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&text=never%20%e5%9e%8b">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&is_video=false&description=never%20%e5%9e%8b">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=never%20%e5%9e%8b&body=Check out this article: https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://digg.com/submit?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&title=never%20%e5%9e%8b">
+      <i class="fab fa-digg fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&name=never%20%e5%9e%8b&description=https%3a%2f%2fwww.executeprogram.com%2fcourses%2ftypescript%2flessons%2fnever%0a%e9%96%a2%e6%95%b0%e3%81%ae%e4%b8%ad%e3%81%ab%e3%81%af%e3%80%81%e6%b1%ba%e3%81%97%e3%81%a6%e6%88%bb%e3%82%89%e3%81%aa%e3%81%84%e3%82%82%e3%81%ae%e3%81%8c%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%e3%80%82%e4%be%8b%e3%81%88%e3%81%b0%e3%80%81%e5%b8%b8%e3%81%ab%e4%be%8b%e5%a4%96%e3%82%92%e7%99%ba%e7%94%9f%e3%81%95%e3%81%9b%e3%82%8b%e9%96%a2%e6%95%b0%e3%81%af%e6%b1%ba%e3%81%97%e3%81%a6%e6%88%bb%e3%82%8a%e3%81%be%e3%81%9b%e3%82%93%e3%80%82%0afunction%20throws%28%29%20%7b%20throw%20new%20Error%28%26%2339%3boh%20no%26%2339%3b%29%3b%20%7d%20throws%28%29%3b%20%2f%2f%20%e7%b5%90%e6%9e%9c%20%2f%2f%20Error%3a%20oh%20no%20%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%ae%e6%88%bb%e3%82%8a%e5%80%a4%e3%81%ae%e5%9e%8b%e3%81%af%e3%81%a9%e3%81%86%e3%81%99%e3%82%8c%e3%81%b0%e3%82%88%e3%81%84%e3%81%a7%e3%81%97%e3%82%87%e3%81%86%e3%81%8b%ef%bc%9f%20TypeScript%20%e3%81%af%e3%80%81%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%ae%e6%88%bb%e3%82%8a%e5%80%a4%e3%81%ae%e5%9e%8b%e3%82%92%20void%20%e3%81%a8%e6%8e%a8%e6%b8%ac%e3%81%97%e3%81%be%e3%81%99%e3%80%82%e3%81%97%e3%81%8b%e3%81%97%e3%80%81%e3%81%93%e3%82%8c%e3%81%a7%e3%81%af%e4%bd%95%e3%81%8c%e8%b5%b7%e3%81%93%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%81%ae%e3%81%8b%e5%ae%8c%e5%85%a8%e3%81%ab%e3%81%af%e6%8a%8a%e6%8f%a1%e3%81%a7%e3%81%8d%e3%81%a6%e3%81%84%e3%81%be%e3%81%9b%e3%82%93%e3%80%82%0avoid%20%e5%9e%8b%e3%81%af%e3%80%81%e4%bd%95%e3%82%89%e3%81%8b%e3%81%ae%e5%87%a6%e7%90%86%e3%82%92%e8%a1%8c%e3%81%84%e7%b5%82%e4%ba%86%e3%81%99%e3%82%8b%e3%81%8c%e3%80%81%e5%80%a4%e3%82%92%e8%bf%94%e3%81%95%e3%81%aa%e3%81%84%e9%96%a2%e6%95%b0%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e5%9e%8b%e3%81%a7%e3%81%99%e3%80%82%e4%b8%8a%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%af%e3%81%93%e3%82%8c%e3%81%a8%e3%81%af%e7%95%b0%e3%81%aa%e3%82%8a%e3%80%81%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%82%92%e5%91%bc%e3%81%b3%e5%87%ba%e3%81%97%e3%81%a6%e3%82%82%e3%80%81%e3%81%9d%e3%81%ae%e5%be%8c%e3%81%ae%e3%82%b3%e3%83%bc%e3%83%89%e3%81%af%e5%85%a8%e3%81%8f%e5%ae%9f%e8%a1%8c%e3%81%95%e3%82%8c%e3%81%be%e3%81%9b%e3%82%93%e3%80%82%0a%e5%b9%b8%e3%81%84%e3%81%aa%e3%81%93%e3%81%a8%e3%81%ab%e3%80%81TypeScript%20%e3%81%ab%e3%81%af%e3%81%9d%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e5%9e%8b%e3%81%8c%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%3a%20never%20%e3%81%a7%e3%81%99%e3%80%82%0afunction%20throws%28%29%3a%20never%20%7b%20throw%20new%20Error%28%26%2339%3boh%20no%26%2339%3b%29%3b%20%7d%20throws%28%29%3b%20%2f%2f%20%e7%b5%90%e6%9e%9c%20%2f%2f%20Error%3a%20oh%20no%20never%20%e5%9e%8b%e3%81%af%e3%81%a1%e3%82%87%e3%81%a3%e3%81%a8%e4%b8%8d%e6%80%9d%e8%ad%b0%e3%81%a7%e3%81%99%e3%80%82%e4%bb%96%e3%81%ae%e3%81%a9%e3%81%ae%e5%9e%8b%e3%81%ab%e3%82%82%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e5%8f%af%e8%83%bd%e3%81%a7%e3%81%991%e3%80%82%e4%be%8b%e3%81%88%e3%81%b0%e3%80%81%20number%20%e5%9e%8b%e3%81%ae%e5%a4%89%e6%95%b0%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%81%be%e3%81%99%e3%80%82%e3%81%93%e3%81%ae%e9%96%a2%e6%95%b0%e3%81%af%e9%80%9a%e5%b8%b8%e9%80%9a%e3%82%8a%e3%81%ab%e4%be%8b%e5%a4%96%e3%82%92%e6%8a%95%e3%81%92%e7%b6%9a%e3%81%91%e3%81%be%e3%81%99%e3%81%ae%e3%81%a7%e3%80%81%e3%81%93%e3%81%93%e3%81%a7%e3%81%ae%e7%ad%94%e3%81%88%e3%81%af%e4%b8%8a%e3%81%a8%e5%90%8c%e3%81%98%e3%81%a7%e3%81%99%e3%80%82%0afunction%20throws%28%29%3a%20never%20%7b%20throw%20new%20Error%28%26%2339%3boh%20no%26%2339%3b%29%3b%20%7d%20const%20n%3a%20number%20%3d%20throws%28%29%3b%20%2f%2f%20%e7%b5%90%e6%9e%9c%20%2f%2f%20Error%3a%20oh%20no%20%e6%9c%80%e5%88%9d%e3%81%af%e3%80%81%20never%20%e3%81%8c%20any%20%e3%81%ae%e3%82%88%e3%81%86%e3%81%ab%e6%8c%af%e3%82%8b%e8%88%9e%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b%e3%82%88%e3%81%86%e3%81%ab%e8%a6%8b%e3%81%88%e3%81%be%e3%81%99%e3%80%82%e3%81%aa%e3%81%9c%e3%81%aa%e3%82%89%e3%80%81%20never%20%e3%82%92%20number%20%ef%bc%88%e3%81%be%e3%81%9f%e3%81%af%20string%20%e3%80%81%e3%81%9d%e3%81%ae%e4%bb%96%e4%bd%95%e3%81%a7%e3%82%82%ef%bc%89%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b%e3%81%93%e3%81%a8%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%8b%e3%82%89%e3%81%a7%e3%81%99%e3%80%82%e3%81%97%e3%81%8b%e3%81%97%e3%80%81%20any%20%e3%81%a8%e9%81%95%e3%81%a3%e3%81%a6%e3%80%81%e3%81%93%e3%82%8c%e3%81%af%e5%ae%89%e5%85%a8%e3%81%a7%e3%81%99%e3%80%82">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fyasuhito.github.io%2fposts%2f20210318110047-never%25E5%259E%258B%2f&t=never%20%e5%9e%8b">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2021  Yasuhito Takamiya 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="https://yasuhito.github.io/">Home</a></li>
+         
+        <li><a href="https://yasuhito.github.io/posts/">Posts</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=https://yasuhito.github.io/lib/font-awesome/css/all.min.css>
+<script src=https://yasuhito.github.io/lib/jquery/jquery.min.js></script>
+<script src=https://yasuhito.github.io/js/main.js></script>
+
+
+  
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+</html>
