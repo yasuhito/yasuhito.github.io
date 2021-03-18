@@ -19,8 +19,8 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="never"/>
-<meta name="twitter:description" content="https://www.executeprogram.com/courses/typescript/lessons/never
-関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
+<meta name="twitter:description" content="プログラミング学習の SRS について、Execute Program のようにユーザが答を入力するのではなく Anki のようにユーザが自ら答合わせするタイプのプロンプトを構築できるかどうか実験。試しに、Execute Program のレッスン never を元に Anki カードを起こしてみる。
+ 関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
 function throws() { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それでは何が起こっているのか完全には把握できていません。
 void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
 幸いなことに、TypeScript にはそのための型があります: never です。
@@ -103,7 +103,8 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number =
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="https://www.executeprogram.com/courses/typescript/lessons/never">https://www.executeprogram.com/courses/typescript/lessons/never</a></p>
+  <p>プログラミング学習の SRS について、<a href="/post/20210302155222-execute_program/">Execute Program</a> のようにユーザが答を入力するのではなく Anki のようにユーザが自ら答合わせするタイプのプロンプトを構築できるかどうか実験。試しに、Execute Program のレッスン <a href="https://www.executeprogram.com/courses/typescript/lessons/never">never</a> を元に Anki カードを起こしてみる。</p>
+<hr>
 <p>関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws() {</span>
   <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);

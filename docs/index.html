@@ -102,8 +102,8 @@
   </a>
   <div class="post-entry">
     
-      <p>https://www.executeprogram.com/courses/typescript/lessons/never
-関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
+      <p>プログラミング学習の SRS について、Execute Program のようにユーザが答を入力するのではなく Anki のようにユーザが自ら答合わせするタイプのプロンプトを構築できるかどうか実験。試しに、Execute Program のレッスン never を元に Anki カードを起こしてみる。
+ 関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
 function throws() { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それでは何が起こっているのか完全には把握できていません。
 void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
 幸いなことに、TypeScript にはそのための型があります: never です。
