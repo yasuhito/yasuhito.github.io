@@ -1,22 +1,21 @@
+theme = "harbor"
 baseURL = "https://yasuhito.github.io/"
-languageCode = "ja"
 title = "Notes"
-copyright = "Yasuhito Takamiya"
-theme = "cactus"
-disableHugoGeneratorInject = true
-enableRobotsTXT = true
-publishDir = "docs"
-canonifyurls = true
+paginate = 10
+languageCode = "ja"
+DefaultContentLanguage = "ja"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
+[Author]
+  name = "Yasuhito Takamiya"
 
-[params]
-  mathjax = true
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3

@@ -1,0 +1,333 @@
+[
+    
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210318110047-never/",
+                "title": "never",
+                "section": "post",
+                "date" : "2021.03.18",
+                "body": "https://www.executeprogram.com/courses/typescript/lessons/never\n関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。\nfunction throws() { throw new Error(\u0026#39;oh no\u0026#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それでは何が起こっているのか完全には把握できていません。\nvoid 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。\n幸いなことに、TypeScript にはそのための型があります: never です。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } throws(); // 結果 // Error: oh no never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は今まで通りに例外を投げますので、結果は上と同じです。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } const n: number = throws(); // 結果 // Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。\nコンパイラは throws 関数が決して戻らないことを知っているので、変数 n には何も代入されないことも知っています。型は実行時にデータが正しいことを保証するために存在します。もし、実行時に代入が実際に行われることがなく、コンパイラが事前にそのことを確実に知っているのであれば、型は重要ではありません。\nしかし、 never に他の型を割り当てることはできません。そうすると、 never のルールである「実際に値を保持することはない」を破ってしまいます。 never に何らかの値を代入しようとすると、常に型エラーになります。\nconst aNever: never = 5; aNever; // 結果 // type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. 絶対に never には何も割り当てられません。 any ですらも!\nconst anAny: any = 5; const aNever: never = anAny; aNever; // 結果 // type error: Type \u0026#39;any\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. 関数が常に例外をスローするが、明示的な戻り値の型を持たない場合、TypeScript は戻り値の型を void と推測します。これは悪いことではありませんが、明示的に never とマークしたほうが、TypeScript にもう少し多くの情報を与えることができます。\n例えば、ある関数が never を返す別の関数を呼び出したとします。TypeScript は外側の関数の型も never と正しく推論します。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } function alsoThrows() { return throws(); } const n: number = alsoThrows(); // 結果 // Error: oh no このコードがコンパイルされたことで、 alsoThrows の戻り値の型が never であることがわかりました。もし戻り値の型が void であれば、数値に割り当てることはできません。\n次の関数の戻り値の型を never に変更します。そうすると型エラーが発生します。なぜなら、この関数は戻ります。TypeScript は never 関数が値を返すことを許可しません。\nfunction f(): number { return 5; } 変更後\nfunction f(): never { return 5; } // 結果 // type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. TypeScript では、 never 関数が条件付きで戻ることもできません（例: if の中）。関数が値を返す方法があるならば、その戻り値の型は never であってはならないのです。(この関数は型エラーを発生させます)\nfunction forcePositive(x: number): never { if (x \u0026gt; 0) { return x; } else { throw new Error(\u0026#39;Number was negative!\u0026#39;); } } // 結果 // type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. never 型が適用されるのは、例外を発生させる関数だけではありません。例えば、無限ループを持つ関数は、 never 型の戻り値を持つことができます（そうすべきです！）。\n残念ながら、ここではその動く実例を示すことはできません。なぜなら、それは決して終了しないからです。しかし、その逆の例を示すことはできます。つまり、無限ループのように見える関数で、絶対に終わらないと主張していますが、時々戻ってくることがあるようなものです。これは型エラーです。\nfunction f(): never { while (true) { if (Math.random() \u0026lt; 0.000001) { break; } } } // 結果 // type error: A function returning \u0026#39;never\u0026#39; cannot have a reachable end point. 最後に、 void と never について簡単にまとめておきます。\nvoid は、関数が最終的に終了して戻ることを意味します。ただ、何の値も返さないということです。関数には return 文がないか、または return 文の後に値がない状態になっています。 void 型は、値がないことを表すので、何にも代入できません。\nnever は、関数が決して正常に終了しないことを意味します。例外が発生したり、無限ループに陥ったりするかもしれません。Node のようなサーバーサイドのシステムであれば、 process.exit() を呼び出してプロセスを終了させるかもしれません。いずれにしても、実行が関数の最後に到達することはありません。 never 型は何にでも代入可能です。なぜならコンパイラは、実行時には実際には代入が行われないことを知っているからです。\n  never はすべての型のサブタイプ (派生型) であり、これをボトム型 (bottom type) と呼ぶ。つまり、他のすべての型に割り当てることができ、 never 型の値はどこでも安全に使えるという意味である。理論的な意味としては、ボトム型は値を持たない型としてとらえることができ、常に偽である数学的命題に相当する。 \u0026#x21a9;\u0026#xfe0e;\n   "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210317113230-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E8%A1%8C%E5%88%97/",
+                "title": "スカラー行列",
+                "section": "post",
+                "date" : "2021.03.17",
+                "body": "単位行列の定数倍をスカラー行列という。\nたとえば、\n\\[\\begin{bmatrix} \\lambda \u0026amp; 0 \u0026amp; 0 \\\\\\\n0 \u0026amp; \\lambda \u0026amp; 0 \\\\\\\n0 \u0026amp; 0 \u0026amp; \\lambda \\end{bmatrix}\\]\nはスカラー行列である。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210317101558-%E5%AF%BE%E8%A7%92%E8%A1%8C%E5%88%97/",
+                "title": "対角行列",
+                "section": "post",
+                "date" : "2021.03.17",
+                "body": "\\(n\\) 次正方行列で、その対角線上にない成分がすべて \\(0\\) である行列のこと。\n\\[\\begin{bmatrix} 1 \u0026amp; 0 \u0026amp; 0 \\\\\\\n0 \u0026amp; 2 \u0026amp; 0 \\\\\\\n0 \u0026amp; 0 \u0026amp; -1 \\end{bmatrix}\\]\n注意点として、行列の対角線は右下がりのもののみを言う。右上がりのものは対角線とは呼ばない。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210317105154-%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97/",
+                "title": "正方行列",
+                "section": "post",
+                "date" : "2021.03.17",
+                "body": "\\(m \\times m\\) 行列は正方形状に成分が並ぶので \\(m\\) 次正方行列と呼ぶ。\n\\(2\\) 次正方行列の例\n\\[\\begin{bmatrix} 1 \u0026amp; 2 \\\\\\\n2 \u0026amp; -1 \\end{bmatrix}\\]\n\\(3\\) 次正方行列の例\n\\[\\begin{bmatrix} -1 \u0026amp; 2 \u0026amp; 3 \\\\\\\n1 \u0026amp; 1 \u0026amp; 0 \\\\\\\n2 \u0026amp; 0 \u0026amp; 1 \\end{bmatrix}\\]\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210311082809-%E3%83%86%E3%82%A3%E3%83%A9%E3%83%83%E3%82%AF%E8%A8%98%E6%B3%95/",
+                "title": "ディラック記法",
+                "section": "post",
+                "date" : "2021.03.11",
+                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\vert{}\\psi\\rangle\\)   ディラックのブラ (bra) \\(\\langle\\pi\\vert{}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n    記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる。   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役、もしくは随伴。\\(A^{\\dagger} = (A^T)^{\\ast}\\)   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい。    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418 \u0026lt;10.1017/S0305004100021162\u0026gt;  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210223135036-org_mode/",
+                "title": "Org Mode",
+                "section": "post",
+                "date" : "2021.03.10",
+                "body": "メモや論文など書くこと全般に使える Emacs のメジャーモード。Org-Roam を使うと、Roam Research 的なスマートノートを作ることができる。このノート上には Anki のカードも定義できるので、スマートノートと SRS をスムーズに組み合わせることができる。そのほか、文芸的プログラミングをサポートしているので、Emacs の設定ファイルを Org のドキュメントから生成できる。\nOrg mode for Emacs\nOrg のインライン記法  強調 **強調** 斜体 /斜体/ 下線 _下線_ 打ち消し +打ち消し+ verbatim =verbatim= inline code ~inline code~  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/",
+                "title": "文芸的プログラミング",
+                "section": "post",
+                "date" : "2021.03.10",
+                "body": "Donald E. Knuth が提唱したプログラミング手法の一つで、テキストファイル内にドキュメントとコードを埋めこみ、これから完全なドキュメントとコンパイル可能なソースコードを生成する方法。驚くことに TeX はこの方法で書かれていて、生成されたドキュメントは本として出版されている (TeX: The Program)。\nTeX 以外に実用的なソフトウェアで文芸的プログラミングを採用した例は見当たらないが、最近では Org ファイルから Emacs や Bash などの設定ドキュメントとドットファイルを生成するという限定的な用途で文芸的プログラミングが使われている。\n極端な例では、Org-Mode 内で論文を書く際に、本文だけでなくテーブルやグラフなど論文の構成要素をすべて生成するという Reproducible Research という手法もある。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210228111127-how_to_take_smart_notes/",
+                "title": "How to Take Smart Notes",
+                "section": "post",
+                "date" : "2021.03.03",
+                "body": " How to Take Smart Notes (Scribd) How to Take Smart Notes (Amazon)  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210303105204-powers_of_10_time_scales_in_user_experience/",
+                "title": "Powers of 10: Time Scales in User Experience",
+                "section": "post",
+                "date" : "2021.03.03",
+                "body": "Powers of 10: Time Scales in User Experience\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210303082924-%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E7%9F%A5%E7%9A%84%E5%8A%AA%E5%8A%9B%E3%81%AF%E3%83%A1%E3%83%A2%E3%81%8B%E3%82%89/",
+                "title": "すべての知的努力はメモから",
+                "section": "post",
+                "date" : "2021.03.03",
+                "body": "学習、勉強、研究、小説などあらゆる種類の知的活動や創作は、すべてメモを取ることから始まる。書くことについての話題となると、論文や小説といった「書きかけの作品」をいかに完成させるかという議論になりやすい。しかし、これらは「書く」という活動から見ればどれも例外的な瞬間にすぎない。書くことの大部分を占めるのは日常的なメモ書きであり、論文や小説などといった長い作品はメモを書く作業の積み重ねによって生まれる。\n文章を書くプロセスは、真っ白な画面よりもはるかに早い段階から始まっていて、実際に議論を書き留めることは、全体のプロセスの中では最小の部分である。\n参考文献  How to Take Smart Notes  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210303103710-%E7%9B%B4%E6%84%9F%E6%80%A7%E3%81%A8%E5%BF%9C%E7%AD%94%E6%99%82%E9%96%93/",
+                "title": "直感性と応答時間",
+                "section": "post",
+                "date" : "2021.03.03",
+                "body": "ライブプログラミング環境の直感性は、応答時間に大きく依存する。ユーザビリティ研究で有名な Jakob Nielsen の記事 \u0026ldquo;Powers of 10: Time Scales in User Experience\u0026rdquo; によると、ユーザーが何かを操作してから結果が返るまでの応答時間と、ユーザが感じる直感性の関係には、次の一般的な指標がある。\n 応答時間 0.1 秒未満 操作が直感的だと感じる。ユーザは自分の行動が直接画面上で何かを引き起したという「直接操作」という錯覚を感じ、操作に集中できる。 応答時間 0.1 〜 1 秒 直感性がやや失われる。ユーザはコンピュータ側で何らかの処理が発生していることに気付き、処理を待つ間に集中力を失いはじめる。 応答時間 1 秒以上 直感性がなくなる。ユーザは反応が遅すぎると感じ、操作をためらうようになる。また、目の前の問題への集中力を完全に失う。  つまり直感性のためには、0.1 秒以内の応答時間を達成する必要がある。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210303084450-%E7%9C%9F%E3%81%A3%E7%99%BD%E3%81%AA%E7%94%BB%E9%9D%A2/",
+                "title": "真っ白な画面",
+                "section": "post",
+                "date" : "2021.03.03",
+                "body": "論文や小説などを書くときには何もないところから始めるという誤った考えかた。ほとんどの文章指南本や自己啓発本はこれを前提にしており、締切の間に合わせかたやその他心理的テクニックなどに終始している (やる気の出しかた、締切との向き合いかた etc.)。そうではなく、すべての知的努力はメモから始まることを理解していて、普段からスマートメモを取っていれば、そもそも真っ白な画面にぶつかることはない。\n参考文献  How to Take Smart Notes  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210303094727-%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%92%E3%83%A5%E3%83%BC%E3%82%BF/",
+                "title": "量子コンピュータ",
+                "section": "post",
+                "date" : "2021.03.03",
+                "body": "量子コンピュータは量子力学に基いた新しいタイプのコンピュータである。線形重ね合わせのできる量子ビットを量子ゲートで操作し、量子ビットを測定することで計算結果が得られる。特定の問題について従来のコンピュータより高速に計算できることが知られており、実際、フーリエ変換、素因数分解、データ探索、位相推定をはじめとした量子コンピュータ向けのアルゴリズムが多数存在する (Quantum Algorithm Zoo)。\nこうした線形重ね合わせや測定は量子コンピュータ特有の操作であり，従来の開発者にとっては直感的でないという問題がある．そのため，試行錯誤を容易に行える直感的な量子プログラミング環境の構築が重要である。\n参考文献  Quantum Computation and Quantum Information Thinking Too Classically: Research Topics in Human-Quantum Computer Interaction  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302131638-andy_matuschak/",
+                "title": "Andy Matuschak",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "Andyʼs working notes\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302115454-api_%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/",
+                "title": "API としてのタイトル",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "エバーグリーンノートのタイトル付けは API 設計によく似ている。\n 単機能にする (例: Object#inspect) キャッチーな名詞にする (例: \u0026ldquo;囚人のジレンマ\u0026rdquo;、\u0026ldquo;割れ窓理論\u0026rdquo;) 一発で決まらない時は、時間とともに改善 (リファクタリング)  参考文献  Evergreen note titles are like APIs  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302122859-bret_victor/",
+                "title": "Bret Victor",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": " 本人のサイト  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302155222-execute_program/",
+                "title": "Execute Program",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "https://www.executeprogram.com/\nSRS で JavaScript などの API を学習できるサービス。SRS が外国語学習だけでなく API の習得にも有効なのは、Michael Nielsen の Augmenting Long-term Memory でも実証されていることである。\nビジネス的には、SRS は長期 (数年〜) に渡って使うものなので、こういうサービスは個人利用であっても契約期間が長くなる → 収益化しやすい、と予想できる。\n使ってみた感想として、回答では必ずキー入力を求められるので、Anki のようにサクサク進められず、レビューセッションを始める前の心理的バリアが少し高いと感じた。キー入力が必要な要因として、問題と回答がアトミックな質問と答になっていないことが考えられる。\nキー入力を使わない SRS でプログラミング API を習得することは可能だろうか？ Execute Program の問題を SRS に起こし、自分を実験台にして確認してみる。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302123555-%E3%82%A2%E3%83%88%E3%83%9F%E3%83%83%E3%82%AF%E3%81%AA%E8%B3%AA%E5%95%8F%E3%81%A8%E7%AD%94/",
+                "title": "アトミックな質問と答",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "Anki のカードを作るときは、問題と答がたった一つの概念を表すようになるまで、つまりそれ以上分けられない単位 (=アトミック) まで分解する。\nたとえば次の Anki カードがあった場合、\n 問題: Unix でリンク名からファイル名へのソフトリンクを作るには? 答: ln -s ファイル名 リンク名  これは次の 2 つのカードに分割できる:\n  問題: Unix ソフトリンクを作るための基本的コマンドとオプションは?\n  答: ln -s\n  問題: Unix ソフトリンクを作る時、リンク名とファイル名を指定する順番は?\n  答: ファイル名 リンク名\n  このようにすると、覚えやすくなり正解率も上がる。答も短くなるため、レビューがテンポ良く進むという利点もある。\nもし間違えた場合でも、ミスをした箇所は明らかなため次からは間違えにくい。一方で、2 つ以上の要素が入ったアトミックでない問題で間違えた場合、ミスをした箇所がはっきりしないため、何度も間違えることが多い。\n日常的に問題をアトミックに分割する癖を付けておくことは、学んだ事柄ひとつひとつを鋭く結晶化してくれる。手間はかかるが、それだけの価値はある。\n注: アトミックな問題に分割した時、元のカードも取っておいたほうが良い。一つ上のレベルの問題として使える場合があるから。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302115056-%E3%82%A2%E3%83%88%E3%83%9F%E3%83%83%E3%82%AF_%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB/",
+                "title": "アトミック・タイトル",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "エバーグリーンノートのタイトルは、それ以上分割できない概念を名詞で表したもの (例: \u0026ldquo;囚人のジレンマ\u0026rdquo;、\u0026ldquo;割れ窓理論\u0026rdquo; etc.) にする。\nこれをアトミック・タイトルと呼ぶ。アトミック・タイトルはノート内からリンクを貼りやすく、覚えやすい。また一言で言えるので、複雑な概念を表す \u0026ldquo;ハンドル\u0026rdquo; として便利 (API としてのタイトル)。\nタイトルがアトミック・タイトルかどうかは、少ない語の名詞になっているかどうかが良い判断基準になると思う。\n参考文献  Evergreen notes should be atomic  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302120815-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E8%A1%8C%E5%88%97/",
+                "title": "ユニタリ行列",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "ユニタリ行列は \\(A^{\\dagger} = A^{-1}\\) を満たす行列 \\(A\\)\n直交行列 \\({}^tA = A^{-1}\\) の複素数版。\n参考文献  正規行列の対角化可能性  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302145631-%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF_%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%83%E3%82%AF%E3%82%B9/",
+                "title": "ライティング・インボックス",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "保存版メモの作業場所としてライティング・インボックスを持っておく。一時的なメモや書きかけのメモは何でも、このインボックスにつっこむ。書きかけがすべてが入っているので、ライティング・インボックスは今までの洞察を蓄積した容れ物だと考えることができる。\nこのインボックスを漁ることで、次にとりかかるメモを決め、いつでも続きを書きはじめることができる。インボックスの中で保存版メモを仕上げ、アトミック・タイトルをつけ保存版メモとして保存する。つまらないメモはアーカイブする。\nOrg-Mode での実装 現在は、TODO アイテムに writing タグを付けることでライティング・インボックスを実装している。 練りあげてできあがった保存版メモは、Org-Roam の独立したノートを作ってそこに保存する。\n参考文献  My morning writing practice by Andy Matuschak  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302122628-%E3%83%A9%E3%82%A4%E3%83%95%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/",
+                "title": "ライブプログラミング",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "ライブプログラミングとは、プログラムの実行時の情報を参照しながらコーディングできるようにするインタラクションデザインの一種。\n従来の開発環境では、プログラマはソースコード (死んだ状態) を編集しながら実行時 (生きた状態) を頭の中でエミュレーションする必要があった。一方ライブプログラミングでは、開発環境が提示する生きたプログラムの状態を確認しながらソースコードを直感的に編集できる。\nライブプログラミング環境は、頭の中だけでは想像しにくい、抽象的な記号操作をメインとするシステムの理解や開発に有効である。\n Bret Victor らの Interactive Exploration of a Dynamic System では、微分方程式の初期値やパラメータを変えながら結果をインタラクティブに確認できる。 機械学習分野でユーザの多い Jupyter Notebook は文芸的プログラミングとライブプログラミングの組み合わせである。ドキュメント内に埋め込んだソースコードの実行結果をグラフなどに可視化することで，機械学習アルゴリズムの直感的理解を支援する。 量子コンピュータも非常に複雑なシステムの一種であり、直感的には理解しづらい量子プログラミングのためのライブプログラミング環境がいくつか提案されてきた (Quirk, Davy Wybiral の量子回路シミュレータ)。  このように、ライブプログラミングは具体的なモデリング、シミュレーション、可視化をベースにした新しい実践の形を提供する。\n参考文献  Live Programming について (LIVE 2017 で基調講演します)  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210302120102-%E4%BF%9D%E5%AD%98%E7%89%88%E3%83%A1%E3%83%A2%E3%81%AE%E6%95%B0/",
+                "title": "保存版メモの数",
+                "section": "post",
+                "date" : "2021.03.02",
+                "body": "一日に書いた保存版メモの数\u0026quot; が、研究者の生産性指標として使える。たとえば、\u0026ldquo;一日あたり 2 個の保存版メモを書こう\u0026rdquo; という目標を立てれば、それに向かって努力することができる。\n保存版メモを書かなければ、せっかくの読書のほとんどが無駄になってしまう。保存版メモを書くことは、読書に役立つだけでなくそれ自体が利益になる。たとえば、洞察力を育む、執筆そのものを加速する、など。つまり「書くことは考えること」。\n自分はどのくらい一日に書いているだろうか? どのようにすれば計測できるだろうか?\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210301083537-ox_hugo/",
+                "title": "Ox-Hugo",
+                "section": "post",
+                "date" : "2021.03.01",
+                "body": "Org-Mode のファイルを Hugo 形式の Markdown に変換するためのプラグイン。\n保存版メモをまとめてエクスポート 次の関数を使って \u0026quot;permanent notes\u0026quot; とタグのついた Org-Roam の保存版ノートを Markdown に一括エクスポートできる。\n(after! (org org-roam) (defun my/org-roam-export-all () \u0026#34;Re-exports all Org-roam files to Hugo markdown.\u0026#34; (interactive) (dolist (f (org-roam--list-all-files)) (with-current-buffer (find-file f) (when (s-contains? \u0026#34;permanent notes\u0026#34; (buffer-string)) (org-hugo-export-wim-to-md)))))) 参考文献  Ox-Hugo (GitHub)  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210301113146-%E5%AF%BE%E8%A7%92%E5%8C%96/",
+                "title": "対角化",
+                "section": "post",
+                "date" : "2021.03.01",
+                "body": "ある行列 \\(A\\) を正則行列 \\(P\\) によって相似変換して結果を対角行列にすること。 あるいは、そのような行列 \\(P\\) を見つけること\n\\[P^{-1}AP = \\begin{bmatrix} a^{\\prime}_{11} \u0026amp; 0 \u0026amp; 0 \u0026amp; \\ldots \u0026amp; 0 \\\\\\\n0 \u0026amp; a^{\\prime}_{22} \u0026amp; 0 \u0026amp; \\ldots \u0026amp; 0 \\\\\\\n0 \u0026amp; 0 \u0026amp; \\ddots \u0026amp; \u0026amp; 0 \\\\\\\n\\vdots \u0026amp; \\vdots \u0026amp; \u0026amp; \\ddots \u0026amp; 0 \\\\\\\n0 \u0026amp; 0 \u0026amp; \\ldots \u0026amp; 0 \u0026amp; a^{\\prime}_{nn} \\end{bmatrix}\\]\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210301112911-%E6%AD%A3%E5%89%87%E8%A1%8C%E5%88%97/",
+                "title": "正則行列",
+                "section": "post",
+                "date" : "2021.03.01",
+                "body": "\\(n\\) 次正方行列 \\(A\\) について、\n\\[AB = BA = I\\]\nとなる \\(n\\) 次正方行列 \\(B\\) が存在するとき、\\(A\\) は正則行列という。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210228145035-hugo/",
+                "title": "Hugo",
+                "section": "post",
+                "date" : "2021.02.28",
+                "body": "Markdown で静的サイトを作るためのツール。Ox-Hugo を使って、Org-Roam の .org ファイルから自動的に yasuhito.github.io を生成する。\nHugo 公式サイト\n.org ファイルの設定 .org ファイルの冒頭で #+SETUPFILE: setup.org を指定し setup.org には次の Hugo 共通設定を入れておく。\n#+HUGO_BASE_DIR: ~/Documents/Zettel #+HUGO_SECTION: ./posts/ テーマ Mathjax が始めから入っている cactus をとりあえず使っている。\n https://github.com/monkeyWzr/hugo-theme-cactus  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210228110804-toeic_l_r_test_%E5%87%BA%E3%82%8B%E5%8D%98%E7%89%B9%E6%80%A5_%E9%87%91%E3%81%AE%E3%83%95%E3%83%AC%E3%83%BC%E3%82%B9/",
+                "title": "TOEIC L \u0026 R TEST 出る単特急 金のフレーズ",
+                "section": "post",
+                "date" : "2021.02.28",
+                "body": "Amazon\nAnki カード作りの研究用に買ってみた。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210224084353-%E5%9F%BA%E5%BA%95%E7%8A%B6%E6%85%8B/",
+                "title": "基底状態",
+                "section": "post",
+                "date" : "2021.02.24",
+                "body": "\\(|0\\rangle\\) と \\(|1\\rangle\\) は基底状態と呼ばれ、古典コンピュータのビット 0 と 1 に対応する。数学的には、基底状態は状態ベクトル \\(|\\psi\\rangle\\) の正規直交基底を形成するベクトルであり、それぞれ次の列ベクトルで定義される。\n\\[|0\\rangle := \\begin{bmatrix} 1 \\ 0 \\end{bmatrix}, |1\\rangle := \\begin{bmatrix} 0 \\ 1 \\end{bmatrix}\\]\nよって 1 量子ビットの状態 \\(|\\psi\\rangle\\) は、2次元複素ベクトル空間の単位ベクトルとして表現できる。\n\\[|\\psi\\rangle = \\begin{bmatrix} \\alpha \\ \\beta \\end{bmatrix}\\]\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/",
+                "title": "状態ベクトル",
+                "section": "post",
+                "date" : "2021.02.24",
+                "body": "量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \\(|\\psi\\rangle\\) は、ディラック記法を使って基底状態 \\(|0\\rangle\\) と \\(|1\\rangle\\) の重ね合わせ (線形結合) として次の式で表すことができる。\n\\[|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\]\nここで係数 \\(\\alpha, \\beta\\) を確率振幅と呼び \\(\\alpha, \\beta \\in \\mathbb{C}\\) である。また、正規化条件として \\(|\\alpha|^2 + |\\beta|^2 = 1\\) に従わなければならない。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210223123752-html_over_the_wire/",
+                "title": "HTML Over the Wire",
+                "section": "post",
+                "date" : "2021.02.23",
+                "body": "React や Vue.js などの Web プログラミングフレームワークでは、ネイティブアプリと同様の UX を提供するために処理の大半をブラウザ側で行う。サーバは HTML ではなくデータを JSON として返す API/GraphQL サーバーとして動作し、HTML の生成はクライアントサイドのブラウザで動作する JavaScript フレームワーク上で行う。\nこれは、従来の Rails などのフレームワークと比較して複雑である。従来は、サーバ側で MVC フレームワークが動作し、データとプレゼンテーションを HTML としてサーバ側で生成し、ブラウザへ送っていた。一方で、近年の Web フレームワークはブラウザ上で MVC フレームワークが動作する。画面遷移を高速にするために、DOM ツリーの差分を取り、仮想 DOM という仕組みで最小の書き換えで画面遷移を実現する。\nしかし、従来の単純なフレームワークでもネイティブアプリと同等の UX を達成することは可能である。DOM のうち動的な部分のみ JavaScript で書き換える。画面遷移についても、マウスオーバー時のプリフェッチによってソースコードを変更せずに高速化が可能である。\nこのための代表的なフレームワークが HOTwire。元々 Turbolinks や Stimulus.js だったものをまとめたもの。HTML の data 属性を使うことで、JavaScript 部分と HTML を結合することができる。JavaScript 部分は、サーバ側の MVC 実装や HTML にほとんど染み出さない。\n参考文献  HTML over the wire  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210223134834-org_roam/",
+                "title": "Org-Roam",
+                "section": "post",
+                "date" : "2021.02.23",
+                "body": "Org-Roam は Org Mode の上に構築された、Roam Research ライクなノート環境。\nクラウドへのバックアップ iCloud で同期すれば、ソフトウェアの追加インストールなしで iPhone や Mac と org ファイルを同期できる。とにかく手軽なので、なにか問題が出るまではしばらく iCloud でバックアップを取ることにする。\niCloud に org ディレクトリを作るには、iPhone に beorg をインストールするのが手っ取り早い。インストールすると iCloud Drive 上に beorg 用のディレクトリが作られるので、ここから ~/org にシンボリックリンクを張る。\ncd ~ ln -s ~/Library/Mobile\\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/",
+                "title": "線形結合",
+                "section": "post",
+                "date" : "2021.02.23",
+                "body": ""
+            }
+        
+    
+]

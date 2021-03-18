@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>ディラック記法</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ディラック記法"/>
+<meta name="twitter:description" content="ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。
+   名前 記号     ディラックのケット (ket) \(\vert{}\psi\rangle\)   ディラックのブラ (bra) \(\langle\pi\vert{}\)   ディラックのブラケット (braket) \(\langle\pi\vert{}\psi\rangle\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。
+ 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。
+    記号 意味     \(z^{\ast}\) 複素数 \(z\) の複素共役。\((1 &#43; i)^{\ast} = 1 - i\)   \(\vert{}\psi\rangle\) ベクトル。ケット (ket) とも呼ばれる。   \(\langle\psi\vert{}\) \(\vert{}\psi\rangle\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \(\langle\varphi\vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) の内積   \(\vert{}\varphi\rangle \otimes \vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) のテンソル積   \(\vert{}\varphi\rangle\vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) のテンソル積に対する簡略記号   \(A^{\ast}\) 行列 \(A\) の複素共役   \(A^T\) 行列 \(A\) の転置   \(A^{\dagger}\) 行列 \(A\) のエルミート共役、もしくは随伴。\(A^{\dagger} = (A^T)^{\ast}\)   \(\langle\varphi\vert{}A\vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(A\vert{}\psi\rangle\) の内積。\(A^{\dagger}\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) の内積に等しい。    参考文献  P."/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.81.0" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              ディラック記法
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Mar 11, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>記号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ディラックのケット (ket)</td>
+<td>\(\vert{}\psi\rangle\)</td>
+</tr>
+<tr>
+<td>ディラックのブラ (bra)</td>
+<td>\(\langle\pi\vert{}\)</td>
+</tr>
+<tr>
+<td>ディラックのブラケット (braket)</td>
+<td>\(\langle\pi\vert{}\psi\rangle\)</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.amazon.co.jp/dp/B07FPFL6HG/">Quantum Computation and Quantum Information</a> によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。</p>
+<blockquote>
+<p>量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>記号</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\(z^{\ast}\)</td>
+<td>複素数 \(z\) の複素共役。\((1 + i)^{\ast} = 1 - i\)</td>
+</tr>
+<tr>
+<td>\(\vert{}\psi\rangle\)</td>
+<td>ベクトル。ケット (ket) とも呼ばれる。</td>
+</tr>
+<tr>
+<td>\(\langle\psi\vert{}\)</td>
+<td>\(\vert{}\psi\rangle\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる</td>
+</tr>
+<tr>
+<td>\(\langle\varphi\vert{}\psi\rangle\)</td>
+<td>\(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) の内積</td>
+</tr>
+<tr>
+<td>\(\vert{}\varphi\rangle \otimes \vert{}\psi\rangle\)</td>
+<td>\(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) のテンソル積</td>
+</tr>
+<tr>
+<td>\(\vert{}\varphi\rangle\vert{}\psi\rangle\)</td>
+<td>\(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) のテンソル積に対する簡略記号</td>
+</tr>
+<tr>
+<td>\(A^{\ast}\)</td>
+<td>行列 \(A\) の複素共役</td>
+</tr>
+<tr>
+<td>\(A^T\)</td>
+<td>行列 \(A\) の転置</td>
+</tr>
+<tr>
+<td>\(A^{\dagger}\)</td>
+<td>行列 \(A\) のエルミート共役、もしくは随伴。\(A^{\dagger} = (A^T)^{\ast}\)</td>
+</tr>
+<tr>
+<td>\(\langle\varphi\vert{}A\vert{}\psi\rangle\)</td>
+<td>\(\vert{}\varphi\rangle\) と \(A\vert{}\psi\rangle\) の内積。\(A^{\dagger}\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) の内積に等しい。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="参考文献">参考文献</h2>
+<ul>
+<li>P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418 &lt;10.1017/S0305004100021162&gt;</li>
+</ul>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+
+<footer>
+  
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </body>
+</html>

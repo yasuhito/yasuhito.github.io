@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>HTML Over the Wire</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="HTML Over the Wire"/>
+<meta name="twitter:description" content="React や Vue.js などの Web プログラミングフレームワークでは、ネイティブアプリと同様の UX を提供するために処理の大半をブラウザ側で行う。サーバは HTML ではなくデータを JSON として返す API/GraphQL サーバーとして動作し、HTML の生成はクライアントサイドのブラウザで動作する JavaScript フレームワーク上で行う。
+これは、従来の Rails などのフレームワークと比較して複雑である。従来は、サーバ側で MVC フレームワークが動作し、データとプレゼンテーションを HTML としてサーバ側で生成し、ブラウザへ送っていた。一方で、近年の Web フレームワークはブラウザ上で MVC フレームワークが動作する。画面遷移を高速にするために、DOM ツリーの差分を取り、仮想 DOM という仕組みで最小の書き換えで画面遷移を実現する。
+しかし、従来の単純なフレームワークでもネイティブアプリと同等の UX を達成することは可能である。DOM のうち動的な部分のみ JavaScript で書き換える。画面遷移についても、マウスオーバー時のプリフェッチによってソースコードを変更せずに高速化が可能である。
+このための代表的なフレームワークが HOTwire。元々 Turbolinks や Stimulus.js だったものをまとめたもの。HTML の data 属性を使うことで、JavaScript 部分と HTML を結合することができる。JavaScript 部分は、サーバ側の MVC 実装や HTML にほとんど染み出さない。
+参考文献  HTML over the wire  "/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.81.0" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              HTML Over the Wire
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Feb 23, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>React や Vue.js などの Web プログラミングフレームワークでは、ネイティブアプリと同様の UX を提供するために処理の大半をブラウザ側で行う。サーバは HTML ではなくデータを JSON として返す API/GraphQL サーバーとして動作し、HTML の生成はクライアントサイドのブラウザで動作する JavaScript フレームワーク上で行う。</p>
+<p>これは、従来の Rails などのフレームワークと比較して複雑である。従来は、サーバ側で MVC フレームワークが動作し、データとプレゼンテーションを HTML としてサーバ側で生成し、ブラウザへ送っていた。一方で、近年の Web フレームワークはブラウザ上で MVC フレームワークが動作する。画面遷移を高速にするために、DOM ツリーの差分を取り、仮想 DOM という仕組みで最小の書き換えで画面遷移を実現する。</p>
+<p>しかし、従来の単純なフレームワークでもネイティブアプリと同等の UX を達成することは可能である。DOM のうち動的な部分のみ JavaScript で書き換える。画面遷移についても、マウスオーバー時のプリフェッチによってソースコードを変更せずに高速化が可能である。</p>
+<p>このための代表的なフレームワークが HOTwire。元々 Turbolinks や Stimulus.js だったものをまとめたもの。HTML の data 属性を使うことで、JavaScript 部分と HTML を結合することができる。JavaScript 部分は、サーバ側の MVC 実装や HTML にほとんど染み出さない。</p>
+<h2 id="参考文献">参考文献</h2>
+<ul>
+<li><a href="https://m.signalvnoise.com/html-over-the-wire/">HTML over the wire</a></li>
+</ul>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+
+<footer>
+  
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+      <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </body>
+</html>
