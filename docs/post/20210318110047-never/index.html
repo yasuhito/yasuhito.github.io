@@ -21,11 +21,11 @@
 <meta name="twitter:title" content="never"/>
 <meta name="twitter:description" content="SRS の回答方式による効果の違いを確認するために、Execute Program のレッスン never を元に Anki カードを起こしてみる。作った Anki カードはこのノートの一番下にある。
  never の説明 関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
-function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
+// この関数は戻らない function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
 void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
 幸いなことに、TypeScript にはそのための型があります: never です。
-function throws(): never { throw new Error(&#39;oh no&#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は今までと同じく例外を投げますので、結果も同じです。
-function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。"/>
+// 戻らない関数の返り値は never と指定する function throws(): never { throw new Error(&#39;oh no&#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます (ただし、実行すると例外が投げられます)。
+function throws(): never { throw new Error(&#39;oh no&#39;); } // never はどんな型にも割り当てられる const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。"/>
 
 
 
@@ -124,88 +124,87 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number =
 <hr>
 <h2 id="never-の説明">never の説明</h2>
 <p>関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws() {</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// この関数は戻らない
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws() {</span>
   <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
 }
 </code></pre></div><p>この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を <code>void</code> と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。</p>
 <p><code>void</code> 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。</p>
 <p>幸いなことに、TypeScript にはそのための型があります: <code>never</code> です。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// 戻らない関数の返り値は never と指定する
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
+  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
+}
+</code></pre></div><p><code>never</code> 型はちょっと不思議です。他のどの型にも割り当て可能です<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。例えば、 <code>number</code> 型の変数に割り当てることができます (ただし、実行すると例外が投げられます)。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
   <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
 }
-</code></pre></div><p><code>never</code> 型はちょっと不思議です。他のどの型にも割り当て可能です<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>。例えば、 <code>number</code> 型の変数に割り当てることができます。この関数は今までと同じく例外を投げますので、結果も同じです。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
-  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">throws</span>();
+<span style="color:#75715e">// never はどんな型にも割り当てられる
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">throws</span>();
 
 <span style="color:#75715e">// → Error: oh no
 </span></code></pre></div><p>最初は、 <code>never</code> が <code>any</code> のように振る舞っているように見えます。なぜなら、 <code>never</code> を <code>number</code> （または <code>string</code> 、その他何でも）に割り当てることができるからです。しかし、 <code>any</code> と違って、これは安全です。</p>
 <p>コンパイラは <code>throws</code> 関数が決して戻らないことを知っているので、変数 <code>n</code> には何も代入されないことも知っています。型は実行時にデータが正しいことを保証するために存在します。もし、実行時に代入が実際に行われることがなく、コンパイラが事前にそのことを確実に知っているのであれば、 <code>never</code> を代入する変数の型は重要ではありません。</p>
 <p>しかし、 <code>never</code> に他の型を割り当てることはできません。そうすると、 <code>never</code> のルールである「実際に値を保持することはない」を破ってしまいます。 <code>never</code> に何らかの値を代入しようとすると、常に型エラーになります。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aNever</span>: <span style="color:#66d9ef">never</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-<span style="color:#a6e22e">aNever</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#75715e">// never には何も割り当てられない
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aNever</span>: <span style="color:#66d9ef">never</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
 
-<span style="color:#75715e">// 結果
-</span><span style="color:#75715e">// type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
+<span style="color:#75715e">// → type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
 </span></code></pre></div><p>絶対に <code>never</code> には何も割り当てられません。 <code>any</code> ですらも!</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">anAny</span>: <span style="color:#66d9ef">any</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>;
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aNever</span>: <span style="color:#66d9ef">never</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">anAny</span>;
-<span style="color:#a6e22e">aNever</span>;
+<span style="color:#75715e">// never には any ですら割り当てられない
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aNever</span>: <span style="color:#66d9ef">never</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">anAny</span>;
 
-<span style="color:#75715e">// 結果
-</span><span style="color:#75715e">// type error: Type &#39;any&#39; is not assignable to type &#39;never&#39;.
+<span style="color:#75715e">// → type error: Type &#39;any&#39; is not assignable to type &#39;never&#39;.
 </span></code></pre></div><p>関数が常に例外をスローするが、明示的な戻り値の型を持たない場合、TypeScript は戻り値の型を <code>void</code> と推論します。これは悪いことではありませんが、明示的に <code>never</code> とマークしたほうが、TypeScript にもう少し多くの情報を与えることができます。</p>
 <p>例えば、ある関数が <code>never</code> を返す別の関数を呼び出したとします。TypeScript は外側の関数の型も <code>never</code> と正しく推論します。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
   <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
 }
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">alsoThrows() {</span>
+<span style="color:#75715e">// この戻り値の型は never と推論される
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">alsoThrows() {</span>
   <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">throws</span>();
 }
 
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">alsoThrows</span>();
-
-<span style="color:#75715e">// 結果
-</span><span style="color:#75715e">// Error: oh no
-</span></code></pre></div><p>このコードがコンパイルされたことで、 <code>alsoThrows</code> の戻り値の型が <code>never</code> であることがわかりました。もし戻り値の型が <code>void</code> であれば、数値に割り当てることはできません。</p>
-<p>次の関数の戻り値の型を <code>never</code> に変更します。そうすると型エラーが発生します。なぜなら、この関数は戻ります。TypeScript は <code>never</code> 関数が値を返すことを許可しません。</p>
+<span style="color:#75715e">// never は number に割り当てることができる
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">alsoThrows</span>();
+</code></pre></div><p>このコードがコンパイルされたことで、 <code>alsoThrows</code> の戻り値の型が <code>never</code> であることがわかりました。もし戻り値の型が <code>void</code> であれば、数値に割り当てることはできません。</p>
+<p>次の関数の戻り値の型を <code>never</code> に変更するとどうなるでしょうか。結果は型エラーが発生します。なぜなら、この関数は戻るからです。TypeScript は <code>never</code> 関数が値を返すことを許可しません。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">number</span> {
   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">5</span>;
 }
-</code></pre></div><p>変更後</p>
+</code></pre></div><p>戻り値を <code>never</code> に変更すると:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
   <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">5</span>;
 }
 
-<span style="color:#75715e">// 結果
-</span><span style="color:#75715e">// type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
+<span style="color:#75715e">// → type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
 </span></code></pre></div><p>TypeScript では、 <code>never</code> 関数が条件付きで戻ることもできません（例: <code>if</code> の中）。関数が値を返す方法があるならば、その戻り値の型は <code>never</code> であってはならないのです。(この関数は型エラーを発生させます)</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">forcePositive</span>(<span style="color:#a6e22e">x</span>: <span style="color:#66d9ef">number</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
   <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span>;
+    <span style="color:#75715e">// 型エラー
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">x</span>;
   } <span style="color:#66d9ef">else</span> {
     <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Number was negative!&#39;</span>);
   }
 }
 
-<span style="color:#75715e">// 結果
-</span><span style="color:#75715e">// type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
+<span style="color:#75715e">// → type error: Type &#39;number&#39; is not assignable to type &#39;never&#39;.
 </span></code></pre></div><p><code>never</code> 型が適用されるのは、例外を発生させる関数だけではありません。例えば、無限ループを持つ関数は、 <code>never</code> 型の戻り値を持つことができます（そうすべきです！）。</p>
 <p>残念ながら、ここではその動く実例を示すことはできません。なぜなら、それは決して終了しないからです。しかし、その逆の例を示すことはできます。つまり、無限ループのように見える関数で、絶対に終わらないと主張していますが、時々戻ってくることがあるようなものです。これは型エラーです。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f</span>()<span style="color:#f92672">:</span> <span style="color:#66d9ef">never</span> {
   <span style="color:#66d9ef">while</span> (<span style="color:#66d9ef">true</span>) {
-    <span style="color:#66d9ef">if</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.000001</span>) {
+    <span style="color:#75715e">// 型エラー
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (Math.<span style="color:#a6e22e">random</span>() <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0.000001</span>) {
       <span style="color:#66d9ef">break</span>;
     }
   }
 }
 
-<span style="color:#75715e">// 結果
-</span><span style="color:#75715e">// type error: A function returning &#39;never&#39; cannot have a reachable end point.
+<span style="color:#75715e">// → type error: A function returning &#39;never&#39; cannot have a reachable end point.
 </span></code></pre></div><p>最後に、 <code>void</code> と <code>never</code> について簡単にまとめておきます。</p>
-<p><code>void</code> は、関数が最終的に終了して戻ることを意味します。ただ、何の値も返さないということです。関数には <code>return</code> 文がないか、または <code>return</code> 文の後に値がない状態になっています。 <code>void</code> 型は、値がないことを表すので、何にも代入できません。</p>
+<p><code>void</code> は、関数が最終的に終了して戻ることを意味します。単に、何の値も返さないということです。関数には <code>return</code> 文がないか、または <code>return</code> 文の後に値がない状態になっています。 <code>void</code> 型は、値がないことを表すので、何にも代入できません。</p>
 <p><code>never</code> は、関数が決して正常に終了しないことを意味します。例外が発生したり、無限ループに陥ったりするかもしれません。Node のようなサーバーサイドのシステムであれば、 <code>process.exit()</code> を呼び出してプロセスを終了させるかもしれません。いずれにしても、実行が関数の最後に到達することはありません。 <code>never</code> 型は何にでも代入可能です。なぜならコンパイラは、実行時には実際には代入が行われないことを知っているからです。</p>
 <h2 id="anki-カード">Anki カード</h2>
 <h3 id="typescript-の推論">TypeScript の推論</h3>
