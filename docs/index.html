@@ -133,6 +133,25 @@
 
       
         <article class="post-preview">
+  <a href="https://yasuhito.github.io/post/20210319132742-duolingo/">
+    <h2 class="post-title">Duolingo</h2>
+  </a>
+  <div class="post-entry">
+    
+  </div>
+
+  <div class="postmeta">
+    <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Mar 19, 2021
+  
+</span>
+
+  </div>
+</article>
+
+      
+        <article class="post-preview">
   <a href="https://yasuhito.github.io/post/20210319113717-srs_%E3%81%AE%E5%9B%9E%E7%AD%94%E6%96%B9%E5%BC%8F%E3%81%AB%E3%82%88%E3%82%8B%E5%8A%B9%E6%9E%9C%E3%81%AE%E9%81%95%E3%81%84/">
     <h2 class="post-title">SRS の回答方式による効果の違い</h2>
   </a>
@@ -157,13 +176,13 @@
   </a>
   <div class="post-entry">
     
-      <p>SRS の回答方式による効果の違いを確認するために、Execute Program のレッスン never を元に Anki カードを起こしてみる。
- 関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
-function throws() { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それでは何が起こっているのか完全には把握できていません。
+      <p>SRS の回答方式による効果の違いを確認するために、Execute Program のレッスン never を元に Anki カードを起こしてみる。作った Anki カードはこのノートの一番下にある。
+ never の説明 関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
+function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
 void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
 幸いなことに、TypeScript にはそのための型があります: never です。
-function throws(): never { throw new Error(&#39;oh no&#39;); } throws(); // 結果 // Error: oh no never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は今まで通りに例外を投げますので、結果は上と同じです。
-function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number = throws(); // 結果 // Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。</p>
+function throws(): never { throw new Error(&#39;oh no&#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は今までと同じく例外を投げますので、結果も同じです。
+function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。</p>
       <a href="https://yasuhito.github.io/post/20210318110047-never/" class="post-read-more"
         ></a
       >
@@ -303,25 +322,6 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number =
 </article>
 
       
-        <article class="post-preview">
-  <a href="https://yasuhito.github.io/post/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/">
-    <h2 class="post-title">文芸的プログラミング</h2>
-  </a>
-  <div class="post-entry">
-    
-  </div>
-
-  <div class="postmeta">
-    <span class="meta-post">
-  <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 10, 2021
-  
-</span>
-
-  </div>
-</article>
-
-      
     </div>
     
       <ul class="pager">
@@ -343,6 +343,8 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } const n: number =
   
   
 
+  
+    
   
     
   

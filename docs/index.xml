@@ -23,6 +23,17 @@
 		</item>
       	
 		<item>
+			<title>Duolingo</title>
+			<link>https://yasuhito.github.io/post/20210319132742-duolingo/</link>
+			<pubDate>Fri, 19 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210319132742-duolingo/</guid>
+			<description>https://en.duolingo.com/
+世界で最も人気のある外国語学習サービス。単語や文法の学習に SRS を採用している。
+SRS として見たときの Duolingo のユニークな点 (たとえばExecute Program との違い) は、すべての学習がカードのみで完結しているところ。Execute Program ではプログラミング言語の解説を読みながらクイズに答えていく。一方で Duolingo では外国語に対する知識ゼロの状態からいきなりクイズが始まり、正解/不正解を繰り返しながら (試行錯誤を繰り返しながら) 外国語を学んでいくことができる。
+外国語学習の場合、文法や単語の説明を読むのはダルい/集中力が続かないという人が圧倒的に多いはずなので、正式な学習法と比べてどのくらい効果があるかどうかは分からないが、ひとつの妥当なデザインチョイスだと思う。</description>
+		</item>
+      	
+		<item>
 			<title>SRS の回答方式による効果の違い</title>
 			<link>https://yasuhito.github.io/post/20210319113717-srs_%E3%81%AE%E5%9B%9E%E7%AD%94%E6%96%B9%E5%BC%8F%E3%81%AB%E3%82%88%E3%82%8B%E5%8A%B9%E6%9E%9C%E3%81%AE%E9%81%95%E3%81%84/</link>
 			<pubDate>Fri, 19 Mar 2021 00:00:00 +0900</pubDate>
@@ -37,13 +48,13 @@
 			<link>https://yasuhito.github.io/post/20210318110047-never/</link>
 			<pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210318110047-never/</guid>
-			<description>SRS の回答方式による効果の違いを確認するために、Execute Program のレッスン never を元に Anki カードを起こしてみる。
- 関数の中には、決して戻らないものがあります。例えば、常に例外を発生させる関数は決して戻りません。
-function throws() { throw new Error(&amp;#39;oh no&amp;#39;); } throws(); // 結果 // Error: oh no この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それでは何が起こっているのか完全には把握できていません。
+			<description>SRS の回答方式による効果の違いを確認するために、Execute Program のレッスン never を元に Anki カードを起こしてみる。作った Anki カードはこのノートの一番下にある。
+ never の説明 関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
+function throws() { throw new Error(&amp;#39;oh no&amp;#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推測します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
 void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
 幸いなことに、TypeScript にはそのための型があります: never です。
-function throws(): never { throw new Error(&amp;#39;oh no&amp;#39;); } throws(); // 結果 // Error: oh no never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は今まで通りに例外を投げますので、結果は上と同じです。
-function throws(): never { throw new Error(&amp;#39;oh no&amp;#39;); } const n: number = throws(); // 結果 // Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。</description>
+function throws(): never { throw new Error(&amp;#39;oh no&amp;#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます。この関数は今までと同じく例外を投げますので、結果も同じです。
+function throws(): never { throw new Error(&amp;#39;oh no&amp;#39;); } const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。</description>
 		</item>
       	
 		<item>
@@ -115,16 +126,6 @@ function throws(): never { throw new Error(&amp;#39;oh no&amp;#39;); } const n: 
 			<description>メモや論文など書くこと全般に使える Emacs のメジャーモード。Org-Roam を使うと、Roam Research 的なスマートノートを作ることができる。このノート上には Anki のカードも定義できるので、スマートノートと SRS をスムーズに組み合わせることができる。そのほか、文芸的プログラミングをサポートしているので、Emacs の設定ファイルを Org のドキュメントから生成できる。
 Org mode for Emacs
 Org のインライン記法  強調 **強調** 斜体 /斜体/ 下線 _下線_ 打ち消し +打ち消し+ verbatim =verbatim= inline code ~inline code~  </description>
-		</item>
-      	
-		<item>
-			<title>文芸的プログラミング</title>
-			<link>https://yasuhito.github.io/post/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/</link>
-			<pubDate>Wed, 10 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/</guid>
-			<description>Donald E. Knuth が提唱したプログラミング手法の一つで、テキストファイル内にドキュメントとコードを埋めこみ、これから完全なドキュメントとコンパイル可能なソースコードを生成する方法。驚くことに TeX はこの方法で書かれていて、生成されたドキュメントは本として出版されている (TeX: The Program)。
-TeX 以外に実用的なソフトウェアで文芸的プログラミングを採用した例は見当たらないが、最近では Org ファイルから Emacs や Bash などの設定ドキュメントとドットファイルを生成するという限定的な用途で文芸的プログラミングが使われている。
-極端な例では、Org-Mode 内で論文を書く際に、本文だけでなくテーブルやグラフなど論文の構成要素をすべて生成するという Reproducible Research という手法もある。</description>
 		</item>
       	
 	</channel>
