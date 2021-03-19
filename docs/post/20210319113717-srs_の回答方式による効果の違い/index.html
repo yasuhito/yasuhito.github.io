@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Org-Roam</title>
+<title>SRS の回答方式による効果の違い</title>
 
 
   
@@ -18,11 +18,10 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Org-Roam"/>
-<meta name="twitter:description" content="Org-Roam は Org Mode の上に構築された、Roam Research ライクなノート環境。
-クラウドへのバックアップ iCloud で同期すれば、ソフトウェアの追加インストールなしで iPhone や Mac と org ファイルを同期できる。とにかく手軽なので、なにか問題が出るまではしばらく iCloud でバックアップを取ることにする。
-iCloud に org ディレクトリを作るには、iPhone に beorg をインストールするのが手っ取り早い。インストールすると iCloud Drive 上に beorg 用のディレクトリが作られるので、ここから ~/org にシンボリックリンクを張る。
-cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/org org "/>
+<meta name="twitter:title" content="SRS の回答方式による効果の違い"/>
+<meta name="twitter:description" content="SRS でユーザが回答する方式には、Anki のようにユーザが裏面を見て自分で答合わせをする方式と、Duolingo や Execute Program のようにユーザが入力した答をシステムが答合わせする方式の 2 つがある。どちらが記憶効果が高いだろうか？
+この論文 (Probabilistic Models of Student Learning and Forgetting) では実験から次のことを導き出している:
+ ひとつひとつの単体のレビューの効果については、ユーザが入力する方式の方が効果が高い 長期的な効果については、入力のためのタイピングにはかなり時間がかかるため、自分で答合わせをする方式のほうがレビューを多くこなせ、結果的に効果が高くなる  "/>
 
 
 
@@ -96,13 +95,13 @@ cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/
         <div class="post-heading">
           
             <h1>
-              Org-Roam
+              SRS の回答方式による効果の違い
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Feb 23, 2021
+  >&nbsp;Mar 19, 2021
   
 </span>
 
@@ -117,13 +116,13 @@ cd ~ ln -s ~/Library/Mobile\ Documents/iCloud~com~appsonthemove~beorg/Documents/
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>Org-Roam は Org Mode の上に構築された、<a href="https://roamresearch.com/">Roam Research</a> ライクなノート環境。</p>
-<h2 id="クラウドへのバックアップ">クラウドへのバックアップ</h2>
-<p>iCloud で同期すれば、ソフトウェアの追加インストールなしで iPhone や Mac と org ファイルを同期できる。とにかく手軽なので、なにか問題が出るまではしばらく iCloud でバックアップを取ることにする。</p>
-<p>iCloud に org ディレクトリを作るには、iPhone に beorg をインストールするのが手っ取り早い。インストールすると iCloud Drive 上に beorg 用のディレクトリが作られるので、ここから <code>~/org</code> にシンボリックリンクを張る。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd ~
-ln -s ~/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/iCloud~com~appsonthemove~beorg/Documents/org org
-</code></pre></div>
+  <p>SRS でユーザが回答する方式には、Anki のようにユーザが裏面を見て自分で答合わせをする方式と、Duolingo や Execute Program のようにユーザが入力した答をシステムが答合わせする方式の 2 つがある。どちらが記憶効果が高いだろうか？</p>
+<p><a href="https://andymatuschak.org/files/papers/Lindsey%20-%20Probabilistic%20Models%20of%20Student%20Learning%20and%20Forge.pdf#page=163">この論文 (Probabilistic Models of Student Learning and Forgetting)</a> では実験から次のことを導き出している:</p>
+<ul>
+<li>ひとつひとつの単体のレビューの効果については、ユーザが入力する方式の方が効果が高い</li>
+<li>長期的な効果については、入力のためのタイピングにはかなり時間がかかるため、自分で答合わせをする方式のほうがレビューを多くこなせ、結果的に効果が高くなる</li>
+</ul>
+
 
 
 
@@ -162,8 +161,6 @@ ln -s ~/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/iCloud~com~
     
   
     
-      
-    
   
     
   
@@ -194,8 +191,6 @@ ln -s ~/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/iCloud~com~
     
   
     
-      
-    
   
     
   
@@ -207,8 +202,6 @@ ln -s ~/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/iCloud~com~
   
     
   
-    
-      
     
   
     
@@ -230,23 +223,6 @@ ln -s ~/Library/Mobile<span style="color:#ae81ff">\ </span>Documents/iCloud~com~
     
   
 
-  
-    <div class="container" role="main">
-      <div class="bl-section" style="margin-top: 4rem">
-        <h4>Links to this note</h4>
-        <div class="backlinks">
-          <ul>
-           
-              <li><a href="/post/20210223135036-org_mode/">Org Mode</a></li>
-              
-              <li><a href="/post/20210302145631-%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AF_%E3%82%A4%E3%83%B3%E3%83%9B%E3%83%83%E3%82%AF%E3%82%B9/">ライティング・インボックス</a></li>
-              
-              <li><a href="/post/20210228145035-hugo/">Hugo</a></li>
-              
-          </ul>
-        </div>
-      </div>
-    </div>
   
 
 

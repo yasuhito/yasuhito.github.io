@@ -12,6 +12,16 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>SRS の回答方式による効果の違い</title>
+			<link>https://yasuhito.github.io/post/20210319113717-srs_%E3%81%AE%E5%9B%9E%E7%AD%94%E6%96%B9%E5%BC%8F%E3%81%AB%E3%82%88%E3%82%8B%E5%8A%B9%E6%9E%9C%E3%81%AE%E9%81%95%E3%81%84/</link>
+			<pubDate>Fri, 19 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210319113717-srs_%E3%81%AE%E5%9B%9E%E7%AD%94%E6%96%B9%E5%BC%8F%E3%81%AB%E3%82%88%E3%82%8B%E5%8A%B9%E6%9E%9C%E3%81%AE%E9%81%95%E3%81%84/</guid>
+			<description>SRS でユーザが回答する方式には、Anki のようにユーザが裏面を見て自分で答合わせをする方式と、Duolingo や Execute Program のようにユーザが入力した答をシステムが答合わせする方式の 2 つがある。どちらが記憶効果が高いだろうか？
+この論文 (Probabilistic Models of Student Learning and Forgetting) では実験から次のことを導き出している:
+ ひとつひとつの単体のレビューの効果については、ユーザが入力する方式の方が効果が高い 長期的な効果については、入力のためのタイピングにはかなり時間がかかるため、自分で答合わせをする方式のほうがレビューを多くこなせ、結果的に効果が高くなる  </description>
+		</item>
+      	
+		<item>
 			<title>never</title>
 			<link>https://yasuhito.github.io/post/20210318110047-never/</link>
 			<pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
@@ -112,14 +122,6 @@ TeX 以外に実用的なソフトウェアで文芸的プログラミングを�
 			<pubDate>Wed, 03 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210228111127-how_to_take_smart_notes/</guid>
 			<description> How to Take Smart Notes (Scribd) How to Take Smart Notes (Amazon)  </description>
-		</item>
-      	
-		<item>
-			<title>Powers of 10: Time Scales in User Experience</title>
-			<link>https://yasuhito.github.io/post/20210303105204-powers_of_10_time_scales_in_user_experience/</link>
-			<pubDate>Wed, 03 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210303105204-powers_of_10_time_scales_in_user_experience/</guid>
-			<description>Powers of 10: Time Scales in User Experience</description>
 		</item>
       	
 	</channel>
