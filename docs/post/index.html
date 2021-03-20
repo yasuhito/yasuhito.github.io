@@ -147,6 +147,25 @@ const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Ty
 
       
         <article class="post-preview">
+  <a href="https://yasuhito.github.io/post/20210320161559-%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E5%AD%A6%E7%BF%92%E3%81%AE_srs_%E5%8C%96/">
+    <h2 class="post-title">プログラミング学習の SRS 化</h2>
+  </a>
+  <div class="post-entry">
+    
+  </div>
+
+  <div class="postmeta">
+    <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Mar 20, 2021
+  
+</span>
+
+  </div>
+</article>
+
+      
+        <article class="post-preview">
   <a href="https://yasuhito.github.io/post/20210319115727-anki/">
     <h2 class="post-title">Anki</h2>
   </a>
@@ -209,8 +228,7 @@ const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Ty
   </a>
   <div class="post-entry">
     
-      <p>SRS の回答方式による効果の違いを確認するために、Execute Program のレッスン never を元に Anki カードを起こしてみる。作った Anki カードはこのノートの一番下にある。
- never の説明 関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
+      <p>関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
 // この関数は戻らない function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
 void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
 幸いなことに、TypeScript にはそのための型があります: never です。
@@ -309,33 +327,6 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } // never はど�
 </article>
 
       
-        <article class="post-preview">
-  <a href="https://yasuhito.github.io/post/20210311082809-%E3%83%86%E3%82%A3%E3%83%A9%E3%83%83%E3%82%AF%E8%A8%98%E6%B3%95/">
-    <h2 class="post-title">ディラック記法</h2>
-  </a>
-  <div class="post-entry">
-    
-      <p>ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。
-   名前 記号     ディラックのケット (ket) \(\vert{}\psi\rangle\)   ディラックのブラ (bra) \(\langle\pi\vert{}\)   ディラックのブラケット (braket) \(\langle\pi\vert{}\psi\rangle\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。
- 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。
-    記号 意味     \(z^{\ast}\) 複素数 \(z\) の複素共役。\((1 + i)^{\ast} = 1 - i\)   \(\vert{}\psi\rangle\) ベクトル。ケット (ket) とも呼ばれる。   \(\langle\psi\vert{}\) \(\vert{}\psi\rangle\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \(\langle\varphi\vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) の内積   \(\vert{}\varphi\rangle \otimes \vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) のテンソル積   \(\vert{}\varphi\rangle\vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) のテンソル積に対する簡略記号   \(A^{\ast}\) 行列 \(A\) の複素共役   \(A^T\) 行列 \(A\) の転置   \(A^{\dagger}\) 行列 \(A\) のエルミート共役、もしくは随伴。\(A^{\dagger} = (A^T)^{\ast}\)   \(\langle\varphi\vert{}A\vert{}\psi\rangle\) \(\vert{}\varphi\rangle\) と \(A\vert{}\psi\rangle\) の内積。\(A^{\dagger}\vert{}\varphi\rangle\) と \(\vert{}\psi\rangle\) の内積に等しい。    参考文献  P.</p>
-      <a href="https://yasuhito.github.io/post/20210311082809-%E3%83%86%E3%82%A3%E3%83%A9%E3%83%83%E3%82%AF%E8%A8%98%E6%B3%95/" class="post-read-more"
-        ></a
-      >
-    
-  </div>
-
-  <div class="postmeta">
-    <span class="meta-post">
-  <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 11, 2021
-  
-</span>
-
-  </div>
-</article>
-
-      
     </div>
     
       <ul class="pager">
@@ -357,6 +348,8 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } // never はど�
   
   
 
+  
+    
   
     
   
