@@ -126,7 +126,8 @@
     
       <p>return 文を含まない関数の戻り値の型はなんでしょうか?
 TypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわかります。
-function f() { } const n: number = f(); // → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;. void 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。
+function f() { } const n: number = f(); // → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;. 明示的に何も返さない関数の戻り値は void と指定できます。たとえば console.log はその一例です。
+void 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。
 const aVoid: void = undefined; // → undefined だからといって、その void を undefined 型の変数に代入できるわけではありません。 void は何にも代入できないので、型エラーになります。
 const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Type &#39;void&#39; is not assignable to type &#39;undefined&#39;.</p>
       <a href="https://yasuhito.github.io/post/20210320155430-void/" class="post-read-more"

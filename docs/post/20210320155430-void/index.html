@@ -21,7 +21,8 @@
 <meta name="twitter:title" content="void"/>
 <meta name="twitter:description" content="return 文を含まない関数の戻り値の型はなんでしょうか?
 TypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわかります。
-function f() { } const n: number = f(); // → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;. void 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。
+function f() { } const n: number = f(); // → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;. 明示的に何も返さない関数の戻り値は void と指定できます。たとえば console.log はその一例です。
+void 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。
 const aVoid: void = undefined; // → undefined だからといって、その void を undefined 型の変数に代入できるわけではありません。 void は何にも代入できないので、型エラーになります。
 const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Type &#39;void&#39; is not assignable to type &#39;undefined&#39;."/>
 
@@ -125,7 +126,8 @@ const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Ty
 <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
 
 <span style="color:#75715e">// → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;.
-</span></code></pre></div><p><code>void</code> 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 <code>void</code> は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 <code>void</code> 型の変数を作ることができます。この変数には <code>undefined</code> という値しか入りません。</p>
+</span></code></pre></div><p>明示的に何も返さない関数の戻り値は <code>void</code> と指定できます。たとえば <code>console.log</code> はその一例です。</p>
+<p><code>void</code> 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 <code>void</code> は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 <code>void</code> 型の変数を作ることができます。この変数には <code>undefined</code> という値しか入りません。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aVoid</span>: <span style="color:#66d9ef">void</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
 
 <span style="color:#75715e">// → undefined
