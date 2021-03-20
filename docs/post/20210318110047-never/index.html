@@ -224,38 +224,6 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } // never はど�
 <p><code>void</code> は、関数が最終的に終了して戻ることを意味します。単に、何の値も返さないということです。関数には <code>return</code> 文がないか、または <code>return</code> 文の後に値がない状態になっています。 <code>void</code> 型は、値がないことを表すので、何にも代入できません。</p>
 <p><code>never</code> は、関数が決して正常に終了しないことを意味します。例外が発生したり、無限ループに陥ったりするかもしれません。Node のようなサーバーサイドのシステムであれば、 <code>process.exit()</code> を呼び出してプロセスを終了させるかもしれません。いずれにしても、実行が関数の最後に到達することはありません。 <code>never</code> 型は何にでも代入可能です。なぜならコンパイラは、実行時には実際には代入が行われないことを知っているからです。</p>
 <h2 id="anki-カード">Anki カード</h2>
-<h3 id="戻り値の型が-void-な関数">戻り値の型が void な関数</h3>
-<h4 id="front">Front</h4>
-<p>戻り値の型が void な関数はどんな関数か？</p>
-<h4 id="back">Back</h4>
-<p>何の値も返さない関数</p>
-<h3 id="戻り値の型が-void-な関数の中身">戻り値の型が void な関数の中身</h3>
-<h4 id="text">Text</h4>
-<p>戻り値の型が void の関数の中身は次のいずれかである</p>
-<ul>
-<li>{{c1::return 文がない}}</li>
-<li>{{c2::return 文の後に値がない}}</li>
-</ul>
-<h4 id="extra">Extra</h4>
-<h3 id="型が-void-な関数の戻り値を代入">型が void な関数の戻り値を代入</h3>
-<h4 id="front">Front</h4>
-<p><code>void</code> 型の関数の戻り値を何かに代入しようとすると何が起こるか？</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
-</code></pre></div><h4 id="back">Back</h4>
-<p>型エラー</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
-<span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">error</span>: <span style="color:#66d9ef">Type</span> <span style="color:#e6db74">&#39;void&#39;</span> <span style="color:#66d9ef">is</span> <span style="color:#a6e22e">not</span> <span style="color:#a6e22e">assignable</span> <span style="color:#a6e22e">to</span> <span style="color:#66d9ef">type</span> <span style="color:#e6db74">&#39;number&#39;</span>.
-</code></pre></div><h3 id="typescript-の推論">TypeScript の推論</h3>
-<h4 id="text">Text</h4>
-<p>TypeScript は次のような常に例外を投げる関数の戻り値の型を {{c1::void}} と推論する</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throws() {</span>
-  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;oh no&#39;</span>);
-}
-</code></pre></div><h4 id="extra">Extra</h4>
 <h3 id="never-型の戻り値">never 型の戻り値</h3>
 <h4 id="text">Text</h4>
 <p>次のような常に例外を投げる関数の戻り値の型は {{c1::never}} と指定できる</p>
@@ -314,6 +282,8 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } // never はど�
   
   
 
+  
+    
   
     
   
