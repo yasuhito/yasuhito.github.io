@@ -124,6 +124,11 @@
   </a>
   <div class="post-entry">
     
+      <p>Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。 図式で足し算の可換性を表すと次のよう</p>
+      <a href="https://yasuhito.github.io/post/20210322140545-comm/" class="post-read-more"
+        ></a
+      >
+    
   </div>
 
   <div class="postmeta">
@@ -162,12 +167,7 @@
   </a>
   <div class="post-entry">
     
-      <p>return 文を含まない関数の戻り値の型はなんでしょうか?
-TypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわかります。
-function f() { } const n: number = f(); // → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;. void の使いみちは、明示的に何も返さない関数を表現したい場合です。たとえば console.log はその一例です。
-void 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。
-const aVoid: void = undefined; // → undefined だからといって、その void を undefined 型の変数に代入できるわけではありません。 void は何にも代入できないので、型エラーになります。
-const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Type &#39;void&#39; is not assignable to type &#39;undefined&#39;.</p>
+      <p>return 文を含まない関数の戻り値の型はなんでしょうか? TypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわ</p>
       <a href="https://yasuhito.github.io/post/20210320155430-void/" class="post-read-more"
         ></a
       >
@@ -229,6 +229,11 @@ const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Ty
   </a>
   <div class="post-entry">
     
+      <p>https://en.duolingo.com/ 世界で最も人気のある外国語学習サービス。単語や文法の学習に SRS を採用している。 SRS として見たときの Duolingo のユニークな点 (たとえばExecute Program と</p>
+      <a href="https://yasuhito.github.io/post/20210319132742-duolingo/" class="post-read-more"
+        ></a
+      >
+    
   </div>
 
   <div class="postmeta">
@@ -247,6 +252,11 @@ const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Ty
     <h2 class="post-title">SRS の回答方式による効果の違い</h2>
   </a>
   <div class="post-entry">
+    
+      <p>SRS のユーザ回答方式には、Anki のようにユーザが裏面を見て自分で答合わせをする方式と、Duolingo や Execute Program のようにユーザが入力した答をシス</p>
+      <a href="https://yasuhito.github.io/post/20210319113717-srs_%E3%81%AE%E5%9B%9E%E7%AD%94%E6%96%B9%E5%BC%8F%E3%81%AB%E3%82%88%E3%82%8B%E5%8A%B9%E6%9E%9C%E3%81%AE%E9%81%95%E3%81%84/" class="post-read-more"
+        ></a
+      >
     
   </div>
 
@@ -267,12 +277,7 @@ const aVoid: void = undefined; const u: undefined = aVoid; // → type error: Ty
   </a>
   <div class="post-entry">
     
-      <p>関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
-// この関数は戻らない function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
-void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
-幸いなことに、TypeScript にはそのための型があります: never です。
-// 戻らない関数の返り値は never と指定する function throws(): never { throw new Error(&#39;oh no&#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます (ただし、実行すると例外が投げられます)。
-function throws(): never { throw new Error(&#39;oh no&#39;); } // never はどんな型にも割り当てられる const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。</p>
+      <p>関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。 // この関数は戻らない function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻</p>
       <a href="https://yasuhito.github.io/post/20210318110047-never/" class="post-read-more"
         ></a
       >
@@ -295,6 +300,11 @@ function throws(): never { throw new Error(&#39;oh no&#39;); } // never はど�
     <h2 class="post-title">デジタル・ガーデン</h2>
   </a>
   <div class="post-entry">
+    
+      <p>個人的なメモをインターネット上に公開したもの。多くの場合はメモ間にリンクが貼ってあり、Wiki のように関連するメモを読むことができる。 一般的</p>
+      <a href="https://yasuhito.github.io/post/20210318171123-%E3%83%86%E3%82%B7%E3%82%BF%E3%83%AB_%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3/" class="post-read-more"
+        ></a
+      >
     
   </div>
 

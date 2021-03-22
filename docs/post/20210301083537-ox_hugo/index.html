@@ -19,9 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ox-Hugo"/>
-<meta name="twitter:description" content="Org-Mode のファイルを Hugo 形式の Markdown に変換するためのプラグイン。
-保存版メモをまとめてエクスポート 次の関数を使って &quot;permanent notes&quot; とタグのついた Org-Roam の保存版ノートを Markdown に一括エクスポートできる。
-(after! (org org-roam) (defun my/org-roam-export-all () &#34;Re-exports all Org-roam files to Hugo markdown.&#34; (interactive) (dolist (f (org-roam--list-all-files)) (with-current-buffer (find-file f) (when (s-contains? &#34;permanent notes&#34; (buffer-string)) (org-hugo-export-wim-to-md)))))) 参考文献  Ox-Hugo (GitHub)  "/>
+<meta name="twitter:description" content="Org-Mode のファイルを Hugo 形式の Markdown に変換するためのプラグイン。 保存版メモをまとめてエクスポート 次の関数を使って &quot;permanent notes&quot; とタグのついた Org-Roam の保存版ノートを Markdown に"/>
 
 
 

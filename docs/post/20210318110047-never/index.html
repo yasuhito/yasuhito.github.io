@@ -19,12 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="never"/>
-<meta name="twitter:description" content="関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。
-// この関数は戻らない function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。
-void 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。
-幸いなことに、TypeScript にはそのための型があります: never です。
-// 戻らない関数の返り値は never と指定する function throws(): never { throw new Error(&#39;oh no&#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます (ただし、実行すると例外が投げられます)。
-function throws(): never { throw new Error(&#39;oh no&#39;); } // never はどんな型にも割り当てられる const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。"/>
+<meta name="twitter:description" content="関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。 // この関数は戻らない function throws() { throw new Error(&#39;oh no&#39;); } この関数の戻"/>
 
 
 

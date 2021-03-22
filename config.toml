@@ -7,6 +7,7 @@ DefaultContentLanguage = "ja"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 publishDir = "docs"
+hasCJKLanguage = true
 
 [Author]
   name = "Yasuhito Takamiya"
