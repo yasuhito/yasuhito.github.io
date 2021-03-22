@@ -2,11 +2,31 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210322140545-comm/",
+                "title": "Comm",
+                "section": "post",
+                "date" : "2021.03.22",
+                "body": "Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。\n図式で足し算の可換性を表すと次のようになる。\n  これが正しいことは、変数 \\(x\\), \\(y\\) を使うことで次のように示せる。\nComm の左辺に \\(x\\) と \\(y\\) を入力すると、\n  Comm の右辺に \\(x\\) と \\(y\\) を入力すると、\n  ここで足し算の可換性より \\(x + y = y + x\\) だから、\n  が成り立つ。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/",
+                "title": "図式的線形代数",
+                "section": "post",
+                "date" : "2021.03.22",
+                "body": "https://graphicallinearalgebra.net/\n Comm  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210320155430-void/",
                 "title": "void",
                 "section": "post",
                 "date" : "2021.03.20",
-                "body": "return 文を含まない関数の戻り値の型はなんでしょうか?\nTypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわかります。\nfunction f() { } const n: number = f(); // → type error: Type \u0026#39;void\u0026#39; is not assignable to type \u0026#39;number\u0026#39;. 明示的に何も返さない関数の戻り値は void と指定できます。たとえば console.log はその一例です。\nvoid 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。\nconst aVoid: void = undefined; // → undefined だからといって、その void を undefined 型の変数に代入できるわけではありません。 void は何にも代入できないので、型エラーになります。\nconst aVoid: void = undefined; const u: undefined = aVoid; // → type error: Type \u0026#39;void\u0026#39; is not assignable to type \u0026#39;undefined\u0026#39;. 実際には、 void 型の変数に出会うことはないでしょう。しかし、多くの void 関数を目にすることになるでしょう。なぜなら、戻り値のない関数は自動的に void と推論されるからです。\n参考  void (Execute Program)  "
+                "body": "return 文を含まない関数の戻り値の型はなんでしょうか?\nTypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわかります。\nfunction f() { } const n: number = f(); // → type error: Type \u0026#39;void\u0026#39; is not assignable to type \u0026#39;number\u0026#39;. void の使いみちは、明示的に何も返さない関数を表現したい場合です。たとえば console.log はその一例です。\nvoid 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 void は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 void 型の変数を作ることができます。この変数には undefined という値しか入りません。\nconst aVoid: void = undefined; // → undefined だからといって、その void を undefined 型の変数に代入できるわけではありません。 void は何にも代入できないので、型エラーになります。\nconst aVoid: void = undefined; const u: undefined = aVoid; // → type error: Type \u0026#39;void\u0026#39; is not assignable to type \u0026#39;undefined\u0026#39;. 実際には、 void 型の変数に出会うことはないでしょう。しかし、多くの void 関数を目にすることになるでしょう。なぜなら、戻り値のない関数は自動的に void と推論されるからです。\n参考  void (Execute Program)  "
             }
         
     ,
