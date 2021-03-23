@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Zero</title>
+			<link>https://yasuhito.github.io/post/20210323084442-zero/</link>
+			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210323084442-zero/</guid>
+			<description>ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。 ゼロを図式的線形代数で表すと、次の</description>
+		</item>
+      	
+		<item>
 			<title>Comm</title>
 			<link>https://yasuhito.github.io/post/20210322140545-comm/</link>
 			<pubDate>Mon, 22 Mar 2021 00:00:00 +0900</pubDate>
@@ -24,7 +32,7 @@
 			<link>https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/</link>
 			<pubDate>Mon, 22 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/</guid>
-			<description>https://graphicallinearalgebra.net/ Comm</description>
+			<description>https://graphicallinearalgebra.net/ Comm Zero</description>
 		</item>
       	
 		<item>
@@ -81,14 +89,6 @@
 			<pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210318171123-%E3%83%86%E3%82%B7%E3%82%BF%E3%83%AB_%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3/</guid>
 			<description>個人的なメモをインターネット上に公開したもの。多くの場合はメモ間にリンクが貼ってあり、Wiki のように関連するメモを読むことができる。 一般的</description>
-		</item>
-      	
-		<item>
-			<title>スカラー行列</title>
-			<link>https://yasuhito.github.io/post/20210317113230-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E8%A1%8C%E5%88%97/</link>
-			<pubDate>Wed, 17 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210317113230-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E8%A1%8C%E5%88%97/</guid>
-			<description>単位行列の定数倍をスカラー行列という。 たとえば、 \[\begin{bmatrix} \lambda &amp;amp; 0 &amp;amp; 0 \\\ 0 &amp;amp; \lambda &amp;amp; 0 \\\ 0 &amp;amp; 0 &amp;amp; \lambda \end{bmatrix}\] はスカラー行列である。</description>
 		</item>
       	
 	</channel>

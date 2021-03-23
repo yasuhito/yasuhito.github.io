@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210323084442-zero/",
+                "title": "Zero",
+                "section": "post",
+                "date" : "2021.03.23",
+                "body": "ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。\nゼロを図式的線形代数で表すと、次のジェネレータになる。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210322140545-comm/",
                 "title": "Comm",
                 "section": "post",
@@ -16,7 +26,7 @@
                 "title": "図式的線形代数",
                 "section": "post",
                 "date" : "2021.03.22",
-                "body": "https://graphicallinearalgebra.net/\n Comm  "
+                "body": "https://graphicallinearalgebra.net/\n Comm Zero  "
             }
         
     ,
