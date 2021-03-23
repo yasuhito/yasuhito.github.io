@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Twist</title>
+<title>Assoc</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Twist"/>
-<meta name="twitter:description" content="図式的線形代数で交差する二本の結線をツイスト (twist) と呼ぶ。 入力は 2 つ、出力も同じく 2 つなので \((2, 2)\) である。"/>
+<meta name="twitter:title" content="Assoc"/>
+<meta name="twitter:description" content="Assoc は Associativity (結合性) の略。図式的線形代数では足し算を扱うので、単に Assoc と書いた場合それは足し算の結合性を表す。 図式で足し算の結合性を表すと次のよう"/>
 
 
 
@@ -93,7 +93,7 @@
         <div class="post-heading">
           
             <h1>
-              Twist
+              Assoc
             </h1>
           
           
@@ -114,12 +114,37 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a>で交差する二本の結線をツイスト (twist) と呼ぶ。</p>
+  <p>Assoc は Associativity (結合性) の略。<a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a>では足し算を扱うので、単に Assoc と書いた場合それは足し算の結合性を表す。</p>
+<p>図式で足し算の結合性を表すと次のようになる。</p>
 <figure>
-    <img src="/ox-hugo/2021-03-22_15-53-11_screenshot.png"/> 
+    <img src="/ox-hugo/2021-03-22_16-44-52_screenshot.png"/> 
 </figure>
 
-<p>入力は 2 つ、出力も同じく 2 つなので \((2, 2)\) である。</p>
+<p>これが正しいことは、変数 \(x\), \(y\), \(z\) を使うことで次のように示せる。</p>
+<p>Assoc の左辺に \(x\), \(y\), \(z\) を入力すると、</p>
+<figure>
+    <img src="/ox-hugo/2021-03-22_16-46-44_screenshot.png"/> 
+</figure>
+
+<p>Assoc の右辺に \(x\), \(y\), \(z\) を入力すると、</p>
+<figure>
+    <img src="/ox-hugo/2021-03-22_16-48-12_screenshot.png"/> 
+</figure>
+
+<p>ここで足し算の結合性より \((x + y) + z = x + (y + z)\) だから、</p>
+<figure>
+    <img src="/ox-hugo/2021-03-22_16-44-52_screenshot.png"/> 
+</figure>
+
+<p>が成り立つ。</p>
+<h2 id="参考">参考</h2>
+<ul>
+<li><a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a>
+<ul>
+<li><a href="https://graphicallinearalgebra.net/2015/04/30/spoilers-adding-part-2-and-zero/">5. Spoilers, Adding (Part 2) and Zero</a></li>
+</ul>
+</li>
+</ul>
 
 
 
