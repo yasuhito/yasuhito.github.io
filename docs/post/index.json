@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210323095806-twist/",
+                "title": "Twist",
+                "section": "post",
+                "date" : "2021.03.23",
+                "body": "図式的線形代数で交差する二本の結線をツイスト (twist) と呼ぶ。\n  入力は 2 つ、出力も同じく 2 つなので \\((2, 2)\\) である。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210323090747-unit/",
                 "title": "Unit",
                 "section": "post",
@@ -46,7 +56,7 @@
                 "title": "図式的線形代数",
                 "section": "post",
                 "date" : "2021.03.22",
-                "body": "https://graphicallinearalgebra.net/\n Comm Zero  "
+                "body": "グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。\nhttps://graphicallinearalgebra.net/\n ジェネレータ  Identity Twist Zero   方程式  Comm    "
             }
         
     ,
