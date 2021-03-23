@@ -42,11 +42,21 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210323110948-%E5%9B%B3%E5%BC%8F%E3%81%AE%E5%90%88%E6%88%90/",
+                "title": "図式の合成",
+                "section": "post",
+                "date" : "2021.03.23",
+                "body": "図式の合成では、次のように第 1 引数の右に第 2 引数を置いて結線同士をつなげる:\n  合成のルールを式で書くと次の通り:\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/",
                 "title": "図式の直和",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる。\n  直和のルールを式で書くと次の通り:\n  下の Identity を曲げているが、これは曲げても曲げなくても良い。図式の重要な情報はルールからも明らかなように、\n 左から右に向かって何が何につながっているか 上から下に向かってどの順番でジェネレータが並んでいるか  なので、それを変えなければ結線を曲げても良い。\nもちろん、直和は可換でないことに注意。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる:\n  直和のルールを式で書くと次の通り:\n  下の Identity を曲げているが、これは曲げても曲げなくても良い。図式の重要な情報はルールからも明らかなように、\n 左から右に向かって何が何につながっているか 上から下に向かってどの順番でジェネレータが並んでいるか  なので、それを変えなければ結線を曲げても良い。\nもちろん、直和は可換でないことに注意。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -66,7 +76,7 @@
                 "title": "図式的線形代数",
                 "section": "post",
                 "date" : "2021.03.22",
-                "body": "グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。\nhttps://graphicallinearalgebra.net/\n ジェネレータ  Identity Twist Zero   方程式  Comm   合成  図式の直和    "
+                "body": "グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。\nhttps://graphicallinearalgebra.net/\n ジェネレータ  Identity Twist Zero   方程式  Comm   演算  図式の直和 図式の合成    "
             }
         
     ,
