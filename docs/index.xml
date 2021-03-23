@@ -14,6 +14,14 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Unit</title>
+			<link>https://yasuhito.github.io/post/20210323090747-unit/</link>
+			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210323090747-unit/</guid>
+			<description>ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。 なぜこうなるかは、次のようにワイヤに変数を振ってみれば</description>
+		</item>
+      	
+		<item>
 			<title>Zero</title>
 			<link>https://yasuhito.github.io/post/20210323084442-zero/</link>
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210318110047-never/</guid>
 			<description>関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。 // この関数は戻らない function throws() { throw new Error(&amp;#39;oh no&amp;#39;); } この関数の戻</description>
-		</item>
-      	
-		<item>
-			<title>デジタル・ガーデン</title>
-			<link>https://yasuhito.github.io/post/20210318171123-%E3%83%86%E3%82%B7%E3%82%BF%E3%83%AB_%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3/</link>
-			<pubDate>Thu, 18 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210318171123-%E3%83%86%E3%82%B7%E3%82%BF%E3%83%AB_%E3%82%AB%E3%83%BC%E3%83%86%E3%83%B3/</guid>
-			<description>個人的なメモをインターネット上に公開したもの。多くの場合はメモ間にリンクが貼ってあり、Wiki のように関連するメモを読むことができる。 一般的</description>
 		</item>
       	
 	</channel>

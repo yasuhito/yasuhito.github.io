@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210323090747-unit/",
+                "title": "Unit",
+                "section": "post",
+                "date" : "2021.03.23",
+                "body": "ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。\n  なぜこうなるかは、次のようにワイヤに変数を振ってみれば分かりやすい。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210323084442-zero/",
                 "title": "Zero",
                 "section": "post",
