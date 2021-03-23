@@ -34,7 +34,7 @@
 			<link>https://yasuhito.github.io/post/20210323090747-unit/</link>
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210323090747-unit/</guid>
-			<description>ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。 なぜこうなるかは、次のようにワイヤに変数を振ってみれば</description>
+			<description>ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。右辺は Identity。 なぜこうなるかは、次のようにワ</description>
 		</item>
       	
 		<item>
@@ -43,6 +43,14 @@
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210323084442-zero/</guid>
 			<description>ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。 ゼロを図式的線形代数で表すと、次の</description>
+		</item>
+      	
+		<item>
+			<title>図式の直和</title>
+			<link>https://yasuhito.github.io/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/</link>
+			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/</guid>
+			<description>図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる。 下の Identity を曲げているが、これは曲げても曲げなくても良い。図式の重要な情報は、 左から右</description>
 		</item>
       	
 		<item>
@@ -58,7 +66,7 @@
 			<link>https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/</link>
 			<pubDate>Mon, 22 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/</guid>
-			<description>グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。 https://graphicallinearalgebra.net/ ジェネレータ Identity Twist Zero 方程式 Comm</description>
+			<description>グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。 https://graphicallinearalgebra.net/ ジェネレータ Identity Twist Zero 方程式 Comm 合成 図式の直和</description>
 		</item>
       	
 		<item>
@@ -83,14 +91,6 @@
 			<pubDate>Fri, 19 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210319115727-anki/</guid>
 			<description>https://apps.ankiweb.net/ 人気のある SRS の一種。</description>
-		</item>
-      	
-		<item>
-			<title>Duolingo</title>
-			<link>https://yasuhito.github.io/post/20210319132742-duolingo/</link>
-			<pubDate>Fri, 19 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210319132742-duolingo/</guid>
-			<description>https://en.duolingo.com/ 世界で最も人気のある外国語学習サービス。単語や文法の学習に SRS を採用している。 SRS として見たときの Duolingo のユニークな点 (たとえばExecute Program と</description>
 		</item>
       	
 	</channel>
