@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210323094041-identity/",
+                "title": "Identity",
+                "section": "post",
+                "date" : "2021.03.23",
+                "body": "図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。\n  入力は 1 つ、出力も同じく 1 つなので \\((1, 1)\\) である。\n参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210323090747-unit/",
                 "title": "Unit",
                 "section": "post",
