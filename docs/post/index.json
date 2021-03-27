@@ -2,11 +2,21 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210223202810-anki_editor/",
+                "title": "anki-editor",
+                "section": "post",
+                "date" : "2021.03.27",
+                "body": "Org Mode や Org-Roam で書いたノートから Anki カードを生成するためのパッケージ。\n参考  louietan/anki-editor  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210327120037-deft/",
                 "title": "Deft",
                 "section": "post",
                 "date" : "2021.03.27",
-                "body": "https://github.com/jrblevin/deft\nEmacs を Notational Velocity 的に使うためのパッケージ。インクリメンタルサーチで SKK が使えないので日本語が使えない。なんとかしたいところ。\n"
+                "body": "https://github.com/jrblevin/deft\nEmacs を Notational Velocity 的に使うためのパッケージ。Org Mode や Org-Roam のノート一覧をファイル内容も含めてインクリメンタルサーチできるのが便利。ただし SKK が使えないので日本語が使えない。なんとかしたいところ。\n"
             }
         
     ,
@@ -166,7 +176,7 @@
                 "title": "デジタル・ガーデン",
                 "section": "post",
                 "date" : "2021.03.18",
-                "body": "個人的なメモをインターネット上に公開したもの。多くの場合はメモ間にリンクが貼ってあり、Wiki のように関連するメモを読むことができる。\n一般的な作り方としては、Roam Research や Obsidian といった個人用のメモツールで書いたメモを外部ツールでインターネット上に公開する場合が多い。\n MaggieAppleton/digital-gardeners デジタル・ガーデン用ツール、作りかたチュートリアル、各種ノート法などの基礎知識、個別のデジタル・ガーデンサイトへのリンク集 Andyʼs working notes デジタル・ガーデン流行の火付け役となったサイトであり、多くの人がお手本にしている Andy Matuschak のサイト 効率的なノートを作成できるドイツの社会学者が生み出した方法「Zettelkasten」とは？ ノート法の一種で、多くのデジタル・ガーデンはこの方法に則って書かれている  "
+                "body": "個人的なメモをインターネット上に公開したもの。多くの場合はメモ間にリンクが貼ってあり、Wiki のように関連するメモを読むことができる。\n一般的な作り方としては、Roam Research や Obsidian といった個人用のメモツールで書いたメモを外部ツールでインターネット上に公開する場合が多い。\n MaggieAppleton/digital-gardeners デジタル・ガーデン用ツール、作りかたチュートリアル、各種ノート法などの基礎知識、個別のデジタル・ガーデンサイトへのリンク集 Andyʼs working notes デジタル・ガーデン流行の火付け役となったサイトであり、多くの人がお手本にしている Andy Matuschak のサイト 効率的なノートを作成できるドイツの社会学者が生み出した方法「Zettelkasten」とは？ ノート法の一種で、多くのデジタル・ガーデンはこの方法に則って書かれている  関連ノート  保存版メモの数  "
             }
         
     ,

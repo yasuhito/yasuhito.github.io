@@ -12,11 +12,19 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>anki-editor</title>
+			<link>https://yasuhito.github.io/post/20210223202810-anki_editor/</link>
+			<pubDate>Sat, 27 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210223202810-anki_editor/</guid>
+			<description>Org Mode や Org-Roam で書いたノートから Anki カードを生成するためのパッケージ。 参考 louietan/anki-editor</description>
+		</item>
+      	
+		<item>
 			<title>Deft</title>
 			<link>https://yasuhito.github.io/post/20210327120037-deft/</link>
 			<pubDate>Sat, 27 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210327120037-deft/</guid>
-			<description>https://github.com/jrblevin/deft Emacs を Notational Velocity 的に使うためのパッケージ。インクリメンタルサーチで SKK が使えないので日本語が使えない。なんとかしたいところ。</description>
+			<description>https://github.com/jrblevin/deft Emacs を Notational Velocity 的に使うためのパッケージ。Org Mode や Org-Roam のノート一覧をファイル内容も含めてインクリメンタルサーチできるのが便利。ただし SKK が使えないの</description>
 		</item>
       	
 		<item>
@@ -81,14 +89,6 @@
 			<pubDate>Mon, 22 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210322140545-comm/</guid>
 			<description>Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。 図式で足し算の可換性を表すと次のよう</description>
-		</item>
-      	
-		<item>
-			<title>図式的線形代数</title>
-			<link>https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/</link>
-			<pubDate>Mon, 22 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/</guid>
-			<description>グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。 https://graphicallinearalgebra.net/ ジェネレータ Identity Twist Zero 方程式 Comm Assoc 演算 図式の直和 図式の合成</description>
 		</item>
       	
 	</channel>
