@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210327120037-deft/",
+                "title": "Deft",
+                "section": "post",
+                "date" : "2021.03.27",
+                "body": "https://github.com/jrblevin/deft\nEmacs を Notational Velocity 的に使うためのパッケージ。インクリメンタルサーチで SKK が使えないので日本語が使えない。なんとかしたいところ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210323114201-assoc/",
                 "title": "Assoc",
                 "section": "post",
@@ -76,7 +86,7 @@
                 "title": "Comm",
                 "section": "post",
                 "date" : "2021.03.22",
-                "body": "Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。\n図式で足し算の可換性を表すと次のようになる。\n  これが正しいことは、変数 \\(x\\), \\(y\\) を使うことで次のように示せる。\nComm の左辺に \\(x\\) と \\(y\\) を入力すると、\n  Comm の右辺に \\(x\\) と \\(y\\) を入力すると、\n  ここで足し算の可換性より \\(x + y = y + x\\) だから、\n  が成り立つ。\n参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。\n図式で足し算の可換性を表すと次のようになる。\n  これが正しいことは、変数 \\(x\\), \\(y\\) を使うことで次のように示せる。\nComm の左辺に \\(x\\) と \\(y\\) を入力すると、\n  Comm の右辺に \\(x\\) と \\(y\\) を入力すると、\n  ここで足し算の可換性より \\(x + y = y + x\\) だから、\n  が成り立つ。\n"
             }
         
     ,
