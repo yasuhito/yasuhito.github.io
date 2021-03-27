@@ -30,6 +30,22 @@
 		</item>
       	
 		<item>
+			<title>Qni</title>
+			<link>https://yasuhito.github.io/post/20210224155908-qni/</link>
+			<pubDate>Sat, 27 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210224155908-qni/</guid>
+			<description>ブラウザ上で動く量子回路シミュレータ。初心者が量子コンピュータをライブプログラミングで直感的に学べる環境を目指している。</description>
+		</item>
+      	
+		<item>
+			<title>圏論的量子力学入門</title>
+			<link>https://yasuhito.github.io/post/20210310110827-%E5%9C%8F%E8%AB%96%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%85%A5%E9%96%80/</link>
+			<pubDate>Sat, 27 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210310110827-%E5%9C%8F%E8%AB%96%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%85%A5%E9%96%80/</guid>
+			<description>https://www.morikita.co.jp/books/book/3316 関連ノート 量子コンピュータ 図式的線形代数</description>
+		</item>
+      	
+		<item>
 			<title>Assoc</title>
 			<link>https://yasuhito.github.io/post/20210323114201-assoc/</link>
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210323110948-%E5%9B%B3%E5%BC%8F%E3%81%AE%E5%90%88%E6%88%90/</guid>
 			<description>図式の合成では、次のように第 1 引数の右に第 2 引数を置いて結線同士をつなげる: 合成のルールを式で書くと次の通り: 参考 Graphical Linear Algebra 5. Spoilers, Adding (Part 2) and Zero</description>
-		</item>
-      	
-		<item>
-			<title>図式の直和</title>
-			<link>https://yasuhito.github.io/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/</link>
-			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/</guid>
-			<description>図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる: 直和のルールを式で書くと次の通り: 下の Identity を曲げているが、これは曲げても曲げなくても</description>
-		</item>
-      	
-		<item>
-			<title>Comm</title>
-			<link>https://yasuhito.github.io/post/20210322140545-comm/</link>
-			<pubDate>Mon, 22 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210322140545-comm/</guid>
-			<description>Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。 図式で足し算の可換性を表すと次のよう</description>
 		</item>
       	
 	</channel>

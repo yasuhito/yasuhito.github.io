@@ -22,6 +22,26 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210224155908-qni/",
+                "title": "Qni",
+                "section": "post",
+                "date" : "2021.03.27",
+                "body": "ブラウザ上で動く量子回路シミュレータ。初心者が量子コンピュータをライブプログラミングで直感的に学べる環境を目指している。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210310110827-%E5%9C%8F%E8%AB%96%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%85%A5%E9%96%80/",
+                "title": "圏論的量子力学入門",
+                "section": "post",
+                "date" : "2021.03.27",
+                "body": "https://www.morikita.co.jp/books/book/3316\n関連ノート  量子コンピュータ 図式的線形代数  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210323114201-assoc/",
                 "title": "Assoc",
                 "section": "post",
