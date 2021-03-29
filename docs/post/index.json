@@ -52,6 +52,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210329140322-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97/",
+                "title": "エルミート行列",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "複素行列 \\(A\\) とそのエルミート共役 \\(A^{\\dagger}\\) について \\(A^{\\dagger} = A\\) を満たすとき、行列 \\(A\\) をエルミート行列と呼ぶ。\nその性質からエルミート行列の対角成分は実数であり、かつ、対角線に関して対称な位置にある成分は互いに共役な複素数となる。\n2 次のエルミート行列の例\n\\[A = \\begin{bmatrix} 3 \u0026amp; 1 + i \\\\\\\n1 -i \u0026amp; -2 \\end{bmatrix}\\]\n3 次のエルミート行列の例\n\\[A = \\begin{bmatrix} 1 \u0026amp; i \u0026amp; 2-i \\\\\\\n-i \u0026amp; 2 \u0026amp; -3i \\\\\\\n2+i \u0026amp; 3i \u0026amp; -1 \\end{bmatrix}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210329133439-%E9%96%93%E9%9A%94%E5%8F%8D%E5%BE%A9%E8%A8%98%E6%86%B6%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/",
                 "title": "間隔反復記憶システム",
                 "section": "post",
