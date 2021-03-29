@@ -52,6 +52,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210329133439-%E9%96%93%E9%9A%94%E5%8F%8D%E5%BE%A9%E8%A8%98%E6%86%B6%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/",
+                "title": "間隔反復記憶システム",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "実装  Supermemo Anki Mnemosyne Execute Program  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210223202810-anki_editor/",
                 "title": "anki-editor",
                 "section": "post",
@@ -206,7 +216,7 @@
                 "title": "Anki",
                 "section": "post",
                 "date" : "2021.03.19",
-                "body": "https://apps.ankiweb.net/\n人気のある SRS の一種。\n"
+                "body": "人気の間隔反復記憶システムのひとつ。オープンソースとして開発されており、ソースコードは ankitects/anki から取得できる。\nリンク  ホームページ https://apps.ankiweb.net/ ドキュメント https://docs.ankiweb.net/ 共有デッキ https://ankiweb.net/shared/decks/  "
             }
         
     ,
@@ -406,7 +416,7 @@
                 "title": "Execute Program",
                 "section": "post",
                 "date" : "2021.03.02",
-                "body": "https://www.executeprogram.com/\nSRS で JavaScript などの API を学習できるサービス。SRS が外国語学習だけでなく API の習得にも有効なのは、Michael Nielsen の Augmenting Long-term Memory でも実証されていることである。\nビジネス的には、SRS は長期 (数年〜) に渡って使うものなので、こういうサービスは個人利用であっても契約期間が長くなる → 収益化しやすい、と予想できる。\n使ってみた感想として、回答では必ずキー入力を求められるので、Anki のようにサクサク進められず、レビューセッションを始める前の心理的バリアが少し高いと感じた。キー入力が必要な要因として、問題と回答がアトミックな質問と答になっていないことが考えられる。\nキー入力を使わない SRS でプログラミング API を習得することは可能だろうか？ Execute Program の問題を SRS に起こし、自分を実験台にして確認してみる。\n"
+                "body": "https://www.executeprogram.com/\n間隔反復記憶システム (SRMS) で JavaScript などの API を学習できるサービス。SRMS が外国語学習だけでなく API の習得にも有効なのは、Michael Nielsen の Augmenting Long-term Memory でも実証されていることである。\nビジネス的には、SRMS は長期 (数年〜) に渡って使うものなので、こういうサービスは個人利用であっても契約期間が長くなる → 収益化しやすい、と予想できる。\n使ってみた感想として、回答では必ずキー入力を求められるので、Anki のようにサクサク進められず、レビューセッションを始める前の心理的バリアが少し高いと感じた。キー入力が必要な要因として、問題と回答がアトミックな質問と答になっていないことが考えられる。\nキー入力を使わない SRMS でプログラミング API を習得することは可能だろうか？ Execute Program の問題を SRMS に起こし、自分を実験台にして確認してみる。\n"
             }
         
     ,
