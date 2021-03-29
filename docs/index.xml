@@ -38,6 +38,14 @@
 		</item>
       	
 		<item>
+			<title>エルミート共役</title>
+			<link>https://yasuhito.github.io/post/20210329114625-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9/</link>
+			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210329114625-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9/</guid>
+			<description>\(m \times n\) 複素行列 \(A\) に対して、\(A\) の転置および複素共役をとって得られる \(n \times m\) 行列をエルミート共役と呼ぶ。随伴行列、エルミート随伴とも呼ばれ</description>
+		</item>
+      	
+		<item>
 			<title>anki-editor</title>
 			<link>https://yasuhito.github.io/post/20210223202810-anki_editor/</link>
 			<pubDate>Sat, 27 Mar 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210323094041-identity/</guid>
 			<description>図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。 入力は 1 つ、出力も同じく 1 つなので \((1, 1)\) である。 参考 Graphical Linear Algebra 5. Spoilers, Adding (Part 2) and Zero</description>
-		</item>
-      	
-		<item>
-			<title>Twist</title>
-			<link>https://yasuhito.github.io/post/20210323095806-twist/</link>
-			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210323095806-twist/</guid>
-			<description>図式的線形代数で交差する二本の結線をツイスト (twist) と呼ぶ。 入力は 2 つ、出力も同じく 2 つなので \((2, 2)\) である。</description>
 		</item>
       	
 	</channel>

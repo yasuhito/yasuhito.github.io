@@ -32,6 +32,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210329114625-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9/",
+                "title": "エルミート共役",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "\\(m \\times n\\) 複素行列 \\(A\\) に対して、\\(A\\) の転置および複素共役をとって得られる \\(n \\times m\\) 行列をエルミート共役と呼ぶ。随伴行列、エルミート随伴とも呼ばれる。\n量子論ではエルミート共役は \\(A^{\\dagger}\\) と書き、\\(A^{\\dagger} = (A^T)^{\\ast}\\) である。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210223202810-anki_editor/",
                 "title": "anki-editor",
                 "section": "post",
@@ -266,7 +276,7 @@
                 "title": "ディラック記法",
                 "section": "post",
                 "date" : "2021.03.11",
-                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\vert{}\\psi\\rangle\\)   ディラックのブラ (bra) \\(\\langle\\pi\\vert{}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n    記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる。   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役、もしくは随伴。\\(A^{\\dagger} = (A^T)^{\\ast}\\)   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい。    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418 \u0026lt;10.1017/S0305004100021162\u0026gt;  "
+                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\vert{}\\psi\\rangle\\)   ディラックのブラ (bra) \\(\\langle\\pi\\vert{}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n    記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる。   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい。    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418 \u0026lt;10.1017/S0305004100021162\u0026gt;  "
             }
         
     ,
