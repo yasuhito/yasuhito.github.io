@@ -2,6 +2,36 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210224132528-doom_emacs/",
+                "title": "Doom Emacs",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "関連ノート  Effective Emacs  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210324153839-effective_emacs/",
+                "title": "Effective Emacs",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "https://sites.google.com/site/steveyegge2/effective-emacs\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210329095350-org_transclusion/",
+                "title": "org-transclusion",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "Org Mode で Roam Research 的なブロック参照を行うためのパッケージ。\nOrg-Roam で書いたノートの一部を、他のノートや Doom Emacs の config.org から参照したくなったので導入。\n設定 ~/.doom.d/packages.el の設定\n(package! org-transclusion :recipe (:host github :repo \u0026#34;nobiot/org-transclusion\u0026#34; :branch \u0026#34;main\u0026#34;)) ~/.doom.d/config.el の設定\n(use-package! org-transclusion :hook (org-roam-mode . org-transclusion-mode)) リンク  nobiot/org-transclusion  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210223202810-anki_editor/",
                 "title": "anki-editor",
                 "section": "post",

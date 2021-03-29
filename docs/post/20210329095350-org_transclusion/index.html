@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>図式の直和</title>
+<title>org-transclusion</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="図式の直和"/>
-<meta name="twitter:description" content="図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる: 直和のルールを式で書くと次の通り: 下の Identity を曲げているが、これは曲げても曲げなくても"/>
+<meta name="twitter:title" content="org-transclusion"/>
+<meta name="twitter:description" content="Org Mode で Roam Research 的なブロック参照を行うためのパッケージ。 Org-Roam で書いたノートの一部を、他のノートや Doom Emacs の config.org から参照したくなったので導入。 設定 ~/.doom.d/packages.el の設定 (package!"/>
 
 
 
@@ -93,13 +93,13 @@
         <div class="post-heading">
           
             <h1>
-              図式の直和
+              org-transclusion
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 23, 2021
+  >&nbsp;Mar 29, 2021
   
 </span>
 
@@ -114,34 +114,22 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる:</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_15-54-53_screenshot.png"/> 
-</figure>
-
-<p>直和のルールを式で書くと次の通り:</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_15-53-57_screenshot.png"/> 
-</figure>
-
-<p>下の <a href="/post/20210323094041-identity/">Identity</a> を曲げているが、これは曲げても曲げなくても良い。図式の重要な情報はルールからも明らかなように、</p>
+  <p><a href="/post/20210223135036-org_mode/">Org Mode</a> で Roam Research 的なブロック参照を行うためのパッケージ。</p>
+<p><a href="/post/20210223134834-org_roam/">Org-Roam</a> で書いたノートの一部を、他のノートや <a href="/post/20210224132528-doom_emacs/">Doom Emacs</a> の config.org から参照したくなったので導入。</p>
+<h2 id="設定">設定</h2>
+<p><code>~/.doom.d/packages.el</code> の設定</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(package! org-transclusion
+  :recipe (:host github
+           :repo <span style="color:#e6db74">&#34;nobiot/org-transclusion&#34;</span>
+           :branch <span style="color:#e6db74">&#34;main&#34;</span>))
+</code></pre></div><p><code>~/.doom.d/config.el</code> の設定</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(use-package! org-transclusion
+  :hook (org-roam-mode <span style="color:#f92672">.</span> org-transclusion-mode))
+</code></pre></div><h2 id="リンク">リンク</h2>
 <ul>
-<li>左から右に向かって何が何につながっているか</li>
-<li>上から下に向かってどの順番でジェネレータが並んでいるか</li>
-</ul>
-<p>なので、それを変えなければ結線を曲げても良い。</p>
-<p>もちろん、直和は可換でないことに注意。</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_16-34-48_screenshot.png"/> 
-</figure>
-
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/2015/04/30/spoilers-adding-part-2-and-zero/">5. Spoilers, Adding (Part 2) and Zero</a></li>
-</ul>
-</li>
+<li><a href="https://github.com/nobiot/org-transclusion">nobiot/org-transclusion</a></li>
 </ul>
 
 
@@ -198,8 +186,6 @@
     
   
     
-      
-    
   
     
   
@@ -286,19 +272,6 @@
     
   
 
-  
-    <div class="container" role="main">
-      <div class="bl-section" style="margin-top: 4rem">
-        <h2>Links to this note</h2>
-        <div class="backlinks">
-          <ul>
-           
-              <li><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a></li>
-              
-          </ul>
-        </div>
-      </div>
-    </div>
   
 
 

@@ -12,6 +12,30 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Doom Emacs</title>
+			<link>https://yasuhito.github.io/post/20210224132528-doom_emacs/</link>
+			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210224132528-doom_emacs/</guid>
+			<description>関連ノート Effective Emacs</description>
+		</item>
+      	
+		<item>
+			<title>Effective Emacs</title>
+			<link>https://yasuhito.github.io/post/20210324153839-effective_emacs/</link>
+			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210324153839-effective_emacs/</guid>
+			<description>https://sites.google.com/site/steveyegge2/effective-emacs</description>
+		</item>
+      	
+		<item>
+			<title>org-transclusion</title>
+			<link>https://yasuhito.github.io/post/20210329095350-org_transclusion/</link>
+			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210329095350-org_transclusion/</guid>
+			<description>Org Mode で Roam Research 的なブロック参照を行うためのパッケージ。 Org-Roam で書いたノートの一部を、他のノートや Doom Emacs の config.org から参照したくなったので導入。 設定 ~/.doom.d/packages.el の設定 (package!</description>
+		</item>
+      	
+		<item>
 			<title>anki-editor</title>
 			<link>https://yasuhito.github.io/post/20210223202810-anki_editor/</link>
 			<pubDate>Sat, 27 Mar 2021 00:00:00 +0900</pubDate>
@@ -65,30 +89,6 @@
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210323095806-twist/</guid>
 			<description>図式的線形代数で交差する二本の結線をツイスト (twist) と呼ぶ。 入力は 2 つ、出力も同じく 2 つなので \((2, 2)\) である。</description>
-		</item>
-      	
-		<item>
-			<title>Unit</title>
-			<link>https://yasuhito.github.io/post/20210323090747-unit/</link>
-			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210323090747-unit/</guid>
-			<description>ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。右辺は Identity。 なぜこうなるかは、次のようにワ</description>
-		</item>
-      	
-		<item>
-			<title>Zero</title>
-			<link>https://yasuhito.github.io/post/20210323084442-zero/</link>
-			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210323084442-zero/</guid>
-			<description>ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。 ゼロを図式的線形代数で表すと、次の</description>
-		</item>
-      	
-		<item>
-			<title>図式の合成</title>
-			<link>https://yasuhito.github.io/post/20210323110948-%E5%9B%B3%E5%BC%8F%E3%81%AE%E5%90%88%E6%88%90/</link>
-			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210323110948-%E5%9B%B3%E5%BC%8F%E3%81%AE%E5%90%88%E6%88%90/</guid>
-			<description>図式の合成では、次のように第 1 引数の右に第 2 引数を置いて結線同士をつなげる: 合成のルールを式で書くと次の通り: 参考 Graphical Linear Algebra 5. Spoilers, Adding (Part 2) and Zero</description>
 		</item>
       	
 	</channel>
