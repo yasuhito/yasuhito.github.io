@@ -6,7 +6,7 @@
                 "title": "Doom Emacs",
                 "section": "post",
                 "date" : "2021.03.29",
-                "body": "関連ノート  Effective Emacs  "
+                "body": "Emacs の設定フレームワークの一種。その他の設定フレームワークとしては Spacemacs などもあるが、Doom Emacs はパッケージの安定度が高く、起動が早いという特長がある。\n関連ノート  Effective Emacs  "
             }
         
     ,
@@ -17,6 +17,16 @@
                 "section": "post",
                 "date" : "2021.03.29",
                 "body": "https://sites.google.com/site/steveyegge2/effective-emacs\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210327132024-emacs/",
+                "title": "Emacs",
+                "section": "post",
+                "date" : "2021.03.29",
+                "body": "私が大学以来メインで使っているエディタ。\nEmacs に関連して主に使っているツールはこちら::\n Doom Emacs 設定フレームワーク Org Mode 設定ファイルを文芸的プログラミングぽく書くのに使用 Org-Roam 普段のメモやノート全般を書くのに使用。このデジタル・ガーデンは Org-Roam から Hugo に変換している  "
             }
         
     ,

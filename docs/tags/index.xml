@@ -16,7 +16,7 @@
 			<link>https://yasuhito.github.io/post/20210224132528-doom_emacs/</link>
 			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210224132528-doom_emacs/</guid>
-			<description>関連ノート Effective Emacs</description>
+			<description>Emacs の設定フレームワークの一種。その他の設定フレームワークとしては Spacemacs などもあるが、Doom Emacs はパッケージの安定度が高く、起動が早いという特長が</description>
 		</item>
       	
 		<item>
@@ -25,6 +25,14 @@
 			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210324153839-effective_emacs/</guid>
 			<description>https://sites.google.com/site/steveyegge2/effective-emacs</description>
+		</item>
+      	
+		<item>
+			<title>Emacs</title>
+			<link>https://yasuhito.github.io/post/20210327132024-emacs/</link>
+			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210327132024-emacs/</guid>
+			<description>私が大学以来メインで使っているエディタ。 Emacs に関連して主に使っているツールはこちら:: Doom Emacs 設定フレームワーク Org Mode 設定ファイルを文芸的プログラミ</description>
 		</item>
       	
 		<item>
@@ -81,14 +89,6 @@
 			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210323114201-assoc/</guid>
 			<description>Assoc は Associativity (結合性) の略。図式的線形代数では足し算を扱うので、単に Assoc と書いた場合それは足し算の結合性を表す。 図式で足し算の結合性を表すと次のよう</description>
-		</item>
-      	
-		<item>
-			<title>Identity</title>
-			<link>https://yasuhito.github.io/post/20210323094041-identity/</link>
-			<pubDate>Tue, 23 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210323094041-identity/</guid>
-			<description>図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。 入力は 1 つ、出力も同じく 1 つなので \((1, 1)\) である。 参考 Graphical Linear Algebra 5. Spoilers, Adding (Part 2) and Zero</description>
 		</item>
       	
 	</channel>
