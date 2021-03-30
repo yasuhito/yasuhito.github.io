@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>ゼロベクトル</title>
+			<link>https://yasuhito.github.io/post/20210330142839-%E3%82%BB%E3%83%AD%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
+			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210330142839-%E3%82%BB%E3%83%AD%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
+			<description>あるベクトル空間について、任意のベクトル \(|v\rangle\) に対して \(|v\rangle + |\theta\rangle = |v\rangle\) を満たすベクトル \(|\theta\rangle\) をゼロベクトルと呼び、\(\bf{0}\) (太字のゼロ) で表す</description>
+		</item>
+      	
+		<item>
 			<title>ベクトル</title>
 			<link>https://yasuhito.github.io/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
 			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210329095350-org_transclusion/</guid>
 			<description>Org Mode で Roam Research 的なブロック参照を行うためのパッケージ。 Org-Roam で書いたノートの一部を、他のノートや Doom Emacs の config.org から参照したくなったので導入。 設定 ~/.doom.d/packages.el の設定 (package!</description>
-		</item>
-      	
-		<item>
-			<title>エルミート共役</title>
-			<link>https://yasuhito.github.io/post/20210329114625-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9/</link>
-			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210329114625-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9/</guid>
-			<description>\(m \times n\) 複素行列 \(A\) に対して、\(A\) の転置および複素共役をとって得られる \(n \times m\) 行列をエルミート共役と呼ぶ。随伴行列、エルミート随伴とも呼ばれ</description>
 		</item>
       	
 	</channel>

@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210330142839-%E3%82%BB%E3%83%AD%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/",
+                "title": "ゼロベクトル",
+                "section": "post",
+                "date" : "2021.03.30",
+                "body": "あるベクトル空間について、任意のベクトル \\(|v\\rangle\\) に対して \\(|v\\rangle + |\\theta\\rangle = |v\\rangle\\) を満たすベクトル \\(|\\theta\\rangle\\) をゼロベクトルと呼び、\\(\\bf{0}\\) (太字のゼロ) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜ \\(|0\\rangle\\) と書かないかと言うと、\\(|0\\rangle\\) は通常 \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix} を表すのに使うから。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/",
                 "title": "ベクトル",
                 "section": "post",
