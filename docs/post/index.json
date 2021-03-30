@@ -2,6 +2,56 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210330141705-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E5%80%8D%E6%BC%94%E7%AE%97/",
+                "title": "スカラー倍演算",
+                "section": "post",
+                "date" : "2021.03.30",
+                "body": "ベクトル空間上の演算の一つ。\\(\\mathbb{C}^n\\) 空間では次式で定義される。\n\\begin{equation} z \\begin{bmatrix} z_1 \\\\\\\n\\vdots \\\\\\\nz_n \\end{bmatrix} \\equiv \\begin{bmatrix} zz_1 \\\\\\\n\\vdots \\\\\\\nzz_n \\end{bmatrix} \\end{equation}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/",
+                "title": "ベクトル",
+                "section": "post",
+                "date" : "2021.03.30",
+                "body": "次のような数の組をベクトルと呼ぶ。\n\\[\\begin{bmatrix} z_1 \\\\\\\n\\vdots \\\\\\\nz_n \\end{bmatrix}\\]\n量子力学的な慣用記号では、\\(\\psi\\) をラベルとしてベクトルを\n\\[|\\psi\\rangle\\]\nと表す。\nベクトルはベクトル空間の要素 (元) である。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/",
+                "title": "ベクトル空間",
+                "section": "post",
+                "date" : "2021.03.30",
+                "body": "ベクトルを集めたもの。たとえば、\\(n\\) 個の複素数の組 \\((z_1, \\ldots, z_n)\\) (n-tuple) のすべてを要素とする空間は \\(\\mathbb{C}^n\\) である。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210330140453-%E5%92%8C%E6%BC%94%E7%AE%97/",
+                "title": "和演算",
+                "section": "post",
+                "date" : "2021.03.30",
+                "body": "2 つのベクトルの組を 1 つのベクトルに変換する演算。\nベクトル空間 \\(\\mathbb{C}^n\\) ではベクトルの和演算は次式で定義する。\n\\begin{equation} \\begin{bmatrix} z_1 \\\\\\\n\\vdots \\\\\\\nz_n \\end{bmatrix} + \\begin{bmatrix} z^{\\prime}_1 \\\\\\\n\\vdots \\\\\\\nz^{\\prime}_n \\end{bmatrix} \\equiv \\begin{bmatrix} z_1 + z^{\\prime}_1 \\\\\\\n\\vdots \\\\\\\nz_n + z^{\\prime}_n \\end{bmatrix} \\end{equation}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/",
+                "title": "演算子",
+                "section": "post",
+                "date" : "2021.03.30",
+                "body": "量子論では、状態ベクトルに対する線形変換のことを演算子またはオペレータ (operator) と呼ぶ。数学の分野では同じ用語 operator を作用素と訳すので注意。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210224132528-doom_emacs/",
                 "title": "Doom Emacs",
                 "section": "post",
@@ -46,7 +96,7 @@
                 "title": "エルミート共役",
                 "section": "post",
                 "date" : "2021.03.29",
-                "body": "\\(m \\times n\\) 複素行列 \\(A\\) に対して、\\(A\\) の転置および複素共役をとって得られる \\(n \\times m\\) 行列をエルミート共役と呼ぶ。随伴行列、エルミート随伴とも呼ばれる。\n量子論ではエルミート共役は \\(A^{\\dagger}\\) と書き、\\(A^{\\dagger} = (A^T)^{\\ast}\\) である。\n"
+                "body": "\\(m \\times n\\) 複素行列 \\(A\\) に対して、\\(A\\) の転置および複素共役をとって得られる \\(n \\times m\\) 行列をエルミート共役と呼ぶ。随伴行列、エルミート随伴とも呼ばれる。\n量子論ではエルミート共役は \\(A^{\\dagger}\\) と書き、\\(A^{\\dagger} = (A^T)^{\\ast}\\) である。\n参考  正規行列の対角化可能性  "
             }
         
     ,
