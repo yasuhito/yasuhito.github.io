@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210331111403-%E3%82%B9%E3%83%8F%E3%83%B3%E9%9B%86%E5%90%88/",
+                "title": "スパン集合",
+                "section": "post",
+                "date" : "2021.03.31",
+                "body": "ベクトル空間のスパン集合とは、その空間の任意のベクトル \\(|v\\rangle\\) が線形結合 \\(|v\\rangle = \\sum_{i}a_i|v_i\\rangle\\) で表せるようなベクトル集合 \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) のこと。\nたとえば、ベクトル空間 \\(\\mathbb{C}^2\\) のスパン集合は、\n\\begin{equation} |v_1\\rangle \\equiv \\begin{bmatrix} 1 \\\\\\\n0 \\end{bmatrix};\n|v_2\\rangle \\equiv \\begin{bmatrix} 0 \\\\\\\n1 \\end{bmatrix} \\end{equation}\nという集合になる。なぜなら \\(\\mathbb{C}^2\\) の任意のベクトル\n\\begin{equation} |v\\rangle = \\begin{bmatrix} a_1 \\\\\\\na_2 \\end{bmatrix} \\end{equation}\nはベクトル \\(|v_1\\rangle\\) と \\(|v_1\\rangle\\) の線形結合 \\(|v\\rangle = a_1|v_1\\rangle + a_2|v_2\\rangle\\) で書けるから。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210330141705-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E5%80%8D%E6%BC%94%E7%AE%97/",
                 "title": "スカラー倍演算",
                 "section": "post",

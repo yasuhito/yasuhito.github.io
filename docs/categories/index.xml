@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>スパン集合</title>
+			<link>https://yasuhito.github.io/post/20210331111403-%E3%82%B9%E3%83%8F%E3%83%B3%E9%9B%86%E5%90%88/</link>
+			<pubDate>Wed, 31 Mar 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210331111403-%E3%82%B9%E3%83%8F%E3%83%B3%E9%9B%86%E5%90%88/</guid>
+			<description>ベクトル空間のスパン集合とは、その空間の任意のベクトル \(|v\rangle\) が線形結合 \(|v\rangle = \sum_{i}a_i|v_i\rangle\) で表せるようなベクトル集合 \(|v_1\rangle, \ldots, |v_n\rangle\) のこと。 たとえば、ベクトル空間 \(\mathbb{C}^2\) のス</description>
+		</item>
+      	
+		<item>
 			<title>スカラー倍演算</title>
 			<link>https://yasuhito.github.io/post/20210330141705-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E5%80%8D%E6%BC%94%E7%AE%97/</link>
 			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210327132024-emacs/</guid>
 			<description>私が大学以来メインで使っているエディタ。 Emacs に関連して主に使っているツールはこちら:: Doom Emacs 設定フレームワーク Org Mode 設定ファイルを文芸的プログラミ</description>
-		</item>
-      	
-		<item>
-			<title>org-transclusion</title>
-			<link>https://yasuhito.github.io/post/20210329095350-org_transclusion/</link>
-			<pubDate>Mon, 29 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210329095350-org_transclusion/</guid>
-			<description>Org Mode で Roam Research 的なブロック参照を行うためのパッケージ。 Org-Roam で書いたノートの一部を、他のノートや Doom Emacs の config.org から参照したくなったので導入。 設定 ~/.doom.d/packages.el の設定 (package!</description>
 		</item>
       	
 	</channel>

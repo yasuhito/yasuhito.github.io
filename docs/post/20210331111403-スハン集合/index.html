@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Identity</title>
+<title>スパン集合</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Identity"/>
-<meta name="twitter:description" content="図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。 入力は 1 つ、出力も同じく 1 つなので \((1, 1)\) である。 参考 Graphical Linear Algebra 5. Spoilers, Adding (Part 2) and Zero"/>
+<meta name="twitter:title" content="スパン集合"/>
+<meta name="twitter:description" content="ベクトル空間のスパン集合とは、その空間の任意のベクトル \(|v\rangle\) が線形結合 \(|v\rangle = \sum_{i}a_i|v_i\rangle\) で表せるようなベクトル集合 \(|v_1\rangle, \ldots, |v_n\rangle\) のこと。 たとえば、ベクトル空間 \(\mathbb{C}^2\) のス"/>
 
 
 
@@ -93,13 +93,13 @@
         <div class="post-heading">
           
             <h1>
-              Identity
+              スパン集合
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 23, 2021
+  >&nbsp;Mar 31, 2021
   
 </span>
 
@@ -114,20 +114,29 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a>で一本の結線をアイデンティティ (identity) と呼ぶ。</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_15-52-35_screenshot.png"/> 
-</figure>
-
-<p>入力は 1 つ、出力も同じく 1 つなので \((1, 1)\) である。</p>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/2015/04/30/spoilers-adding-part-2-and-zero/">5. Spoilers, Adding (Part 2) and Zero</a></li>
-</ul>
-</li>
-</ul>
+  <p><a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a>のスパン集合とは、その空間の任意の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a> \(|v\rangle\) が線形結合 \(|v\rangle = \sum_{i}a_i|v_i\rangle\) で表せるようなベクトル集合 \(|v_1\rangle, \ldots, |v_n\rangle\) のこと。</p>
+<p>たとえば、ベクトル空間 \(\mathbb{C}^2\) のスパン集合は、</p>
+<p>\begin{equation}
+|v_1\rangle \equiv
+\begin{bmatrix}
+1 \\\<br>
+0
+\end{bmatrix};<br>
+|v_2\rangle \equiv
+\begin{bmatrix}
+0 \\\<br>
+1
+\end{bmatrix}
+\end{equation}</p>
+<p>という集合になる。なぜなら \(\mathbb{C}^2\) の任意のベクトル</p>
+<p>\begin{equation}
+|v\rangle =
+\begin{bmatrix}
+a_1 \\\<br>
+a_2
+\end{bmatrix}
+\end{equation}</p>
+<p>はベクトル \(|v_1\rangle\) と \(|v_1\rangle\) の線形結合 \(|v\rangle = a_1|v_1\rangle + a_2|v_2\rangle\) で書けるから。</p>
 
 
 
@@ -197,21 +206,15 @@
     
   
     
-      
-    
   
     
   
     
   
     
-      
-    
   
     
   
-    
-      
     
   
     
@@ -299,23 +302,6 @@
     
   
 
-  
-    <div class="container" role="main">
-      <div class="bl-section" style="margin-top: 4rem">
-        <h2>Links to this note</h2>
-        <div class="backlinks">
-          <ul>
-           
-              <li><a href="/post/20210323090747-unit/">Unit</a></li>
-              
-              <li><a href="/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/">図式の直和</a></li>
-              
-              <li><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a></li>
-              
-          </ul>
-        </div>
-      </div>
-    </div>
   
 
 
