@@ -26,7 +26,7 @@
                 "title": "ゼロベクトル",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "あるベクトル空間について、任意のベクトル \\(|v\\rangle\\) に対して \\(|v\\rangle + |\\theta\\rangle = |v\\rangle\\) を満たすベクトル \\(|\\theta\\rangle\\) をゼロベクトルと呼び、\\(\\bf{0}\\) (太字のゼロ) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜ \\(|0\\rangle\\) と書かないかと言うと、\\(|0\\rangle\\) は通常 \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix} を表すのに使うから。\n"
+                "body": "あるベクトル空間について、任意のベクトル \\(|v\\rangle\\) に対して \\(|v\\rangle + |\\theta\\rangle = |v\\rangle\\) を満たすベクトル \\(|\\theta\\rangle\\) をゼロベクトルと呼び、\\(\\bf{0}\\) (太字のゼロ) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜ \\(|0\\rangle\\) と書かないかと言うと、\\(|0\\rangle\\) は通常基底状態のひとつ \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix} を表すのに使うから。\n"
             }
         
     ,
@@ -666,7 +666,7 @@
                 "title": "線形結合",
                 "section": "post",
                 "date" : "2021.02.23",
-                "body": ""
+                "body": "和演算とスカラー倍演算を組合わせることで、ベクトル \\(\\boldsymbol{v}\\) と \\(\\boldsymbol{w}\\) の線形結合を作ることができる。\\(\\boldsymbol{v}\\) に \\(c\\) を掛け、\\(\\boldsymbol{w}\\) に \\(d\\) を掛け、さらに和 \\(c\\boldsymbol{v} + d\\boldsymbol{w}\\) を求める。これが \\(\\boldsymbol{v}\\) と \\(\\boldsymbol{w}\\) の線形結合。\n"
             }
         
     
