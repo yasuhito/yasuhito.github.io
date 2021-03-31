@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210331122717-%E6%AC%A1%E5%85%83/",
+                "title": "次元",
+                "section": "post",
+                "date" : "2021.03.31",
+                "body": "ベクトル空間 \\(V\\) の基底の要素の数を次元と呼び、\\(dimV\\) と表す。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210331120144-%E7%B7%9A%E5%BD%A2%E5%BE%93%E5%B1%9E/",
                 "title": "線形従属",
                 "section": "post",
