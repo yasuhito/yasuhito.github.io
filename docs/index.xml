@@ -9,10 +9,34 @@
 		
 		<managingEditor>Page(&#34;Notes&#34;) (Yasuhito Takamiya)</managingEditor>
     	
-  		<lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0900</lastBuildDate>
+  		<lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0900</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>恒等演算子</title>
+			<link>https://yasuhito.github.io/post/20210401101150-%E6%81%92%E7%AD%89%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210401101150-%E6%81%92%E7%AD%89%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>任意のベクトル空間 \(V\) における演算子のひとつで、すべてのベクトル \(|v\rangle\) に対して \(I_{V}|v\rangle \equiv |v\rangle\) で定義する。単位オペレータとも呼ぶ。ほとんどの場合、混乱が生じ</description>
+		</item>
+      	
+		<item>
+			<title>線形オペレータ</title>
+			<link>https://yasuhito.github.io/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/</link>
+			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/</guid>
+			<description>演算子を参照</description>
+		</item>
+      	
+		<item>
+			<title>零演算子</title>
+			<link>https://yasuhito.github.io/post/20210401101830-%E9%9B%B6%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210401101830-%E9%9B%B6%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>すべてのベクトルをゼロベクトルに移す演算子で、0 と書く。ゼロオペレータとも呼ぶ。 \[0|v\rangle \equiv 0\]</description>
+		</item>
+      	
 		<item>
 			<title>スパン集合</title>
 			<link>https://yasuhito.github.io/post/20210331111403-%E3%82%B9%E3%83%8F%E3%83%B3%E9%9B%86%E5%90%88/</link>
@@ -67,30 +91,6 @@
 			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210330142839-%E3%82%BB%E3%83%AD%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
 			<description>あるベクトル空間について、任意のベクトル \(|v\rangle\) に対して \(|v\rangle + |\theta\rangle = |v\rangle\) を満たすベクトル \(|\theta\rangle\) をゼロベクトルと呼び、\(0\) で表す。 つまり、ゼロベクトルは</description>
-		</item>
-      	
-		<item>
-			<title>ベクトル</title>
-			<link>https://yasuhito.github.io/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
-			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
-			<description>次のような数の組をベクトルと呼ぶ。 \[\begin{bmatrix} z_1 \\\ \vdots \\\ z_n \end{bmatrix}\] 量子力学的な慣用記号では、\(\psi\) をラベルとしてベクトルを \[|\psi\rangle\] と表す。 ベクトルはベクト</description>
-		</item>
-      	
-		<item>
-			<title>ベクトル空間</title>
-			<link>https://yasuhito.github.io/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/</link>
-			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/</guid>
-			<description>定義 集合 \(V\) に和演算とスカラー倍演算があり、\(V\) の任意の元 \(|\psi\rangle\) と \(|\phi\rangle\) が次の 8 つの性質を満たすとき \(V\) をベクトル空間 (または、線形空間) と呼ぶ。</description>
-		</item>
-      	
-		<item>
-			<title>和演算</title>
-			<link>https://yasuhito.github.io/post/20210330140453-%E5%92%8C%E6%BC%94%E7%AE%97/</link>
-			<pubDate>Tue, 30 Mar 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210330140453-%E5%92%8C%E6%BC%94%E7%AE%97/</guid>
-			<description>2 つのベクトルの組を 1 つのベクトルに変換する演算。 ベクトル空間 \(\mathbb{C}^n\) ではベクトルの和演算は次式で定義する。 \begin{equation} \begin{bmatrix} z_1 \\\ \vdots \\\ z_n \end{bmatrix} + \begin{bmatrix} z^{\prime}_1 \\\ \vdots \\\ z^{\prime}_n \end{bmatrix} \equiv \begin{bmatrix} z_1</description>
 		</item>
       	
 	</channel>
