@@ -12,11 +12,61 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210401105504-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E8%A1%8C%E5%88%97%E3%81%AF%E7%AD%89%E4%BE%A1/",
+                "title": "演算子と行列は等価",
+                "section": "post",
+                "date" : "2021.04.01",
+                "body": "行列は演算子とみなせることと、演算子は行列で表現できることから、演算子と行列は完全に等価。ただし演算子の行列表現で見たように、行列と演算子を関連付けるには、演算子の入力ベクトル空間の基底と出力空間の基底を指定しなければならない。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210401102640-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%90%88%E6%88%90/",
+                "title": "演算子の合成",
+                "section": "post",
+                "date" : "2021.04.01",
+                "body": "\\(V\\), \\(W\\), および \\(X\\) がベクトル空間であり、\\(A: V \\rightarrow W\\) と \\(B: W \\rightarrow X\\) が演算子であるとする。このとき \\(A\\) と \\(B\\) の合成を記号 \\(BA\\) で表し、\\((BA)(|v\\rangle) \\equiv B(A|v\\rangle)\\) で定義する。\n演算子と行列は等価なので、\\((BA)(|v\\rangle)\\) は括弧を省略して \\(BA|v\\rangle\\) と書ける。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/",
+                "title": "演算子は行列で表現できる",
+                "section": "post",
+                "date" : "2021.04.01",
+                "body": "\\(A: V \\rightarrow W\\) がベクトル空間 \\(V\\) と \\(W\\) との間の演算子であるとする。さらに \\(V\\) の基底が \\(|v_1\\rangle, \\ldots, |v_m\\rangle\\), \\(W\\) の基底が \\(|w_1\\rangle, \\ldots, |w_n\\rangle\\) であるとする。\\(1, \\ldots, m\\) の範囲の各 \\(j\\) に対して、\n\\[A|v_j\\rangle = \\sum_i A_{ij}|w_i\\rangle\\]\nを満たす複素数 \\(A_{1j}, \\ldots, A_{nj}\\) が存在する。要素 \\(A_{ij}\\) をもつ行列 \\(A\\) を演算子 \\(A\\) の行列表現と呼び、よって演算子は行列で表現できる。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/",
                 "title": "線形オペレータ",
                 "section": "post",
                 "date" : "2021.04.01",
                 "body": "演算子を参照\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210401103405-%E8%A1%8C%E5%88%97%E3%81%AF%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E3%81%BF%E3%81%AA%E3%81%9B%E3%82%8B/",
+                "title": "行列は演算子とみなせる",
+                "section": "post",
+                "date" : "2021.04.01",
+                "body": "要素 \\(A_{ij}\\) を持つ \\(m \\times n\\) の複素行列 \\(A\\) は、行列 \\(A\\) と \\(\\mathbb{C}^n\\) とのベクトルとの行列積により、ベクトル空間 \\(\\mathbb{C}^n\\) からベクトル空間 \\(\\mathbb{C}^m\\) に移すので、行列 \\(A\\) は演算子である。\n正確には行列 \\(A\\) が演算子であるということは\n\\[A(\\sum_i a_i|v_i\\rangle) = \\sum_i a_i A(|v_i\\rangle)\\]\nが行列 \\(A\\) と列ベクトルの行列積で成り立つことを意味し、行列の性質からこれは明らかに正しい。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210401105821-%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/",
+                "title": "行列表現",
+                "section": "post",
+                "date" : "2021.04.01",
+                "body": "参照: 演算子は行列で表現できる\n"
             }
         
     ,
