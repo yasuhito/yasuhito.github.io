@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Quantum Computation and Quantum Information"/>
-<meta name="twitter:description" content="演習 2.1 ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は \begin{equation} \begin{bmatrix} 2 \\\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\\ {-1} \end{bmatrix} &#43; \begin{bmatrix} 1 \\\ 2 \end{bmatrix} \end{equation} を満たすので、これら 3 つのベクトルは線形従属。 先人達の回答例 goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation"/>
+<meta name="twitter:description" content="演習 2.1 ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は \begin{equation} \begin{bmatrix} 2 \\\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\\ {-1} \end{bmatrix} &#43; \begin{bmatrix} 1 \\\ 2 \end{bmatrix} \end{equation} を満たすので、これら 3 つのベクトルは線形従属。 2.2 \(A\) の行列表現 次のよう"/>
 
 
 
@@ -138,6 +138,65 @@
 \end{bmatrix}
 \end{equation}</p>
 <p>を満たすので、これら 3 つのベクトルは<a href="/post/20210331120144-%E7%B7%9A%E5%BD%A2%E5%BE%93%E5%B1%9E/">線形従属</a>。</p>
+<h3 id="2-dot-2">2.2</h3>
+<h4 id="a--の行列表現">\(A\) の行列表現</h4>
+<p>次のように<a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a>ことから、</p>
+<p>\[A|v_j\rangle = \sum_i A_{ij}|w_i\rangle\]</p>
+<p>\(j = 1\) のとき、</p>
+<p>\begin{eqnarray}
+A|0\rangle &amp;=&amp; \sum_i A_{i1}|w_i\rangle \\\<br>
+&amp;=&amp; A_{11}|0\rangle + A_{21}|1\rangle
+\end{eqnarray}</p>
+<p>\(j = 2\) のとき、</p>
+<p>\begin{eqnarray}
+A|1\rangle &amp;=&amp; \sum_i A_{i2}|w_i\rangle \\\<br>
+&amp;=&amp; A_{12}|0\rangle + A_{22}|1\rangle
+\end{eqnarray}</p>
+<p>これらと \(A|0\rangle = |1\rangle,\ A|1\rangle = |0\rangle\) より、</p>
+<p>\(A_{11} = 0\), \(A_{21} = 1\), \(A_{12} = 1\), \(A_{22} = 0\)</p>
+<p>よって \(A\) の行列表現は、</p>
+<p>\begin{equation}
+A = \begin{bmatrix}
+0 &amp; 1 \\\<br>
+1 &amp; 0
+\end{bmatrix}
+\end{equation}</p>
+<h4 id="a--の異なる行列表現を与える入力と出力の基底">\(A\) の異なる行列表現を与える入力と出力の基底</h4>
+<p>基底として次を選ぶ:</p>
+<p>\begin{eqnarray}
+|+\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\<br>
+|-\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)
+\end{eqnarray}</p>
+<p>ここで \(A|+\rangle\) と \(A|-\rangle\) を計算すると、</p>
+<p>\begin{eqnarray}
+A|+\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(A|0\rangle + A|1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{\sqrt{2}}(|1\rangle + |0\rangle) \\\<br>
+&amp;=&amp; |+\rangle
+\end{eqnarray}</p>
+<p>\begin{eqnarray}
+A|-\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(A|0\rangle - A|1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{\sqrt{2}}(|1\rangle - |0\rangle) \\\<br>
+&amp;=&amp; -|-\rangle
+\end{eqnarray}</p>
+<p>これらの結果と行列 \(A\) の要素 \(A_{ij}\) を求める式から、</p>
+<p>\begin{eqnarray}
+A|+\rangle &amp;=&amp; \sum_i A_{i1}|w_i\rangle \\\<br>
+&amp;=&amp; A_{11}|+\rangle + A_{21}|-\rangle \\\<br>
+&amp;=&amp; |+\rangle
+\end{eqnarray}</p>
+<p>\begin{eqnarray}
+A|-\rangle &amp;=&amp; \sum_i A_{i2}|w_i\rangle \\\<br>
+&amp;=&amp; A_{12}|+\rangle + A_{22}|-\rangle \\\<br>
+&amp;=&amp; -|-\rangle
+\end{eqnarray}</p>
+<p>よって \(A_{11} = 1\), \(A_{21} = 0\), \(A_{12} = 0\), \(A_{22} = -1\) となり、\(A\) の行列表現は</p>
+<p>\begin{equation}
+A = \begin{bmatrix}
+1 &amp; 0 \\\<br>
+0 &amp; -1
+\end{bmatrix}
+\end{equation}</p>
+<p>となるので、確かに異なる行列表現を持つ。</p>
 <h2 id="先人達の回答例">先人達の回答例</h2>
 <ul>
 <li><a href="https://github.com/goropikari/SolutionQCQINielsenChuang">goropikari/SolutionQCQINielsenChuang</a></li>

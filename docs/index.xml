@@ -18,7 +18,7 @@
 			<link>https://yasuhito.github.io/post/20210402105729-quantum_computation_and_quantum_information/</link>
 			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210402105729-quantum_computation_and_quantum_information/</guid>
-			<description>演習 2.1 ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は \begin{equation} \begin{bmatrix} 2 \\\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\\ {-1} \end{bmatrix} + \begin{bmatrix} 1 \\\ 2 \end{bmatrix} \end{equation} を満たすので、これら 3 つのベクトルは線形従属。 先人達の回答例 goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation</description>
+			<description>演習 2.1 ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は \begin{equation} \begin{bmatrix} 2 \\\ 1 \end{bmatrix} = \begin{bmatrix} 1 \\\ {-1} \end{bmatrix} + \begin{bmatrix} 1 \\\ 2 \end{bmatrix} \end{equation} を満たすので、これら 3 つのベクトルは線形従属。 2.2 \(A\) の行列表現 次のよう</description>
 		</item>
       	
 		<item>
