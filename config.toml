@@ -39,3 +39,6 @@ hasCJKLanguage = true
   width = 50
   height = 50
   alt = "Logo"
+
+[params]
+  customCSS = ["/css/custom.css"] # in case you use `/static/css/custom.css`
