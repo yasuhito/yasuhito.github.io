@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>QCQI/演習 2.3</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="QCQI/演習 2.3"/>
+<meta name="twitter:description" content="演算子は行列で表現できることから、演算子 \(A\), \(B\) とそれぞれの要素について次が成り立つ。 \begin{equation} A|v_j\rangle = \sum_i A_{ij}|w_i\rangle \end{equation} \begin{equation} B|w_i\rangle = \sum_k A_{ki}|x_k\rangle \end{equation} ここで線形変換 \(BA\) の行列表現は、 \begin{eqnarray} BA|v_j\rangle"/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/custom.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/main.bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.81.0" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+        <a href="https://yasuhito.github.io/" class="nav-logo">
+        <img
+          src="https://yasuhito.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+        </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              QCQI/演習 2.3
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Apr 2, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a>ことから、演算子 \(A\), \(B\) とそれぞれの要素について次が成り立つ。</p>
+<p>\begin{equation}
+A|v_j\rangle = \sum_i A_{ij}|w_i\rangle
+\end{equation}</p>
+<p>\begin{equation}
+B|w_i\rangle = \sum_k A_{ki}|x_k\rangle
+\end{equation}</p>
+<p>ここで線形変換 \(BA\) の行列表現は、</p>
+<p>\begin{eqnarray}
+BA|v_j\rangle &amp;=&amp; B(A|v_j\rangle) \newline
+&amp;=&amp; B(\sum_i A_{ij}|w_i\rangle) \newline
+&amp;=&amp; \sum_i A_{ij}\sum_k B_{ki}|x_k\rangle
+\end{eqnarray}</p>
+<p><a href="/post/20210402153637-%E3%82%B7%E3%82%AF%E3%83%9E%E3%81%AE%E5%88%86%E8%A7%A3%E5%85%AC%E5%BC%8F/">シグマの分解公式</a>より</p>
+<p>\begin{eqnarray}
+\sum_i A_{ij}\sum_k B_{ki}|x_k\rangle = \sum_i\sum_k A_{ij}B_{ki}|x_k\rangle
+\end{eqnarray}</p>
+<p>さらに式変形していくと、</p>
+<p>\begin{eqnarray}
+\sum_i\sum_k A_{ij}B_{ki}|x_k\rangle &amp;=&amp; \sum_k\sum_i A_{ij}B_{ki}|x_k\rangle \newline
+&amp;=&amp; \sum_k\sum_i B_{ki}A_{ij}|x_k\rangle \newline
+&amp;=&amp; \sum_k(\sum_i B_{ki}A_{ij})|x_k\rangle \newline
+&amp;=&amp; \sum_k(BA)_{kj}|x_k\rangle
+\end{eqnarray}</p>
+<p>となり、これは \(B\) と \(A\) の行列表現の行列積である。</p>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer>
+  
+  <div>
+    
+      <a href="https://twitter.com/yasuhito" name="twitter"
+        ><em class="fab fa-twitter"></em
+      ></a>
+    
+
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+        <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </body>
+</html>
