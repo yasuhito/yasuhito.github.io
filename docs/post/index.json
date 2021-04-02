@@ -56,7 +56,7 @@
                 "title": "シグマの分解公式",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "分配法則 \\(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\\) の一般化として、二重和について次の公式がある。\n\\begin{equation} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j = \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{equation}\n証明 \\begin{eqnarray} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j \u0026amp;=\u0026amp; a_1 \\sum_{j=1}^n b_j + a_2 \\sum_{j=1}^n b_j + \\ldots + a_m \\sum_{j=1}^n b_j \\\\\\\n\u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) \\sum_{j=1}^n b_j \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{eqnarray}\n"
+                "body": "分配法則 \\(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\\) の一般化として、二重和について次の公式がある。\n\\begin{equation} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j = \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{equation}\n証明 \\begin{eqnarray} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j \u0026amp;=\u0026amp; a_1 \\sum_{j=1}^n b_j + a_2 \\sum_{j=1}^n b_j + \\ldots + a_m \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{eqnarray}\n"
             }
         
     ,
