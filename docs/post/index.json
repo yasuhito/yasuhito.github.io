@@ -6,7 +6,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  "
+                "body": "  演習 2.1 ベクトル \\((1, -1)\\), \\((1, 2)\\) および \\((2, 1)\\) は\n\\begin{equation} \\begin{bmatrix} 2 \\\\\\\n1 \\end{bmatrix} = \\begin{bmatrix} 1 \\\\\\\n{-1} \\end{bmatrix} + \\begin{bmatrix} 1 \\\\\\\n2 \\end{bmatrix} \\end{equation}\nを満たすので、これら 3 つのベクトルは線形従属。\n先人達の回答例  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
