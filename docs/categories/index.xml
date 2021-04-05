@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>外積表現</title>
+			<link>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</guid>
+			<description>外積表現とは、内積を使って演算子を表現する便利な方法。 \(|v\rangle\) を内積空間 \(V\) のベクトル、\(|w\rangle\) を内積空間 \(W\) のベクトルとしたとき、</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.5</title>
 			<link>https://yasuhito.github.io/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/</link>
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
@@ -33,6 +41,14 @@
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/</guid>
 			<description>\(|w\rangle\) と \(|v\rangle\) の内積を計算すると、 \begin{equation} \langle w|v \rangle = \begin{bmatrix} 1 &amp;amp; 1 \end{bmatrix}^{\ast}\begin{bmatrix} 1 \newline -1 \end{bmatrix} = 1\times1 + 1 \times (-1) = 0 \end{equation} よって \(|w\rangle\) と \(|v\rangle\) は直交している。 \(\||w\rangle\| = \sqrt{\langle w|w \rangle} = \sqrt{2},\ \||v\rangle\| = \sqrt{\langle v|v \rangle} = \sqrt{2}\) なので、それ</description>
+		</item>
+      	
+		<item>
+			<title>QCQI/演習 2.8</title>
+			<link>https://yasuhito.github.io/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/</guid>
+			<description>グラム・シュミット直交化によって作られたベクトルの集合について、それぞれのベクトルが正規化されていることは明らかなので、その集合のうち互いに</description>
 		</item>
       	
 		<item>
@@ -73,22 +89,6 @@
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210405091552-%E5%86%85%E7%A9%8D/</guid>
 			<description>ベクトル空間の 2 つのベクトル \(|v\rangle\) と \(|w\rangle\) を入力とし複素数を出力として作り出す関数。 ベクトル空間 \(V\) について、\(V \times V\) から \(\mathcal{C}\) への関数 \((\cdot , \cdot)\) が次の要請</description>
-		</item>
-      	
-		<item>
-			<title>内積空間</title>
-			<link>https://yasuhito.github.io/post/20210405093150-%E5%86%85%E7%A9%8D%E7%A9%BA%E9%96%93/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405093150-%E5%86%85%E7%A9%8D%E7%A9%BA%E9%96%93/</guid>
-			<description>内積を備えたベクトル空間を内積空間と呼ぶ。</description>
-		</item>
-      	
-		<item>
-			<title>単位ベクトル</title>
-			<link>https://yasuhito.github.io/post/20210405113700-%E5%8D%98%E4%BD%8D%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405113700-%E5%8D%98%E4%BD%8D%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
-			<description>ノルム \(\||v\rangle\| = 1\) となるベクトル \(|v\rangle\) を単位ベクトルと呼ぶ。</description>
 		</item>
       	
 	</channel>

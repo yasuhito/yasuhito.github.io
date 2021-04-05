@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/",
+                "title": "外積表現",
+                "section": "post",
+                "date" : "2021.04.06",
+                "body": "外積表現とは、内積を使って演算子を表現する便利な方法。 \\(|v\\rangle\\) を内積空間 \\(V\\) のベクトル、\\(|w\\rangle\\) を内積空間 \\(W\\) のベクトルとしたとき、\\(|w \\rangle\\langle v|\\) は次式で定義される \\(V\\) から \\(W\\) への演算子である。\n\\begin{equation} (|w\\rangle\\langle v|)(|v^{\\prime}) \\equiv |w\\rangle\\langle v|v^{\\prime}\\rangle = \\langle v | v^{\\prime} \\rangle | w \\rangle \\end{equation}\nここで \\(|w\\rangle\\langle v|v^{\\prime}\\rangle\\) は次の 2 つの意味を持つ:\n 演算子 \\(|w\\rangle\\langle v|\\) が \\(|v^{\\prime}\\rangle\\) に働いたときの結果 \\(|w\\rangle\\) に複素数 \\(\\langle v | v^{\\prime} \\rangle\\) を掛けた結果  ここで 2 の内積の計算で 1 の演算子の計算ができることに注意。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/",
                 "title": "QCQI/演習 2.5",
                 "section": "post",
@@ -27,6 +37,16 @@
                 "section": "post",
                 "date" : "2021.04.05",
                 "body": "\\(|w\\rangle\\) と \\(|v\\rangle\\) の内積を計算すると、\n\\begin{equation} \\langle w|v \\rangle = \\begin{bmatrix} 1 \u0026amp; 1 \\end{bmatrix}^{\\ast}\\begin{bmatrix} 1 \\newline -1 \\end{bmatrix} = 1\\times1 + 1 \\times (-1) = 0 \\end{equation}\nよって \\(|w\\rangle\\) と \\(|v\\rangle\\) は直交している。\n\\(\\||w\\rangle\\| = \\sqrt{\\langle w|w \\rangle} = \\sqrt{2},\\ \\||v\\rangle\\| = \\sqrt{\\langle v|v \\rangle} = \\sqrt{2}\\) なので、それぞれを正規化すると、\n\\begin{eqnarray} \\frac{|w\\rangle}{\\||w\\rangle\\|} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}|w\\rangle, \\newline\\newline \\frac{|v\\rangle}{\\||v\\rangle\\|} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}|v\\rangle \\end{eqnarray}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/",
+                "title": "QCQI/演習 2.8",
+                "section": "post",
+                "date" : "2021.04.05",
+                "body": "グラム・シュミット直交化によって作られたベクトルの集合について、それぞれのベクトルが正規化されていることは明らかなので、その集合のうち互いに異なるベクトルが直交していることを数学的帰納法で示す。\n\\(k = 1\\) のとき、\n\\begin{eqnarray} |v_1\\rangle \u0026amp;=\u0026amp; \\frac{|w_1\\rangle}{\\||w_1\\rangle\\|} \\newline |v_2\\rangle \u0026amp;=\u0026amp; \\frac{|w_2\\rangle - \\langle v_1 | w_2 \\rangle |v_1\\rangle}{\\||w_2\\rangle - \\langle v_1 | w_2 \\rangle |v_1\\rangle\\|} \\newline \\langle v_1|v_2\\rangle \u0026amp;=\u0026amp; \\frac{\\langle v_1|w_2\\rangle - \\langle v_1 | w_2 \\rangle \\langle v_1|v_1\\rangle}{\\||w_2\\rangle - \\langle v_1 | w_2 \\rangle |v_1\\rangle\\|} \\newline \u0026amp;=\u0026amp; \\frac{\\langle v_1|w_2\\rangle - \\langle v_1 | w_2 \\rangle \\cdot 1}{\\||w_2\\rangle - \\langle v_1 | w_2 \\rangle |v_1\\rangle\\|} = 0 \\end{eqnarray}\nここで \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\ (n \\leq d-1)\\) が正規直交基底だとする。すると、\n\\begin{align*} \\langle v_j | v_{n+1} \\rangle \u0026amp;= \\langle v_j | \\left(\\frac{|w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle|v_i\\rangle}{\\||w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle|v_i\\rangle\\|}\\right)~~(j \\leq n) \\newline \u0026amp;= \\frac{\\langle v_j |w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle \\langle v_j|v_i\\rangle}{\\||w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle|v_i\\rangle\\|} \\newline \u0026amp;= \\frac{\\langle v_j |w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle \\delta_{ij}}{\\||w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle|v_i\\rangle\\|} \\newline \u0026amp;= \\frac{\\langle v_j |w_{n+1}\\rangle - \\langle v_j | w_{n+1} \\rangle}{\\||w_{n+1}\\rangle - \\sum_{i=1}^{n} \\langle v_i | w_{n+1} \\rangle|v_i\\rangle\\|} \\newline \u0026amp;= 0 \\end{align*}\nよってグラム・シュミット直交化によって正規直交基底が作られる。\n"
             }
         
     ,
@@ -176,7 +196,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
