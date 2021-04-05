@@ -12,6 +12,30 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>パウリ行列</title>
+			<link>https://yasuhito.github.io/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/</guid>
+			<description>量子計算や量子情報で頻出する行列で、下記のようにいろいろな記号での表し方がある。とにかくよく使うので暗記してしまうのがよい。 \begin{align} \sigma_{0} \equiv I &amp;amp;\equiv \begin{bmatrix} 1 &amp;amp;</description>
+		</item>
+      	
+		<item>
+			<title>内積</title>
+			<link>https://yasuhito.github.io/post/20210405091552-%E5%86%85%E7%A9%8D/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405091552-%E5%86%85%E7%A9%8D/</guid>
+			<description>ベクトル空間の 2 つのベクトル \(|v\rangle\) と \(|w\rangle\) を入力とし複素数を出力として作り出す関数。 ベクトル空間 \(V\) について、\(V \times V\) から \(\mathbb{C}\) への関数 \((\cdot , \cdot)\) が次の要請</description>
+		</item>
+      	
+		<item>
+			<title>内積空間</title>
+			<link>https://yasuhito.github.io/post/20210405093150-%E5%86%85%E7%A9%8D%E7%A9%BA%E9%96%93/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405093150-%E5%86%85%E7%A9%8D%E7%A9%BA%E9%96%93/</guid>
+			<description>内積を備えたベクトル空間を内積空間と呼ぶ。</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.1</title>
 			<link>https://yasuhito.github.io/post/20210402160012-qcqi_%E6%BC%94%E7%BF%92_2_1/</link>
 			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
@@ -65,30 +89,6 @@
 			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210401101150-%E6%81%92%E7%AD%89%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
 			<description>任意のベクトル空間 \(V\) における演算子のひとつで、すべてのベクトル \(|v\rangle\) に対して \(I_{V}|v\rangle \equiv |v\rangle\) で定義する。単位オペレータとも呼ぶ。ほとんどの場合、混乱が生じ</description>
-		</item>
-      	
-		<item>
-			<title>演算子と行列は等価</title>
-			<link>https://yasuhito.github.io/post/20210401105504-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E8%A1%8C%E5%88%97%E3%81%AF%E7%AD%89%E4%BE%A1/</link>
-			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210401105504-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E8%A1%8C%E5%88%97%E3%81%AF%E7%AD%89%E4%BE%A1/</guid>
-			<description>行列は演算子とみなせることと、演算子は行列で表現できることから、演算子と行列は完全に等価。ただし演算子の行列表現で見たように、行列と演算子を</description>
-		</item>
-      	
-		<item>
-			<title>演算子の合成</title>
-			<link>https://yasuhito.github.io/post/20210401102640-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%90%88%E6%88%90/</link>
-			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210401102640-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%90%88%E6%88%90/</guid>
-			<description>\(V\), \(W\), および \(X\) がベクトル空間であり、\(A: V \rightarrow W\) と \(B: W \rightarrow X\) が演算子であるとする。このとき \(A\) と \(B\) の合成を記号 \(BA\) で表し、\((BA)(|v\ra</description>
-		</item>
-      	
-		<item>
-			<title>演算子は行列で表現できる</title>
-			<link>https://yasuhito.github.io/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/</link>
-			<pubDate>Thu, 01 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/</guid>
-			<description>\(A: V \rightarrow W\) がベクトル空間 \(V\) と \(W\) との間の演算子であるとする。さらに \(V\) の基底が \(|v_1\rangle, \ldots, |v_m\rangle\), \(W\) の基底が \(|w_1\rangle, \ldots, |w_n\rangle\) であるとする。\(1, \ldots, m\) の範囲の各 \(j\) に対して</description>
 		</item>
       	
 	</channel>
