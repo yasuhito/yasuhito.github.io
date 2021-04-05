@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>スパン集合</title>
+<title>QCQI/演習 2.6</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="スパン集合"/>
-<meta name="twitter:description" content="ベクトル空間のスパン集合とは、その空間の任意のベクトル \(|v\rangle\) が線形結合 \(|v\rangle = \sum_{i}a_i|v_i\rangle\) で表せるようなベクトル集合 \(|v_1\rangle, \ldots, |v_n\rangle\) のこと。 たとえば、ベクトル空間 \(\mathbb{C}^2\) のス"/>
+<meta name="twitter:title" content="QCQI/演習 2.6"/>
+<meta name="twitter:description" content="内積の定義より、 \begin{eqnarray} \left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) &amp;=&amp; \left(|v\rangle, \sum_i \lambda_i |w_i\rangle\right)^{\ast} \\\ &amp;=&amp; \left(\sum_i \lambda_i (|v\rangle, |w_i\rangle)\right)^{\ast} \\\ &amp;=&amp; \sum_i \lambda_i^{\ast} (|v\rangle, |w_i\rangle)^{\ast} \\\ &amp;=&amp; \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle) \end{eqnarray}"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              スパン集合
+              QCQI/演習 2.6
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 31, 2021
+  >&nbsp;Apr 5, 2021
   
 </span>
 
@@ -116,29 +116,13 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a>のスパン集合とは、その空間の任意の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a> \(|v\rangle\) が線形結合 \(|v\rangle = \sum_{i}a_i|v_i\rangle\) で表せるようなベクトル集合 \(|v_1\rangle, \ldots, |v_n\rangle\) のこと。</p>
-<p>たとえば、ベクトル空間 \(\mathbb{C}^2\) のスパン集合は、</p>
-<p>\begin{equation}
-|v_1\rangle \equiv
-\begin{bmatrix}
-1 \newline
-0
-\end{bmatrix};~
-|v_2\rangle \equiv
-\begin{bmatrix}
-0 \newline
-1
-\end{bmatrix}
-\end{equation}</p>
-<p>という集合になる。なぜなら \(\mathbb{C}^2\) の任意のベクトル</p>
-<p>\begin{equation}
-|v\rangle =
-\begin{bmatrix}
-a_1 \newline
-a_2
-\end{bmatrix}
-\end{equation}</p>
-<p>はベクトル \(|v_1\rangle\) と \(|v_1\rangle\) の<a href="/post/20210223212225-%E7%B7%9A%E5%BD%A2%E7%B5%90%E5%90%88/">線形結合</a> \(|v\rangle = a_1|v_1\rangle + a_2|v_2\rangle\) で書けるから。</p>
+  <p><a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>の定義より、</p>
+<p>\begin{eqnarray}
+\left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) &amp;=&amp; \left(|v\rangle, \sum_i \lambda_i |w_i\rangle\right)^{\ast} \\\<br>
+&amp;=&amp; \left(\sum_i \lambda_i (|v\rangle, |w_i\rangle)\right)^{\ast} \\\<br>
+&amp;=&amp; \sum_i \lambda_i^{\ast} (|v\rangle, |w_i\rangle)^{\ast} \\\<br>
+&amp;=&amp; \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle)
+\end{eqnarray}</p>
 
 
 
@@ -182,6 +166,8 @@ a_2
     
   
     
+      
+    
   
     
   
@@ -350,6 +336,19 @@ a_2
     
   
 
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
   
 
 

@@ -6,7 +6,17 @@
                 "title": "QCQI/演習 2.5",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "\\(\\mathcal{C}^n\\) の内積の定義\n\\begin{equation} ((y_1, \\ldots, y_n), (z_1, \\ldots, z_n)) \\equiv \\sum_i y_i^{\\ast}z_i = \\begin{bmatrix} y_1^{\\ast}, \\ldots, y_n^{\\ast} \\end{bmatrix}\\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} \\end{equation}\nについて、内積の定義 1, 2, 3 を満たすことを確認する。\n1 について、\n\\begin{eqnarray} \\left(|v\\rangle, \\sum_i \\lambda_i|w_i\\rangle\\right) \u0026amp;=\u0026amp; \\sum_j v_j^{\\ast} \\left(\\sum_i \\lambda_i w_{ij}\\right) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i \\left(\\sum_j v_j^{\\ast} w_{ij}\\right) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i (|v\\rangle, |w_i\\rangle) \\end{eqnarray}\n2 について、\n\\begin{eqnarray} (|v\\rangle, |w\\rangle) \u0026amp;=\u0026amp; \\sum_i v_i^{\\ast}w_i \\\\\\\n\u0026amp;=\u0026amp; \\sum_i (v_i w_i^{\\ast})^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i (w_i^{\\ast} v_i)^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; (|w\\rangle, |v\\rangle)^{\\ast} \\end{eqnarray}\n3 について、\n\\begin{eqnarray} (|v\\rangle, |v\\rangle) \u0026amp;=\u0026amp; \\sum_i v_i^{\\ast}v_i \\\\\\\n\u0026amp;=\u0026amp; \\sum_i |v_i|^2 \\geq 0 \\end{eqnarray}\n明らかに、等号が成り立つのは \\(|v\\rangle = 0\\) のときのみ。\n"
+                "body": "\\(\\mathcal{C}^n\\) の内積の定義\n\\begin{equation} ((y_1, \\ldots, y_n), (z_1, \\ldots, z_n)) \\equiv \\sum_i y_i^{\\ast}z_i = \\begin{bmatrix} y_1^{\\ast}, \\ldots, y_n^{\\ast} \\end{bmatrix}\\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} \\end{equation}\nについて、内積の定義をすべて満たすことを確認する。\n線形性について、\n\\begin{eqnarray} \\left(|v\\rangle, \\sum_i \\lambda_i|w_i\\rangle\\right) \u0026amp;=\u0026amp; \\sum_j v_j^{\\ast} \\left(\\sum_i \\lambda_i w_{ij}\\right) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i \\left(\\sum_j v_j^{\\ast} w_{ij}\\right) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i (|v\\rangle, |w_i\\rangle) \\end{eqnarray}\n対称性について、\n\\begin{eqnarray} (|v\\rangle, |w\\rangle) \u0026amp;=\u0026amp; \\sum_i v_i^{\\ast}w_i \\\\\\\n\u0026amp;=\u0026amp; \\sum_i (v_i w_i^{\\ast})^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i (w_i^{\\ast} v_i)^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; (|w\\rangle, |v\\rangle)^{\\ast} \\end{eqnarray}\n正値性、正定値性について、\n\\begin{eqnarray} (|v\\rangle, |v\\rangle) \u0026amp;=\u0026amp; \\sum_i v_i^{\\ast}v_i \\\\\\\n\u0026amp;=\u0026amp; \\sum_i |v_i|^2 \\geq 0 \\end{eqnarray}\n明らかに、等号が成り立つのは \\(|v\\rangle = 0\\) のときのみ。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210405105718-qcqi_%E6%BC%94%E7%BF%92_2_6/",
+                "title": "QCQI/演習 2.6",
+                "section": "post",
+                "date" : "2021.04.05",
+                "body": "内積の定義より、\n\\begin{eqnarray} \\left(\\sum_i \\lambda_i |w_i\\rangle, |v\\rangle\\right) \u0026amp;=\u0026amp; \\left(|v\\rangle, \\sum_i \\lambda_i |w_i\\rangle\\right)^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; \\left(\\sum_i \\lambda_i (|v\\rangle, |w_i\\rangle)\\right)^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i^{\\ast} (|v\\rangle, |w_i\\rangle)^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i^{\\ast} (|w_i\\rangle, |v\\rangle) \\end{eqnarray}\n"
             }
         
     ,
@@ -26,7 +36,7 @@
                 "title": "内積",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "ベクトル空間の 2 つのベクトル \\(|v\\rangle\\) と \\(|w\\rangle\\) を入力とし複素数を出力として作り出す関数。\nベクトル空間 \\(V\\) について、\\(V \\times V\\) から \\(\\mathbb{C}\\) への関数 \\((\\cdot , \\cdot)\\) が次の要請を満たすなら内積:\n \\((\\cdot , \\cdot)\\) は第 2 引数に関して線形。すなわち、 \\[(|v\\rangle, \\sum_i\\lambda_i|w_i\\rangle) = \\sum_i\\lambda_i(|v\\rangle, |w_i\\rangle)\\] \\((|v\\rangle, |w\\rangle) = (|w\\rangle, |v\\rangle)^{\\ast}\\) \\((|v\\rangle, |v\\rangle) \\geq 0\\), 等号が成り立つのは \\(|v\\rangle = 0\\) のときのみ  "
+                "body": "ベクトル空間の 2 つのベクトル \\(|v\\rangle\\) と \\(|w\\rangle\\) を入力とし複素数を出力として作り出す関数。\nベクトル空間 \\(V\\) について、\\(V \\times V\\) から \\(\\mathcal{C}\\) への関数 \\((\\cdot , \\cdot)\\) が次の要請を満たすなら内積:\n 線形性 \\((\\cdot , \\cdot)\\) は第 2 引数に関して線形。すなわち、 \\[(|v\\rangle, \\sum_i\\lambda_i|w_i\\rangle) = \\sum_i\\lambda_i(|v\\rangle, |w_i\\rangle)\\] 対称性 \\((|v\\rangle, |w\\rangle) = (|w\\rangle, |v\\rangle)^{\\ast}\\) 正値性 \\((|v\\rangle, |v\\rangle) \\geq 0\\), 等号が成り立つのは \\(|v\\rangle = 0\\) のときのみ (正定値性)  "
             }
         
     ,
@@ -86,7 +96,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,

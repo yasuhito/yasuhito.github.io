@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="内積"/>
-<meta name="twitter:description" content="ベクトル空間の 2 つのベクトル \(|v\rangle\) と \(|w\rangle\) を入力とし複素数を出力として作り出す関数。 ベクトル空間 \(V\) について、\(V \times V\) から \(\mathbb{C}\) への関数 \((\cdot , \cdot)\) が次の要請"/>
+<meta name="twitter:description" content="ベクトル空間の 2 つのベクトル \(|v\rangle\) と \(|w\rangle\) を入力とし複素数を出力として作り出す関数。 ベクトル空間 \(V\) について、\(V \times V\) から \(\mathcal{C}\) への関数 \((\cdot , \cdot)\) が次の要請"/>
 
 
 
@@ -117,13 +117,16 @@
     <article class="article" class="blog-post">
       
   <p>ベクトル空間の 2 つのベクトル \(|v\rangle\) と \(|w\rangle\) を入力とし複素数を出力として作り出す関数。</p>
-<p>ベクトル空間 \(V\) について、\(V \times V\) から \(\mathbb{C}\) への関数 \((\cdot , \cdot)\) が次の要請を満たすなら内積:</p>
-<ol>
-<li>\((\cdot , \cdot)\) は第 2 引数に関して線形。すなわち、
-\[(|v\rangle, \sum_i\lambda_i|w_i\rangle) = \sum_i\lambda_i(|v\rangle, |w_i\rangle)\]</li>
-<li>\((|v\rangle, |w\rangle) = (|w\rangle, |v\rangle)^{\ast}\)</li>
-<li>\((|v\rangle, |v\rangle) \geq 0\), 等号が成り立つのは \(|v\rangle = 0\) のときのみ</li>
-</ol>
+<p>ベクトル空間 \(V\) について、\(V \times V\) から \(\mathcal{C}\) への関数 \((\cdot , \cdot)\) が次の要請を満たすなら内積:</p>
+<dl>
+<dt>線形性</dt>
+<dd>\((\cdot , \cdot)\) は第 2 引数に関して線形。すなわち、
+\[(|v\rangle, \sum_i\lambda_i|w_i\rangle) = \sum_i\lambda_i(|v\rangle, |w_i\rangle)\]</dd>
+<dt>対称性</dt>
+<dd>\((|v\rangle, |w\rangle) = (|w\rangle, |v\rangle)^{\ast}\)</dd>
+<dt>正値性</dt>
+<dd>\((|v\rangle, |v\rangle) \geq 0\), 等号が成り立つのは \(|v\rangle = 0\) のときのみ (正定値性)</dd>
+</dl>
 
 
 
@@ -146,6 +149,10 @@
   
     
   
+    
+  
+    
+      
     
   
     
@@ -347,6 +354,8 @@
           <ul>
            
               <li><a href="/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/">QCQI/演習 2.5</a></li>
+              
+              <li><a href="/post/20210405105718-qcqi_%E6%BC%94%E7%BF%92_2_6/">QCQI/演習 2.6</a></li>
               
               <li><a href="/post/20210405093150-%E5%86%85%E7%A9%8D%E7%A9%BA%E9%96%93/">内積空間</a></li>
               
