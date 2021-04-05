@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Comm</title>
+<title>グラム・シュミット直交化</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Comm"/>
-<meta name="twitter:description" content="Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。 図式で足し算の可換性を表すと次のよう"/>
+<meta name="twitter:title" content="グラム・シュミット直交化"/>
+<meta name="twitter:description" content="ベクトル空間の基底集合から正規直交基底集合を作るための方法。おおまかには次の手順で行われる: 基底集合の 1 番目のベクトルを正規化する 2 番目のベ"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              Comm
+              グラム・シュミット直交化
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 22, 2021
+  >&nbsp;Apr 5, 2021
   
 </span>
 
@@ -116,29 +116,19 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>Comm は Commutativity (可換性) の略。<a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a>では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。</p>
-<p>図式で足し算の可換性を表すと次のようになる。</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_12-10-38_screenshot.png"/> 
-</figure>
-
-<p>これが正しいことは、変数 \(x\), \(y\) を使うことで次のように示せる。</p>
-<p>Comm の左辺に \(x\) と \(y\) を入力すると、</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_13-56-48_screenshot.png"/> 
-</figure>
-
-<p>Comm の右辺に \(x\) と \(y\) を入力すると、</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_13-58-36_screenshot.png"/> 
-</figure>
-
-<p>ここで足し算の可換性より \(x + y = y + x\) だから、</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_12-10-38_screenshot.png"/> 
-</figure>
-
-<p>が成り立つ。</p>
+  <p><a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a>の<a href="/post/20210331121800-%E5%9F%BA%E5%BA%95/">基底</a>集合から<a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a>基底集合を作るための方法。おおまかには次の手順で行われる:</p>
+<ol>
+<li>基底集合の 1 番目のベクトルを<a href="/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/">正規化</a>する</li>
+<li>2 番目のベクトルを 1 番目のベクトルと垂直 (<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a> = 0) にし、正規化する</li>
+<li>3 番目のベクトルを 1, 2 番目のベクトルと垂直にし、正規化する</li>
+<li>&hellip;</li>
+<li>n 番目のベクトルを以前のベクトルすべてと垂直にし、正規化する (繰り返し)</li>
+</ol>
+<p>一般化すると次のようになる。\(|w_1\rangle, \ldots, |w_d\rangle\) がベクトル空間 \(V\) に対する基底集合、作りたい正規直交基底集合を \(|v_1\rangle, \ldots, |v_d\rangle\) とする。\(|v_1\rangle \equiv |w_1\rangle / \||w_1\rangle\|\) と定義し、\(1 \leq k \leq d - 1\) に対して帰納的に \(|v_{k_1}\rangle\) を次のように定義する。</p>
+<p>\begin{equation}
+|v_{k+1}\rangle \equiv \frac{|w_{k+1}\rangle - \sum^k_{i=1} \langle v_i | w_{k+1}\rangle |v_i\rangle}{\||w_{k+1}\rangle - \sum^k_{i=1}\langle v_i|w_{k+1}\rangle|v_i\rangle\|}
+\end{equation}</p>
+<p>この方法によって正規直交基底集合が作れるので、任意の (有限) \(d\) 次元のベクトル空間は正規直交基底 \(|v_1\rangle, \ldots, |v_d\rangle\) を持つ。</p>
 
 
 
@@ -280,8 +270,6 @@
     
   
     
-      
-    
   
     
   
@@ -368,19 +356,6 @@
     
   
 
-  
-    <div class="container" role="main">
-      <div class="bl-section" style="margin-top: 4rem">
-        <h2>Links to this note</h2>
-        <div class="backlinks">
-          <ul>
-           
-              <li><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a></li>
-              
-          </ul>
-        </div>
-      </div>
-    </div>
   
 
 

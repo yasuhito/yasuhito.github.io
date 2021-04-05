@@ -32,6 +32,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/",
+                "title": "グラム・シュミット直交化",
+                "section": "post",
+                "date" : "2021.04.05",
+                "body": "ベクトル空間の基底集合から正規直交基底集合を作るための方法。おおまかには次の手順で行われる:\n 基底集合の 1 番目のベクトルを正規化する 2 番目のベクトルを 1 番目のベクトルと垂直 (内積 = 0) にし、正規化する 3 番目のベクトルを 1, 2 番目のベクトルと垂直にし、正規化する \u0026hellip; n 番目のベクトルを以前のベクトルすべてと垂直にし、正規化する (繰り返し)  一般化すると次のようになる。\\(|w_1\\rangle, \\ldots, |w_d\\rangle\\) がベクトル空間 \\(V\\) に対する基底集合、作りたい正規直交基底集合を \\(|v_1\\rangle, \\ldots, |v_d\\rangle\\) とする。\\(|v_1\\rangle \\equiv |w_1\\rangle / \\||w_1\\rangle\\|\\) と定義し、\\(1 \\leq k \\leq d - 1\\) に対して帰納的に \\(|v_{k_1}\\rangle\\) を次のように定義する。\n\\begin{equation} |v_{k+1}\\rangle \\equiv \\frac{|w_{k+1}\\rangle - \\sum^k_{i=1} \\langle v_i | w_{k+1}\\rangle |v_i\\rangle}{\\||w_{k+1}\\rangle - \\sum^k_{i=1}\\langle v_i|w_{k+1}\\rangle|v_i\\rangle\\|} \\end{equation}\nこの方法によって正規直交基底集合が作れるので、任意の (有限) \\(d\\) 次元のベクトル空間は正規直交基底 \\(|v_1\\rangle, \\ldots, |v_d\\rangle\\) を持つ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210405113237-%E3%83%8E%E3%83%AB%E3%83%A0/",
                 "title": "ノルム",
                 "section": "post",
