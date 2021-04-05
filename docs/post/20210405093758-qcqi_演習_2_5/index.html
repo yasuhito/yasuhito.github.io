@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>図式的線形代数</title>
+<title>QCQI/演習 2.5</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="図式的線形代数"/>
-<meta name="twitter:description" content="グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。 https://graphicallinearalgebra.net/ ジェネレータ Identity Twist Zero 方程式 Comm Assoc 演算 図式の直和 図式の合成"/>
+<meta name="twitter:title" content="QCQI/演習 2.5"/>
+<meta name="twitter:description" content="\(\mathcal{C}^n\) の内積の定義 \begin{equation} ((y_1, \ldots, y_n), (z_1, \ldots, z_n)) \equiv \sum_i y_i^{\ast}z_i = \begin{bmatrix} y_1^{\ast}, \ldots, y_n^{\ast} \end{bmatrix}\begin{bmatrix} z_1 \newline \vdots \newline z_n \end{bmatrix} \end{equation} について、内積の定義 1, 2, 3 を満たすことを確認する。 1 について、 \begin{eqnarray} \left(|v\rangle, \sum_i \lambda_i|w_i\rangle\right) &amp;=&amp; \sum_j v_j^{\ast} \left(\sum_i \lambda_i"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              図式的線形代数
+              QCQI/演習 2.5
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 22, 2021
+  >&nbsp;Apr 5, 2021
   
 </span>
 
@@ -116,29 +116,36 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。</p>
-<p><a href="https://graphicallinearalgebra.net/">https://graphicallinearalgebra.net/</a></p>
-<ul>
-<li>ジェネレータ
-<ul>
-<li><a href="/post/20210323094041-identity/">Identity</a></li>
-<li><a href="/post/20210323095806-twist/">Twist</a></li>
-<li><a href="/post/20210323084442-zero/">Zero</a></li>
-</ul>
-</li>
-<li>方程式
-<ul>
-<li><a href="/post/20210322140545-comm/">Comm</a></li>
-<li><a href="/post/20210323114201-assoc/">Assoc</a></li>
-</ul>
-</li>
-<li>演算
-<ul>
-<li><a href="/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/">図式の直和</a></li>
-<li><a href="/post/20210323110948-%E5%9B%B3%E5%BC%8F%E3%81%AE%E5%90%88%E6%88%90/">図式の合成</a></li>
-</ul>
-</li>
-</ul>
+  <p>\(\mathcal{C}^n\) の内積の定義</p>
+<p>\begin{equation}
+((y_1, \ldots, y_n), (z_1, \ldots, z_n)) \equiv \sum_i y_i^{\ast}z_i = \begin{bmatrix}
+y_1^{\ast}, \ldots, y_n^{\ast}
+\end{bmatrix}\begin{bmatrix}
+z_1 \newline
+\vdots \newline
+z_n
+\end{bmatrix}
+\end{equation}</p>
+<p>について、<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積の定義</a> 1, 2, 3 を満たすことを確認する。</p>
+<p>1 について、</p>
+<p>\begin{eqnarray}
+\left(|v\rangle, \sum_i \lambda_i|w_i\rangle\right) &amp;=&amp; \sum_j v_j^{\ast} \left(\sum_i \lambda_i w_{ij}\right) \\\<br>
+&amp;=&amp; \sum_i \lambda_i \left(\sum_j v_j^{\ast} w_{ij}\right) \\\<br>
+&amp;=&amp; \sum_i \lambda_i (|v\rangle, |w_i\rangle)
+\end{eqnarray}</p>
+<p>2 について、</p>
+<p>\begin{eqnarray}
+(|v\rangle, |w\rangle) &amp;=&amp; \sum_i v_i^{\ast}w_i \\\<br>
+&amp;=&amp; \sum_i (v_i w_i^{\ast})^{\ast} \\\<br>
+&amp;=&amp; \sum_i (w_i^{\ast} v_i)^{\ast} \\\<br>
+&amp;=&amp; (|w\rangle, |v\rangle)^{\ast}
+\end{eqnarray}</p>
+<p>3 について、</p>
+<p>\begin{eqnarray}
+(|v\rangle, |v\rangle) &amp;=&amp; \sum_i v_i^{\ast}v_i \\\<br>
+&amp;=&amp; \sum_i |v_i|^2 \geq 0
+\end{eqnarray}</p>
+<p>明らかに、等号が成り立つのは \(|v\rangle = 0\) のときのみ。</p>
 
 
 
@@ -180,90 +187,6 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
       
     
   
@@ -272,7 +195,79 @@
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -369,19 +364,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210310110827-%E5%9C%8F%E8%AB%96%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%85%A5%E9%96%80/">圏論的量子力学入門</a></li>
-              
-              <li><a href="/post/20210323114201-assoc/">Assoc</a></li>
-              
-              <li><a href="/post/20210323094041-identity/">Identity</a></li>
-              
-              <li><a href="/post/20210323095806-twist/">Twist</a></li>
-              
-              <li><a href="/post/20210323090747-unit/">Unit</a></li>
-              
-              <li><a href="/post/20210323084442-zero/">Zero</a></li>
-              
-              <li><a href="/post/20210322140545-comm/">Comm</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
