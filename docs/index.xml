@@ -30,6 +30,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.7</title>
+			<link>https://yasuhito.github.io/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/</guid>
+			<description>\(|w\rangle\) と \(|v\rangle\) の内積を計算すると、 \begin{equation} \langle w|v \rangle = \begin{bmatrix} 1 &amp;amp; 1 \end{bmatrix}^{\ast}\begin{bmatrix} 1 \newline -1 \end{bmatrix} = 1\times1 + 1 \times (-1) = 0 \end{equation} よって \(|w\rangle\) と \(|v\rangle\) は直交している。 \(\||w\rangle\| = \sqrt{\langle w|w \rangle} = \sqrt{2},\ \||v\rangle\| = \sqrt{\langle v|v \rangle} = \sqrt{2}\) なので、それ</description>
+		</item>
+      	
+		<item>
 			<title>ノルム</title>
 			<link>https://yasuhito.github.io/post/20210405113237-%E3%83%8E%E3%83%AB%E3%83%A0/</link>
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/</guid>
 			<description>ベクトル \(|v\rangle\) について、もしノルム \(\|v\rangle\| = 1\) ならば、\(|v\rangle\) は正規化 (または規格化) されているという。ゼロでないベクトル \(|v\rangle\) について</description>
-		</item>
-      	
-		<item>
-			<title>直交</title>
-			<link>https://yasuhito.github.io/post/20210405112937-%E7%9B%B4%E4%BA%A4/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405112937-%E7%9B%B4%E4%BA%A4/</guid>
-			<description>ベクトル \(|w\rangle\) とベクトル \(|v\rangle\) の内積が \(0\) のとき両ベクトルは直交しているという。</description>
 		</item>
       	
 	</channel>

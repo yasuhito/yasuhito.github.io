@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/",
+                "title": "QCQI/演習 2.7",
+                "section": "post",
+                "date" : "2021.04.05",
+                "body": "\\(|w\\rangle\\) と \\(|v\\rangle\\) の内積を計算すると、\n\\begin{equation} \\langle w|v \\rangle = \\begin{bmatrix} 1 \u0026amp; 1 \\end{bmatrix}^{\\ast}\\begin{bmatrix} 1 \\newline -1 \\end{bmatrix} = 1\\times1 + 1 \\times (-1) = 0 \\end{equation}\nよって \\(|w\\rangle\\) と \\(|v\\rangle\\) は直交している。\n\\(\\||w\\rangle\\| = \\sqrt{\\langle w|w \\rangle} = \\sqrt{2},\\ \\||v\\rangle\\| = \\sqrt{\\langle v|v \\rangle} = \\sqrt{2}\\) なので、それぞれを正規化すると、\n\\begin{eqnarray} \\frac{|w\\rangle}{\\||w\\rangle\\|} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}|w\\rangle, \\newline\\newline \\frac{|v\\rangle}{\\||v\\rangle\\|} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}|v\\rangle \\end{eqnarray}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210405113237-%E3%83%8E%E3%83%AB%E3%83%A0/",
                 "title": "ノルム",
                 "section": "post",
@@ -92,6 +102,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/",
+                "title": "正規直交",
+                "section": "post",
+                "date" : "2021.04.05",
+                "body": "インデックス \\(i\\) を持つベクトルの集合 \\(|i\\rangle\\) の各々が単位ベクトルであり、その集合のうち互いに異なるベクトルが直交しているとき、つまりインデックスの集合から選んだ \\(i\\) と \\(j\\) に対して \\(\\langle i|j \\rangle = \\delta_{ij}\\) のとき、集合 \\(|i\\rangle\\) は正規直交であるという。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210405112937-%E7%9B%B4%E4%BA%A4/",
                 "title": "直交",
                 "section": "post",
@@ -146,7 +166,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,

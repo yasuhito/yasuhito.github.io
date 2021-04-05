@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Quantum Computation and Quantum Information</title>
+<title>QCQI/演習 2.7</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Quantum Computation and Quantum Information"/>
-<meta name="twitter:description" content="演習の解答 QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 先人達の解答 goropikari/SolutionQCQINielsenChuang Solutions: Quantum"/>
+<meta name="twitter:title" content="QCQI/演習 2.7"/>
+<meta name="twitter:description" content="\(|w\rangle\) と \(|v\rangle\) の内積を計算すると、 \begin{equation} \langle w|v \rangle = \begin{bmatrix} 1 &amp; 1 \end{bmatrix}^{\ast}\begin{bmatrix} 1 \newline -1 \end{bmatrix} = 1\times1 &#43; 1 \times (-1) = 0 \end{equation} よって \(|w\rangle\) と \(|v\rangle\) は直交している。 \(\||w\rangle\| = \sqrt{\langle w|w \rangle} = \sqrt{2},\ \||v\rangle\| = \sqrt{\langle v|v \rangle} = \sqrt{2}\) なので、それ"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              Quantum Computation and Quantum Information
+              QCQI/演習 2.7
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 2, 2021
+  >&nbsp;Apr 5, 2021
   
 </span>
 
@@ -116,26 +116,21 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <figure>
-    <img src="/ox-hugo/2021-04-02_11-15-53_screenshot.png"/> 
-</figure>
-
-<h2 id="演習の解答">演習の解答</h2>
-<ul>
-<li><a href="/post/20210402160012-qcqi_%E6%BC%94%E7%BF%92_2_1/">QCQI/演習 2.1</a></li>
-<li><a href="/post/20210402160242-qcqi_%E6%BC%94%E7%BF%92_2_2/">QCQI/演習 2.2</a></li>
-<li><a href="/post/20210402160643-qcqi_%E6%BC%94%E7%BF%92_2_3/">QCQI/演習 2.3</a></li>
-<li><a href="/post/20210402161917-qcqi_%E6%BC%94%E7%BF%92_2_4/">QCQI/演習 2.4</a></li>
-<li><a href="/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/">QCQI/演習 2.5</a></li>
-<li><a href="/post/20210405105718-qcqi_%E6%BC%94%E7%BF%92_2_6/">QCQI/演習 2.6</a></li>
-<li><a href="/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/">QCQI/演習 2.7</a></li>
-</ul>
-<h2 id="先人達の解答">先人達の解答</h2>
-<ul>
-<li><a href="https://github.com/goropikari/SolutionQCQINielsenChuang">goropikari/SolutionQCQINielsenChuang</a></li>
-<li><a href="https://serab.net/docs/qcqi/">Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang</a></li>
-<li><a href="https://enakai00.hatenablog.com/entry/2018/04/22/195026">QCQI Exercise Solutions (Index)</a></li>
-</ul>
+  <p>\(|w\rangle\) と \(|v\rangle\) の<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>を計算すると、</p>
+<p>\begin{equation}
+\langle w|v \rangle = \begin{bmatrix}
+1 &amp; 1
+\end{bmatrix}^{\ast}\begin{bmatrix}
+1 \newline
+-1
+\end{bmatrix} = 1\times1 + 1 \times (-1) = 0
+\end{equation}</p>
+<p>よって \(|w\rangle\) と \(|v\rangle\) は<a href="/post/20210405112937-%E7%9B%B4%E4%BA%A4/">直交</a>している。</p>
+<p>\(\||w\rangle\| = \sqrt{\langle w|w \rangle} = \sqrt{2},\ \||v\rangle\| = \sqrt{\langle v|v \rangle} = \sqrt{2}\) なので、それぞれを<a href="/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/">正規化</a>すると、</p>
+<p>\begin{eqnarray}
+\frac{|w\rangle}{\||w\rangle\|} &amp;=&amp; \frac{1}{\sqrt{2}}|w\rangle, \newline\newline
+\frac{|v\rangle}{\||v\rangle\|} &amp;=&amp; \frac{1}{\sqrt{2}}|v\rangle
+\end{eqnarray}</p>
 
 
 
@@ -193,17 +188,17 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -370,7 +365,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
