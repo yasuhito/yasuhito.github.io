@@ -28,11 +28,27 @@
 		</item>
       	
 		<item>
+			<title>ノルム</title>
+			<link>https://yasuhito.github.io/post/20210405113237-%E3%83%8E%E3%83%AB%E3%83%A0/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405113237-%E3%83%8E%E3%83%AB%E3%83%A0/</guid>
+			<description>ベクトル \(|v\rangle\) のノルムを次式で定義する \begin{equation} \||v\rangle\| = \sqrt{\langle v|v \rangle} \end{equation}</description>
+		</item>
+      	
+		<item>
 			<title>パウリ行列</title>
 			<link>https://yasuhito.github.io/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/</link>
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/</guid>
 			<description>量子計算や量子情報で頻出する行列で、下記のようにいろいろな記号での表し方がある。とにかくよく使うので暗記してしまうのがよい。 \begin{align} \sigma_{0} \equiv I &amp;amp;\equiv \begin{bmatrix} 1 &amp;amp;</description>
+		</item>
+      	
+		<item>
+			<title>ヒルベルト空間</title>
+			<link>https://yasuhito.github.io/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/</guid>
+			<description>量子計算と量子情報ではふつう有限次元の複素ベクトル空間についてのみ扱い、この場合内積空間とヒルベルト空間は同一視できる。なので、ヒルベルト空</description>
 		</item>
       	
 		<item>
@@ -52,43 +68,27 @@
 		</item>
       	
 		<item>
-			<title>QCQI/演習 2.1</title>
-			<link>https://yasuhito.github.io/post/20210402160012-qcqi_%E6%BC%94%E7%BF%92_2_1/</link>
-			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210402160012-qcqi_%E6%BC%94%E7%BF%92_2_1/</guid>
-			<description>ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は \begin{equation} \begin{bmatrix} 2 \newline 1 \end{bmatrix} = \begin{bmatrix} 1 \newline {-1} \end{bmatrix} + \begin{bmatrix} 1 \newline 2 \end{bmatrix} \end{equation} を満たすので、これら 3 つのベクトルは線形従属。</description>
+			<title>単位ベクトル</title>
+			<link>https://yasuhito.github.io/post/20210405113700-%E5%8D%98%E4%BD%8D%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405113700-%E5%8D%98%E4%BD%8D%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
+			<description>ノルム \(\||v\rangle\| = 1\) となるベクトル \(|v\rangle\) を単位ベクトルと呼ぶ。</description>
 		</item>
       	
 		<item>
-			<title>QCQI/演習 2.2</title>
-			<link>https://yasuhito.github.io/post/20210402160242-qcqi_%E6%BC%94%E7%BF%92_2_2/</link>
-			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210402160242-qcqi_%E6%BC%94%E7%BF%92_2_2/</guid>
-			<description>\(A\) の行列表現 演算子は行列で表現できることから、 \[A|v_j\rangle = \sum_i A_{ij}|w_i\rangle\] \(j = 1\) のとき、 \begin{eqnarray} A|0\rangle &amp;amp;=&amp;amp; \sum_i A_{i1}|w_i\rangle \newline &amp;amp;=&amp;amp; A_{11}|0\rangle + A_{21}|1\rangle \end{eqnarray} \(j = 2\) のとき、 \begin{eqnarray} A|1\rangle &amp;amp;=&amp;amp; \sum_i A_{i2}|w_i\rangle \newline &amp;amp;=&amp;amp; A_{12}|0\rangle + A_{22}|1\rangle \end{eqnarray} これらと \(A|0\rangle = |1\rangle,\</description>
+			<title>正規化</title>
+			<link>https://yasuhito.github.io/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/</guid>
+			<description>ベクトル \(|v\rangle\) について、もしノルム \(\|v\rangle\| = 1\) ならば、\(|v\rangle\) は正規化 (または規格化) されているという。ゼロでないベクトル \(|v\rangle\) について</description>
 		</item>
       	
 		<item>
-			<title>QCQI/演習 2.3</title>
-			<link>https://yasuhito.github.io/post/20210402160643-qcqi_%E6%BC%94%E7%BF%92_2_3/</link>
-			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210402160643-qcqi_%E6%BC%94%E7%BF%92_2_3/</guid>
-			<description>演算子は行列で表現できることから、演算子 \(A\), \(B\) とそれぞれの要素について次が成り立つ。 \begin{equation} A|v_j\rangle = \sum_i A_{ij}|w_i\rangle \end{equation} \begin{equation} B|w_i\rangle = \sum_k A_{ki}|x_k\rangle \end{equation} ここで線形変換 \(BA\) の行列表現は、 \begin{eqnarray} BA|v_j\rangle</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.4</title>
-			<link>https://yasuhito.github.io/post/20210402161917-qcqi_%E6%BC%94%E7%BF%92_2_4/</link>
-			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210402161917-qcqi_%E6%BC%94%E7%BF%92_2_4/</guid>
-			<description>\(V\) の基底 \(|v_1\rangle, \ldots, |v_m\rangle\) について、演算子は行列で表現できることから、 \begin{equation} I|v_j\rangle = \sum_i I_{ij}|v_i\rangle \end{equation} ここで \(I|v_i\rangle = |v_i\rangle\ (i = 1, \ldots, m)\) なので、 \begin{equation} I_{ij}= \begin{cases} 1 &amp;amp; (i = j) \newline 0 &amp;amp; (otherwise) \end{cases} \end{equation} よって、\(</description>
-		</item>
-      	
-		<item>
-			<title>Quantum Computation and Quantum Information</title>
-			<link>https://yasuhito.github.io/post/20210402105729-quantum_computation_and_quantum_information/</link>
-			<pubDate>Fri, 02 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210402105729-quantum_computation_and_quantum_information/</guid>
-			<description>演習の解答 QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 先人達の解答 goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang</description>
+			<title>直交</title>
+			<link>https://yasuhito.github.io/post/20210405112937-%E7%9B%B4%E4%BA%A4/</link>
+			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210405112937-%E7%9B%B4%E4%BA%A4/</guid>
+			<description>ベクトル \(|w\rangle\) とベクトル \(|v\rangle\) の内積が \(0\) のとき両ベクトルは直交しているという。</description>
 		</item>
       	
 	</channel>
