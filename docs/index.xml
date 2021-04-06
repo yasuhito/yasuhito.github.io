@@ -54,6 +54,14 @@
 		</item>
       	
 		<item>
+			<title>固有空間</title>
+			<link>https://yasuhito.github.io/post/20210406151942-%E5%9B%BA%E6%9C%89%E7%A9%BA%E9%96%93/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406151942-%E5%9B%BA%E6%9C%89%E7%A9%BA%E9%96%93/</guid>
+			<description>固有値 \(v\) に対応する固有空間とは固有値 \(v\) を持つベクトルの集合であり、\(A\) が作用するベクトル空間のベクトル部分空間になる。</description>
+		</item>
+      	
+		<item>
 			<title>外積表現</title>
 			<link>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</link>
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
@@ -70,27 +78,19 @@
 		</item>
       	
 		<item>
-			<title>演算子の外積表現</title>
-			<link>https://yasuhito.github.io/post/20210406093454-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</link>
+			<title>対角化可能</title>
+			<link>https://yasuhito.github.io/post/20210406154403-%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD/</link>
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406093454-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</guid>
-			<description>\(A: V \rightarrow W\) を演算子、\(|v_i\rangle\) を \(V\) に対する正規直交基底、\(|w_i\rangle\) を \(W\) に対する正規直交基底とする。完全</description>
+			<guid>https://yasuhito.github.io/post/20210406154403-%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD/</guid>
+			<description>演算子の対角表現ができるとき、その演算子は対角化可能であるという</description>
 		</item>
       	
 		<item>
-			<title>QCQI/演習 2.5</title>
-			<link>https://yasuhito.github.io/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/</guid>
-			<description>\(\mathcal{C}^n\) の内積の定義 \begin{equation} ((y_1, \ldots, y_n), (z_1, \ldots, z_n)) \equiv \sum_i y_i^{\ast}z_i = \begin{bmatrix} y_1^{\ast}, \ldots, y_n^{\ast} \end{bmatrix}\begin{bmatrix} z_1 \newline \vdots \newline z_n \end{bmatrix} \end{equation} について、内積の定義をすべて満たすことを確認する。 線形性について、 \begin{eqnarray} \left(|v\rangle, \sum_i \lambda_i|w_i\rangle\right) &amp;amp;=&amp;amp; \sum_j v_j^{\ast}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.6</title>
-			<link>https://yasuhito.github.io/post/20210405105718-qcqi_%E6%BC%94%E7%BF%92_2_6/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405105718-qcqi_%E6%BC%94%E7%BF%92_2_6/</guid>
-			<description>内積の定義より、 \begin{eqnarray} \left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) &amp;amp;=&amp;amp; \left(|v\rangle, \sum_i \lambda_i |w_i\rangle\right)^{\ast} \\\ &amp;amp;=&amp;amp; \left(\sum_i \lambda_i (|v\rangle, |w_i\rangle)\right)^{\ast} \\\ &amp;amp;=&amp;amp; \sum_i \lambda_i^{\ast} (|v\rangle, |w_i\rangle)^{\ast} \\\ &amp;amp;=&amp;amp; \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle) \end{eqnarray}</description>
+			<title>対角表現</title>
+			<link>https://yasuhito.github.io/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/</guid>
+			<description>ベクトル空間 \(V\) 上の演算子に対する対角表現は表現 \(A = \sum_i \lambda |i\rangle\langle i|\) である。ここでベクトル \(|i\rangle\) は \(A\) の固有値 \(\lambda_i\) に対する固有ベクトルであり、この固有ベクトル</description>
 		</item>
       	
 	</channel>
