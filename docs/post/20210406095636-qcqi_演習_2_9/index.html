@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>void</title>
+<title>QCQI/演習 2.9</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="void"/>
-<meta name="twitter:description" content="return 文を含まない関数の戻り値の型はなんでしょうか? TypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわ"/>
+<meta name="twitter:title" content="QCQI/演習 2.9"/>
+<meta name="twitter:description" content="演算子の外積表現とパウリ行列を使う。 \(I\) の外積表現 \begin{eqnarray} I &amp;=&amp; \sum_{i,j=0}^1 \langle j|I|i\rangle|j\rangle\langle i| \\\ &amp;=&amp; 1\cdot|0 \rangle\langle 0| &#43; 0\cdot|0 \rangle\langle 1| &#43; 0\cdot|1 \rangle\langle 0| &#43; 1\cdot|1 \rangle\langle 1| \\\ &amp;=&amp; |0 \rangle\langle 0| &#43; |1 \rangle\langle 1| \end{eqnarray} \(X\) の外積表現 \begin{eqnarray} X &amp;=&amp; \sum_{i,j=0}^1 \langle j|X|i\rangle|j\rangle\langle"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              void
+              QCQI/演習 2.9
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 20, 2021
+  >&nbsp;Apr 6, 2021
   
 </span>
 
@@ -116,28 +116,31 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><code>return</code> 文を含まない関数の戻り値の型はなんでしょうか?</p>
-<p>TypeScript では、そういう関数の戻り値の型は <code>void</code> です。あえて型エラーを起こしてエラーメッセージを見ればわかります。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
-
-<span style="color:#75715e">// → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;.
-</span></code></pre></div><p><code>void</code> の使いみちは、明示的に何も返さない関数を表現したい場合です。たとえば <code>console.log</code> はその一例です。</p>
-<p><code>void</code> 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 <code>void</code> は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 <code>void</code> 型の変数を作ることができます。この変数には <code>undefined</code> という値しか入りません。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aVoid</span>: <span style="color:#66d9ef">void</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
-
-<span style="color:#75715e">// → undefined
-</span></code></pre></div><p>だからといって、その <code>void</code> を <code>undefined</code> 型の変数に代入できるわけではありません。 <code>void</code> は何にも代入できないので、型エラーになります。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aVoid</span>: <span style="color:#66d9ef">void</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">u</span>: <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aVoid</span>;
-
-<span style="color:#75715e">// → type error: Type &#39;void&#39; is not assignable to type &#39;undefined&#39;.
-</span></code></pre></div><p>実際には、 <code>void</code> 型の変数に出会うことはないでしょう。しかし、多くの <code>void</code> 関数を目にすることになるでしょう。なぜなら、戻り値のない関数は自動的に <code>void</code> と推論されるからです。</p>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://www.executeprogram.com/courses/typescript/lessons/void">void (Execute Program)</a></li>
-</ul>
+  <p><a href="/post/20210406093454-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/">演算子の外積表現</a>と<a href="/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/">パウリ行列</a>を使う。</p>
+<h2 id="i--の外積表現">\(I\) の外積表現</h2>
+<p>\begin{eqnarray}
+I &amp;=&amp; \sum_{i,j=0}^1 \langle j|I|i\rangle|j\rangle\langle i| \\\<br>
+&amp;=&amp; 1\cdot|0 \rangle\langle 0| + 0\cdot|0 \rangle\langle 1| + 0\cdot|1 \rangle\langle 0| + 1\cdot|1 \rangle\langle 1| \\\<br>
+&amp;=&amp; |0 \rangle\langle 0| + |1 \rangle\langle 1|
+\end{eqnarray}</p>
+<h2 id="x--の外積表現">\(X\) の外積表現</h2>
+<p>\begin{eqnarray}
+X &amp;=&amp; \sum_{i,j=0}^1 \langle j|X|i\rangle|j\rangle\langle i| \\\<br>
+&amp;=&amp; 0\cdot|0 \rangle\langle 0| + 1\cdot|0 \rangle\langle 1| + 1\cdot|1 \rangle\langle 0| + 0\cdot|1 \rangle\langle 1| \\\<br>
+&amp;=&amp; |0 \rangle\langle 1| + |1 \rangle\langle 0|
+\end{eqnarray}</p>
+<h2 id="y--の外積表現">\(Y\) の外積表現</h2>
+<p>\begin{eqnarray}
+Y &amp;=&amp; \sum_{i,j=0}^1 \langle j|Y|i\rangle|j\rangle\langle i| \\\<br>
+&amp;=&amp; 0\cdot|0 \rangle\langle 0| + (-i)\cdot|0 \rangle\langle 1| + i\cdot|1 \rangle\langle 0| + 0\cdot|1 \rangle\langle 1| \\\<br>
+&amp;=&amp; -i|0 \rangle\langle 1| + i|1 \rangle\langle 0|
+\end{eqnarray}</p>
+<h2 id="z--の外積表現">\(Z\) の外積表現</h2>
+<p>\begin{eqnarray}
+Z &amp;=&amp; \sum_{i,j=0}^1 \langle j|Z|i\rangle|j\rangle\langle i| \\\<br>
+&amp;=&amp; 1\cdot|0 \rangle\langle 0| + 0\cdot|0 \rangle\langle 1| + 0\cdot|1 \rangle\langle 0| + (-1)\cdot|1 \rangle\langle 1| \\\<br>
+&amp;=&amp; |0 \rangle\langle 0| - |1 \rangle\langle 1|
+\end{eqnarray}</p>
 
 
 
@@ -207,93 +210,93 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -384,7 +387,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210320161559-%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E5%AD%A6%E7%BF%92%E3%81%AE_srs_%E5%8C%96/">プログラミング学習の SRS 化</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>

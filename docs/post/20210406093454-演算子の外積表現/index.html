@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>void</title>
+<title>演算子の外積表現</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="void"/>
-<meta name="twitter:description" content="return 文を含まない関数の戻り値の型はなんでしょうか? TypeScript では、そういう関数の戻り値の型は void です。あえて型エラーを起こしてエラーメッセージを見ればわ"/>
+<meta name="twitter:title" content="演算子の外積表現"/>
+<meta name="twitter:description" content="\(A: V \rightarrow W\) を演算子、\(|v_i\rangle\) を \(V\) に対する正規直交基底、\(|w_i\rangle\) を \(W\) に対する正規直交基底とする。完全"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              void
+              演算子の外積表現
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 20, 2021
+  >&nbsp;Apr 6, 2021
   
 </span>
 
@@ -116,28 +116,13 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><code>return</code> 文を含まない関数の戻り値の型はなんでしょうか?</p>
-<p>TypeScript では、そういう関数の戻り値の型は <code>void</code> です。あえて型エラーを起こしてエラーメッセージを見ればわかります。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">f() {</span>
-}
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">n</span>: <span style="color:#66d9ef">number</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">f</span>();
-
-<span style="color:#75715e">// → type error: Type &#39;void&#39; is not assignable to type &#39;number&#39;.
-</span></code></pre></div><p><code>void</code> の使いみちは、明示的に何も返さない関数を表現したい場合です。たとえば <code>console.log</code> はその一例です。</p>
-<p><code>void</code> 型は、値を一切持たないことを示します。他の多くの静的言語では、例外はなく、 <code>void</code> は本当に値を持つことはできません。しかし、TypeScript では不思議なことに、 <code>void</code> 型の変数を作ることができます。この変数には <code>undefined</code> という値しか入りません。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aVoid</span>: <span style="color:#66d9ef">void</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
-
-<span style="color:#75715e">// → undefined
-</span></code></pre></div><p>だからといって、その <code>void</code> を <code>undefined</code> 型の変数に代入できるわけではありません。 <code>void</code> は何にも代入できないので、型エラーになります。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">aVoid</span>: <span style="color:#66d9ef">void</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">undefined</span>;
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">u</span>: <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">aVoid</span>;
-
-<span style="color:#75715e">// → type error: Type &#39;void&#39; is not assignable to type &#39;undefined&#39;.
-</span></code></pre></div><p>実際には、 <code>void</code> 型の変数に出会うことはないでしょう。しかし、多くの <code>void</code> 関数を目にすることになるでしょう。なぜなら、戻り値のない関数は自動的に <code>void</code> と推論されるからです。</p>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://www.executeprogram.com/courses/typescript/lessons/void">void (Execute Program)</a></li>
-</ul>
+  <p>\(A: V \rightarrow W\) を<a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a>、\(|v_i\rangle\) を \(V\) に対する<a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a><a href="/post/20210331121800-%E5%9F%BA%E5%BA%95/">基底</a>、\(|w_i\rangle\) を \(W\) に対する正規直交基底とする。<a href="/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/">完全性関係</a>を使うと、</p>
+<p>\begin{eqnarray}
+A &amp;=&amp; I_W AI_{V} \\\<br>
+&amp;=&amp; \sum_{ij} |w_j\rangle \langle w_j|A|v_i\rangle\langle v_i| \\\<br>
+&amp;=&amp; \sum_{ij} \langle w_j|A|v_i\rangle|w_j\rangle\langle v_i|
+\end{eqnarray}</p>
+<p>これは \(A\) の外積表現。この式から入力基底 \(|v_i\rangle\), 出力基底 \(|w_i\rangle\) に対して行列 \(A\) の \(i\) 行 \(j\) 列の行列要素は \(\langle w_j|A|v_i\rangle\) であることがわかる。</p>
 
 
 
@@ -163,137 +148,137 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -384,7 +369,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210320161559-%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF%E5%AD%A6%E7%BF%92%E3%81%AE_srs_%E5%8C%96/">プログラミング学習の SRS 化</a></li>
+              <li><a href="/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/">QCQI/演習 2.9</a></li>
               
           </ul>
         </div>
