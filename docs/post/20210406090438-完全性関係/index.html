@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>内積空間</title>
+<title>完全性関係</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="内積空間"/>
-<meta name="twitter:description" content="内積を備えたベクトル空間を内積空間と呼ぶ。"/>
+<meta name="twitter:title" content="完全性関係"/>
+<meta name="twitter:description" content="\(|i\rangle\) をベクトル空間 \(V\) における任意の正規直交基底とすると、 \begin{equation} \sum_i |i\rangle \langle i| = I \end{equation} が成り立つ。この式を完全性関係と呼ぶ。 導出 外積表現を使う。任意のベクト"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              内積空間
+              完全性関係
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 5, 2021
+  >&nbsp;Apr 6, 2021
   
 </span>
 
@@ -116,7 +116,21 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>を備えたベクトル空間を内積空間と呼ぶ。</p>
+  <p>\(|i\rangle\) を<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\) における任意の<a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a><a href="/post/20210331121800-%E5%9F%BA%E5%BA%95/">基底</a>とすると、</p>
+<p>\begin{equation}
+\sum_i |i\rangle \langle i| = I
+\end{equation}</p>
+<p>が成り立つ。この式を完全性関係と呼ぶ。</p>
+<h2 id="導出">導出</h2>
+<p><a href="/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/">外積表現</a>を使う。任意のベクトル \(|v\rangle\) はある複素数の集合 \(v_i\) と正規直交基底 \(|i\rangle\) を用いて \(|v\rangle = \sum_i v_i|i\rangle\) と書ける。\(\langle i|v\rangle = v_i\) であるから、</p>
+<p>\begin{equation}
+\left(\sum_i |i\rangle \langle i|\right)|v\rangle = \sum_i |i\rangle \langle i|v\rangle = \sum_i v_i|i\rangle = |v\rangle
+\end{equation}</p>
+<p>つまり \(\left(\sum_i |i\rangle \langle i|\right)|v\rangle = |v\rangle\) であり、これが任意のベクトル \(|v\rangle\) について成り立つということは \(\sum_i |i\rangle \langle i|\) は<a href="/post/20210401101150-%E6%81%92%E7%AD%89%E6%BC%94%E7%AE%97%E5%AD%90/">恒等演算子</a>であるから、</p>
+<p>\begin{equation}
+\sum_i |i\rangle \langle i| = I
+\end{equation}</p>
+<p>が成り立つ。</p>
 
 
 
@@ -142,8 +156,6 @@
     
   
     
-      
-    
   
     
   
@@ -161,8 +173,6 @@
   
     
   
-    
-      
     
   
     
@@ -354,21 +364,6 @@
     
   
 
-  
-    <div class="container" role="main">
-      <div class="bl-section" style="margin-top: 4rem">
-        <h2>Links to this note</h2>
-        <div class="backlinks">
-          <ul>
-           
-              <li><a href="/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/">外積表現</a></li>
-              
-              <li><a href="/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/">ヒルベルト空間</a></li>
-              
-          </ul>
-        </div>
-      </div>
-    </div>
   
 
 

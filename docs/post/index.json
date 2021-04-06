@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/",
+                "title": "完全性関係",
+                "section": "post",
+                "date" : "2021.04.06",
+                "body": "\\(|i\\rangle\\) をベクトル空間 \\(V\\) における任意の正規直交基底とすると、\n\\begin{equation} \\sum_i |i\\rangle \\langle i| = I \\end{equation}\nが成り立つ。この式を完全性関係と呼ぶ。\n導出 外積表現を使う。任意のベクトル \\(|v\\rangle\\) はある複素数の集合 \\(v_i\\) と正規直交基底 \\(|i\\rangle\\) を用いて \\(|v\\rangle = \\sum_i v_i|i\\rangle\\) と書ける。\\(\\langle i|v\\rangle = v_i\\) であるから、\n\\begin{equation} \\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = \\sum_i |i\\rangle \\langle i|v\\rangle = \\sum_i v_i|i\\rangle = |v\\rangle \\end{equation}\nつまり \\(\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = |v\\rangle\\) であり、これが任意のベクトル \\(|v\\rangle\\) について成り立つということは \\(\\sum_i |i\\rangle \\langle i|\\) は恒等演算子であるから、\n\\begin{equation} \\sum_i |i\\rangle \\langle i| = I \\end{equation}\nが成り立つ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/",
                 "title": "QCQI/演習 2.5",
                 "section": "post",

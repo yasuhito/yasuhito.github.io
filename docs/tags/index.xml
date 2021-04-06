@@ -20,6 +20,14 @@
 		</item>
       	
 		<item>
+			<title>完全性関係</title>
+			<link>https://yasuhito.github.io/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/</guid>
+			<description>\(|i\rangle\) をベクトル空間 \(V\) における任意の正規直交基底とすると、 \begin{equation} \sum_i |i\rangle \langle i| = I \end{equation} が成り立つ。この式を完全性関係と呼ぶ。 導出 外積表現を使う。任意のベクト</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.5</title>
 			<link>https://yasuhito.github.io/post/20210405093758-qcqi_%E6%BC%94%E7%BF%92_2_5/</link>
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/</guid>
 			<description>量子計算と量子情報ではふつう有限次元の複素ベクトル空間についてのみ扱い、この場合内積空間とヒルベルト空間は同一視できる。なので、ヒルベルト空</description>
-		</item>
-      	
-		<item>
-			<title>内積</title>
-			<link>https://yasuhito.github.io/post/20210405091552-%E5%86%85%E7%A9%8D/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405091552-%E5%86%85%E7%A9%8D/</guid>
-			<description>ベクトル空間の 2 つのベクトル \(|v\rangle\) と \(|w\rangle\) を入力とし複素数を出力として作り出す関数。 ベクトル空間 \(V\) について、\(V \times V\) から \(\mathcal{C}\) への関数 \((\cdot , \cdot)\) が次の要請</description>
 		</item>
       	
 	</channel>
