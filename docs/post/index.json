@@ -22,6 +22,36 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/",
+                "title": "コーシー・シュワルツの不等式",
+                "section": "post",
+                "date" : "2021.04.06",
+                "body": "ヒルベルト空間の任意の 2 つのベクトル \\(|v\\rangle\\), \\(|w\\rangle\\) に対して \\(|\\langle v|w\\rangle|^2 \\leq \\langle v|v \\rangle \\langle w|w \\rangle\\).\n証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \\(|i\\rangle\\) を作り、最初の基底 \\(|i\\rangle\\) を \\(|w\\rangle / \\sqrt{\\langle w|w \\rangle}\\) とする。完全性関係 \\(\\sum_i |i\\rangle\\langle i| = I\\) を用い、負でない項を落とすと目的の式を得る。\n\\begin{eqnarray} \\langle v|v \\rangle \\langle w|w \\rangle \u0026amp;=\u0026amp; \\sum_i \\langle v|i \\rangle \\langle i | v \\rangle \\langle w|w \\rangle \\\\\\\n(Slack で質問中\u0026hellip;) \\end{eqnarray}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/",
+                "title": "固有ベクトル",
+                "section": "post",
+                "date" : "2021.04.06",
+                "body": "ベクトル空間における演算子 \\(A\\) の固有ベクトルとは、\\(A|v\\rangle = v|v\\rangle\\) を満たす \\(0\\) でないベクトル \\(|v\\rangle\\) のこと。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/",
+                "title": "固有値",
+                "section": "post",
+                "date" : "2021.04.06",
+                "body": "ベクトル空間における演算子 \\(A\\) について、\\(A|v\\rangle = v|v\\rangle\\) を満たす固有ベクトル \\(|v\\rangle\\) に対応する複素数 \\(v\\) を \\(A\\) の固有値と呼ぶ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/",
                 "title": "外積表現",
                 "section": "post",

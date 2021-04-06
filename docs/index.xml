@@ -30,6 +30,30 @@
 		</item>
       	
 		<item>
+			<title>コーシー・シュワルツの不等式</title>
+			<link>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</guid>
+			<description>ヒルベルト空間の任意の 2 つのベクトル \(|v\rangle\), \(|w\rangle\) に対して \(|\langle v|w\rangle|^2 \leq \langle v|v \rangle \langle w|w \rangle\). 証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \(|i\rangle\) を作り、</description>
+		</item>
+      	
+		<item>
+			<title>固有ベクトル</title>
+			<link>https://yasuhito.github.io/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
+			<description>ベクトル空間における演算子 \(A\) の固有ベクトルとは、\(A|v\rangle = v|v\rangle\) を満たす \(0\) でないベクトル \(|v\rangle\) のこと。</description>
+		</item>
+      	
+		<item>
+			<title>固有値</title>
+			<link>https://yasuhito.github.io/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/</guid>
+			<description>ベクトル空間における演算子 \(A\) について、\(A|v\rangle = v|v\rangle\) を満たす固有ベクトル \(|v\rangle\) に対応する複素数 \(v\) を \(A\) の固有値と呼ぶ。</description>
+		</item>
+      	
+		<item>
 			<title>外積表現</title>
 			<link>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</link>
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
@@ -67,30 +91,6 @@
 			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210405105718-qcqi_%E6%BC%94%E7%BF%92_2_6/</guid>
 			<description>内積の定義より、 \begin{eqnarray} \left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) &amp;amp;=&amp;amp; \left(|v\rangle, \sum_i \lambda_i |w_i\rangle\right)^{\ast} \\\ &amp;amp;=&amp;amp; \left(\sum_i \lambda_i (|v\rangle, |w_i\rangle)\right)^{\ast} \\\ &amp;amp;=&amp;amp; \sum_i \lambda_i^{\ast} (|v\rangle, |w_i\rangle)^{\ast} \\\ &amp;amp;=&amp;amp; \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle) \end{eqnarray}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.7</title>
-			<link>https://yasuhito.github.io/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405132421-qcqi_%E6%BC%94%E7%BF%92_2_7/</guid>
-			<description>\(|w\rangle\) と \(|v\rangle\) の内積を計算すると、 \begin{equation} \langle w|v \rangle = \begin{bmatrix} 1 &amp;amp; 1 \end{bmatrix}^{\ast}\begin{bmatrix} 1 \newline -1 \end{bmatrix} = 1\times1 + 1 \times (-1) = 0 \end{equation} よって \(|w\rangle\) と \(|v\rangle\) は直交している。 \(\||w\rangle\| = \sqrt{\langle w|w \rangle} = \sqrt{2},\ \||v\rangle\| = \sqrt{\langle v|v \rangle} = \sqrt{2}\) なので、それ</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.8</title>
-			<link>https://yasuhito.github.io/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/</guid>
-			<description>グラム・シュミット直交化によって作られたベクトルの集合について、それぞれのベクトルが正規化されていることは明らかなので、その集合のうち互いに</description>
-		</item>
-      	
-		<item>
-			<title>グラム・シュミット直交化</title>
-			<link>https://yasuhito.github.io/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/</link>
-			<pubDate>Mon, 05 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/</guid>
-			<description>ベクトル空間の基底集合から正規直交基底集合を作るための方法。おおまかには次の手順で行われる: 基底集合の 1 番目のベクトルを正規化する 2 番目のベ</description>
 		</item>
       	
 	</channel>
