@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.11</title>
+			<link>https://yasuhito.github.io/post/20210406155031-qcqi_%E6%BC%94%E7%BF%92_2_11/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406155031-qcqi_%E6%BC%94%E7%BF%92_2_11/</guid>
+			<description>\(X\) の固有分解 \(X\) の固有値を求めると、 \begin{eqnarray} det|X - \lambda I| = \begin{vmatrix} -\lambda &amp;amp; 1 \newline 1 &amp;amp; -\lambda \end{vmatrix} = \lambda^2 - 1 = 0\ \therefore \lambda = \pm1 \end{eqnarray} よって \(\lambda = 1\) と \(\lambda = -1\) のとき、\(X\) の固有ベクトルの</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.9</title>
 			<link>https://yasuhito.github.io/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/</link>
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
@@ -54,6 +62,14 @@
 		</item>
       	
 		<item>
+			<title>固有方程式</title>
+			<link>https://yasuhito.github.io/post/20210406155458-%E5%9B%BA%E6%9C%89%E6%96%B9%E7%A8%8B%E5%BC%8F/</link>
+			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406155458-%E5%9B%BA%E6%9C%89%E6%96%B9%E7%A8%8B%E5%BC%8F/</guid>
+			<description>特性方程式の別名</description>
+		</item>
+      	
+		<item>
 			<title>固有空間</title>
 			<link>https://yasuhito.github.io/post/20210406151942-%E5%9B%BA%E6%9C%89%E7%A9%BA%E9%96%93/</link>
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/</guid>
 			<description>\(|i\rangle\) をベクトル空間 \(V\) における任意の正規直交基底とすると、 \begin{equation} \sum_i |i\rangle \langle i| = I \end{equation} が成り立つ。この式を完全性関係と呼ぶ。 導出 外積表現を使う。任意のベクト</description>
-		</item>
-      	
-		<item>
-			<title>対角化可能</title>
-			<link>https://yasuhito.github.io/post/20210406154403-%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406154403-%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD/</guid>
-			<description>演算子の対角表現ができるとき、その演算子は対角化可能であるという</description>
-		</item>
-      	
-		<item>
-			<title>対角表現</title>
-			<link>https://yasuhito.github.io/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/</guid>
-			<description>ベクトル空間 \(V\) 上の演算子に対する対角表現は表現 \(A = \sum_i \lambda |i\rangle\langle i|\) である。ここでベクトル \(|i\rangle\) は \(A\) の固有値 \(\lambda_i\) に対する固有ベクトルであり、この固有ベクトル</description>
 		</item>
       	
 	</channel>
