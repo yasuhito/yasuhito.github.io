@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>コーシー・シュワルツの不等式</title>
+			<link>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</guid>
+			<description>ヒルベルト空間の任意の 2 つのベクトル \(|v\rangle\), \(|w\rangle\) に対して \(|\langle v|w\rangle|^2 \leq \langle v|v \rangle \langle w|w \rangle\). 証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \(|i\rangle\) を作り、</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.10</title>
 			<link>https://yasuhito.github.io/post/20210406103502-qcqi_%E6%BC%94%E7%BF%92_2_10/</link>
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
@@ -33,14 +41,6 @@
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/</guid>
 			<description>演算子の外積表現とパウリ行列を使う。 \(I\) の外積表現 \begin{eqnarray} I &amp;amp;=&amp;amp; \sum_{i,j=0}^1 \langle j|I|i\rangle|j\rangle\langle i| \\\ &amp;amp;=&amp;amp; 1\cdot|0 \rangle\langle 0| + 0\cdot|0 \rangle\langle 1| + 0\cdot|1 \rangle\langle 0| + 1\cdot|1 \rangle\langle 1| \\\ &amp;amp;=&amp;amp; |0 \rangle\langle 0| + |1 \rangle\langle 1| \end{eqnarray} \(X\) の外積表現 \begin{eqnarray} X &amp;amp;=&amp;amp; \sum_{i,j=0}^1 \langle j|X|i\rangle|j\rangle\langle</description>
-		</item>
-      	
-		<item>
-			<title>コーシー・シュワルツの不等式</title>
-			<link>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</guid>
-			<description>ヒルベルト空間の任意の 2 つのベクトル \(|v\rangle\), \(|w\rangle\) に対して \(|\langle v|w\rangle|^2 \leq \langle v|v \rangle \langle w|w \rangle\). 証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \(|i\rangle\) を作り、</description>
 		</item>
       	
 		<item>

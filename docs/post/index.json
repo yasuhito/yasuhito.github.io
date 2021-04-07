@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/",
+                "title": "コーシー・シュワルツの不等式",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "ヒルベルト空間の任意の 2 つのベクトル \\(|v\\rangle\\), \\(|w\\rangle\\) に対して \\(|\\langle v|w\\rangle|^2 \\leq \\langle v|v \\rangle \\langle w|w \\rangle\\).\n証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \\(|i\\rangle\\) を作り、最初の基底 \\(|i\\rangle\\) を \\(|w\\rangle / \\sqrt{\\langle w|w \\rangle}\\) とする。完全性関係 \\(\\sum_i |i\\rangle\\langle i| = I\\) を用い、\n\\begin{eqnarray} \\langle v|v \\rangle \\langle w|w \\rangle \u0026amp;=\u0026amp; \\sum_i \\langle v|i \\rangle \\langle i | v \\rangle \\langle w|w \\rangle \\end{eqnarray}\nここで、最初の基底 \\(|i\\rangle = |w\\rangle/\\sqrt{\\langle w | w \\rangle}\\ (\\langle i| = \\langle w|/\\sqrt{\\langle w | w \\rangle})\\) の項だけを残すと、\n\\begin{eqnarray} \\sum_i \\langle v|i \\rangle \\langle i | v \\rangle \\langle w|w \\rangle \u0026amp;\\geq\u0026amp; \\frac{\\langle v|w \\rangle \\langle w | v \\rangle}{\\langle w | w \\rangle}\\langle w | w \\rangle \\newline \u0026amp;=\u0026amp; \\langle v | w\\rangle \\langle w | v\\rangle = |\\langle v | w \\rangle |^2 \\end{eqnarray}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210406103502-qcqi_%E6%BC%94%E7%BF%92_2_10/",
                 "title": "QCQI/演習 2.10",
                 "section": "post",
@@ -27,16 +37,6 @@
                 "section": "post",
                 "date" : "2021.04.06",
                 "body": "演算子の外積表現とパウリ行列を使う。\n\\(I\\) の外積表現 \\begin{eqnarray} I \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|I|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + 1\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| + |1 \\rangle\\langle 1| \\end{eqnarray}\n\\(X\\) の外積表現 \\begin{eqnarray} X \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|X|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + 1\\cdot|0 \\rangle\\langle 1| + 1\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 1| + |1 \\rangle\\langle 0| \\end{eqnarray}\n\\(Y\\) の外積表現 \\begin{eqnarray} Y \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Y|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + (-i)\\cdot|0 \\rangle\\langle 1| + i\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; -i|0 \\rangle\\langle 1| + i|1 \\rangle\\langle 0| \\end{eqnarray}\n\\(Z\\) の外積表現 \\begin{eqnarray} Z \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Z|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + (-1)\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| - |1 \\rangle\\langle 1| \\end{eqnarray}\n"
-            }
-        
-    ,
-        
-            {
-                "ref": "https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/",
-                "title": "コーシー・シュワルツの不等式",
-                "section": "post",
-                "date" : "2021.04.06",
-                "body": "ヒルベルト空間の任意の 2 つのベクトル \\(|v\\rangle\\), \\(|w\\rangle\\) に対して \\(|\\langle v|w\\rangle|^2 \\leq \\langle v|v \\rangle \\langle w|w \\rangle\\).\n証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \\(|i\\rangle\\) を作り、最初の基底 \\(|i\\rangle\\) を \\(|w\\rangle / \\sqrt{\\langle w|w \\rangle}\\) とする。完全性関係 \\(\\sum_i |i\\rangle\\langle i| = I\\) を用い、負でない項を落とすと目的の式を得る。\n\\begin{eqnarray} \\langle v|v \\rangle \\langle w|w \\rangle \u0026amp;=\u0026amp; \\sum_i \\langle v|i \\rangle \\langle i | v \\rangle \\langle w|w \\rangle \\\\\\\n(Slack で質問中\u0026hellip;) \\end{eqnarray}\n"
             }
         
     ,
@@ -356,7 +356,7 @@
                 "title": "シグマの分解公式",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "分配法則 \\(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\\) の一般化として、二重和について次の公式がある。\n\\begin{equation} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j = \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{equation}\n証明 \\begin{eqnarray} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j \u0026amp;=\u0026amp; a_1 \\sum_{j=1}^n b_j + a_2 \\sum_{j=1}^n b_j + \\ldots + a_m \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{eqnarray}\n"
+                "body": "証明 \\begin{eqnarray}\n#+RESULTS: \\begin{eqnarray} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j \u0026amp;=\u0026amp; a_1 \\sum_{j=1}^n b_j + a_2 \\sum_{j=1}^n b_j + \\ldots + a_m \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{eqnarray}\n∑i=1m∑j=1^n a_i b_j \u0026amp;=\u0026amp; a_1 ∑j=1^n b_j + a_2 ∑j=1^n b_j + \\ldots + a_m ∑j=1^n b_j \\newline \u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) ∑j=1^n b_j \\newline \u0026amp;=\u0026amp; ∑i=1^m a_i ∑j=1^n b_j \\end{eqnarray}\n"
             }
         
     ,

@@ -101,7 +101,7 @@
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 6, 2021
+  >&nbsp;Apr 8, 2021
   
 </span>
 
@@ -117,10 +117,14 @@
     <article class="article" class="blog-post">
       
   <p><a href="/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/">ヒルベルト空間</a>の任意の 2 つのベクトル \(|v\rangle\), \(|w\rangle\) に対して \(|\langle v|w\rangle|^2 \leq \langle v|v \rangle \langle w|w \rangle\).</p>
-<p>証明するには<a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>でベクトル空間の正規直交基底 \(|i\rangle\) を作り、最初の基底 \(|i\rangle\) を \(|w\rangle / \sqrt{\langle w|w \rangle}\) とする。<a href="/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/">完全性関係</a> \(\sum_i |i\rangle\langle i| = I\) を用い、負でない項を落とすと目的の式を得る。</p>
+<p>証明するには<a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>でベクトル空間の正規直交基底 \(|i\rangle\) を作り、最初の基底 \(|i\rangle\) を \(|w\rangle / \sqrt{\langle w|w \rangle}\) とする。<a href="/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/">完全性関係</a> \(\sum_i |i\rangle\langle i| = I\) を用い、</p>
 <p>\begin{eqnarray}
-\langle v|v \rangle \langle w|w \rangle &amp;=&amp; \sum_i \langle v|i \rangle \langle i | v \rangle \langle w|w \rangle \\\<br>
-(Slack で質問中&hellip;)
+\langle v|v \rangle \langle w|w \rangle &amp;=&amp; \sum_i \langle v|i \rangle \langle i | v \rangle \langle w|w \rangle
+\end{eqnarray}</p>
+<p>ここで、最初の基底 \(|i\rangle = |w\rangle/\sqrt{\langle w | w \rangle}\ (\langle i| = \langle w|/\sqrt{\langle w | w \rangle})\) の項だけを残すと、</p>
+<p>\begin{eqnarray}
+\sum_i \langle v|i \rangle \langle i | v \rangle \langle w|w \rangle &amp;\geq&amp; \frac{\langle v|w \rangle \langle w | v \rangle}{\langle w | w \rangle}\langle w | w \rangle \newline
+&amp;=&amp; \langle v | w\rangle \langle w | v\rangle = |\langle v | w \rangle |^2
 \end{eqnarray}</p>
 
 
