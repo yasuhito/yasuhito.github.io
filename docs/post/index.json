@@ -112,6 +112,36 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408160607-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC/",
+                "title": "ユニタリー",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": " ユニタリー行列 \\(U^{\\dagger}U = I\\) ならば行列 \\(U\\) はユニタリーであるという ユニタリー演算子 演算子 \\(U\\) が \\(U^{\\dagger}U = I\\) ならば演算子 \\(U\\) はユニタリー  ユニタリー演算子は \\(UU^{\\dagger} = I\\) も満たすので、\\(U\\) は正規でありスペクトル分解ができる。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408161727-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/",
+                "title": "ユニタリー演算子の外積表現",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "\\(|v_i\\rangle\\) は任意の正規直交基底の集合であるとする。\\(|w_i\\rangle \\equiv U|v_i\\rangle\\) を定義すると、ユニタリー演算子は内積を保存するので \\(|w_i\\rangle\\) も正規直交基底の集合である。したがって \\(U = \\sum_i |w_i\\rangle\\langle v_i|\\) が成り立つ。逆にもし \\(|v\\rangle\\) と \\(|w\\rangle\\) が任意の 2 つの直交基底ならば、\\(U \\equiv \\sum_i |w_i\\rangle\\langle v_i|\\) で定義される演算子 \\(U\\) はユニタリー演算子であることが容易に確認できる。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408161455-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%86%85%E7%A9%8D%E3%82%92%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/",
+                "title": "ユニタリー演算子は内積を保存する",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "幾何学的にユニタリー演算子はベクトル間の内積を保存する。これを見るために \\(|v\\rangle\\) と \\(|w\\rangle\\) を任意の 2 つのベクトルとすると、\\(U|v\\rangle\\) と \\(U|w\\rangle\\) の内積は \\(|v\\rangle\\) と \\(|w\\rangle\\) の内積に等しい。\n\\begin{equation} (U|v\\rangle, U|w\\rangle) = \\langle v|U^{\\dagger}U|w\\rangle = \\langle v|I|w\\rangle = \\langle v|w\\rangle \\end{equation}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210408120345-%E5%8D%98%E4%BD%8D%E5%85%83%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/",
                 "title": "単位元の行列表現",
                 "section": "post",
