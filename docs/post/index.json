@@ -226,7 +226,7 @@
                 "title": "転置共役の反線形性",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "QCQI/演習 2.14を参照\n"
+                "body": "転置共役演算は次の性質を満たすため、反線形 (anti-linear) である。\n\\begin{equation} \\left(\\sum_i a_i A_i\\right)^{\\dagger} = \\sum_i a_i^{\\ast} A_i^{\\dagger} \\end{equation}\n証明は QCQI/演習 2.14 を参照。\n"
             }
         
     ,
