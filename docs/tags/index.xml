@@ -44,6 +44,22 @@
 		</item>
       	
 		<item>
+			<title>エルミート共役演算の行列表現</title>
+			<link>https://yasuhito.github.io/post/20210408114113-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9%E6%BC%94%E7%AE%97%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408114113-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9%E6%BC%94%E7%AE%97%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</guid>
+			<description>エルミート共役演算子の行列表現では、エルミート共役演算は行列 \(A\) を共役・転置すること、すなわち \(A^{\dagger} \equiv (A^{\ast})^T\) である。 たとえば、 \begin{eqnarray} \begin{bmatrix} 1+3i &amp;amp; 2i \newline 1_i &amp;amp; 1-4i \end{bmatrix}^{\dagger} = \begin{bmatrix}</description>
+		</item>
+      	
+		<item>
+			<title>エルミート演算子</title>
+			<link>https://yasuhito.github.io/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>演算子 \(A\) の転置共役が元の演算子 \(A\) に等しいとき、その演算子をエルミート演算子または自己共役 (自己随伴) 演算子であるという。</description>
+		</item>
+      	
+		<item>
 			<title>コーシー・シュワルツの不等式</title>
 			<link>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
@@ -52,43 +68,27 @@
 		</item>
       	
 		<item>
-			<title>転置共役</title>
-			<link>https://yasuhito.github.io/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/</link>
+			<title>パウリ演算子の外積表現</title>
+			<link>https://yasuhito.github.io/post/20210408120225-%E3%83%8F%E3%82%A6%E3%83%AA%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</link>
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/</guid>
-			<description>\(A\) はヒルベルト空間 \(V\) の任意の演算子であるとすると、すべてのベクトル \(|v\rangle, |w\rangle \in V\) に対して、 \begin{equation} (|v\rangle, A|w\rangle) = (A^{\dagger}|v\rangle, |w\rangle) \end{equation} を満たす演算子 \(A^{\dagger}\) が \(V\) 上に唯 1 つのみ存在する</description>
+			<guid>https://yasuhito.github.io/post/20210408120225-%E3%83%8F%E3%82%A6%E3%83%AA%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</guid>
+			<description>QCQI/演習 2.9を参照</description>
 		</item>
       	
 		<item>
-			<title>QCQI/演習 2.10</title>
-			<link>https://yasuhito.github.io/post/20210406103502-qcqi_%E6%BC%94%E7%BF%92_2_10/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406103502-qcqi_%E6%BC%94%E7%BF%92_2_10/</guid>
-			<description>演算子の外積表現より、演算子 \(|v_j\rangle\langle v_k|\) の行列表現 \(A\) の行列要素は \(A_{lm} = \langle w_l|v_j\rangle\langle v_k|v_m\rangle = \delta_{lj}\delta_{km}\)</description>
+			<title>パウリ行列の固有分解</title>
+			<link>https://yasuhito.github.io/post/20210408120013-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97%E3%81%AE%E5%9B%BA%E6%9C%89%E5%88%86%E8%A7%A3/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408120013-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97%E3%81%AE%E5%9B%BA%E6%9C%89%E5%88%86%E8%A7%A3/</guid>
+			<description>QCQI/演習 2.11を参照</description>
 		</item>
       	
 		<item>
-			<title>QCQI/演習 2.11</title>
-			<link>https://yasuhito.github.io/post/20210406155031-qcqi_%E6%BC%94%E7%BF%92_2_11/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406155031-qcqi_%E6%BC%94%E7%BF%92_2_11/</guid>
-			<description>\(X\) の固有分解 \(X\) の固有値を求めると、 \begin{eqnarray} det|X - \lambda I| = \begin{vmatrix} -\lambda &amp;amp; 1 \newline 1 &amp;amp; -\lambda \end{vmatrix} = \lambda^2 - 1 = 0\ \therefore \lambda = \pm1 \end{eqnarray} よって \(\lambda = 1\) と \(\lambda = -1\) のとき、\(X\) の固有ベクトルの</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.9</title>
-			<link>https://yasuhito.github.io/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/</guid>
-			<description>演算子の外積表現とパウリ行列を使う。 \(I\) の外積表現 \begin{eqnarray} I &amp;amp;=&amp;amp; \sum_{i,j=0}^1 \langle j|I|i\rangle|j\rangle\langle i| \\\ &amp;amp;=&amp;amp; 1\cdot|0 \rangle\langle 0| + 0\cdot|0 \rangle\langle 1| + 0\cdot|1 \rangle\langle 0| + 1\cdot|1 \rangle\langle 1| \\\ &amp;amp;=&amp;amp; |0 \rangle\langle 0| + |1 \rangle\langle 1| \end{eqnarray} \(X\) の外積表現 \begin{eqnarray} X &amp;amp;=&amp;amp; \sum_{i,j=0}^1 \langle j|X|i\rangle|j\rangle\langle</description>
-		</item>
-      	
-		<item>
-			<title>固有ベクトル</title>
-			<link>https://yasuhito.github.io/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/</guid>
-			<description>ベクトル空間における演算子 \(A\) の固有ベクトルとは、\(A|v\rangle = v|v\rangle\) を満たす \(0\) でないベクトル \(|v\rangle\) のこと。</description>
+			<title>単位元の行列表現</title>
+			<link>https://yasuhito.github.io/post/20210408120345-%E5%8D%98%E4%BD%8D%E5%85%83%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408120345-%E5%8D%98%E4%BD%8D%E5%85%83%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</guid>
+			<description>QCQI/演習 2.4を参照</description>
 		</item>
       	
 	</channel>

@@ -42,6 +42,26 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408114113-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9%E6%BC%94%E7%AE%97%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/",
+                "title": "エルミート共役演算の行列表現",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "エルミート共役演算子の行列表現では、エルミート共役演算は行列 \\(A\\) を共役・転置すること、すなわち \\(A^{\\dagger} \\equiv (A^{\\ast})^T\\) である。\nたとえば、\n\\begin{eqnarray} \\begin{bmatrix} 1+3i \u0026amp; 2i \\newline 1_i \u0026amp; 1-4i \\end{bmatrix}^{\\dagger} = \\begin{bmatrix} 1-3i \u0026amp; 1-i \\newline -2i \u0026amp; 1+4i \\end{bmatrix} \\end{eqnarray}\nである。\n参考  正規行列の対角化可能性  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/",
+                "title": "エルミート演算子",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "演算子 \\(A\\) の転置共役が元の演算子 \\(A\\) に等しいとき、その演算子をエルミート演算子または自己共役 (自己随伴) 演算子であるという。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/",
                 "title": "コーシー・シュワルツの不等式",
                 "section": "post",
@@ -52,11 +72,61 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408120225-%E3%83%8F%E3%82%A6%E3%83%AA%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/",
+                "title": "パウリ演算子の外積表現",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "QCQI/演習 2.9を参照\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408120013-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97%E3%81%AE%E5%9B%BA%E6%9C%89%E5%88%86%E8%A7%A3/",
+                "title": "パウリ行列の固有分解",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "QCQI/演習 2.11を参照\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408120345-%E5%8D%98%E4%BD%8D%E5%85%83%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/",
+                "title": "単位元の行列表現",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "QCQI/演習 2.4を参照\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408120450-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E7%A9%8D%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/",
+                "title": "演算子の積の行列表現",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "QCQI/演習 2.3を参照\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/",
                 "title": "転置共役",
                 "section": "post",
                 "date" : "2021.04.08",
                 "body": "\\(A\\) はヒルベルト空間 \\(V\\) の任意の演算子であるとすると、すべてのベクトル \\(|v\\rangle, |w\\rangle \\in V\\) に対して、\n\\begin{equation} (|v\\rangle, A|w\\rangle) = (A^{\\dagger}|v\\rangle, |w\\rangle) \\end{equation}\nを満たす演算子 \\(A^{\\dagger}\\) が \\(V\\) 上に唯 1 つのみ存在する。この演算子を演算子 \\(A\\) の転置共役またはエルミート共役という。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408115741-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9%E3%81%AE%E5%8F%8D%E7%B7%9A%E5%BD%A2%E6%80%A7/",
+                "title": "転置共役の反線形性",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "QCQI/演習 2.14を参照\n"
             }
         
     ,
@@ -646,7 +716,7 @@
                 "title": "エルミート共役",
                 "section": "post",
                 "date" : "2021.03.29",
-                "body": "\\(m \\times n\\) 複素行列 \\(A\\) に対して、\\(A\\) の転置および複素共役をとって得られる \\(n \\times m\\) 行列をエルミート共役と呼ぶ。随伴行列、エルミート随伴とも呼ばれる。\n量子論ではエルミート共役は \\(A^{\\dagger}\\) と書き、\\(A^{\\dagger} = (A^T)^{\\ast}\\) である。\n参考  正規行列の対角化可能性  "
+                "body": "転置共役の別名。\n"
             }
         
     ,
