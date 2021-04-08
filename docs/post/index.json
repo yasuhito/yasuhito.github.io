@@ -22,6 +22,26 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408102838-qcqi_%E6%BC%94%E7%BF%92_2_14/",
+                "title": "QCQI/演習 2.14",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "任意のベクトル \\(|v\\rangle, |w\\rangle\\) に対して、\n\\begin{eqnarray} \\left(\\left(\\sum_i a_i A_i\\right)^{\\dagger}|v\\rangle, |w\\rangle\\right) \u0026amp;=\u0026amp; \\left(|v\\rangle, \\sum_i a_i A_i|w\\rangle\\right) \\newline \u0026amp;=\u0026amp; \\sum_i a_i (|v\\rangle, A_i|w\\rangle) \\newline \u0026amp;=\u0026amp; \\sum_i a_i (A_i^{\\dagger}|v\\rangle, |w\\rangle) \\newline \u0026amp;=\u0026amp; \\left(\\sum_i a_i^{\\ast} A_i^{\\dagger}|v\\rangle, |w\\rangle \\right) \\end{eqnarray}\n(転置共役の定義、内積の第二引数に関する線形性、第一引数に関する共役線形性 (QCQI/演習 2.6) を使った)\nよって\n\\begin{equation} \\left(\\sum_i a_i A_i\\right)^{\\dagger} = \\sum_i a_i^{\\ast} A_i^{\\dagger} \\end{equation}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408104428-qcqi_%E6%BC%94%E7%BF%92_2_15/",
+                "title": "QCQI/演習 2.15",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "任意のベクトル \\(|v\\rangle, |w\\rangle\\) に対して、内積の性質 \\((|v\\rangle, |w\\rangle) = (|w\\rangle, |v\\rangle)^{\\ast}\\) と転置共役の定義を使うと、\n\\begin{eqnarray} (|v\\rangle, A^{\\dagger}|w\\rangle) \u0026amp;=\u0026amp; (A^{\\dagger}|w\\rangle, |v\\rangle)^{\\ast} \\newline \u0026amp;=\u0026amp; (|w\\rangle, A|v\\rangle)^{\\ast} \\newline \u0026amp;=\u0026amp; (A|v\\rangle, |w\\rangle) \\end{eqnarray}\nこれより、\n\\begin{eqnarray} (|v\\rangle, (A^{\\dagger})^{\\dagger}|w\\rangle) \u0026amp;=\u0026amp; (A^{\\dagger}|v\\rangle, |w\\rangle) \\newline \u0026amp;=\u0026amp; (|v\\rangle, A|w\\rangle) \\end{eqnarray}\nよって \\((A^{\\dagger})^{\\dagger} = A\\)\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/",
                 "title": "コーシー・シュワルツの不等式",
                 "section": "post",
@@ -376,7 +396,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
