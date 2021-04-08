@@ -5,9 +5,6 @@ date = 2021-04-02T00:00:00+09:00
 draft = false
 +++
 
-{{< figure src="/ox-hugo/2021-04-02_11-15-53_screenshot.png" >}}
-
-
 ## 演習の解答 {#演習の解答}
 
 -   [QCQI/演習 2.1]({{< relref "20210402160012-qcqi_演習_2_1" >}})
@@ -20,11 +17,5 @@ draft = false
 -   [QCQI/演習 2.8]({{< relref "20210405144551-qcqi_演習_2_8" >}})
 -   [QCQI/演習 2.9]({{< relref "20210406095636-qcqi_演習_2_9" >}})
 -   [QCQI/演習 2.10]({{< relref "20210406103502-qcqi_演習_2_10" >}})
--   QCQI/演習 2.11
-
-
-## 先人達の解答 {#先人達の解答}
-
--   [goropikari/SolutionQCQINielsenChuang](https://github.com/goropikari/SolutionQCQINielsenChuang)
--   [Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang](https://serab.net/docs/qcqi/)
--   [QCQI Exercise Solutions (Index)](https://enakai00.hatenablog.com/entry/2018/04/22/195026)
+-   [QCQI/演習 2.11]({{< relref "20210406155031-qcqi_演習_2_11" >}})
+-

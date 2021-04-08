@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="シグマの分解公式"/>
-<meta name="twitter:description" content="証明 \begin{eqnarray} #&#43;RESULTS: \begin{eqnarray} \sum_{i=1}^{m} \sum_{j=1}^n a_i b_j &amp;=&amp; a_1 \sum_{j=1}^n b_j &#43; a_2 \sum_{j=1}^n b_j &#43; \ldots &#43; a_m \sum_{j=1}^n b_j \newline &amp;=&amp; (a_1 &#43; a_2 &#43; \ldots &#43; a_m) \sum_{j=1}^n b_j \newline &amp;=&amp; \sum_{i=1}^m a_i \sum_{j=1}^n b_j \end{eqnarray} ∑i=1m∑j=1^n a_i b_j &amp;=&amp; a_1 ∑j=1^n b_j &#43; a_2 ∑j=1^"/>
+<meta name="twitter:description" content="分配法則 \(a_1 b_1 &#43; a_1 b_2 &#43; a_2 b_1 &#43; a_2 b_2 = (a_1 &#43; a_2)(b_1 &#43; b_2)\) の一般化として、二重和について次の公式がある。 \begin{equation} \sum_{i=1}^{m} \sum_{j=1}^n a_i b_j = \sum_{i=1}^m a_i \sum_{j=1}^n b_j \end{equation} 証明 \begin{eqnarray} \sum_{i=1}^{m} \sum_{j=1}^n a_i b_j &amp;=&amp; a_1 \sum_{j=1}^n b_j &#43; a_2 \sum_{j=1}^n b_j"/>
 
 
 
@@ -116,17 +116,15 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h2 id="証明">証明</h2>
-<p>\begin{eqnarray}</p>
-<p>#+RESULTS:
-\begin{eqnarray}
+  <p>分配法則 \(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\) の一般化として、二重和について次の公式がある。</p>
+<p>\begin{equation}
+\sum_{i=1}^{m} \sum_{j=1}^n a_i b_j = \sum_{i=1}^m a_i \sum_{j=1}^n b_j
+\end{equation}</p>
+<h2 id="証明">証明</h2>
+<p>\begin{eqnarray}
 \sum_{i=1}^{m} \sum_{j=1}^n a_i b_j &amp;=&amp; a_1 \sum_{j=1}^n b_j + a_2 \sum_{j=1}^n b_j + \ldots + a_m \sum_{j=1}^n b_j \newline
 &amp;=&amp; (a_1 + a_2 + \ldots + a_m) \sum_{j=1}^n b_j \newline
 &amp;=&amp; \sum_{i=1}^m a_i \sum_{j=1}^n b_j
-\end{eqnarray}</p>
-<p>∑<!-- raw HTML omitted -->i=1<!-- raw HTML omitted --><!-- raw HTML omitted -->m<!-- raw HTML omitted --> ∑<!-- raw HTML omitted -->j=1<!-- raw HTML omitted -->^n a_i b_j &amp;=&amp; a_1 ∑<!-- raw HTML omitted -->j=1<!-- raw HTML omitted -->^n b_j + a_2 ∑<!-- raw HTML omitted -->j=1<!-- raw HTML omitted -->^n b_j + \ldots + a_m ∑<!-- raw HTML omitted -->j=1<!-- raw HTML omitted -->^n b_j \newline
-&amp;=&amp; (a_1 + a_2 + \ldots + a_m) ∑<!-- raw HTML omitted -->j=1<!-- raw HTML omitted -->^n b_j \newline
-&amp;=&amp; ∑<!-- raw HTML omitted -->i=1<!-- raw HTML omitted -->^m a_i ∑<!-- raw HTML omitted -->j=1<!-- raw HTML omitted -->^n b_j
 \end{eqnarray}</p>
 
 
@@ -145,6 +143,8 @@
   
   
 
+  
+    
   
     
   

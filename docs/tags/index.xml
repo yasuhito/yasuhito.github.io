@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>QCQI/演習 2.12</title>
+			<link>https://yasuhito.github.io/post/20210408084752-qcqi_%E6%BC%94%E7%BF%92_2_12/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408084752-qcqi_%E6%BC%94%E7%BF%92_2_12/</guid>
+			<description>\begin{equation} A = \begin{bmatrix} 1 &amp;amp; 0 \newline 1 &amp;amp; 1 \end{bmatrix} \end{equation} とする。 \begin{eqnarray} det|A - \lambda I| = \begin{bmatrix} 1 - \lambda &amp;amp; 0 \newline 1 &amp;amp; 1 - \lambda \end{bmatrix} = (1 - \lambda)^2 = 0 \newline \therefore \lambda = 1 \end{eqnarray} 固有値 \(\lambda = 1\) に対する固有ベクトル \(|\lambda_1\rangle\) を求めると</description>
+		</item>
+      	
+		<item>
 			<title>コーシー・シュワルツの不等式</title>
 			<link>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</guid>
 			<description>外積表現とは、内積を使って演算子を表現する便利な方法。 \(|v\rangle\) を内積空間 \(V\) のベクトル、\(|w\rangle\) を内積空間 \(W\) のベクトルとしたとき、</description>
-		</item>
-      	
-		<item>
-			<title>完全性関係</title>
-			<link>https://yasuhito.github.io/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/</guid>
-			<description>\(|i\rangle\) をベクトル空間 \(V\) における任意の正規直交基底とすると、 \begin{equation} \sum_i |i\rangle \langle i| = I \end{equation} が成り立つ。この式を完全性関係と呼ぶ。 導出 外積表現を使う。任意のベクト</description>
 		</item>
       	
 	</channel>
