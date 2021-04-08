@@ -122,6 +122,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408142915-%E6%AD%A3%E8%A6%8F/",
+                "title": "正規",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "演算子 \\(A\\) が \\(AA^{\\dagger} = A^{\\dagger}A\\) を満たすとき、これを正規であるという。エルミート演算子は正規である。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210408140459-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4%E8%A3%9C%E6%BC%94%E7%AE%97%E5%AD%90/",
                 "title": "正規直交補演算子",
                 "section": "post",
