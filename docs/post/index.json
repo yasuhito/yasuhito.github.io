@@ -42,6 +42,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408141931-qcqi_%E6%BC%94%E7%BF%92_2_16/",
+                "title": "QCQI/演習 2.16",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "\\begin{eqnarray} P^2 \u0026amp;=\u0026amp; \\sum_i |i \\rangle\\langle i| \\sum_j |j \\rangle\\langle j| \\newline \u0026amp;=\u0026amp; \\sum_{i,j} |i \\rangle\\langle i|j \\rangle\\langle j| \\newline \u0026amp;=\u0026amp; \\sum_{i,j} |i \\rangle\\delta_{i,j}\\langle j| \\newline \u0026amp;=\u0026amp; \\sum_i |i \\rangle\\langle i| \\newline \u0026amp;=\u0026amp; P \\end{eqnarray}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210408114113-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9%E6%BC%94%E7%AE%97%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/",
                 "title": "エルミート共役演算の行列表現",
                 "section": "post",
@@ -107,6 +117,26 @@
                 "section": "post",
                 "date" : "2021.04.08",
                 "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。定義により\n\\begin{equation} P \\equiv \\sum_{i=1}^k |i\\rangle\\langle i| \\end{equation}\nは部分空間 \\(W\\) への射影演算子である。\nQCQI/演習 2.13により任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle v|\\) なので、\\(|v\\rangle\\langle v|\\) はエルミート演算子である。したがって \\(P\\) もエルミート演算子、すなわち \\(P^{\\dagger} = P\\) である。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408140459-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4%E8%A3%9C%E6%BC%94%E7%AE%97%E5%AD%90/",
+                "title": "正規直交補演算子",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "射影演算子 \\(P\\) について \\(Q = I - P\\) を正規直交補演算子と呼ぶ。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408141226-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4%E8%A3%9C%E7%A9%BA%E9%96%93/",
+                "title": "正規直交補空間",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。\nここで正規直交補演算子 Q は \\(|k+1\\rangle, \\ldots, |d\\rangle\\) で張られたベクトル空間への射影演算子であり、その空間を \\(P\\) の正規直交補空間と呼ぶ。\n"
             }
         
     ,
@@ -476,7 +506,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,

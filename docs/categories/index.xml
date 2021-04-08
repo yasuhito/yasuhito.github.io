@@ -44,6 +44,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.16</title>
+			<link>https://yasuhito.github.io/post/20210408141931-qcqi_%E6%BC%94%E7%BF%92_2_16/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408141931-qcqi_%E6%BC%94%E7%BF%92_2_16/</guid>
+			<description>\begin{eqnarray} P^2 &amp;amp;=&amp;amp; \sum_i |i \rangle\langle i| \sum_j |j \rangle\langle j| \newline &amp;amp;=&amp;amp; \sum_{i,j} |i \rangle\langle i|j \rangle\langle j| \newline &amp;amp;=&amp;amp; \sum_{i,j} |i \rangle\delta_{i,j}\langle j| \newline &amp;amp;=&amp;amp; \sum_i |i \rangle\langle i| \newline &amp;amp;=&amp;amp; P \end{eqnarray}</description>
+		</item>
+      	
+		<item>
 			<title>エルミート共役演算の行列表現</title>
 			<link>https://yasuhito.github.io/post/20210408114113-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9%E6%BC%94%E7%AE%97%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</link>
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210408120013-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97%E3%81%AE%E5%9B%BA%E6%9C%89%E5%88%86%E8%A7%A3/</guid>
 			<description>QCQI/演習 2.11を参照</description>
-		</item>
-      	
-		<item>
-			<title>単位元の行列表現</title>
-			<link>https://yasuhito.github.io/post/20210408120345-%E5%8D%98%E4%BD%8D%E5%85%83%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</link>
-			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210408120345-%E5%8D%98%E4%BD%8D%E5%85%83%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</guid>
-			<description>QCQI/演習 2.4を参照</description>
 		</item>
       	
 	</channel>
