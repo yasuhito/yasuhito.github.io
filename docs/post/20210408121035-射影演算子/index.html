@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>QCQI/演習 2.1</title>
+<title>射影演算子</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="QCQI/演習 2.1"/>
-<meta name="twitter:description" content="ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は \begin{equation} \begin{bmatrix} 2 \newline 1 \end{bmatrix} = \begin{bmatrix} 1 \newline {-1} \end{bmatrix} &#43; \begin{bmatrix} 1 \newline 2 \end{bmatrix} \end{equation} を満たすので、これら 3 つのベクトルは線形従属。"/>
+<meta name="twitter:title" content="射影演算子"/>
+<meta name="twitter:description" content="\(W\) が \(d\) 次元ベクトル空間 \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\(|1\rangle, \ldots, |k\rangle\) が \(W\) の正規直"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              QCQI/演習 2.1
+              射影演算子
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 2, 2021
+  >&nbsp;Apr 8, 2021
   
 </span>
 
@@ -116,22 +116,12 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>ベクトル \((1, -1)\), \((1, 2)\) および \((2, 1)\) は</p>
+  <p>\(W\) が \(d\) 次元<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。<a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>を用いると、\(|1\rangle, \ldots, |k\rangle\) が \(W\) の正規直交基底となるように \(V\) に対する正規直交基底 \(|1\rangle, \ldots, |d\rangle\) を作ることができる。定義により</p>
 <p>\begin{equation}
-\begin{bmatrix}
-2 \newline
-1
-\end{bmatrix} =
-\begin{bmatrix}
-1 \newline
-{-1}
-\end{bmatrix} +
-\begin{bmatrix}
-1 \newline
-2
-\end{bmatrix}
+P \equiv \sum_{i=1}^k |i\rangle\langle i|
 \end{equation}</p>
-<p>を満たすので、これら 3 つのベクトルは<a href="/post/20210331120144-%E7%B7%9A%E5%BD%A2%E5%BE%93%E5%B1%9E/">線形従属</a>。</p>
+<p>は部分空間 \(W\) への射影演算子である。</p>
+<p><a href="/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/">QCQI/演習 2.13</a>により任意のベクトル \(|v\rangle\) に対して \((|v\rangle\langle v|)^{\dagger} = |v\rangle\langle v|\) なので、\(|v\rangle\langle v|\) は<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>である。したがって \(P\) もエルミート演算子、すなわち \(P^{\dagger} = P\) である。</p>
 
 
 
@@ -251,8 +241,6 @@
     
   
     
-      
-    
   
     
   
@@ -421,19 +409,6 @@
     
   
 
-  
-    <div class="container" role="main">
-      <div class="bl-section" style="margin-top: 4rem">
-        <h2>Links to this note</h2>
-        <div class="backlinks">
-          <ul>
-           
-              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
-              
-          </ul>
-        </div>
-      </div>
-    </div>
   
 
 
