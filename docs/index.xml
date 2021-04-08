@@ -22,11 +22,27 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.13</title>
+			<link>https://yasuhito.github.io/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/</guid>
+			<description>任意のベクトル \(|l\rangle, |m\rangle\) に関して、 \begin{eqnarray} (|l\rangle, (|w\rangle\langle v|)|m\rangle) &amp;amp;=&amp;amp; (|l\rangle, |w\rangle \langle v|m\rangle) \newline &amp;amp;=&amp;amp; \langle v|m \rangle(|l\rangle, |w\rangle) \newline &amp;amp;=&amp;amp; \langle v|m \rangle \langle l|w\rangle \end{eqnarray} また、 \begin{eqnarray} ((|v\rangle\langle w|)|l\rangle, |m\rangle) &amp;amp;=&amp;amp; (|v\rangle \langle w|l\rangle, |m\rangle) \newline &amp;amp;=&amp;amp; \langle l|w \rangle(|v\rangle, |m\rangle) \newline &amp;amp;=&amp;amp; \langle l|w \rangle \langle v|m\rangle \end{eqnarray} よって転置共役</description>
+		</item>
+      	
+		<item>
 			<title>コーシー・シュワルツの不等式</title>
 			<link>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</link>
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/</guid>
 			<description>ヒルベルト空間の任意の 2 つのベクトル \(|v\rangle\), \(|w\rangle\) に対して \(|\langle v|w\rangle|^2 \leq \langle v|v \rangle \langle w|w \rangle\). 証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \(|i\rangle\) を作り、</description>
+		</item>
+      	
+		<item>
+			<title>転置共役</title>
+			<link>https://yasuhito.github.io/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/</guid>
+			<description>\(A\) はヒルベルト空間 \(V\) の任意の演算子であるとすると、すべてのベクトル \(|v\rangle, |w\rangle \in V\) に対して、 \begin{equation} (|v\rangle, A|w\rangle) = (A^{\dagger}|v\rangle, |w\rangle) \end{equation} を満たす演算子 \(A^{\dagger}\) が \(V\) 上に唯 1 つのみ存在する</description>
 		</item>
       	
 		<item>
@@ -75,22 +91,6 @@
 			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210406155458-%E5%9B%BA%E6%9C%89%E6%96%B9%E7%A8%8B%E5%BC%8F/</guid>
 			<description>特性方程式の別名</description>
-		</item>
-      	
-		<item>
-			<title>固有空間</title>
-			<link>https://yasuhito.github.io/post/20210406151942-%E5%9B%BA%E6%9C%89%E7%A9%BA%E9%96%93/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406151942-%E5%9B%BA%E6%9C%89%E7%A9%BA%E9%96%93/</guid>
-			<description>固有値 \(v\) に対応する固有空間とは固有値 \(v\) を持つベクトルの集合であり、\(A\) が作用するベクトル空間のベクトル部分空間になる。</description>
-		</item>
-      	
-		<item>
-			<title>外積表現</title>
-			<link>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</link>
-			<pubDate>Tue, 06 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210406083525-%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</guid>
-			<description>外積表現とは、内積を使って演算子を表現する便利な方法。 \(|v\rangle\) を内積空間 \(V\) のベクトル、\(|w\rangle\) を内積空間 \(W\) のベクトルとしたとき、</description>
 		</item>
       	
 	</channel>

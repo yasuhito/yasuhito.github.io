@@ -12,11 +12,31 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/",
+                "title": "QCQI/演習 2.13",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "任意のベクトル \\(|l\\rangle, |m\\rangle\\) に関して、\n\\begin{eqnarray} (|l\\rangle, (|w\\rangle\\langle v|)|m\\rangle) \u0026amp;=\u0026amp; (|l\\rangle, |w\\rangle \\langle v|m\\rangle) \\newline \u0026amp;=\u0026amp; \\langle v|m \\rangle(|l\\rangle, |w\\rangle) \\newline \u0026amp;=\u0026amp; \\langle v|m \\rangle \\langle l|w\\rangle \\end{eqnarray}\nまた、\n\\begin{eqnarray} ((|v\\rangle\\langle w|)|l\\rangle, |m\\rangle) \u0026amp;=\u0026amp; (|v\\rangle \\langle w|l\\rangle, |m\\rangle) \\newline \u0026amp;=\u0026amp; \\langle l|w \\rangle(|v\\rangle, |m\\rangle) \\newline \u0026amp;=\u0026amp; \\langle l|w \\rangle \\langle v|m\\rangle \\end{eqnarray}\nよって転置共役の定義より \\((|l\\rangle, (|w\\rangle\\langle v|)|m\\rangle) = ((|v\\rangle\\langle w|)|l\\rangle, |m\\rangle)\\) だから、\\((|w\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle w|\\)\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210406110144-%E3%82%B3%E3%83%BC%E3%82%B7%E3%83%BC_%E3%82%B7%E3%83%A5%E3%83%AF%E3%83%AB%E3%83%84%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F/",
                 "title": "コーシー・シュワルツの不等式",
                 "section": "post",
                 "date" : "2021.04.08",
                 "body": "ヒルベルト空間の任意の 2 つのベクトル \\(|v\\rangle\\), \\(|w\\rangle\\) に対して \\(|\\langle v|w\\rangle|^2 \\leq \\langle v|v \\rangle \\langle w|w \\rangle\\).\n証明するにはグラム・シュミット直交化でベクトル空間の正規直交基底 \\(|i\\rangle\\) を作り、最初の基底 \\(|i\\rangle\\) を \\(|w\\rangle / \\sqrt{\\langle w|w \\rangle}\\) とする。完全性関係 \\(\\sum_i |i\\rangle\\langle i| = I\\) を用い、\n\\begin{eqnarray} \\langle v|v \\rangle \\langle w|w \\rangle \u0026amp;=\u0026amp; \\sum_i \\langle v|i \\rangle \\langle i | v \\rangle \\langle w|w \\rangle \\end{eqnarray}\nここで、最初の基底 \\(|i\\rangle = |w\\rangle/\\sqrt{\\langle w | w \\rangle}\\ (\\langle i| = \\langle w|/\\sqrt{\\langle w | w \\rangle})\\) の項だけを残すと、\n\\begin{eqnarray} \\sum_i \\langle v|i \\rangle \\langle i | v \\rangle \\langle w|w \\rangle \u0026amp;\\geq\u0026amp; \\frac{\\langle v|w \\rangle \\langle w | v \\rangle}{\\langle w | w \\rangle}\\langle w | w \\rangle \\newline \u0026amp;=\u0026amp; \\langle v | w\\rangle \\langle w | v\\rangle = |\\langle v | w \\rangle |^2 \\end{eqnarray}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/",
+                "title": "転置共役",
+                "section": "post",
+                "date" : "2021.04.08",
+                "body": "\\(A\\) はヒルベルト空間 \\(V\\) の任意の演算子であるとすると、すべてのベクトル \\(|v\\rangle, |w\\rangle \\in V\\) に対して、\n\\begin{equation} (|v\\rangle, A|w\\rangle) = (A^{\\dagger}|v\\rangle, |w\\rangle) \\end{equation}\nを満たす演算子 \\(A^{\\dagger}\\) が \\(V\\) 上に唯 1 つのみ存在する。この演算子を演算子 \\(A\\) の転置共役またはエルミート共役という。\n"
             }
         
     ,
@@ -356,7 +376,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11   "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
