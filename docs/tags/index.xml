@@ -52,6 +52,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.17</title>
+			<link>https://yasuhito.github.io/post/20210408151328-qcqi_%E6%BC%94%E7%BF%92_2_17/</link>
+			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210408151328-qcqi_%E6%BC%94%E7%BF%92_2_17/</guid>
+			<description>まず「\(A\) がエルミート行列 \(\Rightarrow\) \(A\) の固有値は実数」を示す。\(A\) の固有ベクトルを任意にとり、その固有値が \(\lambda\) であるとすると、 \begin{eqnarray} \lambda \langle v|v \rangle &amp;amp;=&amp;amp;</description>
+		</item>
+      	
+		<item>
 			<title>エルミート共役演算の行列表現</title>
 			<link>https://yasuhito.github.io/post/20210408114113-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9%E6%BC%94%E7%AE%97%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/</link>
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210408120225-%E3%83%8F%E3%82%A6%E3%83%AA%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/</guid>
 			<description>QCQI/演習 2.9を参照</description>
-		</item>
-      	
-		<item>
-			<title>パウリ行列の固有分解</title>
-			<link>https://yasuhito.github.io/post/20210408120013-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97%E3%81%AE%E5%9B%BA%E6%9C%89%E5%88%86%E8%A7%A3/</link>
-			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210408120013-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97%E3%81%AE%E5%9B%BA%E6%9C%89%E5%88%86%E8%A7%A3/</guid>
-			<description>QCQI/演習 2.11を参照</description>
 		</item>
       	
 	</channel>
