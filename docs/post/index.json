@@ -2,6 +2,66 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210409103428-qcqi_%E6%BC%94%E7%BF%92_2_18/",
+                "title": "QCQI/演習 2.18",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "ユニタリー行列 \\(U\\) の固有値を \\(v\\), 固有ベクトルを \\(|v\\rangle\\) とすると、ユニタリー演算子は内積を保存することから、\n\\begin{eqnarray} \\langle v|v \\rangle \u0026amp;=\u0026amp; (U|v\\rangle, U|v\\rangle) \\newline \u0026amp;=\u0026amp; (v|v\\rangle, v|v\\rangle) \\newline \u0026amp;=\u0026amp; vv^{\\ast}(|v\\rangle, |v\\rangle) \\newline \u0026amp;=\u0026amp; vv^{\\ast}\\langle v|v \\rangle \\end{eqnarray}\n(式変形の \\(v\\) と \\(v^{\\ast}\\) を前にくくり出す部分では、内積は第 1 引数に関して共役線形であることと、内積は第 2 引数に関して線形であることを使った)\nよって \\(vv^{\\ast} = 1\\) であるから、\\(|v| = \\sqrt{vv^{\\ast}} = 1\\). つまり固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書ける。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/",
+                "title": "テンソル積",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": ""
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409113657-%E5%86%85%E7%A9%8D%E3%81%AE%E5%AF%BE%E7%A7%B0%E6%80%A7/",
+                "title": "内積の対称性",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "内積関数を記号 \\((\\cdot, \\cdot)\\) で表したとき、\n\\[(|v\\rangle, |w\\rangle) = (|w\\rangle, |v\\rangle)^{\\ast}\\]\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409114109-%E5%86%85%E7%A9%8D%E3%81%AE%E6%AD%A3%E5%80%A4%E6%80%A7/",
+                "title": "内積の正値性",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "内積関数を記号 \\((\\cdot, \\cdot)\\) で表したとき、\\((|v\\rangle, |v\\rangle) \\geq 0\\) (正値性)、等号が成り立つのは \\(|v\\rangle = 0\\) のときのみ (正定値性)。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409105459-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_1_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E5%85%B1%E5%BD%B9%E7%B7%9A%E5%BD%A2/",
+                "title": "内積は第 1 引数に関して共役線形",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "内積の関数を記号 \\((\\cdot, \\cdot)\\) で表したとき、\n\\begin{equation} \\left(\\sum_i \\lambda_i |w_i\\rangle, |v\\rangle\\right) = \\sum_i \\lambda_i^{\\ast} (|w_i\\rangle, |v\\rangle) \\end{equation}\nとなる。証明はQCQI/演習 2.6を参照。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409111356-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_2_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E7%B7%9A%E5%BD%A2/",
+                "title": "内積は第 2 引数に関して線形",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "内積関数を記号 \\((\\cdot, \\cdot)\\) で表したとき、\n\\[\\left(|v\\rangle, \\sum_i\\lambda_i|w_i\\rangle\\right) = \\sum_i\\lambda_i(|v\\rangle, |w_i\\rangle)\\]\nとなるのでこれは第 2 引数に関して線形。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210408084752-qcqi_%E6%BC%94%E7%BF%92_2_12/",
                 "title": "QCQI/演習 2.12",
                 "section": "post",
@@ -466,7 +526,7 @@
                 "title": "内積",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "ベクトル空間の 2 つのベクトル \\(|v\\rangle\\) と \\(|w\\rangle\\) を入力とし複素数を出力として作り出す関数。\nベクトル空間 \\(V\\) について、\\(V \\times V\\) から \\(\\mathcal{C}\\) への関数 \\((\\cdot , \\cdot)\\) が次の要請を満たすなら内積:\n 線形性 \\((\\cdot , \\cdot)\\) は第 2 引数に関して線形。すなわち、 \\[(|v\\rangle, \\sum_i\\lambda_i|w_i\\rangle) = \\sum_i\\lambda_i(|v\\rangle, |w_i\\rangle)\\] 対称性 \\((|v\\rangle, |w\\rangle) = (|w\\rangle, |v\\rangle)^{\\ast}\\) 正値性 \\((|v\\rangle, |v\\rangle) \\geq 0\\), 等号が成り立つのは \\(|v\\rangle = 0\\) のときのみ (正定値性)  "
+                "body": "ベクトル空間の 2 つのベクトル \\(|v\\rangle\\) と \\(|w\\rangle\\) を入力とし複素数を出力として作り出す関数を内積と呼ぶ。\nベクトル空間 \\(V\\) について、\\(V \\times V\\) から \\(\\mathcal{C}\\) への関数 \\((\\cdot , \\cdot)\\) が次の要請を満たすなら内積:\n 内積は第 2 引数に関して線形 内積の対称性 内積の正値性  "
             }
         
     ,
@@ -566,7 +626,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
