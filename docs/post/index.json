@@ -82,6 +82,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/",
+                "title": "正の演算子",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle, A|v\\rangle)\\) が実数で負でない数となる演算子 \\(A\\) を正の演算子と呼ぶ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210408084752-qcqi_%E6%BC%94%E7%BF%92_2_12/",
                 "title": "QCQI/演習 2.12",
                 "section": "post",
