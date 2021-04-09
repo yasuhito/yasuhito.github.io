@@ -6,7 +6,7 @@
                 "title": "QCQI/演習 2.18",
                 "section": "post",
                 "date" : "2021.04.09",
-                "body": "ユニタリー行列 \\(U\\) の固有値を \\(v\\), 固有ベクトルを \\(|v\\rangle\\) とすると、ユニタリー演算子は内積を保存することから、\n\\begin{eqnarray} \\langle v|v \\rangle \u0026amp;=\u0026amp; (U|v\\rangle, U|v\\rangle) \\newline \u0026amp;=\u0026amp; (v|v\\rangle, v|v\\rangle) \\newline \u0026amp;=\u0026amp; vv^{\\ast}(|v\\rangle, |v\\rangle) \\newline \u0026amp;=\u0026amp; vv^{\\ast}\\langle v|v \\rangle \\end{eqnarray}\n(式変形の \\(v\\) と \\(v^{\\ast}\\) を前にくくり出す部分では、内積は第 1 引数に関して共役線形であることと、内積は第 2 引数に関して線形であることを使った)\nよって \\(vv^{\\ast} = 1\\) であるから、\\(|v| = \\sqrt{vv^{\\ast}} = 1\\). つまり固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書ける。\n"
+                "body": "ユニタリー行列 \\(U\\) の固有値を \\(v\\), 固有ベクトルを \\(|v\\rangle\\) とすると、ユニタリー演算子は内積を保存することから、\n\\begin{eqnarray} \\langle v|v \\rangle \u0026amp;=\u0026amp; (U|v\\rangle, U|v\\rangle) \\newline \u0026amp;=\u0026amp; (v|v\\rangle, v|v\\rangle) \\newline \\end{eqnarray}\n 内積は第 1 引数に関して共役線形 内積は第 2 引数に関して線形  を使うと、\n\\begin{eqnarray} \\phantom{\\langle v|v \\rangle} \u0026amp;=\u0026amp; vv^{\\ast}(|v\\rangle, |v\\rangle) \\newline \u0026amp;=\u0026amp; vv^{\\ast}\\langle v|v \\rangle \\end{eqnarray}\nよって \\(vv^{\\ast} = 1\\) であるから、\\(|v| = \\sqrt{vv^{\\ast}} = 1\\). つまり、ユニタリー行列のすべての固有値は絶対値が 1 であり、固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書けることが示せた。\n"
             }
         
     ,
