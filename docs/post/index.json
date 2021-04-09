@@ -32,6 +32,36 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210409164921-qcqi_%E6%BC%94%E7%BF%92_2_23/",
+                "title": "QCQI/演習 2.23",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "\\(P\\) の固有値を \\(v\\), \\(v\\) に対する固有ベクトルを \\(|v\\rangle\\) とすると、\n\\[P^2|v\\rangle = PP|v\\rangle = P(v|v\\rangle) = vP|v\\rangle = v^2|v\\rangle\\]\n一方で \\(P^2 = P\\) (QCQI/演習 2.16) なので\n\\[P^2|v\\rangle = P|v\\rangle = v|v\\rangle\\]\nよって \\(v^2 = v\\) となり、これを解くと \\(v = 0, 1\\) である。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/",
+                "title": "QCQI/演習 2.25",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "転置共役の定義と \\((A^{\\dagger})^{\\dagger} = A\\) (QCQI/演習 2.15) より、\n\\[(|v\\rangle, A^{\\dagger}A|v\\rangle) = (|v\\rangle, A^{\\dagger}(A|v\\rangle)) = (A|v\\rangle, A|v\\rangle)\\]\nここで内積の正値性より、\\((A|v\\rangle, A|v\\rangle) \\geq 0\\) よって、\\(A^{\\dagger}A\\) は正の演算子。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/",
+                "title": "スペクトル分解",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "ベクトル空間 \\(V\\) 上の任意の正規演算子 \\(M\\) は \\(V\\) のある正規直交基底に関して対角である。逆に任意の対角化可能な演算子は正規である。\n外積表現では、この定理は \\(M\\) が \\(M = \\sum_i \\lambda_i |i\\rangle\\langle i|\\) と書けることを意味する (\\(\\lambda_i\\) は \\(M\\) の固有値、各 \\(|i\\rangle\\) は固有値 \\(\\lambda_i\\) に対応する \\(M\\) の固有ベクトルであり、\\(V\\) の正規直交基底を形成する)。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/",
                 "title": "テンソル積",
                 "section": "post",
@@ -666,7 +696,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,

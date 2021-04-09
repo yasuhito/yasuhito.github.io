@@ -36,6 +36,30 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.23</title>
+			<link>https://yasuhito.github.io/post/20210409164921-qcqi_%E6%BC%94%E7%BF%92_2_23/</link>
+			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210409164921-qcqi_%E6%BC%94%E7%BF%92_2_23/</guid>
+			<description>\(P\) の固有値を \(v\), \(v\) に対する固有ベクトルを \(|v\rangle\) とすると、 \[P^2|v\rangle = PP|v\rangle = P(v|v\rangle) = vP|v\rangle = v^2|v\rangle\] 一方で \(P^2 = P\) (QCQI/演習 2.16) なので \[P^2|v\rangle = P|v\rangle = v|v\rangle\] よって \(v^2 = v\) となり、これを</description>
+		</item>
+      	
+		<item>
+			<title>QCQI/演習 2.25</title>
+			<link>https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/</link>
+			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/</guid>
+			<description>転置共役の定義と \((A^{\dagger})^{\dagger} = A\) (QCQI/演習 2.15) より、 \[(|v\rangle, A^{\dagger}A|v\rangle) = (|v\rangle, A^{\dagger}(A|v\rangle)) = (A|v\rangle, A|v\rangle)\] ここで内積の正値性より、\((A|v\rangle, A|v\rangle) \geq 0\) よって、\(A^{\</description>
+		</item>
+      	
+		<item>
+			<title>スペクトル分解</title>
+			<link>https://yasuhito.github.io/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</link>
+			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</guid>
+			<description>ベクトル空間 \(V\) 上の任意の正規演算子 \(M\) は \(V\) のある正規直交基底に関して対角である。逆に任意の対角化可能な演算子は正規である。 外積表現では、この定</description>
+		</item>
+      	
+		<item>
 			<title>テンソル積</title>
 			<link>https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
@@ -65,30 +89,6 @@
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409105459-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_1_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E5%85%B1%E5%BD%B9%E7%B7%9A%E5%BD%A2/</guid>
 			<description>内積の関数を記号 \((\cdot, \cdot)\) で表したとき、 \begin{equation} \left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) = \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle) \end{equation} となる。証明はQCQI/演習 2.6を参照。</description>
-		</item>
-      	
-		<item>
-			<title>内積は第 2 引数に関して線形</title>
-			<link>https://yasuhito.github.io/post/20210409111356-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_2_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E7%B7%9A%E5%BD%A2/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409111356-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_2_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E7%B7%9A%E5%BD%A2/</guid>
-			<description>内積関数を記号 \((\cdot, \cdot)\) で表したとき、 \[\left(|v\rangle, \sum_i\lambda_i|w_i\rangle\right) = \sum_i\lambda_i(|v\rangle, |w_i\rangle)\] となるのでこれは第 2 引数に関して線形。</description>
-		</item>
-      	
-		<item>
-			<title>正の定符号</title>
-			<link>https://yasuhito.github.io/post/20210409153514-%E6%AD%A3%E3%81%AE%E5%AE%9A%E7%AC%A6%E5%8F%B7/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409153514-%E6%AD%A3%E3%81%AE%E5%AE%9A%E7%AC%A6%E5%8F%B7/</guid>
-			<description>ベクトル \(|v\rangle \neq 0\) に対して \((|v\rangle, A|v\rangle)\) が厳密に大きければ演算子 \(A\) を正の定符号と呼ぶ。</description>
-		</item>
-      	
-		<item>
-			<title>正の演算子</title>
-			<link>https://yasuhito.github.io/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
-			<description>任意のベクトル \(|v\rangle\) に対して \((|v\rangle, A|v\rangle)\) が実数で負でない数となる演算子 \(A\) を正の演算子と呼ぶ。</description>
 		</item>
       	
 	</channel>
