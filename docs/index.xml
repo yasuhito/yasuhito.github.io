@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.19</title>
+			<link>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</link>
+			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</guid>
+			<description>パウリ行列それぞれについて、\(A^{\dagger} = A\) (エルミート行列) と \(A^{\dagger}A = I\) (ユニタリー) を示す。 I \begin{equation} I^{\dagger} = \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; 1 \end{bmatrix} = I \end{equation} \begin{equation}</description>
+		</item>
+      	
+		<item>
 			<title>テンソル積</title>
 			<link>https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210408102838-qcqi_%E6%BC%94%E7%BF%92_2_14/</guid>
 			<description>任意のベクトル \(|v\rangle, |w\rangle\) に対して、 \begin{eqnarray} \left(\left(\sum_i a_i A_i\right)^{\dagger}|v\rangle, |w\rangle\right) &amp;amp;=&amp;amp; \left(|v\rangle, \sum_i a_i A_i|w\rangle\right) \newline &amp;amp;=&amp;amp; \sum_i a_i (|v\rangle, A_i|w\rangle) \newline &amp;amp;=&amp;amp; \sum_i a_i (A_i^{\dagger}|v\rangle, |w\rangle) \newline &amp;amp;=&amp;amp; \left(\sum_i a_i^{\ast} A_i^{\dagger}|v\rangle, |w\rangle \right) \end{eqnarray} (転置共役の定義、内積の第二引数に関する線形性、第一</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.15</title>
-			<link>https://yasuhito.github.io/post/20210408104428-qcqi_%E6%BC%94%E7%BF%92_2_15/</link>
-			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210408104428-qcqi_%E6%BC%94%E7%BF%92_2_15/</guid>
-			<description>任意のベクトル \(|v\rangle, |w\rangle\) に対して、内積の性質 \((|v\rangle, |w\rangle) = (|w\rangle, |v\rangle)^{\ast}\) と転置共役の定義を使うと、 \begin{eqnarray} (|v\rangle, A^{\dagger}|w\rangle) &amp;amp;=&amp;amp; (A^{\dagger}|w\rangle, |v\rangle)^{\ast} \newline &amp;amp;=&amp;amp; (|w\rangle, A|v\rangle)^{\ast} \newline &amp;amp;=&amp;amp; (A|v\rangle, |w\rangle) \end{eqnarray} これより、 \begin{eqnarray} (|v\rangle, (A^{\dagger})^{\dagger}|w\rangle) &amp;amp;=&amp;amp; (A^{\dagger}|v\rangle, |w\rangle) \newline &amp;amp;=&amp;amp; (|v\rangle, A|w\rangle) \end{eqnarray} よっ</description>
 		</item>
       	
 	</channel>
