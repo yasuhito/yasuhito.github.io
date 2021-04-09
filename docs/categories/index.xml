@@ -76,19 +76,19 @@
 		</item>
       	
 		<item>
+			<title>正の定符号</title>
+			<link>https://yasuhito.github.io/post/20210409153514-%E6%AD%A3%E3%81%AE%E5%AE%9A%E7%AC%A6%E5%8F%B7/</link>
+			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210409153514-%E6%AD%A3%E3%81%AE%E5%AE%9A%E7%AC%A6%E5%8F%B7/</guid>
+			<description>ベクトル \(|v\rangle \neq 0\) に対して \((|v\rangle, A|v\rangle)\) が厳密に大きければ演算子 \(A\) を正の定符号と呼ぶ。</description>
+		</item>
+      	
+		<item>
 			<title>正の演算子</title>
 			<link>https://yasuhito.github.io/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
 			<description>任意のベクトル \(|v\rangle\) に対して \((|v\rangle, A|v\rangle)\) が実数で負でない数となる演算子 \(A\) を正の演算子と呼ぶ。</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.12</title>
-			<link>https://yasuhito.github.io/post/20210408084752-qcqi_%E6%BC%94%E7%BF%92_2_12/</link>
-			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210408084752-qcqi_%E6%BC%94%E7%BF%92_2_12/</guid>
-			<description>\begin{equation} A = \begin{bmatrix} 1 &amp;amp; 0 \newline 1 &amp;amp; 1 \end{bmatrix} \end{equation} とする。 \begin{eqnarray} det|A - \lambda I| = \begin{bmatrix} 1 - \lambda &amp;amp; 0 \newline 1 &amp;amp; 1 - \lambda \end{bmatrix} = (1 - \lambda)^2 = 0 \newline \therefore \lambda = 1 \end{eqnarray} 固有値 \(\lambda = 1\) に対する固有ベクトル \(|\lambda_1\rangle\) を求めると</description>
 		</item>
       	
 	</channel>

@@ -82,6 +82,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210409153514-%E6%AD%A3%E3%81%AE%E5%AE%9A%E7%AC%A6%E5%8F%B7/",
+                "title": "正の定符号",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "ベクトル \\(|v\\rangle \\neq 0\\) に対して \\((|v\\rangle, A|v\\rangle)\\) が厳密に大きければ演算子 \\(A\\) を正の定符号と呼ぶ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/",
                 "title": "正の演算子",
                 "section": "post",
