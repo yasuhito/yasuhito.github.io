@@ -30,6 +30,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.20</title>
+			<link>https://yasuhito.github.io/post/20210409140256-qcqi_%E6%BC%94%E7%BF%92_2_20/</link>
+			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210409140256-qcqi_%E6%BC%94%E7%BF%92_2_20/</guid>
+			<description>\(A^{\prime}_{ij} = \langle v_i|A|v_j\rangle\) について、\(|w_i\rangle\) に対する完全性関係を使うと、 \[\begin{align} A^{\prime}_{ij} = \langle v_i|A|v_j\rangle = \sum_{k,l} \langle v_i|w_k\rangle\langle w_k|A|w_l\rangle\langle w_l|v_j\rangle \end{align}\] ここで、\(U = \sum_i |w_i\rangle\langle v_i|\) とおくと、\(|w</description>
+		</item>
+      	
+		<item>
 			<title>テンソル積</title>
 			<link>https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/</guid>
 			<description>任意のベクトル \(|l\rangle, |m\rangle\) に関して、 \begin{eqnarray} (|l\rangle, (|w\rangle\langle v|)|m\rangle) &amp;amp;=&amp;amp; (|l\rangle, |w\rangle \langle v|m\rangle) \newline &amp;amp;=&amp;amp; \langle v|m \rangle(|l\rangle, |w\rangle) \newline &amp;amp;=&amp;amp; \langle v|m \rangle \langle l|w\rangle \end{eqnarray} また、 \begin{eqnarray} ((|v\rangle\langle w|)|l\rangle, |m\rangle) &amp;amp;=&amp;amp; (|v\rangle \langle w|l\rangle, |m\rangle) \newline &amp;amp;=&amp;amp; \langle l|w \rangle(|v\rangle, |m\rangle) \newline &amp;amp;=&amp;amp; \langle l|w \rangle \langle v|m\rangle \end{eqnarray} よって転置共役</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.14</title>
-			<link>https://yasuhito.github.io/post/20210408102838-qcqi_%E6%BC%94%E7%BF%92_2_14/</link>
-			<pubDate>Thu, 08 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210408102838-qcqi_%E6%BC%94%E7%BF%92_2_14/</guid>
-			<description>任意のベクトル \(|v\rangle, |w\rangle\) に対して、 \begin{eqnarray} \left(\left(\sum_i a_i A_i\right)^{\dagger}|v\rangle, |w\rangle\right) &amp;amp;=&amp;amp; \left(|v\rangle, \sum_i a_i A_i|w\rangle\right) \newline &amp;amp;=&amp;amp; \sum_i a_i (|v\rangle, A_i|w\rangle) \newline &amp;amp;=&amp;amp; \sum_i a_i (A_i^{\dagger}|v\rangle, |w\rangle) \newline &amp;amp;=&amp;amp; \left(\sum_i a_i^{\ast} A_i^{\dagger}|v\rangle, |w\rangle \right) \end{eqnarray} (転置共役の定義、内積の第二引数に関する線形性、第一</description>
 		</item>
       	
 	</channel>

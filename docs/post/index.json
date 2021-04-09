@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210409140256-qcqi_%E6%BC%94%E7%BF%92_2_20/",
+                "title": "QCQI/演習 2.20",
+                "section": "post",
+                "date" : "2021.04.09",
+                "body": "\\(A^{\\prime}_{ij} = \\langle v_i|A|v_j\\rangle\\) について、\\(|w_i\\rangle\\) に対する完全性関係を使うと、\n\\[\\begin{align} A^{\\prime}_{ij} = \\langle v_i|A|v_j\\rangle = \\sum_{k,l} \\langle v_i|w_k\\rangle\\langle w_k|A|w_l\\rangle\\langle w_l|v_j\\rangle \\end{align}\\]\nここで、\\(U = \\sum_i |w_i\\rangle\\langle v_i|\\) とおくと、\\(|w_i\\rangle = U|v_i\\rangle\\) から、\n\\[\\begin{align} \\phantom{A^{\\prime}_{ij} = \\langle v_i|A|v_j\\rangle} \u0026amp;= \\sum_{k,l} \\langle v_i|U|v_k\\rangle\\langle w_k|A|w_l\\rangle\\langle v_l|U^{\\dagger}|v_j\\rangle \\newline \\end{align}\\]\nよって、基底 \\(|v_i\\rangle\\) に関する \\(U\\) の行列表現を \\(U^{\\prime}\\), \\(U^{\\dagger}\\) の行列表現を \\(U^{\\dagger\\prime}\\) とすると、\n\\[A_{ij}^{\\prime} = \\sum_{k,l} U_{i,k}^{\\prime} A_{kl}^{\\prime\\prime} U_{lj}^{\\dagger\\prime}\\]\nしたがって、\n\\[A^{\\prime} = U^{\\prime}A^{\\prime\\prime}U^{\\dagger\\prime}\\]\nという関係が得られる。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/",
                 "title": "テンソル積",
                 "section": "post",
@@ -386,7 +396,7 @@
                 "title": "完全性関係",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "\\(|i\\rangle\\) をベクトル空間 \\(V\\) における任意の正規直交基底とすると、\n\\begin{equation} \\sum_i |i\\rangle \\langle i| = I \\end{equation}\nが成り立つ。この式を完全性関係と呼ぶ。\n導出 外積表現を使う。任意のベクトル \\(|v\\rangle\\) はある複素数の集合 \\(v_i\\) と正規直交基底 \\(|i\\rangle\\) を用いて \\(|v\\rangle = \\sum_i v_i|i\\rangle\\) と書ける。\\(\\langle i|v\\rangle = v_i\\) であるから、\n\\begin{equation} \\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = \\sum_i |i\\rangle \\langle i|v\\rangle = \\sum_i v_i|i\\rangle = |v\\rangle \\end{equation}\nつまり \\(\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = |v\\rangle\\) であり、これが任意のベクトル \\(|v\\rangle\\) について成り立つということは \\(\\sum_i |i\\rangle \\langle i|\\) は恒等演算子であるから、\n\\begin{equation} \\sum_i |i\\rangle \\langle i| = I \\end{equation}\nが成り立つ。\n"
+                "body": "\\(|i\\rangle\\) をベクトル空間 \\(V\\) における任意の正規直交基底とすると、\n\\[\\sum_i |i\\rangle \\langle i| = I\\]\nが成り立つ。この式を完全性関係と呼ぶ。\n導出 外積表現を使う。任意のベクトル \\(|v\\rangle\\) はある複素数の集合 \\(v_i\\) と正規直交基底 \\(|i\\rangle\\) を用いて \\(|v\\rangle = \\sum_i v_i|i\\rangle\\) と書ける。\\(\\langle i|v\\rangle = v_i\\) であるから、\n\\[\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = \\sum_i |i\\rangle \\langle i|v\\rangle = \\sum_i v_i|i\\rangle = |v\\rangle\\]\nつまり \\(\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = |v\\rangle\\) であり、これが任意のベクトル \\(|v\\rangle\\) について成り立つということは \\(\\sum_i |i\\rangle \\langle i|\\) は恒等演算子であるから、\n\\[\\sum_i |i\\rangle \\langle i| = I\\]\nが成り立つ。\n"
             }
         
     ,
@@ -636,7 +646,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
