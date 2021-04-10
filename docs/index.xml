@@ -26,7 +26,7 @@
 			<link>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</guid>
-			<description>パウリ行列それぞれについて、\(A^{\dagger} = A\) (エルミート行列) と \(A^{\dagger}A = I\) (ユニタリー) を示す。 I \begin{equation} I^{\dagger} = \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; 1 \end{bmatrix} = I \end{equation} \begin{equation}</description>
+			<description>パウリ行列それぞれについて、\(A^{\dagger} = A\) (エルミート行列) と \(A^{\dagger}A = I\) (ユニタリー) を示す。 I \begin{equation*} I^{\dagger} = \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; 1 \end{bmatrix} = I \end{equation*} \begin{equation*}</description>
 		</item>
       	
 		<item>
