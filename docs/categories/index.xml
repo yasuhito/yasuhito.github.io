@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>ユニタリー演算子</title>
+			<link>https://yasuhito.github.io/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Sun, 11 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>\(U^{\dagger}U = I\) ならば演算子 \(U\) はユニタリーであるという。 ユニタリー演算子は \(UU^{\dagger} = I\) も満たすので、\(U\) は正規でありスペクトル分解ができる。</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.18</title>
 			<link>https://yasuhito.github.io/post/20210409103428-qcqi_%E6%BC%94%E7%BF%92_2_18/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409114109-%E5%86%85%E7%A9%8D%E3%81%AE%E6%AD%A3%E5%80%A4%E6%80%A7/</guid>
 			<description>内積関数を記号 \((\cdot, \cdot)\) で表したとき、\((|v\rangle, |v\rangle) \geq 0\) (正値性)、等号が成り立つのは \(|v\rangle = 0\) のときのみ (正定値性)。</description>
-		</item>
-      	
-		<item>
-			<title>内積は第 1 引数に関して共役線形</title>
-			<link>https://yasuhito.github.io/post/20210409105459-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_1_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E5%85%B1%E5%BD%B9%E7%B7%9A%E5%BD%A2/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409105459-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_1_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E5%85%B1%E5%BD%B9%E7%B7%9A%E5%BD%A2/</guid>
-			<description>内積の関数を記号 \((\cdot, \cdot)\) で表したとき、 \begin{equation} \left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) = \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle) \end{equation} となる。証明はQCQI/演習 2.6を参照。</description>
 		</item>
       	
 	</channel>
