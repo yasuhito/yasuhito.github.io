@@ -22,6 +22,26 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210412113913-qcqi_%E6%BC%94%E7%BF%92_2_24/",
+                "title": "QCQI/演習 2.24",
+                "section": "post",
+                "date" : "2021.04.12",
+                "body": "\\(A\\) を正の演算子とする。\n\\[B = \\frac{A + A^{\\dagger}}{2}, C = \\frac{A - A^{\\dagger}}{2i}\\]\nと置くと、\\(A\\) は次のように書ける\n\\begin{eqnarray*} A \u0026amp;=\u0026amp; \\frac{A + A^{\\dagger}}{2} + i\\frac{A - A^{\\dagger}}{2i} \\\\\\\n\u0026amp;=\u0026amp; B + iC \\end{eqnarray*}\nこのとき、\n\\begin{eqnarray*} (|v\\rangle, A|v\\rangle) \u0026amp;=\u0026amp; (|v\\rangle, (B + iC)|v\\rangle) \\\\\\\n\u0026amp;=\u0026amp; (|v\\rangle, B|v\\rangle) + i(|v\\rangle, C|v\\rangle) \\end{eqnarray*}\n\\(A\\) は正の演算子なので複素数の項 \\(i(|v\\rangle, C|v\\rangle) = 0\\) となり、\\(C = \\frac{A - A^{\\dagger}}{2i} = 0\\) である。よって \\(A = A^{\\dagger}\\) であり、\\(A\\) はエルミート演算子である。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210412115345-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%80%A7/",
+                "title": "正の演算子のエルミート性",
+                "section": "post",
+                "date" : "2021.04.12",
+                "body": "正の演算子は必ずエルミート演算子となる。証明はQCQI/演習 2.24を参照。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/",
                 "title": "量子情報科学入門",
                 "section": "post",

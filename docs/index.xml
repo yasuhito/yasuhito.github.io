@@ -30,6 +30,22 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.24</title>
+			<link>https://yasuhito.github.io/post/20210412113913-qcqi_%E6%BC%94%E7%BF%92_2_24/</link>
+			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210412113913-qcqi_%E6%BC%94%E7%BF%92_2_24/</guid>
+			<description>\(A\) を正の演算子とする。 \[B = \frac{A + A^{\dagger}}{2}, C = \frac{A - A^{\dagger}}{2i}\] と置くと、\(A\) は次のように書ける \begin{eqnarray*} A &amp;amp;=&amp;amp; \frac{A + A^{\dagger}}{2} + i\frac{A - A^{\dagger}}{2i} \\\ &amp;amp;=&amp;amp; B + iC \end{eqnarray*} このとき、 \begin{eqnarray*} (|v\rangle, A|v\rangle) &amp;amp;=&amp;amp; (|v\rangle, (B + iC)|v\rangle) \\\</description>
+		</item>
+      	
+		<item>
+			<title>正の演算子のエルミート性</title>
+			<link>https://yasuhito.github.io/post/20210412115345-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%80%A7/</link>
+			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210412115345-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%80%A7/</guid>
+			<description>正の演算子は必ずエルミート演算子となる。証明はQCQI/演習 2.24を参照。</description>
+		</item>
+      	
+		<item>
 			<title>量子情報科学入門</title>
 			<link>https://yasuhito.github.io/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/</link>
 			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409164921-qcqi_%E6%BC%94%E7%BF%92_2_23/</guid>
 			<description>\(P\) の固有値を \(v\), \(v\) に対する固有ベクトルを \(|v\rangle\) とすると、 \[P^2|v\rangle = PP|v\rangle = P(v|v\rangle) = vP|v\rangle = v^2|v\rangle\] 一方で \(P^2 = P\) (QCQI/演習 2.16) なので \[P^2|v\rangle = P|v\rangle = v|v\rangle\] よって \(v^2 = v\) となり、これを</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.25</title>
-			<link>https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/</guid>
-			<description>転置共役の定義と \((A^{\dagger})^{\dagger} = A\) (QCQI/演習 2.15) より、 \[(|v\rangle, A^{\dagger}A|v\rangle) = (|v\rangle, A^{\dagger}(A|v\rangle)) = (A|v\rangle, A|v\rangle)\] ここで内積の正値性より、 \begin{align*} &amp;amp;(A|v\rangle, A|v\rangle) \geq 0 \\\ \Rightarrow\ &amp;amp;(|v\rangle, A^{\dagger}A|v\rangle) \geq 0 \end{align*} よって、\(A^{\dagge</description>
-		</item>
-      	
-		<item>
-			<title>スペクトル分解</title>
-			<link>https://yasuhito.github.io/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</guid>
-			<description>ベクトル空間 \(V\) 上の任意の正規演算子 \(M\) は \(V\) のある正規直交基底に関して対角である。逆に任意の対角化可能な演算子は正規である。 外積表現では、この定</description>
 		</item>
       	
 	</channel>
