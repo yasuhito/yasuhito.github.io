@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>基底状態</title>
+<title>テンソル積の双線形性</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="基底状態"/>
-<meta name="twitter:description" content="\(|0\rangle\) と \(|1\rangle\) は基底状態と呼ばれ、古典コンピュータのビット 0 と 1 に対応する。数学的には、基底状態は状態ベクトル \(|\psi\rangle\) の正規直交基底を形成するベクトルであ"/>
+<meta name="twitter:title" content="テンソル積の双線形性"/>
+<meta name="twitter:description" content="\(V\) と \(W\) をそれぞれヒルベルト空間とすると、テンソル積は次の基本的性質を満たし、これを双線形性と呼ぶ。 任意のスカラー $z$、\(V\) の要素 \(|v\rangle\), \(W\)"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              基底状態
+              テンソル積の双線形性
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Feb 24, 2021
+  >&nbsp;Apr 12, 2021
   
 </span>
 
@@ -116,27 +116,21 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>\(|0\rangle\) と \(|1\rangle\) は基底状態と呼ばれ、古典コンピュータのビット 0 と 1 に対応する。数学的には、基底状態は<a href="/post/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">状態ベクトル</a> \(|\psi\rangle\) の正規直交基底を形成するベクトルであり、それぞれ次の列ベクトルで定義される。</p>
-<p>\begin{equation}
-|0\rangle :=
-\begin{bmatrix}
-1 \\\<br>
-0
-\end{bmatrix},
-|1\rangle :=
-\begin{bmatrix}
-0 \\\<br>
-1
-\end{bmatrix}
-\end{equation}</p>
-<p>よって 1 量子ビットの状態 \(|\psi\rangle\) は、2次元複素ベクトル空間の単位ベクトルとして表現できる。</p>
-<p>\begin{equation}
-|\psi\rangle =
-\begin{bmatrix}
-\alpha \\\<br>
-\beta
-\end{bmatrix}
-\end{equation}</p>
+  <p>\(V\) と \(W\) をそれぞれヒルベルト空間とすると、テンソル積は次の基本的性質を満たし、これを双線形性と呼ぶ。</p>
+<ol>
+<li>
+<p>任意のスカラー $z$、\(V\) の要素 \(|v\rangle\), \(W\) の要素 \(|w\rangle\) に対して
+\[z(|v\rangle \otimes |w\rangle) = (z|v\rangle) \otimes |w\rangle = |v\rangle \otimes (z|w\rangle)\]</p>
+</li>
+<li>
+<p>\(V\) の任意の要素 \(|v_1\rangle\) と \(|v_2\rangle\), \(W\) の要素 \(|w\rangle\) に対して
+\[(|v_1\rangle + |v_2\rangle) \otimes |w\rangle = |v_1\rangle \otimes |w\rangle + |v_2\rangle \otimes |w\rangle\]</p>
+</li>
+<li>
+<p>任意の \(V\) の要素 \(|v\rangle\), \(W\) の要素 \(|w_1\rangle\) と \(|w_2\rangle\) に対して
+\[|v\rangle \otimes (|w_1\rangle + |w_2\rangle) = |v\rangle \otimes |w_1\rangle + |v\rangle \otimes |w_2\rangle\]</p>
+</li>
+</ol>
 
 
 
@@ -188,164 +182,6 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
     
   
@@ -470,7 +306,163 @@
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -493,9 +485,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210330142839-%E3%82%BB%E3%83%AD%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ゼロベクトル</a></li>
-              
-              <li><a href="/post/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">状態ベクトル</a></li>
+              <li><a href="/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/">テンソル積</a></li>
               
           </ul>
         </div>
