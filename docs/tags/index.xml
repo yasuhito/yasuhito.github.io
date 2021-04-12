@@ -12,6 +12,30 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>QCQI/演習 2.21</title>
+			<link>https://yasuhito.github.io/post/20210412092339-qcqi_%E6%BC%94%E7%BF%92_2_21/</link>
+			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210412092339-qcqi_%E6%BC%94%E7%BF%92_2_21/</guid>
+			<description>ベクトル空間 \(V\) 上のエルミート演算子 \(M\) は \(V\) のある正規直交基底に関して対角化可能であることを、\(V\) の次元 \(d\) に関する帰納法で証明する。 \(d=1\) の場</description>
+		</item>
+      	
+		<item>
+			<title>QCQI/演習 2.22</title>
+			<link>https://yasuhito.github.io/post/20210412111628-qcqi_%E6%BC%94%E7%BF%92_2_22/</link>
+			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210412111628-qcqi_%E6%BC%94%E7%BF%92_2_22/</guid>
+			<description>エルミート演算子 \(A\) が 2 つの異なる固有値 \(v\), \(w\) を持つとする。QCQI/演習 2.17 から、これらの固有値は実数である。\(v\), \(w\) に対する固有ベクトル</description>
+		</item>
+      	
+		<item>
+			<title>量子情報科学入門</title>
+			<link>https://yasuhito.github.io/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/</link>
+			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/</guid>
+			<description></description>
+		</item>
+      	
+		<item>
 			<title>ユニタリー演算子</title>
 			<link>https://yasuhito.github.io/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/</link>
 			<pubDate>Sun, 11 Apr 2021 00:00:00 +0900</pubDate>
@@ -56,7 +80,7 @@
 			<link>https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/</link>
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409163352-qcqi_%E6%BC%94%E7%BF%92_2_25/</guid>
-			<description>転置共役の定義と \((A^{\dagger})^{\dagger} = A\) (QCQI/演習 2.15) より、 \[(|v\rangle, A^{\dagger}A|v\rangle) = (|v\rangle, A^{\dagger}(A|v\rangle)) = (A|v\rangle, A|v\rangle)\] ここで内積の正値性より、\((A|v\rangle, A|v\rangle) \geq 0\) よって、\(A^{\</description>
+			<description>転置共役の定義と \((A^{\dagger})^{\dagger} = A\) (QCQI/演習 2.15) より、 \[(|v\rangle, A^{\dagger}A|v\rangle) = (|v\rangle, A^{\dagger}(A|v\rangle)) = (A|v\rangle, A|v\rangle)\] ここで内積の正値性より、 \begin{align*} &amp;amp;(A|v\rangle, A|v\rangle) \geq 0 \\\ \Rightarrow\ &amp;amp;(|v\rangle, A^{\dagger}A|v\rangle) \geq 0 \end{align*} よって、\(A^{\dagge</description>
 		</item>
       	
 		<item>
@@ -65,30 +89,6 @@
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</guid>
 			<description>ベクトル空間 \(V\) 上の任意の正規演算子 \(M\) は \(V\) のある正規直交基底に関して対角である。逆に任意の対角化可能な演算子は正規である。 外積表現では、この定</description>
-		</item>
-      	
-		<item>
-			<title>テンソル積</title>
-			<link>https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/</guid>
-			<description></description>
-		</item>
-      	
-		<item>
-			<title>内積の対称性</title>
-			<link>https://yasuhito.github.io/post/20210409113657-%E5%86%85%E7%A9%8D%E3%81%AE%E5%AF%BE%E7%A7%B0%E6%80%A7/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409113657-%E5%86%85%E7%A9%8D%E3%81%AE%E5%AF%BE%E7%A7%B0%E6%80%A7/</guid>
-			<description>内積関数を記号 \((\cdot, \cdot)\) で表したとき、 \[(|v\rangle, |w\rangle) = (|w\rangle, |v\rangle)^{\ast}\]</description>
-		</item>
-      	
-		<item>
-			<title>内積の正値性</title>
-			<link>https://yasuhito.github.io/post/20210409114109-%E5%86%85%E7%A9%8D%E3%81%AE%E6%AD%A3%E5%80%A4%E6%80%A7/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409114109-%E5%86%85%E7%A9%8D%E3%81%AE%E6%AD%A3%E5%80%A4%E6%80%A7/</guid>
-			<description>内積関数を記号 \((\cdot, \cdot)\) で表したとき、\((|v\rangle, |v\rangle) \geq 0\) (正値性)、等号が成り立つのは \(|v\rangle = 0\) のときのみ (正定値性)。</description>
 		</item>
       	
 	</channel>
