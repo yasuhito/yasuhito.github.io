@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Zero</title>
+<title>QCQI/演習 2.28</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Zero"/>
-<meta name="twitter:description" content="ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。 ゼロを図式的線形代数で表すと、次の"/>
+<meta name="twitter:title" content="QCQI/演習 2.28"/>
+<meta name="twitter:description" content="\(A\) は \(m\) 行 \(n\) 列の行列、\(B\) は任意の大きさの行列とすると、 転置の分配則 \begin{equation*} (A \otimes B)^T = \begin{bmatrix} A_{11}B &amp; A_{12}B &amp; \ldots &amp; A_{1n}B \newline A_{21}B &amp; A_{22}B &amp; \ldots &amp; A_{2n}B \newline \vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline A_{m1}B &amp; A_{m2}B &amp;"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              Zero
+              QCQI/演習 2.28
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 23, 2021
+  >&nbsp;Apr 13, 2021
   
 </span>
 
@@ -116,20 +116,77 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。</p>
-<p>ゼロを<a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a>で表すと、次のジェネレータになる。</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_16-58-07_screenshot.png"/> 
-</figure>
-
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/2015/04/30/spoilers-adding-part-2-and-zero/">5. Spoilers, Adding (Part 2) and Zero</a></li>
-</ul>
-</li>
-</ul>
+  <p>\(A\) は \(m\) 行 \(n\) 列の行列、\(B\) は任意の大きさの行列とすると、</p>
+<h2 id="転置の分配則">転置の分配則</h2>
+<p>\begin{equation*}
+(A \otimes B)^T =
+\begin{bmatrix}
+A_{11}B &amp; A_{12}B &amp; \ldots &amp; A_{1n}B \newline
+A_{21}B &amp; A_{22}B &amp; \ldots &amp; A_{2n}B \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{m1}B &amp; A_{m2}B &amp; \ldots &amp; A_{mn}B
+\end{bmatrix}^T =
+\begin{bmatrix}
+A_{11}B^T &amp; A_{21}B^T &amp; \ldots &amp; A_{m1}B^T \newline
+A_{12}B^T &amp; A_{22}B^T &amp; \ldots &amp; A_{m2}B^T \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{1n}B^T &amp; A_{2n}B^T &amp; \ldots &amp; A_{mn}B^T
+\end{bmatrix}
+\end{equation*}</p>
+<p>\begin{equation*}
+A^T \otimes B^T =
+\begin{bmatrix}
+A_{11} &amp; A_{21} &amp; \ldots &amp; A_{m1} \newline
+A_{12} &amp; A_{22} &amp; \ldots &amp; A_{m2} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{1n} &amp; A_{2n} &amp; \ldots &amp; A_{mn}
+\end{bmatrix} \otimes B^T =
+\begin{bmatrix}
+A_{11}B^T &amp; A_{21}B^T &amp; \ldots &amp; A_{m1}B^T \newline
+A_{12}B^T &amp; A_{22}B^T &amp; \ldots &amp; A_{m2}B^T \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{1n}B^T &amp; A_{2n}B^T &amp; \ldots &amp; A_{mn}B^T
+\end{bmatrix}
+\end{equation*}</p>
+<p>以上より</p>
+<p>\[(A \otimes B)^T = A^T \otimes B^T\]</p>
+<p>よって転置の分配則がテンソル積に適用できる。</p>
+<h2 id="複素共役の分配則">複素共役の分配則</h2>
+<p>\begin{equation*}
+(A \otimes B)^{\ast} =
+\begin{bmatrix}
+A_{11}B &amp; A_{12}B &amp; \ldots &amp; A_{1n}B \newline
+A_{21}B &amp; A_{22}B &amp; \ldots &amp; A_{2n}B \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{m1}B &amp; A_{m2}B &amp; \ldots &amp; A_{mn}B
+\end{bmatrix}^{\ast} =
+\begin{bmatrix}
+A_{11}^{\ast}B^{\ast} &amp; A_{12}^{\ast}B^{\ast} &amp; \ldots &amp; A_{1n}^{\ast}B^{\ast} \newline
+A_{21}^{\ast}B^{\ast} &amp; A_{22}^{\ast}B^{\ast} &amp; \ldots &amp; A_{2n}^{\ast}B^{\ast} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{m1}^{\ast}B^{\ast} &amp; A_{m2}^{\ast}B^{\ast} &amp; \ldots &amp; A_{mn}^{\ast}B^{\ast}
+\end{bmatrix}
+\end{equation*}</p>
+<p>\begin{equation*}
+A^{\ast} \otimes B^{\ast} =
+\begin{bmatrix}
+A_{11}^{\ast}B^{\ast} &amp; A_{12}^{\ast}B^{\ast} &amp; \ldots &amp; A_{1n}^{\ast}B^{\ast} \newline
+A_{21}^{\ast}B^{\ast} &amp; A_{22}^{\ast}B^{\ast} &amp; \ldots &amp; A_{2n}^{\ast}B^{\ast} \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+A_{m1}^{\ast}B^{\ast} &amp; A_{m2}^{\ast}B^{\ast} &amp; \ldots &amp; A_{mn}^{\ast}B^{\ast}
+\end{bmatrix}
+\end{equation*}</p>
+<p>以上より</p>
+<p>\[(A \otimes B)^{\ast} = A^{\ast} \otimes B^{\ast}\]</p>
+<p>よって複素共役の分配則がテンソル積に適用できる。</p>
+<h2 id="転置共役の分配則">転置共役の分配則</h2>
+<p>\begin{eqnarray*}
+(A \otimes B)^{\dagger} &amp;=&amp; ((A \otimes B)^T)^{\ast} \\\<br>
+&amp;=&amp; (A^T \otimes B^T)^{\ast} \\\<br>
+&amp;=&amp; ((A^T)^{\ast} \otimes (B^T)^{\ast}) \\\<br>
+&amp;=&amp; A^{\dagger} \otimes B^{\dagger}
+\end{eqnarray*}</p>
+<p>よって<a href="/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/">転置共役</a>の分配則がテンソル積に適用できる。</p>
 
 
 
@@ -321,78 +378,6 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
     
   
@@ -405,7 +390,77 @@
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -500,9 +555,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210323090747-unit/">Unit</a></li>
-              
-              <li><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
