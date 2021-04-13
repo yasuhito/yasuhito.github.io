@@ -52,6 +52,36 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413145005-qcqi_%E6%BC%94%E7%BF%92_2_30/",
+                "title": "QCQI/演習 2.30",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "\\(A\\), \\(B\\) をそれぞれエルミート演算子とした時に、\\(C = A \\otimes B\\) について \\(C^{\\dagger} = C\\) を示す。\n\\begin{eqnarray*} (A \\otimes B)^{\\dagger} \u0026amp;=\u0026amp; (A^{\\dagger} \\otimes B^{\\dagger}) \\\\\\\n\u0026amp;=\u0026amp; A \\otimes B \\end{eqnarray*}\nよって \\(A \\otimes B\\) はエルミート演算子。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210413150636-qcqi_%E6%BC%94%E7%BF%92_2_31/",
+                "title": "QCQI/演習 2.31",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "演算子 \\(A\\), \\(B\\) が正の演算子であるときに、\\(C = A \\otimes B\\) と任意のベクトル \\(|v\\rangle\\), \\(|w\\rangle\\) について \\((|v\\rangle \\otimes |w\\rangle, C(|v\\rangle \\otimes |w\\rangle))\\) が実数で負でない数であることを示す。\n\\begin{eqnarray*} (|v\\rangle \\otimes |w\\rangle, (A \\otimes B)(|v\\rangle \\otimes |w\\rangle)) \u0026amp;=\u0026amp; (|v\\rangle \\otimes |w\\rangle, A|v\\rangle \\otimes B|w\\rangle) \\\\\\\n\u0026amp;=\u0026amp; \\langle v|A|v\\rangle \\langle w|B|w\\rangle \\geq 0 \\end{eqnarray*}\nよって \\(A \\otimes B\\) は正の演算子。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210413155236-qcqi_%E6%BC%94%E7%BF%92_2_32/",
+                "title": "QCQI/演習 2.32",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "演算子 \\(A\\), \\(B\\) がそれぞれ射影演算子であるときに、\\(C = A \\otimes B\\) について \\(C^2 = C\\) を示す。\n\\begin{eqnarray*} (A \\otimes B)^2 \u0026amp;=\u0026amp; (A \\otimes B)(A \\otimes B) \\\\\\\n\u0026amp;=\u0026amp; AA \\otimes BB \\\\\\\n\u0026amp;=\u0026amp; A \\otimes B \\end{eqnarray*}\nよって \\(A \\otimes B\\) は射影演算子。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/",
                 "title": "クロネッカー積",
                 "section": "post",
@@ -436,7 +466,7 @@
                 "title": "射影演算子",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。定義により\n\\begin{equation} P \\equiv \\sum_{i=1}^k |i\\rangle\\langle i| \\end{equation}\nは部分空間 \\(W\\) への射影演算子である。\nQCQI/演習 2.13により任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle v|\\) なので、\\(|v\\rangle\\langle v|\\) はエルミート演算子である。したがって \\(P\\) もエルミート演算子、すなわち \\(P^{\\dagger} = P\\) である。\n"
+                "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。定義により\n\\begin{equation*} P \\equiv \\sum_{i=1}^k |i\\rangle\\langle i| \\end{equation*}\nは部分空間 \\(W\\) への射影演算子である。\nQCQI/演習 2.13により任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle v|\\) なので、\\(|v\\rangle\\langle v|\\) はエルミート演算子である。したがって \\(P\\) もエルミート演算子、すなわち \\(P^{\\dagger} = P\\) である。\n"
             }
         
     ,
@@ -846,7 +876,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
