@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Org Mode</title>
+<title>QCQI/演習 2.26</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Org Mode"/>
-<meta name="twitter:description" content="メモや論文など書くこと全般に使える Emacs のメジャーモード。Org-Roam を使うと、Roam Research 的なスマートノートを作ることができる。このノート上"/>
+<meta name="twitter:title" content="QCQI/演習 2.26"/>
+<meta name="twitter:description" content="テンソル積で計算: \begin{eqnarray*} |\psi\rangle^{\otimes 2} &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle &#43; |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle &#43; |1\rangle) \\\ &amp;=&amp; \frac{1}{2}(|0\rangle|0\rangle &#43; |0\rangle|1\rangle &#43; |1\rangle|0\rangle &#43; |1\rangle|1\rangle) \\\ \\\ |\psi\rangle^{\otimes 3} &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle &#43; |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle &#43; |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle &#43; |1\rangle) \\\ &amp;=&amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle &#43; |0\rangle|1\rangle &#43; |1\rangle|0\rangle &#43; |1\rangle|1\rangle)(|0\rangle &#43; |1\rangle) \\\ &amp;=&amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle|0\rangle &#43; |0\rangle|0\rangle|1\rangle &#43; |0\rangle|1\rangle|0\rangle &#43; |0\rangle|1\rangle|1\rangle &#43; |1\rangle|0\rangle|0\rangle &#43; |1\rangle|0\rangle|1\rangle &#43;"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              Org Mode
+              QCQI/演習 2.26
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 10, 2021
+  >&nbsp;Apr 13, 2021
   
 </span>
 
@@ -116,23 +116,45 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>メモや論文など書くこと全般に使える Emacs のメジャーモード。<a href="/post/20210223134834-org_roam/">Org-Roam</a> を使うと、Roam Research 的なスマートノートを作ることができる。このノート上には Anki のカードも定義できるので、スマートノートと SRS をスムーズに組み合わせることができる。そのほか、<a href="/post/20210310093010-%E6%96%87%E8%8A%B8%E7%9A%84%E3%83%95%E3%83%AD%E3%82%AF%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%AF/">文芸的プログラミング</a>をサポートしているので、Emacs の設定ファイルを Org のドキュメントから生成できる。</p>
-<p><a href="https://orgmode.org/index.html">Org mode for Emacs</a></p>
-<h2 id="org-のインライン記法">Org のインライン記法</h2>
-<dl>
-<dt><strong><strong>強調</strong></strong></dt>
-<dd><code>**強調**</code></dd>
-<dt><em>斜体</em></dt>
-<dd><code>/斜体/</code></dd>
-<dt><!-- raw HTML omitted -->下線<!-- raw HTML omitted --></dt>
-<dd><code>_下線_</code></dd>
-<dt><del>打ち消し</del></dt>
-<dd><code>+打ち消し+</code></dd>
-<dt><code>verbatim</code></dt>
-<dd><code>=verbatim=</code></dd>
-<dt><code>inline code</code></dt>
-<dd><code>~inline code~</code></dd>
-</dl>
+  <p><a href="/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/">テンソル積</a>で計算:</p>
+<p>\begin{eqnarray*}
+|\psi\rangle^{\otimes 2} &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{2}(|0\rangle|0\rangle + |0\rangle|1\rangle + |1\rangle|0\rangle + |1\rangle|1\rangle) \\\<br>
+\\\<br>
+|\psi\rangle^{\otimes 3} &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle + |0\rangle|1\rangle + |1\rangle|0\rangle + |1\rangle|1\rangle)(|0\rangle + |1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle|0\rangle + |0\rangle|0\rangle|1\rangle + |0\rangle|1\rangle|0\rangle + |0\rangle|1\rangle|1\rangle + |1\rangle|0\rangle|0\rangle + |1\rangle|0\rangle|1\rangle + |1\rangle|1\rangle|0\rangle + |1\rangle|1\rangle|1\rangle)
+\end{eqnarray*}</p>
+<p><a href="/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/">クロネッカー積</a>で計算:</p>
+<p>\begin{equation*}
+|\psi\rangle = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+1 \newline
+1
+\end{bmatrix}
+\end{equation*}</p>
+<p>\begin{equation*}
+|\psi\rangle^{\otimes 2} = \frac{1}{2}
+\begin{bmatrix}
+1 \newline
+1 \newline
+1 \newline
+1
+\end{bmatrix}
+\end{equation*}</p>
+<p>\begin{equation*}
+|\psi\rangle^{\otimes 3} = \frac{1}{2\sqrt{2}}
+\begin{bmatrix}
+1 \newline
+1 \newline
+1 \newline
+1 \newline
+1 \newline
+1 \newline
+1 \newline
+1
+\end{bmatrix}
+\end{equation*}</p>
 
 
 
@@ -320,56 +342,6 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
       
     
   
@@ -382,11 +354,55 @@
     
   
     
-      
+  
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -503,13 +519,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210327132024-emacs/">Emacs</a></li>
-              
-              <li><a href="/post/20210329095350-org_transclusion/">org-transclusion</a></li>
-              
-              <li><a href="/post/20210223202810-anki_editor/">anki-editor</a></li>
-              
-              <li><a href="/post/20210327120037-deft/">Deft</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>

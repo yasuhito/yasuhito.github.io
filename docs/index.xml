@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.26</title>
+			<link>https://yasuhito.github.io/post/20210413114431-qcqi_%E6%BC%94%E7%BF%92_2_26/</link>
+			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210413114431-qcqi_%E6%BC%94%E7%BF%92_2_26/</guid>
+			<description>テンソル積で計算: \begin{eqnarray*} |\psi\rangle^{\otimes 2} &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\ &amp;amp;=&amp;amp; \frac{1}{2}(|0\rangle|0\rangle + |0\rangle|1\rangle + |1\rangle|0\rangle + |1\rangle|1\rangle) \\\ \\\ |\psi\rangle^{\otimes 3} &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\ &amp;amp;=&amp;amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle + |0\rangle|1\rangle + |1\rangle|0\rangle + |1\rangle|1\rangle)(|0\rangle + |1\rangle) \\\ &amp;amp;=&amp;amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle|0\rangle + |0\rangle|0\rangle|1\rangle + |0\rangle|1\rangle|0\rangle + |0\rangle|1\rangle|1\rangle + |1\rangle|0\rangle|0\rangle + |1\rangle|0\rangle|1\rangle +</description>
+		</item>
+      	
+		<item>
 			<title>クロネッカー積</title>
 			<link>https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/</link>
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210412115345-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%80%A7/</guid>
 			<description>正の演算子は必ずエルミート演算子となる。証明はQCQI/演習 2.24を参照。</description>
-		</item>
-      	
-		<item>
-			<title>量子情報科学入門</title>
-			<link>https://yasuhito.github.io/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/</link>
-			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/</guid>
-			<description></description>
 		</item>
       	
 	</channel>
