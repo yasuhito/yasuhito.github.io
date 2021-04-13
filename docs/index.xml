@@ -14,6 +14,14 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>クロネッカー積</title>
+			<link>https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/</link>
+			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/</guid>
+			<description>テンソル積を具体的な行列表現にしたもの。 \(A\) は \(m\) 行 \(n\) 列の行列、B は \(p\) 行 \(q\) 列の行列とすると、このとき \(A \otimes B\) の行列表現が次のように得られる。 \begin{equation*} A \otimes</description>
+		</item>
+      	
+		<item>
 			<title>テンソル積上の内積</title>
 			<link>https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/</link>
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sun, 11 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
 			<description>\(U^{\dagger}U = I\) ならば演算子 \(U\) はユニタリーであるという。 ユニタリー演算子は \(UU^{\dagger} = I\) も満たすので、\(U\) は正規でありスペクトル分解ができる。</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.18</title>
-			<link>https://yasuhito.github.io/post/20210409103428-qcqi_%E6%BC%94%E7%BF%92_2_18/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409103428-qcqi_%E6%BC%94%E7%BF%92_2_18/</guid>
-			<description>ユニタリー行列 \(U\) の固有値を \(v\), 固有ベクトルを \(|v\rangle\) とすると、ユニタリー演算子は内積を保存することから、 \begin{eqnarray*} \langle v|v \rangle &amp;amp;=&amp;amp; (U|v\rangle, U|v\rangle) \\\ &amp;amp;=&amp;amp; (v|v\rangle, v|v\rangle) \newline \end{eqnarray*} ここで 内積は第 1 引</description>
 		</item>
       	
 	</channel>

@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/",
+                "title": "クロネッカー積",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "テンソル積を具体的な行列表現にしたもの。\n\\(A\\) は \\(m\\) 行 \\(n\\) 列の行列、B は \\(p\\) 行 \\(q\\) 列の行列とすると、このとき \\(A \\otimes B\\) の行列表現が次のように得られる。\n\\begin{equation*} A \\otimes B \\equiv \\left.\\left[ \\vphantom{\\begin{array}{c} A_{11}B \\newline A_{21}B \\newline \\vdots \\newline A_{m1}B \\end{array}} \\smash{\\overbrace{ \\begin{array}{cccc} A_{11}B \u0026amp; A_{12}B \u0026amp; \\ldots \u0026amp; A_{1n}B \\newline A_{21}B \u0026amp; A_{22}B \u0026amp; \\ldots \u0026amp; A_{2n}B \\newline \\vdots \u0026amp; \\vdots \u0026amp; \\vdots \u0026amp; \\vdots \\newline A_{m1}B \u0026amp; A_{m2}B \u0026amp; \\ldots \u0026amp; A_{mn}B \\end{array} }^{nq \\text{ 列}}} \\right]\\right\\} mp\\text{ 行} \\end{equation*}\n具体的にはたとえば、\n\\begin{equation*} \\begin{bmatrix} 1 \\newline 2 \\end{bmatrix} \\otimes \\begin{bmatrix} 2 \\newline 3 \\end{bmatrix} = \\begin{bmatrix} 1 \\times 2 \\newline 1 \\times 3 \\newline 2 \\times 2 \\newline 2 \\times 3 \\end{bmatrix} = \\begin{bmatrix} 2 \\newline 3 \\newline 4 \\newline 6 \\end{bmatrix} \\end{equation*}\nパウリ行列 \\(X\\), \\(Y\\) のテンソル積は、\n\\begin{equation*} X \\otimes Y = \\begin{bmatrix} 0 \\cdot Y \u0026amp; 1 \\cdot Y \\newline 1 \\cdot Y \u0026amp; 0 \\cdot Y \\end{bmatrix} = \\begin{bmatrix} 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; -i \\newline 0 \u0026amp; 0 \u0026amp; i \u0026amp; 0 \\newline 0 \u0026amp; -i \u0026amp; 0 \u0026amp; 0 \\newline i \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \\end{bmatrix} \\end{equation*}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/",
                 "title": "テンソル積上の内積",
                 "section": "post",
