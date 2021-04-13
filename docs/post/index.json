@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/",
+                "title": "テンソル積上の演算子",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "\\(|v\\rangle\\) と \\(|w\\rangle\\) をベクトル空間 \\(V\\), \\(W\\) のベクトル、\\(A\\) と \\(B\\) をそれぞれ \\(V\\), \\(W\\) 上の演算子とすると、\\(V \\otimes W\\) 上の演算子 \\(A \\otimes B\\) は次式で定義される。\n\\[(A \\otimes B)(|v\\rangle \\otimes |w\\rangle) \\equiv A|v\\rangle \\otimes B|w\\rangle\\]\n\\(A \\otimes B\\) の定義は \\(A \\otimes B\\) の線形性を保って、\\(V \\otimes W\\) の全要素に自然に拡張できる。\n\\[(A \\otimes B)\\left(\\sum_i a_i|v_i\\rangle \\otimes |w_i\\rangle \\right) \\equiv \\sum_i a_i A|v_u\\rangle \\otimes B|w_i\\rangle\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210412092339-qcqi_%E6%BC%94%E7%BF%92_2_21/",
                 "title": "QCQI/演習 2.21",
                 "section": "post",
@@ -136,7 +146,7 @@
                 "title": "テンソル積",
                 "section": "post",
                 "date" : "2021.04.09",
-                "body": "テンソル積はベクトル空間を組合わせて大きなベクトル空間を形成する方法。\n\\(V\\) と \\(W\\) はそれぞれ \\(m\\) 次元と \\(n\\) 次元のベクトル空間であるとする。便宜上 \\(V\\) と \\(W\\) はヒルベルト空間とする。このとき、\n \\(V \\otimes W\\) は \\(mn\\) 次元のベクトル空間である \\(V \\otimes W\\) の要素は \\(V\\) の要素 \\(|v\\rangle\\) と \\(W\\) の要素 \\(|w\\rangle\\) のテンソル積 (\\(|v\\rangle \\otimes |w\\rangle\\)) の線形結合である \\(|i\\rangle\\) と \\(|j\\rangle\\) が空間 \\(V\\) と \\(W\\) の正規直交基底ならば、\\(|i\\rangle \\otimes |j\\rangle\\) は \\(V \\otimes W\\) に対する基底になる  また、テンソル積はテンソル積の双線形性を満たす。\n"
+                "body": "テンソル積はベクトル空間を組合わせて大きなベクトル空間を作るための方法。\n\\(V\\) と \\(W\\) はそれぞれ \\(m\\) 次元と \\(n\\) 次元のベクトル空間で、便宜上ヒルベルト空間とする。このとき、\n \\(V \\otimes W\\) は \\(mn\\) 次元のベクトル空間である \\(V \\otimes W\\) の要素は \\(V\\) の要素 \\(|v\\rangle\\) と \\(W\\) の要素 \\(|w\\rangle\\) のテンソル積 (\\(|v\\rangle \\otimes |w\\rangle\\)) の線形結合である \\(|i\\rangle\\) と \\(|j\\rangle\\) が空間 \\(V\\) と \\(W\\) の正規直交基底ならば、\\(|i\\rangle \\otimes |j\\rangle\\) は \\(V \\otimes W\\) に対する基底になる  また、テンソル積はテンソル積の双線形性を満たす。\n関連ノート  テンソル積上の演算子  "
             }
         
     ,

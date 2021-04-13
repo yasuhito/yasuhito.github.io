@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>テンソル積上の演算子</title>
+			<link>https://yasuhito.github.io/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>\(|v\rangle\) と \(|w\rangle\) をベクトル空間 \(V\), \(W\) のベクトル、\(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の演算子とすると、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。 \[(A \otimes B)(|v\rangle \otimes |w\rangle)</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.21</title>
 			<link>https://yasuhito.github.io/post/20210412092339-qcqi_%E6%BC%94%E7%BF%92_2_21/</link>
 			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</guid>
 			<description>パウリ行列それぞれについて、\(A^{\dagger} = A\) (エルミート行列) と \(A^{\dagger}A = I\) (ユニタリー) を示す。 I \begin{equation*} I^{\dagger} = \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; 1 \end{bmatrix} = I \end{equation*} \begin{equation*}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.20</title>
-			<link>https://yasuhito.github.io/post/20210409140256-qcqi_%E6%BC%94%E7%BF%92_2_20/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409140256-qcqi_%E6%BC%94%E7%BF%92_2_20/</guid>
-			<description>\(A^{\prime}_{ij} = \langle v_i|A|v_j\rangle\) について、\(|w_i\rangle\) に対する完全性関係を使うと、 \[\begin{align} A^{\prime}_{ij} = \langle v_i|A|v_j\rangle = \sum_{k,l} \langle v_i|w_k\rangle\langle w_k|A|w_l\rangle\langle w_l|v_j\rangle \end{align}\] ここで、\(U = \sum_i |w_i\rangle\langle v_i|\) とおくと、\(|w</description>
 		</item>
       	
 	</channel>
