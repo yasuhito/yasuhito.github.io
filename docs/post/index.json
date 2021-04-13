@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413134407-qcqi_%E6%BC%94%E7%BF%92_2_27/",
+                "title": "QCQI/演習 2.27",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "\\begin{equation*} X \\otimes Z = \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\otimes \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = \\begin{bmatrix} 0 \u0026amp; 0 \u0026amp; 1 \u0026amp; 0 \\newline 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; -1 \\newline 1 \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \\newline 0 \u0026amp; -1 \u0026amp; 0 \u0026amp; 0 \\end{bmatrix} \\end{equation*}\n\\begin{equation*} I \\otimes X = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} \\otimes \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} = \\begin{bmatrix} 0 \u0026amp; 1 \u0026amp; 0 \u0026amp; 0 \\newline 1 \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \\newline 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; 1 \\newline 0 \u0026amp; 0 \u0026amp; 1 \u0026amp; 0 \\end{bmatrix} \\end{equation*}\n\\begin{equation*} X \\otimes I = \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\otimes \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = \\begin{bmatrix} 0 \u0026amp; 0 \u0026amp; 1 \u0026amp; 0 \\newline 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \\newline 0 \u0026amp; 1 \u0026amp; 0 \u0026amp; 0 \\end{bmatrix} \\end{equation*}\n\\(I \\otimes X \\neq X \\otimes I\\) より、テンソル積は可換ではない。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/",
                 "title": "クロネッカー積",
                 "section": "post",
@@ -816,7 +826,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
