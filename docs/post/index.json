@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413112519-k_%E5%80%8B%E3%81%AE%E5%90%8C%E4%B8%80%E3%81%AE%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E8%A8%98%E5%8F%B7/",
+                "title": "k 個の同一のテンソル積記号",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "\\(|\\psi\\rangle\\) それ自身のテンソル積を \\(k\\) 回施したものを \\(|\\psi\\rangle^{\\otimes k}\\) と書く。たとえば \\(|\\psi\\rangle^{\\otimes 2} = |\\psi\\rangle \\otimes |\\psi\\rangle\\)\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/",
                 "title": "クロネッカー積",
                 "section": "post",
