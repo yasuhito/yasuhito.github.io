@@ -46,6 +46,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.29</title>
+			<link>https://yasuhito.github.io/post/20210413143716-qcqi_%E6%BC%94%E7%BF%92_2_29/</link>
+			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210413143716-qcqi_%E6%BC%94%E7%BF%92_2_29/</guid>
+			<description>\(A\), \(B\) をそれぞれユニタリー演算子とした時に、\(C = A \otimes B\) について \(C^{\dagger}C = I\) を示す。 \begin{eqnarray*} (A \otimes B)^{\dagger}(A \otimes B) &amp;amp;=&amp;amp; (A^{\dagger} \otimes B^{\dagger})(A \otimes B) \\\ &amp;amp;=&amp;amp; A^{\dagger}A \otimes B^{\dagger}B \\\ &amp;amp;=&amp;amp; I_A \otimes I_B \\\ &amp;amp;=&amp;amp; I \end{eqnarray*} よって \(A \otimes</description>
+		</item>
+      	
+		<item>
 			<title>クロネッカー積</title>
 			<link>https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/</link>
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210412111628-qcqi_%E6%BC%94%E7%BF%92_2_22/</guid>
 			<description>エルミート演算子 \(A\) が 2 つの異なる固有値 \(v\), \(w\) を持つとする。QCQI/演習 2.17 から、これらの固有値は実数である。\(v\), \(w\) に対する固有ベクトル</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.24</title>
-			<link>https://yasuhito.github.io/post/20210412113913-qcqi_%E6%BC%94%E7%BF%92_2_24/</link>
-			<pubDate>Mon, 12 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210412113913-qcqi_%E6%BC%94%E7%BF%92_2_24/</guid>
-			<description>\(A\) を正の演算子とする。 \[B = \frac{A + A^{\dagger}}{2}, C = \frac{A - A^{\dagger}}{2i}\] と置くと、\(A\) は次のように書ける \begin{eqnarray*} A &amp;amp;=&amp;amp; \frac{A + A^{\dagger}}{2} + i\frac{A - A^{\dagger}}{2i} \\\ &amp;amp;=&amp;amp; B + iC \end{eqnarray*} このとき、 \begin{eqnarray*} (|v\rangle, A|v\rangle) &amp;amp;=&amp;amp; (|v\rangle, (B + iC)|v\rangle) \\\</description>
 		</item>
       	
 	</channel>
