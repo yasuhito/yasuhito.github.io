@@ -14,11 +14,19 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>テンソル積上の内積</title>
+			<link>https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/</link>
+			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/</guid>
+			<description>ベクトル空間 \(V\), \(W\) 上の内積を使って \(V \otimes W\) 上の内積を自然に定義できる。 \[\left(\sum_i a_i|v_i\rangle \otimes |w_i\rangle, \sum_j b_j |v_j^{\prime}\rangle \otimes |w_j^{\prime}\rangle \right) \equiv \sum_{ij} a_i^{\ast}b_j \langle v_i|v_j^{\prime}\rangle \langle w_i|w_j^{\prime}\rangle\] この内積の定義から内積空間 \(V \otimes W\) は転置共</description>
+		</item>
+      	
+		<item>
 			<title>テンソル積上の演算子</title>
 			<link>https://yasuhito.github.io/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</link>
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
-			<description>\(|v\rangle\) と \(|w\rangle\) をベクトル空間 \(V\), \(W\) のベクトル、\(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の演算子とすると、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。 \[(A \otimes B)(|v\rangle \otimes |w\rangle)</description>
+			<description>\(|v\rangle\) と \(|w\rangle\) をベクトル空間 \(V\), \(W\) のベクトルとしたとき、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。 \(A: V \rightarrow V, B: W \rightarrow W\) の場合 \(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の演</description>
 		</item>
       	
 		<item>
@@ -83,14 +91,6 @@
 			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210409103428-qcqi_%E6%BC%94%E7%BF%92_2_18/</guid>
 			<description>ユニタリー行列 \(U\) の固有値を \(v\), 固有ベクトルを \(|v\rangle\) とすると、ユニタリー演算子は内積を保存することから、 \begin{eqnarray*} \langle v|v \rangle &amp;amp;=&amp;amp; (U|v\rangle, U|v\rangle) \\\ &amp;amp;=&amp;amp; (v|v\rangle, v|v\rangle) \newline \end{eqnarray*} ここで 内積は第 1 引</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.19</title>
-			<link>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</link>
-			<pubDate>Fri, 09 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210409120432-qcqi_%E6%BC%94%E7%BF%92_2_19/</guid>
-			<description>パウリ行列それぞれについて、\(A^{\dagger} = A\) (エルミート行列) と \(A^{\dagger}A = I\) (ユニタリー) を示す。 I \begin{equation*} I^{\dagger} = \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; 1 \end{bmatrix} = I \end{equation*} \begin{equation*}</description>
 		</item>
       	
 	</channel>

@@ -2,11 +2,21 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/",
+                "title": "テンソル積上の内積",
+                "section": "post",
+                "date" : "2021.04.13",
+                "body": "ベクトル空間 \\(V\\), \\(W\\) 上の内積を使って \\(V \\otimes W\\) 上の内積を自然に定義できる。\n\\[\\left(\\sum_i a_i|v_i\\rangle \\otimes |w_i\\rangle, \\sum_j b_j |v_j^{\\prime}\\rangle \\otimes |w_j^{\\prime}\\rangle \\right) \\equiv \\sum_{ij} a_i^{\\ast}b_j \\langle v_i|v_j^{\\prime}\\rangle \\langle w_i|w_j^{\\prime}\\rangle\\]\nこの内積の定義から内積空間 \\(V \\otimes W\\) は転置共役性、ユニタリー性、正規性、エルミート性などの性質を継承する。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/",
                 "title": "テンソル積上の演算子",
                 "section": "post",
                 "date" : "2021.04.13",
-                "body": "\\(|v\\rangle\\) と \\(|w\\rangle\\) をベクトル空間 \\(V\\), \\(W\\) のベクトル、\\(A\\) と \\(B\\) をそれぞれ \\(V\\), \\(W\\) 上の演算子とすると、\\(V \\otimes W\\) 上の演算子 \\(A \\otimes B\\) は次式で定義される。\n\\[(A \\otimes B)(|v\\rangle \\otimes |w\\rangle) \\equiv A|v\\rangle \\otimes B|w\\rangle\\]\n\\(A \\otimes B\\) の定義は \\(A \\otimes B\\) の線形性を保って、\\(V \\otimes W\\) の全要素に自然に拡張できる。\n\\[(A \\otimes B)\\left(\\sum_i a_i|v_i\\rangle \\otimes |w_i\\rangle \\right) \\equiv \\sum_i a_i A|v_u\\rangle \\otimes B|w_i\\rangle\\]\n"
+                "body": "\\(|v\\rangle\\) と \\(|w\\rangle\\) をベクトル空間 \\(V\\), \\(W\\) のベクトルとしたとき、\\(V \\otimes W\\) 上の演算子 \\(A \\otimes B\\) は次式で定義される。\n\\(A: V \\rightarrow V, B: W \\rightarrow W\\) の場合 \\(A\\) と \\(B\\) をそれぞれ \\(V\\), \\(W\\) 上の演算子とすると、\\(V \\otimes W\\) 上の演算子 \\(A \\otimes B\\) は次式で定義される。\n\\[(A \\otimes B)(|v\\rangle \\otimes |w\\rangle) \\equiv A|v\\rangle \\otimes B|w\\rangle\\]\n\\(A \\otimes B\\) の定義は \\(A \\otimes B\\) の線形性を保って、\\(V \\otimes W\\) の全要素に自然に拡張できる。\n\\[(A \\otimes B)\\left(\\sum_i a_i|v_i\\rangle \\otimes |w_i\\rangle \\right) \\equiv \\sum_i a_i A|v_i\\rangle \\otimes B|w_i\\rangle\\]\nつまり \\(A \\otimes B\\) は \\(V \\otimes W\\) 上で明らかに線形。\n\\(A: V \\rightarrow V^{\\prime}, B: W \\rightarrow W^{\\prime}\\) の場合への拡張 \\(V \\otimes W\\) から \\(V^{\\prime} \\otimes W^{\\prime}\\) に写像する任意の演算子 \\(C\\) は、\\(A\\) と \\(B\\) の線形結合\n\\[C = \\sum_i c_i A_i \\otimes B_i\\]\nで表現される。ここで定義により\n\\[\\left(\\sum_i c_i A_i \\otimes B_i\\right) |v\\rangle \\otimes |w\\rangle \\equiv \\sum_i c_i A_i |v\\rangle \\otimes B_i|w\\rangle\\]\n"
             }
         
     ,
@@ -146,7 +156,7 @@
                 "title": "テンソル積",
                 "section": "post",
                 "date" : "2021.04.09",
-                "body": "テンソル積はベクトル空間を組合わせて大きなベクトル空間を作るための方法。\n\\(V\\) と \\(W\\) はそれぞれ \\(m\\) 次元と \\(n\\) 次元のベクトル空間で、便宜上ヒルベルト空間とする。このとき、\n \\(V \\otimes W\\) は \\(mn\\) 次元のベクトル空間である \\(V \\otimes W\\) の要素は \\(V\\) の要素 \\(|v\\rangle\\) と \\(W\\) の要素 \\(|w\\rangle\\) のテンソル積 (\\(|v\\rangle \\otimes |w\\rangle\\)) の線形結合である \\(|i\\rangle\\) と \\(|j\\rangle\\) が空間 \\(V\\) と \\(W\\) の正規直交基底ならば、\\(|i\\rangle \\otimes |j\\rangle\\) は \\(V \\otimes W\\) に対する基底になる  また、テンソル積はテンソル積の双線形性を満たす。\n関連ノート  テンソル積上の演算子  "
+                "body": "テンソル積はベクトル空間を組合わせて大きなベクトル空間を作るための方法。\n\\(V\\) と \\(W\\) はそれぞれ \\(m\\) 次元と \\(n\\) 次元のベクトル空間で、便宜上ヒルベルト空間とする。このとき、\n \\(V \\otimes W\\) は \\(mn\\) 次元のベクトル空間である \\(V \\otimes W\\) の要素は \\(V\\) の要素 \\(|v\\rangle\\) と \\(W\\) の要素 \\(|w\\rangle\\) のテンソル積 (\\(|v\\rangle \\otimes |w\\rangle\\)) の線形結合である \\(|i\\rangle\\) と \\(|j\\rangle\\) が空間 \\(V\\) と \\(W\\) の正規直交基底ならば、\\(|i\\rangle \\otimes |j\\rangle\\) は \\(V \\otimes W\\) に対する基底になる  この定義によってテンソル積はテンソル積の双線形性とテンソル積上の内積を満たす。\n関連ノート  テンソル積上の演算子  "
             }
         
     ,

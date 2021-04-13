@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="テンソル積上の演算子"/>
-<meta name="twitter:description" content="\(|v\rangle\) と \(|w\rangle\) をベクトル空間 \(V\), \(W\) のベクトル、\(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の演算子とすると、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。 \[(A \otimes B)(|v\rangle \otimes |w\rangle)"/>
+<meta name="twitter:description" content="\(|v\rangle\) と \(|w\rangle\) をベクトル空間 \(V\), \(W\) のベクトルとしたとき、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。 \(A: V \rightarrow V, B: W \rightarrow W\) の場合 \(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の演"/>
 
 
 
@@ -116,10 +116,18 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>\(|v\rangle\) と \(|w\rangle\) を<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\), \(W\) の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a>、\(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の<a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a>とすると、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。</p>
+  <p>\(|v\rangle\) と \(|w\rangle\) を<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\), \(W\) の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a>としたとき、\(V \otimes W\) 上の<a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a> \(A \otimes B\) は次式で定義される。</p>
+<h2 id="a-v-rightarrow-v-b-w-rightarrow-w--の場合">\(A: V \rightarrow V, B: W \rightarrow W\) の場合</h2>
+<p>\(A\) と \(B\) をそれぞれ \(V\), \(W\) 上の演算子とすると、\(V \otimes W\) 上の演算子 \(A \otimes B\) は次式で定義される。</p>
 <p>\[(A \otimes B)(|v\rangle \otimes |w\rangle) \equiv A|v\rangle \otimes B|w\rangle\]</p>
 <p>\(A \otimes B\) の定義は \(A \otimes B\) の線形性を保って、\(V \otimes W\) の全要素に自然に拡張できる。</p>
-<p>\[(A \otimes B)\left(\sum_i a_i|v_i\rangle \otimes |w_i\rangle \right) \equiv \sum_i a_i A|v_u\rangle \otimes B|w_i\rangle\]</p>
+<p>\[(A \otimes B)\left(\sum_i a_i|v_i\rangle \otimes |w_i\rangle \right) \equiv \sum_i a_i A|v_i\rangle \otimes B|w_i\rangle\]</p>
+<p>つまり \(A \otimes B\) は \(V \otimes W\) 上で明らかに線形。</p>
+<h2 id="a-v-rightarrow-v-prime-b-w-rightarrow-w-prime--の場合への拡張">\(A: V \rightarrow V^{\prime}, B: W \rightarrow W^{\prime}\) の場合への拡張</h2>
+<p>\(V \otimes W\) から \(V^{\prime} \otimes W^{\prime}\) に写像する任意の演算子 \(C\) は、\(A\) と \(B\) の線形結合</p>
+<p>\[C = \sum_i c_i A_i \otimes B_i\]</p>
+<p>で表現される。ここで定義により</p>
+<p>\[\left(\sum_i c_i A_i \otimes B_i\right) |v\rangle \otimes |w\rangle \equiv \sum_i c_i A_i |v\rangle \otimes B_i|w\rangle\]</p>
 
 
 
@@ -137,6 +145,8 @@
   
   
 
+  
+    
   
     
   
