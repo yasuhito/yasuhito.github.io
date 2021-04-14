@@ -32,6 +32,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210414135730-qcqi_%E6%BC%94%E7%BF%92_2_36/",
+                "title": "QCQI/演習 2.36",
+                "section": "post",
+                "date" : "2021.04.14",
+                "body": "パウリ行列の \\(X\\), \\(Y\\), \\(Z\\) について、それぞれトレースを計算すると、\n\\begin{equation*} \\mathrm{tr}(X) = \\mathrm{tr} \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} = 0 \\end{equation*}\n\\begin{equation*} \\mathrm{tr}(Y) = \\mathrm{tr} \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} = 0 \\end{equation*}\n\\begin{equation*} \\mathrm{tr}(Z) = \\mathrm{tr} \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = 0 \\end{equation*}\nよってパウリ行列のトレースは \\(I\\) 以外はゼロ。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/",
                 "title": "トレース",
                 "section": "post",

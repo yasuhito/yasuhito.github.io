@@ -38,6 +38,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.36</title>
+			<link>https://yasuhito.github.io/post/20210414135730-qcqi_%E6%BC%94%E7%BF%92_2_36/</link>
+			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210414135730-qcqi_%E6%BC%94%E7%BF%92_2_36/</guid>
+			<description>パウリ行列の \(X\), \(Y\), \(Z\) について、それぞれトレースを計算すると、 \begin{equation*} \mathrm{tr}(X) = \mathrm{tr} \begin{bmatrix} 0 &amp;amp; 1 \newline 1 &amp;amp; 0 \end{bmatrix} = 0 \end{equation*} \begin{equation*} \mathrm{tr}(Y) = \mathrm{tr} \begin{bmatrix} 0 &amp;amp; -i \newline i &amp;amp; 0 \end{bmatrix} = 0 \end{equation*} \begin{equation*} \mathrm{tr}(Z) = \mathrm{tr} \begin{bmatrix} 1 &amp;amp; 0 \newline</description>
+		</item>
+      	
+		<item>
 			<title>トレース</title>
 			<link>https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/</link>
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210413140004-qcqi_%E6%BC%94%E7%BF%92_2_28/</guid>
 			<description>\(A\) は \(m\) 行 \(n\) 列の行列、\(B\) は任意の大きさの行列とすると、 転置の分配則 \begin{equation*} (A \otimes B)^T = \begin{bmatrix} A_{11}B &amp;amp; A_{12}B &amp;amp; \ldots &amp;amp; A_{1n}B \newline A_{21}B &amp;amp; A_{22}B &amp;amp; \ldots &amp;amp; A_{2n}B \newline \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots \newline A_{m1}B &amp;amp; A_{m2}B &amp;amp;</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.29</title>
-			<link>https://yasuhito.github.io/post/20210413143716-qcqi_%E6%BC%94%E7%BF%92_2_29/</link>
-			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210413143716-qcqi_%E6%BC%94%E7%BF%92_2_29/</guid>
-			<description>\(A\), \(B\) をそれぞれユニタリー演算子とした時に、\(C = A \otimes B\) について \(C^{\dagger}C = I\) を示す。 \begin{eqnarray*} (A \otimes B)^{\dagger}(A \otimes B) &amp;amp;=&amp;amp; (A^{\dagger} \otimes B^{\dagger})(A \otimes B) \\\ &amp;amp;=&amp;amp; A^{\dagger}A \otimes B^{\dagger}B \\\ &amp;amp;=&amp;amp; I_A \otimes I_B \\\ &amp;amp;=&amp;amp; I \end{eqnarray*} よって \(A \otimes</description>
 		</item>
       	
 	</channel>
