@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>線形従属</title>
+<title>QCQI/演習 2.35</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="線形従属"/>
-<meta name="twitter:description" content="\(0\) でないベクトル \(|v_1\rangle, \ldots, |v_n\rangle\) について、少なくとも 1 つの \(i\) に対して \(a_i \neq 0\) であり、 \[a_1|v_1\rangle &#43; a_2|v_2\rangle &#43; \ldots &#43; a_n|v_n\rangle = 0\] を満たす複素数の集合 \(a_1, \ldots, a_n\) が存在するならば、ベクト"/>
+<meta name="twitter:title" content="QCQI/演習 2.35"/>
+<meta name="twitter:description" content="\begin{equation*} \vec{v} = \begin{bmatrix} v_1 \newline v_2 \newline v_3 \end{bmatrix} \end{equation*} とすると、定義より \begin{eqnarray*} \vec{v} \cdot \vec{\sigma} &amp;=&amp; v_1 X &#43; v_2 Y &#43; v_3 Z \newline &amp;=&amp; v_1 \begin{bmatrix} 0 &amp; 1 \newline 1 &amp; 0 \end{bmatrix} &#43; v_2 \begin{bmatrix} 0 &amp; -i \newline i &amp; 0 \end{bmatrix} &#43; v_3 \begin{bmatrix} 1 &amp; 0 \newline 0 &amp; -1 \end{bmatrix} = \begin{bmatrix} v_3"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              線形従属
+              QCQI/演習 2.35
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 31, 2021
+  >&nbsp;Apr 14, 2021
   
 </span>
 
@@ -116,9 +116,58 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>\(0\) でない<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a> \(|v_1\rangle, \ldots, |v_n\rangle\) について、少なくとも 1 つの \(i\) に対して \(a_i \neq 0\) であり、</p>
-<p>\[a_1|v_1\rangle + a_2|v_2\rangle + \ldots + a_n|v_n\rangle = 0\]</p>
-<p>を満たす複素数の集合 \(a_1, \ldots, a_n\) が存在するならば、ベクトル \(|v_1\rangle, \ldots, |v_n\rangle\) は線形従属であるという。</p>
+  <p>\begin{equation*}
+\vec{v} =
+\begin{bmatrix}
+v_1 \newline
+v_2 \newline
+v_3
+\end{bmatrix}
+\end{equation*}</p>
+<p>とすると、定義より</p>
+<p>\begin{eqnarray*}
+\vec{v} \cdot \vec{\sigma} &amp;=&amp; v_1 X + v_2 Y + v_3 Z \newline
+&amp;=&amp; v_1
+\begin{bmatrix}
+0 &amp; 1 \newline
+1 &amp; 0
+\end{bmatrix} +
+v_2
+\begin{bmatrix}
+0 &amp; -i \newline
+i &amp; 0
+\end{bmatrix} +
+v_3
+\begin{bmatrix}
+1 &amp; 0 \newline
+0 &amp; -1
+\end{bmatrix} =
+\begin{bmatrix}
+v_3 &amp; v_1 - iv_2 \newline
+v_1 + iv_2 &amp; -v_3
+\end{bmatrix}
+\end{eqnarray*}</p>
+<p>よって、</p>
+<p>\begin{eqnarray*}
+\mathrm{det}(\vec{v} \cdot \vec{\sigma} - \lambda I) &amp;=&amp; -(v_3 - \lambda)(v_3 + \lambda) - (v_1 - iv_2)(v_1 + iv_2) \newline
+&amp;=&amp; \lambda^2 - v_3^2 - v_1^2 - v_2^2 \newline
+&amp;=&amp; \lambda^2 - (v_1^2 + v_2^2 + v_3^2) \newline
+&amp;=&amp; \lambda^2 - 1 = 0 \newline
+\therefore \lambda = \pm 1
+\end{eqnarray*}</p>
+<p>(\(\vec{v}\) は 3 次元実数単位ベクトルであるから、\(v_1^2 + v_2^2 + v_3^2 = 1\) を使った)</p>
+<p>よって<a href="/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/">スペクトル分解</a>により</p>
+<p>\begin{equation*}
+\vec{v} \cdot \vec{\sigma} = |\lambda_1\rangle\langle\lambda_1| - |\lambda_{-1}\rangle\langle\lambda_{-1}|
+\end{equation*}</p>
+<p><a href="/post/20210414100121-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%96%A2%E6%95%B0/">演算子の関数</a>により、</p>
+<p>\begin{eqnarray*}
+\mathrm{exp}(i\theta\vec{v}\cdot\vec{\sigma}) &amp;=&amp; \mathrm{exp}(i\theta)|\lambda_1\rangle\langle\lambda_1| + \mathrm{exp}(-i\theta)|\lambda_{-1}\rangle\langle\lambda_{-1}| \newline
+&amp;=&amp; (\cos\theta + i \sin\theta)|\lambda_1\rangle\langle\lambda_1| + (\cos\theta - i\sin\theta)|\lambda_{-1}\rangle\langle\lambda_{-1}| \newline
+&amp;=&amp; \cos\theta(|\lambda_1\rangle\langle\lambda_1| + |\lambda_{-1}\rangle\langle\lambda_{-1}|) + i\sin\theta(|\lambda_1\rangle\langle\lambda_1| - |\lambda_{-1}\rangle\langle\lambda_{-1}|) \newline
+&amp;=&amp; \cos(\theta)I + i\sin(\theta)(\vec{v} \cdot \vec{\sigma})
+\end{eqnarray*}</p>
+<p>(<a href="/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/">完全性関係</a>より \(|\lambda_1\rangle\langle\lambda_1| + |\lambda_{-1}\rangle\langle\lambda_{-1}| = I\) を使った)</p>
 
 
 
@@ -318,36 +367,6 @@
     
   
     
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -357,6 +376,34 @@
   
     
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -505,9 +552,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210402160012-qcqi_%E6%BC%94%E7%BF%92_2_1/">QCQI/演習 2.1</a></li>
-              
-              <li><a href="/post/20210331120821-%E7%B7%9A%E5%BD%A2%E7%8B%AC%E7%AB%8B/">線形独立</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>

@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210414112724-qcqi_%E6%BC%94%E7%BF%92_2_35/",
+                "title": "QCQI/演習 2.35",
+                "section": "post",
+                "date" : "2021.04.14",
+                "body": "\\begin{equation*} \\vec{v} = \\begin{bmatrix} v_1 \\newline v_2 \\newline v_3 \\end{bmatrix} \\end{equation*}\nとすると、定義より\n\\begin{eqnarray*} \\vec{v} \\cdot \\vec{\\sigma} \u0026amp;=\u0026amp; v_1 X + v_2 Y + v_3 Z \\newline \u0026amp;=\u0026amp; v_1 \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} + v_2 \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} + v_3 \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = \\begin{bmatrix} v_3 \u0026amp; v_1 - iv_2 \\newline v_1 + iv_2 \u0026amp; -v_3 \\end{bmatrix} \\end{eqnarray*}\nよって、\n\\begin{eqnarray*} \\mathrm{det}(\\vec{v} \\cdot \\vec{\\sigma} - \\lambda I) \u0026amp;=\u0026amp; -(v_3 - \\lambda)(v_3 + \\lambda) - (v_1 - iv_2)(v_1 + iv_2) \\newline \u0026amp;=\u0026amp; \\lambda^2 - v_3^2 - v_1^2 - v_2^2 \\newline \u0026amp;=\u0026amp; \\lambda^2 - (v_1^2 + v_2^2 + v_3^2) \\newline \u0026amp;=\u0026amp; \\lambda^2 - 1 = 0 \\newline \\therefore \\lambda = \\pm 1 \\end{eqnarray*}\n(\\(\\vec{v}\\) は 3 次元実数単位ベクトルであるから、\\(v_1^2 + v_2^2 + v_3^2 = 1\\) を使った)\nよってスペクトル分解により\n\\begin{equation*} \\vec{v} \\cdot \\vec{\\sigma} = |\\lambda_1\\rangle\\langle\\lambda_1| - |\\lambda_{-1}\\rangle\\langle\\lambda_{-1}| \\end{equation*}\n演算子の関数により、\n\\begin{eqnarray*} \\mathrm{exp}(i\\theta\\vec{v}\\cdot\\vec{\\sigma}) \u0026amp;=\u0026amp; \\mathrm{exp}(i\\theta)|\\lambda_1\\rangle\\langle\\lambda_1| + \\mathrm{exp}(-i\\theta)|\\lambda_{-1}\\rangle\\langle\\lambda_{-1}| \\newline \u0026amp;=\u0026amp; (\\cos\\theta + i \\sin\\theta)|\\lambda_1\\rangle\\langle\\lambda_1| + (\\cos\\theta - i\\sin\\theta)|\\lambda_{-1}\\rangle\\langle\\lambda_{-1}| \\newline \u0026amp;=\u0026amp; \\cos\\theta(|\\lambda_1\\rangle\\langle\\lambda_1| + |\\lambda_{-1}\\rangle\\langle\\lambda_{-1}|) + i\\sin\\theta(|\\lambda_1\\rangle\\langle\\lambda_1| - |\\lambda_{-1}\\rangle\\langle\\lambda_{-1}|) \\newline \u0026amp;=\u0026amp; \\cos(\\theta)I + i\\sin(\\theta)(\\vec{v} \\cdot \\vec{\\sigma}) \\end{eqnarray*}\n(完全性関係より \\(|\\lambda_1\\rangle\\langle\\lambda_1| + |\\lambda_{-1}\\rangle\\langle\\lambda_{-1}| = I\\) を使った)\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210414100121-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%96%A2%E6%95%B0/",
                 "title": "演算子の関数",
                 "section": "post",
@@ -906,7 +916,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33 QCQI/演習 2.34  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33 QCQI/演習 2.34 QCQI/演習 2.35  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,

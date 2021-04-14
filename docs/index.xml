@@ -30,6 +30,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.35</title>
+			<link>https://yasuhito.github.io/post/20210414112724-qcqi_%E6%BC%94%E7%BF%92_2_35/</link>
+			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210414112724-qcqi_%E6%BC%94%E7%BF%92_2_35/</guid>
+			<description>\begin{equation*} \vec{v} = \begin{bmatrix} v_1 \newline v_2 \newline v_3 \end{bmatrix} \end{equation*} とすると、定義より \begin{eqnarray*} \vec{v} \cdot \vec{\sigma} &amp;amp;=&amp;amp; v_1 X + v_2 Y + v_3 Z \newline &amp;amp;=&amp;amp; v_1 \begin{bmatrix} 0 &amp;amp; 1 \newline 1 &amp;amp; 0 \end{bmatrix} + v_2 \begin{bmatrix} 0 &amp;amp; -i \newline i &amp;amp; 0 \end{bmatrix} + v_3 \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; -1 \end{bmatrix} = \begin{bmatrix} v_3</description>
+		</item>
+      	
+		<item>
 			<title>演算子の関数</title>
 			<link>https://yasuhito.github.io/post/20210414100121-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%96%A2%E6%95%B0/</link>
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210413145005-qcqi_%E6%BC%94%E7%BF%92_2_30/</guid>
 			<description>\(A\), \(B\) をそれぞれエルミート演算子とした時に、\(C = A \otimes B\) について \(C^{\dagger} = C\) を示す。 \begin{eqnarray*} (A \otimes B)^{\dagger} &amp;amp;=&amp;amp; (A^{\dagger} \otimes B^{\dagger}) \\\ &amp;amp;=&amp;amp; A \otimes B \end{eqnarray*} よって \(A \otimes B\) はエルミート演算子。</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.31</title>
-			<link>https://yasuhito.github.io/post/20210413150636-qcqi_%E6%BC%94%E7%BF%92_2_31/</link>
-			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210413150636-qcqi_%E6%BC%94%E7%BF%92_2_31/</guid>
-			<description>演算子 \(A\), \(B\) が正の演算子であるときに、\(C = A \otimes B\) と任意のベクトル \(|v\rangle\), \(|w\rangle\) について \((|v\rangle \otimes |w\rangle, C(|v\rangle \otimes |w\rangle))\) が実数で負でない数であることを示す。 \begin{eqnarray*} (|v\rangle \otimes |w\rangle, (A \otimes B)(|v\rangle</description>
 		</item>
       	
 	</channel>
