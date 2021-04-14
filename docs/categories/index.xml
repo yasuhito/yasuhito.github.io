@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>QCQI/演習 2.33</title>
+			<link>https://yasuhito.github.io/post/20210413161116-qcqi_%E6%BC%94%E7%BF%92_2_33/</link>
+			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210413161116-qcqi_%E6%BC%94%E7%BF%92_2_33/</guid>
+			<description>\begin{eqnarray*} H &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}[(|0\rangle + |1\rangle)\langle 0| + (|0\rangle - |1\rangle)\langle 1|] \\\ &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}(|0\rangle\langle 0| + |1\rangle\langle 0| + |0\rangle\langle 1| - |1\rangle\langle 1|) \\\ &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}\sum_{x,y}(-1)^{x \cdot y}|x\rangle\langle y| \end{eqnarray*} よって \begin{eqnarray*} H^{\otimes n} &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}\sum_{x_1,y_1}(-1)^{x_1 \cdot y_1}|x_1\rangle\langle y_1| \otimes \frac{1}{\sqrt{2}}\sum_{x_2,y_2}(-1)^{x_2 \cdot y_2}|x_2\rangle\langle y_2| \otimes \ldots \otimes \frac{1}{\sqrt{2}}\sum_{x_n,y_n}(-1)^{x_n \cdot y_n}|x_n\rangle\langle y_n| \\\ &amp;amp;=&amp;amp; \frac{1}{\sqrt{2^n}}\sum_{x,y}(-1)^{x \cdot y}|x\rangle\langle y| \end{eqnarray*} \(H^{\otimes 2}\) を計算すると</description>
+		</item>
+      	
+		<item>
 			<title>k 個の同一のテンソル積記号</title>
 			<link>https://yasuhito.github.io/post/20210413112519-k_%E5%80%8B%E3%81%AE%E5%90%8C%E4%B8%80%E3%81%AE%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E8%A8%98%E5%8F%B7/</link>
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210413103054-%E3%82%AF%E3%83%AD%E3%83%8D%E3%83%83%E3%82%AB%E3%83%BC%E7%A9%8D/</guid>
 			<description>テンソル積を具体的な行列表現にしたもの。 \(A\) は \(m\) 行 \(n\) 列の行列、B は \(p\) 行 \(q\) 列の行列とすると、このとき \(A \otimes B\) の行列表現が次のように得られる。 \begin{equation*} A \otimes</description>
-		</item>
-      	
-		<item>
-			<title>テンソル積上の内積</title>
-			<link>https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/</link>
-			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/</guid>
-			<description>ベクトル空間 \(V\), \(W\) 上の内積を使って \(V \otimes W\) 上の内積を自然に定義できる。 \[\left(\sum_i a_i|v_i\rangle \otimes |w_i\rangle, \sum_j b_j |v_j^{\prime}\rangle \otimes |w_j^{\prime}\rangle \right) \equiv \sum_{ij} a_i^{\ast}b_j \langle v_i|v_j^{\prime}\rangle \langle w_i|w_j^{\prime}\rangle\] この内積の定義から内積空間 \(V \otimes W\) は転置共</description>
 		</item>
       	
 	</channel>

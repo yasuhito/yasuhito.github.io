@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210413161116-qcqi_%E6%BC%94%E7%BF%92_2_33/",
+                "title": "QCQI/演習 2.33",
+                "section": "post",
+                "date" : "2021.04.14",
+                "body": "\\begin{eqnarray*} H \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}[(|0\\rangle + |1\\rangle)\\langle 0| + (|0\\rangle - |1\\rangle)\\langle 1|] \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}(|0\\rangle\\langle 0| + |1\\rangle\\langle 0| + |0\\rangle\\langle 1| - |1\\rangle\\langle 1|) \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}\\sum_{x,y}(-1)^{x \\cdot y}|x\\rangle\\langle y| \\end{eqnarray*}\nよって\n\\begin{eqnarray*} H^{\\otimes n} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}\\sum_{x_1,y_1}(-1)^{x_1 \\cdot y_1}|x_1\\rangle\\langle y_1| \\otimes \\frac{1}{\\sqrt{2}}\\sum_{x_2,y_2}(-1)^{x_2 \\cdot y_2}|x_2\\rangle\\langle y_2| \\otimes \\ldots \\otimes \\frac{1}{\\sqrt{2}}\\sum_{x_n,y_n}(-1)^{x_n \\cdot y_n}|x_n\\rangle\\langle y_n| \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2^n}}\\sum_{x,y}(-1)^{x \\cdot y}|x\\rangle\\langle y| \\end{eqnarray*}\n\\(H^{\\otimes 2}\\) を計算すると、\n\\begin{eqnarray*} H^{\\otimes 2} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2^2}}\\sum_{x,y}(-1)^{x \\cdot y}|x\\rangle\\langle y| \\newline \u0026amp;=\u0026amp; \\frac{1}{2}[|00 \\rangle\\langle 00| + |01 \\rangle\\langle 00| + |00 \\rangle\\langle 01| - |01 \\rangle\\langle 01| \\newline \u0026amp;\\phantom{=}\u0026amp; + |10 \\rangle\\langle 00| + |11 \\rangle\\langle 00| + |10 \\rangle\\langle 01| - |11 \\rangle\\langle 01| \\newline \u0026amp;\\phantom{=}\u0026amp; + |00 \\rangle\\langle 10| + |01 \\rangle\\langle 10| + |00 \\rangle\\langle 11| - |01 \\rangle\\langle 11| \\newline \u0026amp;\\phantom{=}\u0026amp; - |10 \\rangle\\langle 10| - |11 \\rangle\\langle 10| - |10 \\rangle\\langle 11| + |11 \\rangle\\langle 11|] \\newline \u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 1 \u0026amp; 1 \u0026amp; 1 \u0026amp; 1 \\newline 1 \u0026amp; -1 \u0026amp; 1 \u0026amp; -1 \\newline 1 \u0026amp; 1 \u0026amp; -1 \u0026amp; -1 \\newline 1 \u0026amp; -1 \u0026amp; -1 \u0026amp; 1 \\end{bmatrix} \\end{eqnarray*}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413112519-k_%E5%80%8B%E3%81%AE%E5%90%8C%E4%B8%80%E3%81%AE%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E8%A8%98%E5%8F%B7/",
                 "title": "k 個の同一のテンソル積記号",
                 "section": "post",
@@ -876,7 +886,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
