@@ -32,11 +32,21 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/",
+                "title": "トレース",
+                "section": "post",
+                "date" : "2021.04.14",
+                "body": "演算子の関数の 1 つで、行列の対角要素を合計する関数。\n\\[\\mathrm{tr}(A) \\equiv \\sum_i A_{ii}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210414100121-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%96%A2%E6%95%B0/",
                 "title": "演算子の関数",
                 "section": "post",
                 "date" : "2021.04.14",
-                "body": "\\(\\sqrt{NOT}\\) など演算子やその行列表現の平方根をはじめ、対数、ベキ指数などを求める方法。\n正規演算子 \\(A\\) のスペクトル分解を \\(A = \\sum_a a|a\\rangle \\langle a|\\) とする。このとき \\(f(A) \\equiv \\sum_a f(a)|a\\rangle \\langle a|\\) の式で \\(A\\) の行列の関数を定義できる。\n例  行列の平方根、対数 (QCQI/演習 2.34)  "
+                "body": "\\(\\sqrt{NOT}\\) のような演算子やその行列表現の平方根、または対数、ベキ指数などを求める方法。\n正規演算子 \\(A\\) のスペクトル分解を \\(A = \\sum_a a|a\\rangle \\langle a|\\) とする。このとき \\(f(A) \\equiv \\sum_a f(a)|a\\rangle \\langle a|\\) で \\(A\\) の行列の関数を定義できる。\n例  行列の平方根、対数 (QCQI/演習 2.34) パウリ行列の指数関数 (QCQI/演習 2.35)  "
             }
         
     ,
