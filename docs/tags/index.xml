@@ -44,11 +44,27 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.37</title>
+			<link>https://yasuhito.github.io/post/20210414140612-qcqi_%E6%BC%94%E7%BF%92_2_37/</link>
+			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210414140612-qcqi_%E6%BC%94%E7%BF%92_2_37/</guid>
+			<description>\[\mathrm{tr}(AB) = \sum_i (AB)_{ii} = \sum_j\left(\sum_j A_{ij}B_{ji}\right) = \sum_j\left(\sum_i A_{ji}B_{ij}\right) = \sum_j (BA)_{jj} = \mathrm{tr}(BA)\]</description>
+		</item>
+      	
+		<item>
 			<title>トレース</title>
 			<link>https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/</link>
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/</guid>
 			<description>演算子の関数の 1 つで、行列の対角要素を合計する関数。 \[\mathrm{tr}(A) \equiv \sum_i A_{ii}\]</description>
+		</item>
+      	
+		<item>
+			<title>トレースの巡回不変性</title>
+			<link>https://yasuhito.github.io/post/20210414141407-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A1%E5%9B%9E%E4%B8%8D%E5%A4%89%E6%80%A7/</link>
+			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210414141407-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A1%E5%9B%9E%E4%B8%8D%E5%A4%89%E6%80%A7/</guid>
+			<description>\(A\) と \(B\) が 2 つの演算子ならば \[\mathrm{tr}(AB) = \mathrm{tr}(BA)\] が成り立ち、これをトレースの巡回不変性と呼ぶ。証明は QCQI/演習 2.37 を参照。</description>
 		</item>
       	
 		<item>
@@ -73,22 +89,6 @@
 			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210413114431-qcqi_%E6%BC%94%E7%BF%92_2_26/</guid>
 			<description>テンソル積で計算: \begin{eqnarray*} |\psi\rangle^{\otimes 2} &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\ &amp;amp;=&amp;amp; \frac{1}{2}(|0\rangle|0\rangle + |0\rangle|1\rangle + |1\rangle|0\rangle + |1\rangle|1\rangle) \\\ \\\ |\psi\rangle^{\otimes 3} &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \otimes \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\ &amp;amp;=&amp;amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle + |0\rangle|1\rangle + |1\rangle|0\rangle + |1\rangle|1\rangle)(|0\rangle + |1\rangle) \\\ &amp;amp;=&amp;amp; \frac{1}{2\sqrt{2}}(|0\rangle|0\rangle|0\rangle + |0\rangle|0\rangle|1\rangle + |0\rangle|1\rangle|0\rangle + |0\rangle|1\rangle|1\rangle + |1\rangle|0\rangle|0\rangle + |1\rangle|0\rangle|1\rangle +</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.27</title>
-			<link>https://yasuhito.github.io/post/20210413134407-qcqi_%E6%BC%94%E7%BF%92_2_27/</link>
-			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210413134407-qcqi_%E6%BC%94%E7%BF%92_2_27/</guid>
-			<description>\begin{equation*} X \otimes Z = \begin{bmatrix} 0 &amp;amp; 1 \newline 1 &amp;amp; 0 \end{bmatrix} \otimes \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; -1 \end{bmatrix} = \begin{bmatrix} 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 0 \newline 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; -1 \newline 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \newline 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 \end{bmatrix} \end{equation*} \begin{equation*} I \otimes X = \begin{bmatrix} 1 &amp;amp; 0 \newline 0</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.28</title>
-			<link>https://yasuhito.github.io/post/20210413140004-qcqi_%E6%BC%94%E7%BF%92_2_28/</link>
-			<pubDate>Tue, 13 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210413140004-qcqi_%E6%BC%94%E7%BF%92_2_28/</guid>
-			<description>\(A\) は \(m\) 行 \(n\) 列の行列、\(B\) は任意の大きさの行列とすると、 転置の分配則 \begin{equation*} (A \otimes B)^T = \begin{bmatrix} A_{11}B &amp;amp; A_{12}B &amp;amp; \ldots &amp;amp; A_{1n}B \newline A_{21}B &amp;amp; A_{22}B &amp;amp; \ldots &amp;amp; A_{2n}B \newline \vdots &amp;amp; \vdots &amp;amp; \vdots &amp;amp; \vdots \newline A_{m1}B &amp;amp; A_{m2}B &amp;amp;</description>
 		</item>
       	
 	</channel>
