@@ -52,11 +52,21 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210414142737-qcqi_%E6%BC%94%E7%BF%92_2_38/",
+                "title": "QCQI/演習 2.38",
+                "section": "post",
+                "date" : "2021.04.14",
+                "body": "\\[\\mathrm{tr}(A + B) = \\sum_i (A + B)_{ii} = \\sum_i (A_{ii} + B_{ii}) = \\sum_i A_{ii} + \\sum_i B_{ii} = \\mathrm{tr}(A) + \\mathrm{tr}(B)\\]\n\\[\\mathrm{tr}(zA) = \\sum_i zA_{ii} = z\\sum_i A_{ii} = z\\mathrm{tr}(A)\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/",
                 "title": "トレース",
                 "section": "post",
                 "date" : "2021.04.14",
-                "body": "演算子の関数の 1 つで、行列の対角要素を合計する関数。\n\\[\\mathrm{tr}(A) \\equiv \\sum_i A_{ii}\\]\n"
+                "body": "演算子の関数の 1 つで、行列の対角要素を合計する関数。\n\\[\\mathrm{tr}(A) \\equiv \\sum_i A_{ii}\\]\nトレースの性質  トレースの巡回不変性 トレースの線形性  "
             }
         
     ,
@@ -67,6 +77,16 @@
                 "section": "post",
                 "date" : "2021.04.14",
                 "body": "\\(A\\) と \\(B\\) が 2 つの演算子ならば\n\\[\\mathrm{tr}(AB) = \\mathrm{tr}(BA)\\]\nが成り立ち、これをトレースの巡回不変性と呼ぶ。証明は QCQI/演習 2.37 を参照。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210414142300-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E7%B7%9A%E5%BD%A2%E6%80%A7/",
+                "title": "トレースの線形性",
+                "section": "post",
+                "date" : "2021.04.14",
+                "body": "\\(A\\) と \\(B\\) が演算子、\\(z\\) が任意の複素数ならば、トレースは線形。すなわち、\n\\[\\mathrm{tr}(A + B) = \\mathrm{tr}(A) + \\mathrm{tr}(B)\\]\n\\[\\mathrm{tr}(zA) = z\\mathrm{tr}(A)\\]\n証明は QCQI/演習 2.38 を参照。\n"
             }
         
     ,
@@ -956,7 +976,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33 QCQI/演習 2.34 QCQI/演習 2.35  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
+                "body": "  演習の解答  QCQI/演習 2.1 QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4 QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10 QCQI/演習 2.11 QCQI/演習 2.12 QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25 QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33 QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38  先人達の解答  goropikari/SolutionQCQINielsenChuang Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang QCQI Exercise Solutions (Index)  "
             }
         
     ,
