@@ -1076,7 +1076,7 @@
                 "title": "行列は演算子とみなせる",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "要素 \\(A_{ij}\\) を持つ \\(m \\times n\\) の複素行列 \\(A\\) は、行列 \\(A\\) と \\(\\mathbb{C}^n\\) とのベクトルとの行列積により、ベクトル空間 \\(\\mathbb{C}^n\\) からベクトル空間 \\(\\mathbb{C}^m\\) に移すので、行列 \\(A\\) は演算子である。\n正確には行列 \\(A\\) が演算子であるということは\n\\[A(\\sum_i a_i|v_i\\rangle) = \\sum_i a_i A(|v_i\\rangle)\\]\nが行列 \\(A\\) と列ベクトルの行列積で成り立つことを意味し、行列の性質からこれは明らかに正しい。\n"
+                "body": "要素 \\(A_{ij}\\) を持つ \\(m \\times n\\) の複素行列 \\(A\\) は、行列 \\(A\\) と \\(\\mathcal{C}^n\\) とのベクトルとの行列積により、ベクトル空間 \\(\\mathcal{C}^n\\) からベクトル空間 \\(\\mathcal{C}^m\\) に移すので、行列 \\(A\\) は演算子である。\n正確には行列 \\(A\\) が演算子であるということは\n\\[A\\left(\\sum_i a_i|v_i\\rangle\\right) = \\sum_i a_i A(|v_i\\rangle)\\]\nが行列 \\(A\\) と列ベクトルの行列積で成り立つことを意味し、行列の性質からこれは明らかに正しい。\n"
             }
         
     ,
@@ -1106,7 +1106,7 @@
                 "title": "スパン集合",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "ベクトル空間のスパン集合とは、その空間の任意のベクトル \\(|v\\rangle\\) が線形結合 \\(|v\\rangle = \\sum_{i}a_i|v_i\\rangle\\) で表せるようなベクトル集合 \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) のこと。\nたとえば、ベクトル空間 \\(\\mathbb{C}^2\\) のスパン集合は、\n\\begin{equation} |v_1\\rangle \\equiv \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix};~ |v_2\\rangle \\equiv \\begin{bmatrix} 0 \\newline 1 \\end{bmatrix} \\end{equation}\nという集合になる。なぜなら \\(\\mathbb{C}^2\\) の任意のベクトル\n\\begin{equation} |v\\rangle = \\begin{bmatrix} a_1 \\newline a_2 \\end{bmatrix} \\end{equation}\nはベクトル \\(|v_1\\rangle\\) と \\(|v_1\\rangle\\) の線形結合 \\(|v\\rangle = a_1|v_1\\rangle + a_2|v_2\\rangle\\) で書けるから。\n"
+                "body": "ベクトル空間のスパン集合とは、その空間の任意のベクトル \\(|v\\rangle\\) が線形結合 \\(|v\\rangle = \\sum_{i}a_i|v_i\\rangle\\) で表せるようなベクトル集合 \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) のこと。\nたとえば、ベクトル空間 \\(\\mathcal{C}^2\\) のスパン集合は、\n\\begin{equation*} |v_1\\rangle \\equiv \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix};~ |v_2\\rangle \\equiv \\begin{bmatrix} 0 \\newline 1 \\end{bmatrix} \\end{equation*}\nという集合になる。なぜなら \\(\\mathcal{C}^2\\) の任意のベクトル\n\\begin{equation*} |v\\rangle = \\begin{bmatrix} a_1 \\newline a_2 \\end{bmatrix} \\end{equation*}\nはベクトル \\(|v_1\\rangle\\) と \\(|v_1\\rangle\\) の線形結合 \\(|v\\rangle = a_1|v_1\\rangle + a_2|v_2\\rangle\\) で書けるから。\n"
             }
         
     ,
@@ -1196,7 +1196,7 @@
                 "title": "和演算",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "2 つのベクトルの組を 1 つのベクトルに変換する演算。\nベクトル空間 \\(\\mathbb{C}^n\\) ではベクトルの和演算は次式で定義する。\n\\begin{equation} \\begin{bmatrix} z_1 \\\\\\\n\\vdots \\\\\\\nz_n \\end{bmatrix} + \\begin{bmatrix} z^{\\prime}_1 \\\\\\\n\\vdots \\\\\\\nz^{\\prime}_n \\end{bmatrix} \\equiv \\begin{bmatrix} z_1 + z^{\\prime}_1 \\\\\\\n\\vdots \\\\\\\nz_n + z^{\\prime}_n \\end{bmatrix} \\end{equation}\n"
+                "body": "2 つのベクトルの組を 1 つのベクトルに変換する演算。\nベクトル空間 \\(\\mathcal{C}^n\\) ではベクトルの和演算は次式で定義する。\n\\begin{equation*} \\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} + \\begin{bmatrix} z^{\\prime}_1 \\newline \\vdots \\newline z^{\\prime}_n \\end{bmatrix} \\equiv \\begin{bmatrix} z_1 + z^{\\prime}_1 \\newline \\vdots \\newline z_n + z^{\\prime}_n \\end{bmatrix} \\end{equation*}\n"
             }
         
     ,
@@ -1776,7 +1776,7 @@
                 "title": "状態ベクトル",
                 "section": "post",
                 "date" : "2021.02.24",
-                "body": "量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \\(|\\psi\\rangle\\) は、ディラック記法を使って基底状態 \\(|0\\rangle\\) と \\(|1\\rangle\\) の重ね合わせ (線形結合) として次の式で表すことができる。\n\\[|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\]\nここで係数 \\(\\alpha, \\beta\\) を確率振幅と呼び \\(\\alpha, \\beta \\in \\mathbb{C}\\) である。また、正規化条件として \\(|\\alpha|^2 + |\\beta|^2 = 1\\) に従わなければならない。\n"
+                "body": "量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \\(|\\psi\\rangle\\) は、ディラック記法を使って基底状態 \\(|0\\rangle\\) と \\(|1\\rangle\\) の重ね合わせ (線形結合) として次の式で表すことができる。\n\\[|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\]\nここで係数 \\(\\alpha, \\beta\\) を確率振幅と呼び \\(\\alpha, \\beta \\in \\mathcal{C}\\) である。また、正規化条件として \\(|\\alpha|^2 + |\\beta|^2 = 1\\) に従わなければならない。\n"
             }
         
     ,
