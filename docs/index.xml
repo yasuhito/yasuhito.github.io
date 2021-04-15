@@ -14,6 +14,14 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>QCQI/演習 2.39</title>
+			<link>https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/</link>
+			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/</guid>
+			<description>(1) 内積は第 2 引数に関して線形であることを示す。 \begin{eqnarray*} \left(A, \sum_i\lambda_i B_i\right) &amp;amp;=&amp;amp; \mathrm{tr}\left(A^{\dagger}\left(\sum_i\lambda_i B_i\right)\right) \\\ &amp;amp;=&amp;amp; \mathrm{tr}\left(\sum_i \lambda_i A^{\dagger} B_i\right) \\\ &amp;amp;=&amp;amp; \sum_i \lambda_i \mathrm{tr}(A^{\dagger} B_i) \\\ &amp;amp;=&amp;amp; \sum_i \lambda_i (A, B_i) \end{eqnarray*} 内積の対称性を示す。 \begin{eqnarray*} (B, A) &amp;amp;=&amp;amp; \mathrm{tr}(B^{\dagger}, A) \\\ &amp;amp;=&amp;amp; \mathrm{tr}((A^{\dagger}B)^{\dagger}) \\\ &amp;amp;=&amp;amp;</description>
+		</item>
+      	
+		<item>
 			<title>ストラング: 線形代数イントロダクション</title>
 			<link>https://yasuhito.github.io/post/20210415083133-%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</link>
 			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210414142737-qcqi_%E6%BC%94%E7%BF%92_2_38/</guid>
 			<description>\[\mathrm{tr}(A + B) = \sum_i (A + B)_{ii} = \sum_i (A_{ii} + B_{ii}) = \sum_i A_{ii} + \sum_i B_{ii} = \mathrm{tr}(A) + \mathrm{tr}(B)\] \[\mathrm{tr}(zA) = \sum_i zA_{ii} = z\sum_i A_{ii} = z\mathrm{tr}(A)\]</description>
-		</item>
-      	
-		<item>
-			<title>トレース</title>
-			<link>https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/</guid>
-			<description>演算子の関数の 1 つで、行列の対角要素を合計する関数。 \[\mathrm{tr}(A) \equiv \sum_i A_{ii}\] トレースの性質 トレースの巡回不変性 トレースの線形性</description>
 		</item>
       	
 	</channel>

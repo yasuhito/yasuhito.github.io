@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/",
+                "title": "QCQI/演習 2.39",
+                "section": "post",
+                "date" : "2021.04.15",
+                "body": "(1) 内積は第 2 引数に関して線形であることを示す。\n\\begin{eqnarray*} \\left(A, \\sum_i\\lambda_i B_i\\right) \u0026amp;=\u0026amp; \\mathrm{tr}\\left(A^{\\dagger}\\left(\\sum_i\\lambda_i B_i\\right)\\right) \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{tr}\\left(\\sum_i \\lambda_i A^{\\dagger} B_i\\right) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i \\mathrm{tr}(A^{\\dagger} B_i) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\lambda_i (A, B_i) \\end{eqnarray*}\n内積の対称性を示す。\n\\begin{eqnarray*} (B, A) \u0026amp;=\u0026amp; \\mathrm{tr}(B^{\\dagger}, A) \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{tr}((A^{\\dagger}B)^{\\dagger}) \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{tr}(A^{\\dagger}B)^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; (A, B)^{\\ast} \\end{eqnarray*}\n内積の正値性を示す。\n\\begin{eqnarray*} (A, A) \u0026amp;=\u0026amp; \\mathrm{tr}(A^{\\dagger}A) \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} A^{\\ast}_{ji} A_{ji} \\\\\\\n\u0026amp;\\geq\u0026amp; 0 \\end{eqnarray*}\n等号が成り立つのは任意の \\(i, j\\) に関して \\(A_{ji} = 0\\) すなわち \\(A =0\\) のときのみ。\n(2) \\(V\\) の要素の演算子の行列表現は \\(d \\times d\\) の正方行列で表すことができる。線形独立な \\(d \\times d\\) 行列は要素の数つまり \\(d \\times d = d^2\\) 個あるので、\\(L_V\\) は \\(d^2\\) 次元。\n(3) "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210415083133-%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/",
                 "title": "ストラング: 線形代数イントロダクション",
                 "section": "post",
@@ -1126,7 +1136,7 @@
                 "title": "次元",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "ベクトル空間 \\(V\\) の基底の要素の数を次元と呼び、\\(dimV\\) と表す。\n"
+                "body": "ベクトル空間 \\(V\\) の基底の要素の数を次元と呼び、\\(\\mathrm{dim}V\\) と表す。\n"
             }
         
     ,
