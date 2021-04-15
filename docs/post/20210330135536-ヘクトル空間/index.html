@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ベクトル空間"/>
-<meta name="twitter:description" content="定義 集合 \(V\) に和演算とスカラー倍演算があり、\(V\) の任意の元 \(|\psi\rangle\) と \(|\phi\rangle\) が次の 8 つの性質を満たすとき \(V\) をベクトル空間 (または、線形空間) と呼ぶ。"/>
+<meta name="twitter:description" content="和とスカラー倍が定義されている集合で、線形空間とも呼ぶ。ベクトル空間の要素をベクトルと呼ぶ。たとえば次はどれもベクトル空間。 \(\mathcal{R}\) 実数全体 \(\mathcal{R}\) から"/>
 
 
 
@@ -116,20 +116,38 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <h2 id="定義">定義</h2>
-<p>集合 \(V\) に<a href="/post/20210330140453-%E5%92%8C%E6%BC%94%E7%AE%97/">和演算</a>と<a href="/post/20210330141705-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E5%80%8D%E6%BC%94%E7%AE%97/">スカラー倍演算</a>があり、\(V\) の任意の元 \(|\psi\rangle\) と \(|\phi\rangle\) が次の 8 つの性質を満たすとき \(V\) をベクトル空間 (または、線形空間) と呼ぶ。</p>
-<h3 id="和の性質">和の性質</h3>
+  <p><a href="/post/20210330140453-%E5%92%8C%E6%BC%94%E7%AE%97/">和</a>と<a href="/post/20210330141705-%E3%82%B9%E3%82%AB%E3%83%A9%E3%83%BC%E5%80%8D%E6%BC%94%E7%AE%97/">スカラー倍</a>が定義されている集合で、<a href="/post/20210415082141-%E7%B7%9A%E5%BD%A2%E7%A9%BA%E9%96%93/">線形空間</a>とも呼ぶ。ベクトル空間の要素を<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a>と呼ぶ。たとえば次はどれもベクトル空間。</p>
+<dl>
+<dt>\(\mathcal{R}\)</dt>
+<dd>実数全体 \(\mathcal{R}\) からなるベクトル空間</dd>
+<dt>\(\mathcal{C}\)</dt>
+<dd>複素数全体 \(\mathcal{C}\) からなるベクトル空間</dd>
+<dt>\(\mathcal{R}^n\)</dt>
+<dd>\(n\) 次元実数ベクトル全体 \(\mathcal{R}^n\) からなるベクトル空間</dd>
+<dt>\(\mathcal{C}^n\)</dt>
+<dd>\(n\) 次元複素ベクトル全体 \(\mathcal{C}^n\) からなるベクトル空間</dd>
+<dt>\(\mathcal{M}\)</dt>
+<dd>\(2\) 次の<a href="/post/20210317105154-%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97/">正方行列</a>全体からなるベクトル空間</dd>
+<dt>\(\mathcal{F}\)</dt>
+<dd>実数関数 \(f(x)\) のすべてからなるベクトル空間</dd>
+<dt>\(\mathcal{Z}\)</dt>
+<dd><a href="/post/20210330142839-%E3%82%BB%E3%83%AD%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ゼロベクトル</a>からのみなるベクトル空間</dd>
+</dl>
+<p>このようにベクトル空間にはいろいろあって、空間によってはベクトルが行列であったり関数であったりすることに注意。</p>
+<p>厳密には、ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある (ただ、普通は問題にはならない)。</p>
+<p>集合 \(V\) の任意の元 \(|\psi\rangle\) と \(|\phi\rangle\) について、</p>
+<h2 id="和の性質">和の性質</h2>
 <dl>
 <dt>交換則</dt>
 <dd>\(|\psi\rangle + |\phi\rangle = |\phi\rangle + |\psi\rangle\)</dd>
 <dt>結合則</dt>
 <dd>\(|\psi\rangle + (|\phi\rangle + |\xi\rangle) = (|\psi\rangle + |\phi\rangle) + |\xi\rangle\)</dd>
 <dt>零元の存在</dt>
-<dd>\(\exists1\ |\theta\rangle \in V\ s.t.\ \forall|\psi\rangle \in V,\ |\psi\rangle + |\theta\rangle = |\psi\rangle\)</dd>
+<dd>\(\exists1\ |\theta\rangle \in V\ \mathrm{s.t.}\ \forall|\psi\rangle \in V,\ |\psi\rangle + |\theta\rangle = |\psi\rangle\)</dd>
 <dt>逆元の存在</dt>
-<dd>\(\forall|\psi\rangle \in V,\ \exists1\ |\xi\rangle \in V\ s.t.\ |\psi\rangle + |\xi\rangle = |\theta\rangle\)</dd>
+<dd>\(\forall|\psi\rangle \in V,\ \exists1\ |\xi\rangle \in V\ \mathrm{s.t.}\ |\psi\rangle + |\xi\rangle = |\theta\rangle\)</dd>
 </dl>
-<h3 id="スカラー倍の性質">スカラー倍の性質</h3>
+<h2 id="スカラー倍の性質">スカラー倍の性質</h2>
 <dl>
 <dt>単位元の存在</dt>
 <dd>\(1\cdot|\psi\rangle = |\psi\rangle\)</dd>
@@ -140,17 +158,12 @@
 <dt>分配則 2</dt>
 <dd>\((a + b)\cdot|\psi\rangle = a\cdot|\psi\rangle + b\cdot|\psi\rangle\)</dd>
 </dl>
-<h2 id="具体例">具体例</h2>
+<h2 id="参考文献">参考文献</h2>
 <ul>
-<li>実数全体 \(\mathbb{R}\) からなるベクトル空間</li>
-<li>複素数全体 \(\mathbb{C}\) からなるベクトル空間</li>
-<li>\(n\) 次元実数ベクトル全体 \(\mathbb{R}^n\) からなるベクトル空間</li>
-<li>\(n\) 次元複素ベクトル全体 \(\mathbb{C}^n\) からなるベクトル空間</li>
-<li>2 次の<a href="/post/20210317105154-%E6%AD%A3%E6%96%B9%E8%A1%8C%E5%88%97/">正方行列</a>全体からなるベクトル空間</li>
-<li>実数関数 \(f(x)\) のすべてからなるベクトル空間</li>
-<li>ゼロベクトルからのみなるベクトル空間</li>
+<li><a href="/post/20210415082319-%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC/">線形代数セミナー</a></li>
+<li><a href="/post/20210415083133-%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/">ストラング: 線形代数イントロダクション</a></li>
+<li><a href="/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/">量子情報科学入門</a></li>
 </ul>
-<p>このようにさまざまなものがベクトル空間を作れることに注意。</p>
 
 
 
@@ -173,6 +186,14 @@
   
     
   
+    
+  
+    
+  
+    
+  
+    
+      
     
   
     
@@ -597,6 +618,8 @@
         <div class="backlinks">
           <ul>
            
+              <li><a href="/post/20210415082141-%E7%B7%9A%E5%BD%A2%E7%A9%BA%E9%96%93/">線形空間</a></li>
+              
               <li><a href="/post/20210413093619-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E5%86%85%E7%A9%8D/">テンソル積上の内積</a></li>
               
               <li><a href="/post/20210413080719-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D%E4%B8%8A%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">テンソル積上の演算子</a></li>

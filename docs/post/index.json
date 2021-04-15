@@ -2,6 +2,36 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210415083133-%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/",
+                "title": "ストラング: 線形代数イントロダクション",
+                "section": "post",
+                "date" : "2021.04.15",
+                "body": "   近代科学社のページ  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210415082319-%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC/",
+                "title": "線形代数セミナー",
+                "section": "post",
+                "date" : "2021.04.15",
+                "body": "   共立出版のページ 正誤表  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210415082141-%E7%B7%9A%E5%BD%A2%E7%A9%BA%E9%96%93/",
+                "title": "線形空間",
+                "section": "post",
+                "date" : "2021.04.15",
+                "body": "ベクトル空間の別名。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210413161116-qcqi_%E6%BC%94%E7%BF%92_2_33/",
                 "title": "QCQI/演習 2.33",
                 "section": "post",
@@ -666,7 +696,7 @@
                 "title": "QCQI/演習 2.9",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "演算子の外積表現とパウリ行列を使う。\n\\(I\\) の外積表現 \\begin{eqnarray} I \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|I|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + 1\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| + |1 \\rangle\\langle 1| \\end{eqnarray}\n\\(X\\) の外積表現 \\begin{eqnarray} X \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|X|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + 1\\cdot|0 \\rangle\\langle 1| + 1\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 1| + |1 \\rangle\\langle 0| \\end{eqnarray}\n\\(Y\\) の外積表現 \\begin{eqnarray} Y \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Y|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + (-i)\\cdot|0 \\rangle\\langle 1| + i\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; -i|0 \\rangle\\langle 1| + i|1 \\rangle\\langle 0| \\end{eqnarray}\n\\(Z\\) の外積表現 \\begin{eqnarray} Z \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Z|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + (-1)\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| - |1 \\rangle\\langle 1| \\end{eqnarray}\n"
+                "body": "演算子の外積表現とパウリ行列を使う。\n\\(I\\) の外積表現 \\begin{eqnarray*} I \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|I|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + 1\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| + |1 \\rangle\\langle 1| \\end{eqnarray*}\n\\(X\\) の外積表現 \\begin{eqnarray*} X \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|X|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + 1\\cdot|0 \\rangle\\langle 1| + 1\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 1| + |1 \\rangle\\langle 0| \\end{eqnarray*}\n\\(Y\\) の外積表現 \\begin{eqnarray*} Y \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Y|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + (-i)\\cdot|0 \\rangle\\langle 1| + i\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; -i|0 \\rangle\\langle 1| + i|1 \\rangle\\langle 0| \\end{eqnarray*}\n\\(Z\\) の外積表現 \\begin{eqnarray*} Z \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Z|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + (-1)\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| - |1 \\rangle\\langle 1| \\end{eqnarray*}\n"
             }
         
     ,
@@ -1156,7 +1186,7 @@
                 "title": "ベクトル空間",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "定義 集合 \\(V\\) に和演算とスカラー倍演算があり、\\(V\\) の任意の元 \\(|\\psi\\rangle\\) と \\(|\\phi\\rangle\\) が次の 8 つの性質を満たすとき \\(V\\) をベクトル空間 (または、線形空間) と呼ぶ。\n和の性質  交換則 \\(|\\psi\\rangle + |\\phi\\rangle = |\\phi\\rangle + |\\psi\\rangle\\) 結合則 \\(|\\psi\\rangle + (|\\phi\\rangle + |\\xi\\rangle) = (|\\psi\\rangle + |\\phi\\rangle) + |\\xi\\rangle\\) 零元の存在 \\(\\exists1\\ |\\theta\\rangle \\in V\\ s.t.\\ \\forall|\\psi\\rangle \\in V,\\ |\\psi\\rangle + |\\theta\\rangle = |\\psi\\rangle\\) 逆元の存在 \\(\\forall|\\psi\\rangle \\in V,\\ \\exists1\\ |\\xi\\rangle \\in V\\ s.t.\\ |\\psi\\rangle + |\\xi\\rangle = |\\theta\\rangle\\)  スカラー倍の性質  単位元の存在 \\(1\\cdot|\\psi\\rangle = |\\psi\\rangle\\) 結合則 \\(a\\cdot(b\\cdot |\\psi\\rangle) = (ab)\\cdot|\\psi\\rangle\\) 分配則 1 \\(a\\cdot(|\\psi\\rangle + |\\phi\\rangle) = a\\cdot|\\psi\\rangle + a\\cdot|\\phi\\rangle\\) 分配則 2 \\((a + b)\\cdot|\\psi\\rangle = a\\cdot|\\psi\\rangle + b\\cdot|\\psi\\rangle\\)  具体例  実数全体 \\(\\mathbb{R}\\) からなるベクトル空間 複素数全体 \\(\\mathbb{C}\\) からなるベクトル空間 \\(n\\) 次元実数ベクトル全体 \\(\\mathbb{R}^n\\) からなるベクトル空間 \\(n\\) 次元複素ベクトル全体 \\(\\mathbb{C}^n\\) からなるベクトル空間 2 次の正方行列全体からなるベクトル空間 実数関数 \\(f(x)\\) のすべてからなるベクトル空間 ゼロベクトルからのみなるベクトル空間  このようにさまざまなものがベクトル空間を作れることに注意。\n"
+                "body": "和とスカラー倍が定義されている集合で、線形空間とも呼ぶ。ベクトル空間の要素をベクトルと呼ぶ。たとえば次はどれもベクトル空間。\n \\(\\mathcal{R}\\) 実数全体 \\(\\mathcal{R}\\) からなるベクトル空間 \\(\\mathcal{C}\\) 複素数全体 \\(\\mathcal{C}\\) からなるベクトル空間 \\(\\mathcal{R}^n\\) \\(n\\) 次元実数ベクトル全体 \\(\\mathcal{R}^n\\) からなるベクトル空間 \\(\\mathcal{C}^n\\) \\(n\\) 次元複素ベクトル全体 \\(\\mathcal{C}^n\\) からなるベクトル空間 \\(\\mathcal{M}\\) \\(2\\) 次の正方行列全体からなるベクトル空間 \\(\\mathcal{F}\\) 実数関数 \\(f(x)\\) のすべてからなるベクトル空間 \\(\\mathcal{Z}\\) ゼロベクトルからのみなるベクトル空間  このようにベクトル空間にはいろいろあって、空間によってはベクトルが行列であったり関数であったりすることに注意。\n厳密には、ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある (ただ、普通は問題にはならない)。\n集合 \\(V\\) の任意の元 \\(|\\psi\\rangle\\) と \\(|\\phi\\rangle\\) について、\n和の性質  交換則 \\(|\\psi\\rangle + |\\phi\\rangle = |\\phi\\rangle + |\\psi\\rangle\\) 結合則 \\(|\\psi\\rangle + (|\\phi\\rangle + |\\xi\\rangle) = (|\\psi\\rangle + |\\phi\\rangle) + |\\xi\\rangle\\) 零元の存在 \\(\\exists1\\ |\\theta\\rangle \\in V\\ \\mathrm{s.t.}\\ \\forall|\\psi\\rangle \\in V,\\ |\\psi\\rangle + |\\theta\\rangle = |\\psi\\rangle\\) 逆元の存在 \\(\\forall|\\psi\\rangle \\in V,\\ \\exists1\\ |\\xi\\rangle \\in V\\ \\mathrm{s.t.}\\ |\\psi\\rangle + |\\xi\\rangle = |\\theta\\rangle\\)  スカラー倍の性質  単位元の存在 \\(1\\cdot|\\psi\\rangle = |\\psi\\rangle\\) 結合則 \\(a\\cdot(b\\cdot |\\psi\\rangle) = (ab)\\cdot|\\psi\\rangle\\) 分配則 1 \\(a\\cdot(|\\psi\\rangle + |\\phi\\rangle) = a\\cdot|\\psi\\rangle + a\\cdot|\\phi\\rangle\\) 分配則 2 \\((a + b)\\cdot|\\psi\\rangle = a\\cdot|\\psi\\rangle + b\\cdot|\\psi\\rangle\\)  参考文献  線形代数セミナー ストラング: 線形代数イントロダクション 量子情報科学入門  "
             }
         
     ,

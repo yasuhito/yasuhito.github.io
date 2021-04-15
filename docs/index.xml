@@ -9,10 +9,34 @@
 		
 		<managingEditor>Page(&#34;Notes&#34;) (Yasuhito Takamiya)</managingEditor>
     	
-  		<lastBuildDate>Wed, 14 Apr 2021 00:00:00 +0900</lastBuildDate>
+  		<lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0900</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>ストラング: 線形代数イントロダクション</title>
+			<link>https://yasuhito.github.io/post/20210415083133-%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</link>
+			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210415083133-%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%AF_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3/</guid>
+			<description>近代科学社のページ</description>
+		</item>
+      	
+		<item>
+			<title>線形代数セミナー</title>
+			<link>https://yasuhito.github.io/post/20210415082319-%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC/</link>
+			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210415082319-%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC/</guid>
+			<description>共立出版のページ 正誤表</description>
+		</item>
+      	
+		<item>
+			<title>線形空間</title>
+			<link>https://yasuhito.github.io/post/20210415082141-%E7%B7%9A%E5%BD%A2%E7%A9%BA%E9%96%93/</link>
+			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210415082141-%E7%B7%9A%E5%BD%A2%E7%A9%BA%E9%96%93/</guid>
+			<description>ベクトル空間の別名。</description>
+		</item>
+      	
 		<item>
 			<title>QCQI/演習 2.33</title>
 			<link>https://yasuhito.github.io/post/20210413161116-qcqi_%E6%BC%94%E7%BF%92_2_33/</link>
@@ -67,30 +91,6 @@
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/</guid>
 			<description>演算子の関数の 1 つで、行列の対角要素を合計する関数。 \[\mathrm{tr}(A) \equiv \sum_i A_{ii}\] トレースの性質 トレースの巡回不変性 トレースの線形性</description>
-		</item>
-      	
-		<item>
-			<title>トレースの巡回不変性</title>
-			<link>https://yasuhito.github.io/post/20210414141407-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A1%E5%9B%9E%E4%B8%8D%E5%A4%89%E6%80%A7/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414141407-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A1%E5%9B%9E%E4%B8%8D%E5%A4%89%E6%80%A7/</guid>
-			<description>\(A\) と \(B\) が 2 つの演算子ならば \[\mathrm{tr}(AB) = \mathrm{tr}(BA)\] が成り立ち、これをトレースの巡回不変性と呼ぶ。証明は QCQI/演習 2.37 を参照。</description>
-		</item>
-      	
-		<item>
-			<title>トレースの線形性</title>
-			<link>https://yasuhito.github.io/post/20210414142300-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E7%B7%9A%E5%BD%A2%E6%80%A7/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414142300-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E7%B7%9A%E5%BD%A2%E6%80%A7/</guid>
-			<description>\(A\) と \(B\) が演算子、\(z\) が任意の複素数ならば、トレースは線形。すなわち、 \[\mathrm{tr}(A + B) = \mathrm{tr}(A) + \mathrm{tr}(B)\] \[\mathrm{tr}(zA) = z\mathrm{tr}(A)\] 証明は QCQI/演習 2.38 を参照。</description>
-		</item>
-      	
-		<item>
-			<title>演算子の関数</title>
-			<link>https://yasuhito.github.io/post/20210414100121-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%96%A2%E6%95%B0/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414100121-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%96%A2%E6%95%B0/</guid>
-			<description>\(\sqrt{NOT}\) のような演算子やその行列表現の平方根、または対数、ベキ指数などを求める方法。 正規演算子 \(A\) のスペクトル分解を \(A = \sum_a a|a\rangle \langle a|\) とする。このとき \(f(A) \equiv</description>
 		</item>
       	
 	</channel>
