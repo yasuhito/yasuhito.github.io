@@ -44,6 +44,14 @@
 		</item>
       	
 		<item>
+			<title>同時対角化定理</title>
+			<link>https://yasuhito.github.io/post/20210417093847-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96%E5%AE%9A%E7%90%86/</link>
+			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210417093847-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96%E5%AE%9A%E7%90%86/</guid>
+			<description>\(A\) と \(B\) がエルミート演算子であるとする。\(A\) と \(B\) を同時に対角化できる正規直交基底が存在するとき、そのときにのみ交換子 \([A, B] = 0\) となる。この</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.39</title>
 			<link>https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/</link>
 			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210413161116-qcqi_%E6%BC%94%E7%BF%92_2_33/</guid>
 			<description>\begin{eqnarray*} H &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}[(|0\rangle + |1\rangle)\langle 0| + (|0\rangle - |1\rangle)\langle 1|] \\\ &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}(|0\rangle\langle 0| + |1\rangle\langle 0| + |0\rangle\langle 1| - |1\rangle\langle 1|) \\\ &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}\sum_{x,y}(-1)^{x \cdot y}|x\rangle\langle y| \end{eqnarray*} よって \begin{eqnarray*} H^{\otimes n} &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}\sum_{x_1,y_1}(-1)^{x_1 \cdot y_1}|x_1\rangle\langle y_1| \otimes \frac{1}{\sqrt{2}}\sum_{x_2,y_2}(-1)^{x_2 \cdot y_2}|x_2\rangle\langle y_2| \otimes \ldots \otimes \frac{1}{\sqrt{2}}\sum_{x_n,y_n}(-1)^{x_n \cdot y_n}|x_n\rangle\langle y_n| \\\ &amp;amp;=&amp;amp; \frac{1}{\sqrt{2^n}}\sum_{x,y}(-1)^{x \cdot y}|x\rangle\langle y| \end{eqnarray*} \(H^{\otimes 2}\) を計算すると</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.34</title>
-			<link>https://yasuhito.github.io/post/20210414091444-qcqi_%E6%BC%94%E7%BF%92_2_34/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414091444-qcqi_%E6%BC%94%E7%BF%92_2_34/</guid>
-			<description>\begin{equation*} A = \begin{bmatrix} 4 &amp;amp; 3 \newline 3 &amp;amp; 4 \end{bmatrix} \end{equation*} とすると、 \begin{equation*} A^{\dagger} = \begin{bmatrix} 4 &amp;amp; 3 \newline 3 &amp;amp; 4 \end{bmatrix} = A \end{equation*} なので、\(A^{\dagger}A = AA = AA^{\dagger}\) となり \(A\) は正規である。よって \(A\)</description>
 		</item>
       	
 	</channel>
