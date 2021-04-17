@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>QCQI/演習 2.20</title>
+<title>QCQI/演習 2.42</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="QCQI/演習 2.20"/>
-<meta name="twitter:description" content="\(A^{\prime}_{ij} = \langle v_i|A|v_j\rangle\) について、\(|w_i\rangle\) に対する完全性関係を使うと、 \[\begin{align} A^{\prime}_{ij} = \langle v_i|A|v_j\rangle = \sum_{k,l} \langle v_i|w_k\rangle\langle w_k|A|w_l\rangle\langle w_l|v_j\rangle \end{align}\] ここで、\(U = \sum_i |w_i\rangle\langle v_i|\) とおくと、\(|w"/>
+<meta name="twitter:title" content="QCQI/演習 2.42"/>
+<meta name="twitter:description" content="\begin{eqnarray*} \frac{[A, B] &#43; \{A, B\}}{2} &amp;=&amp; \frac{AB - BA &#43; AB &#43; BA}{2} \\\ &amp;=&amp; \frac{2AB}{2} \\\ &amp;=&amp; AB \end{eqnarray*} 関連ノート 交換子 反交換子"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              QCQI/演習 2.20
+              QCQI/演習 2.42
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 9, 2021
+  >&nbsp;Apr 17, 2021
   
 </span>
 
@@ -116,19 +116,16 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>\(A^{\prime}_{ij} = \langle v_i|A|v_j\rangle\) について、\(|w_i\rangle\) に対する<a href="/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/">完全性関係</a>を使うと、</p>
-<p>\[\begin{align}
-A^{\prime}_{ij} = \langle v_i|A|v_j\rangle = \sum_{k,l} \langle v_i|w_k\rangle\langle w_k|A|w_l\rangle\langle w_l|v_j\rangle
-\end{align}\]</p>
-<p>ここで、\(U = \sum_i |w_i\rangle\langle v_i|\) とおくと、\(|w_i\rangle = U|v_i\rangle\) から、</p>
-<p>\[\begin{align}
-\phantom{A^{\prime}_{ij} = \langle v_i|A|v_j\rangle} &amp;= \sum_{k,l} \langle v_i|U|v_k\rangle\langle w_k|A|w_l\rangle\langle v_l|U^{\dagger}|v_j\rangle \newline
-\end{align}\]</p>
-<p>よって、基底 \(|v_i\rangle\) に関する \(U\) の行列表現を \(U^{\prime}\), \(U^{\dagger}\) の行列表現を \(U^{\dagger\prime}\) とすると、</p>
-<p>\[A_{ij}^{\prime} = \sum_{k,l} U_{i,k}^{\prime} A_{kl}^{\prime\prime} U_{lj}^{\dagger\prime}\]</p>
-<p>したがって、</p>
-<p>\[A^{\prime} = U^{\prime}A^{\prime\prime}U^{\dagger\prime}\]</p>
-<p>という関係が得られる。</p>
+  <p>\begin{eqnarray*}
+\frac{[A, B] + \{A, B\}}{2} &amp;=&amp; \frac{AB - BA + AB + BA}{2} \\\<br>
+&amp;=&amp; \frac{2AB}{2} \\\<br>
+&amp;=&amp; AB
+\end{eqnarray*}</p>
+<h2 id="関連ノート">関連ノート</h2>
+<ul>
+<li><a href="/post/20210417091256-%E4%BA%A4%E6%8F%9B%E5%AD%90/">交換子</a></li>
+<li><a href="/post/20210417092048-%E5%8F%8D%E4%BA%A4%E6%8F%9B%E5%AD%90/">反交換子</a></li>
+</ul>
 
 
 
