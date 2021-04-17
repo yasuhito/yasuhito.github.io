@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>ベクトルの手書き</title>
+			<link>https://yasuhito.github.io/post/20210417085905-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AE%E6%89%8B%E6%9B%B8%E3%81%8D/</link>
+			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210417085905-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AE%E6%89%8B%E6%9B%B8%E3%81%8D/</guid>
+			<description>元画像: ベクトルの表記方法より。</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.39</title>
 			<link>https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/</link>
 			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210414140612-qcqi_%E6%BC%94%E7%BF%92_2_37/</guid>
 			<description>\[\mathrm{tr}(AB) = \sum_i (AB)_{ii} = \sum_j\left(\sum_j A_{ij}B_{ji}\right) = \sum_j\left(\sum_i A_{ji}B_{ij}\right) = \sum_j (BA)_{jj} = \mathrm{tr}(BA)\]</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.38</title>
-			<link>https://yasuhito.github.io/post/20210414142737-qcqi_%E6%BC%94%E7%BF%92_2_38/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414142737-qcqi_%E6%BC%94%E7%BF%92_2_38/</guid>
-			<description>\[\mathrm{tr}(A + B) = \sum_i (A + B)_{ii} = \sum_i (A_{ii} + B_{ii}) = \sum_i A_{ii} + \sum_i B_{ii} = \mathrm{tr}(A) + \mathrm{tr}(B)\] \[\mathrm{tr}(zA) = \sum_i zA_{ii} = z\sum_i A_{ii} = z\mathrm{tr}(A)\]</description>
 		</item>
       	
 	</channel>
