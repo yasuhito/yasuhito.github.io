@@ -30,6 +30,14 @@
 		</item>
       	
 		<item>
+			<title>反交換子</title>
+			<link>https://yasuhito.github.io/post/20210417092048-%E5%8F%8D%E4%BA%A4%E6%8F%9B%E5%AD%90/</link>
+			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210417092048-%E5%8F%8D%E4%BA%A4%E6%8F%9B%E5%AD%90/</guid>
+			<description>2 つの演算子の反交換子は次式で定義される。 \[\{A, B\} \equiv AB + BA\] もし \(\{A, B\} = 0\) ならば \(A\) と \(B\) は反可換であるという。 関連ノート 交換子</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.39</title>
 			<link>https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/</link>
 			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210414112724-qcqi_%E6%BC%94%E7%BF%92_2_35/</guid>
 			<description>\begin{equation*} \vec{v} = \begin{bmatrix} v_1 \newline v_2 \newline v_3 \end{bmatrix} \end{equation*} とすると、定義より \begin{eqnarray*} \vec{v} \cdot \vec{\sigma} &amp;amp;=&amp;amp; v_1 X + v_2 Y + v_3 Z \newline &amp;amp;=&amp;amp; v_1 \begin{bmatrix} 0 &amp;amp; 1 \newline 1 &amp;amp; 0 \end{bmatrix} + v_2 \begin{bmatrix} 0 &amp;amp; -i \newline i &amp;amp; 0 \end{bmatrix} + v_3 \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; -1 \end{bmatrix} = \begin{bmatrix} v_3</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.36</title>
-			<link>https://yasuhito.github.io/post/20210414135730-qcqi_%E6%BC%94%E7%BF%92_2_36/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414135730-qcqi_%E6%BC%94%E7%BF%92_2_36/</guid>
-			<description>パウリ行列の \(X\), \(Y\), \(Z\) について、それぞれトレースを計算すると、 \begin{equation*} \mathrm{tr}(X) = \mathrm{tr} \begin{bmatrix} 0 &amp;amp; 1 \newline 1 &amp;amp; 0 \end{bmatrix} = 0 \end{equation*} \begin{equation*} \mathrm{tr}(Y) = \mathrm{tr} \begin{bmatrix} 0 &amp;amp; -i \newline i &amp;amp; 0 \end{bmatrix} = 0 \end{equation*} \begin{equation*} \mathrm{tr}(Z) = \mathrm{tr} \begin{bmatrix} 1 &amp;amp; 0 \newline</description>
 		</item>
       	
 	</channel>

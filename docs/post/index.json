@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210417092048-%E5%8F%8D%E4%BA%A4%E6%8F%9B%E5%AD%90/",
+                "title": "反交換子",
+                "section": "post",
+                "date" : "2021.04.17",
+                "body": "2 つの演算子の反交換子は次式で定義される。\n\\[\\{A, B\\} \\equiv AB + BA\\]\nもし \\(\\{A, B\\} = 0\\) ならば \\(A\\) と \\(B\\) は反可換であるという。\n関連ノート  交換子  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/",
                 "title": "QCQI/演習 2.39",
                 "section": "post",
