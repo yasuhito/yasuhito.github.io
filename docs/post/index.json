@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210417091256-%E4%BA%A4%E6%8F%9B%E5%AD%90/",
+                "title": "交換子",
+                "section": "post",
+                "date" : "2021.04.17",
+                "body": "2 つの演算子の交換子は次式で定義される。\n\\[[A, B] \\equiv AB - BA\\]\nもし \\([A, B] = 0\\) ならば \\(AB = BA\\) であり \\(A\\) と \\(B\\) は可換。\nつまり、交換子は「\\(A\\) と \\(B\\) がどの程度可換性からかけ離れているか」を測る指標の役割を果たす。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/",
                 "title": "QCQI/演習 2.39",
                 "section": "post",

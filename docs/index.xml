@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>交換子</title>
+			<link>https://yasuhito.github.io/post/20210417091256-%E4%BA%A4%E6%8F%9B%E5%AD%90/</link>
+			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210417091256-%E4%BA%A4%E6%8F%9B%E5%AD%90/</guid>
+			<description>2 つの演算子の交換子は次式で定義される。 \[[A, B] \equiv AB - BA\] もし \([A, B] = 0\) ならば \(AB = BA\) であり \(A\) と \(B\) は可換。 つまり、交換子は「\(A\) と \(B\) がどの程度可</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.39</title>
 			<link>https://yasuhito.github.io/post/20210415113826-qcqi_%E6%BC%94%E7%BF%92_2_39/</link>
 			<pubDate>Thu, 15 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210414135730-qcqi_%E6%BC%94%E7%BF%92_2_36/</guid>
 			<description>パウリ行列の \(X\), \(Y\), \(Z\) について、それぞれトレースを計算すると、 \begin{equation*} \mathrm{tr}(X) = \mathrm{tr} \begin{bmatrix} 0 &amp;amp; 1 \newline 1 &amp;amp; 0 \end{bmatrix} = 0 \end{equation*} \begin{equation*} \mathrm{tr}(Y) = \mathrm{tr} \begin{bmatrix} 0 &amp;amp; -i \newline i &amp;amp; 0 \end{bmatrix} = 0 \end{equation*} \begin{equation*} \mathrm{tr}(Z) = \mathrm{tr} \begin{bmatrix} 1 &amp;amp; 0 \newline</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.37</title>
-			<link>https://yasuhito.github.io/post/20210414140612-qcqi_%E6%BC%94%E7%BF%92_2_37/</link>
-			<pubDate>Wed, 14 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210414140612-qcqi_%E6%BC%94%E7%BF%92_2_37/</guid>
-			<description>\[\mathrm{tr}(AB) = \sum_i (AB)_{ii} = \sum_j\left(\sum_j A_{ij}B_{ji}\right) = \sum_j\left(\sum_i A_{ji}B_{ij}\right) = \sum_j (BA)_{jj} = \mathrm{tr}(BA)\]</description>
 		</item>
       	
 	</channel>
