@@ -46,7 +46,7 @@
                 "title": "同時対角化定理",
                 "section": "post",
                 "date" : "2021.04.17",
-                "body": "\\(A\\) と \\(B\\) がエルミート演算子であるとする。\\(A\\) と \\(B\\) を同時に対角化できる正規直交基底が存在するとき、そのときにのみ交換子 \\([A, B] = 0\\) となる。この場合に \\(A\\) と \\(B\\) は同時対角化可能であるという。\n"
+                "body": "2 つの演算子が同時対角化できるかどうかを、簡単な交換子の計算で判定できるという定理。\n\\(A\\) と \\(B\\) がエルミート演算子であるとする。\\(A\\) と \\(B\\) を同時に対角化できる正規直交基底が存在するとき、そのときにのみ \\([A, B] = 0\\) となる。この場合に \\(A\\) と \\(B\\) は同時対角化可能であるという。\nたとえばパウリ行列 \\(X\\) と \\(Y\\) の交換子を計算すると、\n\\begin{eqnarray*} [X, Y] \u0026amp;=\u0026amp; \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} - \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\newline \u0026amp;=\u0026amp; \\begin{bmatrix} i \u0026amp; 0 \\newline 0 \u0026amp; -i \\end{bmatrix} - \\begin{bmatrix} -i \u0026amp; 0 \\newline 0 \u0026amp; i \\end{bmatrix} \\newline \u0026amp;=\u0026amp; 2i \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} \\newline \u0026amp;=\u0026amp; 2iZ \\end{eqnarray*}\nよって \\(X\\) と \\(Y\\) は可換ではなく、同時対角化できない。QCQI/演習 2.11 の計算でも \\(X\\) と \\(Y\\) が共通の固有ベクトルを持たないことが分かるが、このように同時対角化定理からも同じことが予想できる。\n"
             }
         
     ,

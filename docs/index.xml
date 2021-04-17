@@ -50,7 +50,7 @@
 			<link>https://yasuhito.github.io/post/20210417093847-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96%E5%AE%9A%E7%90%86/</link>
 			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210417093847-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96%E5%AE%9A%E7%90%86/</guid>
-			<description>\(A\) と \(B\) がエルミート演算子であるとする。\(A\) と \(B\) を同時に対角化できる正規直交基底が存在するとき、そのときにのみ交換子 \([A, B] = 0\) となる。この</description>
+			<description>2 つの演算子が同時対角化できるかどうかを、簡単な交換子の計算で判定できるという定理。 \(A\) と \(B\) がエルミート演算子であるとする。\(A\) と \(B\) を同</description>
 		</item>
       	
 		<item>
