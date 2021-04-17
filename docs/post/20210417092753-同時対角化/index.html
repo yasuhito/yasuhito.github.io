@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>演算子の合成</title>
+<title>同時対角化</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="演算子の合成"/>
-<meta name="twitter:description" content="\(V\), \(W\), および \(X\) がベクトル空間であり、\(A: V \rightarrow W\) と \(B: W \rightarrow X\) が演算子であるとする。このとき \(A\) と \(B\) の合成を記号 \(BA\) で表し、\((BA)(|v\ra"/>
+<meta name="twitter:title" content="同時対角化"/>
+<meta name="twitter:description" content="エルミート演算子 \(A\), \(B\) が同時対角化できるとは、\(A\), \(B\) の固有ベクトルに共通の正規直交集合 \(|i\rangle\) を用いて \[A = \sum_i a_i |i\rangle\langle i|\] \[B = \sum_i b_i |i\rangle\langle i|\] と書けること。"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              演算子の合成
+              同時対角化
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 1, 2021
+  >&nbsp;Apr 17, 2021
   
 </span>
 
@@ -116,8 +116,10 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>\(V\), \(W\), および \(X\) が<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a>であり、\(A: V \rightarrow W\) と \(B: W \rightarrow X\) が<a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a>であるとする。このとき \(A\) と \(B\) の合成を記号 \(BA\) で表し、\((BA)(|v\rangle) \equiv B(A|v\rangle)\) で定義する。</p>
-<p><a href="/post/20210401105504-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E8%A1%8C%E5%88%97%E3%81%AF%E7%AD%89%E4%BE%A1/">演算子と行列は等価</a>なので、\((BA)(|v\rangle)\) は括弧を省略して \(BA|v\rangle\) と書ける。</p>
+  <p><a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a> \(A\), \(B\) が同時対角化できるとは、\(A\), \(B\) の<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>に共通の<a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a>集合 \(|i\rangle\) を用いて</p>
+<p>\[A = \sum_i a_i |i\rangle\langle i|\]
+\[B = \sum_i b_i |i\rangle\langle i|\]</p>
+<p>と書けること。</p>
 
 
 
