@@ -90,6 +90,11 @@ draft = false
 -   [QCQI/演習 2.39]({{< relref "20210415113826-qcqi_演習_2_39" >}})
 
 
+#### 2.1.9 交換子と反交換子 {#2-dot-1-dot-9-交換子と反交換子}
+
+-   [QCQI/演習 2.40]({{< relref "20210417101015-qcqi_演習_2_40" >}})
+
+
 ## 先人達の解答 {#先人達の解答}
 
 -   [goropikari/SolutionQCQINielsenChuang](https://github.com/goropikari/SolutionQCQINielsenChuang) by [goropikari](https://github.com/goropikari) さん
