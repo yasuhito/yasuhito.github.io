@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>正の演算子のエルミート性</title>
+<title>QCQI/演習 2.43</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="正の演算子のエルミート性"/>
-<meta name="twitter:description" content="正の演算子は必ずエルミート演算子となる。証明はQCQI/演習 2.24を参照。"/>
+<meta name="twitter:title" content="QCQI/演習 2.43"/>
+<meta name="twitter:description" content="\[\sigma_j \sigma_k = \frac{[\sigma_j, \sigma_k] &#43; \{\sigma_j, \sigma_k\}}{2}\] ここで QCQI/演習 2.40 より、 \[[\sigma_j, \sigma_k] = 2i\sum_{l=1}^{3}\epsilon_{jkl}\sigma_l\] また QCQI/演習 2.41 より、 \(j \neq k\) のとき \[\{\sigma_j, \sigma_k\} = 0\] \(j = k\) のとき、 \[\{\sigma_j, \sigma_k\} = \sigma_j\sigma_k &#43; \sigma_k\sigma_j = 2I\] よって \begin{eqnarray*} \frac{[\sigma_j, \sigma_k]"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              正の演算子のエルミート性
+              QCQI/演習 2.43
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 12, 2021
+  >&nbsp;Apr 20, 2021
   
 </span>
 
@@ -116,7 +116,19 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a>は必ず<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>となる。証明は<a href="/post/20210412113913-qcqi_%E6%BC%94%E7%BF%92_2_24/">QCQI/演習 2.24</a>を参照。</p>
+  <p>\[\sigma_j \sigma_k = \frac{[\sigma_j, \sigma_k] + \{\sigma_j, \sigma_k\}}{2}\]</p>
+<p>ここで <a href="/post/20210417101015-qcqi_%E6%BC%94%E7%BF%92_2_40/">QCQI/演習 2.40</a> より、</p>
+<p>\[[\sigma_j, \sigma_k] = 2i\sum_{l=1}^{3}\epsilon_{jkl}\sigma_l\]</p>
+<p>また <a href="/post/20210417105027-qcqi_%E6%BC%94%E7%BF%92_2_41/">QCQI/演習 2.41</a> より、</p>
+<p>\(j \neq k\) のとき</p>
+<p>\[\{\sigma_j, \sigma_k\} = 0\]</p>
+<p>\(j = k\) のとき、</p>
+<p>\[\{\sigma_j, \sigma_k\} = \sigma_j\sigma_k + \sigma_k\sigma_j = 2I\]</p>
+<p>よって</p>
+<p>\begin{eqnarray*}
+\frac{[\sigma_j, \sigma_k] + \{\sigma_j, \sigma_k\}}{2} &amp;=&amp; \frac{1}{2}\left(2i\sum_{l=1}^{3}\epsilon_{jkl}\sigma_l + 2\delta_{jk}I\right) \\\<br>
+&amp;=&amp; \delta_{jk}I + i\sum_{l=1}^{3}\epsilon_{jkl}\sigma_l
+\end{eqnarray*}</p>
 
 
 
