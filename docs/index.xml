@@ -38,6 +38,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.46</title>
+			<link>https://yasuhito.github.io/post/20210420091735-qcqi_%E6%BC%94%E7%BF%92_2_46/</link>
+			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210420091735-qcqi_%E6%BC%94%E7%BF%92_2_46/</guid>
+			<description>\[[A, B] = AB - BA = -(BA - AB) = -[B, A]\]</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.40</title>
 			<link>https://yasuhito.github.io/post/20210417101015-qcqi_%E6%BC%94%E7%BF%92_2_40/</link>
 			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210417085905-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AE%E6%89%8B%E6%9B%B8%E3%81%8D/</guid>
 			<description>元画像: ベクトルの表記方法より。</description>
-		</item>
-      	
-		<item>
-			<title>交換子</title>
-			<link>https://yasuhito.github.io/post/20210417091256-%E4%BA%A4%E6%8F%9B%E5%AD%90/</link>
-			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210417091256-%E4%BA%A4%E6%8F%9B%E5%AD%90/</guid>
-			<description>2 つの演算子の交換子は次式で定義される。 \[[A, B] \equiv AB - BA\] もし \([A, B] = 0\) ならば \(AB = BA\) であり \(A\) と \(B\) は可換。 つまり、交換子は「\(A\) と \(B\) がどの程度可</description>
 		</item>
       	
 	</channel>
