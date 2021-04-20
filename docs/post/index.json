@@ -1186,7 +1186,7 @@
                 "title": "QCQI/演習 2.3",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "演算子は行列で表現できることから、演算子 \\(A\\), \\(B\\) とそれぞれの要素について次が成り立つ。\n\\begin{equation} A|v_j\\rangle = \\sum_i A_{ij}|w_i\\rangle \\end{equation}\n\\begin{equation} B|w_i\\rangle = \\sum_k A_{ki}|x_k\\rangle \\end{equation}\nここで線形変換 \\(BA\\) の行列表現は、\n\\begin{eqnarray} BA|v_j\\rangle \u0026amp;=\u0026amp; B(A|v_j\\rangle) \\newline \u0026amp;=\u0026amp; B(\\sum_i A_{ij}|w_i\\rangle) \\newline \u0026amp;=\u0026amp; \\sum_i A_{ij}\\sum_k B_{ki}|x_k\\rangle \\end{eqnarray}\nシグマの分解公式より\n\\begin{eqnarray} \\sum_i A_{ij}\\sum_k B_{ki}|x_k\\rangle = \\sum_i\\sum_k A_{ij}B_{ki}|x_k\\rangle \\end{eqnarray}\nさらに式変形していくと、\n\\begin{eqnarray} \\sum_i\\sum_k A_{ij}B_{ki}|x_k\\rangle \u0026amp;=\u0026amp; \\sum_k\\sum_i A_{ij}B_{ki}|x_k\\rangle \\newline \u0026amp;=\u0026amp; \\sum_k\\sum_i B_{ki}A_{ij}|x_k\\rangle \\newline \u0026amp;=\u0026amp; \\sum_k(\\sum_i B_{ki}A_{ij})|x_k\\rangle \\newline \u0026amp;=\u0026amp; \\sum_k(BA)_{kj}|x_k\\rangle \\end{eqnarray}\nとなり、これは \\(B\\) と \\(A\\) の行列表現の行列積である。\n"
+                "body": "演算子は行列で表現できることから、演算子 \\(A\\), \\(B\\) それぞれの行列表現の要素について次が成り立つ。\n\\begin{equation*} A|v_j\\rangle = \\sum_i A_{ij}|w_i\\rangle \\end{equation*}\n\\begin{equation*} B|w_i\\rangle = \\sum_k A_{ki}|x_k\\rangle \\end{equation*}\nここで線形変換 \\(BA\\) の行列表現は、\n\\begin{eqnarray*} BA|v_j\\rangle \u0026amp;=\u0026amp; B(A|v_j\\rangle) \\\\\\\n\u0026amp;=\u0026amp; B(\\sum_i A_{ij}|w_i\\rangle) \\\\\\\n\u0026amp;=\u0026amp; \\sum_i A_{ij}\\sum_k B_{ki}|x_k\\rangle \\end{eqnarray*}\nシグマの分解公式より\n\\begin{eqnarray*} \\phantom{BA|v_j\\rangle} \u0026amp;=\u0026amp; \\sum_i\\sum_k A_{ij}B_{ki}|x_k\\rangle \\\\\\\n\u0026amp;=\u0026amp; \\sum_k\\sum_i A_{ij}B_{ki}|x_k\\rangle \\\\\\\n\u0026amp;=\u0026amp; \\sum_k\\sum_i B_{ki}A_{ij}|x_k\\rangle \\\\\\\n\u0026amp;=\u0026amp; \\sum_k(\\sum_i B_{ki}A_{ij})|x_k\\rangle \\\\\\\n\u0026amp;=\u0026amp; \\sum_k(BA)_{kj}|x_k\\rangle \\end{eqnarray*}\nと変形でき、これは \\(B\\) と \\(A\\) の行列表現の行列積である。\n"
             }
         
     ,
@@ -1196,7 +1196,7 @@
                 "title": "QCQI/演習 2.4",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "\\(V\\) の基底 \\(|v_1\\rangle, \\ldots, |v_m\\rangle\\) について、演算子は行列で表現できることから、\n\\begin{equation} I|v_j\\rangle = \\sum_i I_{ij}|v_i\\rangle \\end{equation}\nここで \\(I|v_i\\rangle = |v_i\\rangle\\ (i = 1, \\ldots, m)\\) なので、\n\\begin{equation} I_{ij}= \\begin{cases} 1 \u0026amp; (i = j) \\newline 0 \u0026amp; (otherwise) \\end{cases} \\end{equation}\nよって、\\(I\\) は対角成分が \\(1\\) で他がすべて \\(0\\) の行列表現 (単位行列) を持つ。\n"
+                "body": "\\(V\\) の基底 \\(|v_1\\rangle, \\ldots, |v_m\\rangle\\) について、演算子は行列で表現できることから、単位演算子 \\(I\\) の要素 \\(I_{ij}\\) について次が成り立つ。\n\\begin{equation*} I|v_j\\rangle = \\sum_i I_{ij}|v_i\\rangle \\end{equation*}\nここで \\(I|v_i\\rangle = |v_i\\rangle\\ (i = 1, \\ldots, m)\\) なので、\n\\begin{equation*} I_{ij}= \\begin{cases} 1 \u0026amp; (i = j) \\newline 0 \u0026amp; (otherwise) \\end{cases} \\end{equation*}\nよって、\\(I\\) は対角成分が \\(1\\) で他がすべて \\(0\\) の行列表現 (単位行列) を持つ。\n"
             }
         
     ,
@@ -1256,7 +1256,7 @@
                 "title": "演算子は行列で表現できる",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "演算子 \\(A\\) の入力ベクトル空間の基底と出力空間の基底を指定すると、次のように \\(A\\) の行列表現を決めることができる。\n\\(A: V \\rightarrow W\\) がベクトル空間 \\(V\\) と \\(W\\) との間の演算子であるとする。さらに \\(V\\) の基底が \\(|v_1\\rangle, \\ldots, |v_m\\rangle\\), \\(W\\) の基底が \\(|w_1\\rangle, \\ldots, |w_n\\rangle\\) であるとする。\\(1, \\ldots, m\\) の範囲の各 \\(j\\) に対して、\n\\[A|v_j\\rangle = \\sum_i A_{ij}|w_i\\rangle\\]\nを満たす複素数 \\(A_{1j}, \\ldots, A_{nj}\\) が存在する。要素 \\(A_{ij}\\) をもつ行列 \\(A\\) を演算子 \\(A\\) の行列表現と呼ぶ。\n関連ノート  演算子の行列表現の例 (QCQI/演習 2.2)  参照  Quantum Computation and Quantum Information  "
+                "body": "演算子 \\(A\\) の入力ベクトル空間の基底と出力空間の基底を指定すると、次のように \\(A\\) の行列表現を決めることができる。\n\\(A: V \\rightarrow W\\) がベクトル空間 \\(V\\) と \\(W\\) との間の演算子であるとする。さらに \\(V\\) の基底が \\(|v_1\\rangle, \\ldots, |v_m\\rangle\\), \\(W\\) の基底が \\(|w_1\\rangle, \\ldots, |w_n\\rangle\\) であるとする。\\(1, \\ldots, m\\) の範囲の各 \\(j\\) に対して、\n\\[A|v_j\\rangle = \\sum_i A_{ij}|w_i\\rangle\\]\nを満たす複素数 \\(A_{1j}, \\ldots, A_{nj}\\) が存在する。要素 \\(A_{ij}\\) をもつ行列 \\(A\\) を演算子 \\(A\\) の行列表現と呼ぶ。\n関連ノート  演算子の行列表現の例 (QCQI/演習 2.2) 演算子の積の行列表現 (QCQI/演習 2.3) 単位元の行列表現 (QCQI/演習 2.4)  参照  Quantum Computation and Quantum Information  "
             }
         
     ,
