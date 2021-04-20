@@ -102,6 +102,12 @@ draft = false
 -   [QCQI/演習 2.47]({{< relref "20210420092342-qcqi_演習_2_47" >}})
 
 
+#### 2.1.10 極分解と特異値分解 {#2-dot-1-dot-10-極分解と特異値分解}
+
+-   [QCQI/演習 2.48]({{< relref "20210420102232-qcqi_演習_2_48" >}})
+-   [QCQI/演習 2.49]({{< relref "20210420111607-qcqi_演習_2_49" >}})
+
+
 ## 先人達の解答 {#先人達の解答}
 
 -   [goropikari/SolutionQCQINielsenChuang](https://github.com/goropikari/SolutionQCQINielsenChuang) by [goropikari](https://github.com/goropikari) さん

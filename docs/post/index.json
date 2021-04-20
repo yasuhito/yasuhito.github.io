@@ -52,6 +52,26 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210420102232-qcqi_%E6%BC%94%E7%BF%92_2_48/",
+                "title": "QCQI/演習 2.48",
+                "section": "post",
+                "date" : "2021.04.20",
+                "body": "正の行列 \\(P\\) の極分解 正の演算子のエルミート性から正の行列は正規であり、よって \\(P\\) は負でない固有値 \\(\\lambda_i\\) を用いて スペクトル分解できる。\n\\[P = \\sum_i \\lambda_i |i\\rangle\\langle i|\\]\n極分解により、\\(P = UJ\\) を満たす正の演算子の行列表現 \\(J\\) について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{P^{\\dagger}P} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j\\delta_{i,j} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}\\lambda_i^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nしたがって \\(U = I\\)\nユニタリー行列 \\(U^{\\prime}\\) の極分解 ユニタリー行列も正規であるから \\(U^{\\prime}\\) はスペクトル分解できる。\n極分解により、\n\\[J = \\sqrt{(U^{\\prime})^{\\dagger}U^{\\prime}} = \\sqrt{I} = I\\]\nしたがって \\(U^{\\prime} = UJ = U\\) より \\(U = U^{\\prime}\\)\nエルミート行列 \\(H\\) の極分解 \\(H\\) をスペクトル分解すると\n\\[H = \\sum_i\\lambda_i|i\\rangle\\langle i|\\]\n極分解により、\\(H = UJ\\) を満たす正の演算子の行列表現 J について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{H^{\\dagger}H} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{H^2} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j\\delta_{ij} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}\\lambda_i^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i} |\\lambda_i| |i\\rangle\\langle i| \\end{eqnarray*}\nよって \\(H = U\\sum_{i} |\\lambda_i| |i\\rangle\\langle i|\\)\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210420111607-qcqi_%E6%BC%94%E7%BF%92_2_49/",
+                "title": "QCQI/演習 2.49",
+                "section": "post",
+                "date" : "2021.04.20",
+                "body": "正規行列 \\(A\\) を外積表現 (スペクトル分解) すると、\n\\[A = \\sum_i\\lambda_i|i\\rangle\\langle i|\\]\n極分解により、\\(A = UJ\\) を満たす正の演算子の行列表現 J について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{A^{\\dagger}A} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i^{\\ast}\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i^{\\ast}\\lambda_j\\delta_{ij} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}|\\lambda_i|^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i} |\\lambda_i| |i\\rangle\\langle i| \\end{eqnarray*}\nよって \\(A = U\\sum_{i} |\\lambda_i| |i\\rangle\\langle i|\\)\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210420094316-%E6%A5%B5%E5%88%86%E8%A7%A3/",
                 "title": "極分解",
                 "section": "post",
@@ -1146,7 +1166,7 @@
                 "title": "QCQI/演習 2.1",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "ベクトル \\((1, -1)\\), \\((1, 2)\\) および \\((2, 1)\\) は\n\\begin{equation} \\begin{bmatrix} 2 \\newline 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\newline {-1} \\end{bmatrix} + \\begin{bmatrix} 1 \\newline 2 \\end{bmatrix} \\end{equation}\nを満たすので、これら 3 つのベクトルは線形従属。\n"
+                "body": "ベクトル \\((1, -1)\\), \\((1, 2)\\) および \\((2, 1)\\) は\n\\begin{equation*} \\begin{bmatrix} 2 \\newline 1 \\end{bmatrix} = \\begin{bmatrix} 1 \\newline -1 \\end{bmatrix} + \\begin{bmatrix} 1 \\newline 2 \\end{bmatrix} \\end{equation*}\nを満たすので、これら 3 つのベクトルは線形従属。\n"
             }
         
     ,
@@ -1186,7 +1206,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
+                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 極分解と特異値分解  QCQI/演習 2.48 QCQI/演習 2.49  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
             }
         
     ,
