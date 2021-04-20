@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210420090708-qcqi_%E6%BC%94%E7%BF%92_2_45/",
+                "title": "QCQI/演習 2.45",
+                "section": "post",
+                "date" : "2021.04.20",
+                "body": "\\begin{eqnarray*} [A, B]^{\\dagger} \u0026amp;=\u0026amp; (AB - BA)^{\\dagger} \\\\\\\n\\end{eqnarray*}\nQCQI/演習 2.14 より\n\\begin{eqnarray*} \\phantom{[A, B]^{\\dagger}} \u0026amp;=\u0026amp; (AB)^{\\dagger} - (BA)^{\\dagger} \\\\\\\n\u0026amp;=\u0026amp; B^{\\dagger}A^{\\dagger} - A^{\\dagger}B^{\\dagger} \\\\\\\n\u0026amp;=\u0026amp; [B^{\\dagger}, A^{\\dagger}] \\end{eqnarray*}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210417101015-qcqi_%E6%BC%94%E7%BF%92_2_40/",
                 "title": "QCQI/演習 2.40",
                 "section": "post",
@@ -1136,7 +1146,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
+                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
             }
         
     ,
