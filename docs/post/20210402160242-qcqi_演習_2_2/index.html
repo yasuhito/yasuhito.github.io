@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.2"/>
-<meta name="twitter:description" content="\(A\) の行列表現 演算子は行列で表現できることから、 \[A|v_j\rangle = \sum_i A_{ij}|w_i\rangle\] \(j = 1\) のとき、 \begin{eqnarray} A|0\rangle &amp;=&amp; \sum_i A_{i1}|w_i\rangle \newline &amp;=&amp; A_{11}|0\rangle &#43; A_{21}|1\rangle \end{eqnarray} \(j = 2\) のとき、 \begin{eqnarray} A|1\rangle &amp;=&amp; \sum_i A_{i2}|w_i\rangle \newline &amp;=&amp; A_{12}|0\rangle &#43; A_{22}|1\rangle \end{eqnarray} これらと \(A|0\rangle = |1\rangle,\"/>
+<meta name="twitter:description" content="\(A\) の行列表現 演算子は行列で表現できることから、\(|v_i\rangle\) を \(V\) の基底、\(A_{ij}\) を演算子 \(A\) の行列表現の要素とする"/>
 
 
 
@@ -117,63 +117,67 @@
     <article class="article" class="blog-post">
       
   <h2 id="a--の行列表現">\(A\) の行列表現</h2>
-<p><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a>ことから、</p>
-<p>\[A|v_j\rangle = \sum_i A_{ij}|w_i\rangle\]</p>
-<p>\(j = 1\) のとき、</p>
-<p>\begin{eqnarray}
-A|0\rangle &amp;=&amp; \sum_i A_{i1}|w_i\rangle \newline
-&amp;=&amp; A_{11}|0\rangle + A_{21}|1\rangle
-\end{eqnarray}</p>
-<p>\(j = 2\) のとき、</p>
-<p>\begin{eqnarray}
-A|1\rangle &amp;=&amp; \sum_i A_{i2}|w_i\rangle \newline
-&amp;=&amp; A_{12}|0\rangle + A_{22}|1\rangle
-\end{eqnarray}</p>
-<p>これらと \(A|0\rangle = |1\rangle,\ A|1\rangle = |0\rangle\) より、</p>
-<p>\(A_{11} = 0\), \(A_{21} = 1\), \(A_{12} = 1\), \(A_{22} = 0\)</p>
-<p>よって \(A\) の行列表現は、</p>
-<p>\begin{equation}
+<p><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a>ことから、\(|v_i\rangle\) を \(V\) の<a href="/post/20210331121800-%E5%9F%BA%E5%BA%95/">基底</a>、\(A_{ij}\) を<a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a> \(A\) の<a href="/post/20210401105821-%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/">行列表現</a>の要素とすると、</p>
+<p>\[A|v_j\rangle = \sum_i A_{ij}|v_i\rangle\]</p>
+<p>\(A|0\rangle = |1\rangle\) だから、</p>
+<p>\begin{eqnarray*}
+A|0\rangle &amp;=&amp; \sum_i A_{i1}|v_i\rangle \\\<br>
+&amp;=&amp; A_{11}|0\rangle + A_{21}|1\rangle \\\<br>
+&amp;=&amp; |1\rangle
+\end{eqnarray*}</p>
+<p>よって \(A_{11} = 0\), \(A_{21} = 1\).</p>
+<p>同様に、\(A|1\rangle = |0\rangle\) だから、</p>
+<p>\begin{eqnarray*}
+A|1\rangle &amp;=&amp; \sum_i A_{i2}|v_i\rangle \\\<br>
+&amp;=&amp; A_{12}|0\rangle + A_{22}|1\rangle \\\<br>
+&amp;=&amp; |0\rangle
+\end{eqnarray*}</p>
+<p>よって \(A_{12} = 1\), \(A_{22} = 0\)</p>
+<p>以上より \(A\) の行列表現は、</p>
+<p>\begin{equation*}
 A = \begin{bmatrix}
 0 &amp; 1 \newline
 1 &amp; 0
 \end{bmatrix}
-\end{equation}</p>
+\end{equation*}</p>
 <h2 id="a--の異なる行列表現を与える入力と出力の基底">\(A\) の異なる行列表現を与える入力と出力の基底</h2>
-<p>基底として次を選ぶ:</p>
-<p>\begin{eqnarray}
-|+\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \newline
+<p>\(V\) の基底として次を選ぶ:</p>
+<p>\begin{eqnarray*}
+|+\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) \\\<br>
 |-\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)
-\end{eqnarray}</p>
+\end{eqnarray*}</p>
 <p>ここで \(A|+\rangle\) と \(A|-\rangle\) を計算すると、</p>
-<p>\begin{eqnarray}
-A|+\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(A|0\rangle + A|1\rangle) \newline
-&amp;=&amp; \frac{1}{\sqrt{2}}(|1\rangle + |0\rangle) \newline
+<p>\begin{eqnarray*}
+A|+\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(A|0\rangle + A|1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{\sqrt{2}}(|1\rangle + |0\rangle) \\\<br>
 &amp;=&amp; |+\rangle
-\end{eqnarray}</p>
-<p>\begin{eqnarray}
-A|-\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(A|0\rangle - A|1\rangle) \newline
-&amp;=&amp; \frac{1}{\sqrt{2}}(|1\rangle - |0\rangle) \newline
+\end{eqnarray*}</p>
+<p>\begin{eqnarray*}
+A|-\rangle &amp;=&amp; \frac{1}{\sqrt{2}}(A|0\rangle - A|1\rangle) \\\<br>
+&amp;=&amp; \frac{1}{\sqrt{2}}(|1\rangle - |0\rangle) \\\<br>
 &amp;=&amp; -|-\rangle
-\end{eqnarray}</p>
+\end{eqnarray*}</p>
 <p>これらの結果と行列 \(A\) の要素 \(A_{ij}\) を求める式から、</p>
-<p>\begin{eqnarray}
-A|+\rangle &amp;=&amp; \sum_i A_{i1}|w_i\rangle \newline
-&amp;=&amp; A_{11}|+\rangle + A_{21}|-\rangle \newline
+<p>\begin{eqnarray*}
+A|+\rangle &amp;=&amp; \sum_i A_{i1}|v_i\rangle \\\<br>
+&amp;=&amp; A_{11}|+\rangle + A_{21}|-\rangle \\\<br>
 &amp;=&amp; |+\rangle
-\end{eqnarray}</p>
-<p>\begin{eqnarray}
-A|-\rangle &amp;=&amp; \sum_i A_{i2}|w_i\rangle \newline
+\end{eqnarray*}</p>
+<p>よって \(A_{11} = 1\), \(A_{21} = 0\)</p>
+<p>\begin{eqnarray*}
+A|-\rangle &amp;=&amp; \sum_i A_{i2}|v_i\rangle \newline
 &amp;=&amp; A_{12}|+\rangle + A_{22}|-\rangle \newline
 &amp;=&amp; -|-\rangle
-\end{eqnarray}</p>
-<p>よって \(A_{11} = 1\), \(A_{21} = 0\), \(A_{12} = 0\), \(A_{22} = -1\) となり、\(A\) の行列表現は</p>
+\end{eqnarray*}</p>
+<p>よって \(A_{12} = 0\), \(A_{22} = -1\)</p>
+<p>以上より \(A\) の行列表現は</p>
 <p>\begin{equation}
 A = \begin{bmatrix}
 1 &amp; 0 \newline
 0 &amp; -1
 \end{bmatrix}
 \end{equation}</p>
-<p>となるので、確かに異なる行列表現を持つ。</p>
+<p>となり、異なる行列表現を持つ。</p>
 
 
 
@@ -451,6 +455,8 @@ A = \begin{bmatrix}
     
   
     
+      
+    
   
     
   
@@ -617,6 +623,8 @@ A = \begin{bmatrix}
           <ul>
            
               <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
+              
+              <li><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a></li>
               
           </ul>
         </div>
