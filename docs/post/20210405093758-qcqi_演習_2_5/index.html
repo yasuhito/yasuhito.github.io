@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.5"/>
-<meta name="twitter:description" content="\(\mathcal{C}^n\) の内積の定義 \begin{equation} ((y_1, \ldots, y_n), (z_1, \ldots, z_n)) \equiv \sum_i y_i^{\ast}z_i = \begin{bmatrix} y_1^{\ast}, \ldots, y_n^{\ast} \end{bmatrix}\begin{bmatrix} z_1 \newline \vdots \newline z_n \end{bmatrix} \end{equation} について、内積の定義をすべて満たすことを確認する。 線形性について、 \begin{eqnarray} \left(|v\rangle, \sum_i \lambda_i|w_i\rangle\right) &amp;=&amp; \sum_j v_j^{\ast}"/>
+<meta name="twitter:description" content="\(\mathcal{C}^n\) の内積の定義 \begin{equation*} ((y_1, \ldots, y_n), (z_1, \ldots, z_n)) \equiv \sum_i y_i^{\ast}z_i = \begin{bmatrix} y_1^{\ast}, \ldots, y_n^{\ast} \end{bmatrix}\begin{bmatrix} z_1 \newline \vdots \newline z_n \end{bmatrix} \end{equation*} が内積の要請をすべて満たすことを確認する。 線形性 \begin{eqnarray*} \left(|v\rangle, \sum_i \lambda_i|w_i\rangle\right) &amp;=&amp; \sum_j v_j^{\ast} \left(\sum_i \lambda_i w_{ij}\right) \\\ &amp;=&amp; \sum_i \lambda_i \left(\sum_j v_j^{\ast}"/>
 
 
 
@@ -116,8 +116,8 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>\(\mathcal{C}^n\) の内積の定義</p>
-<p>\begin{equation}
+  <p>\(\mathcal{C}^n\) の<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>の定義</p>
+<p>\begin{equation*}
 ((y_1, \ldots, y_n), (z_1, \ldots, z_n)) \equiv \sum_i y_i^{\ast}z_i = \begin{bmatrix}
 y_1^{\ast}, \ldots, y_n^{\ast}
 \end{bmatrix}\begin{bmatrix}
@@ -125,27 +125,28 @@ z_1 \newline
 \vdots \newline
 z_n
 \end{bmatrix}
-\end{equation}</p>
-<p>について、<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積の定義</a>をすべて満たすことを確認する。</p>
-<p>線形性について、</p>
-<p>\begin{eqnarray}
+\end{equation*}</p>
+<p>が内積の要請をすべて満たすことを確認する。</p>
+<p><strong><strong>線形性</strong></strong></p>
+<p>\begin{eqnarray*}
 \left(|v\rangle, \sum_i \lambda_i|w_i\rangle\right) &amp;=&amp; \sum_j v_j^{\ast} \left(\sum_i \lambda_i w_{ij}\right) \\\<br>
 &amp;=&amp; \sum_i \lambda_i \left(\sum_j v_j^{\ast} w_{ij}\right) \\\<br>
 &amp;=&amp; \sum_i \lambda_i (|v\rangle, |w_i\rangle)
-\end{eqnarray}</p>
-<p>対称性について、</p>
-<p>\begin{eqnarray}
+\end{eqnarray*}</p>
+<p><strong><strong>対称性</strong></strong></p>
+<p>\begin{eqnarray*}
 (|v\rangle, |w\rangle) &amp;=&amp; \sum_i v_i^{\ast}w_i \\\<br>
 &amp;=&amp; \sum_i (v_i w_i^{\ast})^{\ast} \\\<br>
 &amp;=&amp; \sum_i (w_i^{\ast} v_i)^{\ast} \\\<br>
 &amp;=&amp; (|w\rangle, |v\rangle)^{\ast}
-\end{eqnarray}</p>
-<p>正値性、正定値性について、</p>
-<p>\begin{eqnarray}
+\end{eqnarray*}</p>
+<p><strong><strong>正値性、正定値性</strong></strong></p>
+<p>\begin{eqnarray*}
 (|v\rangle, |v\rangle) &amp;=&amp; \sum_i v_i^{\ast}v_i \\\<br>
 &amp;=&amp; \sum_i |v_i|^2 \geq 0
-\end{eqnarray}</p>
+\end{eqnarray*}</p>
 <p>明らかに、等号が成り立つのは \(|v\rangle = 0\) のときのみ。</p>
+<p>以上より、\(\mathcal{C}^n\) は内積 \((\cdot , \cdot)\) を備えた<a href="/post/20210405093150-%E5%86%85%E7%A9%8D%E7%A9%BA%E9%96%93/">内積空間</a>である。</p>
 
 
 
