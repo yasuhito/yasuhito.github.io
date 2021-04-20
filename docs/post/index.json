@@ -1336,7 +1336,7 @@
                 "title": "線形従属",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "\\(0\\) でないベクトル \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) について、少なくとも 1 つの \\(i\\) に対して \\(a_i \\neq 0\\) であり、\n\\[a_1|v_1\\rangle + a_2|v_2\\rangle + \\ldots + a_n|v_n\\rangle = 0\\]\nを満たす複素数の集合 \\(a_1, \\ldots, a_n\\) が存在するならば、ベクトル \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) は線形従属であるという。\n"
+                "body": "\\(0\\) でないベクトル \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) について、少なくとも 1 つの \\(i\\) に対して \\(a_i \\neq 0\\) であり、\n\\[a_1|v_1\\rangle + a_2|v_2\\rangle + \\ldots + a_n|v_n\\rangle = 0\\]\nを満たす複素数の集合 \\(a_1, \\ldots, a_n\\) が存在するならば、ベクトル \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) は線形従属であるという。\n関連ノート  線形従属の例 (QCQI/演習 2.1)  "
             }
         
     ,
