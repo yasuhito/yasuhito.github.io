@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.44</title>
+			<link>https://yasuhito.github.io/post/20210420084915-qcqi_%E6%BC%94%E7%BF%92_2_44/</link>
+			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210420084915-qcqi_%E6%BC%94%E7%BF%92_2_44/</guid>
+			<description>\([A, B] = 0\) より、 \begin{eqnarray*} &amp;amp;\phantom{\Rightarrow}&amp;amp; [A, B] = 0 \\\ &amp;amp;\Rightarrow&amp;amp; AB - BA = 0 \\\ &amp;amp;\Rightarrow&amp;amp; AB = BA \end{eqnarray*} \(\{A, B\} = 0\) より、 \begin{eqnarray*} &amp;amp;\phantom{\Rightarrow}&amp;amp; \{A, B\} = 0 \\\ &amp;amp;\Rightarrow&amp;amp; AB + BA = 0 \\\ &amp;amp;\Rightarrow&amp;amp; 2AB = 0\ (\because AB = BA) \\\ &amp;amp;\Rightarrow&amp;amp; AB = 0 \end{eqnarray*} \(A\) は可逆だから \(A^{-1}\) が</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.40</title>
 			<link>https://yasuhito.github.io/post/20210417101015-qcqi_%E6%BC%94%E7%BF%92_2_40/</link>
 			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210417092048-%E5%8F%8D%E4%BA%A4%E6%8F%9B%E5%AD%90/</guid>
 			<description>2 つの演算子の反交換子は次式で定義される。 \[\{A, B\} \equiv AB + BA\] もし \(\{A, B\} = 0\) ならば \(A\) と \(B\) は反可換であるという。 関連ノート 交換子</description>
-		</item>
-      	
-		<item>
-			<title>同時対角化</title>
-			<link>https://yasuhito.github.io/post/20210417092753-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96/</link>
-			<pubDate>Sat, 17 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210417092753-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96/</guid>
-			<description>エルミート演算子 \(A\), \(B\) が同時対角化できるとは、\(A\), \(B\) の固有ベクトルに共通の正規直交集合 \(|i\rangle\) を用いて \[A = \sum_i a_i |i\rangle\langle i|\] \[B = \sum_i b_i |i\rangle\langle i|\] と書けること。</description>
 		</item>
       	
 	</channel>
