@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.6"/>
-<meta name="twitter:description" content="内積の定義より、 \begin{eqnarray} \left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) &amp;=&amp; \left(|v\rangle, \sum_i \lambda_i |w_i\rangle\right)^{\ast} \\\ &amp;=&amp; \left(\sum_i \lambda_i (|v\rangle, |w_i\rangle)\right)^{\ast} \\\ &amp;=&amp; \sum_i \lambda_i^{\ast} (|v\rangle, |w_i\rangle)^{\ast} \\\ &amp;=&amp; \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle) \end{eqnarray}"/>
+<meta name="twitter:description" content="内積の対称性より、 \begin{equation*} \left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right) = \left(\ket{v}, \sum_i \lambda_i \ket{w_i}\right)^{\ast} \end{equation*} 内積は第 2 引数に関して線形だから、 \begin{equation*} \phantom{\left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right)} = \left(\sum_i \lambda_i (\ket{v}, \ket{w_i})\right)^{\ast} \end{equation*} 内積の出力は複素数だから、 \begin{equation*} \phantom{\left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right)} = \sum_i \lambda_i^{\ast} (\ket{v},"/>
 
 
 
@@ -116,13 +116,23 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>の定義より、</p>
-<p>\begin{eqnarray}
-\left(\sum_i \lambda_i |w_i\rangle, |v\rangle\right) &amp;=&amp; \left(|v\rangle, \sum_i \lambda_i |w_i\rangle\right)^{\ast} \\\<br>
-&amp;=&amp; \left(\sum_i \lambda_i (|v\rangle, |w_i\rangle)\right)^{\ast} \\\<br>
-&amp;=&amp; \sum_i \lambda_i^{\ast} (|v\rangle, |w_i\rangle)^{\ast} \\\<br>
-&amp;=&amp; \sum_i \lambda_i^{\ast} (|w_i\rangle, |v\rangle)
-\end{eqnarray}</p>
+  <p><a href="/post/20210409113657-%E5%86%85%E7%A9%8D%E3%81%AE%E5%AF%BE%E7%A7%B0%E6%80%A7/">内積の対称性</a>より、</p>
+<p>\begin{equation*}
+\left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right) = \left(\ket{v}, \sum_i \lambda_i \ket{w_i}\right)^{\ast}
+\end{equation*}</p>
+<p><a href="/post/20210409111356-%E5%86%85%E7%A9%8D%E3%81%AF%E7%AC%AC_2_%E5%BC%95%E6%95%B0%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6%E7%B7%9A%E5%BD%A2/">内積は第 2 引数に関して線形</a>だから、</p>
+<p>\begin{equation*}
+\phantom{\left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right)} = \left(\sum_i \lambda_i (\ket{v}, \ket{w_i})\right)^{\ast}
+\end{equation*}</p>
+<p><a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>の出力は複素数だから、</p>
+<p>\begin{equation*}
+\phantom{\left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right)} = \sum_i \lambda_i^{\ast} (\ket{v}, \ket{w_i})^{\ast}
+\end{equation*}</p>
+<p>内積の対称性より、</p>
+<p>\begin{equation*}
+\phantom{\left(\sum_i \lambda_i \ket{w_i}, \ket{v}\right)} = \sum_i \lambda_i^{\ast} (\ket{w_i}, \ket{v})
+\end{equation*}</p>
+<p>よって任意の内積 \((\cdot , \cdot)\) は第 1 引数に関して共役線形。</p>
 
 
 
@@ -611,7 +621,7 @@
 </footer>
 
 <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
+        async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
   </body>
