@@ -22,6 +22,22 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.52</title>
+			<link>https://yasuhito.github.io/post/20210421142837-qcqi_%E6%BC%94%E7%BF%92_2_52/</link>
+			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210421142837-qcqi_%E6%BC%94%E7%BF%92_2_52/</guid>
+			<description>QCQI/演習 2.51 より \(H^{\dagger}H = I\) そして \(H\) の行列表現はエルミート行列だから \(H^{\dagger} = H\) よって \(H^{\dagger}H = H^2 = I\)</description>
+		</item>
+      	
+		<item>
+			<title>QCQI/演習 2.53</title>
+			<link>https://yasuhito.github.io/post/20210421150137-qcqi_%E6%BC%94%E7%BF%92_2_53/</link>
+			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210421150137-qcqi_%E6%BC%94%E7%BF%92_2_53/</guid>
+			<description>\(H\) の固有値 \(\lambda\) を求める。 \begin{eqnarray*} \mathrm{det}|H - \lambda I| &amp;amp;=&amp;amp; \begin{bmatrix} \frac{1}{\sqrt{2}} - \lambda &amp;amp; \frac{1}{\sqrt{2}} \newline \frac{1}{\sqrt{2}} &amp;amp; -\frac{1}{\sqrt{2}} - \lambda \end{bmatrix} \\\ &amp;amp;=&amp;amp; -(\frac{1}{\sqrt{2}} - \lambda)(\frac{1}{\sqrt{2}} - \lambda) - \frac{1}{2} \\\ &amp;amp;=&amp;amp; \lambda^2 - 1 \\\ &amp;amp;=&amp;amp; 0 \\\ \therefore \lambda = \pm 1 \end{eqnarray*} \(\lambda = 1\) のとき固有ベクトル \(\ket{\lambda_1}\) は、 \begin{eqnarray*}</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.43</title>
 			<link>https://yasuhito.github.io/post/20210420082939-qcqi_%E6%BC%94%E7%BF%92_2_43/</link>
 			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210420111607-qcqi_%E6%BC%94%E7%BF%92_2_49/</guid>
 			<description>正規行列 \(A\) を外積表現 (スペクトル分解) すると、 \[A = \sum_i\lambda_i|i\rangle\langle i|\] 極分解により、\(A = UJ\) を満たす正の演算子の行列表現 J について、 \begin{eqnarray*} J &amp;amp;=&amp;amp; \sqrt{A^{\dagger}A} \\\ &amp;amp;=&amp;amp; \sqrt{\sum_{i,j}\lambda_i^{\ast}\lambda_j |i\rangle\langle i|j\rangle\langle j|} \\\</description>
-		</item>
-      	
-		<item>
-			<title>極分解</title>
-			<link>https://yasuhito.github.io/post/20210420094316-%E6%A5%B5%E5%88%86%E8%A7%A3/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420094316-%E6%A5%B5%E5%88%86%E8%A7%A3/</guid>
-			<description>極分解は特異値分解と同じく、演算子をより簡単なユニタリー演算子と正の演算子の積に分割するテクニック。 \(A\) をベクトル空間 \(V\) 上の演算子とする。次式</description>
-		</item>
-      	
-		<item>
-			<title>特異値分解</title>
-			<link>https://yasuhito.github.io/post/20210420095524-%E7%89%B9%E7%95%B0%E5%80%A4%E5%88%86%E8%A7%A3/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420095524-%E7%89%B9%E7%95%B0%E5%80%A4%E5%88%86%E8%A7%A3/</guid>
-			<description>特異値分解は極分解とスペクトル分解を組合わせたもの。 \(A\) を正方行列とする。このとき \[A = UDV\] を満たすユニタリー行列 \(U\), \(V\) と負でない要素をもつ対角行列</description>
 		</item>
       	
 	</channel>
