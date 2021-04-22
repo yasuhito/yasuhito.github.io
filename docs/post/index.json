@@ -72,6 +72,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210422150357-%E8%A8%88%E7%AE%97%E5%9F%BA%E5%BA%95%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%87%8F%E5%AD%90%E3%83%92%E3%83%83%E3%83%88%E3%81%AE%E6%B8%AC%E5%AE%9A/",
+                "title": "計算基底における量子ビットの測定",
+                "section": "post",
+                "date" : "2021.04.22",
+                "body": "単一量子ビットに対する測定は \\(M_0 = \\ket{0}\\bra{0}\\), \\(M_1 = \\ket{1}\\bra{1}\\) の 2 つの測定演算子で定義でき、\\(\\ket{0}\\) と \\(\\ket{1}\\) の 2 つの結果を返す。\n\\(M_0\\) と \\(M_1\\) はエルミート演算子であり計算すると \\(M_0^2 = M_0\\), \\(M_1^2 = M_1\\) であることがわかる。したがって、完全性の関係が満たされる。\n\\[I = M_0^{\\dagger}M_0 + M_1^{\\dagger}M_1 = M_0 + M_1\\]\n測定される状態は \\(\\ket{\\psi} = a\\ket{0} + b\\ket{1}\\) であり、量子力学の公理 (量子測定は測定演算子の集まりで記述できる) より、測定結果 \\(0\\) を得る確率は、\n\\[p(0) = \\braket{\\psi|M_0^{\\dagger}M_0|\\psi} = \\braket{\\psi|M_0|\\psi} = |a|^2\\]\n同様に測定結果 1 を得る確率は \\(p(1) = |b|^2\\). よって 2 つの場合の測定後の状態は、\n\\[\\frac{M_0\\ket{\\psi}}{|a|} = \\frac{a}{|a|}\\ket{0}\\]\n\\[\\frac{M_1\\ket{\\psi}}{|b|} = \\frac{b}{|b|}\\ket{1}\\]\nここで \\(a/|a|\\) のような絶対値が \\(1\\) の係数は無視してよいので、測定後の状態は \\(\\ket{0}\\), \\(\\ket{1}\\) となる。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210422102127-%E9%87%8F%E5%AD%90%E3%83%92%E3%83%83%E3%83%88/",
                 "title": "量子ビット",
                 "section": "post",
@@ -86,7 +96,17 @@
                 "title": "量子力学の公理",
                 "section": "post",
                 "date" : "2021.04.22",
-                "body": " 閉じた量子系の状態は状態ベクトルで記述できる 閉じた量子系の時間発展はユニタリー変換で記述できる  閉じた量子系の時間発展はシュレディンガー方程式で記述できる   量子系の測定 複合量子系の記述  "
+                "body": " 閉じた量子系の状態は状態ベクトルで記述できる 閉じた量子系の時間発展はユニタリー変換で記述できる  閉じた量子系の時間発展はシュレディンガー方程式で記述できる   量子測定は測定演算子の集まりで記述できる 複合量子系の記述  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210422143643-%E9%87%8F%E5%AD%90%E6%B8%AC%E5%AE%9A%E3%81%AF%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E9%9B%86%E3%81%BE%E3%82%8A%E3%81%A6%E8%A8%98%E8%BF%B0%E3%81%A6%E3%81%8D%E3%82%8B/",
+                "title": "量子測定は測定演算子の集まりで記述できる",
+                "section": "post",
+                "date" : "2021.04.22",
+                "body": "ある量子系内部で何が起こっているかを見ようとすること (実験) を量子測定と呼び、これは相互作用となるので系はもはや閉じておらず、ユニタリー時間発展にはならない。\n量子測定は測定演算子の集まり \\(\\{M_m\\}\\) で記述できる (\\(m\\) は測定結果を指す)。これらの演算子は測定される系の状態空間に作用する。もし測定直前の量子系状態が \\(\\ket{\\psi}\\) ならば、測定結果 \\(m\\) が生じる確率は、\n\\[p(m) = \\braket{\\psi|M_m^{\\dagger}M_m|\\psi}\\]\nで与えられ、測定後の系状態は、\n\\[\\frac{M_m\\ket{\\psi}}{\\sqrt{\\braket{\\psi|M_m^{\\dagger}M_m|\\psi}}}\\]\nである。測定演算子は次の完全性の式を満たす。\n\\[\\sum_m M_m^{\\dagger}M_m = I\\]\n完全性の式は確率の和が \\(1\\) になるという事実を表現する:\n\\[1 = \\sum_m p(m) = \\sum_m \\braket{\\psi|M_m^{\\dagger}M_m|\\psi}\\]\n"
             }
         
     ,
@@ -1356,7 +1376,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 極分解と特異値分解  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 時間発展  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
+                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 極分解と特異値分解  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 時間発展  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 量子測定  QCQI/演習 2.57  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
             }
         
     ,

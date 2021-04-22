@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>量子測定は測定演算子の集まりで記述できる</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="量子測定は測定演算子の集まりで記述できる"/>
+<meta name="twitter:description" content="ある量子系内部で何が起こっているかを見ようとすること (実験) を量子測定と呼び、これは相互作用となるので系はもはや閉じておらず、ユニタリー時間"/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/custom.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/main.bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.81.0" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+        <a href="https://yasuhito.github.io/" class="nav-logo">
+        <img
+          src="https://yasuhito.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+        </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              量子測定は測定演算子の集まりで記述できる
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Apr 22, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>ある量子系内部で何が起こっているかを見ようとすること (実験) を量子測定と呼び、これは相互作用となるので系はもはや閉じておらず、ユニタリー時間発展にはならない。</p>
+<p>量子測定は測定演算子の集まり \(\{M_m\}\) で記述できる (\(m\) は測定結果を指す)。これらの演算子は測定される系の状態空間に作用する。もし測定直前の量子系状態が \(\ket{\psi}\) ならば、測定結果 \(m\) が生じる確率は、</p>
+<p>\[p(m) = \braket{\psi|M_m^{\dagger}M_m|\psi}\]</p>
+<p>で与えられ、測定後の系状態は、</p>
+<p>\[\frac{M_m\ket{\psi}}{\sqrt{\braket{\psi|M_m^{\dagger}M_m|\psi}}}\]</p>
+<p>である。測定演算子は次の完全性の式を満たす。</p>
+<p>\[\sum_m M_m^{\dagger}M_m = I\]</p>
+<p>完全性の式は確率の和が \(1\) になるという事実を表現する:</p>
+<p>\[1 = \sum_m p(m) = \sum_m \braket{\psi|M_m^{\dagger}M_m|\psi}\]</p>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210422150357-%E8%A8%88%E7%AE%97%E5%9F%BA%E5%BA%95%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%87%8F%E5%AD%90%E3%83%92%E3%83%83%E3%83%88%E3%81%AE%E6%B8%AC%E5%AE%9A/">計算基底における量子ビットの測定</a></li>
+              
+              <li><a href="/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/">量子力学の公理</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer>
+  
+  <div>
+    
+      <a href="https://twitter.com/yasuhito" name="twitter"
+        ><em class="fab fa-twitter"></em
+      ></a>
+    
+
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+        <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  </body>
+</html>
