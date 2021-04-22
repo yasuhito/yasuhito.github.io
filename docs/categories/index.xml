@@ -12,6 +12,22 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>量子力学の公理</title>
+			<link>https://yasuhito.github.io/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/</link>
+			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/</guid>
+			<description>閉じた量子系の状態は状態ベクトルで記述できる 閉じた量子系の時間発展を決定するシュレディンガー方程式 量子系の測定 複合量子系の記述</description>
+		</item>
+      	
+		<item>
+			<title>閉じた量子系の状態は状態ベクトルで記述できる</title>
+			<link>https://yasuhito.github.io/post/20210422092500-%E9%96%89%E3%81%97%E3%81%9F%E9%87%8F%E5%AD%90%E7%B3%BB%E3%81%AE%E7%8A%B6%E6%85%8B%E3%81%AF%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E3%81%A6%E8%A8%98%E8%BF%B0%E3%81%A6%E3%81%8D%E3%82%8B/</link>
+			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210422092500-%E9%96%89%E3%81%97%E3%81%9F%E9%87%8F%E5%AD%90%E7%B3%BB%E3%81%AE%E7%8A%B6%E6%85%8B%E3%81%AF%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E3%81%A6%E8%A8%98%E8%BF%B0%E3%81%A6%E3%81%8D%E3%82%8B/</guid>
+			<description>閉じた (孤立した) 量子系に関して、系の状態空間と呼ぶヒルベルト空間が存在する。量子系はこの状態空間の単位ベクトルである状態ベクトルによって完</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.51</title>
 			<link>https://yasuhito.github.io/post/20210421141056-qcqi_%E6%BC%94%E7%BF%92_2_51/</link>
 			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
@@ -73,22 +89,6 @@
 			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210420092342-qcqi_%E6%BC%94%E7%BF%92_2_47/</guid>
 			<description>\(A\) と \(B\) はエルミート演算子だから、 \[A^{\dagger} = A, B^{\dagger} = B\] ここで \((i[A, B])^{\dagger}\) を計算すると、 \begin{eqnarray*} (i[A, B])^{\dagger} &amp;amp;=&amp;amp; (i(AB - BA))^{\dagger} \\\ &amp;amp;=&amp;amp; (i(AB) - i(BA))^{\dagger} \end{eqnarray*} QCQI/演習 2.14 より、 \begin{eqnarray*} \phantom{(i[A, B])^{\dagger}} &amp;amp;=&amp;amp; i(BA)^{\dagger} - i(AB)^{\dagger} \\\ &amp;amp;=&amp;amp; iA^{\dagger}B^{\dagger}-iB^{\dagger}A^{\dagger} \\\ &amp;amp;=&amp;amp;</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.48</title>
-			<link>https://yasuhito.github.io/post/20210420102232-qcqi_%E6%BC%94%E7%BF%92_2_48/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420102232-qcqi_%E6%BC%94%E7%BF%92_2_48/</guid>
-			<description>正の行列 \(P\) の極分解 正の演算子のエルミート性から正の行列は正規であり、よって \(P\) は負でない固有値 \(\lambda_i\) を用いて スペクトル分解できる。 \[P = \sum_i \lambda_i |i\rangle\langle i|\] 極分</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.49</title>
-			<link>https://yasuhito.github.io/post/20210420111607-qcqi_%E6%BC%94%E7%BF%92_2_49/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420111607-qcqi_%E6%BC%94%E7%BF%92_2_49/</guid>
-			<description>正規行列 \(A\) を外積表現 (スペクトル分解) すると、 \[A = \sum_i\lambda_i|i\rangle\langle i|\] 極分解により、\(A = UJ\) を満たす正の演算子の行列表現 J について、 \begin{eqnarray*} J &amp;amp;=&amp;amp; \sqrt{A^{\dagger}A} \\\ &amp;amp;=&amp;amp; \sqrt{\sum_{i,j}\lambda_i^{\ast}\lambda_j |i\rangle\langle i|j\rangle\langle j|} \\\</description>
 		</item>
       	
 	</channel>
