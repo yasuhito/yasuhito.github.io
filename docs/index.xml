@@ -14,6 +14,22 @@
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>正規化条件</title>
+			<link>https://yasuhito.github.io/post/20210422104146-%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%9D%A1%E4%BB%B6/</link>
+			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210422104146-%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%9D%A1%E4%BB%B6/</guid>
+			<description>状態ベクトルは単位ベクトルであり、そのための条件 \(\braket{\psi|\psi} = 1\) を正規化条件と呼ぶ。 量子ビットの状態ベクトルを \(\ket{\psi} = a\ket{0} + b\ket{1}\) と書いたとき、条件 \(\braket{\psi|\psi} = 1\) は \(|a|^2 +</description>
+		</item>
+      	
+		<item>
+			<title>量子ビット</title>
+			<link>https://yasuhito.github.io/post/20210422102127-%E9%87%8F%E5%AD%90%E3%83%92%E3%83%83%E3%83%88/</link>
+			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210422102127-%E9%87%8F%E5%AD%90%E3%83%92%E3%83%83%E3%83%88/</guid>
+			<description>量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。 量子ビットは 2 次元状態空間を持</description>
+		</item>
+      	
+		<item>
 			<title>量子力学の公理</title>
 			<link>https://yasuhito.github.io/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/</link>
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
@@ -75,22 +91,6 @@
 			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210420090708-qcqi_%E6%BC%94%E7%BF%92_2_45/</guid>
 			<description>\begin{eqnarray*} [A, B]^{\dagger} &amp;amp;=&amp;amp; (AB - BA)^{\dagger} \\\ \end{eqnarray*} QCQI/演習 2.14 より \begin{eqnarray*} \phantom{[A, B]^{\dagger}} &amp;amp;=&amp;amp; (AB)^{\dagger} - (BA)^{\dagger} \\\ &amp;amp;=&amp;amp; B^{\dagger}A^{\dagger} - A^{\dagger}B^{\dagger} \\\ &amp;amp;=&amp;amp; [B^{\dagger}, A^{\dagger}] \end{eqnarray*}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.46</title>
-			<link>https://yasuhito.github.io/post/20210420091735-qcqi_%E6%BC%94%E7%BF%92_2_46/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420091735-qcqi_%E6%BC%94%E7%BF%92_2_46/</guid>
-			<description>\[[A, B] = AB - BA = -(BA - AB) = -[B, A]\]</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.47</title>
-			<link>https://yasuhito.github.io/post/20210420092342-qcqi_%E6%BC%94%E7%BF%92_2_47/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420092342-qcqi_%E6%BC%94%E7%BF%92_2_47/</guid>
-			<description>\(A\) と \(B\) はエルミート演算子だから、 \[A^{\dagger} = A, B^{\dagger} = B\] ここで \((i[A, B])^{\dagger}\) を計算すると、 \begin{eqnarray*} (i[A, B])^{\dagger} &amp;amp;=&amp;amp; (i(AB - BA))^{\dagger} \\\ &amp;amp;=&amp;amp; (i(AB) - i(BA))^{\dagger} \end{eqnarray*} QCQI/演習 2.14 より、 \begin{eqnarray*} \phantom{(i[A, B])^{\dagger}} &amp;amp;=&amp;amp; i(BA)^{\dagger} - i(AB)^{\dagger} \\\ &amp;amp;=&amp;amp; iA^{\dagger}B^{\dagger}-iB^{\dagger}A^{\dagger} \\\ &amp;amp;=&amp;amp;</description>
 		</item>
       	
 	</channel>

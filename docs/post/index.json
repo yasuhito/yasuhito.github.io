@@ -2,6 +2,26 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210422104146-%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%9D%A1%E4%BB%B6/",
+                "title": "正規化条件",
+                "section": "post",
+                "date" : "2021.04.22",
+                "body": "状態ベクトルは単位ベクトルであり、そのための条件 \\(\\braket{\\psi|\\psi} = 1\\) を正規化条件と呼ぶ。\n量子ビットの状態ベクトルを \\(\\ket{\\psi} = a\\ket{0} + b\\ket{1}\\) と書いたとき、条件 \\(\\braket{\\psi|\\psi} = 1\\) は \\(|a|^2 + |b|^2 = 1\\) と等価。\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210422102127-%E9%87%8F%E5%AD%90%E3%83%92%E3%83%83%E3%83%88/",
+                "title": "量子ビット",
+                "section": "post",
+                "date" : "2021.04.22",
+                "body": "量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。\n量子ビットは 2 次元状態空間を持つ簡単な量子系であり、\\(\\ket{0}\\) と \\(\\ket{1}\\) がその状態空間の基底を形成する。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/",
                 "title": "量子力学の公理",
                 "section": "post",
@@ -2016,7 +2036,7 @@
                 "title": "基底状態",
                 "section": "post",
                 "date" : "2021.02.24",
-                "body": "\\(|0\\rangle\\) と \\(|1\\rangle\\) は基底状態と呼ばれ、古典コンピュータのビット 0 と 1 に対応する。数学的には、基底状態は状態ベクトル \\(|\\psi\\rangle\\) の正規直交基底を形成するベクトルであり、それぞれ次の列ベクトルで定義される。\n\\begin{equation} |0\\rangle := \\begin{bmatrix} 1 \\\\\\\n0 \\end{bmatrix}, |1\\rangle := \\begin{bmatrix} 0 \\\\\\\n1 \\end{bmatrix} \\end{equation}\nよって 1 量子ビットの状態 \\(|\\psi\\rangle\\) は、2次元複素ベクトル空間の単位ベクトルとして表現できる。\n\\begin{equation} |\\psi\\rangle = \\begin{bmatrix} \\alpha \\\\\\\n\\beta \\end{bmatrix} \\end{equation}\n"
+                "body": "\\(\\ket{0}\\) と \\(\\ket{1}\\) は基底状態と呼ばれ、古典コンピュータのビット 0 と 1 に対応する。数学的には、基底状態は状態ベクトル \\(\\ket{\\psi}\\) の正規直交基底を形成するベクトルであり、それぞれ次の列ベクトルで定義される。\n\\begin{equation*} \\ket{0} \\equiv \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix}, \\ket{1} \\equiv \\begin{bmatrix} 0 \\newline 1 \\end{bmatrix} \\end{equation*}\nよって 1 量子ビットの状態 \\(\\ket{\\psi}\\) は、2 次元複素ベクトル空間の単位ベクトルとして表現できる。\n\\begin{equation*} \\ket{\\psi} = \\begin{bmatrix} \\alpha \\newline \\beta \\end{bmatrix} \\end{equation*}\n"
             }
         
     ,
@@ -2026,7 +2046,7 @@
                 "title": "状態ベクトル",
                 "section": "post",
                 "date" : "2021.02.24",
-                "body": "量子コンピュータでは、情報を量子ビットとして表現する。量子ビットは、古典的なコンピュータでのビットに対応する。1つの量子ビットの任意の状態 \\(|\\psi\\rangle\\) は、ディラック記法を使って基底状態 \\(|0\\rangle\\) と \\(|1\\rangle\\) の重ね合わせ (線形結合) として次の式で表すことができる。\n\\[|\\psi\\rangle = \\alpha|0\\rangle + \\beta|1\\rangle\\]\nここで係数 \\(\\alpha, \\beta\\) を確率振幅と呼び \\(\\alpha, \\beta \\in \\mathcal{C}\\) である。また、正規化条件として \\(|\\alpha|^2 + |\\beta|^2 = 1\\) に従わなければならない。\n"
+                "body": "量子系の状態を完全に記述できる単位ベクトルを状態ベクトルと呼ぶ (閉じた量子系の状態は状態ベクトルで記述できる)。\nたとえば簡単な量子系である 1 つの量子ビットの任意の状態ベクトルを記号 \\(\\ket{\\psi}\\) で表すと、\\(\\ket{\\psi}\\) は基底状態 \\(\\ket{0}\\) と \\(\\ket{1}\\) の線形結合として次のように書ける。\n\\[\\ket{\\psi} = a\\ket{0} + b\\ket{1}\\]\nここで係数 \\(a\\), \\(b\\) は複素数であり、単位ベクトルとなるための正規化条件を満たす。\n"
             }
         
     ,
