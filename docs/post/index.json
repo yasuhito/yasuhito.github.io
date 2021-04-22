@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210422115645-%E3%82%A2%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%AB%E3%82%B1%E3%83%BC%E3%83%88/",
+                "title": "アダマールゲート",
+                "section": "post",
+                "date" : "2021.04.22",
+                "body": "アダマールゲートはユニタリー演算子の一つで、記号 \\(H\\) で表す。\nその演算子としての作用は次のように定義される:\n\\begin{eqnarray*} H\\ket{0} \u0026amp;\\equiv\u0026amp; \\frac{\\ket{0} + \\ket{1}}{\\sqrt{2}} \\\\\\\nH\\ket{1} \u0026amp;\\equiv\u0026amp; \\frac{\\ket{0} - \\ket{1}}{\\sqrt{2}} \\end{eqnarray*}\n行列表現では次のように与えられる:\n\\begin{equation*} H = \\frac{1}{\\sqrt{2}} \\begin{bmatrix} 1 \u0026amp; 1 \\newline 1 \u0026amp; -1 \\end{bmatrix} \\end{equation*}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210422114021-%E6%8C%AF%E5%B9%85/",
                 "title": "振幅",
                 "section": "post",
@@ -66,7 +76,7 @@
                 "title": "QCQI/演習 2.51",
                 "section": "post",
                 "date" : "2021.04.21",
-                "body": "ユニタリー行列の条件 \\(H^{\\dagger}H = I\\) を示す。\n\\begin{eqnarray*} H^{\\dagger}H \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}\\begin{bmatrix} 1 \u0026amp; 1 \\newline 1 \u0026amp; -1 \\end{bmatrix} \\times \\frac{1}{\\sqrt{2}}\\begin{bmatrix} 1 \u0026amp; 1 \\newline 1 \u0026amp; -1 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 2 \u0026amp; 0 \\newline 0 \u0026amp; 2 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; I \\end{eqnarray*}\nよってアダマールゲートはユニタリー。\n"
+                "body": "アダマールゲート \\(H\\) について、ユニタリー行列の条件 \\(H^{\\dagger}H = I\\) を示す。\n\\begin{eqnarray*} H^{\\dagger}H \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2}}\\begin{bmatrix} 1 \u0026amp; 1 \\newline 1 \u0026amp; -1 \\end{bmatrix} \\times \\frac{1}{\\sqrt{2}}\\begin{bmatrix} 1 \u0026amp; 1 \\newline 1 \u0026amp; -1 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 2 \u0026amp; 0 \\newline 0 \u0026amp; 2 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; I \\end{eqnarray*}\nよって \\(H\\) はユニタリー。\n"
             }
         
     ,
@@ -76,7 +86,7 @@
                 "title": "QCQI/演習 2.52",
                 "section": "post",
                 "date" : "2021.04.21",
-                "body": "QCQI/演習 2.51 より \\(H^{\\dagger}H = I\\)\nそして \\(H\\) の行列表現はエルミート行列だから \\(H^{\\dagger} = H\\)\nよって \\(H^{\\dagger}H = H^2 = I\\)\n"
+                "body": "QCQI/演習 2.51 よりアダマールゲート \\(H\\) について \\(H^{\\dagger}H = I\\)\nそして \\(H\\) の行列表現はエルミート行列だから \\(H^{\\dagger} = H\\)\nよって \\(H^{\\dagger}H = H^2 = I\\)\n"
             }
         
     ,
@@ -86,7 +96,7 @@
                 "title": "QCQI/演習 2.53",
                 "section": "post",
                 "date" : "2021.04.21",
-                "body": "\\(H\\) の固有値 \\(\\lambda\\) を求める。\n\\begin{eqnarray*} \\mathrm{det}|H - \\lambda I| \u0026amp;=\u0026amp; \\begin{bmatrix} \\frac{1}{\\sqrt{2}} - \\lambda \u0026amp; \\frac{1}{\\sqrt{2}} \\newline \\frac{1}{\\sqrt{2}} \u0026amp; -\\frac{1}{\\sqrt{2}} - \\lambda \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; -(\\frac{1}{\\sqrt{2}} - \\lambda)(\\frac{1}{\\sqrt{2}} - \\lambda) - \\frac{1}{2} \\\\\\\n\u0026amp;=\u0026amp; \\lambda^2 - 1 \\\\\\\n\u0026amp;=\u0026amp; 0 \\\\\\\n\\therefore \\lambda = \\pm 1 \\end{eqnarray*}\n\\(\\lambda = 1\\) のとき固有ベクトル \\(\\ket{\\lambda_1}\\) は、\n\\begin{eqnarray*} \\mathrm{det}|H - \\lambda I| \u0026amp;=\u0026amp; \\begin{bmatrix} \\frac{1}{\\sqrt{2}} - 1 \u0026amp; \\frac{1}{\\sqrt{2}} \\newline \\frac{1}{\\sqrt{2}} \u0026amp; -\\frac{1}{\\sqrt{2}} - 1 \\end{bmatrix} \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} a \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} b \\end{bmatrix} = \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\end{bmatrix} \\\\\\\n\\Rightarrow \\ket{\\lambda_1} \u0026amp;=\u0026amp; \\begin{bmatrix} 1 \\newline \\sqrt{2} - 1 \\end{bmatrix} \\end{eqnarray*}\n\\(\\lambda = -1\\) のとき固有ベクトル \\(\\ket{\\lambda_{-1}}\\) は、\n\\begin{eqnarray*} \\mathrm{det}|H - \\lambda I| \u0026amp;=\u0026amp; \\begin{bmatrix} \\frac{1}{\\sqrt{2}} + 1 \u0026amp; \\frac{1}{\\sqrt{2}} \\newline \\frac{1}{\\sqrt{2}} \u0026amp; -\\frac{1}{\\sqrt{2}} + 1 \\end{bmatrix} \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} a \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} b \\end{bmatrix} = \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\end{bmatrix} \\\\\\\n\\Rightarrow \\ket{\\lambda_{-1}} \u0026amp;=\u0026amp; \\begin{bmatrix} 1 \\newline -\\sqrt{2} - 1 \\end{bmatrix} \\end{eqnarray*}\n"
+                "body": "アダマールゲート \\(H\\) の固有値 \\(\\lambda\\) を求める。\n\\begin{eqnarray*} \\mathrm{det}|H - \\lambda I| \u0026amp;=\u0026amp; \\begin{bmatrix} \\frac{1}{\\sqrt{2}} - \\lambda \u0026amp; \\frac{1}{\\sqrt{2}} \\newline \\frac{1}{\\sqrt{2}} \u0026amp; -\\frac{1}{\\sqrt{2}} - \\lambda \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; -(\\frac{1}{\\sqrt{2}} - \\lambda)(\\frac{1}{\\sqrt{2}} - \\lambda) - \\frac{1}{2} \\\\\\\n\u0026amp;=\u0026amp; \\lambda^2 - 1 \\\\\\\n\u0026amp;=\u0026amp; 0 \\\\\\\n\\therefore \\lambda = \\pm 1 \\end{eqnarray*}\n\\(\\lambda = 1\\) のとき固有ベクトル \\(\\ket{\\lambda_1}\\) は、\n\\begin{eqnarray*} \\mathrm{det}|H - \\lambda I| \u0026amp;=\u0026amp; \\begin{bmatrix} \\frac{1}{\\sqrt{2}} - 1 \u0026amp; \\frac{1}{\\sqrt{2}} \\newline \\frac{1}{\\sqrt{2}} \u0026amp; -\\frac{1}{\\sqrt{2}} - 1 \\end{bmatrix} \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} a \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} b \\end{bmatrix} = \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\end{bmatrix} \\\\\\\n\\Rightarrow \\ket{\\lambda_1} \u0026amp;=\u0026amp; \\begin{bmatrix} 1 \\newline \\sqrt{2} - 1 \\end{bmatrix} \\end{eqnarray*}\n\\(\\lambda = -1\\) のとき固有ベクトル \\(\\ket{\\lambda_{-1}}\\) は、\n\\begin{eqnarray*} \\mathrm{det}|H - \\lambda I| \u0026amp;=\u0026amp; \\begin{bmatrix} \\frac{1}{\\sqrt{2}} + 1 \u0026amp; \\frac{1}{\\sqrt{2}} \\newline \\frac{1}{\\sqrt{2}} \u0026amp; -\\frac{1}{\\sqrt{2}} + 1 \\end{bmatrix} \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} a \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} b \\end{bmatrix} = \\begin{bmatrix} \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\newline \\vphantom{\\frac{1}{\\sqrt{2}}} 0 \\end{bmatrix} \\\\\\\n\\Rightarrow \\ket{\\lambda_{-1}} \u0026amp;=\u0026amp; \\begin{bmatrix} 1 \\newline -\\sqrt{2} - 1 \\end{bmatrix} \\end{eqnarray*}\n"
             }
         
     ,
@@ -596,7 +606,7 @@
                 "title": "ユニタリー演算子",
                 "section": "post",
                 "date" : "2021.04.11",
-                "body": "\\(U^{\\dagger}U = I\\) ならば演算子 \\(U\\) はユニタリーであるという。\nユニタリー演算子は \\(UU^{\\dagger} = I\\) も満たすので、\\(U\\) は正規でありスペクトル分解ができる。\n"
+                "body": "\\(U^{\\dagger}U = I\\) ならば演算子 \\(U\\) はユニタリーであるという。\nユニタリー演算子は \\(UU^{\\dagger} = I\\) も満たすので、\\(U\\) は正規でありスペクトル分解ができる。\nユニタリー演算子の例  パウリ行列 アダマールゲート  "
             }
         
     ,

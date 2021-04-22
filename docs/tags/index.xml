@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>アダマールゲート</title>
+			<link>https://yasuhito.github.io/post/20210422115645-%E3%82%A2%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%AB%E3%82%B1%E3%83%BC%E3%83%88/</link>
+			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210422115645-%E3%82%A2%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%AB%E3%82%B1%E3%83%BC%E3%83%88/</guid>
+			<description>アダマールゲートはユニタリー演算子の一つで、記号 \(H\) で表す。 その演算子としての作用は次のように定義される: \begin{eqnarray*} H\ket{0} &amp;amp;\equiv&amp;amp; \frac{\ket{0} + \ket{1}}{\sqrt{2}} \\\ H\ket{1} &amp;amp;\equiv&amp;amp; \frac{\ket{0} - \ket{1}}{\sqrt{2}} \end{eqnarray*} 行列表現で</description>
+		</item>
+      	
+		<item>
 			<title>振幅</title>
 			<link>https://yasuhito.github.io/post/20210422114021-%E6%8C%AF%E5%B9%85/</link>
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
@@ -64,7 +72,7 @@
 			<link>https://yasuhito.github.io/post/20210421141056-qcqi_%E6%BC%94%E7%BF%92_2_51/</link>
 			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210421141056-qcqi_%E6%BC%94%E7%BF%92_2_51/</guid>
-			<description>ユニタリー行列の条件 \(H^{\dagger}H = I\) を示す。 \begin{eqnarray*} H^{\dagger}H &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}\begin{bmatrix} 1 &amp;amp; 1 \newline 1 &amp;amp; -1 \end{bmatrix} \times \frac{1}{\sqrt{2}}\begin{bmatrix} 1 &amp;amp; 1 \newline 1 &amp;amp; -1 \end{bmatrix} \\\ &amp;amp;=&amp;amp; \frac{1}{2}\begin{bmatrix} 2 &amp;amp; 0 \newline 0 &amp;amp; 2 \end{bmatrix} \\\ &amp;amp;=&amp;amp; \begin{bmatrix} 1 &amp;amp; 0 \newline 0 &amp;amp; 1 \end{bmatrix} \\\ &amp;amp;=&amp;amp; I \end{eqnarray*} よってアダ</description>
+			<description>アダマールゲート \(H\) について、ユニタリー行列の条件 \(H^{\dagger}H = I\) を示す。 \begin{eqnarray*} H^{\dagger}H &amp;amp;=&amp;amp; \frac{1}{\sqrt{2}}\begin{bmatrix} 1 &amp;amp; 1 \newline 1 &amp;amp; -1 \end{bmatrix} \times \frac{1}{\sqrt{2}}\begin{bmatrix} 1 &amp;amp; 1 \newline 1 &amp;amp; -1 \end{bmatrix} \\\ &amp;amp;=&amp;amp; \frac{1}{2}\begin{bmatrix} 2 &amp;amp; 0 \newline 0 &amp;amp; 2 \end{bmatrix} \\\ &amp;amp;=&amp;amp; \begin{bmatrix} 1 &amp;amp; 0</description>
 		</item>
       	
 		<item>
@@ -72,7 +80,7 @@
 			<link>https://yasuhito.github.io/post/20210421142837-qcqi_%E6%BC%94%E7%BF%92_2_52/</link>
 			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210421142837-qcqi_%E6%BC%94%E7%BF%92_2_52/</guid>
-			<description>QCQI/演習 2.51 より \(H^{\dagger}H = I\) そして \(H\) の行列表現はエルミート行列だから \(H^{\dagger} = H\) よって \(H^{\dagger}H = H^2 = I\)</description>
+			<description>QCQI/演習 2.51 よりアダマールゲート \(H\) について \(H^{\dagger}H = I\) そして \(H\) の行列表現はエルミート行列だから \(H^{\dagger} = H\) よって \(H^{\dagger}H = H^2 = I\)</description>
 		</item>
       	
 		<item>
@@ -80,15 +88,7 @@
 			<link>https://yasuhito.github.io/post/20210421150137-qcqi_%E6%BC%94%E7%BF%92_2_53/</link>
 			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210421150137-qcqi_%E6%BC%94%E7%BF%92_2_53/</guid>
-			<description>\(H\) の固有値 \(\lambda\) を求める。 \begin{eqnarray*} \mathrm{det}|H - \lambda I| &amp;amp;=&amp;amp; \begin{bmatrix} \frac{1}{\sqrt{2}} - \lambda &amp;amp; \frac{1}{\sqrt{2}} \newline \frac{1}{\sqrt{2}} &amp;amp; -\frac{1}{\sqrt{2}} - \lambda \end{bmatrix} \\\ &amp;amp;=&amp;amp; -(\frac{1}{\sqrt{2}} - \lambda)(\frac{1}{\sqrt{2}} - \lambda) - \frac{1}{2} \\\ &amp;amp;=&amp;amp; \lambda^2 - 1 \\\ &amp;amp;=&amp;amp; 0 \\\ \therefore \lambda = \pm 1 \end{eqnarray*} \(\lambda = 1\) のとき固有ベクトル \(\ket{\lambda_1}\) は、 \begin{eqnarray*}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.43</title>
-			<link>https://yasuhito.github.io/post/20210420082939-qcqi_%E6%BC%94%E7%BF%92_2_43/</link>
-			<pubDate>Tue, 20 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210420082939-qcqi_%E6%BC%94%E7%BF%92_2_43/</guid>
-			<description>\[\sigma_j \sigma_k = \frac{[\sigma_j, \sigma_k] + \{\sigma_j, \sigma_k\}}{2}\] ここで QCQI/演習 2.40 より、 \[[\sigma_j, \sigma_k] = 2i\sum_{l=1}^{3}\epsilon_{jkl}\sigma_l\] また QCQI/演習 2.41 より、 \(j \neq k\) のとき \[\{\sigma_j, \sigma_k\} = 0\] \(j = k\) のとき、 \[\{\sigma_j, \sigma_k\} = \sigma_j\sigma_k + \sigma_k\sigma_j = 2I\] よって \begin{eqnarray*} \frac{[\sigma_j, \sigma_k]</description>
+			<description>アダマールゲート \(H\) の固有値 \(\lambda\) を求める。 \begin{eqnarray*} \mathrm{det}|H - \lambda I| &amp;amp;=&amp;amp; \begin{bmatrix} \frac{1}{\sqrt{2}} - \lambda &amp;amp; \frac{1}{\sqrt{2}} \newline \frac{1}{\sqrt{2}} &amp;amp; -\frac{1}{\sqrt{2}} - \lambda \end{bmatrix} \\\ &amp;amp;=&amp;amp; -(\frac{1}{\sqrt{2}} - \lambda)(\frac{1}{\sqrt{2}} - \lambda) - \frac{1}{2} \\\ &amp;amp;=&amp;amp; \lambda^2 - 1 \\\ &amp;amp;=&amp;amp; 0 \\\ \therefore \lambda = \pm 1 \end{eqnarray*} \(\lambda = 1\) のとき固有</description>
 		</item>
       	
 	</channel>
