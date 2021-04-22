@@ -48,7 +48,15 @@
 			<link>https://yasuhito.github.io/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/</link>
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/</guid>
-			<description>閉じた量子系の状態は状態ベクトルで記述できる 閉じた量子系の時間発展はユニタリー変換で記述できる 量子系の測定 複合量子系の記述</description>
+			<description>閉じた量子系の状態は状態ベクトルで記述できる 閉じた量子系の時間発展はユニタリー変換で記述できる 閉じた量子系の時間発展はシュレディンガー方程式</description>
+		</item>
+      	
+		<item>
+			<title>閉じた量子系の時間発展はシュレディンガー方程式で記述できる</title>
+			<link>https://yasuhito.github.io/post/20210422120837-%E9%96%89%E3%81%97%E3%81%9F%E9%87%8F%E5%AD%90%E7%B3%BB%E3%81%AE%E6%99%82%E9%96%93%E7%99%BA%E5%B1%95%E3%81%AF%E3%82%B7%E3%83%A5%E3%83%AC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AB%E3%83%BC%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%A6%E8%A8%98%E8%BF%B0%E3%81%A6%E3%81%8D%E3%82%8B/</link>
+			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210422120837-%E9%96%89%E3%81%97%E3%81%9F%E9%87%8F%E5%AD%90%E7%B3%BB%E3%81%AE%E6%99%82%E9%96%93%E7%99%BA%E5%B1%95%E3%81%AF%E3%82%B7%E3%83%A5%E3%83%AC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%AB%E3%83%BC%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%A6%E8%A8%98%E8%BF%B0%E3%81%A6%E3%81%8D%E3%82%8B/</guid>
+			<description>閉じた量子系の時間発展はシュレディンガー方程式 \[i\hbar \frac{d\ket{\psi}}{dt} = H\ket{\psi}\] で記述できる。ここで \(\hbar\) はプランク定数、\(H\) はエルミート演算子であり閉じた系のハミ</description>
 		</item>
       	
 		<item>
@@ -81,14 +89,6 @@
 			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210421142837-qcqi_%E6%BC%94%E7%BF%92_2_52/</guid>
 			<description>QCQI/演習 2.51 よりアダマールゲート \(H\) について \(H^{\dagger}H = I\) そして \(H\) の行列表現はエルミート行列だから \(H^{\dagger} = H\) よって \(H^{\dagger}H = H^2 = I\)</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.53</title>
-			<link>https://yasuhito.github.io/post/20210421150137-qcqi_%E6%BC%94%E7%BF%92_2_53/</link>
-			<pubDate>Wed, 21 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210421150137-qcqi_%E6%BC%94%E7%BF%92_2_53/</guid>
-			<description>アダマールゲート \(H\) の固有値 \(\lambda\) を求める。 \begin{eqnarray*} \mathrm{det}|H - \lambda I| &amp;amp;=&amp;amp; \begin{bmatrix} \frac{1}{\sqrt{2}} - \lambda &amp;amp; \frac{1}{\sqrt{2}} \newline \frac{1}{\sqrt{2}} &amp;amp; -\frac{1}{\sqrt{2}} - \lambda \end{bmatrix} \\\ &amp;amp;=&amp;amp; -(\frac{1}{\sqrt{2}} - \lambda)(\frac{1}{\sqrt{2}} - \lambda) - \frac{1}{2} \\\ &amp;amp;=&amp;amp; \lambda^2 - 1 \\\ &amp;amp;=&amp;amp; 0 \\\ \therefore \lambda = \pm 1 \end{eqnarray*} \(\lambda = 1\) のとき固有</description>
 		</item>
       	
 	</channel>
