@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.8"/>
-<meta name="twitter:description" content="グラム・シュミット直交化によって作られたベクトルの集合について、それぞれのベクトルが正規化されていることは明らかなので、その集合のうち互いに"/>
+<meta name="twitter:description" content="グラム・シュミット直交化によって、内積を持つベクトル空間 \(V\) に対する正規直交基底 \(\ket{v_1}, \ldots, \ket{v_d}\) が得られることを数学的帰納法で示す。 ベースケースとして \(V\)"/>
 
 
 
@@ -116,23 +116,26 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>によって作られたベクトルの集合について、それぞれのベクトルが<a href="/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/">正規化</a>されていることは明らかなので、その集合のうち互いに異なるベクトルが<a href="/post/20210405112937-%E7%9B%B4%E4%BA%A4/">直交</a>していることを数学的帰納法で示す。</p>
-<p>\(k = 1\) のとき、</p>
-<p>\begin{eqnarray}
-|v_1\rangle &amp;=&amp; \frac{|w_1\rangle}{\||w_1\rangle\|} \newline
-|v_2\rangle &amp;=&amp; \frac{|w_2\rangle - \langle v_1 | w_2 \rangle |v_1\rangle}{\||w_2\rangle - \langle v_1 | w_2 \rangle |v_1\rangle\|} \newline
-\langle v_1|v_2\rangle &amp;=&amp; \frac{\langle v_1|w_2\rangle - \langle v_1 | w_2 \rangle \langle v_1|v_1\rangle}{\||w_2\rangle - \langle v_1 | w_2 \rangle |v_1\rangle\|} \newline
-&amp;=&amp; \frac{\langle v_1|w_2\rangle - \langle v_1 | w_2 \rangle \cdot 1}{\||w_2\rangle - \langle v_1 | w_2 \rangle |v_1\rangle\|} = 0
-\end{eqnarray}</p>
-<p>ここで \(|v_1\rangle, \ldots, |v_n\rangle\ (n \leq d-1)\) が正規直交基底だとする。すると、</p>
-<p>\begin{align*}
-\langle v_j | v_{n+1} \rangle &amp;= \langle v_j | \left(\frac{|w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle|v_i\rangle}{\||w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle|v_i\rangle\|}\right)~~(j \leq n) \newline
-&amp;= \frac{\langle v_j |w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle \langle v_j|v_i\rangle}{\||w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle|v_i\rangle\|} \newline
-&amp;= \frac{\langle v_j |w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle \delta_{ij}}{\||w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle|v_i\rangle\|} \newline
-&amp;= \frac{\langle v_j |w_{n+1}\rangle - \langle v_j | w_{n+1} \rangle}{\||w_{n+1}\rangle - \sum_{i=1}^{n} \langle v_i | w_{n+1} \rangle|v_i\rangle\|} \newline
-&amp;= 0
-\end{align*}</p>
-<p>よってグラム・シュミット直交化によって正規直交基底が作られる。</p>
+  <p><a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>によって、内積を持つ<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\) に対する<a href="/post/20210408163416-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4%E5%9F%BA%E5%BA%95/">正規直交基底</a> \(\ket{v_1}, \ldots, \ket{v_d}\) が得られることを数学的帰納法で示す。</p>
+<p>ベースケースとして \(V\) の正規直交基底の元が 1 つのとき、\(\ket{v_1}\) は、</p>
+<p>\begin{eqnarray*}
+\ket{v_1} &amp;=&amp; \frac{\ket{w_1}}{\|\ket{w_1}\|}
+\end{eqnarray*}</p>
+<p>これは<a href="/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/">正規化</a>されていて、ベクトルが 1 つだけなので直交性も明らか。よって \(\{\ket{v_1}\}\) は \(V\) の正規直交基底である。</p>
+<p>グラム・シュミット直交化によって \(k\) 個の元を持つ正規直交基底 \(\ket{v_1}, \ldots, \ket{v_k}\) が作られると仮定する。</p>
+<p>このとき、グラム・シュミット直交化によって作った \(k+1\) 番目のベクトル \(\ket{v_{k+1}}\) が<a href="/post/20210422104146-%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%9D%A1%E4%BB%B6/">正規</a>であり、\(\ket{v_1}, \ldots, \ket{v_k}\) のそれぞれと直交することを示す。</p>
+<p>\begin{eqnarray*}
+\ket{v_{k+1}} = \frac{\ket{w_{k+1}} - \sum_{i=1}^k\braket{v_i|w_{k+1}}\ket{v_i}}{\|\ket{w_{k+1}} - \sum_{i=1}^k\braket{v_i|w_{k+1}}\ket{v_i}\|}
+\end{eqnarray*}</p>
+<p>定義よりこれが正規であることは明らか。\(\ket{v_1}, \ldots, \ket{v_k}\) との直交性は、\(1 \leq j \leq k\) とすると、</p>
+<p>\begin{eqnarray*}
+\braket{v_j|v_{k+1}} &amp;=&amp; \bra{v_j} \left(\frac{\ket{w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}}\ket{v_i}}{\|\ket{w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}}\ket{v_i}\|}\right) \\\<br>
+&amp;=&amp; \frac{\braket{v_j|w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}} \braket{v_j|v_i}}{\|\ket{w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}}\ket{v_i}\|} \\\<br>
+&amp;=&amp; \frac{\braket{v_j|w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}} \delta_{ij}}{\|\ket{w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}}\ket{v_i}\|} \\\<br>
+&amp;=&amp; \frac{\braket{v_j|w_{k+1}} - \braket{v_j|w_{k+1}}}{\|\ket{w_{k+1}} - \sum_{i=1}^{n} \braket{v_i|w_{k+1}}\ket{v_i}\|} \\\<br>
+&amp;=&amp; 0
+\end{eqnarray*}</p>
+<p>よって数学的帰納法によって、グラム・シュミット直交化によって \(V\) に対する正規直交基底が得られることが示された。</p>
 
 
 
