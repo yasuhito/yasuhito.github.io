@@ -124,6 +124,26 @@ draft = false
 -   QCQI/演習 2.57
 
 
+#### 2.2.5 射影測定 {#2-dot-2-dot-5-射影測定}
+
+-   QCQI/演習 2.58
+-   QCQI/演習 2.59
+-   QCQI/演習 2.60
+-   QCQI/演習 2.61
+
+
+#### 2.2.6 POVM 測定 {#2-dot-2-dot-6-povm-測定}
+
+-   QCQI/演習 2.62
+-   QCQI/演習 2.63
+-   QCQI/演習 2.64
+
+
+#### 2.2.7 位相 {#2-dot-2-dot-7-位相}
+
+-   QCQI/演習 2.65
+
+
 ## 先人達の解答 {#先人達の解答}
 
 -   [goropikari/SolutionQCQINielsenChuang](https://github.com/goropikari/SolutionQCQINielsenChuang) by [goropikari](https://github.com/goropikari) さん

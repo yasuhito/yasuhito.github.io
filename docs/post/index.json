@@ -46,7 +46,7 @@
                 "title": "ハミルトニアンのスペクトル分解",
                 "section": "post",
                 "date" : "2021.04.22",
-                "body": "ハミルトニアンはエルミート演算子なので、固有値 \\(E\\) と それに対応する正規化固有ベクトル \\(\\ket{E}\\) を用いてスペクトル分解できる。\n\\[H = \\sum_E E\\ket{E}\\bra{E}\\]\n量子計算や量子情報で登場するハミルトニアンについては、たとえば単一量子ビットのハミルトニアンがパウリ行列のみを用いて\n\\[H = \\hbar\\omega X\\]\nで与えられるとする (\\(\\omega\\) は実験で決めるパラメータでここでは気にしない)。このハミルトニアンのエネルギー固有状態は明らかに \\(X\\) の固有状態と同じであり、状態が \\((\\ket{0} + \\ket{1})/\\sqrt{2}\\) と \\((\\ket{0} - \\ket{1})/2\\), それぞれに対応するエネルギーが \\(\\hbar\\omega\\) と \\(-\\hbar\\omega\\) で与えられる。したがって基底状態は \\((\\ket{0} - \\ket{1})/\\sqrt{2}\\), 基底状態エネルギーは \\(-\\hbar\\omega\\) である。\n"
+                "body": "ハミルトニアンはエルミート演算子なので、固有値 \\(E\\) と それに対応する正規化固有ベクトル \\(\\ket{E}\\) を用いてスペクトル分解できる。\n\\[H = \\sum_E E\\ket{E}\\bra{E}\\]\n"
             }
         
     ,
@@ -906,7 +906,7 @@
                 "title": "パウリ演算子の外積表現",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "QCQI/演習 2.9を参照\n"
+                "body": "次の式を覚えておけば、パウリ行列やベクトルの要素をわざわざすべて書き下さなくても、ブラケットだけで形式的にいろいろ計算できるので便利。\n\\begin{align*} \u0026amp;I = \\ket{0}\\bra{0} + \\ket{1}\\bra{1} \\\\\\\n\u0026amp;X = \\ket{0}\\bra{1} + \\ket{1}\\bra{0} \\\\\\\n\u0026amp;Y = -i\\ket{0}\\bra{1} + i\\ket{1}\\bra{0} \\\\\\\n\u0026amp;Z = \\ket{0}\\bra{0} - \\ket{1}\\bra{1} \\end{align*}\n(なぜこうなるかは QCQI/演習 2.9 を参照)\nこれを使うとたとえば \\(Y\\ket{0}\\) は、\n\\begin{eqnarray*} Y\\ket{0} \u0026amp;=\u0026amp; (-i\\ket{0}\\bra{1} + i\\ket{1}\\bra{0})\\ket{0} \\\\\\\n\u0026amp;=\u0026amp; \\cancel{-i\\ket{0}\\braket{1|0}} + i\\ket{1}\\braket{0|0} \\\\\\\n\u0026amp;=\u0026amp; i\\ket{1} \\end{eqnarray*}\nとブラケットだけで簡単に計算できる。\n関連ノート  演算子の外積表現  "
             }
         
     ,
@@ -1066,7 +1066,7 @@
                 "title": "QCQI/演習 2.9",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "演算子の外積表現とパウリ行列を使う。\n\\(I\\) の外積表現 \\begin{eqnarray*} I \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|I|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + 1\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| + |1 \\rangle\\langle 1| \\end{eqnarray*}\n\\(X\\) の外積表現 \\begin{eqnarray*} X \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|X|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + 1\\cdot|0 \\rangle\\langle 1| + 1\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 1| + |1 \\rangle\\langle 0| \\end{eqnarray*}\n\\(Y\\) の外積表現 \\begin{eqnarray*} Y \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Y|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 0\\cdot|0 \\rangle\\langle 0| + (-i)\\cdot|0 \\rangle\\langle 1| + i\\cdot|1 \\rangle\\langle 0| + 0\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; -i|0 \\rangle\\langle 1| + i|1 \\rangle\\langle 0| \\end{eqnarray*}\n\\(Z\\) の外積表現 \\begin{eqnarray*} Z \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\langle j|Z|i\\rangle|j\\rangle\\langle i| \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot|0 \\rangle\\langle 0| + 0\\cdot|0 \\rangle\\langle 1| + 0\\cdot|1 \\rangle\\langle 0| + (-1)\\cdot|1 \\rangle\\langle 1| \\\\\\\n\u0026amp;=\u0026amp; |0 \\rangle\\langle 0| - |1 \\rangle\\langle 1| \\end{eqnarray*}\n"
+                "body": "演算子の外積表現を使う。\n\\(I\\) の外積表現 \\begin{eqnarray*} I \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\braket{j|I|i}\\ket{j}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\braket{j|i}\\ket{j}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\delta_{ij}\\ket{j}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\ket{0}\\bra{0} + \\ket{1}\\bra{1} \\end{eqnarray*}\n\\(X\\) の外積表現 \\begin{eqnarray*} X \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\braket{j|X|i}\\ket{j}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\cancel{0\\cdot\\ket{0}\\bra{0}} + 1\\cdot\\ket{0}\\bra{1} + 1\\cdot\\ket{1}\\bra{0} + \\cancel{0\\cdot\\ket{1}\\bra{1}} \\\\\\\n\u0026amp;=\u0026amp; \\ket{0}\\bra{1} + \\ket{1}\\bra{0} \\end{eqnarray*}\n\\(Y\\) の外積表現 \\begin{eqnarray*} Y \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\braket{j|Y|i}\\ket{j}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\cancel{0\\cdot\\ket{0}\\bra{0}} + (-i)\\cdot\\ket{0}\\bra{1} + i\\cdot\\ket{1}\\bra{0} + \\cancel{0\\cdot\\ket{1}\\bra{1}} \\\\\\\n\u0026amp;=\u0026amp; -i\\ket{0}\\bra{1} + i\\ket{1}\\bra{0} \\end{eqnarray*}\n\\(Z\\) の外積表現 \\begin{eqnarray*} Z \u0026amp;=\u0026amp; \\sum_{i,j=0}^1 \\braket{j|Z|i}\\ket{j}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; 1\\cdot\\ket{0}\\bra{0} + \\cancel{0\\cdot\\ket{0}\\bra{1}} + \\cancel{0\\cdot\\ket{1}\\bra{0}} + (-1)\\cdot\\ket{1}\\bra{1} \\\\\\\n\u0026amp;=\u0026amp; \\ket{0}\\bra{0} - \\ket{1}\\bra{1} \\end{eqnarray*}\n関連ノート  パウリ行列  "
             }
         
     ,
@@ -1126,7 +1126,7 @@
                 "title": "完全性関係",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "\\(|i\\rangle\\) をベクトル空間 \\(V\\) における任意の正規直交基底とすると、\n\\[\\sum_i |i\\rangle \\langle i| = I\\]\nが成り立つ。この式を完全性関係と呼ぶ。\n導出 外積表現を使う。任意のベクトル \\(|v\\rangle\\) はある複素数の集合 \\(v_i\\) と正規直交基底 \\(|i\\rangle\\) を用いて \\(|v\\rangle = \\sum_i v_i|i\\rangle\\) と書ける。\\(\\langle i|v\\rangle = v_i\\) であるから、\n\\[\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = \\sum_i |i\\rangle \\langle i|v\\rangle = \\sum_i v_i|i\\rangle = |v\\rangle\\]\nつまり \\(\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = |v\\rangle\\) であり、これが任意のベクトル \\(|v\\rangle\\) について成り立つということは \\(\\sum_i |i\\rangle \\langle i|\\) は恒等演算子であるから、\n\\[\\sum_i |i\\rangle \\langle i| = I\\]\nが成り立つ。\n"
+                "body": "\\(\\ket{i}\\) をベクトル空間 \\(V\\) における任意の正規直交基底とすると、\n\\[\\sum_i \\ket{i}\\bra{i} = I\\]\nが成り立つ。この式を完全性関係と呼ぶ。\n導出 外積表現を使う。任意のベクトル \\(|v\\rangle\\) はある複素数の集合 \\(v_i\\) と正規直交基底 \\(|i\\rangle\\) を用いて \\(|v\\rangle = \\sum_i v_i|i\\rangle\\) と書ける。\\(\\langle i|v\\rangle = v_i\\) であるから、\n\\[\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = \\sum_i |i\\rangle \\langle i|v\\rangle = \\sum_i v_i|i\\rangle = |v\\rangle\\]\nつまり \\(\\left(\\sum_i |i\\rangle \\langle i|\\right)|v\\rangle = |v\\rangle\\) であり、これが任意のベクトル \\(|v\\rangle\\) について成り立つということは \\(\\sum_i |i\\rangle \\langle i|\\) は恒等演算子であるから、\n\\[\\sum_i |i\\rangle \\langle i| = I\\]\nが成り立つ。\n関連ノート  演算子の外積表現  "
             }
         
     ,
@@ -1166,7 +1166,7 @@
                 "title": "演算子の外積表現",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "\\(A: V \\rightarrow W\\) を演算子、\\(|v_i\\rangle\\) を \\(V\\) に対する正規直交基底、\\(|w_i\\rangle\\) を \\(W\\) に対する正規直交基底とする。完全性関係を使うと、\n\\begin{eqnarray} A \u0026amp;=\u0026amp; I_W AI_{V} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{ij} |w_j\\rangle \\langle w_j|A|v_i\\rangle\\langle v_i| \\\\\\\n\u0026amp;=\u0026amp; \\sum_{ij} \\langle w_j|A|v_i\\rangle|w_j\\rangle\\langle v_i| \\end{eqnarray}\nこれは \\(A\\) の外積表現。この式から入力基底 \\(|v_i\\rangle\\), 出力基底 \\(|w_i\\rangle\\) に対して行列 \\(A\\) の \\(i\\) 行 \\(j\\) 列の行列要素は \\(\\langle w_j|A|v_i\\rangle\\) であることがわかる。\n"
+                "body": "\\(A: V \\rightarrow W\\) を演算子、\\(\\ket{v_i}\\) を \\(V\\) に対する正規直交基底、\\(\\ket{w_i}\\) を \\(W\\) に対する正規直交基底とする。このとき、\n\\begin{equation*} A = I_W A I_{V} \\phantom{\\sum_{ij} |w_j\\rangle \\langle w_j|A|v_i\\rangle\\langle v_i|} \\end{equation*}\nと書ける。\\(I_W\\), \\(I_V\\) を完全性関係を使ってそれぞれ書き直すと、\n\\begin{equation*} \\phantom{A} = \\sum_{ij} \\ket{w_j}\\braket{w_j|A|v_i}\\bra{v_i} \\phantom{I_W A I_{V}} \\end{equation*}\n\\(\\braket{w_j|A|v_i}\\) は定数だから、\n\\begin{equation*} \\phantom{A} = \\sum_{ij} \\braket{w_j|A|v_i}\\ket{w_j}\\bra{v_i} \\phantom{I_W A I_{V}} \\end{equation*}\nこれを演算子 \\(A\\) の外積表現と呼ぶ。\nまたこの式から、入力基底 \\(\\ket{v_i}\\), 出力基底 \\(\\ket{w_i}\\) に対して行列 \\(A\\) の \\(i\\) 行 \\(j\\) 列の行列要素は \\(\\braket{w_j|A|v_i}\\) であることがわかる。\n関連ノート  パウリ演算子の外積表現  "
             }
         
     ,
@@ -1256,7 +1256,7 @@
                 "title": "パウリ行列",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "量子計算や量子情報で頻出する行列で、下記のようにいろいろな記号での表し方がある。とにかくよく使うので暗記してしまうのがよい。\n\\begin{align} \\sigma_{0} \\equiv I \u0026amp;\\equiv \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} \u0026amp; \\sigma_{1} \\equiv \\sigma_{x} \\equiv X \u0026amp;\\equiv \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\newline\\newline \\sigma_{2} \\equiv \\sigma{y} \\equiv Y \u0026amp;\\equiv \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} \u0026amp; \\sigma_{3} \\equiv \\sigma_{z} \\equiv Z \u0026amp;\\equiv \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} \\end{align}\n"
+                "body": "量子計算や量子情報で頻出する行列で、下記のようにいろいろな記号での表し方がある。とにかくよく使うので暗記してしまうのがよい。\n\\begin{align} \\sigma_{0} \\equiv I \u0026amp;\\equiv \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} \u0026amp; \\sigma_{1} \\equiv \\sigma_{x} \\equiv X \u0026amp;\\equiv \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\newline\\newline \\sigma_{2} \\equiv \\sigma{y} \\equiv Y \u0026amp;\\equiv \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} \u0026amp; \\sigma_{3} \\equiv \\sigma_{z} \\equiv Z \u0026amp;\\equiv \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} \\end{align}\n関連ノート  パウリ演算子の外積表現  "
             }
         
     ,
@@ -1376,7 +1376,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 極分解と特異値分解  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 時間発展  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 量子測定  QCQI/演習 2.57  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
+                "body": "  演習と問題の解答 第 1 章 概論 1.6.2 広義の量子情報  QCQI/問題 1.1 QCQI/問題 1.2  第 2 章 量子力学入門 2.1.1 基底と線形独立  QCQI/演習 2.1  2.1.2 線形オペレータと行列  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 内積  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 固有ベクトルと固有値  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 転置共役と Hermite オペレータ  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 テンソル積  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 オペレータ関数  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 交換子と反交換子  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 極分解と特異値分解  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 時間発展  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 量子測定  QCQI/演習 2.57  2.2.5 射影測定  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM 測定  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 位相  QCQI/演習 2.65  先人達の解答  goropikari/SolutionQCQINielsenChuang by goropikari さん Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang by 4838 さん QCQI Exercise Solutions (Index) by E. Nakai さん  "
             }
         
     ,
