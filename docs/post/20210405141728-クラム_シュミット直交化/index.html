@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="グラム・シュミット直交化"/>
-<meta name="twitter:description" content="ベクトル空間の基底集合から正規直交基底集合を作るための方法。おおまかには次の手順で行われる: 基底集合の 1 番目のベクトルを正規化する 2 番目のベ"/>
+<meta name="twitter:description" content="ベクトル空間の基底集合から正規直交基底集合を作るための方法。おおまかには次の手順で行われる: 基底集合の 1 番目のベクトルを正規化する 基底集合の"/>
 
 
 
@@ -119,16 +119,19 @@
   <p><a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a>の<a href="/post/20210331121800-%E5%9F%BA%E5%BA%95/">基底</a>集合から<a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a>基底集合を作るための方法。おおまかには次の手順で行われる:</p>
 <ol>
 <li>基底集合の 1 番目のベクトルを<a href="/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/">正規化</a>する</li>
-<li>2 番目のベクトルを 1 番目のベクトルと垂直 (<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a> = 0) にし、正規化する</li>
-<li>3 番目のベクトルを 1, 2 番目のベクトルと垂直にし、正規化する</li>
-<li>&hellip;</li>
-<li>n 番目のベクトルを以前のベクトルすべてと垂直にし、正規化する (繰り返し)</li>
+<li>基底集合の 2 番目のベクトルを、正規化した 1 番目のベクトルと垂直 (<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a> = 0) にし、正規化する</li>
+<li>基底集合の 3 番目のベクトルを、正規直交化した 1, 2 番目のベクトルと垂直にし、正規化する</li>
+<li>(繰り返し)</li>
 </ol>
-<p>一般化すると次のようになる。\(|w_1\rangle, \ldots, |w_d\rangle\) がベクトル空間 \(V\) に対する基底集合、作りたい正規直交基底集合を \(|v_1\rangle, \ldots, |v_d\rangle\) とする。\(|v_1\rangle \equiv |w_1\rangle / \||w_1\rangle\|\) と定義し、\(1 \leq k \leq d - 1\) に対して帰納的に \(|v_{k_1}\rangle\) を次のように定義する。</p>
-<p>\begin{equation}
-|v_{k+1}\rangle \equiv \frac{|w_{k+1}\rangle - \sum^k_{i=1} \langle v_i | w_{k+1}\rangle |v_i\rangle}{\||w_{k+1}\rangle - \sum^k_{i=1}\langle v_i|w_{k+1}\rangle|v_i\rangle\|}
-\end{equation}</p>
-<p>この方法によって正規直交基底集合が作れるので、任意の (有限) \(d\) 次元のベクトル空間は正規直交基底 \(|v_1\rangle, \ldots, |v_d\rangle\) を持つ。</p>
+<p>一般化すると次のようになる。\(\ket{w_1}, \ldots, \ket{w_d}\) がベクトル空間 \(V\) に対する基底集合、作りたい正規直交基底集合を \(\ket{v_1}, \ldots, \ket{v_d}\) とする。\(\ket{v_1} \equiv \ket{w_1} / \|\ket{w_1}\|\) と定義し、\(1 \leq k \leq d - 1\) に対して帰納的に \(\ket{v_{k_1}}\) を次のように定義する。</p>
+<p>\begin{equation*}
+\ket{v_{k+1}} \equiv \frac{\ket{w_{k+1}} - \sum^k_{i=1} \braket{v_i|w_{k+1}}\ket{v_i}}{\|\ket{w_{k+1}} - \sum^k_{i=1}\braket{v_i|w_{k+1}}\ket{v_i}\|}
+\end{equation*}</p>
+<p>この方法によって正規直交基底集合が作れるので、任意の (有限) \(d\) 次元のベクトル空間は正規直交基底 \(\ket{v_1}, \ldots, \ket{v_d}\) を持つ。</p>
+<h2 id="関連ノート">関連ノート</h2>
+<ul>
+<li>グラム・シュミット直交化の証明 (<a href="/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/">QCQI/演習 2.8</a>)</li>
+</ul>
 
 
 
