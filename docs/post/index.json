@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210423151653-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E9%83%A8%E5%88%86%E7%A9%BA%E9%96%93/",
+                "title": "ベクトル部分空間",
+                "section": "post",
+                "date" : "2021.04.23",
+                "body": "ベクトル空間 \\(V\\) のベクトル部分空間 \\(W\\) は \\(V\\) の部分集合であり、\\(W\\) もベクトル空間となる。つまり \\(W\\) は和演算とスカラー倍演算に関して閉じている。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210422115645-%E3%82%A2%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%AB%E3%82%B1%E3%83%BC%E3%83%88/",
                 "title": "アダマールゲート",
                 "section": "post",
@@ -1476,7 +1486,7 @@
                 "title": "スパン集合",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "ベクトル空間のスパン集合とは、その空間の任意のベクトル \\(|v\\rangle\\) が線形結合 \\(|v\\rangle = \\sum_{i}a_i|v_i\\rangle\\) で表せるようなベクトル集合 \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) のこと。\nたとえば、ベクトル空間 \\(\\mathcal{C}^2\\) のスパン集合は、\n\\begin{equation*} |v_1\\rangle \\equiv \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix};~ |v_2\\rangle \\equiv \\begin{bmatrix} 0 \\newline 1 \\end{bmatrix} \\end{equation*}\nという集合になる。なぜなら \\(\\mathcal{C}^2\\) の任意のベクトル\n\\begin{equation*} |v\\rangle = \\begin{bmatrix} a_1 \\newline a_2 \\end{bmatrix} \\end{equation*}\nはベクトル \\(|v_1\\rangle\\) と \\(|v_1\\rangle\\) の線形結合 \\(|v\\rangle = a_1|v_1\\rangle + a_2|v_2\\rangle\\) で書けるから。\n"
+                "body": "ベクトル空間のスパン集合とは、その空間の任意のベクトル \\(\\ket{v}\\) が線形結合 \\(\\ket{v} = \\sum_{i}a_i\\ket{v_i}\\) で表せるようなベクトル集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) のこと。\nたとえば、ベクトル空間 \\(\\mathcal{C}^2\\) のスパン集合の 1 つは、\n\\begin{equation*} \\ket{v_1} \\equiv \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix};~ \\ket{v_2} \\equiv \\begin{bmatrix} 0 \\newline 1 \\end{bmatrix} \\end{equation*}\nなぜなら \\(\\mathcal{C}^2\\) の任意のベクトル\n\\begin{equation*} \\ket{v} = \\begin{bmatrix} a_1 \\newline a_2 \\end{bmatrix} \\end{equation*}\nはベクトル \\(\\ket{v_1}\\) と \\(\\ket{v_2}\\) の線形結合 \\(\\ket{v} = a_1\\ket{v_1} + a_2\\ket{v_2}\\) で書けるから。\n"
             }
         
     ,
@@ -1486,7 +1496,7 @@
                 "title": "基底",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "ベクトル空間 \\(V\\) の元の集合 \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) が次の 2 つの性質をみたすとき、これを \\(V\\) の基底と呼ぶ。\n \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) は線形独立 \\(V\\) の任意の元は \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) の線形結合で表せる  "
+                "body": "ベクトル空間 \\(V\\) の元の集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が次の 2 つの性質をみたすとき、これを \\(V\\) の基底と呼ぶ。\n \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形独立 \\(V\\) の任意の元は \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) の線形結合で表せる  "
             }
         
     ,
@@ -1496,7 +1506,7 @@
                 "title": "次元",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "ベクトル空間 \\(V\\) の基底の要素の数を次元と呼び、\\(dimV\\) と表す。\n"
+                "body": "ベクトル空間 \\(V\\) の基底の要素の数を次元と呼び、\\(\\mathrm{dim}V\\) と表す。\n"
             }
         
     ,
@@ -1506,7 +1516,7 @@
                 "title": "線形従属",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "\\(0\\) でないベクトル \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) について、少なくとも 1 つの \\(i\\) に対して \\(a_i \\neq 0\\) であり、\n\\[a_1|v_1\\rangle + a_2|v_2\\rangle + \\ldots + a_n|v_n\\rangle = 0\\]\nを満たす複素数の集合 \\(a_1, \\ldots, a_n\\) が存在するならば、ベクトル \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) は線形従属であるという。\n関連ノート  線形従属の例 (QCQI/演習 2.1)  "
+                "body": "\\(0\\) でないベクトル \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) について、少なくとも 1 つの \\(i\\) に対して \\(a_i \\neq 0\\) であり、\n\\[a_1\\ket{v_1} + a_2\\ket{v_2} + \\ldots + a_n\\ket{v_n} = 0\\]\nを満たす複素数の集合 \\(a_1, \\ldots, a_n\\) が存在するならば、ベクトル \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形従属であるという。\n関連ノート  線形従属の例 (QCQI/演習 2.1) 線形独立  "
             }
         
     ,
@@ -1516,7 +1526,7 @@
                 "title": "線形独立",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "\\(0\\) でないベクトルの集合 \\(|v_1\\rangle, \\ldots, |v_n\\rangle\\) が線形従属でなければ、それは線形独立であるという。\n"
+                "body": "\\(0\\) でないベクトルの集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が線形従属でなければ、それは線形独立であるという。\n"
             }
         
     ,
@@ -1526,7 +1536,7 @@
                 "title": "スカラー倍演算",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "ベクトル空間上の演算の一つ。たとえば \\(\\mathcal{C}^n\\) 空間では次式で定義される。\n\\begin{equation*} z \\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} \\equiv \\begin{bmatrix} zz_1 \\newline \\vdots \\newline zz_n \\end{bmatrix} \\end{equation*}\n"
+                "body": "ベクトル空間上の演算の一つ。たとえば \\(\\mathcal{C}^n\\) 空間では次式で定義される。\n\\begin{equation*} z \\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} \\equiv \\begin{bmatrix} zz_1 \\newline \\vdots \\newline zz_n \\end{bmatrix} \\end{equation*}\n関連ノート  和演算  "
             }
         
     ,
@@ -1536,7 +1546,7 @@
                 "title": "ゼロベクトル",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "あるベクトル空間について、任意のベクトル \\(|v\\rangle\\) に対して \\(|v\\rangle + |\\theta\\rangle = |v\\rangle\\) を満たすベクトル \\(|\\theta\\rangle\\) をゼロベクトルと呼び、\\(0\\) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜ \\(|0\\rangle\\) と書かないかと言うと、\\(|0\\rangle\\) は通常基底状態のひとつ \\begin{bmatrix}1 \\\\ 0 \\end{bmatrix} を表すのに使うから。\n"
+                "body": "あるベクトル空間について、任意のベクトル \\(\\ket{v}\\) に対して \\(\\ket{v} + \\ket{\\theta} = \\ket{v}\\) を満たすベクトル \\(\\ket{\\theta}\\) をゼロベクトルと呼び、\\(0\\) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜ \\(\\ket{0}\\) と書かないかと言うと、\\(\\ket{0}\\) は通常、基底状態のひとつ\n\\begin{equation*} \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix} \\end{equation*}\nを表すのに使うから。\n"
             }
         
     ,
@@ -1546,7 +1556,7 @@
                 "title": "ベクトル",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "次のような数の組をベクトルと呼ぶ。\n\\[\\begin{bmatrix} z_1 \\\\\\\n\\vdots \\\\\\\nz_n \\end{bmatrix}\\]\n量子力学的な慣用記号では、\\(\\psi\\) をラベルとしてベクトルを\n\\[|\\psi\\rangle\\]\nと表す。\nベクトルはベクトル空間の要素 (元) である。\n"
+                "body": "次のような数の組をベクトルと呼ぶ。\n\\begin{equation*} \\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} \\end{equation*}\n量子力学的な慣用記号 (ディラック記法) では、\\(\\psi\\) をラベルとしてベクトルを\n\\[\\ket{\\psi}\\]\nと表す。\nベクトルはベクトル空間の要素 (元) である。\n"
             }
         
     ,
@@ -1556,7 +1566,7 @@
                 "title": "ベクトル空間",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "和とスカラー倍が定義されている集合で、線形空間とも呼ぶ。ベクトル空間の要素をベクトルと呼ぶ。たとえば次はどれもベクトル空間。\n \\(\\mathcal{R}\\) 実数全体 \\(\\mathcal{R}\\) からなるベクトル空間 \\(\\mathcal{C}\\) 複素数全体 \\(\\mathcal{C}\\) からなるベクトル空間 \\(\\mathcal{R}^n\\) \\(n\\) 次元実数ベクトル全体 \\(\\mathcal{R}^n\\) からなるベクトル空間 \\(\\mathcal{C}^n\\) \\(n\\) 次元複素ベクトル全体 \\(\\mathcal{C}^n\\) からなるベクトル空間 \\(\\mathcal{M}\\) \\(2\\) 次の正方行列全体からなるベクトル空間 \\(\\mathcal{F}\\) 実数関数 \\(f(x)\\) のすべてからなるベクトル空間 \\(\\mathcal{Z}\\) ゼロベクトルからのみなるベクトル空間  このようにベクトル空間にはいろいろあって、空間によってはベクトルが行列であったり関数であったりもすることに注意。\n厳密には、ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある (ただ、普通は問題にはならない)。\n集合 \\(V\\) の任意の元 \\(|\\psi\\rangle\\) と \\(|\\phi\\rangle\\) について、\n和の性質  交換則 \\(|\\psi\\rangle + |\\phi\\rangle = |\\phi\\rangle + |\\psi\\rangle\\) 結合則 \\(|\\psi\\rangle + (|\\phi\\rangle + |\\xi\\rangle) = (|\\psi\\rangle + |\\phi\\rangle) + |\\xi\\rangle\\) 零元の存在 \\(\\exists1\\ |\\theta\\rangle \\in V\\ \\mathrm{s.t.}\\ \\forall|\\psi\\rangle \\in V,\\ |\\psi\\rangle + |\\theta\\rangle = |\\psi\\rangle\\) 逆元の存在 \\(\\forall|\\psi\\rangle \\in V,\\ \\exists1\\ |\\xi\\rangle \\in V\\ \\mathrm{s.t.}\\ |\\psi\\rangle + |\\xi\\rangle = |\\theta\\rangle\\)  スカラー倍の性質  単位元の存在 \\(1\\cdot|\\psi\\rangle = |\\psi\\rangle\\) 結合則 \\(a\\cdot(b\\cdot |\\psi\\rangle) = (ab)\\cdot|\\psi\\rangle\\) 分配則 1 \\(a\\cdot(|\\psi\\rangle + |\\phi\\rangle) = a\\cdot|\\psi\\rangle + a\\cdot|\\phi\\rangle\\) 分配則 2 \\((a + b)\\cdot|\\psi\\rangle = a\\cdot|\\psi\\rangle + b\\cdot|\\psi\\rangle\\)  参考文献  線形代数セミナー ストラング: 線形代数イントロダクション 量子情報科学入門  "
+                "body": "和とスカラー倍が定義されている集合で、線形空間とも呼ぶ。ベクトル空間の要素をベクトルと呼ぶ。たとえば次はどれもベクトル空間。\n \\(\\mathcal{R}\\) 実数全体 \\(\\mathcal{R}\\) からなるベクトル空間 \\(\\mathcal{C}\\) 複素数全体 \\(\\mathcal{C}\\) からなるベクトル空間 \\(\\mathcal{R}^n\\) \\(n\\) 次元実数ベクトル全体 \\(\\mathcal{R}^n\\) からなるベクトル空間 \\(\\mathcal{C}^n\\) \\(n\\) 次元複素ベクトル全体 \\(\\mathcal{C}^n\\) からなるベクトル空間 \\(\\mathcal{M}\\) \\(2\\) 次の正方行列全体からなるベクトル空間 \\(\\mathcal{F}\\) 実数関数 \\(f(x)\\) のすべてからなるベクトル空間 \\(\\mathcal{Z}\\) ゼロベクトルからのみなるベクトル空間  このようにベクトル空間にはいろいろあって、空間によってはベクトルが行列であったり関数であったりもすることに注意。\n厳密には、ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある (ただ、普通は問題にはならない)。\n集合 \\(V\\) の任意の元 \\(\\ket{\\psi}\\) と \\(\\ket{\\phi}\\) について、\n和の性質  交換則 \\(\\ket{\\psi} + \\ket{\\phi} = \\ket{\\phi} + \\ket{\\psi}\\) 結合則 \\(\\ket{\\psi} + (\\ket{\\phi} + \\ket{\\xi}) = (\\ket{\\psi} + \\ket{\\phi}) + \\ket{\\xi}\\) 零元の存在 \\(\\exists1\\ \\ket{\\theta} \\in V\\ \\mathrm{s.t.}\\ \\forall\\ket{\\psi} \\in V,\\ \\ket{\\psi} + \\ket{\\theta} = \\ket{\\psi}\\) 逆元の存在 \\(\\forall\\ket{\\psi} \\in V,\\ \\exists1\\ \\ket{\\xi} \\in V\\ \\mathrm{s.t.}\\ \\ket{\\psi} + \\ket{\\xi} = \\ket{\\theta}\\)  スカラー倍の性質  単位元の存在 \\(1\\cdot\\ket{\\psi} = \\ket{\\psi}\\) 結合則 \\(a\\cdot(b\\cdot \\ket{\\psi}) = (ab)\\cdot\\ket{\\psi}\\) 分配則 1 \\(a\\cdot(\\ket{\\psi} + \\ket{\\phi}) = a\\cdot\\ket{\\psi} + a\\cdot\\ket{\\phi}\\) 分配則 2 \\((a + b)\\cdot\\ket{\\psi} = a\\cdot\\ket{\\psi} + b\\cdot\\ket{\\psi}\\)  参考文献  線形代数セミナー ストラング: 線形代数イントロダクション 量子情報科学入門  "
             }
         
     ,
@@ -1566,7 +1576,7 @@
                 "title": "和演算",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "2 つのベクトルの組を 1 つのベクトルに変換する演算。\nベクトル空間 \\(\\mathcal{C}^n\\) ではベクトルの和演算は次式で定義する。\n\\begin{equation*} \\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} + \\begin{bmatrix} z^{\\prime}_1 \\newline \\vdots \\newline z^{\\prime}_n \\end{bmatrix} \\equiv \\begin{bmatrix} z_1 + z^{\\prime}_1 \\newline \\vdots \\newline z_n + z^{\\prime}_n \\end{bmatrix} \\end{equation*}\n"
+                "body": "2 つのベクトルの組を 1 つのベクトルに変換する演算。\nベクトル空間 \\(\\mathcal{C}^n\\) ではベクトルの和演算は次式で定義する。\n\\begin{equation*} \\begin{bmatrix} z_1 \\newline \\vdots \\newline z_n \\end{bmatrix} + \\begin{bmatrix} z^{\\prime}_1 \\newline \\vdots \\newline z^{\\prime}_n \\end{bmatrix} \\equiv \\begin{bmatrix} z_1 + z^{\\prime}_1 \\newline \\vdots \\newline z_n + z^{\\prime}_n \\end{bmatrix} \\end{equation*}\n関連ノート  スカラー倍演算  "
             }
         
     ,
@@ -1896,7 +1906,7 @@
                 "title": "ディラック記法",
                 "section": "post",
                 "date" : "2021.03.11",
-                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\vert{}\\psi\\rangle\\)   ディラックのブラ (bra) \\(\\langle\\pi\\vert{}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法やそのほか物理学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n 量子力学で用いる標準的な慣用記号のまとめ    記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる。   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい。    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418 \u0026lt;10.1017/S0305004100021162\u0026gt;  "
+                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\ket{\\psi}\\)   ディラックのブラ (bra) \\(\\bra{\\pi}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法をはじめ物理学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n 量子力学で使う標準的な記号のまとめ    記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる。   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい。    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418  "
             }
         
     ,
