@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210427140018-qcqi_%E6%BC%94%E7%BF%92_2_55/",
+                "title": "QCQI/演習 2.55",
+                "section": "post",
+                "date" : "2021.04.27",
+                "body": "\\(U(t_1, t_2)U^{\\dagger}(t_1, t_2) = I\\) を示す。\n\\(H\\) はエルミート演算子なので、固有値 \\(\\lambda_i\\) とそれに対応する正規化固有ベクトル \\(\\ket{i}\\) を用いてスペクトル分解できる\n\\[H = \\sum_i \\lambda_i \\ket{i}\\bra{i}\\]\nここで\n\\[U(t_1, t_2) = \\mathrm{exp}\\left[\\frac{-iH(t_2 - t_1)}{\\hbar}\\right]\\]\nに \\(H\\) のスペクトル分解を使うと、\n\\[U(t_1, t_2) = \\sum_j \\mathrm{exp}\\left[\\frac{-i(t_2 - t_1)\\lambda_j}{\\hbar}\\right]\\ket{j}\\bra{j}\\] \\[U^{\\dagger}(t_1, t_2) = \\sum_j \\mathrm{exp}\\left[\\frac{i(t_2 - t_1)\\lambda_j}{\\hbar}\\right]\\ket{j}\\bra{j}\\] よって、\\(U(t_1, t_2)U^{\\dagger}(t_1, t_2)\\) を計算すると、\n\\begin{eqnarray*} U(t_1, t_2)U^{\\dagger}(t_1, t_2) \u0026amp;=\u0026amp; \\sum_j \\mathrm{exp}\\left[\\frac{-i(t_2 - t_1)\\lambda_j}{\\hbar}\\right]\\mathrm{exp}\\left[\\frac{i(t_2 - t_1)\\lambda_j}{\\hbar}\\right]\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; I \\end{eqnarray*}\nよって \\(U(t_1, t_2)\\) はユニタリー。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/",
                 "title": "可換",
                 "section": "post",

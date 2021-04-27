@@ -20,6 +20,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.55</title>
+			<link>https://yasuhito.github.io/post/20210427140018-qcqi_%E6%BC%94%E7%BF%92_2_55/</link>
+			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210427140018-qcqi_%E6%BC%94%E7%BF%92_2_55/</guid>
+			<description>\(U(t_1, t_2)U^{\dagger}(t_1, t_2) = I\) を示す。 \(H\) はエルミート演算子なので、固有値 \(\lambda_i\) とそれに対応する正規化固有ベクトル \(\ket{i}\) を用いてスペクトル分解できる \[H = \sum_i \lambda_i \ket{i}\bra{i}\] ここで \[U(t_1, t_2) =</description>
+		</item>
+      	
+		<item>
 			<title>可換</title>
 			<link>https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/</link>
 			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210422140552-%E3%83%8F%E3%83%9F%E3%83%AB%E3%83%88%E3%83%8B%E3%82%A2%E3%83%B3/</guid>
 			<description>シュレディンガー方程式に登場するエルミート演算子 \(H\) をハミルトニアンと呼ぶ。 量子計算や量子情報で登場するハミルトニアンについては、たとえば単一</description>
-		</item>
-      	
-		<item>
-			<title>ハミルトニアンのスペクトル分解</title>
-			<link>https://yasuhito.github.io/post/20210422133531-%E3%83%8F%E3%83%9F%E3%83%AB%E3%83%88%E3%83%8B%E3%82%A2%E3%83%B3%E3%81%AE%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</link>
-			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210422133531-%E3%83%8F%E3%83%9F%E3%83%AB%E3%83%88%E3%83%8B%E3%82%A2%E3%83%B3%E3%81%AE%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</guid>
-			<description>ハミルトニアンはエルミート演算子なので、固有値 \(E\) と それに対応する正規化固有ベクトル \(\ket{E}\) を用いてスペクトル分解できる。 \[H = \sum_E E\ket{E}\bra{E}\]</description>
 		</item>
       	
 	</channel>

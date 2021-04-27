@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>正規直交基底</title>
+<title>QCQI/演習 2.55</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="正規直交基底"/>
-<meta name="twitter:description" content="正規直交な基底のこと。"/>
+<meta name="twitter:title" content="QCQI/演習 2.55"/>
+<meta name="twitter:description" content="\(U(t_1, t_2)U^{\dagger}(t_1, t_2) = I\) を示す。 \(H\) はエルミート演算子なので、固有値 \(\lambda_i\) とそれに対応する正規化固有ベクトル \(\ket{i}\) を用いてスペクトル分解できる \[H = \sum_i \lambda_i \ket{i}\bra{i}\] ここで \[U(t_1, t_2) ="/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              正規直交基底
+              QCQI/演習 2.55
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 8, 2021
+  >&nbsp;Apr 27, 2021
   
 </span>
 
@@ -116,7 +116,21 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a>な<a href="/post/20210331121800-%E5%9F%BA%E5%BA%95/">基底</a>のこと。</p>
+  <p>\(U(t_1, t_2)U^{\dagger}(t_1, t_2) = I\) を示す。</p>
+<p>\(H\) は<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>なので、<a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a> \(\lambda_i\) とそれに対応する正規化<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a> \(\ket{i}\) を用いて<a href="/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/">スペクトル分解</a>できる</p>
+<p>\[H = \sum_i \lambda_i \ket{i}\bra{i}\]</p>
+<p>ここで</p>
+<p>\[U(t_1, t_2) = \mathrm{exp}\left[\frac{-iH(t_2 - t_1)}{\hbar}\right]\]</p>
+<p>に \(H\) のスペクトル分解を使うと、</p>
+<p>\[U(t_1, t_2) = \sum_j \mathrm{exp}\left[\frac{-i(t_2 - t_1)\lambda_j}{\hbar}\right]\ket{j}\bra{j}\]
+\[U^{\dagger}(t_1, t_2) = \sum_j \mathrm{exp}\left[\frac{i(t_2 - t_1)\lambda_j}{\hbar}\right]\ket{j}\bra{j}\]
+よって、\(U(t_1, t_2)U^{\dagger}(t_1, t_2)\) を計算すると、</p>
+<p>\begin{eqnarray*}
+U(t_1, t_2)U^{\dagger}(t_1, t_2) &amp;=&amp; \sum_j \mathrm{exp}\left[\frac{-i(t_2 - t_1)\lambda_j}{\hbar}\right]\mathrm{exp}\left[\frac{i(t_2 - t_1)\lambda_j}{\hbar}\right]\ket{j}\bra{j} \\\<br>
+&amp;=&amp; \sum_j \ket{j}\bra{j} \\\<br>
+&amp;=&amp; I
+\end{eqnarray*}</p>
+<p>よって \(U(t_1, t_2)\) は<a href="/post/20210408160607-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC/">ユニタリー</a>。</p>
 
 
 
@@ -224,182 +238,16 @@
     
   
     
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
   
     
   
     
-      
-    
-  
-    
   
     
   
     
   
     
-      
-    
   
     
   
@@ -411,8 +259,6 @@
   
     
   
-    
-      
     
   
     
@@ -597,6 +443,158 @@
   
     
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -621,23 +619,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210417093847-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96%E5%AE%9A%E7%90%86/">同時対角化定理</a></li>
-              
-              <li><a href="/post/20210412092339-qcqi_%E6%BC%94%E7%BF%92_2_21/">QCQI/演習 2.21</a></li>
-              
-              <li><a href="/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/">スペクトル分解</a></li>
-              
-              <li><a href="/post/20210409100412-%E3%83%86%E3%83%B3%E3%82%BD%E3%83%AB%E7%A9%8D/">テンソル積</a></li>
-              
-              <li><a href="/post/20210408161727-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/">ユニタリー演算子の外積表現</a></li>
-              
-              <li><a href="/post/20210406090438-%E5%AE%8C%E5%85%A8%E6%80%A7%E9%96%A2%E4%BF%82/">完全性関係</a></li>
-              
-              <li><a href="/post/20210406093454-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/">演算子の外積表現</a></li>
-              
-              <li><a href="/post/20210405144551-qcqi_%E6%BC%94%E7%BF%92_2_8/">QCQI/演習 2.8</a></li>
-              
-              <li><a href="/post/20210224084353-%E5%9F%BA%E5%BA%95%E7%8A%B6%E6%85%8B/">基底状態</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
