@@ -2,6 +2,26 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210427134245-qcqi_%E6%BC%94%E7%BF%92_2_54/",
+                "title": "QCQI/演習 2.54",
+                "section": "post",
+                "date" : "2021.04.27",
+                "body": "\\(A\\) と \\(B\\) はエルミート演算子でありかつ可換だから、同時対角化定理より \\(A\\) と \\(B\\) は同時対角化可能。つまり \\(A\\), \\(B\\) の固有ベクトルに共通の正規直交集合 \\(\\ket{i}\\) を用いて次のように書ける。\n\\[A = \\sum_i a_i \\ket{i}\\bra{i}\\] \\[B = \\sum_i b_i \\ket{i}\\bra{i}\\]\nこの結果を使うと、\n\\begin{eqnarray*} \\mathrm{exp}(A)\\mathrm{exp}(B) \u0026amp;=\u0026amp; \\sum_i \\mathrm{exp}(a_i)\\ket{i}\\bra{i}\\sum_j\\mathrm{exp}(b_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\mathrm{exp}(a_i + b_j)\\ket{i}\\braket{i|j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\mathrm{exp}(a_i + b_j)\\delta_{i,j}\\ket{i}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\mathrm{exp}(a_i + b_i)\\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{exp}(A + B) \\end{eqnarray*}\n"
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/",
+                "title": "可換",
+                "section": "post",
+                "date" : "2021.04.27",
+                "body": "2 つの演算子 \\(A\\), \\(B\\) について、もし交換子 \\([A, B] = 0\\) つまり \\(AB = BA\\) ならば \\(A\\) は \\(B\\) と可換であるという。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210424110334-x_%E3%82%B1%E3%83%BC%E3%83%88/",
                 "title": "X ゲート",
                 "section": "post",

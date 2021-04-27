@@ -12,6 +12,22 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>QCQI/演習 2.54</title>
+			<link>https://yasuhito.github.io/post/20210427134245-qcqi_%E6%BC%94%E7%BF%92_2_54/</link>
+			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210427134245-qcqi_%E6%BC%94%E7%BF%92_2_54/</guid>
+			<description>\(A\) と \(B\) はエルミート演算子でありかつ可換だから、同時対角化定理より \(A\) と \(B\) は同時対角化可能。つまり \(A\), \(B\) の固有ベクトルに共通の正規直交集合 \(\ket{i}\) を用い</description>
+		</item>
+      	
+		<item>
+			<title>可換</title>
+			<link>https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/</link>
+			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/</guid>
+			<description>2 つの演算子 \(A\), \(B\) について、もし交換子 \([A, B] = 0\) つまり \(AB = BA\) ならば \(A\) は \(B\) と可換であるという。</description>
+		</item>
+      	
+		<item>
 			<title>X ゲート</title>
 			<link>https://yasuhito.github.io/post/20210424110334-x_%E3%82%B1%E3%83%BC%E3%83%88/</link>
 			<pubDate>Sat, 24 Apr 2021 00:00:00 +0900</pubDate>
@@ -73,22 +89,6 @@
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210422133531-%E3%83%8F%E3%83%9F%E3%83%AB%E3%83%88%E3%83%8B%E3%82%A2%E3%83%B3%E3%81%AE%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/</guid>
 			<description>ハミルトニアンはエルミート演算子なので、固有値 \(E\) と それに対応する正規化固有ベクトル \(\ket{E}\) を用いてスペクトル分解できる。 \[H = \sum_E E\ket{E}\bra{E}\]</description>
-		</item>
-      	
-		<item>
-			<title>振幅</title>
-			<link>https://yasuhito.github.io/post/20210422114021-%E6%8C%AF%E5%B9%85/</link>
-			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210422114021-%E6%8C%AF%E5%B9%85/</guid>
-			<description>状態を重ね合わせるときの係数を振幅と呼ぶ。たとえば、 \[\frac{\ket{0} - \ket{1}}{\sqrt{2}}\] は状態 \(\ket{0}\) に対して振幅 \(\frac{1}{\sqrt{2}}\), 状態 \(\ket{1}\) に対して振幅 \(\frac{-1}{\sqrt{2}}\) で状態 \(\ket{0}\) と \(\ket{1}\) を重ね合わせたもの。 一般に、</description>
-		</item>
-      	
-		<item>
-			<title>正規化条件</title>
-			<link>https://yasuhito.github.io/post/20210422104146-%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%9D%A1%E4%BB%B6/</link>
-			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210422104146-%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%9D%A1%E4%BB%B6/</guid>
-			<description>状態ベクトルは単位ベクトルであり、そのための条件 \(\braket{\psi|\psi} = 1\) を正規化条件と呼ぶ。 量子ビットの状態ベクトルを \(\ket{\psi} = a\ket{0} + b\ket{1}\) と書いたとき、条件 \(\braket{\psi|\psi} = 1\) は \(|a|^2 +</description>
 		</item>
       	
 	</channel>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>QCQI/演習 2.54</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="QCQI/演習 2.54"/>
+<meta name="twitter:description" content="\(A\) と \(B\) はエルミート演算子でありかつ可換だから、同時対角化定理より \(A\) と \(B\) は同時対角化可能。つまり \(A\), \(B\) の固有ベクトルに共通の正規直交集合 \(\ket{i}\) を用い"/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/custom.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/main.bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.82.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+        <a href="https://yasuhito.github.io/" class="nav-logo">
+        <img
+          src="https://yasuhito.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+        </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              QCQI/演習 2.54
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;Apr 27, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>\(A\) と \(B\) は<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>でありかつ<a href="/post/20210427133807-%E5%8F%AF%E6%8F%9B/">可換</a>だから、<a href="/post/20210417093847-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96%E5%AE%9A%E7%90%86/">同時対角化定理</a>より \(A\) と \(B\) は<a href="/post/20210417092753-%E5%90%8C%E6%99%82%E5%AF%BE%E8%A7%92%E5%8C%96/">同時対角化</a>可能。つまり \(A\), \(B\) の<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>に共通の<a href="/post/20210405131650-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4/">正規直交</a>集合 \(\ket{i}\) を用いて次のように書ける。</p>
+<p>\[A = \sum_i a_i \ket{i}\bra{i}\]
+\[B = \sum_i b_i \ket{i}\bra{i}\]</p>
+<p>この結果を使うと、</p>
+<p>\begin{eqnarray*}
+\mathrm{exp}(A)\mathrm{exp}(B) &amp;=&amp; \sum_i \mathrm{exp}(a_i)\ket{i}\bra{i}\sum_j\mathrm{exp}(b_j)\ket{j}\bra{j} \\\<br>
+&amp;=&amp; \sum_{i,j} \mathrm{exp}(a_i + b_j)\ket{i}\braket{i|j}\bra{j} \\\<br>
+&amp;=&amp; \sum_{i,j} \mathrm{exp}(a_i + b_j)\delta_{i,j}\ket{i}\bra{j} \\\<br>
+&amp;=&amp; \sum_i \mathrm{exp}(a_i + b_i)\ket{i}\bra{i} \\\<br>
+&amp;=&amp; \mathrm{exp}(A + B)
+\end{eqnarray*}</p>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer>
+  
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+        <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  </body>
+</html>
