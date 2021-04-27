@@ -11,31 +11,31 @@ draft = false
 ## 演習と問題の解答 {#演習と問題の解答}
 
 
-### 第 1 章 概論 {#第-1-章-概論}
+### 1 Introduction and overview {#1-introduction-and-overview}
 
 
-#### 1.6.2 広義の量子情報 {#1-dot-6-dot-2-広義の量子情報}
+#### 1.6.2 Quantum information in a wider context {#1-dot-6-dot-2-quantum-information-in-a-wider-context}
 
 -   QCQI/問題 1.1
 -   QCQI/問題 1.2
 
 
-### 第 2 章 量子力学入門 {#第-2-章-量子力学入門}
+### 2 Introduction to quantum mechanics {#2-introduction-to-quantum-mechanics}
 
 
-#### 2.1.1 基底と線形独立 {#2-dot-1-dot-1-基底と線形独立}
+#### 2.1.1 Bases and linear independence {#2-dot-1-dot-1-bases-and-linear-independence}
 
 -   [QCQI/演習 2.1]({{< relref "20210402160012-qcqi_演習_2_1" >}})
 
 
-#### 2.1.2 線形オペレータと行列 {#2-dot-1-dot-2-線形オペレータと行列}
+#### 2.1.2 Linear operators and matrices {#2-dot-1-dot-2-linear-operators-and-matrices}
 
 -   [QCQI/演習 2.2]({{< relref "20210402160242-qcqi_演習_2_2" >}})
 -   [QCQI/演習 2.3]({{< relref "20210402160643-qcqi_演習_2_3" >}})
 -   [QCQI/演習 2.4]({{< relref "20210402161917-qcqi_演習_2_4" >}})
 
 
-#### 2.1.4 内積 {#2-dot-1-dot-4-内積}
+#### 2.1.4 Inner products {#2-dot-1-dot-4-inner-products}
 
 -   [QCQI/演習 2.5]({{< relref "20210405093758-qcqi_演習_2_5" >}})
 -   [QCQI/演習 2.6]({{< relref "20210405105718-qcqi_演習_2_6" >}})
@@ -45,13 +45,13 @@ draft = false
 -   [QCQI/演習 2.10]({{< relref "20210406103502-qcqi_演習_2_10" >}})
 
 
-#### 2.1.5 固有ベクトルと固有値 {#2-dot-1-dot-5-固有ベクトルと固有値}
+#### 2.1.5 Eigenvectors and eigenvalues {#2-dot-1-dot-5-eigenvectors-and-eigenvalues}
 
 -   [QCQI/演習 2.11]({{< relref "20210406155031-qcqi_演習_2_11" >}})
 -   [QCQI/演習 2.12]({{< relref "20210408084752-qcqi_演習_2_12" >}})
 
 
-#### 2.1.6 転置共役と Hermite オペレータ {#2-dot-1-dot-6-転置共役と-hermite-オペレータ}
+#### 2.1.6 Adjoints and Hermitian operators {#2-dot-1-dot-6-adjoints-and-hermitian-operators}
 
 -   [QCQI/演習 2.13]({{< relref "20210408092119-qcqi_演習_2_13" >}})
 -   [QCQI/演習 2.14]({{< relref "20210408102838-qcqi_演習_2_14" >}})
@@ -68,7 +68,7 @@ draft = false
 -   [QCQI/演習 2.25]({{< relref "20210409163352-qcqi_演習_2_25" >}})
 
 
-#### 2.1.7 テンソル積 {#2-dot-1-dot-7-テンソル積}
+#### 2.1.7 Tensor products {#2-dot-1-dot-7-tensor-products}
 
 -   [QCQI/演習 2.26]({{< relref "20210413114431-qcqi_演習_2_26" >}})
 -   [QCQI/演習 2.27]({{< relref "20210413134407-qcqi_演習_2_27" >}})
@@ -80,7 +80,7 @@ draft = false
 -   [QCQI/演習 2.33]({{< relref "20210413161116-qcqi_演習_2_33" >}})
 
 
-#### 2.1.8 オペレータ関数 {#2-dot-1-dot-8-オペレータ関数}
+#### 2.1.8 Operator functions {#2-dot-1-dot-8-operator-functions}
 
 -   [QCQI/演習 2.34]({{< relref "20210414091444-qcqi_演習_2_34" >}})
 -   [QCQI/演習 2.35]({{< relref "20210414112724-qcqi_演習_2_35" >}})
@@ -90,7 +90,7 @@ draft = false
 -   [QCQI/演習 2.39]({{< relref "20210415113826-qcqi_演習_2_39" >}})
 
 
-#### 2.1.9 交換子と反交換子 {#2-dot-1-dot-9-交換子と反交換子}
+#### 2.1.9 The commutator and anti-commutator {#2-dot-1-dot-9-the-commutator-and-anti-commutator}
 
 -   [QCQI/演習 2.40]({{< relref "20210417101015-qcqi_演習_2_40" >}})
 -   [QCQI/演習 2.41]({{< relref "20210417105027-qcqi_演習_2_41" >}})
@@ -102,14 +102,14 @@ draft = false
 -   [QCQI/演習 2.47]({{< relref "20210420092342-qcqi_演習_2_47" >}})
 
 
-#### 2.1.10 極分解と特異値分解 {#2-dot-1-dot-10-極分解と特異値分解}
+#### 2.1.10 The polar and singular value decompositions {#2-dot-1-dot-10-the-polar-and-singular-value-decompositions}
 
 -   [QCQI/演習 2.48]({{< relref "20210420102232-qcqi_演習_2_48" >}})
 -   [QCQI/演習 2.49]({{< relref "20210420111607-qcqi_演習_2_49" >}})
 -   QCQI/演習 2.50
 
 
-#### 2.2.2 時間発展 {#2-dot-2-dot-2-時間発展}
+#### 2.2.2 Evolution {#2-dot-2-dot-2-evolution}
 
 -   [QCQI/演習 2.51]({{< relref "20210421141056-qcqi_演習_2_51" >}})
 -   [QCQI/演習 2.52]({{< relref "20210421142837-qcqi_演習_2_52" >}})
@@ -119,12 +119,12 @@ draft = false
 -   QCQI/演習 2.56
 
 
-#### 2.2.3 量子測定 {#2-dot-2-dot-3-量子測定}
+#### 2.2.3 Quantum measurement {#2-dot-2-dot-3-quantum-measurement}
 
 -   QCQI/演習 2.57
 
 
-#### 2.2.5 射影測定 {#2-dot-2-dot-5-射影測定}
+#### 2.2.5 Projective measurements {#2-dot-2-dot-5-projective-measurements}
 
 -   QCQI/演習 2.58
 -   QCQI/演習 2.59
@@ -132,20 +132,13 @@ draft = false
 -   QCQI/演習 2.61
 
 
-#### 2.2.6 POVM 測定 {#2-dot-2-dot-6-povm-測定}
+#### 2.2.6 POVM measurements {#2-dot-2-dot-6-povm-measurements}
 
 -   QCQI/演習 2.62
 -   QCQI/演習 2.63
 -   QCQI/演習 2.64
 
 
-#### 2.2.7 位相 {#2-dot-2-dot-7-位相}
+#### 2.2.7 Phase {#2-dot-2-dot-7-phase}
 
 -   QCQI/演習 2.65
-
-
-## 先人達の解答 {#先人達の解答}
-
--   [goropikari/SolutionQCQINielsenChuang](https://github.com/goropikari/SolutionQCQINielsenChuang) by [goropikari](https://github.com/goropikari) さん
--   [Solutions: Quantum Computation and Quantum Information by Nielsen and Chuang](https://serab.net/docs/qcqi/) by [4838](https://twitter.com/t%5F4838) さん
--   [QCQI Exercise Solutions (Index)](https://enakai00.hatenablog.com/entry/2018/04/22/195026) by [E. Nakai](https://twitter.com/enakai00) さん

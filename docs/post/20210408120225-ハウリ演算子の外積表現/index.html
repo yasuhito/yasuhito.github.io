@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="パウリ演算子の外積表現"/>
-<meta name="twitter:description" content="次の式を覚えておけば、パウリ行列やベクトルの要素をわざわざすべて書き下さなくても、ブラケットだけで形式的にいろいろ計算できるので便利。 \begin{align*} &amp;I ="/>
+<meta name="twitter:description" content="次の式を覚えておけば、パウリ行列やベクトルの要素をわざわざすべて書き下さなくても、ディラック記法だけで形式的にいろいろ計算できるので便利。 \begin{align*}"/>
 
 
 
@@ -45,7 +45,7 @@
 
 <script src="https://yasuhito.github.io/js/main.bundle.js"></script>
 <script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.81.0" />
+<meta name="generator" content="Hugo 0.82.1" />
   </head>
   <body>
     
@@ -116,21 +116,19 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>次の式を覚えておけば、<a href="/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/">パウリ行列</a>やベクトルの要素をわざわざすべて書き下さなくても、ブラケットだけで形式的にいろいろ計算できるので便利。</p>
+  <p>次の式を覚えておけば、<a href="/post/20210405084714-%E3%83%8F%E3%82%A6%E3%83%AA%E8%A1%8C%E5%88%97/">パウリ行列</a>や<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a>の要素をわざわざすべて書き下さなくても、<a href="/post/20210311082809-%E3%83%86%E3%82%A3%E3%83%A9%E3%83%83%E3%82%AF%E8%A8%98%E6%B3%95/">ディラック記法</a>だけで形式的にいろいろ計算できるので便利。</p>
 <p>\begin{align*}
-&amp;I = \ket{0}\bra{0} + \ket{1}\bra{1} \\\<br>
-&amp;X = \ket{0}\bra{1} + \ket{1}\bra{0} \\\<br>
-&amp;Y = -i\ket{0}\bra{1} + i\ket{1}\bra{0} \\\<br>
-&amp;Z = \ket{0}\bra{0} - \ket{1}\bra{1}
+I &amp;= \ket{0}\bra{0} + \ket{1}\bra{1}    &amp; X &amp;= \ket{0}\bra{1} + \ket{1}\bra{0} \\\<br>
+Y &amp;= -i\ket{0}\bra{1} + i\ket{1}\bra{0} &amp; Z &amp;= \ket{0}\bra{0} - \ket{1}\bra{1}
 \end{align*}</p>
-<p>(なぜこうなるかは <a href="/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/">QCQI/演習 2.9</a> を参照)</p>
+<p>(なぜこうなるかの計算は <a href="/post/20210406095636-qcqi_%E6%BC%94%E7%BF%92_2_9/">QCQI/演習 2.9</a> を参照)</p>
 <p>これを使うとたとえば \(Y\ket{0}\) は、</p>
 <p>\begin{eqnarray*}
 Y\ket{0} &amp;=&amp; (-i\ket{0}\bra{1} + i\ket{1}\bra{0})\ket{0} \\\<br>
-&amp;=&amp; \cancel{-i\ket{0}\braket{1|0}} + i\ket{1}\braket{0|0} \\\<br>
+&amp;=&amp; \cancel{-i\ket{0}\underbrace{\braket{1|0}}_{= 0}} + i\ket{1}\underbrace{\braket{0|0}}_{= 1} \\\<br>
 &amp;=&amp; i\ket{1}
 \end{eqnarray*}</p>
-<p>とブラケットだけで簡単に計算できる。</p>
+<p>と簡単に計算できる。</p>
 <h2 id="関連ノート">関連ノート</h2>
 <ul>
 <li><a href="/post/20210406093454-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%A4%96%E7%A9%8D%E8%A1%A8%E7%8F%BE/">演算子の外積表現</a></li>
