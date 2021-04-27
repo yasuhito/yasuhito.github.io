@@ -116,7 +116,7 @@ draft = false
 -   [QCQI/演習 2.53]({{< relref "20210421150137-qcqi_演習_2_53" >}})
 -   [QCQI/演習 2.54]({{< relref "20210427134245-qcqi_演習_2_54" >}})
 -   [QCQI/演習 2.55]({{< relref "20210427140018-qcqi_演習_2_55" >}})
--   QCQI/演習 2.56
+-   [QCQI/演習 2.56]({{< relref "20210427150513-qcqi_演習_2_56" >}})
 
 
 #### 2.2.3 Quantum measurement {#2-dot-2-dot-3-quantum-measurement}

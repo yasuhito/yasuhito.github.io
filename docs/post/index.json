@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210427150513-qcqi_%E6%BC%94%E7%BF%92_2_56/",
+                "title": "QCQI/演習 2.56",
+                "section": "post",
+                "date" : "2021.04.27",
+                "body": "\\(U\\) は正規なので固有値 \\(\\lambda_i\\) とそれに対応する正規化固有ベクトル \\(\\ket{i}\\) を用いてスペクトル分解できる。\n\\[U = \\sum_i \\lambda_i \\ket{i}\\bra{i}\\]\nこれを \\(K\\) に適用すると、\n\\begin{align*} \u0026amp;K = -i\\mathrm{log}(U) = -i\\sum_j \\mathrm{log}(\\lambda_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;K^{\\dagger} = i\\sum_j \\mathrm{log}(\\lambda_j)^{\\ast}\\ket{j}\\bra{j} \\end{align*}\nここで QCQI/演習 2.18 の結果より、ユニタリー行列の固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書けることから、\n\\begin{eqnarray*} K \u0026amp;=\u0026amp; -i\\sum_j \\mathrm{log}(\\lambda_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; -i\\sum_j \\mathrm{log}(e^{i\\theta_j})\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; -i\\sum_j i\\theta_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_j \\theta_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; K^{\\dagger} \\end{eqnarray*}\nよって \\(K\\) はエルミート演算子。\nここで、\\(K = -i\\mathrm{log}(U)\\) の両辺の \\(\\mathrm{exp}\\) を取ると \\(U = \\mathrm{exp}(iK)\\) となる。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/",
                 "title": "可換",
                 "section": "post",
