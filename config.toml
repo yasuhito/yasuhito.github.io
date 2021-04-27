@@ -29,10 +29,10 @@ hasCJKLanguage = true
   url = "search"
   weight = 3
 
-[[params.social]]
-  name="twitter"
-  url="https://twitter.com/yasuhito"
-  icon="fab fa-twitter"
+# [[params.social]]
+#   name="twitter"
+#   url="https://twitter.com/yasuhito"
+#   icon="fab fa-twitter"
 
 [params.logo]
   url = "icon.png" # static/images/icon.png
