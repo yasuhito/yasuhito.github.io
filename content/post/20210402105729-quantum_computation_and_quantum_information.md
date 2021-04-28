@@ -121,7 +121,7 @@ draft = false
 
 #### 2.2.3 Quantum measurement {#2-dot-2-dot-3-quantum-measurement}
 
--   QCQI/演習 2.57
+-   [QCQI/演習 2.57]({{< relref "20210428160219-qcqi_演習_2_57" >}})
 
 
 #### 2.2.5 Projective measurements {#2-dot-2-dot-5-projective-measurements}

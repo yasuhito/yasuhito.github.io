@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210428160219-qcqi_%E6%BC%94%E7%BF%92_2_57/",
+                "title": "QCQI/演習 2.57",
+                "section": "post",
+                "date" : "2021.04.28",
+                "body": "量子状態 \\(\\ket{\\psi}\\) を測定演算子の集合 \\(\\{L_l\\}\\) で測定し測定結果 \\(l\\) を確率 \\(p(l)\\) で得て状態が \\(\\ket{\\psi^{\\prime}}\\) になるとする。2 度目の測定を測定演算子の集合 \\(\\{M_m\\}\\) で測定し測定結果 \\(m\\) を確率 \\(p(m)\\) で得て状態が \\(\\ket{\\psi^{\\prime\\prime}}\\) になるとする。\n\\[p(l) = \\braket{\\psi|L_l^{\\dagger}L_l|\\psi}\\]\n\\[\\ket{\\psi^{\\prime}} = \\frac{L_l\\ket{\\psi}}{\\sqrt{\\braket{\\psi|L_l^{\\dagger}L_l|\\psi}}}\\]\n\\[p(m) = \\braket{\\psi^{\\prime}|M_m^{\\dagger}M_m|\\psi^{\\prime}}\\]\n\\[\\ket{\\psi^{\\prime\\prime}} = \\frac{M_m\\ket{\\psi^{\\prime}}}{\\sqrt{\\braket{\\psi^{\\prime}|M_m^{\\dagger}M_m|\\psi^{\\prime}}}}\\]\nこれらを \\(\\ket{\\psi}\\) 中心に書き直すと次のように式変形できる。\n\\[\\braket{\\psi^{\\prime}|M_m^{\\dagger}M_m|\\psi^{\\prime}} = \\frac{\\braket{\\psi|L_l^{\\dagger}M_m^{\\dagger}M_m L_l|\\psi}}{\\braket{\\psi|L_l^{\\dagger}L_l|\\psi}}\\]\n\\[M_m\\ket{\\psi^{\\prime}} = \\frac{M_m L_l\\ket{\\psi}}{\\sqrt{\\braket{\\psi|L_l^{\\dagger}L_l|\\psi}}}\\ \\Rightarrow\\ \\ket{\\psi^{\\prime\\prime}} = \\frac{M_m L_l\\ket{\\psi}}{\\sqrt{\\braket{\\psi|L_l^{\\dagger}M_m^{\\dagger}M_m L_l|\\psi}}}\\]\nここで測定演算子の集合 \\(\\{N_{lm}\\}\\ (N_{lm} = M_m L_l)\\) で測定する場合を考える。これは測定結果 \\((l, m)\\) を確率 \\(p(l, m)\\) で得て状態が \\(\\ket{\\phi}\\) になる。このとき、\n\\[p(l, m) = \\braket{\\psi|L_l^{\\dagger}M_m^{\\dagger}M_m L_l|\\psi} = p(l)p(m)\\]\n\\[\\ket{\\phi} = \\frac{M_m L_l\\ket{\\psi}}{\\sqrt{\\braket{\\psi|L_l^{\\dagger}M_m^{\\dagger}M_m L_l|\\psi}}} = \\ket{\\psi^{\\prime\\prime}}\\]\nよって \\(\\{L_l\\}\\) の後に \\(\\{M_m\\}\\) で測定することは、\\(\\{N_{lm}\\}\\) で単一の測定をすることと物理的に等価。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210427134245-qcqi_%E6%BC%94%E7%BF%92_2_54/",
                 "title": "QCQI/演習 2.54",
                 "section": "post",

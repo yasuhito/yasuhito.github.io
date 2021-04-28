@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(&#34;Notes&#34;) (Yasuhito Takamiya)</managingEditor>
     	
-  		<lastBuildDate>Tue, 27 Apr 2021 00:00:00 +0900</lastBuildDate>
+  		<lastBuildDate>Wed, 28 Apr 2021 00:00:00 +0900</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>QCQI/演習 2.57</title>
+			<link>https://yasuhito.github.io/post/20210428160219-qcqi_%E6%BC%94%E7%BF%92_2_57/</link>
+			<pubDate>Wed, 28 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210428160219-qcqi_%E6%BC%94%E7%BF%92_2_57/</guid>
+			<description>量子状態 \(\ket{\psi}\) を測定演算子の集合 \(\{L_l\}\) で測定し測定結果 \(l\) を確率 \(p(l)\) で得て状態が \(\ket{\psi^{\prime}}\) になるとする。2 度目の測定を測定演算子の集合 \(\{M_m\}\) で測定し測定結果 \(m\) を確率</description>
+		</item>
+      	
 		<item>
 			<title>QCQI/演習 2.54</title>
 			<link>https://yasuhito.github.io/post/20210427134245-qcqi_%E6%BC%94%E7%BF%92_2_54/</link>
@@ -83,14 +91,6 @@
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210422135421-%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AD%E3%83%BC/</guid>
 			<description>ハミルトニアンのスペクトル分解 \[H = \sum_E E\ket{E}\bra{E}\] において、\(E\) をエネルギー固有状態 \(\ket{E}\) のエネルギーと呼ぶ。 最も低いエネルギーを系の基底状態エネルギ</description>
-		</item>
-      	
-		<item>
-			<title>エネルギー固有状態</title>
-			<link>https://yasuhito.github.io/post/20210422135039-%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AD%E3%83%BC%E5%9B%BA%E6%9C%89%E7%8A%B6%E6%85%8B/</link>
-			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210422135039-%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AD%E3%83%BC%E5%9B%BA%E6%9C%89%E7%8A%B6%E6%85%8B/</guid>
-			<description>ハミルトニアンのスペクトル分解 \[H = \sum_E E\ket{E}\bra{E}\] において、状態 \(\ket{E}\) をエネルギー固有状態または定常状態と呼ぶ。 最も低いエネルギー \(E\) を系の基底状態エネルギー</description>
 		</item>
       	
 	</channel>

@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>Identity</title>
+<title>QCQI/演習 2.57</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Identity"/>
-<meta name="twitter:description" content="図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。 入力は 1 つ、出力も同じく 1 つなので \((1, 1)\) である。 参考 Graphical Linear Algebra 5. Spoilers, Adding (Part 2) and Zero"/>
+<meta name="twitter:title" content="QCQI/演習 2.57"/>
+<meta name="twitter:description" content="量子状態 \(\ket{\psi}\) を測定演算子の集合 \(\{L_l\}\) で測定し測定結果 \(l\) を確率 \(p(l)\) で得て状態が \(\ket{\psi^{\prime}}\) になるとする。2 度目の測定を測定演算子の集合 \(\{M_m\}\) で測定し測定結果 \(m\) を確率"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              Identity
+              QCQI/演習 2.57
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 23, 2021
+  >&nbsp;Apr 28, 2021
   
 </span>
 
@@ -116,20 +116,18 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a>で一本の結線をアイデンティティ (identity) と呼ぶ。</p>
-<figure>
-    <img src="/ox-hugo/2021-03-22_15-52-35_screenshot.png"/> 
-</figure>
-
-<p>入力は 1 つ、出力も同じく 1 つなので \((1, 1)\) である。</p>
-<h2 id="参考">参考</h2>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a>
-<ul>
-<li><a href="https://graphicallinearalgebra.net/2015/04/30/spoilers-adding-part-2-and-zero/">5. Spoilers, Adding (Part 2) and Zero</a></li>
-</ul>
-</li>
-</ul>
+  <p>量子状態 \(\ket{\psi}\) を測定演算子の集合 \(\{L_l\}\) で測定し測定結果 \(l\) を確率 \(p(l)\) で得て状態が \(\ket{\psi^{\prime}}\) になるとする。2 度目の測定を測定演算子の集合 \(\{M_m\}\) で測定し測定結果 \(m\) を確率 \(p(m)\) で得て状態が \(\ket{\psi^{\prime\prime}}\) になるとする。</p>
+<p>\[p(l) = \braket{\psi|L_l^{\dagger}L_l|\psi}\]</p>
+<p>\[\ket{\psi^{\prime}} = \frac{L_l\ket{\psi}}{\sqrt{\braket{\psi|L_l^{\dagger}L_l|\psi}}}\]</p>
+<p>\[p(m) = \braket{\psi^{\prime}|M_m^{\dagger}M_m|\psi^{\prime}}\]</p>
+<p>\[\ket{\psi^{\prime\prime}} = \frac{M_m\ket{\psi^{\prime}}}{\sqrt{\braket{\psi^{\prime}|M_m^{\dagger}M_m|\psi^{\prime}}}}\]</p>
+<p>これらを \(\ket{\psi}\) 中心に書き直すと次のように式変形できる。</p>
+<p>\[\braket{\psi^{\prime}|M_m^{\dagger}M_m|\psi^{\prime}} = \frac{\braket{\psi|L_l^{\dagger}M_m^{\dagger}M_m L_l|\psi}}{\braket{\psi|L_l^{\dagger}L_l|\psi}}\]</p>
+<p>\[M_m\ket{\psi^{\prime}} = \frac{M_m L_l\ket{\psi}}{\sqrt{\braket{\psi|L_l^{\dagger}L_l|\psi}}}\ \Rightarrow\ \ket{\psi^{\prime\prime}} = \frac{M_m L_l\ket{\psi}}{\sqrt{\braket{\psi|L_l^{\dagger}M_m^{\dagger}M_m L_l|\psi}}}\]</p>
+<p>ここで測定演算子の集合 \(\{N_{lm}\}\ (N_{lm} = M_m L_l)\) で測定する場合を考える。これは測定結果 \((l, m)\) を確率 \(p(l, m)\) で得て状態が \(\ket{\phi}\) になる。このとき、</p>
+<p>\[p(l, m) = \braket{\psi|L_l^{\dagger}M_m^{\dagger}M_m L_l|\psi} = p(l)p(m)\]</p>
+<p>\[\ket{\phi} = \frac{M_m L_l\ket{\psi}}{\sqrt{\braket{\psi|L_l^{\dagger}M_m^{\dagger}M_m L_l|\psi}}} = \ket{\psi^{\prime\prime}}\]</p>
+<p>よって \(\{L_l\}\) の後に \(\{M_m\}\) で測定することは、\(\{N_{lm}\}\) で単一の測定をすることと物理的に等価。</p>
 
 
 
@@ -445,78 +443,6 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
     
   
@@ -525,13 +451,81 @@
     
   
     
-      
+  
+    
+  
     
   
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -626,11 +620,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210323090747-unit/">Unit</a></li>
-              
-              <li><a href="/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/">図式の直和</a></li>
-              
-              <li><a href="/post/20210322104014-%E5%9B%B3%E5%BC%8F%E7%9A%84%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0/">図式的線形代数</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
