@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.12"/>
-<meta name="twitter:description" content="\begin{equation} A = \begin{bmatrix} 1 &amp; 0 \newline 1 &amp; 1 \end{bmatrix} \end{equation} とする。 \begin{eqnarray} \mathrm{det}|A - \lambda I| = \begin{bmatrix} 1 - \lambda &amp; 0 \newline 1 &amp; 1 - \lambda \end{bmatrix} = (1 - \lambda)^2 = 0 \newline \therefore \lambda = 1 \end{eqnarray} 固有値 \(\lambda = 1\) に対する固有ベクトル \(|\lambda_1\rangle\) を求めると"/>
+<meta name="twitter:description" content="\begin{equation} A = \begin{bmatrix} 1 &amp; 0 \newline 1 &amp; 1 \end{bmatrix} \end{equation} とする。この固有値を求めると、 \begin{eqnarray} \mathrm{det}|A - \lambda I| = \begin{bmatrix} 1 - \lambda &amp; 0 \newline 1 &amp; 1 - \lambda \end{bmatrix} = (1 - \lambda)^2 = 0\ \therefore \lambda = 1 \end{eqnarray} 固有値 \(\lambda = 1\) に対する固有"/>
 
 
 
@@ -123,15 +123,15 @@ A =
 1 &amp; 1
 \end{bmatrix}
 \end{equation}</p>
-<p>とする。</p>
+<p>とする。この<a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a>を求めると、</p>
 <p>\begin{eqnarray}
 \mathrm{det}|A - \lambda I| = \begin{bmatrix}
 1 - \lambda &amp; 0 \newline
 1 &amp; 1 - \lambda
 \end{bmatrix} =
-(1 - \lambda)^2 = 0 \newline \therefore \lambda = 1
+(1 - \lambda)^2 = 0\ \therefore \lambda = 1
 \end{eqnarray}</p>
-<p><a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a> \(\lambda = 1\) に対する<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a> \(|\lambda_1\rangle\) を求めると、</p>
+<p>固有値 \(\lambda = 1\) に対する<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a> \(|\lambda_i\rangle\) を求めると、</p>
 <p>\begin{eqnarray}
 \begin{bmatrix}
 0 &amp; 0 \newline
@@ -148,13 +148,13 @@ b
 \end{eqnarray}</p>
 <p>よって</p>
 <p>\begin{equation}
-|\lambda_1\rangle =
+|\lambda_i\rangle =
 \begin{bmatrix}
 0 \newline
-1
+b
 \end{bmatrix}
 \end{equation}</p>
-<p>\(A\) は 1 つの固有ベクトルしか持たないので対角化できない。</p>
+<p>これが \(A\) の唯一の固有ベクトルの形であり、すべての \(\ket{\lambda_i}\) は<a href="/post/20210331120144-%E7%B7%9A%E5%BD%A2%E5%BE%93%E5%B1%9E/">線形従属</a>となる。よって \(A\) は<a href="/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/">対角表現</a>を持たないため、<a href="/post/20210301113146-%E5%AF%BE%E8%A7%92%E5%8C%96/">対角化</a>できない。</p>
 
 
 
