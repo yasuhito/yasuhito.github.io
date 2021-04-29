@@ -126,23 +126,23 @@
 \end{eqnarray}</p>
 <p>よって \(\lambda = 1\) と \(\lambda = -1\) のとき、\(X\) の<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>のうち<a href="/post/20210405113900-%E6%AD%A3%E8%A6%8F%E5%8C%96/">正規化</a>したものはそれぞれ、</p>
 <p>\begin{eqnarray}
-|\lambda_1\rangle &amp;=&amp; \frac{1}{\sqrt{2}}
+\ket{\lambda_1} &amp;=&amp; \frac{1}{\sqrt{2}}
 \begin{bmatrix}
 1 \newline
 1
 \end{bmatrix}
-= \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle),\newline
-|\lambda_{-1}\rangle &amp;=&amp; \frac{1}{\sqrt{2}}
+= \frac{1}{\sqrt{2}}(\ket{0} + \ket{1}),\newline
+\ket{\lambda_{-1}} &amp;=&amp; \frac{1}{\sqrt{2}}
 \begin{bmatrix}
 1 \newline
 -1
 \end{bmatrix}
-= \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)
+= \frac{1}{\sqrt{2}}(\ket{0} - \ket{1})
 \end{eqnarray}</p>
 <p>よって \(X\) の<a href="/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/">対角表現</a>は、</p>
 <p>\begin{eqnarray}
-|\lambda_1\rangle &amp;=&amp; \lambda_1|\lambda_1\rangle\langle\lambda_1| + \lambda_{-1}|\lambda_{-1}\rangle\langle\lambda_{-1}|\newline
-&amp;=&amp; \frac{1}{2}(|0\rangle + |1\rangle)(\langle 0| + \langle 1|) - \frac{1}{2}(|0\rangle - |1\rangle)(\langle 0| - \langle 1|)
+\ket{\lambda_1} &amp;=&amp; \lambda_1\ket{\lambda_1}\bra{\lambda_1} + \lambda_{-1}\ket{\lambda_{-1}}\bra{\lambda_{-1}}\newline
+&amp;=&amp; \frac{1}{2}(\ket{0} + \ket{1})(\bra{0} + \bra{1}) - \frac{1}{2}(\ket{0} - \ket{1})(\bra{0} - \bra{1})
 \end{eqnarray}</p>
 <h2 id="y--の固有分解">\(Y\) の固有分解</h2>
 <p>\(Y\) の固有値を求めると、</p>
@@ -154,23 +154,23 @@ i &amp; -\lambda
 \end{eqnarray}</p>
 <p>よって \(\lambda = 1\) と \(\lambda = -1\) のとき、\(Y\) の固有ベクトルのうち正規化したものはそれぞれ、</p>
 <p>\begin{eqnarray}
-|\lambda_1\rangle &amp;=&amp; \frac{1}{\sqrt{2}}
+\ket{\lambda_1} &amp;=&amp; \frac{1}{\sqrt{2}}
 \begin{bmatrix}
 1 \newline
 i
 \end{bmatrix}
-= \frac{1}{\sqrt{2}}(|0\rangle + i|1\rangle),\newline
-|\lambda_{-1}\rangle &amp;=&amp; \frac{1}{\sqrt{2}}
+= \frac{1}{\sqrt{2}}(\ket{0} + i\ket{1}),\newline
+\ket{\lambda_{-1}} &amp;=&amp; \frac{1}{\sqrt{2}}
 \begin{bmatrix}
 1 \newline
 -i
 \end{bmatrix}
-= \frac{1}{\sqrt{2}}(|0\rangle - i|1\rangle)
+= \frac{1}{\sqrt{2}}(\ket{0} - i\ket{1})
 \end{eqnarray}</p>
 <p>よって \(Y\) の対角表現は、</p>
 <p>\begin{eqnarray}
-|\lambda_1\rangle &amp;=&amp; \lambda_1|\lambda_1\rangle\langle\lambda_1| + \lambda_{-1}|\lambda_{-1}\rangle\langle\lambda_{-1}|\newline
-&amp;=&amp; \frac{1}{2}(|0\rangle + i|1\rangle)(\langle 0| + i\langle 1|) - \frac{1}{2}(|0\rangle - i|1\rangle)(\langle 0| - i\langle 1|)
+\ket{\lambda_1} &amp;=&amp; \lambda_1\ket{\lambda_1}\bra{\lambda_1} + \lambda_{-1}\ket{\lambda_{-1}}\bra{\lambda_{-1}}\newline
+&amp;=&amp; \frac{1}{2}(\ket{0} + i\ket{1})(\bra{0} + i\bra{1}) - \frac{1}{2}(\ket{0} - i\ket{1})(\bra{0} - i\bra{1})
 \end{eqnarray}</p>
 <h2 id="z--の固有分解">\(Z\) の固有分解</h2>
 <p>\(Z\) の固有値を求めると、</p>
@@ -182,24 +182,24 @@ i
 \end{eqnarray}</p>
 <p>よって \(\lambda = 1\) と \(\lambda = -1\) のとき、\(Z\) の固有ベクトルのうち正規化したものはそれぞれ、</p>
 <p>\begin{eqnarray}
-|\lambda_1\rangle &amp;=&amp;
+\ket{\lambda_1} &amp;=&amp;
 \begin{bmatrix}
 1 \newline
 0
 \end{bmatrix}
-= |0\rangle,\newline
-|\lambda_{-1}\rangle &amp;=&amp;
+= \ket{0},\newline
+\ket{\lambda_{-1}} &amp;=&amp;
 \begin{bmatrix}
 0 \newline
 1
 \end{bmatrix}
-= |1\rangle
+= \ket{1}
 \end{eqnarray}</p>
 <p>よって \(Z\) の対角表現は、</p>
-<p>\begin{eqnarray}
-|\lambda_1\rangle &amp;=&amp; \lambda_1|\lambda_1\rangle\langle\lambda_1| + \lambda_{-1}|\lambda_{-1}\rangle\langle\lambda_{-1}|\newline
-&amp;=&amp; |0\rangle\langle 0| - |1\rangle\langle 1|
-\end{eqnarray}</p>
+<p>\begin{eqnarray*}
+\ket{\lambda_1} &amp;=&amp; \lambda_1\ket{\lambda_1}\bra{\lambda_1} + \lambda_{-1}\ket{\lambda_{-1}}\bra{\lambda_{-1}} \\\<br>
+&amp;=&amp; \ket{0}\bra{0} - \ket{1}\bra{1}
+\end{eqnarray*}</p>
 
 
 
