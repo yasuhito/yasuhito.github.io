@@ -1126,7 +1126,7 @@
                 "title": "QCQI/演習 2.10",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "演算子の外積表現より、演算子 \\(|v_j\\rangle\\langle v_k|\\) の行列表現 \\(A\\) の行列要素は \\(A_{lm} = \\langle w_l|v_j\\rangle\\langle v_k|v_m\\rangle = \\delta_{lj}\\delta_{km}\\)\n"
+                "body": "演算子の外積表現より、入出力基底 \\(\\ket{v_i}\\) に対して行列 \\(A\\) の \\(i\\) 行 \\(j\\) 列の行列要素は \\(\\braket{v_j|A|v_i}\\) である。\nこれを使うと、演算子 \\(\\ket{v_j}\\bra{v_k}\\) の行列表現 \\(A\\) の \\(m\\) 行 \\(l\\) 列の行列要素は \\(A_{lm} = \\braket{v_l|v_j}\\braket{v_k|v_m} = \\delta_{lj}\\delta_{km}\\) となる。\n"
             }
         
     ,
