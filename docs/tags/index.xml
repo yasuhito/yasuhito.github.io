@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>サラスの公式</title>
+			<link>https://yasuhito.github.io/post/20210429162615-%E3%82%B5%E3%83%A9%E3%82%B9%E3%81%AE%E5%85%AC%E5%BC%8F/</link>
+			<pubDate>Thu, 29 Apr 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210429162615-%E3%82%B5%E3%83%A9%E3%82%B9%E3%81%AE%E5%85%AC%E5%BC%8F/</guid>
+			<description>3 次正方行列の行列式を求める方法。 赤線で結んだ 3 つの数の積の和から青線で結んだ 3 つの数の積を引くと、左 3 列分の行列式を求めることができる。 た</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.57</title>
 			<link>https://yasuhito.github.io/post/20210428160219-qcqi_%E6%BC%94%E7%BF%92_2_57/</link>
 			<pubDate>Wed, 28 Apr 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210422115645-%E3%82%A2%E3%82%BF%E3%83%9E%E3%83%BC%E3%83%AB%E3%82%B1%E3%83%BC%E3%83%88/</guid>
 			<description>アダマールゲートはユニタリー演算子の一つで、記号 \(H\) で表す。 その演算子としての作用は次のように定義される: \begin{eqnarray*} H\ket{0} &amp;amp;\equiv&amp;amp; \frac{\ket{0} + \ket{1}}{\sqrt{2}} \\\ H\ket{1} &amp;amp;\equiv&amp;amp; \frac{\ket{0} - \ket{1}}{\sqrt{2}} \end{eqnarray*} 行列表現で</description>
-		</item>
-      	
-		<item>
-			<title>エネルギー</title>
-			<link>https://yasuhito.github.io/post/20210422135421-%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AD%E3%83%BC/</link>
-			<pubDate>Thu, 22 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210422135421-%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AD%E3%83%BC/</guid>
-			<description>ハミルトニアンのスペクトル分解 \[H = \sum_E E\ket{E}\bra{E}\] において、\(E\) をエネルギー固有状態 \(\ket{E}\) のエネルギーと呼ぶ。 最も低いエネルギーを系の基底状態エネルギ</description>
 		</item>
       	
 	</channel>
