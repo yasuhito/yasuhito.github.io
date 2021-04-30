@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210430091414-%E8%A1%8C%E5%88%97%E5%BC%8F%E9%96%A2%E6%95%B0/",
+                "title": "行列式関数",
+                "section": "post",
+                "date" : "2021.04.30",
+                "body": "演算子 \\(A\\) の特性関数 \\(c(\\lambda) \\equiv \\mathrm{det}|A - \\lambda I|\\) における \\(\\mathrm{det}\\) を行列式関数 (determinant function) と呼ぶ。\n求めかたは \\(A\\) の行列表現のサイズによっていろいろ。\\(A\\) の \\(i\\) 行 \\(j\\) 列の要素を \\(a_{ij}\\) とすると、\n \\(A\\) が \\(1 \\times 1\\) 行列のとき \\(\\mathrm{det}|A| = a_{11}\\) \\(A\\) が \\(2 \\times 2\\) 行列のとき \\(\\mathrm{det}|A| = a_{11}a_{22} - a_{12}a_{21}\\) (たすきがけして引く) \\(A\\) が \\(3 \\times 3\\) 行列のとき 余因子展開またはサラスの公式 それ以上 余因子展開  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210429162615-%E3%82%B5%E3%83%A9%E3%82%B9%E3%81%AE%E5%85%AC%E5%BC%8F/",
                 "title": "サラスの公式",
                 "section": "post",
