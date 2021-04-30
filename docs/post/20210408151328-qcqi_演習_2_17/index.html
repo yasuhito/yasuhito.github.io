@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.17"/>
-<meta name="twitter:description" content="まず「\(A\) がエルミート行列 \(\Rightarrow\) \(A\) の固有値は実数」を示す。\(A\) の固有ベクトルを任意にとり、その固有値が \(\lambda\) であるとすると、 \begin{eqnarray} \lambda \langle v|v \rangle &amp;=&amp;"/>
+<meta name="twitter:description" content="まず「\(A\) がエルミート行列 \(\Rightarrow\) \(A\) の固有値は実数」を示す。\(A\) の固有ベクトルを任意にとり、その固有値が \(\lambda\) であるとすると、 \begin{eqnarray*} \lambda \braket{v|v} &amp;=&amp; (\ket{v}, \lambda"/>
 
 
 
@@ -117,27 +117,27 @@
     <article class="article" class="blog-post">
       
   <p>まず「\(A\) が<a href="/post/20210329140322-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97/">エルミート行列</a> \(\Rightarrow\) \(A\) の<a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a>は実数」を示す。\(A\) の<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>を任意にとり、その固有値が \(\lambda\) であるとすると、</p>
-<p>\begin{eqnarray}
-\lambda \langle v|v \rangle &amp;=&amp; (|v\rangle, \lambda |v\rangle) \newline
-&amp;=&amp; (|v\rangle, A|v\rangle) \newline
-&amp;=&amp; (A^{\dagger}|v\rangle, |v\rangle) \newline
-&amp;=&amp; (A|v\rangle, |v\rangle) \newline
-&amp;=&amp; (\lambda|v\rangle, |v\rangle) \newline
-&amp;=&amp; \lambda^{\ast}(|v\rangle, |v\rangle) \newline
-&amp;=&amp; \lambda^{\ast}\langle v|v \rangle
-\end{eqnarray}</p>
-<p>\(\lambda = \lambda^{\ast}\) だから、\(\lambda\) は実数。</p>
-<p>つぎに、「<a href="/post/20210408142915-%E6%AD%A3%E8%A6%8F/">正規</a>行列 \(A\) の固有値がすべて実数 \(\Rightarrow\) \(A\) はエルミート行列」を示す。スペクトル分解の定理によると、<a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a>は<a href="/post/20210406154403-%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD/">対角化可能</a>であるときにのみ正規である。よって \(A\) は対角化可能だから、</p>
-<p>\begin{equation}
-A = \sum_i \lambda_i |i \rangle\langle i|
-\end{equation}</p>
-<p>さらに、<a href="/post/20210408115741-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9%E3%81%AE%E5%8F%8D%E7%B7%9A%E5%BD%A2%E6%80%A7/">転置共役の反線形性</a>と<a href="/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/">QCQI/演習 2.13</a>の結果を使って、</p>
-<p>\begin{eqnarray}
-A^{\dagger} &amp;=&amp; \left(\sum_i \lambda_i |i\rangle\langle i|)\right)^{\dagger} \newline
-&amp;=&amp; \sum_i \lambda_i^{\ast}(|i\rangle\langle i|)^{\dagger} \newline
-&amp;=&amp; \sum_i \lambda_i^{\ast}|i\rangle\langle i|
-\end{eqnarray}</p>
-<p>仮定の「正規行列 \(A\) の固有値がすべて実数」より \(\lambda_i = \lambda_i^{\ast}\), よって \(A = A^{\dagger}\) であり、\(A\) はエルミート行列である。</p>
+<p>\begin{eqnarray*}
+\lambda \braket{v|v} &amp;=&amp; (\ket{v}, \lambda \ket{v}) \\\<br>
+&amp;=&amp; (\ket{v}, A\ket{v}) \\\<br>
+&amp;=&amp; (A^{\dagger}\ket{v}, \ket{v}) \\\<br>
+&amp;=&amp; (A\ket{v}, \ket{v}) \\\<br>
+&amp;=&amp; (\lambda\ket{v}, \ket{v}) \\\<br>
+&amp;=&amp; \lambda^{\ast}(\ket{v}, \ket{v}) \\\<br>
+&amp;=&amp; \lambda^{\ast}\braket{v|v}
+\end{eqnarray*}</p>
+<p>\(\lambda\braket{v|v} = \lambda^{\ast}\braket{v|v}\ \Rightarrow\ \lambda = \lambda^{\ast}\) だから、\(\lambda\) は実数。</p>
+<p>つぎに、「<a href="/post/20210408142915-%E6%AD%A3%E8%A6%8F/">正規</a>行列 \(A\) の固有値が実数 \(\Rightarrow\) \(A\) はエルミート行列」を示す。\(A\) は正規行列であるため<a href="/post/20210409154813-%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3/">スペクトル分解</a>によって対角化可能だから、</p>
+<p>\begin{equation*}
+A = \sum_i \lambda_i\ket{i}\bra{i}
+\end{equation*}</p>
+<p>さらに、<a href="/post/20210408115741-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9%E3%81%AE%E5%8F%8D%E7%B7%9A%E5%BD%A2%E6%80%A7/">転置共役の反線形性</a>と \((\ket{w}\bra{v})^{\dagger} = \ket{v}\bra{w}\) (<a href="/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/">QCQI/演習 2.13</a>) を使って、</p>
+<p>\begin{eqnarray*}
+A^{\dagger} &amp;=&amp; \left(\sum_i\lambda_i\ket{i}\bra{i})\right)^{\dagger} \\\<br>
+&amp;=&amp; \sum_i \lambda_i^{\ast}(\ket{i}\bra{i})^{\dagger} \\\<br>
+&amp;=&amp; \sum_i \lambda_i^{\ast}\ket{i}\bra{i}
+\end{eqnarray*}</p>
+<p>固有値が実数だから \(\lambda_i = \lambda_i^{\ast}\), よって \(A^{\dagger} = \sum_i \lambda_i^{\ast}\ket{i}\bra{i} = \sum_i \lambda_i\ket{i}\bra{i} = A\) であり、\(A\) はエルミート行列である。</p>
 
 
 
