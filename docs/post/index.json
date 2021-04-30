@@ -976,7 +976,7 @@
                 "title": "QCQI/演習 2.15",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "任意のベクトル \\(|v\\rangle, |w\\rangle\\) に対して、内積の性質 \\((|v\\rangle, |w\\rangle) = (|w\\rangle, |v\\rangle)^{\\ast}\\) と転置共役の定義を使うと、\n\\begin{eqnarray} (|v\\rangle, A^{\\dagger}|w\\rangle) \u0026amp;=\u0026amp; (A^{\\dagger}|w\\rangle, |v\\rangle)^{\\ast} \\newline \u0026amp;=\u0026amp; (|w\\rangle, A|v\\rangle)^{\\ast} \\newline \u0026amp;=\u0026amp; (A|v\\rangle, |w\\rangle) \\end{eqnarray}\nこれより、\n\\begin{eqnarray} (|v\\rangle, (A^{\\dagger})^{\\dagger}|w\\rangle) \u0026amp;=\u0026amp; (A^{\\dagger}|v\\rangle, |w\\rangle) \\newline \u0026amp;=\u0026amp; (|v\\rangle, A|w\\rangle) \\end{eqnarray}\nよって \\((A^{\\dagger})^{\\dagger} = A\\)\n"
+                "body": "任意のベクトル \\(\\ket{v}, \\ket{w}\\) に対して、内積の対称性 \\((\\ket{v}, \\ket{w}) = (\\ket{w}, \\ket{v})^{\\ast}\\) と転置共役の定義 \\((\\ket{v}, A\\ket{w}) = (A^{\\dagger}\\ket{v}, \\ket{w})\\) を使うと、\n\\begin{eqnarray*} (\\ket{v}, A^{\\dagger}\\ket{w}) \u0026amp;=\u0026amp; (A^{\\dagger}\\ket{w}, \\ket{v})^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; (\\ket{w}, A\\ket{v})^{\\ast} \\\\\\\n\u0026amp;=\u0026amp; (A\\ket{v}, \\ket{w}) \\end{eqnarray*}\nこれより、\n\\begin{eqnarray*} (\\ket{v}, (A^{\\dagger})^{\\dagger}\\ket{w}) \u0026amp;=\u0026amp; (A^{\\dagger}\\ket{v}, \\ket{w}) \\\\\\\n\u0026amp;=\u0026amp; (\\ket{v}, A\\ket{w}) \\end{eqnarray*}\nよって\n\\begin{align*} \u0026amp;(\\ket{v}, (A^{\\dagger})^{\\dagger}\\ket{w}) = (\\ket{v}, A\\ket{w})\\\\\\\n\\Rightarrow\\ \u0026amp;(A^{\\dagger})^{\\dagger} = A \\end{align*}\n"
             }
         
     ,

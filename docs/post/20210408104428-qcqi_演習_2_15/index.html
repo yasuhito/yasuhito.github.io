@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.15"/>
-<meta name="twitter:description" content="任意のベクトル \(|v\rangle, |w\rangle\) に対して、内積の性質 \((|v\rangle, |w\rangle) = (|w\rangle, |v\rangle)^{\ast}\) と転置共役の定義を使うと、 \begin{eqnarray} (|v\rangle, A^{\dagger}|w\rangle) &amp;=&amp; (A^{\dagger}|w\rangle, |v\rangle)^{\ast} \newline &amp;=&amp; (|w\rangle, A|v\rangle)^{\ast} \newline &amp;=&amp; (A|v\rangle, |w\rangle) \end{eqnarray} これより、 \begin{eqnarray} (|v\rangle, (A^{\dagger})^{\dagger}|w\rangle) &amp;=&amp; (A^{\dagger}|v\rangle, |w\rangle) \newline &amp;=&amp; (|v\rangle, A|w\rangle) \end{eqnarray} よっ"/>
+<meta name="twitter:description" content="任意のベクトル \(\ket{v}, \ket{w}\) に対して、内積の対称性 \((\ket{v}, \ket{w}) = (\ket{w}, \ket{v})^{\ast}\) と転置共役の定義 \((\ket{v}, A\ket{w}) = (A^{\dagger}\ket{v}, \ket{w})\) を使うと、 \begin{eqnarray*} (\ket{v}, A^{\dagger}\ket{w}) &amp;=&amp; (A^{\dagger}\ket{w}, \ket{v})^{\ast} \\\ &amp;=&amp; (\ket{w}, A\ket{v})^{\ast} \\\ &amp;=&amp; (A\ket{v}, \ket{w}) \end{eqnarray*} これより、 \begin{eqnarray*} (\ket{v}, (A^{\dagger})^{\dagger}\ket{w}) &amp;=&amp; (A^{\dagger}\ket{v}, \ket{w}) \\\"/>
 
 
 
@@ -116,18 +116,22 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>任意の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a> \(|v\rangle, |w\rangle\) に対して、<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>の性質 \((|v\rangle, |w\rangle) = (|w\rangle, |v\rangle)^{\ast}\) と<a href="/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/">転置共役</a>の定義を使うと、</p>
-<p>\begin{eqnarray}
-(|v\rangle, A^{\dagger}|w\rangle) &amp;=&amp; (A^{\dagger}|w\rangle, |v\rangle)^{\ast} \newline
-&amp;=&amp; (|w\rangle, A|v\rangle)^{\ast} \newline
-&amp;=&amp; (A|v\rangle, |w\rangle)
-\end{eqnarray}</p>
+  <p>任意の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a> \(\ket{v}, \ket{w}\) に対して、<a href="/post/20210409113657-%E5%86%85%E7%A9%8D%E3%81%AE%E5%AF%BE%E7%A7%B0%E6%80%A7/">内積の対称性</a> \((\ket{v}, \ket{w}) = (\ket{w}, \ket{v})^{\ast}\) と<a href="/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/">転置共役</a>の定義 \((\ket{v}, A\ket{w}) = (A^{\dagger}\ket{v}, \ket{w})\) を使うと、</p>
+<p>\begin{eqnarray*}
+(\ket{v}, A^{\dagger}\ket{w}) &amp;=&amp; (A^{\dagger}\ket{w}, \ket{v})^{\ast} \\\<br>
+&amp;=&amp; (\ket{w}, A\ket{v})^{\ast} \\\<br>
+&amp;=&amp; (A\ket{v}, \ket{w})
+\end{eqnarray*}</p>
 <p>これより、</p>
-<p>\begin{eqnarray}
-(|v\rangle, (A^{\dagger})^{\dagger}|w\rangle) &amp;=&amp; (A^{\dagger}|v\rangle, |w\rangle) \newline
-&amp;=&amp; (|v\rangle, A|w\rangle)
-\end{eqnarray}</p>
-<p>よって \((A^{\dagger})^{\dagger} = A\)</p>
+<p>\begin{eqnarray*}
+(\ket{v}, (A^{\dagger})^{\dagger}\ket{w}) &amp;=&amp; (A^{\dagger}\ket{v}, \ket{w}) \\\<br>
+&amp;=&amp; (\ket{v}, A\ket{w})
+\end{eqnarray*}</p>
+<p>よって</p>
+<p>\begin{align*}
+&amp;(\ket{v}, (A^{\dagger})^{\dagger}\ket{w}) = (\ket{v}, A\ket{w})\\\<br>
+\Rightarrow\ &amp;(A^{\dagger})^{\dagger} = A
+\end{align*}</p>
 
 
 
