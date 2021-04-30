@@ -986,7 +986,7 @@
                 "title": "QCQI/演習 2.16",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\begin{eqnarray} P^2 \u0026amp;=\u0026amp; \\sum_i |i \\rangle\\langle i| \\sum_j |j \\rangle\\langle j| \\newline \u0026amp;=\u0026amp; \\sum_{i,j} |i \\rangle\\langle i|j \\rangle\\langle j| \\newline \u0026amp;=\u0026amp; \\sum_{i,j} |i \\rangle\\delta_{i,j}\\langle j| \\newline \u0026amp;=\u0026amp; \\sum_i |i \\rangle\\langle i| \\newline \u0026amp;=\u0026amp; P \\end{eqnarray}\n"
+                "body": "\\begin{eqnarray*} P^2 \u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j} \\phantom{\\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j}} \\end{eqnarray*}\nシグマの分解公式より、\n\\begin{eqnarray*} \\phantom{P^2} \u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j} \\phantom{\\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j}} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\delta_{i,j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nよって\n\\[P^2 = P\\]\nとなり射影演算子はべき等である。\n関連ノート  射影演算子  "
             }
         
     ,
@@ -1096,7 +1096,7 @@
                 "title": "射影演算子",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。定義により\n\\begin{equation*} P \\equiv \\sum_{i=1}^k |i\\rangle\\langle i| \\end{equation*}\nは部分空間 \\(W\\) への射影演算子である。\nQCQI/演習 2.13により任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle v|\\) なので、\\(|v\\rangle\\langle v|\\) はエルミート演算子である。したがって \\(P\\) もエルミート演算子、すなわち \\(P^{\\dagger} = P\\) である。\n"
+                "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。定義により\n\\begin{equation*} P \\equiv \\sum_{i=1}^k |i\\rangle\\langle i| \\end{equation*}\nは部分空間 \\(W\\) への射影演算子である。\nQCQI/演習 2.13により任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle v|\\) なので、\\(|v\\rangle\\langle v|\\) はエルミート演算子である。したがって \\(P\\) もエルミート演算子、すなわち \\(P^{\\dagger} = P\\) である。\n射影演算子の性質  \\(P^2 = P\\) (べき等性, QCQI/演習 2.16)  "
             }
         
     ,
@@ -1516,7 +1516,7 @@
                 "title": "シグマの分解公式",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "分配法則 \\(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\\) の一般化として、二重和について次の公式がある。\n\\begin{equation} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j = \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{equation}\n証明 \\begin{eqnarray} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j \u0026amp;=\u0026amp; a_1 \\sum_{j=1}^n b_j + a_2 \\sum_{j=1}^n b_j + \\ldots + a_m \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) \\sum_{j=1}^n b_j \\newline \u0026amp;=\u0026amp; \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{eqnarray}\n"
+                "body": "分配法則 \\(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\\) の一般化として、二重和について次の公式がある。\n\\begin{equation*} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j = \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{equation*}\n証明 \\begin{eqnarray*} \\sum_{i=1}^{m} \\sum_{j=1}^n a_i b_j \u0026amp;=\u0026amp; a_1 \\sum_{j=1}^n b_j + a_2 \\sum_{j=1}^n b_j + \\ldots + a_m \\sum_{j=1}^n b_j \\\\\\\n\u0026amp;=\u0026amp; (a_1 + a_2 + \\ldots + a_m) \\sum_{j=1}^n b_j \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i=1}^m a_i \\sum_{j=1}^n b_j \\end{eqnarray*}\n"
             }
         
     ,
