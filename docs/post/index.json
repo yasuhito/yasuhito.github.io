@@ -1156,7 +1156,7 @@
                 "title": "転置共役",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\(A\\) はヒルベルト空間 \\(V\\) の任意の演算子であるとすると、すべてのベクトル \\(|v\\rangle, |w\\rangle \\in V\\) に対して、\n\\begin{equation} (|v\\rangle, A|w\\rangle) = (A^{\\dagger}|v\\rangle, |w\\rangle) \\end{equation}\nを満たす演算子 \\(A^{\\dagger}\\) が \\(V\\) 上に唯 1 つのみ存在する。この演算子を演算子 \\(A\\) の転置共役またはエルミート共役という。\n"
+                "body": "\\(A\\) はヒルベルト空間 \\(V\\) の任意の演算子であるとすると、すべてのベクトル \\(|v\\rangle, |w\\rangle \\in V\\) に対して、\n\\begin{equation*} (\\ket{v}, A\\ket{w}) = (A^{\\dagger}\\ket{v}, \\ket{w}) \\end{equation*}\nを満たす演算子 \\(A^{\\dagger}\\) が \\(V\\) 上に唯 1 つのみ存在する。この演算子を演算子 \\(A\\) の転置共役 (随伴、adjoint) またはエルミート共役という。\n"
             }
         
     ,
@@ -1706,7 +1706,7 @@
                 "title": "演算子",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "量子論では、ベクトル空間 \\(V\\) と \\(W\\) の間の線形な関数 \\(A: V \\rightarrow W\\) を演算子またはオペレータ (operator) と呼び、次のように定義する。\n\\[A\\left(\\sum_i a_i\\ket{v_i}\\right) = \\sum_i a_i A(\\ket{v_i})\\]\n演算子と行列は等価なので、通常は \\(A(\\ket{v})\\) を \\(A\\ket{v}\\) とカッコを省略して書く。\nちなみに、数学の分野では同じ用語 operator を作用素と訳すので注意。\n関連ノート  恒等演算子 零演算子  "
+                "body": "量子論では、ベクトル空間 \\(V\\) と \\(W\\) の間の線形な関数 \\(A: V \\rightarrow W\\) を演算子またはオペレータ (operator) と呼び、次のように定義する。\n\\[A\\left(\\sum_i a_i\\ket{v_i}\\right) = \\sum_i a_i A\\ket{v_i}\\]\n演算子と行列は等価なので、\\(A(\\ket{v})\\) は普通 \\(A\\ket{v}\\) とカッコを省略して書くことに注意。\nちなみに、数学の分野では同じ用語 operator を作用素と訳すので注意。\n主な演算子と性質  恒等演算子 零演算子 演算子の転置共役  転置共役の反線形性    "
             }
         
     ,
@@ -1756,7 +1756,7 @@
                 "title": "エルミート共役",
                 "section": "post",
                 "date" : "2021.03.29",
-                "body": "転置共役の別名。\n"
+                "body": "エルミート共役 (Hermitian conjugate) は転置共役の別名。\n"
             }
         
     ,
