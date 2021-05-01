@@ -12,6 +12,30 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>測定演算子</title>
+			<link>https://yasuhito.github.io/post/20210501102324-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210501102324-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>量子測定を記述する演算子を測定演算子 (measurement operator) と呼び、\(m\) を測定結果とすると \(M_m\) で表される。 関連ノート 量子力学の公理 量子測定は測定演算子の集ま</description>
+		</item>
+      	
+		<item>
+			<title>測定演算子は完全性を満たす</title>
+			<link>https://yasuhito.github.io/post/20210501102953-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%AE%8C%E5%85%A8%E6%80%A7%E3%82%92%E6%BA%80%E3%81%9F%E3%81%99/</link>
+			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210501102953-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%AE%8C%E5%85%A8%E6%80%A7%E3%82%92%E6%BA%80%E3%81%9F%E3%81%99/</guid>
+			<description>測定演算子は次の完全性の式を満たす。 \[\sum_m M_m^{\dagger}M_m = I\] 関連ノート 完全性関係 測定結果の確率の和は 1 になる</description>
+		</item>
+      	
+		<item>
+			<title>測定結果の確率の和は 1 になる</title>
+			<link>https://yasuhito.github.io/post/20210501103545-%E6%B8%AC%E5%AE%9A%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A2%BA%E7%8E%87%E3%81%AE%E5%92%8C%E3%81%AF_1_%E3%81%AB%E3%81%AA%E3%82%8B/</link>
+			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210501103545-%E6%B8%AC%E5%AE%9A%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A2%BA%E7%8E%87%E3%81%AE%E5%92%8C%E3%81%AF_1_%E3%81%AB%E3%81%AA%E3%82%8B/</guid>
+			<description>測定演算子の集まり \(\{M_m\}\) について、測定演算子は完全性を満たすことから、 \[\sum_m M_m^{\dagger}M_m = I\] よって測定結果の確率の和を求めると、 \[\sum_m p(m) = \sum_m \braket{\psi|M_m^{\dagger}M_m|\psi} = \braket{\psi|\psi} = 1\] となり、これ</description>
+		</item>
+      	
+		<item>
 			<title>det</title>
 			<link>https://yasuhito.github.io/post/20210430093239-det/</link>
 			<pubDate>Fri, 30 Apr 2021 00:00:00 +0900</pubDate>
@@ -65,30 +89,6 @@
 			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210427134245-qcqi_%E6%BC%94%E7%BF%92_2_54/</guid>
 			<description>\(A\) と \(B\) はエルミート演算子でありかつ可換だから、同時対角化定理より \(A\) と \(B\) は同時対角化可能。つまり \(A\), \(B\) の固有ベクトルに共通の正規直交集合 \(\ket{i}\) を用い</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.55</title>
-			<link>https://yasuhito.github.io/post/20210427140018-qcqi_%E6%BC%94%E7%BF%92_2_55/</link>
-			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210427140018-qcqi_%E6%BC%94%E7%BF%92_2_55/</guid>
-			<description>\(U(t_1, t_2)U^{\dagger}(t_1, t_2) = I\) を示す。 \(H\) はエルミート演算子なので、固有値 \(\lambda_i\) とそれに対応する正規化固有ベクトル \(\ket{i}\) を用いてスペクトル分解できる \[H = \sum_i \lambda_i \ket{i}\bra{i}\] ここで \[U(t_1, t_2) =</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.56</title>
-			<link>https://yasuhito.github.io/post/20210427150513-qcqi_%E6%BC%94%E7%BF%92_2_56/</link>
-			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210427150513-qcqi_%E6%BC%94%E7%BF%92_2_56/</guid>
-			<description>\(U\) は正規なので固有値 \(\lambda_i\) とそれに対応する正規化固有ベクトル \(\ket{i}\) を用いてスペクトル分解できる。 \[U = \sum_i \lambda_i \ket{i}\bra{i}\] これを \(K\) に適用すると、 \begin{align*} &amp;amp;K = -i\mathrm{log}(U) = -i\sum_j \mathrm{log}(\lambda_j)\ket{j}\bra{j} \\\ &amp;amp;K^{\dagger} =</description>
-		</item>
-      	
-		<item>
-			<title>可換</title>
-			<link>https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/</link>
-			<pubDate>Tue, 27 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210427133807-%E5%8F%AF%E6%8F%9B/</guid>
-			<description>2 つの演算子 \(A\), \(B\) について、もし交換子 \([A, B] = 0\) つまり \(AB = BA\) ならば \(A\) は \(B\) と可換であるという。</description>
 		</item>
       	
 	</channel>
