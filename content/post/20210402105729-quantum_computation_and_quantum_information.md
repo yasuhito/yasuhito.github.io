@@ -127,7 +127,7 @@ draft = false
 #### 2.2.5 Projective measurements {#2-dot-2-dot-5-projective-measurements}
 
 -   [QCQI/演習 2.58]({{< relref "20210502094928-qcqi_演習_2_58" >}})
--   QCQI/演習 2.59
+-   [QCQI/演習 2.59]({{< relref "20210502161841-qcqi_演習_2_59" >}})
 -   QCQI/演習 2.60
 -   QCQI/演習 2.61
 

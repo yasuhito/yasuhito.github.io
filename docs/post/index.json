@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502161841-qcqi_%E6%BC%94%E7%BF%92_2_59/",
+                "title": "QCQI/演習 2.59",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "パウリ演算子の外積表現より\n\\[X = \\ket{0}\\bra{1} + \\ket{1}\\bra{0}\\]\nよって \\(X\\) の平均値は\n\\[\\langle X \\rangle = \\braket{0|X|0} = \\braket{0|0}\\braket{1|0} + \\braket{0|1}\\braket{0|0} = 0\\]\n\\(X^2 = I\\) だから、\n\\[\\langle X^2 \\rangle = \\braket{0|I|0} = 1\\]\nこれらを使うと \\(X\\) の標準偏差は、\n\\[\\sqrt{\\langle X^2 \\rangle - \\langle X \\rangle^2} = \\sqrt{1 - 0} = 1\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
