@@ -22,6 +22,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502163417-qcqi_%E6%BC%94%E7%BF%92_2_60/",
+                "title": "QCQI/演習 2.60",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "QCQI/演習 2.35 の計算より、\\(\\vec{v}\\cdot\\vec{\\sigma}\\) の固有値は \\(\\pm{1}\\)\n固有値 \\(\\pm{1}\\) それぞれの固有ベクトルを \\(\\ket{\\lambda_{+}}, \\ket{\\lambda_{-}}\\) とすると、\n\\(\\vec{v}\\cdot\\vec{\\sigma}\\) のスペクトル分解により\n\\[\\vec{v}\\cdot\\vec{\\sigma} = \\ket{\\lambda_{+}}\\bra{\\lambda_{+}} - \\ket{\\lambda_{-}}\\bra{\\lambda_{-}}\\]\n完全性関係より、\n\\[I = \\ket{\\lambda_{+}}\\bra{\\lambda_{+}} + \\ket{\\lambda_{-}}\\bra{\\lambda_{-}}\\]\nよって\n\\[P_{+} = \\ket{\\lambda_{+}}\\bra{\\lambda_{+}} = \\frac{I + \\vec{v}\\cdot\\vec{\\sigma}}{2}\\] \\[P_{-} = \\ket{\\lambda_{-}}\\bra{\\lambda_{-}} = \\frac{I - \\vec{v}\\cdot\\vec{\\sigma}}{2}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
@@ -1106,7 +1116,7 @@
                 "title": "パウリ演算子の外積表現",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": ""
+                "body": "次の式を覚えておけば、パウリ行列やベクトルの要素をわざわざすべて書き下さなくても、ディラック記法だけで形式的にいろいろ計算できるので便利。\n\\begin{align*} I \u0026amp;= \\ket{0}\\bra{0} + \\ket{1}\\bra{1} \u0026amp; X \u0026amp;= \\ket{0}\\bra{1} + \\ket{1}\\bra{0} \\\\\\\nY \u0026amp;= -i\\ket{0}\\bra{1} + i\\ket{1}\\bra{0} \u0026amp; Z \u0026amp;= \\ket{0}\\bra{0} - \\ket{1}\\bra{1} \\end{align*}\n(なぜこうなるかの計算は QCQI/演習 2.9 を参照)\nこれを使うとたとえば \\(Y\\ket{0}\\) は、\n\\begin{eqnarray*} Y\\ket{0} \u0026amp;=\u0026amp; (-i\\ket{0}\\bra{1} + i\\ket{1}\\bra{0})\\ket{0} \\\\\\\n\u0026amp;=\u0026amp; \\cancel{-i\\ket{0}\\underbrace{\\braket{1|0}}_{= 0}} + i\\ket{1}\\underbrace{\\braket{0|0}}_{= 1} \\\\\\\n\u0026amp;=\u0026amp; i\\ket{1} \\end{eqnarray*}\nと簡単に計算できる。\n関連ノート  演算子の外積表現  "
             }
         
     ,
