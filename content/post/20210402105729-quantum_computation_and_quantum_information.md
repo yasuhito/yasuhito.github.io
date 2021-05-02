@@ -141,4 +141,4 @@ draft = false
 
 #### 2.2.7 Phase {#2-dot-2-dot-7-phase}
 
--   QCQI/演習 2.65
+-   [QCQI/演習 2.65]({{< relref "20210502185020-qcqi_演習_2_65" >}})

@@ -68,6 +68,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.65</title>
+			<link>https://yasuhito.github.io/post/20210502185020-qcqi_%E6%BC%94%E7%BF%92_2_65/</link>
+			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210502185020-qcqi_%E6%BC%94%E7%BF%92_2_65/</guid>
+			<description>\[\left\{\frac{\ket{0}+\ket{1}}{\sqrt{2}}, \frac{\ket{0}-\ket{1}}{\sqrt{2}}\right\}\]</description>
+		</item>
+      	
+		<item>
 			<title>観測量</title>
 			<link>https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/</link>
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210501102324-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
 			<description>量子測定を記述する演算子を測定演算子 (measurement operator) と呼び、\(m\) を測定結果とすると \(M_m\) で表される。 関連ノート 量子力学の公理 量子測定は測定演算子の集ま</description>
-		</item>
-      	
-		<item>
-			<title>測定演算子は完全性を満たす</title>
-			<link>https://yasuhito.github.io/post/20210501102953-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%AE%8C%E5%85%A8%E6%80%A7%E3%82%92%E6%BA%80%E3%81%9F%E3%81%99/</link>
-			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210501102953-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%AE%8C%E5%85%A8%E6%80%A7%E3%82%92%E6%BA%80%E3%81%9F%E3%81%99/</guid>
-			<description>測定演算子は次の完全性の式を満たす。 \[\sum_m M_m^{\dagger}M_m = I\] 関連ノート 完全性関係 測定結果の確率の和は 1 になる</description>
 		</item>
       	
 	</channel>

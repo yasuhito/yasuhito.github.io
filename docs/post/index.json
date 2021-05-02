@@ -72,6 +72,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502185020-qcqi_%E6%BC%94%E7%BF%92_2_65/",
+                "title": "QCQI/演習 2.65",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "\\[\\left\\{\\frac{\\ket{0}+\\ket{1}}{\\sqrt{2}}, \\frac{\\ket{0}-\\ket{1}}{\\sqrt{2}}\\right\\}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
