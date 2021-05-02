@@ -46,6 +46,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.62</title>
+			<link>https://yasuhito.github.io/post/20210502173217-qcqi_%E6%BC%94%E7%BF%92_2_62/</link>
+			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210502173217-qcqi_%E6%BC%94%E7%BF%92_2_62/</guid>
+			<description>仮に POVM 要素が測定演算子と一致していたとすると、\(E_m = M_m^{\dagger}M_m = M_m\) となる。\(E_m = M_m\) で \(E_m\) はエルミート演算子なので、\(M_m^{\dagg</description>
+		</item>
+      	
+		<item>
 			<title>観測量</title>
 			<link>https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/</link>
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210501121425-%E9%87%8F%E5%AD%90%E7%8A%B6%E6%85%8B%E3%81%AE%E8%AD%98%E5%88%A5/</guid>
 			<description>アリスとボブは、2 人があらかじめ知っている状態 \(\ket{\psi_i} (1 \leq i \leq n)\) について次のゲームを行う。 アリスはひとつの状態 \(\ket{\psi_i}\) を選ぶ ボブはアリスが選んだ状態の番</description>
-		</item>
-      	
-		<item>
-			<title>det</title>
-			<link>https://yasuhito.github.io/post/20210430093239-det/</link>
-			<pubDate>Fri, 30 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210430093239-det/</guid>
-			<description>\(\mathrm{det}\) は determinant (行列式) の略。行列式関数を参照。</description>
 		</item>
       	
 	</channel>

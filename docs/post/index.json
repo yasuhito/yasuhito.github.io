@@ -42,6 +42,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502173217-qcqi_%E6%BC%94%E7%BF%92_2_62/",
+                "title": "QCQI/演習 2.62",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "仮に POVM 要素が測定演算子と一致していたとすると、\\(E_m = M_m^{\\dagger}M_m = M_m\\) となる。\\(E_m = M_m\\) で \\(E_m\\) はエルミート演算子なので、\\(M_m^{\\dagger}M_m = M_m^2 = M_m\\) を満たす必要がある。これは \\(M_m\\) が射影測定であるための条件であり、射影演算子はべき等性 (\\(P^2 = P\\)) を満たすので、この測定は射影測定であることを示している。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
