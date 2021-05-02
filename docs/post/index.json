@@ -52,6 +52,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502175247-qcqi_%E6%BC%94%E7%BF%92_2_63/",
+                "title": "QCQI/演習 2.63",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "測定演算子 \\(M_m\\) について \\(E_m = M_m^{\\dagger}M_m\\) を POVM だとする。すると極分解により、\n\\[M_m = U_m\\sqrt{M_m^{\\dagger}M_m} = U_m\\sqrt{E_m}\\]\nを満たすユニタリー演算子 \\(U_m\\) が存在する。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
