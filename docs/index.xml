@@ -62,6 +62,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.64</title>
+			<link>https://yasuhito.github.io/post/20210502181758-qcqi_%E6%BC%94%E7%BF%92_2_64/</link>
+			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210502181758-qcqi_%E6%BC%94%E7%BF%92_2_64/</guid>
+			<description>各状態 \(\ket{\psi_i}\) に対して、\(\{\ket{\psi_j}\}_{j \neq i}\) で張られる空間に直交するが \(\ket{\psi_i}\) には直交しない状態 \(\ket{\phi_i}\) をみつける。これは、すべての</description>
+		</item>
+      	
+		<item>
 			<title>観測量</title>
 			<link>https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/</link>
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210501102953-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%AE%8C%E5%85%A8%E6%80%A7%E3%82%92%E6%BA%80%E3%81%9F%E3%81%99/</guid>
 			<description>測定演算子は次の完全性の式を満たす。 \[\sum_m M_m^{\dagger}M_m = I\] 関連ノート 完全性関係 測定結果の確率の和は 1 になる</description>
-		</item>
-      	
-		<item>
-			<title>測定結果の確率の和は 1 になる</title>
-			<link>https://yasuhito.github.io/post/20210501103545-%E6%B8%AC%E5%AE%9A%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A2%BA%E7%8E%87%E3%81%AE%E5%92%8C%E3%81%AF_1_%E3%81%AB%E3%81%AA%E3%82%8B/</link>
-			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210501103545-%E6%B8%AC%E5%AE%9A%E7%B5%90%E6%9E%9C%E3%81%AE%E7%A2%BA%E7%8E%87%E3%81%AE%E5%92%8C%E3%81%AF_1_%E3%81%AB%E3%81%AA%E3%82%8B/</guid>
-			<description>測定演算子の集まり \(\{M_m\}\) について、測定演算子は完全性を満たすことから、 \[\sum_m M_m^{\dagger}M_m = I\] よって測定結果の確率の和を求めると、 \[\sum_m p(m) = \sum_m \braket{\psi|M_m^{\dagger}M_m|\psi} = \braket{\psi|\psi} = 1\] となり、これ</description>
 		</item>
       	
 	</channel>

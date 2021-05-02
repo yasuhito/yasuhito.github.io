@@ -62,6 +62,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502181758-qcqi_%E6%BC%94%E7%BF%92_2_64/",
+                "title": "QCQI/演習 2.64",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "各状態 \\(\\ket{\\psi_i}\\) に対して、\\(\\{\\ket{\\psi_j}\\}_{j \\neq i}\\) で張られる空間に直交するが \\(\\ket{\\psi_i}\\) には直交しない状態 \\(\\ket{\\phi_i}\\) をみつける。これは、すべての \\(\\ket{\\psi_i}\\) が線形独立でありグラム・シュミット直交化を用いて正規直交基底を作れることが可能である。\n\\begin{align*} \u0026amp;E_i = \\ket{\\phi_i}\\bra{\\phi_i},\\ E_{m+1} = I - \\sum_{i=1}^{m}E_i\\ \\\\\\\n\\Rightarrow\\ \u0026amp;\\sum_i E_i = I,\\ \\braket{\\psi_j|E_i|\\psi_j} = 0,\\ \\braket{\\psi_i|E_i|\\psi_i} = |\\braket{\\psi_i|\\phi_i}|^2 \u0026gt; 0 \\end{align*}\nこのように POVM \\(\\{E_1, \\ldots, E_{m+1}\\}\\) を決めると \\(E_i\\) は完全性条件を満たす正の演算子であり、ボブが測定結果 \\(E_i\\) を得ると \\(i \\neq j\\) であれば \\(\\braket{\\psi_j|E_i|\\psi_j} = 0\\) であるため、ボブは与えられた状態が \\(\\ket{\\psi_i}\\) であったと確信を持ってわかる。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",

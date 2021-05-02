@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>閉じた量子系の状態は状態ベクトルで記述できる</title>
+<title>QCQI/演習 2.64</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="閉じた量子系の状態は状態ベクトルで記述できる"/>
-<meta name="twitter:description" content="閉じた (孤立した) 量子系に関して、系の状態空間と呼ぶヒルベルト空間が存在する。量子系はこの状態空間の単位ベクトルである状態ベクトルによって完"/>
+<meta name="twitter:title" content="QCQI/演習 2.64"/>
+<meta name="twitter:description" content="各状態 \(\ket{\psi_i}\) に対して、\(\{\ket{\psi_j}\}_{j \neq i}\) で張られる空間に直交するが \(\ket{\psi_i}\) には直交しない状態 \(\ket{\phi_i}\) をみつける。これは、すべての"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              閉じた量子系の状態は状態ベクトルで記述できる
+              QCQI/演習 2.64
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 22, 2021
+  >&nbsp;May 2, 2021
   
 </span>
 
@@ -116,7 +116,12 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>閉じた (孤立した) 量子系に関して、系の状態空間と呼ぶ<a href="/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/">ヒルベルト空間</a>が存在する。量子系はこの状態空間の<a href="/post/20210405113700-%E5%8D%98%E4%BD%8D%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">単位ベクトル</a>である状態ベクトルによって完全に記述できる。</p>
+  <p>各状態 \(\ket{\psi_i}\) に対して、\(\{\ket{\psi_j}\}_{j \neq i}\) で張られる空間に直交するが \(\ket{\psi_i}\) には直交しない状態 \(\ket{\phi_i}\) をみつける。これは、すべての \(\ket{\psi_i}\) が線形独立であり<a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>を用いて<a href="/post/20210408163416-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4%E5%9F%BA%E5%BA%95/">正規直交基底</a>を作れることが可能である。</p>
+<p>\begin{align*}
+&amp;E_i = \ket{\phi_i}\bra{\phi_i},\ E_{m+1} = I - \sum_{i=1}^{m}E_i\ \\\<br>
+\Rightarrow\ &amp;\sum_i E_i = I,\ \braket{\psi_j|E_i|\psi_j} = 0,\ \braket{\psi_i|E_i|\psi_i} = |\braket{\psi_i|\phi_i}|^2 &gt; 0
+\end{align*}</p>
+<p>このように POVM \(\{E_1, \ldots, E_{m+1}\}\) を決めると \(E_i\) は完全性条件を満たす<a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a>であり、ボブが測定結果 \(E_i\) を得ると \(i \neq j\) であれば \(\braket{\psi_j|E_i|\psi_j} = 0\) であるため、ボブは与えられた状態が \(\ket{\psi_i}\) であったと確信を持ってわかる。</p>
 
 
 
@@ -210,162 +215,6 @@
     
   
     
-      
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
   
     
   
@@ -623,6 +472,160 @@
   
     
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -645,9 +648,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210422091236-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E5%85%AC%E7%90%86/">量子力学の公理</a></li>
-              
-              <li><a href="/post/20210224083510-%E7%8A%B6%E6%85%8B%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">状態ベクトル</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
