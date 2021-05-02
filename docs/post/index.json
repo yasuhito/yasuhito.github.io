@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/",
+                "title": "QCQI/演習 2.58",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "平均測定値 \\(E(M)\\) は、\n\\begin{eqnarray*} E(M) \u0026amp;=\u0026amp; \\braket{\\psi|M|\\psi} \\\\\\\n\u0026amp;=\u0026amp; \\braket{\\psi|m|\\psi} \\\\\\\n\u0026amp;=\u0026amp; m\\braket{\\psi|\\psi} \\\\\\\n\u0026amp;=\u0026amp; m \\end{eqnarray*}\n標準偏差 \\(\\Delta(M)\\) は、\n\\begin{eqnarray*} \\Delta(M) \u0026amp;=\u0026amp; \\sqrt{\\langle M^2 \\rangle - \\langle M \\rangle^2} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\braket{\\psi|M^2|\\psi} - \\braket{\\psi|M|\\psi}^2} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\braket{\\psi|m^2|\\psi} - \\braket{\\psi|m|\\psi}^2} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{m^2 - m^2} \\\\\\\n\u0026amp;=\u0026amp; 0 \\end{eqnarray*}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
@@ -1576,7 +1586,7 @@
                 "title": "恒等演算子",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "恒等演算子は任意のベクトル空間 \\(V\\) における演算子のひとつで、すべてのベクトル \\(|v\\rangle\\) に対して\n\\[I_{V}\\ket{v} \\equiv \\ket{v}\\]\nで定義する。単位オペレータとも呼ぶ。\nほとんどの場合、混乱が生じなければ下添字 \\(V\\) を省略して単に \\(I\\) と書く。\n"
+                "body": "恒等演算子 (identity operator) は任意のベクトル空間 \\(V\\) における演算子のひとつで、すべてのベクトル \\(|v\\rangle\\) に対して\n\\[I_{V}\\ket{v} \\equiv \\ket{v}\\]\nで定義する。単位オペレータとも呼ぶ。\nほとんどの場合、混乱が生じなければ下添字の \\(V\\) を省略して単に \\(I\\) と書く。\n参照  Quantum Computation and Quantum Information 2.1.2  "
             }
         
     ,
@@ -1596,7 +1606,7 @@
                 "title": "演算子の合成",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "\\(V\\), \\(W\\), および \\(X\\) がベクトル空間であり、\\(A: V \\rightarrow W\\) と \\(B: W \\rightarrow X\\) が演算子であるとする。このとき \\(A\\) と \\(B\\) の合成を記号 \\(BA\\) で表し、\n\\[(BA)(\\ket{v}) \\equiv B(A\\ket{v})\\]\nで定義する。\n演算子と行列は等価なので、\\((BA)(|v\\rangle)\\) は括弧を省略して \\(BA|v\\rangle\\) と書ける。\n"
+                "body": "\\(V\\), \\(W\\), および \\(X\\) がベクトル空間であり、\\(A: V \\rightarrow W\\) と \\(B: W \\rightarrow X\\) が演算子であるとする。このとき \\(A\\) と \\(B\\) の合成を記号 \\(BA\\) で表し、\n\\[(BA)(\\ket{v}) \\equiv B(A\\ket{v})\\]\nで定義する。\n参照  Quantum Computation and Quantum Information 2.1.2  "
             }
         
     ,
@@ -1613,10 +1623,10 @@
         
             {
                 "ref": "https://yasuhito.github.io/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/",
-                "title": "線形オペレータ",
+                "title": "線形演算子",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "演算子を参照\n"
+                "body": "ベクトル空間からベクトル空間への写像 (関数) \\(A\\) について、\n\\[A(\\boldsymbol{u} + \\boldsymbol{v}) = A(\\boldsymbol{u}) + A(\\boldsymbol{v})\\] \\[A(c\\boldsymbol{u}) = cA(\\boldsymbol{u})\\]\nのように、和は和に、スカラー倍はスカラー倍に対応させるものを線形演算子 (liner operator) と呼ぶ。\n上の 2 つの式をまとめると、線形演算子 \\(A: V \\rightarrow W\\) の満たす条件は次のようにも書ける。\n\\[A\\left(\\sum_i a_i\\ket{v_i}\\right) = \\sum_i a_i A\\ket{v_i}\\]\n関連ノート  演算子  参照  量子情報科学入門 A.3.1 線形代数セミナー 1. 用語とまとめ  "
             }
         
     ,
@@ -1626,7 +1636,7 @@
                 "title": "行列は演算子とみなせる",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "要素 \\(A_{ij}\\) を持つ \\(m \\times n\\) の複素行列 \\(A\\) は、行列 \\(A\\) と \\(\\mathcal{C}^n\\) のベクトルとの行列積により、ベクトル空間 \\(\\mathcal{C}^n\\) からベクトル空間 \\(\\mathcal{C}^m\\) に移すので、行列 \\(A\\) は演算子である。\nより正確には行列 \\(A\\) が演算子であるということは、演算子の定義で見た\n\\[A\\left(\\sum_i a_i\\ket{v_i}\\right) = \\sum_i a_i A(\\ket{v_i})\\]\nが行列 \\(A\\) と列ベクトルの行列積で成り立つことを意味し、行列の性質からこれは明らかに正しい。\n"
+                "body": "要素 \\(A_{ij}\\) を持つ \\(m \\times n\\) の複素行列 \\(A\\) は、行列 \\(A\\) と \\(\\mathcal{C}^n\\) のベクトルとの行列積により、ベクトル空間 \\(\\mathcal{C}^n\\) からベクトル空間 \\(\\mathcal{C}^m\\) に移すので、行列 \\(A\\) は演算子である。\nより正確には行列 \\(A\\) が演算子であるということは、演算子の定義で見た\n\\[A\\left(\\sum_i a_i\\ket{v_i}\\right) = \\sum_i a_i A\\ket{v_i}\\]\nが行列 \\(A\\) と列ベクトルの行列積で成り立つことを意味し、行列の性質からこれは明らかに正しい。\n参照  Quantum Computation and Quantum Information 2.1.2  "
             }
         
     ,
@@ -1646,7 +1656,7 @@
                 "title": "零演算子",
                 "section": "post",
                 "date" : "2021.04.01",
-                "body": "零演算子はすべてのベクトルをゼロベクトルに移す演算子で、\\(0\\) と書く。\n\\[0\\ket{v} \\equiv 0\\]\n零演算子はゼロオペレータとも呼ぶ。\n"
+                "body": "零演算子 (zero operator) はすべてのベクトルをゼロベクトルに移す演算子で、\\(0\\) と書く。\n\\[0\\ket{v} \\equiv 0\\]\n零演算子はゼロオペレータとも呼ぶ。\n参照  Quantum Computation and Quantum Information 2.1.2  "
             }
         
     ,
@@ -1736,7 +1746,7 @@
                 "title": "ベクトル空間",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "和とスカラー倍が定義されている集合で、線形空間とも呼ぶ。ベクトル空間の要素をベクトルと呼ぶ。たとえば次はどれもベクトル空間。\n \\(\\mathcal{R}\\) 実数全体 \\(\\mathcal{R}\\) からなるベクトル空間 \\(\\mathcal{C}\\) 複素数全体 \\(\\mathcal{C}\\) からなるベクトル空間 \\(\\mathcal{R}^n\\) \\(n\\) 次元実数ベクトル全体 \\(\\mathcal{R}^n\\) からなるベクトル空間 \\(\\mathcal{C}^n\\) \\(n\\) 次元複素ベクトル全体 \\(\\mathcal{C}^n\\) からなるベクトル空間 \\(\\mathcal{M}\\) \\(2\\) 次の正方行列全体からなるベクトル空間 \\(\\mathcal{F}\\) 実数関数 \\(f(x)\\) のすべてからなるベクトル空間 \\(\\mathcal{Z}\\) ゼロベクトルからのみなるベクトル空間  このようにベクトル空間にはいろいろあって、空間によってはベクトルが行列であったり関数であったりもすることに注意。\n厳密には、ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある (ただ、普通は問題にはならない)。\n集合 \\(V\\) の任意の元 \\(\\ket{\\psi}\\) と \\(\\ket{\\phi}\\) について、\n和の性質  交換則 \\(\\ket{\\psi} + \\ket{\\phi} = \\ket{\\phi} + \\ket{\\psi}\\) 結合則 \\(\\ket{\\psi} + (\\ket{\\phi} + \\ket{\\xi}) = (\\ket{\\psi} + \\ket{\\phi}) + \\ket{\\xi}\\) 零元の存在 \\(\\exists1\\ \\ket{\\theta} \\in V\\ \\mathrm{s.t.}\\ \\forall\\ket{\\psi} \\in V,\\ \\ket{\\psi} + \\ket{\\theta} = \\ket{\\psi}\\) 逆元の存在 \\(\\forall\\ket{\\psi} \\in V,\\ \\exists1\\ \\ket{\\xi} \\in V\\ \\mathrm{s.t.}\\ \\ket{\\psi} + \\ket{\\xi} = \\ket{\\theta}\\)  スカラー倍の性質  単位元の存在 \\(1\\cdot\\ket{\\psi} = \\ket{\\psi}\\) 結合則 \\(a\\cdot(b\\cdot \\ket{\\psi}) = (ab)\\cdot\\ket{\\psi}\\) 分配則 1 \\(a\\cdot(\\ket{\\psi} + \\ket{\\phi}) = a\\cdot\\ket{\\psi} + a\\cdot\\ket{\\phi}\\) 分配則 2 \\((a + b)\\cdot\\ket{\\psi} = a\\cdot\\ket{\\psi} + b\\cdot\\ket{\\psi}\\)  参考文献  線形代数セミナー ストラング: 線形代数イントロダクション 量子情報科学入門  "
+                "body": "和とスカラー倍が定義されている集合をベクトル空間 (vector space) と呼ぶ (または線形空間とも呼ぶ)。ベクトル空間の要素をベクトルと呼ぶ。\nベクトル空間の例 空間によってはベクトルが行列であったり関数であったりもすることに注意。\n \\(\\mathcal{R}\\) 実数全体 \\(\\mathcal{R}\\) からなるベクトル空間 \\(\\mathcal{C}\\) 複素数全体 \\(\\mathcal{C}\\) からなるベクトル空間 \\(\\mathcal{R}^n\\) \\(n\\) 次元実数ベクトル全体 \\(\\mathcal{R}^n\\) からなるベクトル空間 \\(\\mathcal{C}^n\\) \\(n\\) 次元複素ベクトル全体 \\(\\mathcal{C}^n\\) からなるベクトル空間 \\(\\mathcal{M}\\) \\(2\\) 次の正方行列全体からなるベクトル空間 \\(\\mathcal{F}\\) 実数関数 \\(f(x)\\) のすべてからなるベクトル空間 \\(\\mathcal{Z}\\) ゼロベクトルからのみなるベクトル空間  ベクトル空間の条件 ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある。ただ、普通は問題にはならない。\n集合 \\(V\\) の任意の元 \\(\\ket{\\psi}\\) と \\(\\ket{\\phi}\\) について、\n和の性質  交換則 \\(\\ket{\\psi} + \\ket{\\phi} = \\ket{\\phi} + \\ket{\\psi}\\) 結合則 \\(\\ket{\\psi} + (\\ket{\\phi} + \\ket{\\xi}) = (\\ket{\\psi} + \\ket{\\phi}) + \\ket{\\xi}\\) 零元の存在 \\(\\exists1\\ \\ket{\\theta} \\in V\\ \\mathrm{s.t.}\\ \\forall\\ket{\\psi} \\in V,\\ \\ket{\\psi} + \\ket{\\theta} = \\ket{\\psi}\\) 逆元の存在 \\(\\forall\\ket{\\psi} \\in V,\\ \\exists1\\ \\ket{\\xi} \\in V\\ \\mathrm{s.t.}\\ \\ket{\\psi} + \\ket{\\xi} = \\ket{\\theta}\\)  スカラー倍の性質  単位元の存在 \\(1\\cdot\\ket{\\psi} = \\ket{\\psi}\\) 結合則 \\(a\\cdot(b\\cdot \\ket{\\psi}) = (ab)\\cdot\\ket{\\psi}\\) 分配則 1 \\(a\\cdot(\\ket{\\psi} + \\ket{\\phi}) = a\\cdot\\ket{\\psi} + a\\cdot\\ket{\\phi}\\) 分配則 2 \\((a + b)\\cdot\\ket{\\psi} = a\\cdot\\ket{\\psi} + b\\cdot\\ket{\\psi}\\)  参考文献  線形代数セミナー 1. 用語とまとめ ストラング: 線形代数イントロダクション 3.1 量子情報科学入門 付録 A  "
             }
         
     ,
@@ -1756,7 +1766,7 @@
                 "title": "演算子",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "量子論では、ベクトル空間 \\(V\\) と \\(W\\) の間の線形な関数 \\(A: V \\rightarrow W\\) を演算子またはオペレータ (operator) と呼び、次のように定義する。\n\\[A\\left(\\sum_i a_i\\ket{v_i}\\right) = \\sum_i a_i A\\ket{v_i}\\]\n演算子と行列は等価なので、\\(A(\\ket{v})\\) は普通 \\(A\\ket{v}\\) とカッコを省略して書くことに注意。\nちなみに、数学の分野では同じ用語 operator を作用素と訳すので注意。\n主な演算子と性質  恒等演算子 零演算子 演算子の転置共役  転置共役の反線形性    "
+                "body": "線形演算子を略して演算子 (operator) と呼ぶ。量子計算や量子情報など主に有限次元のヒルベルト空間を扱う場合演算子と行列は等価なので、「線形」を略して単に「演算子」と呼ぶことが多い。\nこの演算子の正体は行列ということと、ディラック記法での計算のしやすさから、\\(A(\\ket{v})\\) を \\(A\\ket{v}\\), 演算子の合成 \\((BA)(\\ket{v})\\) を \\(BA\\ket{v}\\) などとカッコを省略して書くのが普通。\n主な演算子  恒等演算子 零演算子 演算子の転置共役 (エルミート共役) エルミート演算子 正規な演算子 ユニタリー演算子  参照  Quantum Computation and Quantum Information 2.1.2  "
             }
         
     ,

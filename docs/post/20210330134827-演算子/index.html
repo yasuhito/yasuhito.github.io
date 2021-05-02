@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="演算子"/>
-<meta name="twitter:description" content="量子論では、ベクトル空間 \(V\) と \(W\) の間の線形な関数 \(A: V \rightarrow W\) を演算子またはオペレータ (operator) と呼び、次のように定義する。 \[A\left(\sum_i a_i\ket{v_i}\right) = \sum_i a_i A\ket{v_i}\] 演算子と行列は等価な"/>
+<meta name="twitter:description" content="線形演算子を略して演算子 (operator) と呼ぶ。量子計算や量子情報など主に有限次元のヒルベルト空間を扱う場合演算子と行列は等価なので、「線形」を略して単に"/>
 
 
 
@@ -116,19 +116,20 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>量子論では、<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\) と \(W\) の間の線形な関数 \(A: V \rightarrow W\) を演算子またはオペレータ (operator) と呼び、次のように定義する。</p>
-<p>\[A\left(\sum_i a_i\ket{v_i}\right) = \sum_i a_i A\ket{v_i}\]</p>
-<p><a href="/post/20210401105504-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E8%A1%8C%E5%88%97%E3%81%AF%E7%AD%89%E4%BE%A1/">演算子と行列は等価</a>なので、\(A(\ket{v})\) は普通 \(A\ket{v}\) とカッコを省略して書くことに注意。</p>
-<p>ちなみに、数学の分野では同じ用語 operator を作用素と訳すので注意。</p>
-<h2 id="主な演算子と性質">主な演算子と性質</h2>
+  <p><a href="/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/">線形演算子</a>を略して演算子 (operator) と呼ぶ。量子計算や量子情報など主に有限次元の<a href="/post/20210405112448-%E3%83%92%E3%83%AB%E3%83%98%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93/">ヒルベルト空間</a>を扱う場合<a href="/post/20210401105504-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E8%A1%8C%E5%88%97%E3%81%AF%E7%AD%89%E4%BE%A1/">演算子と行列は等価</a>なので、「線形」を略して単に「演算子」と呼ぶことが多い。</p>
+<p>この演算子の正体は行列ということと、<a href="/post/20210311082809-%E3%83%86%E3%82%A3%E3%83%A9%E3%83%83%E3%82%AF%E8%A8%98%E6%B3%95/">ディラック記法</a>での計算のしやすさから、\(A(\ket{v})\) を \(A\ket{v}\), <a href="/post/20210401102640-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%90%88%E6%88%90/">演算子の合成</a> \((BA)(\ket{v})\) を \(BA\ket{v}\) などとカッコを省略して書くのが普通。</p>
+<h2 id="主な演算子">主な演算子</h2>
 <ul>
 <li><a href="/post/20210401101150-%E6%81%92%E7%AD%89%E6%BC%94%E7%AE%97%E5%AD%90/">恒等演算子</a></li>
 <li><a href="/post/20210401101830-%E9%9B%B6%E6%BC%94%E7%AE%97%E5%AD%90/">零演算子</a></li>
-<li>演算子の<a href="/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/">転置共役</a>
-<ul>
-<li><a href="/post/20210408115741-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9%E3%81%AE%E5%8F%8D%E7%B7%9A%E5%BD%A2%E6%80%A7/">転置共役の反線形性</a></li>
+<li>演算子の<a href="/post/20210408091257-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9/">転置共役</a> (<a href="/post/20210329114625-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E5%85%B1%E5%BD%B9/">エルミート共役</a>)</li>
+<li><a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a></li>
+<li><a href="/post/20210408142915-%E6%AD%A3%E8%A6%8F/">正規</a>な演算子</li>
+<li><a href="/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/">ユニタリー演算子</a></li>
 </ul>
-</li>
+<h2 id="参照">参照</h2>
+<ul>
+<li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a> 2.1.2</li>
 </ul>
 
 
@@ -147,6 +148,8 @@
   
   
 
+  
+    
   
     
   
@@ -790,7 +793,7 @@
               
               <li><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a></li>
               
-              <li><a href="/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/">線形オペレータ</a></li>
+              <li><a href="/post/20210401101005-%E7%B7%9A%E5%BD%A2%E3%82%AA%E3%83%98%E3%83%AC%E3%83%BC%E3%82%BF/">線形演算子</a></li>
               
               <li><a href="/post/20210401103405-%E8%A1%8C%E5%88%97%E3%81%AF%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%A8%E3%81%BF%E3%81%AA%E3%81%9B%E3%82%8B/">行列は演算子とみなせる</a></li>
               

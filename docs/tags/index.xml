@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>QCQI/演習 2.58</title>
+			<link>https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/</link>
+			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/</guid>
+			<description>平均測定値 \(E(M)\) は、 \begin{eqnarray*} E(M) &amp;amp;=&amp;amp; \braket{\psi|M|\psi} \\\ &amp;amp;=&amp;amp; \braket{\psi|m|\psi} \\\ &amp;amp;=&amp;amp; m\braket{\psi|\psi} \\\ &amp;amp;=&amp;amp; m \end{eqnarray*} 標準偏差 \(\Delta(M)\) は、 \begin{eqnarray*} \Delta(M) &amp;amp;=&amp;amp; \sqrt{\langle M^2 \rangle - \langle M \rangle^2} \\\ &amp;amp;=&amp;amp; \sqrt{\braket{\psi|M^2|\psi} - \braket{\psi|M|\psi}^2} \\\ &amp;amp;=&amp;amp; \sqrt{\braket{\psi|m^2|\psi} - \braket{\psi|m|\psi}^2} \\\ &amp;amp;=&amp;amp; \sqrt{m^2 - m^2} \\\ &amp;amp;=&amp;amp; 0 \end{eqnarray*}</description>
+		</item>
+      	
+		<item>
 			<title>観測量</title>
 			<link>https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/</link>
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Fri, 30 Apr 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210430091414-%E8%A1%8C%E5%88%97%E5%BC%8F%E9%96%A2%E6%95%B0/</guid>
 			<description>演算子 \(A\) の特性関数 \(c(\lambda) \equiv \mathrm{det}|A - \lambda I|\) における \(\mathrm{det}\) を行列式関数 (determinant function) と呼ぶ。 関連ノート 行列式の計算方法</description>
-		</item>
-      	
-		<item>
-			<title>サラスの公式</title>
-			<link>https://yasuhito.github.io/post/20210429162615-%E3%82%B5%E3%83%A9%E3%82%B9%E3%81%AE%E5%85%AC%E5%BC%8F/</link>
-			<pubDate>Thu, 29 Apr 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210429162615-%E3%82%B5%E3%83%A9%E3%82%B9%E3%81%AE%E5%85%AC%E5%BC%8F/</guid>
-			<description>3 次正方行列の行列式を求める方法。 赤線で結んだ 3 つの数の積の和から青線で結んだ 3 つの数の積を引くと、左 3 列分の行列式を求めることができる。 た</description>
 		</item>
       	
 	</channel>
