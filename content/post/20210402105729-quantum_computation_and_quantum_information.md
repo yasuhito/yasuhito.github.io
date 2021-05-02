@@ -129,7 +129,7 @@ draft = false
 -   [QCQI/演習 2.58]({{< relref "20210502094928-qcqi_演習_2_58" >}})
 -   [QCQI/演習 2.59]({{< relref "20210502161841-qcqi_演習_2_59" >}})
 -   [QCQI/演習 2.60]({{< relref "20210502163417-qcqi_演習_2_60" >}})
--   QCQI/演習 2.61
+-   [QCQI/演習 2.61]({{< relref "20210502170605-qcqi_演習_2_61" >}})
 
 
 #### 2.2.6 POVM measurements {#2-dot-2-dot-6-povm-measurements}

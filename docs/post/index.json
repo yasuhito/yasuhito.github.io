@@ -32,6 +32,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210502170605-qcqi_%E6%BC%94%E7%BF%92_2_61/",
+                "title": "QCQI/演習 2.61",
+                "section": "post",
+                "date" : "2021.05.02",
+                "body": "測定時の状態が \\(\\ket{0}\\) であるとして、\\(\\vec{v}\\cdot\\vec{\\sigma}\\) の測定で結果 \\(+1\\) を得る確率 \\(p(1)\\) は、QCQI/演習 2.60 の結果を使うと、\n\\begin{eqnarray*} p(1) \u0026amp;=\u0026amp; \\braket{0|P_{+}|0} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}(\\braket{0|I|0} + \\braket{0|\\vec{v}\\cdot\\vec{\\sigma}|0}) \\\\\\\n\u0026amp;=\u0026amp; \\frac{1 + v_3}{2} \\end{eqnarray*}\n\\(+1\\) が得られた測定後のシステムの状態は、\n\\begin{eqnarray*} \\frac{P_1\\ket{0}}{\\sqrt{p(1)}} \u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2(1 + v_3)}}(I + \\vec{v}\\cdot\\vec{\\sigma})\\ket{0} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{\\sqrt{2(1 + v_3)}}\\begin{bmatrix} 1 + v_3 \\newline v_1 + iv_2 \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\ket{\\lambda_{+}} \\end{eqnarray*}\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/",
                 "title": "観測量",
                 "section": "post",
