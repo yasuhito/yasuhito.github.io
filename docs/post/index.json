@@ -2,6 +2,26 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210504151117-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E8%A1%A8%E8%A8%98%E6%B3%95/",
+                "title": "量子力学の標準的な表記法",
+                "section": "post",
+                "date" : "2021.05.04",
+                "body": "量子力学でよく使う記号を以下にまとめた。ディラック記法のような量子力学特有の記号や、数学とは違う意味で使われる記号に注意しよう。\n   記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい    参照  Quantum Computation and Quantum Information 2.1  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210504152722-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E9%9B%A3%E3%81%97%E3%81%95%E3%81%AE%E5%8E%9F%E5%9B%A0/",
+                "title": "量子力学の難しさの原因",
+                "section": "post",
+                "date" : "2021.05.04",
+                "body": "Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法をはじめ量子力学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n 参照  Quantum Computation and Quantum Information 2.1  "
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/",
                 "title": "QCQI/演習 2.58",
                 "section": "post",
@@ -2166,7 +2186,7 @@
                 "title": "ディラック記法",
                 "section": "post",
                 "date" : "2021.03.11",
-                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\ket{\\psi}\\)   ディラックのブラ (bra) \\(\\bra{\\pi}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法をはじめ物理学特有の記号がたくさんあることにあるようだ。\n 量子力学の公理の理解を阻む主な要因は公理それ自体にあるのではなく、それを理解するのに必要な線形代数の表記法の多さにある。物理学者が量子力学に用いている見慣れない Dirac の表記法と相まって、それは (間違って) とても恐ろしい印象を与える。\n 量子力学で使う標準的な記号のまとめ    記号 意味     \\(z^{\\ast}\\) 複素数 \\(z\\) の複素共役。\\((1 + i)^{\\ast} = 1 - i\\)   \\(\\vert{}\\psi\\rangle\\) ベクトル。ケット (ket) とも呼ばれる。   \\(\\langle\\psi\\vert{}\\) \\(\\vert{}\\psi\\rangle\\) に双対 (dual) なベクトル。ブラ (bra) とも呼ばれる   \\(\\langle\\varphi\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積   \\(\\vert{}\\varphi\\rangle \\otimes \\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積   \\(\\vert{}\\varphi\\rangle\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) のテンソル積に対する簡略記号   \\(A^{\\ast}\\) 行列 \\(A\\) の複素共役   \\(A^T\\) 行列 \\(A\\) の転置   \\(A^{\\dagger}\\) 行列 \\(A\\) のエルミート共役   \\(\\langle\\varphi\\vert{}A\\vert{}\\psi\\rangle\\) \\(\\vert{}\\varphi\\rangle\\) と \\(A\\vert{}\\psi\\rangle\\) の内積。\\(A^{\\dagger}\\vert{}\\varphi\\rangle\\) と \\(\\vert{}\\psi\\rangle\\) の内積に等しい。    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418  "
+                "body": "ディラック記法は、物理学者ポール・ディラックがとくに量子論を記述する目的で導入した記法。量子論のほとんどの教科書で今日でも使われている。\n   名前 記号     ディラックのケット (ket) \\(\\ket{\\psi}\\)   ディラックのブラ (bra) \\(\\bra{\\pi}\\)   ディラックのブラケット (braket) \\(\\langle\\pi\\vert{}\\psi\\rangle\\)    参考文献  P. A. M. Dirac (1939). A new notation for quantum mechanics. Mathematical Proceedings of the Cambridge Philosophical Society, 35, pp 416-418  "
             }
         
     ,

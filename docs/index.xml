@@ -9,10 +9,26 @@
 		
 		<managingEditor>Page(&#34;Notes&#34;) (Yasuhito Takamiya)</managingEditor>
     	
-  		<lastBuildDate>Sun, 02 May 2021 00:00:00 +0900</lastBuildDate>
+  		<lastBuildDate>Tue, 04 May 2021 00:00:00 +0900</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>量子力学の標準的な表記法</title>
+			<link>https://yasuhito.github.io/post/20210504151117-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E8%A1%A8%E8%A8%98%E6%B3%95/</link>
+			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210504151117-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E8%A1%A8%E8%A8%98%E6%B3%95/</guid>
+			<description>量子力学でよく使う記号を以下にまとめた。ディラック記法のような量子力学特有の記号や、数学とは違う意味で使われる記号に注意しよう。 記号 意味 \(z^{\ast}\) 複</description>
+		</item>
+      	
+		<item>
+			<title>量子力学の難しさの原因</title>
+			<link>https://yasuhito.github.io/post/20210504152722-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E9%9B%A3%E3%81%97%E3%81%95%E3%81%AE%E5%8E%9F%E5%9B%A0/</link>
+			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210504152722-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E9%9B%A3%E3%81%97%E3%81%95%E3%81%AE%E5%8E%9F%E5%9B%A0/</guid>
+			<description>Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法をはじめ量子力学特有の記号がたくさんあることに</description>
+		</item>
+      	
 		<item>
 			<title>QCQI/演習 2.58</title>
 			<link>https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/</link>
@@ -75,22 +91,6 @@
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210502185020-qcqi_%E6%BC%94%E7%BF%92_2_65/</guid>
 			<description>\[\left\{\frac{\ket{0}+\ket{1}}{\sqrt{2}}, \frac{\ket{0}-\ket{1}}{\sqrt{2}}\right\}\]</description>
-		</item>
-      	
-		<item>
-			<title>観測量</title>
-			<link>https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/</link>
-			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210502095356-%E8%A6%B3%E6%B8%AC%E9%87%8F/</guid>
-			<description>射影測定は被測定システムの状態空間上のエルミート演算子である観測量 (observable) \(M\) で記述される。観測量をスペクトル分解すると、 \[M = \sum_m m P_m\] ここで \(P_m\) は固有値</description>
-		</item>
-      	
-		<item>
-			<title>測定演算子</title>
-			<link>https://yasuhito.github.io/post/20210501102324-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90/</link>
-			<pubDate>Sat, 01 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210501102324-%E6%B8%AC%E5%AE%9A%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
-			<description>量子測定を記述する演算子を測定演算子 (measurement operator) と呼び、\(m\) を測定結果とすると \(M_m\) で表される。 関連ノート 量子力学の公理 量子測定は測定演算子の集ま</description>
 		</item>
       	
 	</channel>
