@@ -1296,7 +1296,7 @@
                 "title": "転置共役",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\(A\\) はヒルベルト空間 \\(V\\) の任意の演算子であるとすると、すべてのベクトル \\(|v\\rangle, |w\\rangle \\in V\\) に対して、\n\\begin{equation*} (\\ket{v}, A\\ket{w}) = (A^{\\dagger}\\ket{v}, \\ket{w}) \\end{equation*}\nを満たす演算子 \\(A^{\\dagger}\\) が \\(V\\) 上に唯 1 つのみ存在する。この演算子を演算子 \\(A\\) の転置共役 (随伴、adjoint) またはエルミート共役という。\n転置共役の性質  \\((\\ket{w}\\bra{v})^{\\dagger} = \\ket{v}\\bra{w}\\) (QCQI/演習 2.13) \\(\\left(\\sum_i a_i A_i\\right)^{\\dagger} = \\sum_i a_i^{\\ast} A_i^{\\dagger}\\) (転置共役の反線形性, QCQI/演習 2.14) \\((A^{\\dagger})^{\\dagger} = A\\) (QCQI/演習 2.15)  関連ノート  エルミート演算子  "
+                "body": "\\(A\\) はヒルベルト空間 \\(V\\) の任意の演算子であるとすると、すべてのベクトル \\(|v\\rangle, |w\\rangle \\in V\\) に対して、\n\\begin{equation*} (\\ket{v}, A\\ket{w}) = (A^{\\dagger}\\ket{v}, \\ket{w}) \\end{equation*}\nを満たす演算子 \\(A^{\\dagger}\\) が \\(V\\) 上に唯 1 つのみ存在する。この演算子を演算子 \\(A\\) の転置共役 (随伴、adjoint) またはエルミート共役という。\n転置共役の性質  \\((AB)^{\\dagger} = B^{\\dagger}A^{\\dagger}\\) \\(\\ket{v}^{\\dagger} \\equiv \\bra{v}\\) (双対ベクトルの定義) \\((A\\ket{v})^{\\dagger} = \\bra{v}A^{\\dagger}\\) \\((\\ket{w}\\bra{v})^{\\dagger} = \\ket{v}\\bra{w}\\) (QCQI/演習 2.13) \\(\\left(\\sum_i a_i A_i\\right)^{\\dagger} = \\sum_i a_i^{\\ast} A_i^{\\dagger}\\) (転置共役の反線形性, QCQI/演習 2.14) \\((A^{\\dagger})^{\\dagger} = A\\) (QCQI/演習 2.15)  関連ノート  正規な演算子 (\\(AA^{\\dagger} = A^{\\dagger}A\\))  エルミート演算子 (\\(A^{\\dagger} = A\\)) ユニタリー演算子 (\\(U^{\\dagger}U = I\\))    "
             }
         
     ,
