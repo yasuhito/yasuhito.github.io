@@ -936,7 +936,17 @@
                 "title": "ユニタリー演算子",
                 "section": "post",
                 "date" : "2021.04.11",
-                "body": "演算子 \\(U\\) が\n\\[U^{\\dagger}U = I\\]\nを満たすならば \\(U\\) はユニタリー (unitary) であるという。\nユニタリー演算子は \\(UU^{\\dagger} = I\\) も満たすので、\\(U\\) は正規でありスペクトル分解ができる。\nユニタリー演算子の性質  ユニタリー演算子は内積を保存する  ユニタリー演算子の例  パウリ行列 アダマールゲート  "
+                "body": "演算子 \\(U\\) が\n\\[U^{\\dagger}U = I\\]\nを満たすならば \\(U\\) はユニタリー (unitary) であるという。\nユニタリー演算子の性質  ユニタリー演算子はスペクトル分解できる ユニタリー演算子は内積を保存する  ユニタリー演算子の例  パウリ行列 アダマールゲート  参照  Quantum Computation and Quantum Information 2.1.6  "
+            }
+        
+    ,
+        
+            {
+                "ref": "https://yasuhito.github.io/post/20210504133738-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%B9%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E5%88%86%E8%A7%A3%E3%81%A6%E3%81%8D%E3%82%8B/",
+                "title": "ユニタリー演算子はスペクトル分解できる",
+                "section": "post",
+                "date" : "2021.04.11",
+                "body": "ユニタリー演算子 \\(U\\) は \\(U^{\\dagger}U = I\\) だけでなく \\(UU^{\\dagger} = I\\) も満たす。つまり \\(U^{\\dagger}U = UU^{\\dagger}\\) となり正規だから、スペクトル分解できる。\n"
             }
         
     ,
@@ -1206,7 +1216,7 @@
                 "title": "ユニタリー演算子は内積を保存する",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "幾何学的にユニタリー演算子はベクトル間の内積を保存する。\nこれを見るために \\(\\ket{v}\\) と \\(\\ket{w}\\) を任意の 2 つのベクトルとすると、次のように \\(U\\ket{v}\\) と \\(U\\ket{w}\\) の内積は \\(\\ket{v}\\) と \\(\\ket{w}\\) の内積に等しい。\n\\begin{equation*} (U\\ket{v}, U\\ket{w}) = \\braket{v|U^{\\dagger}U|w} = \\braket{v|I|w} = \\braket{v|w} \\end{equation*}\n"
+                "body": "幾何学的に見るとユニタリー演算子はベクトル間の内積を保存する。\n\\begin{equation*} (U\\ket{v}, U\\ket{w}) = \\braket{v|w} \\end{equation*}\nこれは次のようにカンタンに示せる。\n\\begin{equation*} (U\\ket{v}, U\\ket{w}) = \\braket{v|U^{\\dagger}U|w} = \\braket{v|I|w} = \\braket{v|w} \\end{equation*}\n"
             }
         
     ,

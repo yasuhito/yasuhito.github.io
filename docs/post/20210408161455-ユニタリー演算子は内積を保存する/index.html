@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ユニタリー演算子は内積を保存する"/>
-<meta name="twitter:description" content="幾何学的にユニタリー演算子はベクトル間の内積を保存する。 これを見るために \(\ket{v}\) と \(\ket{w}\) を任意の 2 つのベクトルとすると、次のように \(U\ket{v}\) と \(U\ket{w}\) の内積は \(\ket{v}\) と \(\ket{w}\)"/>
+<meta name="twitter:description" content="幾何学的に見るとユニタリー演算子はベクトル間の内積を保存する。 \begin{equation*} (U\ket{v}, U\ket{w}) = \braket{v|w} \end{equation*} これは次のようにカンタンに示せる。 \begin{equation*} (U\ket{v}, U\ket{w}) = \braket{v|U^{\dagger}U|w} = \braket{v|I|w} = \braket{v|w} \end{equation*}"/>
 
 
 
@@ -116,8 +116,11 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>幾何学的に<a href="/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/">ユニタリー演算子</a>はベクトル間の<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>を保存する。</p>
-<p>これを見るために \(\ket{v}\) と \(\ket{w}\) を任意の 2 つのベクトルとすると、次のように \(U\ket{v}\) と \(U\ket{w}\) の内積は \(\ket{v}\) と \(\ket{w}\) の内積に等しい。</p>
+  <p>幾何学的に見ると<a href="/post/20210411140952-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90/">ユニタリー演算子</a>はベクトル間の<a href="/post/20210405091552-%E5%86%85%E7%A9%8D/">内積</a>を保存する。</p>
+<p>\begin{equation*}
+(U\ket{v}, U\ket{w}) = \braket{v|w}
+\end{equation*}</p>
+<p>これは次のようにカンタンに示せる。</p>
 <p>\begin{equation*}
 (U\ket{v}, U\ket{w}) = \braket{v|U^{\dagger}U|w} = \braket{v|I|w} = \braket{v|w}
 \end{equation*}</p>
@@ -333,6 +336,8 @@
   
     
       
+    
+  
     
   
     
