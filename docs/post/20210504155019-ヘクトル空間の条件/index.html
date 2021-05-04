@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>ベクトル空間の条件</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ベクトル空間の条件"/>
+<meta name="twitter:description" content="ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある。ただ、普通は問題にはならない。 集合 \(V\) の任意の元 \(\ket{\psi}\) と \(\ket{\phi}\) について、 和の性質 交換"/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/custom.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/main.bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.82.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+        <a href="https://yasuhito.github.io/" class="nav-logo">
+        <img
+          src="https://yasuhito.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+        </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              ベクトル空間の条件
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;May 4, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>ある集合が<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a>となるには次の 8 つの条件を満たす必要がある。ただ、普通は問題にはならない。</p>
+<p>集合 \(V\) の任意の元 \(\ket{\psi}\) と \(\ket{\phi}\) について、</p>
+<h3 id="和の性質">和の性質</h3>
+<dl>
+<dt>交換則</dt>
+<dd>\(\ket{\psi} + \ket{\phi} = \ket{\phi} + \ket{\psi}\)</dd>
+<dt>結合則</dt>
+<dd>\(\ket{\psi} + (\ket{\phi} + \ket{\xi}) = (\ket{\psi} + \ket{\phi}) + \ket{\xi}\)</dd>
+<dt>零元の存在</dt>
+<dd>\(\exists1\ \ket{\theta} \in V\ \mathrm{s.t.}\ \forall\ket{\psi} \in V,\ \ket{\psi} + \ket{\theta} = \ket{\psi}\)</dd>
+<dt>逆元の存在</dt>
+<dd>\(\forall\ket{\psi} \in V,\ \exists1\ \ket{\xi} \in V\ \mathrm{s.t.}\ \ket{\psi} + \ket{\xi} = \ket{\theta}\)</dd>
+</dl>
+<h3 id="スカラー倍の性質">スカラー倍の性質</h3>
+<dl>
+<dt>単位元の存在</dt>
+<dd>\(1\cdot\ket{\psi} = \ket{\psi}\)</dd>
+<dt>結合則</dt>
+<dd>\(a\cdot(b\cdot \ket{\psi}) = (ab)\cdot\ket{\psi}\)</dd>
+<dt>分配則 1</dt>
+<dd>\(a\cdot(\ket{\psi} + \ket{\phi}) = a\cdot\ket{\psi} + a\cdot\ket{\phi}\)</dd>
+<dt>分配則 2</dt>
+<dd>\((a + b)\cdot\ket{\psi} = a\cdot\ket{\psi} + b\cdot\ket{\psi}\)</dd>
+</dl>
+<h2 id="参照">参照</h2>
+<ul>
+<li><a href="/post/20210412085137-%E9%87%8F%E5%AD%90%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E5%85%A5%E9%96%80/">量子情報科学入門</a> 付録 A</li>
+</ul>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer>
+  
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+        <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  </body>
+</html>
