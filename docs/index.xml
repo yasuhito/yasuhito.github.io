@@ -54,6 +54,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.71</title>
+			<link>https://yasuhito.github.io/post/20210505142849-qcqi_%E6%BC%94%E7%BF%92_2_71/</link>
+			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210505142849-qcqi_%E6%BC%94%E7%BF%92_2_71/</guid>
+			<description>密度演算子 \(\rho = \sum_i p_i \ket{i}\bra{i}\) とする。\(\rho^2\) のトレースを計算すると、 \begin{align*} &amp;amp;\rho^2 = \sum_{i,j}p_i p_j\braket{i|j}\ket{i}\bra{j} = \sum_i p_i^2 \ket{i}\bra{i} \\\ \Rightarrow\ &amp;amp;\mathrm{tr}(\rho^2) = \sum_i p_i^2 \mathrm{tr}(\ket{i}\bra{i}) = \sum_i p_i^2 \leq \sum_i p_i = 1 \end{align*} ここで \(0 \leq p_i \leq 1\) よ</description>
+		</item>
+      	
+		<item>
 			<title>ベクトル空間の例</title>
 			<link>https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/</link>
 			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210504152722-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E9%9B%A3%E3%81%97%E3%81%95%E3%81%AE%E5%8E%9F%E5%9B%A0/</guid>
 			<description>Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法をはじめ量子力学特有の記号がたくさんあることに</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.58</title>
-			<link>https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/</link>
-			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/</guid>
-			<description>平均測定値 \(E(M)\) は、 \begin{eqnarray*} E(M) &amp;amp;=&amp;amp; \braket{\psi|M|\psi} \\\ &amp;amp;=&amp;amp; \braket{\psi|m|\psi} \\\ &amp;amp;=&amp;amp; m\braket{\psi|\psi} \\\ &amp;amp;=&amp;amp; m \end{eqnarray*} 標準偏差 \(\Delta(M)\) は、 \begin{eqnarray*} \Delta(M) &amp;amp;=&amp;amp; \sqrt{\langle M^2 \rangle - \langle M \rangle^2} \\\ &amp;amp;=&amp;amp; \sqrt{\braket{\psi|M^2|\psi} - \braket{\psi|M|\psi}^2} \\\ &amp;amp;=&amp;amp; \sqrt{\braket{\psi|m^2|\psi} - \braket{\psi|m|\psi}^2} \\\ &amp;amp;=&amp;amp; \sqrt{m^2 - m^2} \\\ &amp;amp;=&amp;amp; 0 \end{eqnarray*}</description>
 		</item>
       	
 	</channel>

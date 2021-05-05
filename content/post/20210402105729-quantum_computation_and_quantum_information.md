@@ -155,3 +155,13 @@ draft = false
 
 -   [QCQI/演習 2.69]({{< relref "20210505122101-qcqi_演習_2_69" >}})
 -   [QCQI/演習 2.70]({{< relref "20210505133819-qcqi_演習_2_70" >}})
+
+
+### 2.4 The density operator {#2-dot-4-the-density-operator}
+
+
+#### 2.4.2 General properties of the density operator {#2-dot-4-dot-2-general-properties-of-the-density-operator}
+
+-   [QCQI/演習 2.71]({{< relref "20210505142849-qcqi_演習_2_71" >}})
+-   QCQI/演習 2.72
+-   QCQI/演習 2.73
