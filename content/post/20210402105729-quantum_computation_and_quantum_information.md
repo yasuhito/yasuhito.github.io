@@ -142,3 +142,8 @@ draft = false
 #### 2.2.7 Phase {#2-dot-2-dot-7-phase}
 
 -   [QCQI/演習 2.65]({{< relref "20210502185020-qcqi_演習_2_65" >}})
+
+
+#### 2.2.8 Composite systems {#2-dot-2-dot-8-composite-systems}
+
+-   [QCQI/演習 2.66]({{< relref "20210505105921-qcqi_演習_2_66" >}})

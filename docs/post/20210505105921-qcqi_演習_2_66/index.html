@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>QCQI/演習 2.31</title>
+<title>QCQI/演習 2.66</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="QCQI/演習 2.31"/>
-<meta name="twitter:description" content="演算子 \(A\), \(B\) が正の演算子であるときに、\(C = A \otimes B\) と任意のベクトル \(|v\rangle\), \(|w\rangle\) について \((|v\rangle \otimes |w\rangle, C(|v\rangle \otimes |w\rangle))\) が実数で負でない数であることを示す。 \begin{eqnarray*} (|v\rangle \otimes |w\rangle, (A \otimes B)(|v\rangle"/>
+<meta name="twitter:title" content="QCQI/演習 2.66"/>
+<meta name="twitter:description" content="観測量 \(X_1 Z_2\) の平均値は、 \begin{eqnarray*} \langle X_1 Z_2 \rangle &amp;=&amp; \frac{(\ket{00} &#43; \ket{11})}{\sqrt{2}} X_1 Z_2 \frac{(\ket{00} &#43; \ket{11})}{\sqrt{2}} \\\ &amp;=&amp; \frac{1}{2}(\bra{00} X_1 Z_2 \ket{00} &#43; \bra{00} X_1 Z_2 \ket{11} &#43; \bra{11} X_1 Z_2 \ket{00} &#43; \bra{11} X_1 Z_2 \ket{11}) \\\ &amp;=&amp; \frac{1}{2}(\bra{00} Z_2 \ket{10} &#43; \bra{00} Z_2 \ket{01} &#43; \bra{11} Z_2 \ket{10} &#43; \bra{11} Z_2 \ket{01}) \\\ &amp;=&amp; \frac{1}{2}(\braket{00|10} - \braket{00|01} &#43; \braket{11|10}"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              QCQI/演習 2.31
+              QCQI/演習 2.66
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 13, 2021
+  >&nbsp;May 5, 2021
   
 </span>
 
@@ -116,12 +116,15 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210330134827-%E6%BC%94%E7%AE%97%E5%AD%90/">演算子</a> \(A\), \(B\) が<a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a>であるときに、\(C = A \otimes B\) と任意のベクトル \(|v\rangle\), \(|w\rangle\) について \((|v\rangle \otimes |w\rangle, C(|v\rangle \otimes |w\rangle))\) が実数で負でない数であることを示す。</p>
+  <p>観測量 \(X_1 Z_2\) の平均値は、</p>
 <p>\begin{eqnarray*}
-(|v\rangle \otimes |w\rangle, (A \otimes B)(|v\rangle \otimes |w\rangle)) &amp;=&amp; (|v\rangle \otimes |w\rangle, A|v\rangle \otimes B|w\rangle) \\\<br>
-&amp;=&amp; \langle v|A|v\rangle \langle w|B|w\rangle \geq 0
+\langle X_1 Z_2 \rangle &amp;=&amp; \frac{(\ket{00} + \ket{11})}{\sqrt{2}} X_1 Z_2 \frac{(\ket{00} + \ket{11})}{\sqrt{2}} \\\<br>
+&amp;=&amp; \frac{1}{2}(\bra{00} X_1 Z_2 \ket{00} + \bra{00} X_1 Z_2 \ket{11} + \bra{11} X_1 Z_2 \ket{00} + \bra{11} X_1 Z_2 \ket{11}) \\\<br>
+&amp;=&amp; \frac{1}{2}(\bra{00} Z_2 \ket{10} + \bra{00} Z_2 \ket{01} + \bra{11} Z_2 \ket{10} + \bra{11} Z_2 \ket{01}) \\\<br>
+&amp;=&amp; \frac{1}{2}(\braket{00|10} - \braket{00|01} + \braket{11|10} - \braket{11|01}) \\\<br>
+&amp;=&amp; \frac{1}{2}(\braket{0|1}\braket{0|0} - \braket{0|0}\braket{0|1} + \braket{1|1}\braket{1|0} - \braket{1|0}\braket{1|1}) \\\<br>
+&amp;=&amp; 0
 \end{eqnarray*}</p>
-<p>よって \(A \otimes B\) は正の演算子。</p>
 
 
 
