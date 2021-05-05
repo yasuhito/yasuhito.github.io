@@ -154,3 +154,4 @@ draft = false
 ### 2.3 Application: superdense coding {#2-dot-3-application-superdense-coding}
 
 -   [QCQI/演習 2.69]({{< relref "20210505122101-qcqi_演習_2_69" >}})
+-   [QCQI/演習 2.70]({{< relref "20210505133819-qcqi_演習_2_70" >}})

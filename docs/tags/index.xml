@@ -44,6 +44,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.70</title>
+			<link>https://yasuhito.github.io/post/20210505133819-qcqi_%E6%BC%94%E7%BF%92_2_70/</link>
+			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210505133819-qcqi_%E6%BC%94%E7%BF%92_2_70/</guid>
+			<description>ベル状態 \(\ket{\psi} = \ket{I}, \ket{Z}, \ket{X}, \ket{iY}\) について \(\braket{\psi|E \otimes I|\psi}\) をそれぞれ計算すると、 \[\braket{I|E \otimes I|I} = \frac{1}{2}(\braket{0|E|0}\braket{0|I|0} + \braket{1|E|1}\braket{1|I|1}) = \frac{1}{2}(\braket{0|E|0} + \braket{1|E|1})\] \[\braket{Z|E \otimes I|Z} = \frac{1}{2}(\braket{0|E|0}\braket{0|I|0} + \braket{1|E|1}\braket{1|I|1}) = \frac{1}{2}(\braket{0|E|0} + \braket{1|E|1})\] \[\braket{X|E \otimes I|X} = \frac{1}{2}(\braket{1|E|1}\braket{0|I|0} + \braket{0|E|0}\braket{1|I|1}) = \frac{1}{2}(\braket{1|E|1} + \braket{0|E|0})\] \[\braket{iY|E \otimes I|iY} = \frac{1}{2}(\braket{1|E|1}\braket{0|I|0} + \braket{0|E|0}\braket{1|I|1}) = \frac{1}{2}(\braket{1|E|1}</description>
+		</item>
+      	
+		<item>
 			<title>ベクトル空間の例</title>
 			<link>https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/</link>
 			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210502094928-qcqi_%E6%BC%94%E7%BF%92_2_58/</guid>
 			<description>平均測定値 \(E(M)\) は、 \begin{eqnarray*} E(M) &amp;amp;=&amp;amp; \braket{\psi|M|\psi} \\\ &amp;amp;=&amp;amp; \braket{\psi|m|\psi} \\\ &amp;amp;=&amp;amp; m\braket{\psi|\psi} \\\ &amp;amp;=&amp;amp; m \end{eqnarray*} 標準偏差 \(\Delta(M)\) は、 \begin{eqnarray*} \Delta(M) &amp;amp;=&amp;amp; \sqrt{\langle M^2 \rangle - \langle M \rangle^2} \\\ &amp;amp;=&amp;amp; \sqrt{\braket{\psi|M^2|\psi} - \braket{\psi|M|\psi}^2} \\\ &amp;amp;=&amp;amp; \sqrt{\braket{\psi|m^2|\psi} - \braket{\psi|m|\psi}^2} \\\ &amp;amp;=&amp;amp; \sqrt{m^2 - m^2} \\\ &amp;amp;=&amp;amp; 0 \end{eqnarray*}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.59</title>
-			<link>https://yasuhito.github.io/post/20210502161841-qcqi_%E6%BC%94%E7%BF%92_2_59/</link>
-			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210502161841-qcqi_%E6%BC%94%E7%BF%92_2_59/</guid>
-			<description>パウリ演算子の外積表現より \[X = \ket{0}\bra{1} + \ket{1}\bra{0}\] よって \(X\) の平均値は \[\langle X \rangle = \braket{0|X|0} = \braket{0|0}\braket{1|0} + \braket{0|1}\braket{0|0} = 0\] \(X^2 = I\) だから、 \[\langle X^2 \rangle = \braket{0|I|0} = 1\] これらを使うと \(X\) の標準偏差は、 \[\sqrt{\langle X^2 \rangle</description>
 		</item>
       	
 	</channel>

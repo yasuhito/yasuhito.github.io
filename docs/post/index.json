@@ -42,6 +42,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210505133819-qcqi_%E6%BC%94%E7%BF%92_2_70/",
+                "title": "QCQI/演習 2.70",
+                "section": "post",
+                "date" : "2021.05.05",
+                "body": "ベル状態 \\(\\ket{\\psi} = \\ket{I}, \\ket{Z}, \\ket{X}, \\ket{iY}\\) について \\(\\braket{\\psi|E \\otimes I|\\psi}\\) をそれぞれ計算すると、\n\\[\\braket{I|E \\otimes I|I} = \\frac{1}{2}(\\braket{0|E|0}\\braket{0|I|0} + \\braket{1|E|1}\\braket{1|I|1}) = \\frac{1}{2}(\\braket{0|E|0} + \\braket{1|E|1})\\] \\[\\braket{Z|E \\otimes I|Z} = \\frac{1}{2}(\\braket{0|E|0}\\braket{0|I|0} + \\braket{1|E|1}\\braket{1|I|1}) = \\frac{1}{2}(\\braket{0|E|0} + \\braket{1|E|1})\\] \\[\\braket{X|E \\otimes I|X} = \\frac{1}{2}(\\braket{1|E|1}\\braket{0|I|0} + \\braket{0|E|0}\\braket{1|I|1}) = \\frac{1}{2}(\\braket{1|E|1} + \\braket{0|E|0})\\] \\[\\braket{iY|E \\otimes I|iY} = \\frac{1}{2}(\\braket{1|E|1}\\braket{0|I|0} + \\braket{0|E|0}\\braket{1|I|1}) = \\frac{1}{2}(\\braket{1|E|1} + \\braket{0|E|0})\\]\nと同じになる。よって、アリスがボブに送った量子ビットをイブが横取り (観測) したとしても得られる状態の期待値は同じなので、イブは何も推測できない。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/",
                 "title": "ベクトル空間の例",
                 "section": "post",
@@ -1726,7 +1736,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 1 Introduction and overview 1.6.2 Quantum information in a wider context  QCQI/問題 1.1 QCQI/問題 1.2  2 Introduction to quantum mechanics 2.1.1 Bases and linear independence  QCQI/演習 2.1  2.1.2 Linear operators and matrices  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 Inner products  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 Eigenvectors and eigenvalues  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 Adjoints and Hermitian operators  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 Tensor products  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 Operator functions  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 The commutator and anti-commutator  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 The polar and singular value decompositions  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 Evolution  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 Quantum measurement  QCQI/演習 2.57  2.2.5 Projective measurements  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM measurements  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 Phase  QCQI/演習 2.65  2.2.8 Composite systems  QCQI/演習 2.66 QCQI/演習 2.67 QCQI/演習 2.68  2.3 Application: superdense coding  QCQI/演習 2.69  "
+                "body": "  演習と問題の解答 1 Introduction and overview 1.6.2 Quantum information in a wider context  QCQI/問題 1.1 QCQI/問題 1.2  2 Introduction to quantum mechanics 2.1.1 Bases and linear independence  QCQI/演習 2.1  2.1.2 Linear operators and matrices  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 Inner products  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 Eigenvectors and eigenvalues  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 Adjoints and Hermitian operators  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 Tensor products  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 Operator functions  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 The commutator and anti-commutator  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 The polar and singular value decompositions  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 Evolution  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 Quantum measurement  QCQI/演習 2.57  2.2.5 Projective measurements  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM measurements  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 Phase  QCQI/演習 2.65  2.2.8 Composite systems  QCQI/演習 2.66 QCQI/演習 2.67 QCQI/演習 2.68  2.3 Application: superdense coding  QCQI/演習 2.69 QCQI/演習 2.70  "
             }
         
     ,
