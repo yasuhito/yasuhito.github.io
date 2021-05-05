@@ -12,6 +12,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210505112839-qcqi_%E6%BC%94%E7%BF%92_2_67/",
+                "title": "QCQI/演習 2.67",
+                "section": "post",
+                "date" : "2021.05.05",
+                "body": "\\(U: W \\rightarrow V\\) を拡張するユニタリー演算子 \\(U: V \\rightarrow V\\) を次のように作れる。\\(\\ket{i}\\) を \\(1 \\leq i \\leq k\\) について \\(W\\) の正規直交基底、\\(k \u0026lt; i \\leq d\\) について \\(W_{\\perp}\\) (\\(V\\) の残り) の正規直交基底とする。固有値 \\(u_i\\) を持つ \\(W\\) 上の \\(U\\) のスペクトル分解を、\\(|u_i| = 1\\) とし \\(W_{\\perp}\\) 上の恒等演算子として拡張できる。\n\\begin{align*} \u0026amp;U = \\sum_{i=1}^{k} u_i \\ket{i}\\bra{i} + \\sum_{i = k+1}^{d} \\ket{i}\\bra{i} \\\\\\\n\\Rightarrow\\ \u0026amp;U^{\\dagger} = \\sum_{i=1}^k u_i^{\\ast} \\ket{i}\\bra{i} + \\sum_{i = k+1}^{d} \\ket{i}\\bra{i} \\end{align*}\n\\(U\\) がユニタリーであることを確認するために \\(U^{\\dagger}U\\) を計算すると、\n\\[U^{\\dagger}U = \\sum_{i=1}^k |u_i|^2\\ket{i}\\bra{i} + \\sum_{i=k+1}^d\\ket{i}\\bra{i} = \\sum_{i=k+1}^d\\ket{i}\\bra{i} = I\\]\nよって \\(U\\) は \\(V\\) 上でユニタリー。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/",
                 "title": "ベクトル空間の例",
                 "section": "post",
@@ -1696,7 +1706,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 1 Introduction and overview 1.6.2 Quantum information in a wider context  QCQI/問題 1.1 QCQI/問題 1.2  2 Introduction to quantum mechanics 2.1.1 Bases and linear independence  QCQI/演習 2.1  2.1.2 Linear operators and matrices  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 Inner products  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 Eigenvectors and eigenvalues  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 Adjoints and Hermitian operators  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 Tensor products  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 Operator functions  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 The commutator and anti-commutator  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 The polar and singular value decompositions  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 Evolution  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 Quantum measurement  QCQI/演習 2.57  2.2.5 Projective measurements  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM measurements  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 Phase  QCQI/演習 2.65  2.2.8 Composite systems  QCQI/演習 2.66  "
+                "body": "  演習と問題の解答 1 Introduction and overview 1.6.2 Quantum information in a wider context  QCQI/問題 1.1 QCQI/問題 1.2  2 Introduction to quantum mechanics 2.1.1 Bases and linear independence  QCQI/演習 2.1  2.1.2 Linear operators and matrices  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 Inner products  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 Eigenvectors and eigenvalues  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 Adjoints and Hermitian operators  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 Tensor products  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 Operator functions  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 The commutator and anti-commutator  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 The polar and singular value decompositions  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 Evolution  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 Quantum measurement  QCQI/演習 2.57  2.2.5 Projective measurements  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM measurements  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 Phase  QCQI/演習 2.65  2.2.8 Composite systems  QCQI/演習 2.66 QCQI/演習 2.67 QCQI/演習 2.68  "
             }
         
     ,

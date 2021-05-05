@@ -147,3 +147,5 @@ draft = false
 #### 2.2.8 Composite systems {#2-dot-2-dot-8-composite-systems}
 
 -   [QCQI/演習 2.66]({{< relref "20210505105921-qcqi_演習_2_66" >}})
+-   [QCQI/演習 2.67]({{< relref "20210505112839-qcqi_演習_2_67" >}})
+-   QCQI/演習 2.68

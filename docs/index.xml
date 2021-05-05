@@ -22,6 +22,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.67</title>
+			<link>https://yasuhito.github.io/post/20210505112839-qcqi_%E6%BC%94%E7%BF%92_2_67/</link>
+			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210505112839-qcqi_%E6%BC%94%E7%BF%92_2_67/</guid>
+			<description>\(U: W \rightarrow V\) を拡張するユニタリー演算子 \(U: V \rightarrow V\) を次のように作れる。\(\ket{i}\) を \(1 \leq i \leq k\) について \(W\) の正規直交基底、\(k &amp;lt; i \leq d\) につ</description>
+		</item>
+      	
+		<item>
 			<title>ベクトル空間の例</title>
 			<link>https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/</link>
 			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210502170605-qcqi_%E6%BC%94%E7%BF%92_2_61/</guid>
 			<description>測定時の状態が \(\ket{0}\) であるとして、\(\vec{v}\cdot\vec{\sigma}\) の測定で結果 \(+1\) を得る確率 \(p(1)\) は、QCQI/演習 2.60 の結果を</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.62</title>
-			<link>https://yasuhito.github.io/post/20210502173217-qcqi_%E6%BC%94%E7%BF%92_2_62/</link>
-			<pubDate>Sun, 02 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210502173217-qcqi_%E6%BC%94%E7%BF%92_2_62/</guid>
-			<description>仮に POVM 要素が測定演算子と一致していたとすると、\(E_m = M_m^{\dagger}M_m = M_m\) となる。\(E_m = M_m\) で \(E_m\) はエルミート演算子なので、\(M_m^{\dagg</description>
 		</item>
       	
 	</channel>
