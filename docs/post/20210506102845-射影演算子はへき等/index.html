@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>QCQI/演習 2.3</title>
+<title>射影演算子はべき等</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="QCQI/演習 2.3"/>
-<meta name="twitter:description" content="演算子は行列で表現できることから、演算子 \(A\), \(B\) それぞれの行列表現の要素について次が成り立つ。 \begin{equation*} A\ket{v_j} = \sum_i A_{ij}\ket{w_i} \end{equation*} \begin{equation*} B\ket{w_i} = \sum_k A_{ki}\ket{x_k} \end{equation*} ここで線形変換 \(BA\) の行列表現"/>
+<meta name="twitter:title" content="射影演算子はべき等"/>
+<meta name="twitter:description" content="任意の射影演算子 \(P\) について、一度 \(P\) で射影したベクトルを何度射影しても同じなので、 \[P^2 = P\] が成り立ち、この性質をべき等 (idempotent) と呼ぶ。証明は QCQI/"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              QCQI/演習 2.3
+              射影演算子はべき等
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 2, 2021
+  >&nbsp;May 6, 2021
   
 </span>
 
@@ -116,28 +116,9 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a>ことから、<a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子</a> \(A\), \(B\) それぞれの行列表現の要素について次が成り立つ。</p>
-<p>\begin{equation*}
-A\ket{v_j} = \sum_i A_{ij}\ket{w_i}
-\end{equation*}</p>
-<p>\begin{equation*}
-B\ket{w_i} = \sum_k A_{ki}\ket{x_k}
-\end{equation*}</p>
-<p>ここで線形変換 \(BA\) の行列表現は、</p>
-<p>\begin{eqnarray*}
-BA\ket{v_j} &amp;=&amp; B(A\ket{v_j}) \\\<br>
-&amp;=&amp; B\left(\sum_i A_{ij}\ket{w_i}\right) \\\<br>
-&amp;=&amp; \sum_i A_{ij}\sum_k B_{ki}\ket{x_k}
-\end{eqnarray*}</p>
-<p><a href="/post/20210402153637-%E3%82%B7%E3%82%AF%E3%83%9E%E3%81%AE%E5%88%86%E8%A7%A3%E5%85%AC%E5%BC%8F/">シグマの分解公式</a>より</p>
-<p>\begin{eqnarray*}
-\phantom{BA\ket{v_j}} &amp;=&amp; \sum_i\sum_k A_{ij}B_{ki}\ket{x_k} \\\<br>
-&amp;=&amp; \sum_k\sum_i A_{ij}B_{ki}\ket{x_k} \\\<br>
-&amp;=&amp; \sum_k\sum_i B_{ki}A_{ij}\ket{x_k} \\\<br>
-&amp;=&amp; \sum_k\left(\sum_i B_{ki}A_{ij}\right)\ket{x_k} \\\<br>
-&amp;=&amp; \sum_k(BA)_{kj}\ket{x_k}
-\end{eqnarray*}</p>
-<p>と変形でき、これは \(B\) と \(A\) の行列表現の行列積である。</p>
+  <p>任意の<a href="/post/20210408121035-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90/">射影演算子</a> \(P\) について、一度 \(P\) で射影した<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a>を何度射影しても同じなので、</p>
+<p>\[P^2 = P\]</p>
+<p>が成り立ち、この性質をべき等 (idempotent) と呼ぶ。証明は <a href="/post/20210408141931-qcqi_%E6%BC%94%E7%BF%92_2_16/">QCQI/演習 2.16</a> を参照。</p>
 
 
 
@@ -383,7 +364,7 @@ BA\ket{v_j} &amp;=&amp; B(A\ket{v_j}) \\\<br>
     
   
     
-  
+      
     
   
     
@@ -413,13 +394,7 @@ BA\ket{v_j} &amp;=&amp; B(A\ket{v_j}) \\\<br>
     
   
     
-  
-    
-  
-    
-  
-    
-  
+      
     
   
     
@@ -517,8 +492,6 @@ BA\ket{v_j} &amp;=&amp; B(A\ket{v_j}) \\\<br>
     
   
     
-      
-    
   
     
   
@@ -529,7 +502,15 @@ BA\ket{v_j} &amp;=&amp; B(A\ket{v_j}) \\\<br>
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -696,11 +677,11 @@ BA\ket{v_j} &amp;=&amp; B(A\ket{v_j}) \\\<br>
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210408120450-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E7%A9%8D%E3%81%AE%E8%A1%8C%E5%88%97%E8%A1%A8%E7%8F%BE/">演算子の積の行列表現</a></li>
+              <li><a href="/post/20210409164921-qcqi_%E6%BC%94%E7%BF%92_2_23/">QCQI/演習 2.23</a></li>
               
-              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
+              <li><a href="/post/20210408141931-qcqi_%E6%BC%94%E7%BF%92_2_16/">QCQI/演習 2.16</a></li>
               
-              <li><a href="/post/20210401104202-%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E8%A1%8C%E5%88%97%E3%81%A6%E8%A1%A8%E7%8F%BE%E3%81%A6%E3%81%8D%E3%82%8B/">演算子は行列で表現できる</a></li>
+              <li><a href="/post/20210408121035-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90/">射影演算子</a></li>
               
           </ul>
         </div>

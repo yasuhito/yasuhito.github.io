@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>射影演算子はべき等</title>
+			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
+			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</guid>
+			<description>任意の射影演算子 \(P\) について、一度 \(P\) で射影したベクトルを何度射影しても同じなので、 \[P^2 = P\] が成り立ち、この性質をべき等 (idempotent) と呼ぶ。証明は QCQI/</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はエルミート演算子</title>
 			<link>https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210504155019-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E6%9D%A1%E4%BB%B6/</guid>
 			<description>ある集合がベクトル空間となるには次の 8 つの条件を満たす必要がある。ただ、普通は問題にはならない。 集合 \(V\) の任意の元 \(\ket{\psi}\) と \(\ket{\phi}\) について、 和の性質 交換</description>
-		</item>
-      	
-		<item>
-			<title>量子力学の標準的な表記法</title>
-			<link>https://yasuhito.github.io/post/20210504151117-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E8%A1%A8%E8%A8%98%E6%B3%95/</link>
-			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210504151117-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E8%A1%A8%E8%A8%98%E6%B3%95/</guid>
-			<description>量子力学でよく使う記号を以下にまとめた。ディラック記法のような量子力学特有の記号や、数学とは違う意味で使われる記号に注意しよう。 記号 意味 \(z^{\ast}\) 複</description>
 		</item>
       	
 	</channel>
