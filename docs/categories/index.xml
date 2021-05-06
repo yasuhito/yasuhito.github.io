@@ -12,6 +12,14 @@
 		<atom:link href="/categories/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>射影演算子はエルミート演算子</title>
+			<link>https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</link>
+			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
+			<description>\(W\) が \(d\) 次元ベクトル空間 \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。\(V\) から部分空間 \(W\) への射影演算子 \(P\) \begin{equation*} P \equiv \sum_{i=1}^k \ket{i}\bra{i} \end{equation*} について、QCQI/演習</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.66</title>
 			<link>https://yasuhito.github.io/post/20210505105921-qcqi_%E6%BC%94%E7%BF%92_2_66/</link>
 			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210504151117-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E8%A1%A8%E8%A8%98%E6%B3%95/</guid>
 			<description>量子力学でよく使う記号を以下にまとめた。ディラック記法のような量子力学特有の記号や、数学とは違う意味で使われる記号に注意しよう。 記号 意味 \(z^{\ast}\) 複</description>
-		</item>
-      	
-		<item>
-			<title>量子力学の難しさの原因</title>
-			<link>https://yasuhito.github.io/post/20210504152722-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E9%9B%A3%E3%81%97%E3%81%95%E3%81%AE%E5%8E%9F%E5%9B%A0/</link>
-			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210504152722-%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%81%AE%E9%9B%A3%E3%81%97%E3%81%95%E3%81%AE%E5%8E%9F%E5%9B%A0/</guid>
-			<description>Quantum Computation and Quantum Information によると、量子力学の難しさの原因はそれ自体が難しいというわけではなく、ディラック記法をはじめ量子力学特有の記号がたくさんあることに</description>
 		</item>
       	
 	</channel>

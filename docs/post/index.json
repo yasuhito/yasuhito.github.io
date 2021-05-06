@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/",
+                "title": "射影演算子はエルミート演算子",
+                "section": "post",
+                "date" : "2021.05.06",
+                "body": "\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。\\(V\\) から部分空間 \\(W\\) への射影演算子 \\(P\\)\n\\begin{equation*} P \\equiv \\sum_{i=1}^k \\ket{i}\\bra{i} \\end{equation*}\nについて、QCQI/演習 2.13により任意のベクトル \\(\\ket{v}\\) に対して \\((\\ket{v}\\bra{v})^{\\dagger} = \\ket{v}\\bra{v}\\) なので、\\(\\ket{v}\\bra{v}\\) はエルミート演算子である。また転置共役の反線形性より、\n\\[\\left(\\sum_i \\ket{i}\\bra{i}\\right)^{\\dagger} = \\sum_i (\\ket{i}\\bra{i})^\\dagger = \\sum_i \\ket{i}\\bra{i}\\]\nしたがって \\(P\\) もエルミート演算子である。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210505105921-qcqi_%E6%BC%94%E7%BF%92_2_66/",
                 "title": "QCQI/演習 2.66",
                 "section": "post",
@@ -296,7 +306,7 @@
                 "title": "QCQI/演習 2.54",
                 "section": "post",
                 "date" : "2021.04.27",
-                "body": "\\(A\\) と \\(B\\) はエルミート演算子でありかつ可換だから、同時対角化定理より \\(A\\) と \\(B\\) は同時対角化可能。つまり \\(A\\), \\(B\\) の固有ベクトルに共通の正規直交集合 \\(\\ket{i}\\) を用いて次のように書ける。\n\\[A = \\sum_i a_i \\ket{i}\\bra{i}\\] \\[B = \\sum_i b_i \\ket{i}\\bra{i}\\]\nこの結果を使うと、\n\\begin{eqnarray*} \\mathrm{exp}(A)\\mathrm{exp}(B) \u0026amp;=\u0026amp; \\sum_i \\mathrm{exp}(a_i)\\ket{i}\\bra{i}\\sum_j\\mathrm{exp}(b_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\mathrm{exp}(a_i + b_j)\\ket{i}\\braket{i|j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\mathrm{exp}(a_i + b_j)\\delta_{i,j}\\ket{i}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\mathrm{exp}(a_i + b_i)\\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{exp}(A + B) \\end{eqnarray*}\n"
+                "body": "\\(A\\) と \\(B\\) はエルミート演算子でありかつ可換だから、同時対角化定理より \\(A\\) と \\(B\\) は同時対角化可能。つまり \\(A\\), \\(B\\) の固有ベクトルに共通の正規直交集合 \\(\\ket{i}\\) を用いて次のように書ける。\n\\[A = \\sum_i a_i \\ket{i}\\bra{i}\\] \\[B = \\sum_i b_i \\ket{i}\\bra{i}\\]\nこの結果を使うと、\n\\begin{eqnarray*} \\mathrm{exp}(A)\\mathrm{exp}(B) \u0026amp;=\u0026amp; \\sum_i \\mathrm{exp}(a_i)\\ket{i}\\bra{i}\\sum_j\\mathrm{exp}(b_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\mathrm{exp}(a_i + b_j)\\ket{i}\\braket{i|j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\mathrm{exp}(a_i + b_j)\\delta_{ij}\\ket{i}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\mathrm{exp}(a_i + b_i)\\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{exp}(A + B) \\end{eqnarray*}\n"
             }
         
     ,
@@ -586,7 +596,7 @@
                 "title": "QCQI/演習 2.48",
                 "section": "post",
                 "date" : "2021.04.20",
-                "body": "正の行列 \\(P\\) の極分解 正の演算子のエルミート性から正の行列は正規であり、よって \\(P\\) は負でない固有値 \\(\\lambda_i\\) を用いて スペクトル分解できる。\n\\[P = \\sum_i \\lambda_i |i\\rangle\\langle i|\\]\n極分解により、\\(P = UJ\\) を満たす正の演算子の行列表現 \\(J\\) について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{P^{\\dagger}P} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j\\delta_{i,j} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}\\lambda_i^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nしたがって \\(U = I\\)\nユニタリー行列 \\(U^{\\prime}\\) の極分解 ユニタリー行列も正規であるから \\(U^{\\prime}\\) はスペクトル分解できる。\n極分解により、\n\\[J = \\sqrt{(U^{\\prime})^{\\dagger}U^{\\prime}} = \\sqrt{I} = I\\]\nしたがって \\(U^{\\prime} = UJ = U\\) より \\(U = U^{\\prime}\\)\nエルミート行列 \\(H\\) の極分解 \\(H\\) をスペクトル分解すると\n\\[H = \\sum_i\\lambda_i|i\\rangle\\langle i|\\]\n極分解により、\\(H = UJ\\) を満たす正の演算子の行列表現 J について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{H^{\\dagger}H} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{H^2} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j\\delta_{ij} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}\\lambda_i^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i} |\\lambda_i| |i\\rangle\\langle i| \\end{eqnarray*}\nよって \\(H = U\\sum_{i} |\\lambda_i| |i\\rangle\\langle i|\\)\n"
+                "body": "正の行列 \\(P\\) の極分解 正の演算子のエルミート性から正の行列は正規であり、よって \\(P\\) は負でない固有値 \\(\\lambda_i\\) を用いて スペクトル分解できる。\n\\[P = \\sum_i \\lambda_i |i\\rangle\\langle i|\\]\n極分解により、\\(P = UJ\\) を満たす正の演算子の行列表現 \\(J\\) について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{P^{\\dagger}P} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j\\delta_{ij} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}\\lambda_i^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nしたがって \\(U = I\\)\nユニタリー行列 \\(U^{\\prime}\\) の極分解 ユニタリー行列も正規であるから \\(U^{\\prime}\\) はスペクトル分解できる。\n極分解により、\n\\[J = \\sqrt{(U^{\\prime})^{\\dagger}U^{\\prime}} = \\sqrt{I} = I\\]\nしたがって \\(U^{\\prime} = UJ = U\\) より \\(U = U^{\\prime}\\)\nエルミート行列 \\(H\\) の極分解 \\(H\\) をスペクトル分解すると\n\\[H = \\sum_i\\lambda_i|i\\rangle\\langle i|\\]\n極分解により、\\(H = UJ\\) を満たす正の演算子の行列表現 J について、\n\\begin{eqnarray*} J \u0026amp;=\u0026amp; \\sqrt{H^{\\dagger}H} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{H^2} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j |i\\rangle\\langle i|j\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i,j}\\lambda_i\\lambda_j\\delta_{ij} |i\\rangle\\langle j|} \\\\\\\n\u0026amp;=\u0026amp; \\sqrt{\\sum_{i}\\lambda_i^2 |i\\rangle\\langle i|} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i} |\\lambda_i| |i\\rangle\\langle i| \\end{eqnarray*}\nよって \\(H = U\\sum_{i} |\\lambda_i| |i\\rangle\\langle i|\\)\n"
             }
         
     ,
@@ -1226,7 +1236,7 @@
                 "title": "QCQI/演習 2.16",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\begin{eqnarray*} P^2 \u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j} \\phantom{\\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j}} \\end{eqnarray*}\nシグマの分解公式より、\n\\begin{eqnarray*} \\phantom{P^2} \u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j} \\phantom{\\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j}} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\delta_{i,j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nよって\n\\[P^2 = P\\]\nとなり射影演算子はべき等である。\n関連ノート  射影演算子  "
+                "body": "\\begin{eqnarray*} P^2 \u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j} \\phantom{\\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j}} \\end{eqnarray*}\nシグマの分解公式より、\n\\begin{eqnarray*} \\phantom{P^2} \u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j} \\phantom{\\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j}} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\delta_{ij}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nよって\n\\[P^2 = P\\]\nとなり射影演算子はべき等である。\n関連ノート  射影演算子  "
             }
         
     ,
@@ -1336,7 +1346,7 @@
                 "title": "射影演算子",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "一般のベクトルから特定の固有値に属する固有空間の成分だけを抜き出す演算子を射影演算子 (projector) と呼ぶ。射影演算子はエルミート演算子の一種。\n\\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(|1\\rangle, \\ldots, |k\\rangle\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(|1\\rangle, \\ldots, |d\\rangle\\) を作ることができる。このとき\n\\begin{equation*} P \\equiv \\sum_{i=1}^k |i\\rangle\\langle i| \\end{equation*}\nを \\(V\\) から部分空間 \\(W\\) への射影演算子と呼ぶ。\nQCQI/演習 2.13により任意のベクトル \\(|v\\rangle\\) に対して \\((|v\\rangle\\langle v|)^{\\dagger} = |v\\rangle\\langle v|\\) なので、\\(|v\\rangle\\langle v|\\) はエルミート演算子である。したがって \\(P\\) もエルミート演算子である。\n射影演算子の性質  \\(P^2 = P\\) (べき等性, QCQI/演習 2.16) \\(P^{\\dagger} = P\\) (エルミート演算子)  "
+                "body": "一般のベクトルから特定の固有値に属する固有空間の成分だけを抜き出す演算子を射影演算子 (projector) と呼ぶ。\n  \\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(\\ket{1}, \\ldots, \\ket{k}\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(\\ket{1}, \\ldots, \\ket{d}\\) を作ることができる。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{W の正規直交基底}, \\ket{k+1}, \\ldots, \\ket{d}}^{V の正規直交基底}\\]\nこのとき\n\\begin{equation*} P \\equiv \\sum_{i=1}^k \\ket{i}\\bra{i} \\end{equation*}\nを \\(V\\) から部分空間 \\(W\\) への射影演算子と呼ぶ。\n射影演算子の性質  \\(P^2 = P\\) (べき等性, QCQI/演習 2.16) \\(P^{\\dagger} = P\\) (射影演算子はエルミート演算子)  "
             }
         
     ,
@@ -1356,7 +1366,7 @@
                 "title": "正規直交基底",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "正規直交な基底のこと。\n"
+                "body": "互いに直交する単位ベクトルからなる基底を正規直交基底 (orthonormal basis) と呼ぶ。\n"
             }
         
     ,
@@ -1856,7 +1866,7 @@
                 "title": "基底",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "ベクトル空間 \\(V\\) の元の集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が次の 2 つの性質をみたすとき、これを \\(V\\) の基底と呼ぶ。\n \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形独立 \\(V\\) の任意の元は \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) の線形結合で表せる  "
+                "body": "ベクトル空間 \\(V\\) の元の集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が次の 2 つの性質をみたすとき、これを \\(V\\) の基底 (basis) と呼ぶ。\n \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形独立 \\(V\\) の任意の元は \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) の線形結合で表せる  関連ノート  次元 正規直交基底  "
             }
         
     ,
@@ -1876,7 +1886,7 @@
                 "title": "線形従属",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "\\(0\\) でないベクトル \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) について、少なくとも 1 つの \\(i\\) に対して \\(a_i \\neq 0\\) であり、\n\\[a_1\\ket{v_1} + a_2\\ket{v_2} + \\ldots + a_n\\ket{v_n} = 0\\]\nを満たす複素数の集合 \\(a_1, \\ldots, a_n\\) が存在するならば、ベクトル \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形従属であるという。\n関連ノート  線形従属の例 (QCQI/演習 2.1) 線形独立  "
+                "body": "\\(0\\) でないベクトル \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) について、少なくとも 1 つの \\(i\\) に対して \\(a_i \\neq 0\\) であり、\n\\[a_1\\ket{v_1} + a_2\\ket{v_2} + \\ldots + a_n\\ket{v_n} = 0\\]\nを満たす複素数の集合 \\(a_1, \\ldots, a_n\\) が存在するならば、ベクトル \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形従属 (linearly dependent) であるという。\n関連ノート  線形従属の例 (QCQI/演習 2.1) 線形独立  "
             }
         
     ,
@@ -1886,7 +1896,7 @@
                 "title": "線形独立",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "\\(0\\) でないベクトルの集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が線形従属でなければ、それは線形独立であるという。\n"
+                "body": "\\(0\\) でないベクトルの集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が線形従属でなければ、それは線形独立 (linearly independent) であるという。\n関連ノート  基底  "
             }
         
     ,
@@ -2546,7 +2556,7 @@
                 "title": "線形結合",
                 "section": "post",
                 "date" : "2021.02.23",
-                "body": "和演算とスカラー倍演算を組合わせることで、ベクトル \\(|v_1\\rangle\\) と \\(|v_2\\rangle\\) の線形結合を作ることができる。\\(|v_1\\rangle\\) に \\(c\\) を掛け、\\(|v_2\\rangle\\) に \\(d\\) を掛け、さらに和 \\(c|v_1\\rangle + d|v_2\\rangle\\) を求める。これが \\(|v_1\\rangle\\) と \\(|v_2\\rangle\\) の線形結合。\n"
+                "body": "和演算とスカラー倍演算を組合わせることで、ベクトル \\(|v_1\\rangle\\) と \\(|v_2\\rangle\\) の線形結合 (linear combination) を作ることができる。\\(|v_1\\rangle\\) に \\(c\\) を掛け、\\(|v_2\\rangle\\) に \\(d\\) を掛け、さらに和 \\(c|v_1\\rangle + d|v_2\\rangle\\) を求める。これが \\(|v_1\\rangle\\) と \\(|v_2\\rangle\\) の線形結合。\n"
             }
         
     

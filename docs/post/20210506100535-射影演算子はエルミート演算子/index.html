@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>射影演算子はエルミート演算子</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="射影演算子はエルミート演算子"/>
+<meta name="twitter:description" content="\(W\) が \(d\) 次元ベクトル空間 \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。\(V\) から部分空間 \(W\) への射影演算子 \(P\) \begin{equation*} P \equiv \sum_{i=1}^k \ket{i}\bra{i} \end{equation*} について、QCQI/演習"/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/custom.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/main.bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.82.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+        <a href="https://yasuhito.github.io/" class="nav-logo">
+        <img
+          src="https://yasuhito.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+        </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              射影演算子はエルミート演算子
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;May 6, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p>\(W\) が \(d\) 次元<a href="/post/20210330135536-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93/">ベクトル空間</a> \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。\(V\) から部分空間 \(W\) への<a href="/post/20210408121035-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90/">射影演算子</a> \(P\)</p>
+<p>\begin{equation*}
+P \equiv \sum_{i=1}^k \ket{i}\bra{i}
+\end{equation*}</p>
+<p>について、<a href="/post/20210408092119-qcqi_%E6%BC%94%E7%BF%92_2_13/">QCQI/演習 2.13</a>により任意の<a href="/post/20210330140009-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">ベクトル</a> \(\ket{v}\) に対して \((\ket{v}\bra{v})^{\dagger} = \ket{v}\bra{v}\) なので、\(\ket{v}\bra{v}\) は<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>である。また<a href="/post/20210408115741-%E8%BB%A2%E7%BD%AE%E5%85%B1%E5%BD%B9%E3%81%AE%E5%8F%8D%E7%B7%9A%E5%BD%A2%E6%80%A7/">転置共役の反線形性</a>より、</p>
+<p>\[\left(\sum_i \ket{i}\bra{i}\right)^{\dagger} = \sum_i (\ket{i}\bra{i})^\dagger = \sum_i \ket{i}\bra{i}\]</p>
+<p>したがって \(P\) もエルミート演算子である。</p>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210408121035-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90/">射影演算子</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer>
+  
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+        <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  </body>
+</html>
