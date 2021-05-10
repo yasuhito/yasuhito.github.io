@@ -78,19 +78,19 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.80</title>
+			<link>https://yasuhito.github.io/post/20210510163251-qcqi_%E6%BC%94%E7%BF%92_2_80/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510163251-qcqi_%E6%BC%94%E7%BF%92_2_80/</guid>
+			<description>\(\ket{\psi} = \sum_i \lambda_i \ket{i_A}\ket{i_B}\) と \(\ket{\phi} = \sum_j \lambda_j \ket{j_A}\ket{j_B}\) を \(AB\) の純粋状態とすると、\(\ket{i_A}\), \(\ket{i_B}\) は \(A\) の正規直交基底、\(\ket{j_A}\), \(\ket{j_B}\) は \(B\) の正規直交</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</guid>
 			<description>任意の射影演算子 \(P\) について、一度 \(P\) で射影したベクトルを何度射影しても同じなので、 \[P^2 = P\] が成り立ち、この性質をべき等 (idempotent) と呼ぶ。証明は QCQI/</description>
-		</item>
-      	
-		<item>
-			<title>射影演算子はエルミート演算子</title>
-			<link>https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</link>
-			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
-			<description>\(W\) が \(d\) 次元ベクトル空間 \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。\(V\) から部分空間 \(W\) への射影演算子 \(P\) \begin{equation*} P \equiv \sum_{i=1}^k \ket{i}\bra{i} \end{equation*} について、QCQI/演習</description>
 		</item>
       	
 	</channel>

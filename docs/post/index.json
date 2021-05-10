@@ -82,6 +82,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210510163251-qcqi_%E6%BC%94%E7%BF%92_2_80/",
+                "title": "QCQI/演習 2.80",
+                "section": "post",
+                "date" : "2021.05.10",
+                "body": "\\(\\ket{\\psi} = \\sum_i \\lambda_i \\ket{i_A}\\ket{i_B}\\) と \\(\\ket{\\phi} = \\sum_j \\lambda_j \\ket{j_A}\\ket{j_B}\\) を \\(AB\\) の純粋状態とすると、\\(\\ket{i_A}\\), \\(\\ket{i_B}\\) は \\(A\\) の正規直交基底、\\(\\ket{j_A}\\), \\(\\ket{j_B}\\) は \\(B\\) の正規直交基底を形成する。ユニタリー変換は直交性を保つので、\\(\\ket{j_A} \\rightarrow \\ket{i_A}\\) と写す \\(A\\) 上のユニタリー変換 \\(U\\) と、\\(\\ket{j_B} \\rightarrow \\ket{i_B}\\) と写す \\(B\\) 上のユニタリー変換 \\(V\\) が存在する。これらの変換は、次のように \\(\\ket{\\phi}\\) に作用する:\n\\[(U \\otimes V)\\ket{\\phi} = \\sum_j \\lambda_j U\\ket{j_A}V\\ket{j_B} = \\sum_i \\lambda_i \\ket{i_A}\\ket{i_B} = \\ket{\\psi}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/",
                 "title": "射影演算子はべき等",
                 "section": "post",

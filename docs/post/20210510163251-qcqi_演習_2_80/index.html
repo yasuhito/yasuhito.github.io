@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>図式的線形代数</title>
+<title>QCQI/演習 2.80</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="図式的線形代数"/>
-<meta name="twitter:description" content="グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。 https://graphicallinearalgebra.net/ ジェネレータ Identity Twist Zero 方程式 Comm Assoc 演算 図式の直和 図式の合成"/>
+<meta name="twitter:title" content="QCQI/演習 2.80"/>
+<meta name="twitter:description" content="\(\ket{\psi} = \sum_i \lambda_i \ket{i_A}\ket{i_B}\) と \(\ket{\phi} = \sum_j \lambda_j \ket{j_A}\ket{j_B}\) を \(AB\) の純粋状態とすると、\(\ket{i_A}\), \(\ket{i_B}\) は \(A\) の正規直交基底、\(\ket{j_A}\), \(\ket{j_B}\) は \(B\) の正規直交"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              図式的線形代数
+              QCQI/演習 2.80
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Mar 22, 2021
+  >&nbsp;May 10, 2021
   
 </span>
 
@@ -116,29 +116,8 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>グラフィカル (図式的) に線形代数を計算する方法を説明したブログ。</p>
-<p><a href="https://graphicallinearalgebra.net/">https://graphicallinearalgebra.net/</a></p>
-<ul>
-<li>ジェネレータ
-<ul>
-<li><a href="/post/20210323094041-identity/">Identity</a></li>
-<li><a href="/post/20210323095806-twist/">Twist</a></li>
-<li><a href="/post/20210323084442-zero/">Zero</a></li>
-</ul>
-</li>
-<li>方程式
-<ul>
-<li><a href="/post/20210322140545-comm/">Comm</a></li>
-<li><a href="/post/20210323114201-assoc/">Assoc</a></li>
-</ul>
-</li>
-<li>演算
-<ul>
-<li><a href="/post/20210323102643-%E5%9B%B3%E5%BC%8F%E3%81%AE%E7%9B%B4%E5%92%8C/">図式の直和</a></li>
-<li><a href="/post/20210323110948-%E5%9B%B3%E5%BC%8F%E3%81%AE%E5%90%88%E6%88%90/">図式の合成</a></li>
-</ul>
-</li>
-</ul>
+  <p>\(\ket{\psi} = \sum_i \lambda_i \ket{i_A}\ket{i_B}\) と \(\ket{\phi} = \sum_j \lambda_j \ket{j_A}\ket{j_B}\) を \(AB\) の純粋状態とすると、\(\ket{i_A}\), \(\ket{i_B}\) は \(A\) の正規直交基底、\(\ket{j_A}\), \(\ket{j_B}\) は \(B\) の正規直交基底を形成する。ユニタリー変換は直交性を保つので、\(\ket{j_A} \rightarrow \ket{i_A}\) と写す \(A\) 上のユニタリー変換 \(U\) と、\(\ket{j_B} \rightarrow \ket{i_B}\) と写す \(B\) 上のユニタリー変換 \(V\) が存在する。これらの変換は、次のように \(\ket{\phi}\) に作用する:</p>
+<p>\[(U \otimes V)\ket{\phi} = \sum_j \lambda_j U\ket{j_A}V\ket{j_B} = \sum_i \lambda_i \ket{i_A}\ket{i_B} = \ket{\psi}\]</p>
 
 
 
@@ -534,90 +513,6 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
       
     
   
@@ -626,7 +521,79 @@
     
   
     
-      
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -723,19 +690,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210310110827-%E5%9C%8F%E8%AB%96%E7%9A%84%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E5%85%A5%E9%96%80/">圏論的量子力学入門</a></li>
-              
-              <li><a href="/post/20210323114201-assoc/">Assoc</a></li>
-              
-              <li><a href="/post/20210323094041-identity/">Identity</a></li>
-              
-              <li><a href="/post/20210323095806-twist/">Twist</a></li>
-              
-              <li><a href="/post/20210323090747-unit/">Unit</a></li>
-              
-              <li><a href="/post/20210323084442-zero/">Zero</a></li>
-              
-              <li><a href="/post/20210322140545-comm/">Comm</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>
