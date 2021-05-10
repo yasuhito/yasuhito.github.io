@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+<title>QCQI/演習 2.72</title>
+
+
+  
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="https://yasuhito.github.io/index.xml"
+  title="Notes"
+/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="QCQI/演習 2.72"/>
+<meta name="twitter:description" content="(1) 1 量子ビットの密度演算子は正の演算子 (つまりエルミート演算子) であり、トレースは 1 でなければならない。一般的なエルミート行列は、実数変数 \(a\),"/>
+
+
+
+<link rel="stylesheet" href="https://yasuhito.github.io/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://yasuhito.github.io/css/custom.css" />
+
+<link
+  id="dark-mode-theme"
+  rel="stylesheet"
+  href="https://yasuhito.github.io/css/dark.css"
+/>
+
+<script>
+  var darkTheme = document.getElementById('dark-mode-theme')
+  var storedTheme = localStorage.getItem('dark-mode-storage')
+  if (storedTheme === 'dark') {
+    darkTheme.disabled = false
+  } else if (storedTheme === 'light') {
+    darkTheme.disabled = true
+  }
+</script>
+
+<script src="https://yasuhito.github.io/js/main.bundle.js"></script>
+<script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
+<meta name="generator" content="Hugo 0.82.1" />
+  </head>
+  <body>
+    
+  
+
+
+
+
+  <header>
+    <nav class="navbar">
+  <div class="nav">
+    
+        <a href="https://yasuhito.github.io/" class="nav-logo">
+        <img
+          src="https://yasuhito.github.io/images/icon.png"
+          width="50"
+          height="50"
+          alt="Logo"
+        />
+        </a>
+    
+
+    <ul class="nav-links">
+      
+        
+          <li>
+            <a href="/about/" id="About"
+              ><em class="fas fa-user fa-lg"></em
+            ></a>
+          </li>
+          
+      
+        
+          <li>
+            <a href="/search" id="Search"
+              ><em class="fas fa-search fa-lg"></em
+            ></a>
+          </li>
+          
+      
+    </ul>
+  </div>
+</nav>
+
+    <div class="intro-header">
+      <div class="container">
+        <div class="post-heading">
+          
+            <h1>
+              QCQI/演習 2.72
+            </h1>
+          
+          
+            <span class="meta-post">
+  <em class="fa fa-calendar-alt"></em
+  >&nbsp;May 10, 2021
+  
+</span>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+    
+  <div class="container" role="main">
+    <article class="article" class="blog-post">
+      
+  <p><strong><strong>(1)</strong></strong> 1 量子ビットの密度演算子は<a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a> (つまり<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>) であり、<a href="/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/">トレース</a>は 1 でなければならない。一般的な<a href="/post/20210329140322-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97/">エルミート行列</a>は、実数変数 \(a\), \(b\), \(c\), \(d\) で次のように書ける:</p>
+<p>\begin{eqnarray*}
+\rho &amp;=&amp; \begin{bmatrix}
+a &amp; b - ci \newline
+b + ci &amp; d
+\end{bmatrix} \newline
+&amp;=&amp; \begin{bmatrix}
+a_1 + a_2 &amp; b - ci \newline
+b + ci &amp; a_1 - a_2
+\end{bmatrix} \newline
+&amp;=&amp; \begin{bmatrix}
+a_1 &amp; 0 \newline
+0 &amp; a_1
+\end{bmatrix} + \begin{bmatrix}
+0 &amp; b \newline
+b &amp; 0
+\end{bmatrix} + \begin{bmatrix}
+0 &amp; -ci \newline
+ci &amp; 0
+\end{bmatrix} + \begin{bmatrix}
+a_2 &amp; 0 \newline
+0 &amp; -a_2
+\end{bmatrix} \newline
+&amp;=&amp; a_1I + bX + cY + a_2Z
+\end{eqnarray*}</p>
+<p>ここで、任意の 2 つの実数 \(a\) と \(d\) は実数 \(a_1\) と \(a_2\) の和と差で表現できることを利用した。</p>
+<p>トレースが 1 つまり \(\mathrm{tr}(\rho) = 1\) だから、</p>
+<p>\begin{align*}
+&amp;(a_1 + a_2) + (a_1 - a_2) = 1 \\\<br>
+\Rightarrow\ &amp;2a_1 = 1 \\\<br>
+\therefore\ &amp;a_1 = \frac{1}{2}
+\end{align*}</p>
+<p>\(\rho\) が正の演算子であることを保証するために、\(\rho\) のトレースと行列式を考え、\(\rho^{\prime}\) をその対角線上のエントリが \(\rho\) の固有値となるような \(\rho\) の<a href="/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/">対角表現</a>とする。<a href="/post/20210414141407-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A1%E5%9B%9E%E4%B8%8D%E5%A4%89%E6%80%A7/">トレースの巡回不変性</a>より、トレースは \(\rho\) の固有値の和となる。</p>
+<p>\[\mathrm{tr}(\rho^{\prime}) = \mathrm{tr}(U^{\dagger}\rho U) = \mathrm{tr}(UU^{\dagger}\rho) = \mathrm{tr}(\rho)\]</p>
+<p>ユニタリー演算子の行列式の大きさは 1 なので、行列式は \(\rho\) の固有値の積になる:</p>
+<p>\[\mathrm{det}(\rho^{\prime}) = \mathrm{det}(U^{\dagger}\rho U) = \mathrm{det}(U^{\dagger})\mathrm{det}(\rho)\mathrm{det}(U) = \mathrm{det}(U)^{\ast}\mathrm{det}(\rho)\mathrm{det}(U) = |\mathrm{det}(U)|^2 \mathrm{det}(\rho) = \mathrm{det}(\rho)\]</p>
+<p>\(\mathrm{tr}(\rho)\) その固有値の少なくとも 1 つは正である。\(\mathrm{det}(\rho)\) も正であれば両方の固有値が正であることが保証され、\(\rho\) は正の演算子であることになる:</p>
+<p>\begin{align*}
+&amp;\mathrm{det}(\rho) = (a_1 + a_2)(a_1 - a_2) - (b - ci)(b + ci) = a_1^2 - a_2^2 - b^2 - c^2 \geq 0 \\\<br>
+\Rightarrow\ &amp;a_2^2 + b^2 + c^2 \leq \frac{1}{4}\ (\because a_1 = \frac{1}{2})
+\end{align*}</p>
+<p>\(\vec{r} = 2(b, c, a_2)\) をノルム \(||\vec{r}|| = 2\sqrt{b^2 + c^2 + a_2^2} \leq 1\) であるベクトルとする。このベクトルは \(\mathrm{det}(\rho)\) の条件を満たし、よって \(\rho\) は次のように書ける:</p>
+<p>\[\rho = \frac{1}{2}I + bX + cY + a_2Z = \frac{I + \vec{r}\cdot\vec{\sigma}}{2}\]</p>
+<p><strong><strong>(2)</strong></strong> 上の式より、\(\rho = I/2\) のとき明らかにブロッホベクトル表現 \(\vec{r} = 0\)</p>
+<p><strong><strong>(3)</strong></strong> 状態 \(\rho\) が純粋である状態であるためには \(\mathrm{tr}(\rho^2) = 1\) であるから、\(\mathrm{tr}(\rho^2)\) を計算すると、</p>
+<p>\[\rho_{00}^2 = (a_1 + a_2)^2 + (b - ci)(b + ci),\ \rho_{11}^2 = (a_1 - a_2)^2 + (b - ci)(b + ci)\]
+\[\mathrm{tr}(\rho^2) = \rho_{00}^2 + \rho_{11}^2 = 2(a_1^2 + a_2^2 + b^2 + c^2) = \frac{1}{2} + \frac{1}{2}\sqrt{||\vec{r}||}\]</p>
+<p>よって \(||\vec{r}|| = 1\) のとき \(\mathrm{tr}(\rho^2) = 1\) であり、\(\rho\) は純粋状態。</p>
+<p><strong><strong>(4)</strong></strong> 一般的な純粋状態は次の形で書ける:</p>
+<p>\[\ket{\psi} = \cos\frac{\theta}{2}\ket{0} + e^{i\phi}\sin\frac{\theta}{2}\ket{1}\]</p>
+<p>純粋状態の密度行列は、</p>
+<p>\begin{eqnarray*}
+\rho &amp;=&amp; \ket{\psi}\bra{\psi} \\\<br>
+&amp;=&amp; \cos^2\frac{\theta}{2}\ket{0}\bra{0} + e^{-i\phi}\cos\frac{\theta}{2}\sin\frac{\theta}{2}\ket{0}\bra{1} + e^{i\phi}\cos\frac{\theta}{2}\sin\frac{\theta}{2}\ket{1}\bra{0} + \sin^2\frac{\theta}{2}\ket{1}\bra{1} \\\<br>
+&amp;=&amp; \frac{1}{2}\left((1 + \cos\theta)\ket{0}\bra{0} + e^{-i\phi}\sin\theta\ket{0}\bra{1} + e^{i\phi}\sin\theta\ket{1}\bra{0} + (1 - \cos\theta)\ket{1}\bra{1}\right) \\\<br>
+&amp;=&amp; \frac{1}{2}\begin{bmatrix}
+1 + \cos\theta &amp; e^{-i\phi}\sin\theta \newline
+e^{i\phi}\sin\theta &amp; 1 - \cos\theta
+\end{bmatrix} \\\<br>
+&amp;=&amp; \frac{1}{2}\begin{bmatrix}
+1 + \cos\theta &amp; \cos\phi\sin\theta - i\sin\phi\sin\theta \newline
+\cos\phi\sin\theta + i\sin\phi\sin\theta &amp; 1 - \cos\theta
+\end{bmatrix} \\\<br>
+&amp;=&amp; \frac{1}{2}(I + \cos\phi\sin\theta X + \sin\phi\sin\theta Y + \cos\theta Z)
+\end{eqnarray*}</p>
+<p>このブロッホベクトル \((\cos\phi\sin\theta, \sin\phi\sin\theta, \cos\theta)\) のノルムは 1 で、純粋状態に相当する。よって、</p>
+<p>\[\rho = \frac{I + \vec{r}\cdot\vec{\sigma}}{2}\]</p>
+<p>と一致する。</p>
+
+
+
+
+      
+    </article>
+    
+    
+      
+
+    
+  </div>
+
+    
+  
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    <div class="container" role="main">
+      <div class="bl-section" style="margin-top: 4rem">
+        <h2>Links to this note</h2>
+        <div class="backlinks">
+          <ul>
+           
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer>
+  
+
+
+
+  
+  <div class="container">
+    <p class="credits copyright">
+      <a href="https://yasuhito.github.io/about">Yasuhito Takamiya</a>
+      &nbsp;&copy;
+      2021
+      
+        &nbsp;/&nbsp;
+        <a href="https://yasuhito.github.io/">Notes</a>
+      
+      &nbsp;&ndash;&nbsp;
+        <em class="fas fa-moon" id="dark-mode-toggle"></em>
+    </p>
+  </div>
+</footer>
+
+<script type="text/javascript"
+        async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+  </body>
+</html>
