@@ -46,6 +46,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.76</title>
+			<link>https://yasuhito.github.io/post/20210510150234-qcqi_%E6%BC%94%E7%BF%92_2_76/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510150234-qcqi_%E6%BC%94%E7%BF%92_2_76/</guid>
+			<description>シュミット分解の証明では、状態空間 \(A\) と \(B\) が同じ次元であることを仮定した。仮にそうではなく、\(\mathrm{dim}(A)=j\), \(\mathrm{dim}(B)=k\), \(j &amp;gt;</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210505120123-qcqi_%E6%BC%94%E7%BF%92_2_68/</guid>
 			<description>\(\ket{a} = a_1\ket{0} + a_2{\ket{1}}\), \(\ket{b} = b_1\ket{0} + b_2{\ket{1}}\) とおき \(\ket{a}\ket{b}\) を計算すると、 \begin{eqnarray*} \ket{a}\ket{b} &amp;amp;=&amp;amp; (a_1\ket{0} + a_2{\ket{1}})(b_1\ket{0} + b_2{\ket{1}}) \\\ &amp;amp;=&amp;amp; a_1b_1\ket{00} + a_1b_2\ket{01} + a_2b_1\ket{10} + a_2b_2\ket{11} \end{eqnarray*} これが \(\ket{\psi} = (\ket{00} + \ket{11})/\sqrt{2}\) と等しいとすると、 \[a_1b_1 = 1/\sqrt{2},\ a_1b_2 = 0,\ a_2b_1 = 0,\ a_2b_2 = 1/\sqrt{2}\] これ</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.69</title>
-			<link>https://yasuhito.github.io/post/20210505122101-qcqi_%E6%BC%94%E7%BF%92_2_69/</link>
-			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210505122101-qcqi_%E6%BC%94%E7%BF%92_2_69/</guid>
-			<description>\(\ket{\psi} = (\ket{00} + \ket{11})/2\) について、\(\ket{X} = X\ket{\psi}\) と書くこととすると各ベル状態は次のように書ける。 \begin{eqnarray*} \ket{I} &amp;amp;=&amp;amp; \frac{\ket{00} + \ket{11}}{\sqrt{2}} = \frac{1}{\sqrt{2}}(1, 0, 0, 1) \\\ \ket{Z} &amp;amp;=&amp;amp; \frac{\ket{00} - \ket{11}}{\sqrt{2}} = \frac{1}{\sqrt{2}}(1, 0, 0, -1) \\\ \ket{X} &amp;amp;=&amp;amp;</description>
 		</item>
       	
 	</channel>
