@@ -32,6 +32,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210510125433-qcqi_%E6%BC%94%E7%BF%92_2_75/",
+                "title": "QCQI/演習 2.75",
+                "section": "post",
+                "date" : "2021.05.10",
+                "body": "例題では、ベル状態 \\(\\ket{\\beta_{00}}\\) では \\(\\rho^1 = I/2\\) であった。\\(\\rho^2\\) を求めると、\n\\[\\rho^2(\\beta_{00}) = \\frac{1}{2}\\mathrm{tr}_1(\\ket{00}\\bra{00} + \\ket{11}\\bra{00} + \\ket{00}\\bra{11} + \\ket{11}\\bra{11}) = \\frac{\\ket{0}\\bra{0} + \\ket{1}\\bra{1}}{2} = \\frac{I}{2}\\]\n\\(\\ket{\\beta_{10}}\\) についても密度演算子の違いはゼロにトレースされるクロスタームだけなので、同じ結果が得られる。同様に \\(\\ket{\\beta_{01}}\\) と \\(\\ket{\\beta_{11}}\\) についても同じ結果が得られる:\n\\[\\rho^1(\\beta_{01}) = \\frac{1}{2}\\mathrm{tr}_2(\\ket{10}\\bra{10} + \\ket{10}\\bra{01} + \\ket{01}\\bra{10} + \\ket{01}\\bra{01}) = \\frac{\\ket{1}\\bra{1} + \\ket{0}\\bra{0}}{2} = \\frac{I}{2}\\] \\[\\rho^2(\\beta_{11}) = \\frac{1}{2}\\mathrm{tr}_1(\\ket{10}\\bra{10} + \\ket{10}\\bra{01} + \\ket{01}\\bra{10} + \\ket{01}\\bra{01}) = \\frac{\\ket{1}\\bra{1} + \\ket{0}\\bra{0}}{2} = \\frac{I}{2}\\]\nしたがって、すべてのベル状態において縮約した密度演算子は \\(I/2\\) となる。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/",
                 "title": "射影演算子はべき等",
                 "section": "post",

@@ -38,6 +38,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.75</title>
+			<link>https://yasuhito.github.io/post/20210510125433-qcqi_%E6%BC%94%E7%BF%92_2_75/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510125433-qcqi_%E6%BC%94%E7%BF%92_2_75/</guid>
+			<description>例題では、ベル状態 \(\ket{\beta_{00}}\) では \(\rho^1 = I/2\) であった。\(\rho^2\) を求めると、 \[\rho^2(\beta_{00}) = \frac{1}{2}\mathrm{tr}_1(\ket{00}\bra{00} + \ket{11}\bra{00} + \ket{00}\bra{11} + \ket{11}\bra{11}) = \frac{\ket{0}\bra{0} + \ket{1}\bra{1}}{2} = \frac{I}{2}\] \(\ket{\beta_{10}}\) についても密度演算子の違いはゼロにト</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -83,14 +91,6 @@
 			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210505122101-qcqi_%E6%BC%94%E7%BF%92_2_69/</guid>
 			<description>\(\ket{\psi} = (\ket{00} + \ket{11})/2\) について、\(\ket{X} = X\ket{\psi}\) と書くこととすると各ベル状態は次のように書ける。 \begin{eqnarray*} \ket{I} &amp;amp;=&amp;amp; \frac{\ket{00} + \ket{11}}{\sqrt{2}} = \frac{1}{\sqrt{2}}(1, 0, 0, 1) \\\ \ket{Z} &amp;amp;=&amp;amp; \frac{\ket{00} - \ket{11}}{\sqrt{2}} = \frac{1}{\sqrt{2}}(1, 0, 0, -1) \\\ \ket{X} &amp;amp;=&amp;amp;</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.70</title>
-			<link>https://yasuhito.github.io/post/20210505133819-qcqi_%E6%BC%94%E7%BF%92_2_70/</link>
-			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210505133819-qcqi_%E6%BC%94%E7%BF%92_2_70/</guid>
-			<description>ベル状態 \(\ket{\psi} = \ket{I}, \ket{Z}, \ket{X}, \ket{iY}\) について \(\braket{\psi|E \otimes I|\psi}\) をそれぞれ計算すると、 \[\braket{I|E \otimes I|I} = \frac{1}{2}(\braket{0|E|0}\braket{0|I|0} + \braket{1|E|1}\braket{1|I|1}) = \frac{1}{2}(\braket{0|E|0} + \braket{1|E|1})\] \[\braket{Z|E \otimes I|Z} = \frac{1}{2}(\braket{0|E|0}\braket{0|I|0} + \braket{1|E|1}\braket{1|I|1}) = \frac{1}{2}(\braket{0|E|0} + \braket{1|E|1})\] \[\braket{X|E \otimes I|X} = \frac{1}{2}(\braket{1|E|1}\braket{0|I|0} + \braket{0|E|0}\braket{1|I|1}) = \frac{1}{2}(\braket{1|E|1} + \braket{0|E|0})\] \[\braket{iY|E \otimes I|iY} = \frac{1}{2}(\braket{1|E|1}\braket{0|I|0} + \braket{0|E|0}\braket{1|I|1}) = \frac{1}{2}(\braket{1|E|1}</description>
 		</item>
       	
 	</channel>
