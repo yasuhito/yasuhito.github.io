@@ -60,6 +60,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.78</title>
+			<link>https://yasuhito.github.io/post/20210510153057-qcqi_%E6%BC%94%E7%BF%92_2_78/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510153057-qcqi_%E6%BC%94%E7%BF%92_2_78/</guid>
+			<description>もし \(AB\) の状態 \(\ket{\psi}\) がシュミット数 \(1\) であれば、定義により \(\ket{\psi} = \lambda\ket{a}\ket{b}\) となるので、状態 \(\lambda\ket{a}\) と \(\ket{b}\) とのテンソル積となる。逆に、\(\ket{\psi} = \ket{a}\ket{b}\) であれ</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210505105921-qcqi_%E6%BC%94%E7%BF%92_2_66/</guid>
 			<description>観測量 \(X_1 Z_2\) の平均値は、 \begin{eqnarray*} \langle X_1 Z_2 \rangle &amp;amp;=&amp;amp; \frac{(\ket{00} + \ket{11})}{\sqrt{2}} X_1 Z_2 \frac{(\ket{00} + \ket{11})}{\sqrt{2}} \\\ &amp;amp;=&amp;amp; \frac{1}{2}(\bra{00} X_1 Z_2 \ket{00} + \bra{00} X_1 Z_2 \ket{11} + \bra{11} X_1 Z_2 \ket{00} + \bra{11} X_1 Z_2 \ket{11}) \\\ &amp;amp;=&amp;amp; \frac{1}{2}(\bra{00} Z_2 \ket{10} + \bra{00} Z_2 \ket{01} + \bra{11} Z_2 \ket{10} + \bra{11} Z_2 \ket{01}) \\\ &amp;amp;=&amp;amp; \frac{1}{2}(\braket{00|10} - \braket{00|01} + \braket{11|10}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.67</title>
-			<link>https://yasuhito.github.io/post/20210505112839-qcqi_%E6%BC%94%E7%BF%92_2_67/</link>
-			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210505112839-qcqi_%E6%BC%94%E7%BF%92_2_67/</guid>
-			<description>\(U: W \rightarrow V\) を拡張するユニタリー演算子 \(U: V \rightarrow V\) を次のように作れる。\(\ket{i}\) を \(1 \leq i \leq k\) について \(W\) の正規直交基底、\(k &amp;lt; i \leq d\) につ</description>
 		</item>
       	
 	</channel>
