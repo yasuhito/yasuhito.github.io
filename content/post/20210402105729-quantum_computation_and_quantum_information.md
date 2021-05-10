@@ -165,3 +165,9 @@ draft = false
 -   [QCQI/演習 2.71]({{< relref "20210505142849-qcqi_演習_2_71" >}})
 -   [QCQI/演習 2.72]({{< relref "20210510095224-qcqi_演習_2_72" >}})
 -   [QCQI/演習 2.73]({{< relref "20210510113334-qcqi_演習_2_73" >}})
+
+
+#### 2.4.3 The reduced density operator {#2-dot-4-dot-3-the-reduced-density-operator}
+
+-   [QCQI/演習 2.74]({{< relref "20210510124330-qcqi_演習_2_74" >}})
+-   QCQI/演習 2.75

@@ -28,6 +28,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.74</title>
+			<link>https://yasuhito.github.io/post/20210510124330-qcqi_%E6%BC%94%E7%BF%92_2_74/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510124330-qcqi_%E6%BC%94%E7%BF%92_2_74/</guid>
+			<description>密度演算子は \(\rho = \ket{a}\ket{b}\bra{a}\bra{b}\) となり、\(B\) のトレースを取ると\(\rho^A = \ket{a}\bra{a}\braket{b|b} = \ket{a}\bra{a}\) となる。\(\ket{a}\) は \(A\) の純粋状態だったので、\(\</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210505133819-qcqi_%E6%BC%94%E7%BF%92_2_70/</guid>
 			<description>ベル状態 \(\ket{\psi} = \ket{I}, \ket{Z}, \ket{X}, \ket{iY}\) について \(\braket{\psi|E \otimes I|\psi}\) をそれぞれ計算すると、 \[\braket{I|E \otimes I|I} = \frac{1}{2}(\braket{0|E|0}\braket{0|I|0} + \braket{1|E|1}\braket{1|I|1}) = \frac{1}{2}(\braket{0|E|0} + \braket{1|E|1})\] \[\braket{Z|E \otimes I|Z} = \frac{1}{2}(\braket{0|E|0}\braket{0|I|0} + \braket{1|E|1}\braket{1|I|1}) = \frac{1}{2}(\braket{0|E|0} + \braket{1|E|1})\] \[\braket{X|E \otimes I|X} = \frac{1}{2}(\braket{1|E|1}\braket{0|I|0} + \braket{0|E|0}\braket{1|I|1}) = \frac{1}{2}(\braket{1|E|1} + \braket{0|E|0})\] \[\braket{iY|E \otimes I|iY} = \frac{1}{2}(\braket{1|E|1}\braket{0|I|0} + \braket{0|E|0}\braket{1|I|1}) = \frac{1}{2}(\braket{1|E|1}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.71</title>
-			<link>https://yasuhito.github.io/post/20210505142849-qcqi_%E6%BC%94%E7%BF%92_2_71/</link>
-			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210505142849-qcqi_%E6%BC%94%E7%BF%92_2_71/</guid>
-			<description>密度演算子 \(\rho = \sum_i p_i \ket{i}\bra{i}\) とする。\(\rho^2\) のトレースを計算すると、 \begin{align*} &amp;amp;\rho^2 = \sum_{i,j}p_i p_j\braket{i|j}\ket{i}\bra{j} = \sum_i p_i^2 \ket{i}\bra{i} \\\ \Rightarrow\ &amp;amp;\mathrm{tr}(\rho^2) = \sum_i p_i^2 \mathrm{tr}(\ket{i}\bra{i}) = \sum_i p_i^2 \leq \sum_i p_i = 1 \end{align*} ここで \(0 \leq p_i \leq 1\) よ</description>
 		</item>
       	
 	</channel>
