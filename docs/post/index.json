@@ -72,6 +72,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210510154801-qcqi_%E6%BC%94%E7%BF%92_2_79/",
+                "title": "QCQI/演習 2.79",
+                "section": "post",
+                "date" : "2021.05.10",
+                "body": "(1) \\((\\ket{00} + \\ket{11})/\\sqrt{2}\\) はすでにシュミット分解されている。\n(2) \\((\\ket{00} + \\ket{01} + \\ket{10} + \\ket{11}/2\\) はテンソル積 \\(\\ket{+}\\ket{+}\\) で表せるので、\n\\[\\frac{\\ket{00} + \\ket{01} + \\ket{10} + \\ket{11}}{2} = \\left(\\frac{\\ket{0} + \\ket{1}}{\\sqrt{2}}\\right)^{\\otimes 2}\\]\n(3) \\(\\ket{\\psi} = (\\ket{00} + \\ket{01} + \\ket{10})/\\sqrt{3}\\) とすると、\n\\begin{eqnarray*} \\rho^{AB} \u0026amp;=\u0026amp; \\ket{\\psi}\\bra{\\psi} = \\frac{1}{3}(\\ket{00}\\bra{00} + \\ket{00}\\bra{10} + \\ket{01}\\bra{01} + \\ket{10}\\bra{00} + \\ket{10}\\bra{10}) \\\\\\\n\\rho^{A} \u0026amp;=\u0026amp; \\mathrm{tr}_B\\rho^{AB} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{3}(\\ket{0}\\bra{0} + \\ket{0}\\bra{1} + \\ket{0}\\bra{0} + \\ket{1}\\bra{0} + \\ket{1}\\bra{1}) \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{3}(2\\ket{0}\\bra{0} + \\ket{0}\\bra{1} + \\ket{1}\\bra{0} + \\ket{1}\\bra{1}) \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{3}\\begin{bmatrix} 2 \u0026amp; 1 \\newline 1 \u0026amp; 1 \\end{bmatrix} \\end{eqnarray*}\nこの固有値、固有ベクトルは、\n\\begin{equation*} \\lambda_{\\pm} = \\frac{3 \\pm \\sqrt{5}}{6},\\ \\ket{\\lambda_{\\pm}} = \\sqrt{\\frac{2}{5 \\pm \\sqrt{5}}}\\begin{bmatrix} \\frac{-2}{1 \\mp \\sqrt{5}} \\newline 1 \\end{bmatrix} \\end{equation*}\nよって、\n\\[\\rho^A = \\lambda_+\\ket{\\lambda_+}\\bra{\\lambda_+} + \\lambda_-\\ket{\\lambda_-}\\bra{\\lambda_-}\\]\n\\(\\ket{\\psi}\\) の対称性から \\(\\rho^B = \\rho^A\\), よって\n\\[\\ket{\\psi} = \\lambda_+\\ket{\\lambda_+}\\ket{\\lambda_+} + \\lambda_-\\ket{\\lambda_-}\\ket{\\lambda_-}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/",
                 "title": "射影演算子はべき等",
                 "section": "post",

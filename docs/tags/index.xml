@@ -68,6 +68,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.79</title>
+			<link>https://yasuhito.github.io/post/20210510154801-qcqi_%E6%BC%94%E7%BF%92_2_79/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510154801-qcqi_%E6%BC%94%E7%BF%92_2_79/</guid>
+			<description>(1) \((\ket{00} + \ket{11})/\sqrt{2}\) はすでにシュミット分解されている。 (2) \((\ket{00} + \ket{01} + \ket{10} + \ket{11}/2\) はテンソル積 \(\ket{+}\ket{+}\) で表せるので、 \[\frac{\ket{00} + \ket{01} + \ket{10} + \ket{11}}{2} = \left(\frac{\ket{0} + \ket{1}}{\sqrt{2}}\right)^{\otimes 2}\] (3) \(\ket{\psi} = (\ket{00} + \ket{01} + \ket{10})/\sqrt{3}\) とすると、 \begin{eqnarray*} \rho^{AB}</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210506100535-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/</guid>
 			<description>\(W\) が \(d\) 次元ベクトル空間 \(V\) 上の \(k\) 次元ベクトル部分空間であるとする。\(V\) から部分空間 \(W\) への射影演算子 \(P\) \begin{equation*} P \equiv \sum_{i=1}^k \ket{i}\bra{i} \end{equation*} について、QCQI/演習</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.66</title>
-			<link>https://yasuhito.github.io/post/20210505105921-qcqi_%E6%BC%94%E7%BF%92_2_66/</link>
-			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210505105921-qcqi_%E6%BC%94%E7%BF%92_2_66/</guid>
-			<description>観測量 \(X_1 Z_2\) の平均値は、 \begin{eqnarray*} \langle X_1 Z_2 \rangle &amp;amp;=&amp;amp; \frac{(\ket{00} + \ket{11})}{\sqrt{2}} X_1 Z_2 \frac{(\ket{00} + \ket{11})}{\sqrt{2}} \\\ &amp;amp;=&amp;amp; \frac{1}{2}(\bra{00} X_1 Z_2 \ket{00} + \bra{00} X_1 Z_2 \ket{11} + \bra{11} X_1 Z_2 \ket{00} + \bra{11} X_1 Z_2 \ket{11}) \\\ &amp;amp;=&amp;amp; \frac{1}{2}(\bra{00} Z_2 \ket{10} + \bra{00} Z_2 \ket{01} + \bra{11} Z_2 \ket{10} + \bra{11} Z_2 \ket{01}) \\\ &amp;amp;=&amp;amp; \frac{1}{2}(\braket{00|10} - \braket{00|01} + \braket{11|10}</description>
 		</item>
       	
 	</channel>
