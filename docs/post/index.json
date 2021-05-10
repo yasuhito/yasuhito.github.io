@@ -92,6 +92,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210510164549-qcqi_%E6%BC%94%E7%BF%92_2_81/",
+                "title": "QCQI/演習 2.81",
+                "section": "post",
+                "date" : "2021.05.10",
+                "body": "\\(\\ket{AR_1} = \\sum_i \\sqrt{p_i} \\ket{i^A}\\ket{i^{R_1}}\\) と \\(\\ket{AR_2} = \\sum_i \\sqrt{p_i} \\ket{i^A}\\ket{i^{R_2}}\\) を複合系 \\(AR\\) に対する状態 \\(\\rho^A\\) の純粋化とする。QCQI/演習 2.80 と同様に、正規直交基底 \\(\\ket{i^{R1}}\\) と \\(\\ket{i^{R2}}\\) は \\(R\\) 上のあるユニタリー変換 \\(U_R\\) によって関連付けられる:\n\\[(I_A \\otimes U_R)\\ket{AR_2} = \\sum_i \\sqrt{p_i}I_A \\ket{i^A}U_R\\ket{i^{R_2}} = \\sum_i \\sqrt{p_i} \\ket{i^A}\\ket{i^{R_1}} = \\ket{AR_1}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/",
                 "title": "射影演算子はべき等",
                 "section": "post",

@@ -84,11 +84,11 @@
 		</item>
       	
 		<item>
-			<title>射影演算子はべき等</title>
-			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
-			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</guid>
-			<description>任意の射影演算子 \(P\) について、一度 \(P\) で射影したベクトルを何度射影しても同じなので、 \[P^2 = P\] が成り立ち、この性質をべき等 (idempotent) と呼ぶ。証明は QCQI/</description>
+			<title>QCQI/演習 2.81</title>
+			<link>https://yasuhito.github.io/post/20210510164549-qcqi_%E6%BC%94%E7%BF%92_2_81/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510164549-qcqi_%E6%BC%94%E7%BF%92_2_81/</guid>
+			<description>\(\ket{AR_1} = \sum_i \sqrt{p_i} \ket{i^A}\ket{i^{R_1}}\) と \(\ket{AR_2} = \sum_i \sqrt{p_i} \ket{i^A}\ket{i^{R_2}}\) を複合系 \(AR\) に対する状態 \(\rho^A\) の純粋化とする。QCQI/演習 2.80 と同様に、正規直交基底 \(\ket{i^{R1}}\) と \(\ket{i^{R2}}\) は \(R\) 上のあるユニタリー変換 \(U_R\) によっ</description>
 		</item>
       	
 	</channel>
