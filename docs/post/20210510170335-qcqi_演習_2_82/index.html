@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>シグマの分解公式</title>
+<title>QCQI/演習 2.82</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="シグマの分解公式"/>
-<meta name="twitter:description" content="分配法則 \(a_1 b_1 &#43; a_1 b_2 &#43; a_2 b_1 &#43; a_2 b_2 = (a_1 &#43; a_2)(b_1 &#43; b_2)\) の一般化として、二重和について次の公式がある。 \begin{equation*} \sum_{i=1}^{m} \sum_{j=1}^n a_i b_j = \sum_{i=1}^m a_i \sum_{j=1}^n b_j \end{equation*} 証明 \begin{eqnarray*} \sum_{i=1}^{m} \sum_{j=1}^n a_i b_j &amp;=&amp; a_1 \sum_{j=1}^n b_j &#43; a_2 \sum_{j=1}^n b_j"/>
+<meta name="twitter:title" content="QCQI/演習 2.82"/>
+<meta name="twitter:description" content="(1) \(\{p_i, \ket{\psi_i}\}\) が量子系 \(A\) に対する密度演算子 \(\rho = \sum_i p_i \ket{\psi_i}\bra{\psi_i}\) を生成するとする。正規直交基底 \(\ket{i}\) を持つ系 \(R\) を導入すると、\(\rho\) が \(AR\) に純粋化される: \[\ket{AR} ="/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              シグマの分解公式
+              QCQI/演習 2.82
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 2, 2021
+  >&nbsp;May 10, 2021
   
 </span>
 
@@ -116,16 +116,18 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p>分配法則 \(a_1 b_1 + a_1 b_2 + a_2 b_1 + a_2 b_2 = (a_1 + a_2)(b_1 + b_2)\) の一般化として、二重和について次の公式がある。</p>
-<p>\begin{equation*}
-\sum_{i=1}^{m} \sum_{j=1}^n a_i b_j = \sum_{i=1}^m a_i \sum_{j=1}^n b_j
-\end{equation*}</p>
-<h2 id="証明">証明</h2>
-<p>\begin{eqnarray*}
-\sum_{i=1}^{m} \sum_{j=1}^n a_i b_j &amp;=&amp; a_1 \sum_{j=1}^n b_j + a_2 \sum_{j=1}^n b_j + \ldots + a_m \sum_{j=1}^n b_j \\\<br>
-&amp;=&amp; (a_1 + a_2 + \ldots + a_m) \sum_{j=1}^n b_j \\\<br>
-&amp;=&amp; \sum_{i=1}^m a_i \sum_{j=1}^n b_j
-\end{eqnarray*}</p>
+  <p><strong><strong>(1)</strong></strong> \(\{p_i, \ket{\psi_i}\}\) が量子系 \(A\) に対する密度演算子 \(\rho = \sum_i p_i \ket{\psi_i}\bra{\psi_i}\) を生成するとする。正規直交基底 \(\ket{i}\) を持つ系 \(R\) を導入すると、\(\rho\) が \(AR\) に純粋化される:</p>
+<p>\[\ket{AR} = \sum_i \sqrt{p_i}\ket{\psi_i}\ket{i}\]
+\[\mathrm{tr}_R(\ket{AR}\bra{AR}) = \sum_{ij}\sqrt{p_i p_j}\ket{\psi_i}\bra{\psi_j}\braket{j|i} = \sum_i p_i \ket{\psi_i}\bra{\psi_i} = \rho\]</p>
+<p>よって \(\ket{AR}\) は \(\rho\) の純粋化である。</p>
+<p><strong><strong>(2)</strong></strong> 系 \(R\) を基底 \(\ket{i}\) で測定する場合を考える。これは測定演算子 \(M = \sum_i i P_i\) による測定であり、\(P_i = \ket{i}\bra{i}\) は \(\ket{i}\) への射影演算子である。これは、系 \(AR\) を測定演算子 \(I_A \otimes M\) で測定することと同じ。\(k\) を得る確率を計算すると、</p>
+<p>\[p(k) = \braket{AR|I_A \otimes P_k| AR} = \sum_{ij} \sqrt{p_i p_j}\braket{\psi_j|\psi_k}\braket{j|k}\braket{k|i} = p_k\]</p>
+<p>測定後の \(AR\) の状態は</p>
+<p>\[\ket{AR_f} = \frac{P_k\ket{AR}}{\sqrt{p(k)}} = \sum_i \sqrt{\frac{p_i}{p_k}} \ket{\psi_i}\ket{k}\braket{k|i} = \ket{\psi_k}\ket{k}\]</p>
+<p>つまり、\(R\) を測定して \(\ket{i}\) の状態になる確率 \(p(i)\) は \(p_i\) であり、\(A\) は状態 \(\ket{\psi_i}\) になる。</p>
+<p><strong><strong>(3)</strong></strong> \(\rho\) の系 \(AR\) に対する任意の純粋化 \(\ket{AR^{\prime}}\) は、\(R\) 上のユニタリー変換 \(U_R\) に対するある変換 \(\ket{AR^{\prime}} = (I_A \otimes U_R)\ket{AR}\) によって得られる。基底 \(U_R\ket{i}\) での測定は常に上の結果を返す:</p>
+<p>\[p^{\prime}(k) = \braket{AR^{\prime}|I_A \otimes P_k^{\prime}|AR^{\prime}} = \braket{AR|I_A \otimes (U_R^{\dagger})(U_R\ket{i}\bra{i}U_R^{\dagger})(U_R)|AR} = \braket{AR|I_A \otimes P_k|AR} = p(k)\]
+\[\ket{AR_f^{\prime}} = \frac{P_k^{\prime}\ket{AR^{\prime}}}{\sqrt{p^{\prime}(k)}} = \sum_i \sqrt{\frac{p_i}{p_k}}\ket{\psi_i}U_R\ket{k}\braket{k|U_R^{\dagger}U_R|i} = \ket{\psi_k}U_R\ket{k}\]</p>
 
 
 
@@ -421,113 +423,111 @@
     
   
     
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
       
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      
-    
-  
-    
-  
     
   
     
@@ -704,9 +704,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210408141931-qcqi_%E6%BC%94%E7%BF%92_2_16/">QCQI/演習 2.16</a></li>
-              
-              <li><a href="/post/20210402160643-qcqi_%E6%BC%94%E7%BF%92_2_3/">QCQI/演習 2.3</a></li>
+              <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               
           </ul>
         </div>

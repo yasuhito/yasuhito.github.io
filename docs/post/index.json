@@ -102,6 +102,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210510170335-qcqi_%E6%BC%94%E7%BF%92_2_82/",
+                "title": "QCQI/演習 2.82",
+                "section": "post",
+                "date" : "2021.05.10",
+                "body": "(1) \\(\\{p_i, \\ket{\\psi_i}\\}\\) が量子系 \\(A\\) に対する密度演算子 \\(\\rho = \\sum_i p_i \\ket{\\psi_i}\\bra{\\psi_i}\\) を生成するとする。正規直交基底 \\(\\ket{i}\\) を持つ系 \\(R\\) を導入すると、\\(\\rho\\) が \\(AR\\) に純粋化される:\n\\[\\ket{AR} = \\sum_i \\sqrt{p_i}\\ket{\\psi_i}\\ket{i}\\] \\[\\mathrm{tr}_R(\\ket{AR}\\bra{AR}) = \\sum_{ij}\\sqrt{p_i p_j}\\ket{\\psi_i}\\bra{\\psi_j}\\braket{j|i} = \\sum_i p_i \\ket{\\psi_i}\\bra{\\psi_i} = \\rho\\]\nよって \\(\\ket{AR}\\) は \\(\\rho\\) の純粋化である。\n(2) 系 \\(R\\) を基底 \\(\\ket{i}\\) で測定する場合を考える。これは測定演算子 \\(M = \\sum_i i P_i\\) による測定であり、\\(P_i = \\ket{i}\\bra{i}\\) は \\(\\ket{i}\\) への射影演算子である。これは、系 \\(AR\\) を測定演算子 \\(I_A \\otimes M\\) で測定することと同じ。\\(k\\) を得る確率を計算すると、\n\\[p(k) = \\braket{AR|I_A \\otimes P_k| AR} = \\sum_{ij} \\sqrt{p_i p_j}\\braket{\\psi_j|\\psi_k}\\braket{j|k}\\braket{k|i} = p_k\\]\n測定後の \\(AR\\) の状態は\n\\[\\ket{AR_f} = \\frac{P_k\\ket{AR}}{\\sqrt{p(k)}} = \\sum_i \\sqrt{\\frac{p_i}{p_k}} \\ket{\\psi_i}\\ket{k}\\braket{k|i} = \\ket{\\psi_k}\\ket{k}\\]\nつまり、\\(R\\) を測定して \\(\\ket{i}\\) の状態になる確率 \\(p(i)\\) は \\(p_i\\) であり、\\(A\\) は状態 \\(\\ket{\\psi_i}\\) になる。\n(3) \\(\\rho\\) の系 \\(AR\\) に対する任意の純粋化 \\(\\ket{AR^{\\prime}}\\) は、\\(R\\) 上のユニタリー変換 \\(U_R\\) に対するある変換 \\(\\ket{AR^{\\prime}} = (I_A \\otimes U_R)\\ket{AR}\\) によって得られる。基底 \\(U_R\\ket{i}\\) での測定は常に上の結果を返す:\n\\[p^{\\prime}(k) = \\braket{AR^{\\prime}|I_A \\otimes P_k^{\\prime}|AR^{\\prime}} = \\braket{AR|I_A \\otimes (U_R^{\\dagger})(U_R\\ket{i}\\bra{i}U_R^{\\dagger})(U_R)|AR} = \\braket{AR|I_A \\otimes P_k|AR} = p(k)\\] \\[\\ket{AR_f^{\\prime}} = \\frac{P_k^{\\prime}\\ket{AR^{\\prime}}}{\\sqrt{p^{\\prime}(k)}} = \\sum_i \\sqrt{\\frac{p_i}{p_k}}\\ket{\\psi_i}U_R\\ket{k}\\braket{k|U_R^{\\dagger}U_R|i} = \\ket{\\psi_k}U_R\\ket{k}\\]\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/",
                 "title": "射影演算子はべき等",
                 "section": "post",
