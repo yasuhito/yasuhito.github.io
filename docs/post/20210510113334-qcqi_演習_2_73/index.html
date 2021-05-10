@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-<title>QCQI/演習 2.22</title>
+<title>QCQI/演習 2.73</title>
 
 
   
@@ -18,8 +18,8 @@
   title="Notes"
 />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="QCQI/演習 2.22"/>
-<meta name="twitter:description" content="エルミート演算子 \(A\) が 2 つの異なる固有値 \(v\), \(w\) を持つとする。QCQI/演習 2.17 から、これらの固有値は実数である。\(v\), \(w\) に対する固有ベクトル"/>
+<meta name="twitter:title" content="QCQI/演習 2.73"/>
+<meta name="twitter:description" content="\(\rho\) を密度行列とし、\(\ket{\psi}\) を \(\rho\) の台における任意の状態とすると、スペクトル分解 \(\rho = \sum_i p_i\ket{i}\bra{i}\) が存在し \(p_i &gt; 0\) であり、\(\ket{"/>
 
 
 
@@ -95,13 +95,13 @@
         <div class="post-heading">
           
             <h1>
-              QCQI/演習 2.22
+              QCQI/演習 2.73
             </h1>
           
           
             <span class="meta-post">
   <em class="fa fa-calendar-alt"></em
-  >&nbsp;Apr 12, 2021
+  >&nbsp;May 10, 2021
   
 </span>
 
@@ -116,9 +116,18 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a> \(A\) が 2 つの異なる<a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a> \(v\), \(w\) を持つとする。<a href="/post/20210408151328-qcqi_%E6%BC%94%E7%BF%92_2_17/">QCQI/演習 2.17</a> から、これらの固有値は実数である。\(v\), \(w\) に対する<a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>をそれぞれ \(|v\rangle\), \(|w\rangle\) とすると、</p>
-<p>\[v\langle v|w \rangle = (v|v\rangle, |w\rangle) = (A|v\rangle, |w\rangle) = (|v\rangle, A^{\dagger}|w\rangle) = (|v\rangle, A|w\rangle) = (|v\rangle, w|w\rangle) = w\langle v|w \rangle\]</p>
-<p>よって \((v - w)\langle v|w \rangle = 0\) であり、\(v \neq w\) なので \(\langle v|w \rangle = 0\) である。したがって \(|v\rangle\) と \(|w\rangle\) は直交する。</p>
+  <p>\(\rho\) を密度行列とし、\(\ket{\psi}\) を \(\rho\) の台における任意の状態とすると、スペクトル分解 \(\rho = \sum_i p_i\ket{i}\bra{i}\) が存在し \(p_i &gt; 0\) であり、\(\ket{i}\) は非ゼロの固有値を持つ \(\rho\) の直交固有状態である。よって \(\ket{i}\) は \(\rho\) の台の基底を形成する。\(\ket{\psi}\) は、</p>
+<p>\[\ket{\psi} = \sum_i \braket{i|\psi}\ket{i} = \sum_i c_i \ket{i}\]</p>
+<p>定義により、\(\rho\) のランクはその台の次元である。\(\ket{i}\) は \(\rho\) の台の基底を形成し、\(\ket{\psi}\) は台の中にあるので、基底集合から任意の 1 つの \(\ket{i}\) を削除し、\(\ket{\psi}\) で置き換える。すると \(\{p_i, \ket{i}\}\cup\{p_{\psi}, \ket{\psi}\}\) は \(\rho\) の最小アンサンブルを形成する。</p>
+<p>\(\rho\) の逆数は存在しないかもしれないので (\(\rho\) が作用する空間は \(\ket{i}\) で形成される空間よりも高次元である可能性があり、そうすると \(\rho\) はゼロの固有値を持つ固有ベクトルを持つ), \(\rho - 1\) をその台に限定した \(\rho\) の逆数と定義することができる。すると</p>
+<p>\begin{align*}
+&amp;\rho = \sum_i p_i\ket{i}\bra{i} \\\<br>
+\Rightarrow\ &amp;I = \rho\rho^{-1} = \sum_i p_i\ket{i}\bra{i}\rho^{-1} \\\<br>
+\Rightarrow\ &amp;1 = \sum_i p_i\braket{j|i}\braket{i|\rho^{-1}|j} = p_j\braket{j|\rho^{-1}|j}
+\end{align*}</p>
+<p>したがって、アンサンブルが状態 \(\psi_i\) にある確率は</p>
+<p>\[p_i = \frac{1}{\braket{\psi_i|\rho^{-1}|\psi_i}}\]</p>
+<p>ここで \(\rho\rho^{-1} = I\) は \(\rho\) の台の中でのみの恒等演算子だが、\(\rho\) が作用する可能性のある空間全体ではなく台の中でしか計算していないので問題にはならない。</p>
 
 
 

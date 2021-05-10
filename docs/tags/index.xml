@@ -20,6 +20,14 @@
 		</item>
       	
 		<item>
+			<title>QCQI/演習 2.73</title>
+			<link>https://yasuhito.github.io/post/20210510113334-qcqi_%E6%BC%94%E7%BF%92_2_73/</link>
+			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210510113334-qcqi_%E6%BC%94%E7%BF%92_2_73/</guid>
+			<description>\(\rho\) を密度行列とし、\(\ket{\psi}\) を \(\rho\) の台における任意の状態とすると、スペクトル分解 \(\rho = \sum_i p_i\ket{i}\bra{i}\) が存在し \(p_i &amp;gt; 0\) であり、\(\ket{</description>
+		</item>
+      	
+		<item>
 			<title>射影演算子はべき等</title>
 			<link>https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/</link>
 			<pubDate>Thu, 06 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Wed, 05 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210505142849-qcqi_%E6%BC%94%E7%BF%92_2_71/</guid>
 			<description>密度演算子 \(\rho = \sum_i p_i \ket{i}\bra{i}\) とする。\(\rho^2\) のトレースを計算すると、 \begin{align*} &amp;amp;\rho^2 = \sum_{i,j}p_i p_j\braket{i|j}\ket{i}\bra{j} = \sum_i p_i^2 \ket{i}\bra{i} \\\ \Rightarrow\ &amp;amp;\mathrm{tr}(\rho^2) = \sum_i p_i^2 \mathrm{tr}(\ket{i}\bra{i}) = \sum_i p_i^2 \leq \sum_i p_i = 1 \end{align*} ここで \(0 \leq p_i \leq 1\) よ</description>
-		</item>
-      	
-		<item>
-			<title>ベクトル空間の例</title>
-			<link>https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/</link>
-			<pubDate>Tue, 04 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210504154230-%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B/</guid>
-			<description>ベクトル空間となる集合にはたとえば次のものがある。 \(\mathcal{R}\) 実数全体 \(\mathcal{R}\) からなるベクトル空間 \(\mathcal{C}\) 複素数全体 \(\mathcal{C}\) からなるベクトル空間 \(\mathcal{R}^n\) \(n\) 次元実数ベクトル全体</description>
 		</item>
       	
 	</channel>
