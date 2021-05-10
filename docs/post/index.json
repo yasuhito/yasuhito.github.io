@@ -52,6 +52,16 @@
     ,
         
             {
+                "ref": "https://yasuhito.github.io/post/20210510151956-qcqi_%E6%BC%94%E7%BF%92_2_77/",
+                "title": "QCQI/演習 2.77",
+                "section": "post",
+                "date" : "2021.05.10",
+                "body": "\\(ABC\\) の純粋状態 \\(\\ket{\\psi}\\) が個々の構成要素のテンソル積に分解できないことを示すために、2 つの状態のもつれを考える:\n\\[\\ket{\\psi} = \\ket{0},\\ \\ket{\\beta_{00}} = \\ket{0}\\left(\\frac{\\ket{00} + \\ket{11}}{\\sqrt{2}}\\right)\\]\n\\(BC\\) のもつれ状態 \\(\\ket{\\beta_{00}}\\) では状態の和が必要だが、\\(A\\) の固定状態 \\(\\ket{0}\\) ではそれが禁止されている。したがって、この状態を分解することはできない。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210506102845-%E5%B0%84%E5%BD%B1%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E3%81%B8%E3%81%8D%E7%AD%89/",
                 "title": "射影演算子はべき等",
                 "section": "post",
