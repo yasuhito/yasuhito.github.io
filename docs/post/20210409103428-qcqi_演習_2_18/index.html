@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.18"/>
-<meta name="twitter:description" content="ユニタリー行列 \(U\) の固有値を \(v\), 固有ベクトルを \(|v\rangle\) とすると、ユニタリー演算子は内積を保存することから、 \begin{eqnarray*} \langle v|v \rangle &amp;=&amp; (U|v\rangle, U|v\rangle) \\\ &amp;=&amp; (v|v\rangle, v|v\rangle) \newline \end{eqnarray*} ここで 内積は第 1 引"/>
+<meta name="twitter:description" content="ユニタリー行列 \(U\) の固有値を \(v\), 固有ベクトルを \(\ket{v}\) とすると、ユニタリー演算子は内積を保存することから、 \begin{eqnarray*} \braket{v|v} &amp;=&amp; (U\ket{v}, U\ket{v}) \\\ &amp;=&amp; (v\ket{v}, v\ket{v}) \newline \end{eqnarray*} ここで 内積は第 1 引数に"/>
 
 
 
@@ -116,10 +116,10 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><a href="/post/20210408160607-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC/">ユニタリー</a>行列 \(U\) の<a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a>を \(v\), <a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>を \(|v\rangle\) とすると、<a href="/post/20210408161455-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%86%85%E7%A9%8D%E3%82%92%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/">ユニタリー演算子は内積を保存する</a>ことから、</p>
+  <p><a href="/post/20210302120815-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97/">ユニタリー行列</a> \(U\) の<a href="/post/20210406145445-%E5%9B%BA%E6%9C%89%E5%80%A4/">固有値</a>を \(v\), <a href="/post/20210406144840-%E5%9B%BA%E6%9C%89%E3%83%98%E3%82%AF%E3%83%88%E3%83%AB/">固有ベクトル</a>を \(\ket{v}\) とすると、<a href="/post/20210408161455-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AF%E5%86%85%E7%A9%8D%E3%82%92%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/">ユニタリー演算子は内積を保存する</a>ことから、</p>
 <p>\begin{eqnarray*}
-\langle v|v \rangle &amp;=&amp; (U|v\rangle, U|v\rangle) \\\<br>
-&amp;=&amp; (v|v\rangle, v|v\rangle) \newline
+\braket{v|v} &amp;=&amp; (U\ket{v}, U\ket{v}) \\\<br>
+&amp;=&amp; (v\ket{v}, v\ket{v}) \newline
 \end{eqnarray*}</p>
 <p>ここで</p>
 <ul>
@@ -128,8 +128,8 @@
 </ul>
 <p>を使うと、</p>
 <p>\begin{eqnarray*}
-\phantom{\langle v|v \rangle} &amp;=&amp; vv^{\ast}(|v\rangle, |v\rangle) \\\<br>
-&amp;=&amp; vv^{\ast}\langle v|v \rangle
+\phantom{\braket{v|v}} &amp;=&amp; vv^{\ast}(\ket{v}, \ket{v}) \\\<br>
+&amp;=&amp; vv^{\ast}\braket{v|v}
 \end{eqnarray*}</p>
 <p>よって \(vv^{\ast} = 1\) であるから、\(|v| = \sqrt{vv^{\ast}} = 1\). つまり、ユニタリー行列のすべての固有値は絶対値が 1 であり、したがって固有値はある実数 \(\theta\) を用いて \(e^{i\theta}\) の形で書けることが示せた。</p>
 
@@ -157,95 +157,97 @@
     
   
     
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
       
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
     
   
     
@@ -710,7 +712,7 @@
         <div class="backlinks">
           <ul>
            
-              <li><a href="/post/20210427150513-qcqi_%E6%BC%94%E7%BF%92_2_56/">QCQI/演習 2.56</a></li>
+              <li><a href="/post/20210511161116-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97%E3%81%AE%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E5%9B%BA%E6%9C%89%E5%80%A4%E3%81%AF%E7%B5%B6%E5%AF%BE%E5%80%A4%E3%81%8B_1/">ユニタリー行列のすべての固有値は絶対値が 1</a></li>
               
               <li><a href="/post/20210402105729-quantum_computation_and_quantum_information/">Quantum Computation and Quantum Information</a></li>
               

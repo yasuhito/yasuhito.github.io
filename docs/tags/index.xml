@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>ユニタリー行列のすべての固有値は絶対値が 1</title>
+			<link>https://yasuhito.github.io/post/20210511161116-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97%E3%81%AE%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E5%9B%BA%E6%9C%89%E5%80%A4%E3%81%AF%E7%B5%B6%E5%AF%BE%E5%80%A4%E3%81%8B_1/</link>
+			<pubDate>Tue, 11 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210511161116-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97%E3%81%AE%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E5%9B%BA%E6%9C%89%E5%80%A4%E3%81%AF%E7%B5%B6%E5%AF%BE%E5%80%A4%E3%81%8B_1/</guid>
+			<description>ユニタリー行列のすべての固有値は絶対値が \(1\) となる。つまり、ユニタリー行列の固有値はある実数 \(\theta\) を用いて \(e^{i\theta}\) の形で書ける。 証明は QCQI/演習 2.18 を</description>
+		</item>
+      	
+		<item>
 			<title>QCQI/演習 2.72</title>
 			<link>https://yasuhito.github.io/post/20210510095224-qcqi_%E6%BC%94%E7%BF%92_2_72/</link>
 			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210510163251-qcqi_%E6%BC%94%E7%BF%92_2_80/</guid>
 			<description>\(\ket{\psi} = \sum_i \lambda_i \ket{i_A}\ket{i_B}\) と \(\ket{\phi} = \sum_j \lambda_j \ket{j_A}\ket{j_B}\) を \(AB\) の純粋状態とすると、\(\ket{i_A}\), \(\ket{i_B}\) は \(A\) の正規直交基底、\(\ket{j_A}\), \(\ket{j_B}\) は \(B\) の正規直交</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.81</title>
-			<link>https://yasuhito.github.io/post/20210510164549-qcqi_%E6%BC%94%E7%BF%92_2_81/</link>
-			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210510164549-qcqi_%E6%BC%94%E7%BF%92_2_81/</guid>
-			<description>\(\ket{AR_1} = \sum_i \sqrt{p_i} \ket{i^A}\ket{i^{R_1}}\) と \(\ket{AR_2} = \sum_i \sqrt{p_i} \ket{i^A}\ket{i^{R_2}}\) を複合系 \(AR\) に対する状態 \(\rho^A\) の純粋化とする。QCQI/演習 2.80 と同様に、正規直交基底 \(\ket{i^{R1}}\) と \(\ket{i^{R2}}\) は \(R\) 上のあるユニタリー変換 \(U_R\) によっ</description>
 		</item>
       	
 	</channel>

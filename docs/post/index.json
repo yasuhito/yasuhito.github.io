@@ -2,6 +2,16 @@
     
         
             {
+                "ref": "https://yasuhito.github.io/post/20210511161116-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97%E3%81%AE%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E5%9B%BA%E6%9C%89%E5%80%A4%E3%81%AF%E7%B5%B6%E5%AF%BE%E5%80%A4%E3%81%8B_1/",
+                "title": "ユニタリー行列のすべての固有値は絶対値が 1",
+                "section": "post",
+                "date" : "2021.05.11",
+                "body": "ユニタリー行列のすべての固有値は絶対値が \\(1\\) となる。つまり、ユニタリー行列の固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書ける。\n証明は QCQI/演習 2.18 を参照。\n"
+            }
+        
+    ,
+        
+            {
                 "ref": "https://yasuhito.github.io/post/20210510095224-qcqi_%E6%BC%94%E7%BF%92_2_72/",
                 "title": "QCQI/演習 2.72",
                 "section": "post",
@@ -446,7 +456,7 @@
                 "title": "QCQI/演習 2.56",
                 "section": "post",
                 "date" : "2021.04.27",
-                "body": "\\(U\\) は正規なので固有値 \\(\\lambda_i\\) とそれに対応する正規化固有ベクトル \\(\\ket{i}\\) を用いてスペクトル分解できる。\n\\[U = \\sum_i \\lambda_i \\ket{i}\\bra{i}\\]\nこれを \\(K\\) に適用すると、\n\\begin{align*} \u0026amp;K = -i\\mathrm{log}(U) = -i\\sum_j \\mathrm{log}(\\lambda_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;K^{\\dagger} = i\\sum_j \\mathrm{log}(\\lambda_j)^{\\ast}\\ket{j}\\bra{j} \\end{align*}\nここで QCQI/演習 2.18 の結果より、ユニタリー行列の固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書けることから、\n\\begin{eqnarray*} K \u0026amp;=\u0026amp; -i\\sum_j \\mathrm{log}(\\lambda_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; -i\\sum_j \\mathrm{log}(e^{i\\theta_j})\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; -i\\sum_j i\\theta_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_j \\theta_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; K^{\\dagger} \\end{eqnarray*}\nよって \\(K\\) はエルミート演算子。\nここで、\\(K = -i\\mathrm{log}(U)\\) の両辺の \\(\\mathrm{exp}\\) を取ると \\(U = \\mathrm{exp}(iK)\\) となる。\n"
+                "body": "\\(U\\) は正規なので固有値 \\(\\lambda_i\\) とそれに対応する正規化固有ベクトル \\(\\ket{i}\\) を用いてスペクトル分解できる。\n\\[U = \\sum_i \\lambda_i \\ket{i}\\bra{i}\\]\nこれを \\(K\\) に適用すると、\n\\begin{align*} \u0026amp;K = -i\\mathrm{log}(U) = -i\\sum_j \\mathrm{log}(\\lambda_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;K^{\\dagger} = i\\sum_j \\mathrm{log}(\\lambda_j)^{\\ast}\\ket{j}\\bra{j} \\end{align*}\nここでユニタリー行列の固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書けることから、\n\\begin{eqnarray*} K \u0026amp;=\u0026amp; -i\\sum_j \\mathrm{log}(\\lambda_j)\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; -i\\sum_j \\mathrm{log}(e^{i\\theta_j})\\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; -i\\sum_j i\\theta_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_j \\theta_j \\ket{j}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; K^{\\dagger} \\end{eqnarray*}\nよって \\(K\\) はエルミート演算子。\nここで、\\(K = -i\\mathrm{log}(U)\\) の両辺の \\(\\mathrm{exp}\\) を取ると \\(U = \\mathrm{exp}(iK)\\) となる。\n"
             }
         
     ,
@@ -1186,7 +1196,7 @@
                 "title": "QCQI/演習 2.18",
                 "section": "post",
                 "date" : "2021.04.09",
-                "body": "ユニタリー行列 \\(U\\) の固有値を \\(v\\), 固有ベクトルを \\(|v\\rangle\\) とすると、ユニタリー演算子は内積を保存することから、\n\\begin{eqnarray*} \\langle v|v \\rangle \u0026amp;=\u0026amp; (U|v\\rangle, U|v\\rangle) \\\\\\\n\u0026amp;=\u0026amp; (v|v\\rangle, v|v\\rangle) \\newline \\end{eqnarray*}\nここで\n 内積は第 1 引数に関して共役線形 内積は第 2 引数に関して線形  を使うと、\n\\begin{eqnarray*} \\phantom{\\langle v|v \\rangle} \u0026amp;=\u0026amp; vv^{\\ast}(|v\\rangle, |v\\rangle) \\\\\\\n\u0026amp;=\u0026amp; vv^{\\ast}\\langle v|v \\rangle \\end{eqnarray*}\nよって \\(vv^{\\ast} = 1\\) であるから、\\(|v| = \\sqrt{vv^{\\ast}} = 1\\). つまり、ユニタリー行列のすべての固有値は絶対値が 1 であり、したがって固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書けることが示せた。\n"
+                "body": "ユニタリー行列 \\(U\\) の固有値を \\(v\\), 固有ベクトルを \\(\\ket{v}\\) とすると、ユニタリー演算子は内積を保存することから、\n\\begin{eqnarray*} \\braket{v|v} \u0026amp;=\u0026amp; (U\\ket{v}, U\\ket{v}) \\\\\\\n\u0026amp;=\u0026amp; (v\\ket{v}, v\\ket{v}) \\newline \\end{eqnarray*}\nここで\n 内積は第 1 引数に関して共役線形 内積は第 2 引数に関して線形  を使うと、\n\\begin{eqnarray*} \\phantom{\\braket{v|v}} \u0026amp;=\u0026amp; vv^{\\ast}(\\ket{v}, \\ket{v}) \\\\\\\n\u0026amp;=\u0026amp; vv^{\\ast}\\braket{v|v} \\end{eqnarray*}\nよって \\(vv^{\\ast} = 1\\) であるから、\\(|v| = \\sqrt{vv^{\\ast}} = 1\\). つまり、ユニタリー行列のすべての固有値は絶対値が 1 であり、したがって固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書けることが示せた。\n"
             }
         
     ,
@@ -1196,7 +1206,7 @@
                 "title": "QCQI/演習 2.19",
                 "section": "post",
                 "date" : "2021.04.09",
-                "body": "パウリ行列それぞれについて、\\(A^{\\dagger} = A\\) (エルミート行列) と \\(A^{\\dagger}A = I\\) (ユニタリー) を示す。\nI \\begin{equation*} I^{\\dagger} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\n\\begin{equation*} I^{\\dagger}I = II = I \\end{equation*}\nX \\begin{equation*} X^{\\dagger} = \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} = X \\end{equation*}\n\\begin{equation*} X^{\\dagger}X = XX = \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\nY \\begin{equation*} Y^{\\dagger} = \\begin{bmatrix} 0 \u0026amp; i \\newline -i \u0026amp; 0 \\end{bmatrix}^T = \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} = Y \\end{equation*}\n\\begin{equation*} Y^{\\dagger}Y = YY = \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\nZ \\begin{equation*} Z^{\\dagger} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = Z \\end{equation*}\n\\begin{equation*} Z^{\\dagger}Z = ZZ = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\n"
+                "body": "パウリ行列それぞれについて\n \\(A^{\\dagger} = A\\) (エルミート性) \\(A^{\\dagger}A = I\\) (ユニタリー性)  を示す。\nI \\begin{equation*} I^{\\dagger} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\n\\begin{equation*} I^{\\dagger}I = II = I \\end{equation*}\nX \\begin{equation*} X^{\\dagger} = \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} = X \\end{equation*}\n\\begin{equation*} X^{\\dagger}X = XX = \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} \\begin{bmatrix} 0 \u0026amp; 1 \\newline 1 \u0026amp; 0 \\end{bmatrix} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\nY \\begin{equation*} Y^{\\dagger} = \\begin{bmatrix} 0 \u0026amp; i \\newline -i \u0026amp; 0 \\end{bmatrix}^T = \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} = Y \\end{equation*}\n\\begin{equation*} Y^{\\dagger}Y = YY = \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} \\begin{bmatrix} 0 \u0026amp; -i \\newline i \u0026amp; 0 \\end{bmatrix} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\nZ \\begin{equation*} Z^{\\dagger} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = Z \\end{equation*}\n\\begin{equation*} Z^{\\dagger}Z = ZZ = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; 1 \\end{bmatrix} = I \\end{equation*}\n"
             }
         
     ,
@@ -1356,7 +1366,7 @@
                 "title": "QCQI/演習 2.16",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "射影演算子 \\(P\\) の定義より、\n\\begin{eqnarray*} P^2 \u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j} \\phantom{\\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j}} \\end{eqnarray*}\nシグマの分解公式より、\n\\begin{eqnarray*} \\phantom{P^2} \u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j} \\phantom{\\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j}} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{i,j} \\ket{i}\\delta_{ij}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nよって任意の射影演算子 \\(P\\) は\n\\[P^2 = P\\]\nを満たす。\n関連ノート  射影演算子はべき等  "
+                "body": "射影演算子 \\(P\\) について、定義より、\n\\begin{eqnarray*} P^2 \u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j} \\phantom{\\sum_{i,j} \\ket{i}\\braket{i|j}\\bra{j}} \\end{eqnarray*}\nシグマの分解公式より、\n\\begin{eqnarray*} \\phantom{P^2} \u0026amp;=\u0026amp; \\sum_{ij} \\ket{i}\\braket{i|j}\\bra{j} \\phantom{\\sum_i \\ket{i}\\bra{i}\\sum_j\\ket{j}\\bra{j}} \\\\\\\n\u0026amp;=\u0026amp; \\sum_{ij} \\ket{i}\\delta_{ij}\\bra{j} \\\\\\\n\u0026amp;=\u0026amp; \\sum_i \\ket{i}\\bra{i} \\\\\\\n\u0026amp;=\u0026amp; P \\end{eqnarray*}\nよって任意の射影演算子 \\(P\\) は\n\\[P^2 = P\\]\nを満たす。\n関連ノート  射影演算子はべき等  "
             }
         
     ,
@@ -2546,7 +2556,7 @@
                 "title": "ユニタリー行列",
                 "section": "post",
                 "date" : "2021.03.02",
-                "body": "行列 \\(U\\) が\n\\(U^{\\dagger}U = I\\)\nを満たすならば行列 \\(U\\) はユニタリー (unitary) であるという。\n古典コンピュータでは単一ビットゲートは NOT ゲート 1 つしかなかったが、量子コンピュータではユニタリー性を満たす行列はすべて量子ゲートとなることができる。そして、ユニタリー行列であることが量子ゲートに対する唯一の制約である。\n参照  Quantum Computation and Quantum Information  "
+                "body": "行列 \\(U\\) が\n\\[U^{\\dagger}U = I\\]\nを満たすならば行列 \\(U\\) はユニタリー (unitary) であるという。\n古典コンピュータでは単一ビットゲートは NOT ゲート 1 つしかなかったが、量子コンピュータではユニタリー性を満たす行列はすべて量子ゲートとなることができる。そして、ユニタリー行列であることが量子ゲートに対する唯一の制約である。\nユニタリー行列の性質  ユニタリー行列のすべての固有値は絶対値が 1  ユニタリー行列の固有値はある実数 \\(\\theta\\) を用いて \\(e^{i\\theta}\\) の形で書ける    参照  Quantum Computation and Quantum Information  "
             }
         
     ,
