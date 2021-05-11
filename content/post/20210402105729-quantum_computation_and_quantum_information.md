@@ -175,10 +175,10 @@ draft = false
 
 ### 2.5 The Schmidt decomposition and purifications {#2-dot-5-the-schmidt-decomposition-and-purifications}
 
--   [QCQI/演習 2.76]({{< relref "20210510150234-qcqi_演習_2_76" >}})
--   [QCQI/演習 2.77]({{< relref "20210510151956-qcqi_演習_2_77" >}})
--   [QCQI/演習 2.78]({{< relref "20210510153057-qcqi_演習_2_78" >}})
--   [QCQI/演習 2.79]({{< relref "20210510154801-qcqi_演習_2_79" >}})
--   [QCQI/演習 2.80]({{< relref "20210510163251-qcqi_演習_2_80" >}})
--   [QCQI/演習 2.81]({{< relref "20210510164549-qcqi_演習_2_81" >}})
--   [QCQI/演習 2.82]({{< relref "20210510170335-qcqi_演習_2_82" >}})
+-   QCQI/演習 2.76
+-   QCQI/演習 2.77
+-   QCQI/演習 2.78
+-   QCQI/演習 2.79
+-   QCQI/演習 2.80
+-   QCQI/演習 2.81
+-   QCQI/演習 2.82

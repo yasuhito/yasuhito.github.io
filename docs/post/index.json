@@ -86,7 +86,7 @@
                 "title": "QCQI/演習 2.80",
                 "section": "post",
                 "date" : "2021.05.10",
-                "body": "\\(\\ket{\\psi} = \\sum_i \\lambda_i \\ket{i_A}\\ket{i_B}\\) と \\(\\ket{\\phi} = \\sum_j \\lambda_j \\ket{j_A}\\ket{j_B}\\) を \\(AB\\) の純粋状態とすると、\\(\\ket{i_A}\\), \\(\\ket{i_B}\\) は \\(A\\) の正規直交基底、\\(\\ket{j_A}\\), \\(\\ket{j_B}\\) は \\(B\\) の正規直交基底を形成する。ユニタリー変換は直交性を保つので、\\(\\ket{j_A} \\rightarrow \\ket{i_A}\\) と写す \\(A\\) 上のユニタリー変換 \\(U\\) と、\\(\\ket{j_B} \\rightarrow \\ket{i_B}\\) と写す \\(B\\) 上のユニタリー変換 \\(V\\) が存在する。これらの変換は、次のように \\(\\ket{\\phi}\\) に作用する:\n\\[(U \\otimes V)\\ket{\\phi} = \\sum_j \\lambda_j U\\ket{j_A}V\\ket{j_B} = \\sum_i \\lambda_i \\ket{i_A}\\ket{i_B} = \\ket{\\psi}\\]\n"
+                "body": "\\(\\ket{\\psi} = \\sum_i \\lambda_i \\ket{i_A}\\ket{i_B}\\) と \\(\\ket{\\phi} = \\sum_j \\lambda_j \\ket{j_A}\\ket{j_B}\\) を \\(AB\\) の純粋状態とすると、\\(\\ket{i_A}\\), \\(\\ket{i_B}\\) は \\(A\\) の正規直交基底、\\(\\ket{j_A}\\), \\(\\ket{j_B}\\) は \\(B\\) の正規直交基底を形成する。ユニタリー変換は直交性を保つので、\\(\\ket{j_A} \\rightarrow \\ket{i_A}\\) と写す \\(A\\) 上のユニタリー変換 \\(U\\) と、\\(\\ket{j_B} \\rightarrow \\ket{i_B}\\) と写す \\(B\\) 上のユニタリー変換 \\(V\\) が存在する。これらの変換は、次のように \\(\\ket{\\phi}\\) に作用する:\n"
             }
         
     ,
@@ -1486,7 +1486,7 @@
                 "title": "正規直交基底",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "互いに直交する単位ベクトルからなる基底を正規直交基底 (orthonormal basis) と呼ぶ。\n"
+                "body": "互いに直交する単位ベクトルからなる基底、つまり正規直交な基底を正規直交基底 (orthonormal basis) と呼ぶ。\n"
             }
         
     ,
@@ -1646,7 +1646,7 @@
                 "title": "対角表現",
                 "section": "post",
                 "date" : "2021.04.06",
-                "body": "ベクトル空間 \\(V\\) 上の演算子に対する対角表現 (diagonal representation) は表現 \\(A = \\sum_i \\lambda |i\\rangle\\langle i|\\) である。ここでベクトル \\(|i\\rangle\\) は \\(A\\) の固有値 \\(\\lambda_i\\) に対する固有ベクトルであり、この固有ベクトルは正規直交集合を形成する。\n対角表現の例としてパウリ行列の \\(Z\\) 行列は次のように書ける。\n\\begin{equation} Z = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = |0\\rangle\\langle 0| - |1\\rangle\\langle 1| \\end{equation}\nここで行列表現は正規直交ベクトル \\(|0\\rangle, |1\\rangle\\) に基いている。\n関連ノート  QCQI/演習 2.9 演算子の外積表現  "
+                "body": "ベクトル空間 \\(V\\) 上の演算子に対する対角表現 (diagonal representation)は表現 \\(A = \\sum_i \\lambda |i\\rangle\\langle i|\\) である。ここでベクトル \\(|i\\rangle\\) は \\(A\\) の固有値 \\(\\lambda_i\\) に対する固有ベクトルであり、この固有ベクトルは正規直交集合を形成する。\n対角表現の例としてパウリ行列の \\(Z\\) 行列は次のように書ける。\n\\begin{equation} Z = \\begin{bmatrix} 1 \u0026amp; 0 \\newline 0 \u0026amp; -1 \\end{bmatrix} = |0\\rangle\\langle 0| - |1\\rangle\\langle 1| \\end{equation}\nここで行列表現は正規直交ベクトル \\(|0\\rangle, |1\\rangle\\) に基いている。\n関連ノート  QCQI/演習 2.9 演算子の外積表現  "
             }
         
     ,
@@ -1816,7 +1816,7 @@
                 "title": "正規直交",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "インデックス \\(i\\) を持つベクトルの集合 \\(|i\\rangle\\) の各々が単位ベクトルであり、その集合のうち互いに異なるベクトルが直交しているとき、つまりインデックスの集合から選んだ \\(i\\) と \\(j\\) に対して \\(\\langle i|j \\rangle = \\delta_{ij}\\) のとき、集合 \\(|i\\rangle\\) は正規直交であるという。\n"
+                "body": "単位ベクトルの集合 \\(\\ket{i}\\) のうち、互いに異なるベクトルが直交しているとき、つまり\n\\[\\braket{i|j} = \\delta_{ij}\\]\nのとき、集合 \\(\\ket{i}\\) は正規直交 (orthonormal) であるという。\n"
             }
         
     ,
@@ -1826,7 +1826,7 @@
                 "title": "直交",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "ベクトル \\(|w\\rangle\\) とベクトル \\(|v\\rangle\\) の内積が \\(0\\) のとき両ベクトルは直交しているという。\n"
+                "body": "ベクトル \\(\\ket{w}\\), \\(\\ket{v}\\) の内積が \\(0\\) のとき、両ベクトルは直交 (orthogonal) しているという。\n"
             }
         
     ,
@@ -2016,7 +2016,7 @@
                 "title": "線形独立",
                 "section": "post",
                 "date" : "2021.03.31",
-                "body": "\\(0\\) でないベクトルの集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が線形従属でなければ、それは線形独立 (linearly independent) であるという。\n関連ノート  基底  "
+                "body": "ゼロベクトルでないベクトルの集合 \\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) が線形従属でなければ、それは線形独立 (linearly independent) であるという。\nつまり、\\(a_1 = \\dots = a_n = 0\\) でなければ \\(a_1 \\ket{v_1} + \\dots + a_n \\ket{a_n} = 0\\) とはならないとき、\\(\\ket{v_1}, \\ldots, \\ket{v_n}\\) は線形独立。\n関連ノート  基底  "
             }
         
     ,
@@ -2036,7 +2036,7 @@
                 "title": "ゼロベクトル",
                 "section": "post",
                 "date" : "2021.03.30",
-                "body": "あるベクトル空間について、任意のベクトル \\(\\ket{v}\\) に対して \\(\\ket{v} + \\ket{\\theta} = \\ket{v}\\) を満たすベクトル \\(\\ket{\\theta}\\) をゼロベクトルと呼び、\\(0\\) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜ \\(\\ket{0}\\) と書かないかと言うと、\\(\\ket{0}\\) は通常、基底状態のひとつ\n\\begin{equation*} \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix} \\end{equation*}\nを表すのに使うから。\n"
+                "body": "あるベクトル空間について、任意のベクトル \\(\\ket{v}\\) に対して\n\\[\\ket{v} + \\ket{\\theta} = \\ket{v}\\]\nを満たすベクトル \\(\\ket{\\theta}\\) をゼロベクトル (zero vector) と呼び、\\(0\\) で表す。\nつまり、ゼロベクトルはベクトル空間の零元である。\nちなみになぜゼロベクトルを \\(\\ket{0}\\) と書かないかと言うと、\\(\\ket{0}\\) は通常、基底状態のひとつ\n\\begin{equation*} \\begin{bmatrix} 1 \\newline 0 \\end{bmatrix} \\end{equation*}\nを表すのに使うから。\n"
             }
         
     ,
