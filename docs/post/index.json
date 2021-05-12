@@ -1506,7 +1506,7 @@
                 "title": "正規直交相補演算子",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\(d\\) 次元ベクトル空間 \\(V\\) から \\(k\\) 次元ベクトル空間への射影演算子 \\(P\\) について、\n\\[Q = I - P\\]\nを正規直交相補演算子 (orthonormal complement operator) と呼ぶ。\n  \\(Q\\) の式は上図から簡単に導くことができる。\\(\\ket{v} \\in V\\) とすると上図より\n\\[\\ket{v} = P\\ket{v} + Q\\ket{v}\\]\nよって、\n\\begin{align*} \u0026amp;I = P + Q \\\\\\\n\\Rightarrow\\ \u0026amp;Q = I - P \\end{align*}\nまた正規直交基底で見ると、\\(Q\\) は \\(\\ket{k+1}, \\ldots, \\ket{d}\\) で張られたベクトル空間への射影演算子である。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{P の正規直交基底}, \\underbrace{\\ket{k+1}, \\ldots, \\ket{d}}_{Q の正規直交基底}}^{V の正規直交基底}\\]\n関連ノート  正規直交相補空間  "
+                "body": "\\(d\\) 次元ベクトル空間 \\(V\\) から \\(k\\) 次元ベクトル部分空間への射影演算子 \\(P\\) があったとき、\n\\[Q = I - P\\]\nを正規直交相補演算子 (orthonormal complement operator) と呼ぶ。\n  \\(Q\\) の式は上図から簡単に導くことができる。\\(\\ket{v} \\in V\\) とすると上図より\n\\[\\ket{v} = P\\ket{v} + Q\\ket{v}\\]\nよって、\n\\begin{align*} \u0026amp;I = P + Q \\\\\\\n\\Rightarrow\\ \u0026amp;Q = I - P \\end{align*}\nまた正規直交基底で見ると、\\(Q\\) は \\(\\ket{k+1}, \\ldots, \\ket{d}\\) で張られたベクトル空間への射影演算子である。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{P の正規直交基底}, \\underbrace{\\ket{k+1}, \\ldots, \\ket{d}}_{Q の正規直交基底}}^{V の正規直交基底}\\]\n関連ノート  正規直交相補空間  "
             }
         
     ,
@@ -1746,7 +1746,7 @@
                 "title": "グラム・シュミット直交化",
                 "section": "post",
                 "date" : "2021.04.05",
-                "body": "ベクトル空間の基底集合から正規直交基底集合を作るための方法。おおまかには次の手順で行われる:\n 基底集合の 1 番目のベクトルを正規化する 基底集合の 2 番目のベクトルを、正規化した 1 番目のベクトルと垂直 (内積 = 0) にし、正規化する 基底集合の 3 番目のベクトルを、正規直交化した 1, 2 番目のベクトルと垂直にし、正規化する (繰り返し)  一般化すると次のようになる。\\(\\ket{w_1}, \\ldots, \\ket{w_d}\\) がベクトル空間 \\(V\\) に対する基底集合、作りたい正規直交基底集合を \\(\\ket{v_1}, \\ldots, \\ket{v_d}\\) とする。\\(\\ket{v_1} \\equiv \\ket{w_1} / \\|\\ket{w_1}\\|\\) と定義し、\\(1 \\leq k \\leq d - 1\\) に対して帰納的に \\(\\ket{v_{k_1}}\\) を次のように定義する。\n\\begin{equation*} \\ket{v_{k+1}} \\equiv \\frac{\\ket{w_{k+1}} - \\sum^k_{i=1} \\braket{v_i|w_{k+1}}\\ket{v_i}}{\\|\\ket{w_{k+1}} - \\sum^k_{i=1}\\braket{v_i|w_{k+1}}\\ket{v_i}\\|} \\end{equation*}\nこの方法によって正規直交基底集合が作れるので、任意の (有限) \\(d\\) 次元のベクトル空間は正規直交基底 \\(\\ket{v_1}, \\ldots, \\ket{v_d}\\) を持つ。\n関連ノート  グラム・シュミット直交化の証明 (QCQI/演習 2.8)  "
+                "body": "ベクトル空間の基底から正規直交基底を作るための手順をグラム・シュミット直交化 (Gram-Schmidt orthogonalization) と呼ぶ。この方法によって、任意の (有限) \\(d\\) 次元のベクトル空間は正規直交基底 \\(\\ket{v_1}, \\ldots, \\ket{v_d}\\) を持つ。\nベクトル空間 \\(V\\) に対する基底を \\(\\ket{w_1}, \\ldots, \\ket{w_d}\\), 作りたい正規直交基底を \\(\\ket{v_1}, \\ldots, \\ket{v_d}\\) とすると、グラム・シュミット直交化の手順は次の通り。\n1. 基底集合の 1 番目のベクトルを単位ベクトルに正規化し、これを最初の正規直交基底集合とする\n\\[\\ket{v_1} \\equiv \\ket{w_1} / \\|\\ket{w_1}\\|\\]\n2. すでに作った正規直交基底集合に直交する正規直交相補空間への射影演算子 (正規直交相補演算子) を作る\n\\begin{equation*} Q = I - \\sum^k_{i=1} \\ket{v_i}\\bra{v_i} \\end{equation*}\n3. 基底集合の次のベクトルを射影演算子に掛ける\n\\begin{eqnarray*} Q\\ket{w_{k+1}} \u0026amp;=\u0026amp; (I - \\sum^k_{i=1} \\ket{v_i}\\bra{v_i}) \\ket{w_{k+1}} \\\\\\\n\u0026amp;=\u0026amp; \\ket{w_{k+1}} - \\sum^k_{i=1} \\braket{v_i|w_{k+1}}\\ket{v_i} \\end{eqnarray*}\n4. できたベクトルを正規化し、正規直交基底集合に加える\n\\begin{equation*} \\ket{v_{k+1}} \\equiv \\frac{\\ket{w_{k+1}} - \\sum^k_{i=1} \\braket{v_i|w_{k+1}}\\ket{v_i}}{\\|\\ket{w_{k+1}} - \\sum^k_{i=1}\\braket{v_i|w_{k+1}}\\ket{v_i}\\|} \\end{equation*}\n5. 2 へ戻る (繰り返す)\n関連ノート  グラム・シュミット直交化の証明 (QCQI/演習 2.8)  参照  線形代数セミナー 1. 用語とまとめ Quantum Computation and Quantum Information 2.1.4  "
             }
         
     ,
