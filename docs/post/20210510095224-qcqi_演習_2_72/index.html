@@ -19,7 +19,7 @@
 />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="QCQI/演習 2.72"/>
-<meta name="twitter:description" content="(1) 1 量子ビットの密度演算子は正の演算子 (つまりエルミート演算子) であり、トレースは 1 でなければならない。一般的なエルミート行列は、実数変数 \(a\),"/>
+<meta name="twitter:description" content="(1) 1 量子ビットの密度演算子は正の演算子 (つまりエルミート演算子) であり、トレースは \(1\) でなければならない。一般的なエルミート行列は、実数変数 \(a\),"/>
 
 
 
@@ -45,7 +45,7 @@
 
 <script src="https://yasuhito.github.io/js/main.bundle.js"></script>
 <script src="https://yasuhito.github.io/js/instantpage.min.js" type="module" defer></script>
-<meta name="generator" content="Hugo 0.82.1" />
+<meta name="generator" content="Hugo 0.83.1" />
   </head>
   <body>
     
@@ -116,7 +116,7 @@
   <div class="container" role="main">
     <article class="article" class="blog-post">
       
-  <p><strong><strong>(1)</strong></strong> 1 量子ビットの密度演算子は<a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a> (つまり<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>) であり、<a href="/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/">トレース</a>は 1 でなければならない。一般的な<a href="/post/20210329140322-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97/">エルミート行列</a>は、実数変数 \(a\), \(b\), \(c\), \(d\) で次のように書ける:</p>
+  <p><strong><strong>(1)</strong></strong> 1 量子ビットの密度演算子は<a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a> (つまり<a href="/post/20210408114955-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E6%BC%94%E7%AE%97%E5%AD%90/">エルミート演算子</a>) であり、<a href="/post/20210414134207-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9/">トレース</a>は \(1\) でなければならない。一般的な<a href="/post/20210329140322-%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97/">エルミート行列</a>は、実数変数 \(a\), \(b\), \(c\), \(d\) で次のように書ける:</p>
 <p>\begin{eqnarray*}
 \rho &amp;=&amp; \begin{bmatrix}
 a &amp; b - ci \newline
@@ -142,7 +142,7 @@ a_2 &amp; 0 \newline
 &amp;=&amp; a_1I + bX + cY + a_2Z
 \end{eqnarray*}</p>
 <p>ここで、任意の 2 つの実数 \(a\) と \(d\) は実数 \(a_1\) と \(a_2\) の和と差で表現できることを利用した。</p>
-<p>トレースが 1 つまり \(\mathrm{tr}(\rho) = 1\) だから、</p>
+<p>トレースが \(1\) つまり \(\mathrm{tr}(\rho) = 1\) だから、</p>
 <p>\begin{align*}
 &amp;(a_1 + a_2) + (a_1 - a_2) = 1 \\\<br>
 \Rightarrow\ &amp;2a_1 = 1 \\\<br>
@@ -151,7 +151,12 @@ a_2 &amp; 0 \newline
 <p>\(\rho\) が正の演算子であることを保証するために、\(\rho\) のトレースと行列式を考え、\(\rho^{\prime}\) をその対角線上のエントリが \(\rho\) の固有値となるような \(\rho\) の<a href="/post/20210406152433-%E5%AF%BE%E8%A7%92%E8%A1%A8%E7%8F%BE/">対角表現</a>とする。<a href="/post/20210414141407-%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B9%E3%81%AE%E5%B7%A1%E5%9B%9E%E4%B8%8D%E5%A4%89%E6%80%A7/">トレースの巡回不変性</a>より、トレースは \(\rho\) の固有値の和となる。</p>
 <p>\[\mathrm{tr}(\rho^{\prime}) = \mathrm{tr}(U^{\dagger}\rho U) = \mathrm{tr}(UU^{\dagger}\rho) = \mathrm{tr}(\rho)\]</p>
 <p>ユニタリー演算子の行列式の大きさは 1 なので、行列式は \(\rho\) の固有値の積になる:</p>
-<p>\[\mathrm{det}(\rho^{\prime}) = \mathrm{det}(U^{\dagger}\rho U) = \mathrm{det}(U^{\dagger})\mathrm{det}(\rho)\mathrm{det}(U) = \mathrm{det}(U)^{\ast}\mathrm{det}(\rho)\mathrm{det}(U) = |\mathrm{det}(U)|^2 \mathrm{det}(\rho) = \mathrm{det}(\rho)\]</p>
+<p>\begin{eqnarray*}
+\mathrm{det}(\rho^{\prime}) &amp;=&amp; \mathrm{det}(U^{\dagger}\rho U) \\\<br>
+&amp;=&amp; \mathrm{det}(U^{\dagger})\mathrm{det}(\rho)\mathrm{det}(U) \\\<br>
+&amp;=&amp; \mathrm{det}(U)^{\ast}\mathrm{det}(\rho)\mathrm{det}(U) \\\<br>
+&amp;=&amp; |\mathrm{det}(U)|^2 \mathrm{det}(\rho) = \mathrm{det}(\rho)
+\end{eqnarray*}</p>
 <p>\(\mathrm{tr}(\rho)\) その固有値の少なくとも 1 つは正である。\(\mathrm{det}(\rho)\) も正であれば両方の固有値が正であることが保証され、\(\rho\) は正の演算子であることになる:</p>
 <p>\begin{align*}
 &amp;\mathrm{det}(\rho) = (a_1 + a_2)(a_1 - a_2) - (b - ci)(b + ci) = a_1^2 - a_2^2 - b^2 - c^2 \geq 0 \\\<br>

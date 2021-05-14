@@ -16,7 +16,7 @@
                 "title": "QCQI/演習 2.72",
                 "section": "post",
                 "date" : "2021.05.10",
-                "body": "(1) 1 量子ビットの密度演算子は正の演算子 (つまりエルミート演算子) であり、トレースは 1 でなければならない。一般的なエルミート行列は、実数変数 \\(a\\), \\(b\\), \\(c\\), \\(d\\) で次のように書ける:\n\\begin{eqnarray*} \\rho \u0026amp;=\u0026amp; \\begin{bmatrix} a \u0026amp; b - ci \\newline b + ci \u0026amp; d \\end{bmatrix} \\newline \u0026amp;=\u0026amp; \\begin{bmatrix} a_1 + a_2 \u0026amp; b - ci \\newline b + ci \u0026amp; a_1 - a_2 \\end{bmatrix} \\newline \u0026amp;=\u0026amp; \\begin{bmatrix} a_1 \u0026amp; 0 \\newline 0 \u0026amp; a_1 \\end{bmatrix} + \\begin{bmatrix} 0 \u0026amp; b \\newline b \u0026amp; 0 \\end{bmatrix} + \\begin{bmatrix} 0 \u0026amp; -ci \\newline ci \u0026amp; 0 \\end{bmatrix} + \\begin{bmatrix} a_2 \u0026amp; 0 \\newline 0 \u0026amp; -a_2 \\end{bmatrix} \\newline \u0026amp;=\u0026amp; a_1I + bX + cY + a_2Z \\end{eqnarray*}\nここで、任意の 2 つの実数 \\(a\\) と \\(d\\) は実数 \\(a_1\\) と \\(a_2\\) の和と差で表現できることを利用した。\nトレースが 1 つまり \\(\\mathrm{tr}(\\rho) = 1\\) だから、\n\\begin{align*} \u0026amp;(a_1 + a_2) + (a_1 - a_2) = 1 \\\\\\\n\\Rightarrow\\ \u0026amp;2a_1 = 1 \\\\\\\n\\therefore\\ \u0026amp;a_1 = \\frac{1}{2} \\end{align*}\n\\(\\rho\\) が正の演算子であることを保証するために、\\(\\rho\\) のトレースと行列式を考え、\\(\\rho^{\\prime}\\) をその対角線上のエントリが \\(\\rho\\) の固有値となるような \\(\\rho\\) の対角表現とする。トレースの巡回不変性より、トレースは \\(\\rho\\) の固有値の和となる。\n\\[\\mathrm{tr}(\\rho^{\\prime}) = \\mathrm{tr}(U^{\\dagger}\\rho U) = \\mathrm{tr}(UU^{\\dagger}\\rho) = \\mathrm{tr}(\\rho)\\]\nユニタリー演算子の行列式の大きさは 1 なので、行列式は \\(\\rho\\) の固有値の積になる:\n\\[\\mathrm{det}(\\rho^{\\prime}) = \\mathrm{det}(U^{\\dagger}\\rho U) = \\mathrm{det}(U^{\\dagger})\\mathrm{det}(\\rho)\\mathrm{det}(U) = \\mathrm{det}(U)^{\\ast}\\mathrm{det}(\\rho)\\mathrm{det}(U) = |\\mathrm{det}(U)|^2 \\mathrm{det}(\\rho) = \\mathrm{det}(\\rho)\\]\n\\(\\mathrm{tr}(\\rho)\\) その固有値の少なくとも 1 つは正である。\\(\\mathrm{det}(\\rho)\\) も正であれば両方の固有値が正であることが保証され、\\(\\rho\\) は正の演算子であることになる:\n\\begin{align*} \u0026amp;\\mathrm{det}(\\rho) = (a_1 + a_2)(a_1 - a_2) - (b - ci)(b + ci) = a_1^2 - a_2^2 - b^2 - c^2 \\geq 0 \\\\\\\n\\Rightarrow\\ \u0026amp;a_2^2 + b^2 + c^2 \\leq \\frac{1}{4}\\ (\\because a_1 = \\frac{1}{2}) \\end{align*}\n\\(\\vec{r} = 2(b, c, a_2)\\) をノルム \\(||\\vec{r}|| = 2\\sqrt{b^2 + c^2 + a_2^2} \\leq 1\\) であるベクトルとする。このベクトルは \\(\\mathrm{det}(\\rho)\\) の条件を満たし、よって \\(\\rho\\) は次のように書ける:\n\\[\\rho = \\frac{1}{2}I + bX + cY + a_2Z = \\frac{I + \\vec{r}\\cdot\\vec{\\sigma}}{2}\\]\n(2) 上の式より、\\(\\rho = I/2\\) のとき明らかにブロッホベクトル表現 \\(\\vec{r} = 0\\)\n(3) 状態 \\(\\rho\\) が純粋である状態であるためには \\(\\mathrm{tr}(\\rho^2) = 1\\) であるから、\\(\\mathrm{tr}(\\rho^2)\\) を計算すると、\n\\[\\rho_{00}^2 = (a_1 + a_2)^2 + (b - ci)(b + ci),\\ \\rho_{11}^2 = (a_1 - a_2)^2 + (b - ci)(b + ci)\\] \\[\\mathrm{tr}(\\rho^2) = \\rho_{00}^2 + \\rho_{11}^2 = 2(a_1^2 + a_2^2 + b^2 + c^2) = \\frac{1}{2} + \\frac{1}{2}\\sqrt{||\\vec{r}||}\\]\nよって \\(||\\vec{r}|| = 1\\) のとき \\(\\mathrm{tr}(\\rho^2) = 1\\) であり、\\(\\rho\\) は純粋状態。\n(4) 一般的な純粋状態は次の形で書ける:\n\\[\\ket{\\psi} = \\cos\\frac{\\theta}{2}\\ket{0} + e^{i\\phi}\\sin\\frac{\\theta}{2}\\ket{1}\\]\n純粋状態の密度行列は、\n\\begin{eqnarray*} \\rho \u0026amp;=\u0026amp; \\ket{\\psi}\\bra{\\psi} \\\\\\\n\u0026amp;=\u0026amp; \\cos^2\\frac{\\theta}{2}\\ket{0}\\bra{0} + e^{-i\\phi}\\cos\\frac{\\theta}{2}\\sin\\frac{\\theta}{2}\\ket{0}\\bra{1} + e^{i\\phi}\\cos\\frac{\\theta}{2}\\sin\\frac{\\theta}{2}\\ket{1}\\bra{0} + \\sin^2\\frac{\\theta}{2}\\ket{1}\\bra{1} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\left((1 + \\cos\\theta)\\ket{0}\\bra{0} + e^{-i\\phi}\\sin\\theta\\ket{0}\\bra{1} + e^{i\\phi}\\sin\\theta\\ket{1}\\bra{0} + (1 - \\cos\\theta)\\ket{1}\\bra{1}\\right) \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 1 + \\cos\\theta \u0026amp; e^{-i\\phi}\\sin\\theta \\newline e^{i\\phi}\\sin\\theta \u0026amp; 1 - \\cos\\theta \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 1 + \\cos\\theta \u0026amp; \\cos\\phi\\sin\\theta - i\\sin\\phi\\sin\\theta \\newline \\cos\\phi\\sin\\theta + i\\sin\\phi\\sin\\theta \u0026amp; 1 - \\cos\\theta \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}(I + \\cos\\phi\\sin\\theta X + \\sin\\phi\\sin\\theta Y + \\cos\\theta Z) \\end{eqnarray*}\nこのブロッホベクトル \\((\\cos\\phi\\sin\\theta, \\sin\\phi\\sin\\theta, \\cos\\theta)\\) のノルムは 1 で、純粋状態に相当する。よって、\n\\[\\rho = \\frac{I + \\vec{r}\\cdot\\vec{\\sigma}}{2}\\]\nと一致する。\n"
+                "body": "(1) 1 量子ビットの密度演算子は正の演算子 (つまりエルミート演算子) であり、トレースは \\(1\\) でなければならない。一般的なエルミート行列は、実数変数 \\(a\\), \\(b\\), \\(c\\), \\(d\\) で次のように書ける:\n\\begin{eqnarray*} \\rho \u0026amp;=\u0026amp; \\begin{bmatrix} a \u0026amp; b - ci \\newline b + ci \u0026amp; d \\end{bmatrix} \\newline \u0026amp;=\u0026amp; \\begin{bmatrix} a_1 + a_2 \u0026amp; b - ci \\newline b + ci \u0026amp; a_1 - a_2 \\end{bmatrix} \\newline \u0026amp;=\u0026amp; \\begin{bmatrix} a_1 \u0026amp; 0 \\newline 0 \u0026amp; a_1 \\end{bmatrix} + \\begin{bmatrix} 0 \u0026amp; b \\newline b \u0026amp; 0 \\end{bmatrix} + \\begin{bmatrix} 0 \u0026amp; -ci \\newline ci \u0026amp; 0 \\end{bmatrix} + \\begin{bmatrix} a_2 \u0026amp; 0 \\newline 0 \u0026amp; -a_2 \\end{bmatrix} \\newline \u0026amp;=\u0026amp; a_1I + bX + cY + a_2Z \\end{eqnarray*}\nここで、任意の 2 つの実数 \\(a\\) と \\(d\\) は実数 \\(a_1\\) と \\(a_2\\) の和と差で表現できることを利用した。\nトレースが \\(1\\) つまり \\(\\mathrm{tr}(\\rho) = 1\\) だから、\n\\begin{align*} \u0026amp;(a_1 + a_2) + (a_1 - a_2) = 1 \\\\\\\n\\Rightarrow\\ \u0026amp;2a_1 = 1 \\\\\\\n\\therefore\\ \u0026amp;a_1 = \\frac{1}{2} \\end{align*}\n\\(\\rho\\) が正の演算子であることを保証するために、\\(\\rho\\) のトレースと行列式を考え、\\(\\rho^{\\prime}\\) をその対角線上のエントリが \\(\\rho\\) の固有値となるような \\(\\rho\\) の対角表現とする。トレースの巡回不変性より、トレースは \\(\\rho\\) の固有値の和となる。\n\\[\\mathrm{tr}(\\rho^{\\prime}) = \\mathrm{tr}(U^{\\dagger}\\rho U) = \\mathrm{tr}(UU^{\\dagger}\\rho) = \\mathrm{tr}(\\rho)\\]\nユニタリー演算子の行列式の大きさは 1 なので、行列式は \\(\\rho\\) の固有値の積になる:\n\\begin{eqnarray*} \\mathrm{det}(\\rho^{\\prime}) \u0026amp;=\u0026amp; \\mathrm{det}(U^{\\dagger}\\rho U) \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{det}(U^{\\dagger})\\mathrm{det}(\\rho)\\mathrm{det}(U) \\\\\\\n\u0026amp;=\u0026amp; \\mathrm{det}(U)^{\\ast}\\mathrm{det}(\\rho)\\mathrm{det}(U) \\\\\\\n\u0026amp;=\u0026amp; |\\mathrm{det}(U)|^2 \\mathrm{det}(\\rho) = \\mathrm{det}(\\rho) \\end{eqnarray*}\n\\(\\mathrm{tr}(\\rho)\\) その固有値の少なくとも 1 つは正である。\\(\\mathrm{det}(\\rho)\\) も正であれば両方の固有値が正であることが保証され、\\(\\rho\\) は正の演算子であることになる:\n\\begin{align*} \u0026amp;\\mathrm{det}(\\rho) = (a_1 + a_2)(a_1 - a_2) - (b - ci)(b + ci) = a_1^2 - a_2^2 - b^2 - c^2 \\geq 0 \\\\\\\n\\Rightarrow\\ \u0026amp;a_2^2 + b^2 + c^2 \\leq \\frac{1}{4}\\ (\\because a_1 = \\frac{1}{2}) \\end{align*}\n\\(\\vec{r} = 2(b, c, a_2)\\) をノルム \\(||\\vec{r}|| = 2\\sqrt{b^2 + c^2 + a_2^2} \\leq 1\\) であるベクトルとする。このベクトルは \\(\\mathrm{det}(\\rho)\\) の条件を満たし、よって \\(\\rho\\) は次のように書ける:\n\\[\\rho = \\frac{1}{2}I + bX + cY + a_2Z = \\frac{I + \\vec{r}\\cdot\\vec{\\sigma}}{2}\\]\n(2) 上の式より、\\(\\rho = I/2\\) のとき明らかにブロッホベクトル表現 \\(\\vec{r} = 0\\)\n(3) 状態 \\(\\rho\\) が純粋である状態であるためには \\(\\mathrm{tr}(\\rho^2) = 1\\) であるから、\\(\\mathrm{tr}(\\rho^2)\\) を計算すると、\n\\[\\rho_{00}^2 = (a_1 + a_2)^2 + (b - ci)(b + ci),\\ \\rho_{11}^2 = (a_1 - a_2)^2 + (b - ci)(b + ci)\\] \\[\\mathrm{tr}(\\rho^2) = \\rho_{00}^2 + \\rho_{11}^2 = 2(a_1^2 + a_2^2 + b^2 + c^2) = \\frac{1}{2} + \\frac{1}{2}\\sqrt{||\\vec{r}||}\\]\nよって \\(||\\vec{r}|| = 1\\) のとき \\(\\mathrm{tr}(\\rho^2) = 1\\) であり、\\(\\rho\\) は純粋状態。\n(4) 一般的な純粋状態は次の形で書ける:\n\\[\\ket{\\psi} = \\cos\\frac{\\theta}{2}\\ket{0} + e^{i\\phi}\\sin\\frac{\\theta}{2}\\ket{1}\\]\n純粋状態の密度行列は、\n\\begin{eqnarray*} \\rho \u0026amp;=\u0026amp; \\ket{\\psi}\\bra{\\psi} \\\\\\\n\u0026amp;=\u0026amp; \\cos^2\\frac{\\theta}{2}\\ket{0}\\bra{0} + e^{-i\\phi}\\cos\\frac{\\theta}{2}\\sin\\frac{\\theta}{2}\\ket{0}\\bra{1} + e^{i\\phi}\\cos\\frac{\\theta}{2}\\sin\\frac{\\theta}{2}\\ket{1}\\bra{0} + \\sin^2\\frac{\\theta}{2}\\ket{1}\\bra{1} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\left((1 + \\cos\\theta)\\ket{0}\\bra{0} + e^{-i\\phi}\\sin\\theta\\ket{0}\\bra{1} + e^{i\\phi}\\sin\\theta\\ket{1}\\bra{0} + (1 - \\cos\\theta)\\ket{1}\\bra{1}\\right) \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 1 + \\cos\\theta \u0026amp; e^{-i\\phi}\\sin\\theta \\newline e^{i\\phi}\\sin\\theta \u0026amp; 1 - \\cos\\theta \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}\\begin{bmatrix} 1 + \\cos\\theta \u0026amp; \\cos\\phi\\sin\\theta - i\\sin\\phi\\sin\\theta \\newline \\cos\\phi\\sin\\theta + i\\sin\\phi\\sin\\theta \u0026amp; 1 - \\cos\\theta \\end{bmatrix} \\\\\\\n\u0026amp;=\u0026amp; \\frac{1}{2}(I + \\cos\\phi\\sin\\theta X + \\sin\\phi\\sin\\theta Y + \\cos\\theta Z) \\end{eqnarray*}\nこのブロッホベクトル \\((\\cos\\phi\\sin\\theta, \\sin\\phi\\sin\\theta, \\cos\\theta)\\) のノルムは 1 で、純粋状態に相当する。よって、\n\\[\\rho = \\frac{I + \\vec{r}\\cdot\\vec{\\sigma}}{2}\\]\nと一致する。\n"
             }
         
     ,
@@ -416,7 +416,7 @@
                 "title": "サラスの公式",
                 "section": "post",
                 "date" : "2021.04.29",
-                "body": "3 次正方行列の行列式を求める方法。\n赤線で結んだ 3 つの数の積の和から青線で結んだ 3 つの数の積を引くと、左 3 列分の行列式を求めることができる。\n  ただし手計算するには時間がかるので、より速く行列式を求めるには行列式を変換して \\(0\\) 要素を作ってから余因子展開したほうが良いことが多い。\n"
+                "body": "3 次正方行列の行列式を求める方法。\n赤線で結んだ 3 つの数の積の和から青線で結んだ 3 つの数の積を引くと、左 3 列分の行列式を求めることができる。\n ただし手計算するには時間がかるので、より速く行列式を求めるには行列式を変換して \\(0\\) 要素を作ってから余因子展開したほうが良いことが多い。\n"
             }
         
     ,
@@ -816,7 +816,7 @@
                 "title": "ベクトルの手書き",
                 "section": "post",
                 "date" : "2021.04.17",
-                "body": "  元画像: ベクトルの表記方法より。\n"
+                "body": " 元画像: ベクトルの表記方法より。\n"
             }
         
     ,
@@ -876,7 +876,7 @@
                 "title": "ストラング: 線形代数イントロダクション",
                 "section": "post",
                 "date" : "2021.04.15",
-                "body": "  "
+                "body": " "
             }
         
     ,
@@ -886,7 +886,7 @@
                 "title": "線形代数セミナー",
                 "section": "post",
                 "date" : "2021.04.15",
-                "body": "   共立出版のページ 正誤表  "
+                "body": "  共立出版のページ 正誤表  "
             }
         
     ,
@@ -1166,7 +1166,7 @@
                 "title": "量子情報科学入門",
                 "section": "post",
                 "date" : "2021.04.12",
-                "body": "  "
+                "body": " "
             }
         
     ,
@@ -1476,7 +1476,7 @@
                 "title": "射影演算子",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "一般のベクトルから特定の固有値に属する固有空間の成分だけを抜き出す演算子を射影演算子 (projector) と呼ぶ。\n  \\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(\\ket{1}, \\ldots, \\ket{k}\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(\\ket{1}, \\ldots, \\ket{d}\\) を作ることができる。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{W の正規直交基底}, \\ket{k+1}, \\ldots, \\ket{d}}^{V の正規直交基底}\\]\nこのとき\n\\begin{equation*} P \\equiv \\sum_{i=1}^k \\ket{i}\\bra{i} \\end{equation*}\nを \\(V\\) から部分空間 \\(W\\) への射影演算子と呼ぶ。\n射影演算子の性質  \\(P^2 = P\\) (射影演算子はべき等) \\(P^{\\dagger} = P\\) (射影演算子はエルミート演算子)  関連ノート  正規直交相補演算子 正規直交相補空間  "
+                "body": "一般のベクトルから特定の固有値に属する固有空間の成分だけを抜き出す演算子を射影演算子 (projector) と呼ぶ。\n \\(W\\) が \\(d\\) 次元ベクトル空間 \\(V\\) 上の \\(k\\) 次元ベクトル部分空間であるとする。グラム・シュミット直交化を用いると、\\(\\ket{1}, \\ldots, \\ket{k}\\) が \\(W\\) の正規直交基底となるように \\(V\\) に対する正規直交基底 \\(\\ket{1}, \\ldots, \\ket{d}\\) を作ることができる。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{W の正規直交基底}, \\ket{k+1}, \\ldots, \\ket{d}}^{V の正規直交基底}\\]\nこのとき\n\\begin{equation*} P \\equiv \\sum_{i=1}^k \\ket{i}\\bra{i} \\end{equation*}\nを \\(V\\) から部分空間 \\(W\\) への射影演算子と呼ぶ。\n射影演算子の性質  \\(P^2 = P\\) (射影演算子はべき等) \\(P^{\\dagger} = P\\) (射影演算子はエルミート演算子)  関連ノート  正規直交相補演算子 正規直交相補空間  "
             }
         
     ,
@@ -1506,7 +1506,7 @@
                 "title": "正規直交相補演算子",
                 "section": "post",
                 "date" : "2021.04.08",
-                "body": "\\(d\\) 次元ベクトル空間 \\(V\\) から \\(k\\) 次元ベクトル部分空間への射影演算子 \\(P\\) があったとき、\n\\[Q = I - P\\]\nを正規直交相補演算子 (orthonormal complement operator) と呼ぶ。\n  \\(Q\\) の式は上図から簡単に導くことができる。\\(\\ket{v} \\in V\\) とすると上図より\n\\[\\ket{v} = P\\ket{v} + Q\\ket{v}\\]\nよって、\n\\begin{align*} \u0026amp;I = P + Q \\\\\\\n\\Rightarrow\\ \u0026amp;Q = I - P \\end{align*}\nまた正規直交基底で見ると、\\(Q\\) は \\(\\ket{k+1}, \\ldots, \\ket{d}\\) で張られたベクトル空間への射影演算子である。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{P の正規直交基底}, \\underbrace{\\ket{k+1}, \\ldots, \\ket{d}}_{Q の正規直交基底}}^{V の正規直交基底}\\]\n関連ノート  正規直交相補空間  "
+                "body": "\\(d\\) 次元ベクトル空間 \\(V\\) から \\(k\\) 次元ベクトル部分空間への射影演算子 \\(P\\) があったとき、\n\\[Q = I - P\\]\nを正規直交相補演算子 (orthonormal complement operator) と呼ぶ。\n \\(Q\\) の式は上図から簡単に導くことができる。\\(\\ket{v} \\in V\\) とすると上図より\n\\[\\ket{v} = P\\ket{v} + Q\\ket{v}\\]\nよって、\n\\begin{align*} \u0026amp;I = P + Q \\\\\\\n\\Rightarrow\\ \u0026amp;Q = I - P \\end{align*}\nまた正規直交基底で見ると、\\(Q\\) は \\(\\ket{k+1}, \\ldots, \\ket{d}\\) で張られたベクトル空間への射影演算子である。\n\\[\\overbrace{\\underbrace{\\ket{1}, \\ldots, \\ket{k}}_{P の正規直交基底}, \\underbrace{\\ket{k+1}, \\ldots, \\ket{d}}_{Q の正規直交基底}}^{V の正規直交基底}\\]\n関連ノート  正規直交相補空間  "
             }
         
     ,
@@ -1886,7 +1886,7 @@
                 "title": "Quantum Computation and Quantum Information",
                 "section": "post",
                 "date" : "2021.04.02",
-                "body": "  演習と問題の解答 1 Introduction and overview 1.6.2 Quantum information in a wider context  QCQI/問題 1.1 QCQI/問題 1.2  2 Introduction to quantum mechanics 2.1.1 Bases and linear independence  QCQI/演習 2.1  2.1.2 Linear operators and matrices  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 Inner products  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 Eigenvectors and eigenvalues  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 Adjoints and Hermitian operators  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 Tensor products  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 Operator functions  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 The commutator and anti-commutator  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 The polar and singular value decompositions  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 Evolution  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 Quantum measurement  QCQI/演習 2.57  2.2.5 Projective measurements  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM measurements  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 Phase  QCQI/演習 2.65  2.2.8 Composite systems  QCQI/演習 2.66 QCQI/演習 2.67 QCQI/演習 2.68  2.3 Application: superdense coding  QCQI/演習 2.69 QCQI/演習 2.70  2.4 The density operator 2.4.2 General properties of the density operator  QCQI/演習 2.71 QCQI/演習 2.72 QCQI/演習 2.73  2.4.3 The reduced density operator  QCQI/演習 2.74 QCQI/演習 2.75  2.5 The Schmidt decomposition and purifications  QCQI/演習 2.76 QCQI/演習 2.77 QCQI/演習 2.78 QCQI/演習 2.79 QCQI/演習 2.80 QCQI/演習 2.81 QCQI/演習 2.82  "
+                "body": " 演習と問題の解答 1 Introduction and overview 1.6.2 Quantum information in a wider context  QCQI/問題 1.1 QCQI/問題 1.2  2 Introduction to quantum mechanics 2.1.1 Bases and linear independence  QCQI/演習 2.1  2.1.2 Linear operators and matrices  QCQI/演習 2.2 QCQI/演習 2.3 QCQI/演習 2.4  2.1.4 Inner products  QCQI/演習 2.5 QCQI/演習 2.6 QCQI/演習 2.7 QCQI/演習 2.8 QCQI/演習 2.9 QCQI/演習 2.10  2.1.5 Eigenvectors and eigenvalues  QCQI/演習 2.11 QCQI/演習 2.12  2.1.6 Adjoints and Hermitian operators  QCQI/演習 2.13 QCQI/演習 2.14 QCQI/演習 2.15 QCQI/演習 2.16 QCQI/演習 2.17 QCQI/演習 2.18 QCQI/演習 2.19 QCQI/演習 2.20 QCQI/演習 2.21 QCQI/演習 2.22 QCQI/演習 2.23 QCQI/演習 2.24 QCQI/演習 2.25  2.1.7 Tensor products  QCQI/演習 2.26 QCQI/演習 2.27 QCQI/演習 2.28 QCQI/演習 2.29 QCQI/演習 2.30 QCQI/演習 2.31 QCQI/演習 2.32 QCQI/演習 2.33  2.1.8 Operator functions  QCQI/演習 2.34 QCQI/演習 2.35 QCQI/演習 2.36 QCQI/演習 2.37 QCQI/演習 2.38 QCQI/演習 2.39  2.1.9 The commutator and anti-commutator  QCQI/演習 2.40 QCQI/演習 2.41 QCQI/演習 2.42 QCQI/演習 2.43 QCQI/演習 2.44 QCQI/演習 2.45 QCQI/演習 2.46 QCQI/演習 2.47  2.1.10 The polar and singular value decompositions  QCQI/演習 2.48 QCQI/演習 2.49 QCQI/演習 2.50  2.2.2 Evolution  QCQI/演習 2.51 QCQI/演習 2.52 QCQI/演習 2.53 QCQI/演習 2.54 QCQI/演習 2.55 QCQI/演習 2.56  2.2.3 Quantum measurement  QCQI/演習 2.57  2.2.5 Projective measurements  QCQI/演習 2.58 QCQI/演習 2.59 QCQI/演習 2.60 QCQI/演習 2.61  2.2.6 POVM measurements  QCQI/演習 2.62 QCQI/演習 2.63 QCQI/演習 2.64  2.2.7 Phase  QCQI/演習 2.65  2.2.8 Composite systems  QCQI/演習 2.66 QCQI/演習 2.67 QCQI/演習 2.68  2.3 Application: superdense coding  QCQI/演習 2.69 QCQI/演習 2.70  2.4 The density operator 2.4.2 General properties of the density operator  QCQI/演習 2.71 QCQI/演習 2.72 QCQI/演習 2.73  2.4.3 The reduced density operator  QCQI/演習 2.74 QCQI/演習 2.75  2.5 The Schmidt decomposition and purifications  QCQI/演習 2.76 QCQI/演習 2.77 QCQI/演習 2.78 QCQI/演習 2.79 QCQI/演習 2.80 QCQI/演習 2.81 QCQI/演習 2.82  "
             }
         
     ,
@@ -2156,7 +2156,7 @@
                 "title": "共役",
                 "section": "post",
                 "date" : "2021.03.29",
-                "body": "2 つのものがセットになって結びついていること、同様の働きをすること。もともと共軛と書き、「軛」(くびき) は、人力車や馬車において 2 本の梶棒 (かじぼう) を結びつけて同時に動かすようにするための棒のこと。\n数学では、二つの角・線・点・図形・数などが互いに対称的あるいは相補的関係にあり、入れ換えてもその関係に変化のないこと。\n「軛」が常用漢字表外であったため、音読みの同じ「役」の字で代用され、現在では共役と書かれることが多い。\n    関連ノート  エルミート共役  Source  共役 (Weblio) 共役 (Wikipedia) 人力車の各パーツの呼び方知ってる？  "
+                "body": "2 つのものがセットになって結びついていること、同様の働きをすること。もともと共軛と書き、「軛」(くびき) は、人力車や馬車において 2 本の梶棒 (かじぼう) を結びつけて同時に動かすようにするための棒のこと。\n数学では、二つの角・線・点・図形・数などが互いに対称的あるいは相補的関係にあり、入れ換えてもその関係に変化のないこと。\n「軛」が常用漢字表外であったため、音読みの同じ「役」の字で代用され、現在では共役と書かれることが多い。\n  関連ノート  エルミート共役  Source  共役 (Weblio) 共役 (Wikipedia) 人力車の各パーツの呼び方知ってる？  "
             }
         
     ,
@@ -2216,7 +2216,7 @@
                 "title": "Assoc",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "Assoc は Associativity (結合性) の略。図式的線形代数では足し算を扱うので、単に Assoc と書いた場合それは足し算の結合性を表す。\n図式で足し算の結合性を表すと次のようになる。\n  これが正しいことは、変数 \\(x\\), \\(y\\), \\(z\\) を使うことで次のように示せる。\nAssoc の左辺に \\(x\\), \\(y\\), \\(z\\) を入力すると、\n  Assoc の右辺に \\(x\\), \\(y\\), \\(z\\) を入力すると、\n  ここで足し算の結合性より \\((x + y) + z = x + (y + z)\\) だから、\n  が成り立つ。\n参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "Assoc は Associativity (結合性) の略。図式的線形代数では足し算を扱うので、単に Assoc と書いた場合それは足し算の結合性を表す。\n図式で足し算の結合性を表すと次のようになる。\n これが正しいことは、変数 \\(x\\), \\(y\\), \\(z\\) を使うことで次のように示せる。\nAssoc の左辺に \\(x\\), \\(y\\), \\(z\\) を入力すると、\n Assoc の右辺に \\(x\\), \\(y\\), \\(z\\) を入力すると、\n ここで足し算の結合性より \\((x + y) + z = x + (y + z)\\) だから、\n が成り立つ。\n参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -2226,7 +2226,7 @@
                 "title": "Identity",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。\n  入力は 1 つ、出力も同じく 1 つなので \\((1, 1)\\) である。\n参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "図式的線形代数で一本の結線をアイデンティティ (identity) と呼ぶ。\n 入力は 1 つ、出力も同じく 1 つなので \\((1, 1)\\) である。\n参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -2236,7 +2236,7 @@
                 "title": "Twist",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "図式的線形代数で交差する二本の結線をツイスト (twist) と呼ぶ。\n  入力は 2 つ、出力も同じく 2 つなので \\((2, 2)\\) である。\n"
+                "body": "図式的線形代数で交差する二本の結線をツイスト (twist) と呼ぶ。\n 入力は 2 つ、出力も同じく 2 つなので \\((2, 2)\\) である。\n"
             }
         
     ,
@@ -2246,7 +2246,7 @@
                 "title": "Unit",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。右辺は Identity。\n  なぜこうなるかは、次のようにワイヤに 0 と変数を振ってみれば分かりやすい。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "ゼロジェネレータ (Zero) の振舞いから、図式的線形代数における次の単位元 (identity element) 方程式に辿り着く。右辺は Identity。\n なぜこうなるかは、次のようにワイヤに 0 と変数を振ってみれば分かりやすい。\n 参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -2256,7 +2256,7 @@
                 "title": "Zero",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。\nゼロを図式的線形代数で表すと、次のジェネレータになる。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "ゼロは加法の単位元。語源は、位取り筆算をヨーロッパに紹介したフィボナッチがゼロを zephryum と呼んだことに由来する。\nゼロを図式的線形代数で表すと、次のジェネレータになる。\n 参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -2266,7 +2266,7 @@
                 "title": "図式の合成",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "図式の合成では、次のように第 1 引数の右に第 2 引数を置いて結線同士をつなげる:\n  合成のルールを式で書くと次の通り:\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "図式の合成では、次のように第 1 引数の右に第 2 引数を置いて結線同士をつなげる:\n 合成のルールを式で書くと次の通り:\n 参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -2276,7 +2276,7 @@
                 "title": "図式の直和",
                 "section": "post",
                 "date" : "2021.03.23",
-                "body": "図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる:\n  直和のルールを式で書くと次の通り:\n  下の Identity を曲げているが、これは曲げても曲げなくても良い。図式の重要な情報はルールからも明らかなように、\n 左から右に向かって何が何につながっているか 上から下に向かってどの順番でジェネレータが並んでいるか  なので、それを変えなければ結線を曲げても良い。\nもちろん、直和は可換でないことに注意。\n  参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
+                "body": "図式の直和では、次のように第 1 引数を第 2 引数の上に重ねる:\n 直和のルールを式で書くと次の通り:\n 下の Identity を曲げているが、これは曲げても曲げなくても良い。図式の重要な情報はルールからも明らかなように、\n 左から右に向かって何が何につながっているか 上から下に向かってどの順番でジェネレータが並んでいるか  なので、それを変えなければ結線を曲げても良い。\nもちろん、直和は可換でないことに注意。\n 参考  Graphical Linear Algebra  5. Spoilers, Adding (Part 2) and Zero    "
             }
         
     ,
@@ -2286,7 +2286,7 @@
                 "title": "Comm",
                 "section": "post",
                 "date" : "2021.03.22",
-                "body": "Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。\n図式で足し算の可換性を表すと次のようになる。\n  これが正しいことは、変数 \\(x\\), \\(y\\) を使うことで次のように示せる。\nComm の左辺に \\(x\\) と \\(y\\) を入力すると、\n  Comm の右辺に \\(x\\) と \\(y\\) を入力すると、\n  ここで足し算の可換性より \\(x + y = y + x\\) だから、\n  が成り立つ。\n"
+                "body": "Comm は Commutativity (可換性) の略。図式的線形代数では足し算を扱うので、単に Comm と書いた場合それは足し算の可換性を表す。\n図式で足し算の可換性を表すと次のようになる。\n これが正しいことは、変数 \\(x\\), \\(y\\) を使うことで次のように示せる。\nComm の左辺に \\(x\\) と \\(y\\) を入力すると、\n Comm の右辺に \\(x\\) と \\(y\\) を入力すると、\n ここで足し算の可換性より \\(x + y = y + x\\) だから、\n が成り立つ。\n"
             }
         
     ,
@@ -2356,7 +2356,7 @@
                 "title": "never",
                 "section": "post",
                 "date" : "2021.03.18",
-                "body": "関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。\n// この関数は戻らない function throws() { throw new Error(\u0026#39;oh no\u0026#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。\nvoid 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。\n幸いなことに、TypeScript にはそのための型があります: never です。\n// 戻らない関数の返り値は never と指定する function throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます (ただし、実行すると例外が投げられます)。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } // never はどんな型にも割り当てられる const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。\nコンパイラは throws 関数が決して戻らないことを知っているので、変数 n には何も代入されないことも知っています。型は実行時にデータが正しいことを保証するために存在します。もし、実行時に代入が実際に行われることがなく、コンパイラが事前にそのことを確実に知っているのであれば、 never を代入する変数の型は重要ではありません。\nしかし、 never に他の型を割り当てることはできません。そうすると、 never のルールである「実際に値を保持することはない」を破ってしまいます。 never に何らかの値を代入しようとすると、常に型エラーになります。\n// never には何も割り当てられない const aNever: never = 5; // → type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. 絶対に never には何も割り当てられません。 any ですらも!\nconst anAny: any = 5; // never には any ですら割り当てられない const aNever: never = anAny; // → type error: Type \u0026#39;any\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. 関数が常に例外をスローするが、明示的な戻り値の型を持たない場合、TypeScript は戻り値の型を void と推論します。これは悪いことではありませんが、明示的に never とマークしたほうが、TypeScript にもう少し多くの情報を与えることができます。\n例えば、ある関数が never を返す別の関数を呼び出したとします。TypeScript は外側の関数の型も never と正しく推論します。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } // この戻り値の型は never と推論される function alsoThrows() { return throws(); } // never は number に割り当てることができる const n: number = alsoThrows(); このコードがコンパイルされたことで、 alsoThrows の戻り値の型が never であることがわかりました。もし戻り値の型が void であれば、数値に割り当てることはできません。\n次の関数の戻り値の型を never に変更するとどうなるでしょうか。結果は型エラーが発生します。なぜなら、この関数は戻るからです。TypeScript は never 関数が値を返すことを許可しません。\nfunction f(): number { return 5; } 戻り値を never に変更すると:\nfunction f(): never { return 5; } // → type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. TypeScript では、 never 関数が条件付きで戻ることもできません（例: if の中）。関数が値を返す方法があるならば、その戻り値の型は never であってはならないのです。(この関数は型エラーを発生させます)\nfunction forcePositive(x: number): never { if (x \u0026gt; 0) { // 型エラー  return x; } else { throw new Error(\u0026#39;Number was negative!\u0026#39;); } } // → type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. never 型が適用されるのは、例外を発生させる関数だけではありません。例えば、無限ループを持つ関数は、 never 型の戻り値を持つことができます（そうすべきです！）。\n残念ながら、ここではその動く実例を示すことはできません。なぜなら、それは決して終了しないからです。しかし、その逆の例を示すことはできます。つまり、無限ループのように見える関数で、絶対に終わらないと主張していますが、時々戻ってくることがあるようなものです。これは型エラーです。\nfunction f(): never { while (true) { // 型エラー  if (Math.random() \u0026lt; 0.000001) { break; } } } // → type error: A function returning \u0026#39;never\u0026#39; cannot have a reachable end point. never 型の代表的なユースケースとして網羅性チェックがあります。到達不能な部分で never を返す関数を呼び出すことで、実行時エラーをチェックできます。\nfunction fail(message: string): never { throw new Error(message); } function foo(x: string | number): boolean { if (typeof x === \u0026#34;string\u0026#34;) { return true; } else if (typeof x === \u0026#34;number\u0026#34;) { return false; } // never 型のない言語では、次のいずれかでエラーになる  // - すべてのコードパスで値を返していない (厳密な null チェック)  // - または、到達不能コードの検出  // しかし TypeScript は fail 関数が never を返すことを知っているので、  // プログラマは実行時の安全性/網羅性チェックのために fail を呼び出すことができる  return fail(\u0026#34;Unexhaustive!\u0026#34;); } 最後に、 void と never について簡単にまとめておきます。\nvoid は、関数が最終的に終了して戻ることを意味します。単に、何の値も返さないということです。関数には return 文がないか、または return 文の後に値がない状態になっています。 void 型は、値がないことを表すので、何にも代入できません。\nnever は、関数が決して正常に終了しないことを意味します。例外が発生したり、無限ループに陥ったりするかもしれません。Node のようなサーバーサイドのシステムであれば、 process.exit() を呼び出してプロセスを終了させるかもしれません。いずれにしても、実行が関数の最後に到達することはありません。 never 型は何にでも代入可能です。なぜならコンパイラは、実行時には実際には代入が行われないことを知っているからです。\n参考  never (Execute Program)    never はすべての型のサブタイプ (派生型) であり、これをボトム型 (bottom type) と呼ぶ。つまり、他のすべての型に割り当てることができ、 never 型の値はどこでも安全に使えるという意味である。理論的な意味としては、ボトム型は値を持たない型としてとらえることができ、常に偽である数学的命題に相当する。 \u0026#x21a9;\u0026#xfe0e;\n   "
+                "body": "関数の中には、決して戻らないものがあります。例えば、常に例外を投げる関数は決して戻りません。\n// この関数は戻らない function throws() { throw new Error(\u0026#39;oh no\u0026#39;); } この関数の戻り値の型はどうすればよいでしょうか？ TypeScript は、この関数の戻り値の型を void と推論します。しかし、それではコードで何が起こっているのかをコンパイラは完全には把握できていません。\nvoid 型は、何らかの処理を行い終了するが、値を返さない関数のための型です。上の関数はこれとは異なり、この関数を呼び出しても、その後のコードは全く実行されません。\n幸いなことに、TypeScript にはそのための型があります: never です。\n// 戻らない関数の返り値は never と指定する function throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } never 型はちょっと不思議です。他のどの型にも割り当て可能です1。例えば、 number 型の変数に割り当てることができます (ただし、実行すると例外が投げられます)。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } // never はどんな型にも割り当てられる const n: number = throws(); // → Error: oh no 最初は、 never が any のように振る舞っているように見えます。なぜなら、 never を number （または string 、その他何でも）に割り当てることができるからです。しかし、 any と違って、これは安全です。\nコンパイラは throws 関数が決して戻らないことを知っているので、変数 n には何も代入されないことも知っています。型は実行時にデータが正しいことを保証するために存在します。もし、実行時に代入が実際に行われることがなく、コンパイラが事前にそのことを確実に知っているのであれば、 never を代入する変数の型は重要ではありません。\nしかし、 never に他の型を割り当てることはできません。そうすると、 never のルールである「実際に値を保持することはない」を破ってしまいます。 never に何らかの値を代入しようとすると、常に型エラーになります。\n// never には何も割り当てられない const aNever: never = 5; // → type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. 絶対に never には何も割り当てられません。 any ですらも!\nconst anAny: any = 5; // never には any ですら割り当てられない const aNever: never = anAny; // → type error: Type \u0026#39;any\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. 関数が常に例外をスローするが、明示的な戻り値の型を持たない場合、TypeScript は戻り値の型を void と推論します。これは悪いことではありませんが、明示的に never とマークしたほうが、TypeScript にもう少し多くの情報を与えることができます。\n例えば、ある関数が never を返す別の関数を呼び出したとします。TypeScript は外側の関数の型も never と正しく推論します。\nfunction throws(): never { throw new Error(\u0026#39;oh no\u0026#39;); } // この戻り値の型は never と推論される function alsoThrows() { return throws(); } // never は number に割り当てることができる const n: number = alsoThrows(); このコードがコンパイルされたことで、 alsoThrows の戻り値の型が never であることがわかりました。もし戻り値の型が void であれば、数値に割り当てることはできません。\n次の関数の戻り値の型を never に変更するとどうなるでしょうか。結果は型エラーが発生します。なぜなら、この関数は戻るからです。TypeScript は never 関数が値を返すことを許可しません。\nfunction f(): number { return 5; } 戻り値を never に変更すると:\nfunction f(): never { return 5; } // → type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. TypeScript では、 never 関数が条件付きで戻ることもできません（例: if の中）。関数が値を返す方法があるならば、その戻り値の型は never であってはならないのです。(この関数は型エラーを発生させます)\nfunction forcePositive(x: number): never { if (x \u0026gt; 0) { // 型エラー  return x; } else { throw new Error(\u0026#39;Number was negative!\u0026#39;); } } // → type error: Type \u0026#39;number\u0026#39; is not assignable to type \u0026#39;never\u0026#39;. never 型が適用されるのは、例外を発生させる関数だけではありません。例えば、無限ループを持つ関数は、 never 型の戻り値を持つことができます（そうすべきです！）。\n残念ながら、ここではその動く実例を示すことはできません。なぜなら、それは決して終了しないからです。しかし、その逆の例を示すことはできます。つまり、無限ループのように見える関数で、絶対に終わらないと主張していますが、時々戻ってくることがあるようなものです。これは型エラーです。\nfunction f(): never { while (true) { // 型エラー  if (Math.random() \u0026lt; 0.000001) { break; } } } // → type error: A function returning \u0026#39;never\u0026#39; cannot have a reachable end point. never 型の代表的なユースケースとして網羅性チェックがあります。到達不能な部分で never を返す関数を呼び出すことで、実行時エラーをチェックできます。\nfunction fail(message: string): never { throw new Error(message); } function foo(x: string | number): boolean { if (typeof x === \u0026#34;string\u0026#34;) { return true; } else if (typeof x === \u0026#34;number\u0026#34;) { return false; } // never 型のない言語では、次のいずれかでエラーになる  // - すべてのコードパスで値を返していない (厳密な null チェック)  // - または、到達不能コードの検出  // しかし TypeScript は fail 関数が never を返すことを知っているので、  // プログラマは実行時の安全性/網羅性チェックのために fail を呼び出すことができる  return fail(\u0026#34;Unexhaustive!\u0026#34;); } 最後に、 void と never について簡単にまとめておきます。\nvoid は、関数が最終的に終了して戻ることを意味します。単に、何の値も返さないということです。関数には return 文がないか、または return 文の後に値がない状態になっています。 void 型は、値がないことを表すので、何にも代入できません。\nnever は、関数が決して正常に終了しないことを意味します。例外が発生したり、無限ループに陥ったりするかもしれません。Node のようなサーバーサイドのシステムであれば、 process.exit() を呼び出してプロセスを終了させるかもしれません。いずれにしても、実行が関数の最後に到達することはありません。 never 型は何にでも代入可能です。なぜならコンパイラは、実行時には実際には代入が行われないことを知っているからです。\n参考  never (Execute Program)    never はすべての型のサブタイプ (派生型) であり、これをボトム型 (bottom type) と呼ぶ。つまり、他のすべての型に割り当てることができ、 never 型の値はどこでも安全に使えるという意味である。理論的な意味としては、ボトム型は値を持たない型としてとらえることができ、常に偽である数学的命題に相当する。\u0026#160;\u0026#x21a9;\u0026#xfe0e;\n   "
             }
         
     ,
