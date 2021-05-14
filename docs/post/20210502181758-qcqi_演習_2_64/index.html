@@ -119,7 +119,7 @@
   <p>各状態 \(\ket{\psi_i}\) に対して、\(\{\ket{\psi_j}\}_{j \neq i}\) で張られる空間に直交するが \(\ket{\psi_i}\) には直交しない状態 \(\ket{\phi_i}\) をみつける。これは、すべての \(\ket{\psi_i}\) が線形独立であり<a href="/post/20210405141728-%E3%82%AF%E3%83%A9%E3%83%A0_%E3%82%B7%E3%83%A5%E3%83%9F%E3%83%83%E3%83%88%E7%9B%B4%E4%BA%A4%E5%8C%96/">グラム・シュミット直交化</a>を用いて<a href="/post/20210408163416-%E6%AD%A3%E8%A6%8F%E7%9B%B4%E4%BA%A4%E5%9F%BA%E5%BA%95/">正規直交基底</a>を作れることが可能である。</p>
 <p>\begin{align*}
 &amp;E_i = \ket{\phi_i}\bra{\phi_i},\ E_{m+1} = I - \sum_{i=1}^{m}E_i\ \\\<br>
-\Rightarrow\ &amp;\sum_i E_i = I,\ \braket{\psi_j|E_i|\psi_j} = 0,\ \braket{\psi_i|E_i|\psi_i} = |\braket{\psi_i|\phi_i}|^2 &gt; 0
+\implies &amp;\sum_i E_i = I,\ \braket{\psi_j|E_i|\psi_j} = 0,\ \braket{\psi_i|E_i|\psi_i} = |\braket{\psi_i|\phi_i}|^2 &gt; 0
 \end{align*}</p>
 <p>このように POVM \(\{E_1, \ldots, E_{m+1}\}\) を決めると \(E_i\) は完全性条件を満たす<a href="/post/20210409152203-%E6%AD%A3%E3%81%AE%E6%BC%94%E7%AE%97%E5%AD%90/">正の演算子</a>であり、ボブが測定結果 \(E_i\) を得ると \(i \neq j\) であれば \(\braket{\psi_j|E_i|\psi_j} = 0\) であるため、ボブは与えられた状態が \(\ket{\psi_i}\) であったと確信を持ってわかる。</p>
 
