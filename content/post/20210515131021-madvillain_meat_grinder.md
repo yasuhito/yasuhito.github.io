@@ -19,7 +19,7 @@ The jar is under the bed
 Sleeping in a jar!  
 The jar is under the bed  
 
-ビートから自然に飛び出す 挽肉器から滴る言葉  
+ビートから自然に飛び出す 挽肉機から滴る言葉  
 9mm 中国銃 ピンプ ストリッパー ソフトで甘い C-マイナー  
 チャイナ やり手の小切手偽造屋 ニセの署名に手を焼く  
 数字の二度づけ 唇のぶ厚い 舌足らずなチビ  
@@ -60,15 +60,17 @@ Before the cheddar get away, best to get Maaco
 余計なやらかし 最も嫌われる神  
 通気穴つきロッド・レーバーで 証明済み  
 全 4 モデル 主よ救いたもう  
+
+The worst hated God who perpetrated odd favors  
+Demonstrated in the perforated Rod Lavers  
+In all quad flavors, Lord save us  
+
 ジャック・ラレーンのように またゲームに戻ってきたぜ  
 その名を知ってるだろ 深く考えんなよ  
 狂気の沙汰へと 道を突き進む  
 スロービートでも "Wrath of Kane" の速さでも  
 笑いと痛みが起こる  
 
-The worst hated God who perpetrated odd favors  
-Demonstrated in the perforated Rod Lavers  
-In all quad flavors, Lord save us  
 Still back in the game like Jack LaLanne  
 Think you know the name, don't rack your brain  
 On a fast track to half insane  
