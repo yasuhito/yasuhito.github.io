@@ -33,7 +33,7 @@ Digits double dipped, bubble lipped, subtle lisp midget
 Borderline schizo, sort of fine tits though  
 Pour the wine, whore to grind, quarter to nine, let's go  
 
-時間は 10 時 11 時を回り チャイナは俺が頼り  
+時計は 10 時 11 時を回り チャイナは俺が頼り  
 それは最後の砦 7-A-7  
 天国の門 叩いても 返事はなし  
 彼女はゆっくり踊る 俺は絶望のロマンチスト ドープなフローだろ  
