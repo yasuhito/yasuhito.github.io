@@ -9,10 +9,18 @@
 		
 		<managingEditor>Page(&#34;Notes&#34;) (Yasuhito Takamiya)</managingEditor>
     	
-  		<lastBuildDate>Tue, 11 May 2021 00:00:00 +0900</lastBuildDate>
+  		<lastBuildDate>Mon, 17 May 2021 00:00:00 +0900</lastBuildDate>
 		
 		<atom:link href="/" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Madvillain - Meat Grinder</title>
+			<link>https://yasuhito.github.io/post/20210515131021-madvillain_meat_grinder/</link>
+			<pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210515131021-madvillain_meat_grinder/</guid>
+			<description>Madvillain - Meat Grinder の和訳です。 ビンの中で眠ってる ビンの中で眠ってる ビンはベッドの下に転がってる ビンの中で眠ってる ビンはベッドの下に転がってる Sleeping in a jar! Sleeping</description>
+		</item>
+      	
 		<item>
 			<title>ユニタリー行列のすべての固有値は絶対値が 1</title>
 			<link>https://yasuhito.github.io/post/20210511161116-%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97%E3%81%AE%E3%81%99%E3%81%B8%E3%81%A6%E3%81%AE%E5%9B%BA%E6%9C%89%E5%80%A4%E3%81%AF%E7%B5%B6%E5%AF%BE%E5%80%A4%E3%81%8B_1/</link>
@@ -83,14 +91,6 @@
 			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210510154801-qcqi_%E6%BC%94%E7%BF%92_2_79/</guid>
 			<description>(1) \((\ket{00} + \ket{11})/\sqrt{2}\) はすでにシュミット分解されている。 (2) \((\ket{00} + \ket{01} + \ket{10} + \ket{11}/2\) はテンソル積 \(\ket{+}\ket{+}\) で表せるので、 \[\frac{\ket{00} + \ket{01} + \ket{10} + \ket{11}}{2} = \left(\frac{\ket{0} + \ket{1}}{\sqrt{2}}\right)^{\otimes 2}\] (3) \(\ket{\psi} = (\ket{00} + \ket{01} + \ket{10})/\sqrt{3}\) とすると、 \begin{eqnarray*} \rho^{AB}</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.80</title>
-			<link>https://yasuhito.github.io/post/20210510163251-qcqi_%E6%BC%94%E7%BF%92_2_80/</link>
-			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210510163251-qcqi_%E6%BC%94%E7%BF%92_2_80/</guid>
-			<description>\(\ket{\psi} = \sum_i \lambda_i \ket{i_A}\ket{i_B}\) と \(\ket{\phi} = \sum_j \lambda_j \ket{j_A}\ket{j_B}\) を \(AB\) の純粋状態とすると、\(\ket{i_A}\), \(\ket{i_B}\) は \(A\) の正規直交基底、\(\ket{j_A}\), \(\ket{j_B}\) は \(B\) の正規直交</description>
 		</item>
       	
 	</channel>
