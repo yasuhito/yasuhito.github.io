@@ -25,7 +25,7 @@ I-C-E cold, nice to be old
 Y2G stee twice to threefold  
 He sold scrolls, lo and behold  
 
-「偉大な生涯の物語」で語られた 一番ヤバい奴は誰だ  
+「偉大な生涯の物語」で語られるような 一番ヤバい奴は誰だ  
 栄光や金、きらびやかな世界 そういうものとは無縁でいい  
 金持ちの財産の半分で 俺のダチ半分が俺を消そうとする  
 残りの半分は金持ち だから気にもかけねえ  
