@@ -23,7 +23,7 @@ The jar is under the bed
 9mm 中国銃 ピンプ ストリッパー ソフトで甘い C-マイナー  
 チャイナ やり手の小切手偽造屋 ニセの署名に手を焼く  
 数字の二度づけ 唇のぶ厚い 舌足らずなチビ  
-ほとんどきちがい まあいいオッパイ  
+ほとんどキチガイ まあいいオッパイ  
 ワインを注ごう 騎乗位の売女 9 時ちょい前 さあ行こう  
 
 Tripping off the beat kinda, dripping off the meat grinder  
