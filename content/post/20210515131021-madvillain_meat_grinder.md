@@ -58,7 +58,7 @@ Hey bro, Day Glo, set the bet, pay dough
 Before the cheddar get away, best to get Maaco  
 
 余計なやらかし 最も嫌われる神  
-通気穴つきレッド・レーバーで 証明済み  
+通気穴つきロッド・レーバーで 証明済み  
 全 4 モデル 主よ救いたもう  
 ジャック・ラレーンのように またゲームに戻ってきたぜ  
 その名を知ってるだろ 深く考えんなよ  
