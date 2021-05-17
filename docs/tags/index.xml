@@ -12,6 +12,14 @@
 		<atom:link href="/tags/" rel="self" type="application/rss+xml" />
 		
 		<item>
+			<title>Madvillain - Accordion</title>
+			<link>https://yasuhito.github.io/post/20210517103529-madvillain_accordion/</link>
+			<pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
+			<guid>https://yasuhito.github.io/post/20210517103529-madvillain_accordion/</guid>
+			<description>Madvillain - Accordion の和訳です。 借り物の時間で生きてると 時計の針が速く進む そろそろ俺も潮時 &amp;ldquo;Slick Blaster&amp;rdquo; も無視され ディック・ダスタードリー &amp;amp; マトリーが浮かべる病的な</description>
+		</item>
+      	
+		<item>
 			<title>Madvillain - Meat Grinder</title>
 			<link>https://yasuhito.github.io/post/20210515131021-madvillain_meat_grinder/</link>
 			<pubDate>Mon, 17 May 2021 00:00:00 +0900</pubDate>
@@ -81,14 +89,6 @@
 			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
 			<guid>https://yasuhito.github.io/post/20210510153057-qcqi_%E6%BC%94%E7%BF%92_2_78/</guid>
 			<description>もし \(AB\) の状態 \(\ket{\psi}\) がシュミット数 \(1\) であれば、定義により \(\ket{\psi} = \lambda\ket{a}\ket{b}\) となるので、状態 \(\lambda\ket{a}\) と \(\ket{b}\) とのテンソル積となる。逆に、\(\ket{\psi} = \ket{a}\ket{b}\) であれ</description>
-		</item>
-      	
-		<item>
-			<title>QCQI/演習 2.79</title>
-			<link>https://yasuhito.github.io/post/20210510154801-qcqi_%E6%BC%94%E7%BF%92_2_79/</link>
-			<pubDate>Mon, 10 May 2021 00:00:00 +0900</pubDate>
-			<guid>https://yasuhito.github.io/post/20210510154801-qcqi_%E6%BC%94%E7%BF%92_2_79/</guid>
-			<description>(1) \((\ket{00} + \ket{11})/\sqrt{2}\) はすでにシュミット分解されている。 (2) \((\ket{00} + \ket{01} + \ket{10} + \ket{11}/2\) はテンソル積 \(\ket{+}\ket{+}\) で表せるので、 \[\frac{\ket{00} + \ket{01} + \ket{10} + \ket{11}}{2} = \left(\frac{\ket{0} + \ket{1}}{\sqrt{2}}\right)^{\otimes 2}\] (3) \(\ket{\psi} = (\ket{00} + \ket{01} + \ket{10})/\sqrt{3}\) とすると、 \begin{eqnarray*} \rho^{AB}</description>
 		</item>
       	
 	</channel>
