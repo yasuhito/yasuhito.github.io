@@ -87,7 +87,7 @@ Your first and last step to playing yourself like accordion
 
 俺がマイクを持ったら 誰も続けねえ  
 タンポン付けてるみたいに 血を流す臆病者を置き去りにして  
-引き金を引けくだけ 鍛錬は不要  
+引き金を引くだけ 鍛錬は不要  
 ジョー・テックスがラップしてたみたいに 脚ガリガリの女は置いてく  
 
 When he at the mic, you don't go next  
